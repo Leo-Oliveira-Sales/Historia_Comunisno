@@ -1,0 +1,6 @@
+{
+  "name": "Dossiê Soviético - Acervo Histórico & Roleta Acadêmica",
+  "description": "Acervo digital e dossiê histórico verificado sobre o comunismo e a URSS, contendo 20 tópicos temáticos, documentos desclassificados, tratados diplomáticos e roleta de sorteio acadêmico.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
