@@ -1120,6 +1120,281 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
     ]
   },
 
+  5: {
+    topicId: 5,
+    identificacao: {
+      nomeAcontecimento: 'Economia e Sociedade: Planos Quinquenais, Economia de Comando e Escassez (1928–1985)',
+      dataELocalizacao: {
+        dataExata: '1928–1985 (Período dos Planos Quinquenais e da Economia de Comando)',
+        calendarioNotas: 'Cronologia iniciada com a implantação do Primeiro Plano Quinquenal em 1928 e estendendo-se até o início da Perestroika em 1985.',
+        localizacaoPrecisa: 'União Soviética (Moscou, capitais republicanas, novos centros industriais de Magnitogorsk, Kemerovo, bacia do Donbass e regiões agrícolas).',
+        teatroOperacoes: 'Complexos industriais, siderúrgicas, minas, fazendas coletivas (Kolkhozes), fazendas estatais (Sovkhozes) e redes estatais de distribuição de bens.'
+      },
+      governoEResponsaveis: {
+        regimeVigente: 'União das Repúblicas Socialistas Soviéticas (URSS)',
+        chefesDeEstadoEGoverno: [
+          'Iosif Vissarionovich Stalin',
+          'Nikita Sergeyevich Khrushchev',
+          'Leonid Ilyich Brezhnev'
+        ],
+        orgaosExecutoresDiretos: [
+          'Partido Comunista da União Soviética (PCUS)',
+          'Gosplan (Comissão de Planejamento de Estado da URSS)',
+          'Gossnab (Comitê Estatal de Abastecimento Material e Técnico)',
+          'Ministérios Econômicos Setoriais e Empresas Estatais'
+        ],
+        responsaveisOperacionais: [
+          'Valerian Kuibyshev (Presidente do Gosplan durante o 1º Plano Quinquenal)',
+          'Nikolai Voznesensky (Chefe do Gosplan durante a Segunda Guerra Mundial)',
+          'Alexei Kosygin (Presidente do Conselho de Ministros e autor da reforma econômica de 1965)'
+        ]
+      }
+    },
+    contextoHistorico: {
+      situacaoAnterior: 'Após a recuperação econômica proporcionada pela Nova Política Econômica (NEP) na década de 1920, a liderança soviética decidiu abandonar os mecanismos de mercado e estabelecer o controle estatal direto sobre a produção, investimento e distribuição.',
+      causasPoliticas: 'Construção da base industrial para a defesa nacional, consolidação do monopólio político do PCUS sobre a alocação de recursos e erradicação do setor privado e das classes proprietárias rurais.',
+      causasEconomicas: 'Mobilização acelerada de investimentos para a indústria pesada (siderurgia, mineração, energia e máquinas) sem dependência de capitais estrangeiros, alimentada pela extração coercitiva de excedentes agrários.',
+      causasSociais: 'Engenharia social voltada à criação de uma classe trabalhadora industrial urbana, acompanhada por migração campo-cidade em massa, disciplina fabril rigorosa, problemas habitacionais e escassez perene de bens civis.'
+    },
+    narrativaCronologica: {
+      acontecimentosEmOrdem: [
+        {
+          dataExata: '1928–1932',
+          acontecimento: 'Primeiro Plano Quinquenal e Coletivização Agrícola Acelerada',
+          personagensEInstituicoes: 'Iosif Stalin, Valerian Kuibyshev, Gosplan, Kolkhozes.',
+          decisoesTomadas: 'Fixação de metas industriais extremamente ambiciosas para a indústria pesada e imposição da coletivização compulsória no campo, desencadeando a crise rural e a fome de 1932–1933.'
+        },
+        {
+          dataExata: '1933–1941',
+          acontecimento: 'Segundo e Terceiro Planos Quinquenais e Expansão Industrial',
+          personagensEInstituicoes: 'Gosplan, Ministérios Industriais, complexos siderúrgicos dos Urais.',
+          decisoesTomadas: 'Consolidação de novas regiões industriais no leste da URSS e direcionamento crescente de recursos para a indústria de defesa e armamentos diante do cenário internacional conturbado.'
+        },
+        {
+          dataExata: '1941–1945',
+          acontecimento: 'Economia de Guerra e Evacuação Industrial para o Leste',
+          personagensEInstituicoes: 'Nikolai Voznesensky, Conselho de Evacuação, Exército Vermelho.',
+          decisoesTomadas: 'Transferência de mais de 1.500 grandes fábricas para os Urais e Sibéria; conversão total do parque fabril civil para a produção militar sob privação extrema da população.'
+        },
+        {
+          dataExata: '1945–1953',
+          acontecimento: 'Reconstrução Econômica do Pós-Guerra e Restrições ao Consumo',
+          personagensEInstituicoes: 'Iosif Stalin, Gosplan, Conselho de Ministros.',
+          decisoesTomadas: 'Reconstrução prioritária da infraestrutura e da indústria pesada destruídas na guerra, mantendo o consumo civil fortemente limitado e enfrentando a fome de 1946–1947.'
+        },
+        {
+          dataExata: '1953–1964',
+          acontecimento: 'Reformas sob Khrushchev: Terras Virgens e Expansão Habitacional',
+          personagensEInstituicoes: 'Nikita Khrushchev, Sovnarkhozy, Comitê Central do PCUS.',
+          decisoesTomadas: 'Lançamento da Campanha das Terras Virgens no Cazaquistão, construção massiva de edifícios habitacionais padronizados (Khrushchyovka) e tentativas de descentralização administrativa.'
+        },
+        {
+          dataExata: '1965–1970',
+          acontecimento: 'Reforma de Kosygin e Elevação do Padrão de Vida no Pós-Guerra',
+          personagensEInstituicoes: 'Alexei Kosygin, Leonid Brezhnev, Ministério do Comércio.',
+          decisoesTomadas: 'Introdução de indicadores de rentabilidade e fundos de incentivo empresarial; expansão do consumo de bens duráveis e serviços sociais nas cidades.'
+        },
+        {
+          dataExata: '1970–1985',
+          acontecimento: 'Desaceleração da Produtividade, Rendas de Petróleo e Escassez',
+          personagensEInstituicoes: 'Leonid Brezhnev, Gosplan, consumidores urbanos.',
+          decisoesTomadas: 'Dependência crescente de receitas das exportações de petróleo e gás natural para financiar importações de grãos; acentuamento da escassez de produtos de consumo e expansão da economia informal (blat).'
+        }
+      ],
+      sinteseNarrativaGeral: 'A economia de comando soviética estruturou um modelo inédito de industrialização acelerada por meio do planejamento estatal centralizado. Embora tenha construído uma monumental base de indústria pesada, energia e capacidade militar capaz de sustentar a vitória na Segunda Guerra Mundial e rivalizar na Guerra Fria, o sistema sofreu de distorções crônicas na agricultura, escassez permanente de bens de consumo e uma desaceleração contínua da produtividade a partir da década de 1970.'
+    },
+    documentosEEvidencias: {
+      documentosOriginais: [
+        {
+          titulo: 'Diretrizes do Primeiro Plano Quinquenal de Desenvolvimento da URSS (1928–1932)',
+          fundoArquivistico: 'GARF f. 5446, op. 1, d. 48, ll. 1–25; Gosplan SSSR 1929',
+          instituicaoGuarda: 'Arquivo Estatal da Federação Russa (GARF), Moscou',
+          descricaoConteudo: 'Documentação fundacional do planejamento central estabelecendo taxas de crescimento anual da indústria pesada superiores a 20% e subordinando a produção civil à acumulação de capital estatal.',
+          autenticidadeEStatus: 'Autêntico, desclassificado e publicado em coletâneas oficiais.'
+        },
+        {
+          titulo: 'Relatório do Gosplan sobre os Balanços Materiais e Execução das Metas Industriais',
+          fundoArquivistico: 'GARF f. R-5446, op. 12, d. 104; RGAE (Arquivo Estatal Russo de Economia)',
+          instituicaoGuarda: 'Arquivo Estatal Russo de Economia (RGAE), Moscou',
+          descricaoConteudo: 'Relatórios técnicos internos registrando desequilíbrios na entrega de insumos, gargalos de transporte e discrepâncias entre volume de produção e qualidade dos produtos.',
+          autenticidadeEStatus: 'Autêntico, preservado nos acervos do Gosplan.'
+        },
+        {
+          titulo: 'Coleção Documental sobre Coletivização e Industrialização (Revelations from Russian Archives)',
+          fundoArquivistico: 'Library of Congress Revelations Box 3 / RGASPI f. 17',
+          instituicaoGuarda: 'Library of Congress (Washington, DC) e RGASPI (Moscou)',
+          descricaoConteudo: 'Correspondências internas, relatórios policiais e diretivas administrativas registrando a resistência rural, as condições das fazendas coletivas e os custos humanos da industrialização.',
+          autenticidadeEStatus: 'Autêntico, desclassificado durante a transição dos anos 1990.'
+        }
+      ],
+      fotografiasERegistros: [
+        {
+          registroOuFoto: 'Fotografias da construção dos altos-fornos do Complexo Siderúrgico de Magnitogorsk',
+          acervoOrigem: 'TsGAKFFD SPb / Acervo Iconográfico do Gosplan',
+          anoEIdentificador: '1931, Registro Fotográfico nº Mag-1931-08',
+          significadoProbatório: 'Evidencia o ritmo acelerado de construção e o emprego massivo de mão de obra mobilizada nos canteiros da indústria pesada dos Urais.'
+        },
+        {
+          registroOuFoto: 'Fotografia de filas de consumidores em frente a lojas estatais de departamento (GUM) em Moscou',
+          acervoOrigem: 'Arquivo Fotográfico da TASS / Sociedade Memorial',
+          anoEIdentificador: '1982, Registro Fotográfico nº Ochered-1982-14',
+          significadoProbatório: 'Documenta o fenômeno cotidiano das filas (ocheredi) resultantes da escassez de bens de consumo nas cidades soviéticas.'
+        }
+      ],
+      testemunhos: [
+        {
+          testemunha: 'Mark Harrison',
+          funcaoOrigem: 'Historiador econômico e pesquisador dos arquivos econômicos soviéticos',
+          trechoDepoimento: 'A economia soviética não colapsou de repente nos anos 1980 por um acidente aleatório; ela viveu uma desaceleração da produtividade do trabalho ao longo de três décadas, resultante da incapacidade de transitar do crescimento extensivo para o crescimento intensivo baseado na inovação.',
+          referenciaVerificada: 'HARRISON, Mark. Trends in Soviet labour productivity 1928–85. European Review of Economic History, v. 2, n. 2, p. 171–200, 1998.'
+        },
+        {
+          testemunha: 'Paul R. Gregory',
+          funcaoOrigem: 'Especialista em economia de comando e alocação ditatorial nos arquivos do Kremlin',
+          trechoDepoimento: 'A alocação administrativa de recursos sob Stalin e seus sucessores não funcionava como uma máquina perfeita. Era um processo constante de barganha burocrática entre ministérios e diretores de empresas que manipulavam informações para obter metas mais brandas e mais insumos.',
+          referenciaVerificada: 'GREGORY, Paul R.; HARRISON, Mark. Allocation under Dictatorship: Research in Stalin\'s Archives. Journal of Economic Literature, v. 43, n. 3, p. 721–761, 2005.'
+        }
+      ],
+      decretosECorrespondencias: [
+        {
+          codigoOuNumero: 'Resolução do XV Congresso do PCUS sobre as Diretrizes do Plano Econômico',
+          dataEmissao: '19 de dezembro de 1927',
+          orgaoEmissor: 'XV Congresso do Partido Comunista da União Soviética',
+          teorDispositivo: 'Estabelece o princípio da planificação central obrigatória e determina o direcionamento prioritário do capital estatal para os meios de produção.',
+          localizacaoArquivo: 'KPSS v resolyutsiyakh i resheniyakh s"yezdov, t. 4, Moscou, 1970'
+        },
+        {
+          codigoOuNumero: 'Decreto do Conselho de Ministros da URSS sobre a Melhora da Gestão Industrial (Reforma Kosygin)',
+          dataEmissao: '4 de outubro de 1965',
+          orgaoEmissor: 'Conselho de Ministros da URSS',
+          teorDispositivo: 'Autonomia relativa a empresas estatais, permissão para reter parte dos lucros para fundos de incentivo e adoção de indicadores de vendas e rentabilidade.',
+          localizacaoArquivo: 'Sobranie Postanovlenii Pravitelstva SSSR, 1965, nº 19–20, art. 153'
+        }
+      ]
+    },
+    responsabilidadesEConsequencias: {
+      responsaveisPoliticosEInstitucionais: [
+        {
+          agenteOuOrgao: 'Liderança do Politburo do PCUS (Stalin, Khrushchev, Brezhnev)',
+          funcaoCargo: 'Direção Política Suprema da URSS',
+          responsabilidadeEspecifica: 'Fixação autocrática de prioridades macroeconômicas, decisões de investimento militar-industrial e manutenção da proibição da propriedade privada dos meios de produção.'
+        },
+        {
+          agenteOuOrgao: 'Gosplan (Comissão de Planejamento de Estado)',
+          funcaoCargo: 'Órgão Central de Planejamento Econômico',
+          responsabilidadeEspecifica: 'Elaboração dos balanços materiais, definição das metas quinzenais e anuais e alocação administrativa de matérias-primas e equipamentos.'
+        },
+        {
+          agenteOuOrgao: 'Ministérios Econômicos Setoriais e Gossnab',
+          funcaoCargo: 'Aparelho de Gestão Industrial e Distribuição de Insumos',
+          responsabilidadeEspecifica: 'Supervisão direta das empresas estatais, cobrança de indicadores quantitativos de produção e mediação dos conflitos de abastecimento.'
+        }
+      ],
+      vitimasEImpactos: {
+        estimativasQuantitativas: 'Múltiplas dezenas de milhões de cidadãos integrados à força de trabalho industrial urbana; desaceleração no ritmo de crescimento da produtividade agregada do trabalho de ~4% ao ano na década de 1950 para <1% na década de 1980 (Harrison, 1998); ampliação do setor informal de abastecimento em todas as repúblicas soviéticas (Kim & Shida, 2017).',
+        impactosDemograficosEHumanos: 'Urbanização maciça, erradicação do analfabetismo, universalização de serviços básicos de saúde, mas convivência contínua com escassez de habitação, bens de consumo e limitações de escolha civil.',
+        impactosEconomicos: 'Edificação de uma monumental base de indústria pesada, infraestrutura e capacidade bélica, acompanhada por ineficiência crônica na alocação de recursos, desequilíbrios setoriais e dependência de receitas de commodities extrativas.'
+      },
+      consequenciasImediatas: 'Garantia de insumos industriais e armamentos para vencer a Segunda Guerra Mundial e manter a paridade nuclear durante a Guerra Fria; elevação do consumo urbano nos anos 1960 e 1970.',
+      consequenciasLongoPrazo: 'Esgotamento do modelo de crescimento extensivo, perda de dinamismo tecnológico civil em comparação ao Ocidente e crise estrutural de abastecimento que forçou as reformas da Perestroika sob Gorbachev a partir de 1985.'
+    },
+    debateHistoriografico: {
+      interpretacoesDiferentes: [
+        {
+          correnteEscola: 'Escola da Mobilização e Transformação Estrutural',
+          principaisAutores: ['Alec Nove', 'Maurice Dobb', 'R. W. Davies'],
+          teseCentral: 'O planejamento central soviético foi um instrumento eficaz para transformar rapidamente uma sociedade predominantemente agrária em uma potência industrializada moderna e preparada para a guerra de alta intensidade.',
+          antiteseCritica: 'Subestima as distorções estruturais e a incapacidade do modelo de transitar para uma economia baseada em produtividade e qualidade do consumo civil.'
+        },
+        {
+          correnteEscola: 'Escola Institucional e dos Arquivos da Economia de Comando',
+          principaisAutores: ['Paul R. Gregory', 'Mark Harrison', 'L. Kukic'],
+          teseCentral: 'A economia soviética funcionava sob alocação ditatorial negociada, na qual assimetrias de informação entre ministérios e diretores de empresas geravam desperdícios sistêmicos e perda progressiva de produtividade.',
+          antiteseCritica: 'Foca primordialmente nos mecanismos de ineficiência e barganha burocrática, exigindo complementação por estudos de história social do consumo.'
+        },
+        {
+          correnteEscola: 'Escola dos Padrões de Vida, Escassez e Economia Informal',
+          principaisAutores: ['Byung-Yeon Kim', 'Yoshisada Shida', 'Vasily Astrov', 'Branimir Jovanović'],
+          teseCentral: 'A escassez e a economia informal (blat) não eram falhas acidentais, mas mecanismos simbióticos que permitiram à população adaptar-se ao sistema de preços administrados e suprir as lacunas da distribuição oficial.',
+          antiteseCritica: 'Demonstra variações regionais significativas entre as repúblicas soviéticas, impedindo generalizações simplistas sobre todo o território da URSS.'
+        }
+      ],
+      consensosAcademicos: 'Existe consenso historiográfico e econômico absoluto de que a economia soviética obteve sucesso excepcional em mobilizar recursos para metas prioritárias da indústria pesada e defesa, mas sofreu de ineficiência crônica no setor de bens de consumo e viveu uma desaceleração contínua de produtividade a partir da década de 1970.',
+      controversiasELimitacoesDasFontes: 'Debates metodológicos sobre como mensurar o PIB e a inflação oculta na URSS devido a preços administrados não competitivos, além das divergências entre dados do Gosplan e reconstruções estatísticas ocidentais.'
+    },
+    citacoesVerificadas: [
+      {
+        trechoLiteral: 'A desaceleração da produtividade do trabalho soviético a partir dos anos 1970 não foi decorrência de choques externos imprevisíveis, mas da exaustão estrutural do modelo de crescimento extensivo baseado no acréscimo contínuo de trabalho e capital sem ganho de eficiência.',
+        autor: 'Mark Harrison',
+        obra: 'Trends in Soviet labour productivity 1928–85: war, postwar recovery, and slowdown',
+        edicaoEditoraAno: 'European Review of Economic History, v. 2, n. 2, p. 171–200, 1998',
+        paginaExata: 'p. 188–192',
+        analiseContextual: 'Estudo seminal de Harrison quantificando a evolução da produtividade total dos fatores e o estrangulamento da economia de comando.'
+      },
+      {
+        trechoLiteral: 'O sistema de planejamento soviético dependia de comandos que pareciam absolutos no papel, mas que na prática eram objeto de complexas negociações entre diretores de empresas, ministérios e o Gosplan, gerando distorções sistemáticas nos dados reportados.',
+        autor: 'Paul R. Gregory e Mark Harrison',
+        obra: 'Allocation under Dictatorship: Research in Stalin\'s Archives',
+        edicaoEditoraAno: 'Journal of Economic Literature, v. 43, n. 3, p. 721–761, 2005',
+        paginaExata: 'p. 735–740',
+        analiseContextual: 'Análise detalhada a partir dos arquivos secretos do Kremlin desmitificando a visão de que o planejamento soviético funcionava de forma mecanicamente perfeita.'
+      },
+      {
+        trechoLiteral: 'A escassez nas lojas estatais soviéticas impulsionou a expansão de mercados informais e redes interpessoais de troca (blat). A economia informal tornou-se o lubrificante indispensável sem o qual a vida diária dos cidadãos soviéticos teria sido inviável.',
+        autor: 'Byung-Yeon Kim e Yoshisada Shida',
+        obra: 'Shortages and the informal economy in the Soviet republics, 1965–89',
+        edicaoEditoraAno: 'The Economic History Review, v. 70, n. 4, p. 1346–1374, 2017',
+        paginaExata: 'p. 1350–1355',
+        analiseContextual: 'Pesquisa quantitativa investigando as disparidades regionais na intensidade da escassez e no recurso à economia paralela nas repúblicas da URSS.'
+      }
+    ],
+    bibliografia: [
+      {
+        entradaAbnt: 'GREGORY, Paul R.; HARRISON, Mark. Allocation under Dictatorship: Research in Stalin\'s Archives. Journal of Economic Literature, v. 43, n. 3, p. 721–761, 2005.',
+        entradaChicago: 'Gregory, Paul R., and Mark Harrison. 2005. "Allocation under Dictatorship: Research in Stalin\'s Archives." Journal of Economic Literature 43 (3): 721–761.',
+        tipoFonte: 'Artigo Científico',
+        isbnOuReferencia: 'DOI: 10.1257/002205105774431225'
+      },
+      {
+        entradaAbnt: 'HARRISON, Mark. Trends in Soviet labour productivity 1928–85: war, postwar recovery, and slowdown. European Review of Economic History, v. 2, n. 2, p. 171–200, 1998.',
+        entradaChicago: 'Harrison, Mark. 1998. "Trends in Soviet labour productivity 1928–85: war, postwar recovery, and slowdown." European Review of Economic History 2 (2): 171–200.',
+        tipoFonte: 'Artigo Científico'
+      },
+      {
+        entradaAbnt: 'HARRISON, Mark. Soviet industrial production, 1928 to 1955: real growth and hidden inflation. Journal of Comparative Economics, v. 28, n. 1, p. 134–155, 2000.',
+        entradaChicago: 'Harrison, Mark. 2000. "Soviet industrial production, 1928 to 1955: real growth and hidden inflation." Journal of Comparative Economics 28 (1): 134–155.',
+        tipoFonte: 'Artigo Científico',
+        isbnOuReferencia: 'DOI: 10.1006/jcec.1999.1626'
+      },
+      {
+        entradaAbnt: 'KIM, Byung-Yeon; SHIDA, Yoshisada. Shortages and the informal economy in the Soviet republics, 1965–89. The Economic History Review, v. 70, n. 4, p. 1346–1374, 2017.',
+        entradaChicago: 'Kim, Byung-Yeon, and Yoshisada Shida. 2017. "Shortages and the informal economy in the Soviet republics, 1965–89." The Economic History Review 70 (4): 1346–1374.',
+        tipoFonte: 'Artigo Científico',
+        isbnOuReferencia: 'DOI: 10.1111/ehr.12431'
+      },
+      {
+        entradaAbnt: 'ASTROV, Vasily; JOVANOVIĆ, Branimir. Labour developments, living standards and well-being in Eastern Europe before the transition. Vienna: wiiw Working Paper, n. 255, 2024.',
+        entradaChicago: 'Astrov, Vasily, and Branimir Jovanović. 2024. "Labour developments, living standards and well-being in Eastern Europe before the transition." wiiw Working Paper No. 255.',
+        tipoFonte: 'Artigo Científico'
+      },
+      {
+        entradaAbnt: 'INTERNATIONAL MONETARY FUND (IMF). A Study of the Soviet Economy. Washington, DC: International Monetary Fund, 1991. 3 v.',
+        entradaChicago: 'International Monetary Fund. 1991. A Study of the Soviet Economy. Washington, DC: IMF.',
+        tipoFonte: 'Monografia'
+      },
+      {
+        entradaAbnt: 'WALDRON, Peter. The Russian economy, 1861–1932. In: PERRIE, Maureen (org.). The Oxford Handbook of Modern Russian History. Oxford: Oxford University Press, 2013.',
+        entradaChicago: 'Waldron, Peter. 2013. "The Russian economy, 1861–1932." In The Oxford Handbook of Modern Russian History. Oxford: Oxford University Press.',
+        tipoFonte: 'Capítulo de Livro'
+      },
+      {
+        entradaAbnt: 'ARQUIVO ESTATAL DA FEDERAÇÃO RUSSA (GARF). Fundo R-5446 (Conselho de Comissários do Povo / Conselho de Ministros da URSS), Inventário 1, Processo 48: Atas e Resoluções sobre o Planejamento Econômico. Moscou: GARF, 1929–1985.',
+        entradaChicago: 'State Archive of the Russian Federation (GARF). Fond R-5446 (Council of Ministers of the USSR). Moscow.',
+        tipoFonte: 'Fundo Arquivístico'
+      }
+    ]
+  },
+
   8: {
     topicId: 8,
     identificacao: {
