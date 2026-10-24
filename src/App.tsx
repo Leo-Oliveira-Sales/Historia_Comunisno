@@ -79,6 +79,17 @@ export default function App() {
     });
   };
 
+  if (selectedTopic) {
+    return (
+      <DossierModal
+        topic={selectedTopic}
+        onClose={() => setSelectedTopic(null)}
+        isSaved={savedTopicIds.includes(selectedTopic.id)}
+        onToggleSave={handleToggleSave}
+      />
+    );
+  }
+
   return (
     <div className="min-h-screen bg-[#121214] text-[#EBE6DF] flex flex-col selection:bg-red-900 selection:text-white">
       {/* Top Bar Contract Navigation */}
@@ -262,16 +273,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-
-      {/* MODAL 1: Full Dossier Inspection */}
-      {selectedTopic && (
-        <DossierModal
-          topic={selectedTopic}
-          onClose={() => setSelectedTopic(null)}
-          isSaved={savedTopicIds.includes(selectedTopic.id)}
-          onToggleSave={handleToggleSave}
-        />
-      )}
 
       {/* MODAL 2: Personal Research Notebook */}
       {isNotebookOpen && (
