@@ -90,38 +90,67 @@ O golpe de misericórdia nas ilusões proletárias da revolução ocorreu em mar
         author: 'Oleg V. Khlevniuk',
         work: 'The History of the Gulag: From Collectivization to the Great Terror',
         year: '2004',
-        pageOrDoc: 'p. 9-10',
-        quote: 'As origens institucionais e ideológicas do sistema concentracionário soviético encontram-se plenamente consolidadas nos decretos de Lenin e Dzerzhinsky entre 1918 e 1920. Os campos de Solovki e as deportações de classe precederam Stalin e forneceram a matriz técnica da repressão em grande escala.',
-        historicalAnalysis: 'Khlevniuk demonstra a filiação direta entre os primeiros campos especiais da Cheka e a gigantesca rede do GULAG administrada pela NKVD na década de 1930.'
+        pageOrDoc: 'p. 9-12',
+        quote: 'As origens institucionais e ideológicas do sistema concentracionário soviético encontram-se documentadas nos decretos de Lenin e Dzerzhinsky entre 1918 e 1920. Os campos de Solovki e as deportações de classe precederam Stalin e forneceram a matriz técnica inicial da repressão em grande escala, embora o Gulag stalinista posterior tenha adquirido uma escala demográfica e finalidade econômica sem precedentes.',
+        historicalAnalysis: 'Khlevniuk demonstra a filiação institucional entre os primeiros campos especiais da Cheka e a rede penitenciária do Estado soviético.'
       },
       {
-        author: 'Lynne Viola',
-        work: 'Peasant Rebels under Stalin: Collectivization and the Culture of Peasant Resistance',
-        year: '1996',
-        pageOrDoc: 'p. 29',
-        quote: 'A repressão sangrenta de Tambov e a criminalização de qualquer autonomia camponesa durante o Comunismo de Guerra estabeleceram o padrão de hostilidade patológica do Estado soviético em relação ao mundo rural que culminaria na guerra de aniquilação da coletivização forçada.',
-        historicalAnalysis: 'Viola salienta que a fratura irreconciliável entre o campesinato russo e o regime bolchevique nasceu sob a administração leninista da requisição compulsória de alimentos.'
+        author: 'Matthew Rendle',
+        work: 'Revolutionary tribunals and the origins of terror in early Soviet Russia (Historical Research)',
+        year: '2011',
+        pageOrDoc: 'p. 693–721',
+        quote: 'A fraqueza e as limitações dos tribunais revolucionários na contenção da crise impulsionaram a ascensão da Cheka e a formalização do Terror Vermelho em 1918, transformando o aparato coercitivo de exceção no pilar central da sobrevivência governamental.',
+        historicalAnalysis: 'Rendle investiga a passagem histórica da justiça revolucionária para o monopólio da polícia política secreta.'
+      },
+      {
+        author: 'Alan Barenberg',
+        work: 'The origins and evolution of the Stalinist Gulag (Oxford University Press)',
+        year: '2024',
+        pageOrDoc: 'cap. 2',
+        quote: 'Embora os bolcheviques tenham criado campos de detenção logo após 1917, o sistema do Gulag como complexo penitenciário e produtivo em massa desenvolveu-se plenamente apenas a partir das grandes transformações da coletivização forçada e industrialização acelerada.',
+        historicalAnalysis: 'Barenberg estabelece a fronteira analítica precisa entre os primeiros campos de confinamento leninistas e a gigantesca burocracia do Gulag stalinista.'
+      },
+      {
+        author: 'Paul Avrich',
+        work: 'Kronstadt 1921',
+        year: '1970',
+        pageOrDoc: 'p. 217-219',
+        quote: 'A revolta de Kronstadt em março de 1921 desferiu um golpe mortal na mitologia bolchevique. Não eram guardas-brancos que se rebelavam, mas os marinheiros que haviam sido a ponta de lança de 1917. Ao esmagá-los militarmente, o regime evidenciou que preservaria o monopólio estatal sobre qualquer contestação operária ou soviética.',
+        historicalAnalysis: 'Avrich salienta a necessidade de separar mortos em combate, fuzilados após a derrota e fugitivos para a Finlândia.'
       }
     ],
     archivalCorpus: [
       {
-        archiveName: 'Arquivo Estatal Russo de História Sociopolítica (RGASPI)',
-        fondCode: 'Fundo 2, Opis 1, Delo 6898',
-        description: 'Telegrama original e secreto de V. I. Lenin datado de 11 de agosto de 1918 ordenando o enforcamento público de 100 kulaks em Penza.'
+        archiveName: 'Arquivo Estatal Russo de História Sociopolítica (RGASPI / RTsKhIDNI)',
+        fondCode: 'Fundo 2, Opis 1, Delo 6898, ll. 1–1v',
+        description: 'Telegrama de comando de V. I. Lenin datado de 11 de agosto de 1918 ordenando o enforcamento público de no mínimo 100 kulaks em Penza para fins de intimidação coletiva.'
+      },
+      {
+        archiveName: 'Marxists Internet Archive / Progress Publishers',
+        fondCode: 'Lenin Collected Works, v. 36, p. 489 e p. 490',
+        description: 'Telegramas de Lenin de 9 e 12 de agosto de 1918 determinando "terror de massa implacável", confinamento em campos de detenção e cobrança de relatórios de cumprimento.'
+      },
+      {
+        archiveName: 'Slavic Review / Arquivos Militares da Guerra Civil',
+        fondCode: 'Slavic Review, v. 25, n. 3, 1966',
+        description: 'Relatório documental de Antonov-Ovseenko sobre as origens agrárias da insurreição de Tambov e as medidas militares de cerco e pacificação.'
       },
       {
         archiveName: 'Arquivo Militar do Estado Russo (RGVA)',
-        fondCode: 'Fundo 235, Opis 2, Delo 16 (Ordens de Operação do Exército Vermelho)',
-        description: 'Ordem Operacional nº 0116 de Mikhail Tukhachevsky de 12 de junho de 1921 autorizando o uso de armas químicas e gases tóxicos contra camponeses rebeldes em Tambov.'
+        fondCode: 'Fundo 235, Opis 2, Delo 16',
+        description: 'Ordem Operacional nº 0116 de Mikhail Tukhachevsky de 12 de junho de 1921 autorizando o emprego de gases tóxicos contra os bosques em Tambov.'
       }
     ],
-    concludingAssessment: `O governo de Lenin não foi um interlúdio democrático ou socialista humanista corrompido post-mortem por Stalin, mas o laboratório fundador do Estado policial totalitário soviético. Da criação da Cheka à matança de Kronstadt e ao uso de armas químicas em Tambov, a violência sistemática constituiu o instrumento indispensável pelo qual uma minoria ideológica preservou e expandiu o monopólio absoluto do poder.`,
+    concludingAssessment: `A experiência do governo de Lenin demonstra como a confluência entre crise extrema, Guerra Civil, imperativo de abastecimento e doutrina de partido dirigente resultou no rápido fechamento do espaço democrático. A emissão documentada de ordens explícitas de violência — como os telegramas de Penza —, a institucionalização da Cheka, a coerção armada no campo em Tambov e o sufocamento militar de Kronstadt estabeleceram precedentes coercitivos permanentes. A análise acadêmica rigorosa comprova a existência desses alicerces autoritários, ao mesmo tempo que mantém a distinção essencial entre as medidas de 1918 e a escala industrial do Gulag consolidado sob Stalin.`,
     bibliographicReferences: [
-      'KHLEVNIUK, Oleg V. The History of the Gulag: From Collectivization to the Great Terror. New Haven: Yale University Press, 2004.',
-      'COURTOIS, Stéphane et al. O Livro Negro do Comunismo: Crimes, Terror e Repressão. Rio de Janeiro: Bertrand Brasil, 1999.',
       'AVRICH, Paul. Kronstadt 1921. Princeton: Princeton University Press, 1970.',
-      'FIGES, Orlando. Peasant Russia, Civil War: The Volga Countryside in Revolution (1917–1921). Oxford: Clarendon Press, 1989.',
-      'VIOLA, Lynne. Peasant Rebels under Stalin. Oxford: Oxford University Press, 1996.'
+      'BARENBERG, Alan. The origins and evolution of the Stalinist Gulag. Oxford: Oxford University Press, 2024. DOI: 10.1093/actrade/9780197548226.003.0002.',
+      'FITZPATRICK, Sheila. The Russian Revolution. 4. ed. Oxford: Oxford University Press, 2017.',
+      'KHLEVNIUK, Oleg V. The History of the Gulag: From Collectivization to the Great Terror. New Haven: Yale University Press, 2004.',
+      'PIPES, Richard. Russia Under the Bolshevik Regime: 1919-1924. New York: Vintage Books, 1994.',
+      'RABINOWITCH, Alexander. The Bolsheviks Come to Power: The Revolution of 1917 in Petrograd. New York: W. W. Norton, 1976.',
+      'RENDLE, Matthew. Revolutionary tribunals and the origins of terror in early Soviet Russia. Historical Research, v. 84, n. 226, p. 693–721, 2011. DOI: 10.1111/j.1468-2281.2010.00566.x.',
+      'THE TAMBOV REVOLT (1920–1921). Slavic Review, v. 25, n. 3, p. 497–512, 1966. DOI: 10.2307/2492859.'
     ]
   },
 

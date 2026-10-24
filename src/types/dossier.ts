@@ -8,10 +8,27 @@ export type HistoricalPeriod =
   | '1985-1991' // Era Gorbachev e Dissolução
   | 'internacional'; // Bloco e Guerra Fria
 
+export type PrimarySourceDocumentType = 
+  | 'Tratado Diplomático' 
+  | 'Protocolo Secreto' 
+  | 'Decreto / Ordem' 
+  | 'Telegrama Oficial' 
+  | 'Relatório de Inteligência' 
+  | 'Documento Nazista-Soviético' 
+  | 'Estudo Acadêmico Pari' 
+  | 'Telegrama de Comando' 
+  | 'Relatório Administrativo Militar' 
+  | 'Resolução Política / Registros Militares' 
+  | 'Ordem Operacional Secreta' 
+  | 'Resolução Política de Cúpula' 
+  | 'Listas Nominais de Condenação' 
+  | 'Circular Secreta Partidária' 
+  | string;
+
 export interface PrimarySource {
   title: string;
   institution: string; // Ex: Library of Congress, Wilson Center, Yale Avalon, NARA, Bundesarchiv, GHDI, Hoover Institution, Yale Annals of Communism
-  documentType: 'Tratado Diplomático' | 'Protocolo Secreto' | 'Decreto / Ordem' | 'Telegrama Oficial' | 'Relatório de Inteligência' | 'Documento Nazista-Soviético' | 'Estudo Acadêmico Pari';
+  documentType: PrimarySourceDocumentType;
   year: string;
   archiveReference: string; // Ex: NARA Record Group 242, Yale Avalon Doc #1939-08-23, LoC Revelations Box 4
   url?: string;
@@ -266,10 +283,19 @@ export interface CanonicalCitacaoVerificada {
   analiseContextual: string;
 }
 
+export type CanonicalTipoFonte = 
+  | 'Monografia' 
+  | 'Coletânea Documental' 
+  | 'Artigo Periódico' 
+  | 'Fundo Arquivístico' 
+  | 'Capítulo de Livro' 
+  | 'Artigo Científico' 
+  | string;
+
 export interface CanonicalReferenciaBibliografica {
   entradaAbnt: string;
   entradaChicago: string;
-  tipoFonte: 'Monografia' | 'Coletânea Documental' | 'Artigo Periódico' | 'Fundo Arquivístico';
+  tipoFonte: CanonicalTipoFonte;
   isbnOuReferencia?: string;
 }
 

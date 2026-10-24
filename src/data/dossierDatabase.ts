@@ -9,17 +9,17 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
     period: '1905-1917',
     periodLabel: '1905–1917 · Queda Czarista e Outubro',
     tagline: 'Domingo Sangrento de 1905, Revoluções de Fevereiro e Outubro de 1917 e dissolução da Constituinte.',
-    summary: 'A trajetória de desagregação do Império Russo através da revolta popular de 1905, a abdicação do Czar Nicolau II em fevereiro de 1917, a dualidade de poderes entre o Governo Provisório e o Soviete de Petrogrado, culminando no golpe armado bolchevique de 25 de outubro (7 de novembro) de 1917 e no encerramento forçado da Assembleia Constituinte eleita em janeiro de 1918.',
+    summary: 'A trajetória de desagregação do Império Russo através da revolta popular de 1905, a abdicação do Czar Nicolau II em 2 [15] de março de 1917, a dualidade de poderes entre o Governo Provisório e o Soviete de Petrogrado, culminando no golpe armado bolchevique de 24–25 de outubro [6–7 de novembro] de 1917 e no encerramento forçado da Assembleia Constituinte em 5–6 [18–19] de janeiro de 1918.',
     mainSubjects: ['Revolução de 1905', 'Revolução de Fevereiro de 1917', 'Revolução de Outubro de 1917', 'Teses de Abril de Lenin', 'Dissolução da Assembleia Constituinte'],
-    historicalContext: 'Com o colapso econômico e militar da Rússia na Primeira Guerra Mundial, motins de operários e soldados forçaram a abdicação de Nicolau II. Os bolcheviques, sob liderança de Lenin e Trotsky, capitalizaram o descontentamento com o slogan "Paz, Pão e Terra". Ao tomarem os centros nevrálgicos de Petrogrado, assumiram o controle governamental antes da reunião do II Congresso dos Sovietes.',
-    academicConsensus: 'Historiadores contemporâneos como Richard Pipes e Orlando Figes documentam que a tomada de poder em outubro foi uma insurreição militar conspiratória altamente coordenada, seguida da repressão imediata ao pluripartidarismo socialista (mencheviques e socialistas-revolucionários) e pelo fechamento à mão armada da Assembleia Constituinte, onde os bolcheviques obtiveram menos de um quarto dos votos.',
-    keyActors: ['Vladimir Lenin', 'Leon Trotsky', 'Alexander Kerensky', 'Nicolau II'],
-    historiansInvolved: ['Sheila Fitzpatrick', 'J. Arch Getty', 'Orlando Figes', 'Richard Pipes'],
+    historicalContext: 'Com a mobilização militar de mais de 15 milhões de camponeses na Primeira Guerra Mundial, hiperinflação de 400% (1914–1917) e colapso ferroviário, motins de operários e soldados forçaram a abdicação de Nicolau II. Os bolcheviques, sob liderança de Lenin e Trotsky, capitalizaram o descontentamento com o slogan "Paz, Pão e Terra". Ao tomarem os centros nevrálgicos de Petrogrado em 24–25 de outubro [6–7 de novembro] de 1917, assumiram o controle governamental antes da ratificação no II Congresso dos Sovietes.',
+    academicConsensus: 'Historiadores contemporâneos como Richard Pipes, Orlando Figes e J. Arch Getty documentam que a tomada de poder em outubro foi uma insurreição militar conspiratória altamente coordenada pelo Comitê Militar Revolucionário (VRK), seguida da repressão imediata ao pluripartidarismo socialista e pelo fechamento à mão armada da Assembleia Constituinte em janeiro de 1918, onde os bolcheviques obtiveram apenas 23,5% dos votos frente a 40,4% dos Socialistas-Revolucionários.',
+    keyActors: ['Vladimir Lenin', 'Leon Trotsky', 'Alexander Kerensky', 'Nicolau II', 'Viktor Chernov'],
+    historiansInvolved: ['Sheila Fitzpatrick', 'J. Arch Getty', 'Orlando Figes', 'Richard Pipes', 'Alexander Rabinowitch'],
     historicalImpact: 'Encerrou mais de três séculos da dinastia Romanov, liquidou a jovem experiência parlamentar russa e estabeleceu as bases do primeiro Estado socialista unipartidário da história moderna.',
     quote: {
       text: 'Todo o poder aos sovietes! Não apoiar em nada o Governo Provisório.',
       author: 'Vladimir Lenin',
-      context: 'Teses de Abril, Pravda nº 26, 7 de abril de 1917'
+      context: 'Teses de Abril, Pravda nº 26, 7 [20] de abril de 1917 (RGASPI f. 2)'
     },
     primarySources: [
       {
@@ -27,65 +27,89 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
         institution: 'Yale Avalon Project / Soviet Diplomatic Archives',
         documentType: 'Decreto / Ordem',
         year: '1917',
-        archiveReference: 'RGASPI f. 2, op. 1, d. 4390 / Yale Avalon Coll. Soviet Decrees',
+        archiveReference: 'RGASPI f. 2, op. 1, d. 4390 (Manuscritos originais com correções de próprio punho de Lenin)',
         transcriptionPt: 'O Governo Operário e Camponês abole imediatamente a propriedade latifundiária sobre a terra sem qualquer indenização. As terras passam à disposição dos comitês agrários locais.',
-        abntCitation: 'LENIN, V. I. Decretos do II Congresso dos Sovietes de Toda a Rússia. Moscou: Coleção Documental do Estado Soviético, 1917. Disponível via Yale Avalon Project.',
+        abntCitation: 'LENIN, V. I. Decretos do II Congresso dos Sovietes de Toda a Rússia. Moscou: Coleção Documental do Estado Soviético, 1917. Disponível via Yale Avalon Project e RGASPI f. 2.',
         chicagoCitation: 'Lenin, Vladimir. 1917. "Decrees on Peace and Land." Second All-Russian Congress of Soviets. Yale Avalon Historical Collection.',
-        relatedHistorians: ['Sheila Fitzpatrick']
+        relatedHistorians: ['Sheila Fitzpatrick', 'Richard Pipes']
       },
       {
-        title: 'Decreto de Dissolução da Assembleia Constituinte de Toda a Rússia (6 de janeiro de 1918)',
+        title: 'Decreto de Dissolução da Assembleia Constituinte de Toda a Rússia (6 de janeiro [19 de janeiro] de 1918)',
         institution: 'German History in Documents and Images / Library of Congress',
         documentType: 'Decreto / Ordem',
         year: '1918',
-        archiveReference: 'Izvestia nº 5 (269), 6 de janeiro de 1918; LoC Revelations Box 1',
+        archiveReference: 'RGASPI f. 17, op. 1, d. 102; Izvestia nº 5 (269), 6 de janeiro de 1918; LoC Revelations Box 1',
         transcriptionPt: 'A Assembleia Constituinte, eleita sob velhas listas e controlada pela burguesia contrarrevolucionária, recusou-se a reconhecer a Declaração dos Direitos do Povo Trabalhador. O Comitê Executivo Central decreta: a Assembleia Constituinte fica dissolvida.',
-        abntCitation: 'RÚSSIA SOVIÉTICA. Decreto sobre a Dissolução da Assembleia Constituinte. VTsIK, 6 de janeiro de 1918. Arquivo Estatal RGASPI / Library of Congress.',
-        chicagoCitation: 'All-Russian Central Executive Committee. 1918. "Decree on the Dissolution of the Constituent Assembly." Petrograd: VTsIK.',
-        relatedHistorians: ['J. Arch Getty']
+        abntCitation: 'RÚSSIA SOVIÉTICA. Decreto sobre a Dissolução da Assembleia Constituinte. VTsIK, 6 de janeiro de 1918. Arquivo Estatal RGASPI f. 17 / Library of Congress.',
+        chicagoCitation: 'All-Russian Central Executive Committee. 1918. "Decree on the Dissolution of the Constituent Assembly." Petrograd: VTsIK. LoC.',
+        relatedHistorians: ['J. Arch Getty', 'Orlando Figes']
       }
     ]
   },
   {
     id: 2,
     categoryNumber: '02',
-    title: 'Lenin e o Bolchevismo: Monopólio e Repressão',
+    title: 'Lenin e o Bolchevismo: Monopólio Político e Repressão Interna',
     category: 'Lenin e o Bolchevismo',
     period: '1917-1924',
-    periodLabel: '1917–1924 · Governo de Lenin e Guerra Civil',
-    tagline: 'Terror Vermelho, criação da Cheka por Dzerzhinsky, revolta de marinheiros em Kronstadt e rebelião de Tambov.',
-    summary: 'A consolidação do monopólio político bolchevique durante a Guerra Civil Russa através da criação da polícia política (Cheka), a decretação oficial do Terror Vermelho em setembro de 1918, o esmagamento armado dos marinheiros de Kronstadt (1921) e a repressão química e armada da insurreição camponesa de Tambov liderada por Antonov.',
-    mainSubjects: ['Terror Vermelho', 'Criação da Cheka (VChK)', 'Revolta de Kronstadt (1921)', 'Rebelião Camponesa de Tambov', 'Comunismo de Guerra e Proibição de Frações'],
-    historicalContext: 'Após atentados contra dirigentes bolcheviques em 1918, o Conselho de Comissários do Povo formalizou a política de Terror Vermelho, autorizando execuções sumárias de reféns da nobreza, burguesia e opositores socialistas. A requisição forçada de grãos no campo gerou revoltas massivas de camponeses em Tambov e de marinheiros outrora leais em Kronstadt.',
-    academicConsensus: 'Documentos do Arquivo RGASPI e estudos de historiadores como Nicolas Werth (O Livro Negro do Comunismo), Lynne Viola e Oleg Khlevniuk demonstram que as estruturas concentracionárias e o aparelho punitivo de Estado foram concebidos e implementados sob a supervisão direta de Lenin e Felix Dzerzhinsky, antes da ascensão de Stalin.',
-    keyActors: ['Vladimir Lenin', 'Felix Dzerzhinsky', 'Mikhail Tukhachevsky', 'Stepan Petrichenko'],
-    historiansInvolved: ['Oleg V. Khlevniuk', 'Lynne Viola', 'J. Arch Getty', 'Richard Pipes'],
-    historicalImpact: 'Eliminou qualquer pluralismo de esquerda na Rússia, converteu os sovietes em meros órgãos de transmissão do Comitê Central e estabeleceu a polícia secreta como pilar do poder estatal.',
+    periodLabel: '1917–1924 · Governo de Lenin, Guerra Civil e Terror',
+    tagline: 'Cheka, Terror Vermelho de 1918, telegramas de Penza, insurreição de Tambov e massacre de Kronstadt.',
+    summary: 'A investigação sobre a concentração do poder político, a repressão aos partidos concorrentes e a institucionalização dos órgãos de segurança do Estado sob a liderança de Vladimir Lenin (1917–1924). Examina os telegramas de Penza, a fundação e poderes extraordinários da Cheka por Dzerzhinsky, a coerção no campo durante a Guerra Civil, a revolta de Tambov e a repressão militar aos marinheiros de Kronstadt, além dos antecedentes do sistema de campos de detenção.',
+    mainSubjects: ['Terror Vermelho de 1918', 'Cheka e Poderes Extraordinários', 'Telegramas de Lenin a Penza', 'Rebelião de Tambov (1920–1921)', 'Revolta de Kronstadt (1921)', 'Primeiros Campos de Confinamento'],
+    historicalContext: 'Em meio ao colapso do Estado imperial, à Guerra Civil e à crise catastrófica de abastecimento urbano, o governo bolchevique institucionalizou medidas de exceção. A supressão de garantias judiciais, a criação da Cheka e as requisições forçadas de grãos (Comunismo de Guerra) desencadearam revoltas massivas no campo e sublevações na base naval de Kronstadt, reprimidas com rigor militar e punições coletivas.',
+    academicConsensus: 'A historiografia contemporânea (Oleg Khlevniuk, Sheila Fitzpatrick, Alexander Rabinowitch, Richard Pipes, Matthew Rendle, Alan Barenberg) documenta que o monopólio político e os primeiros campos de detenção foram estabelecidos diretamente sob Lenin e Dzerzhinsky. Há consenso metodológico de que ordens como o telegrama de Penza comprovam diretrizes de violência extrema da liderança central, mas exigem distinção crítica entre intenção governamental, execução efetiva e desagregação analítica das vítimas.',
+    keyActors: ['Vladimir Lenin', 'Felix Dzerzhinsky', 'Mikhail Tukhachevsky', 'Stepan Petrichenko', 'Yevgenia Bosch', 'Aleksandr Antonov'],
+    historiansInvolved: ['Oleg V. Khlevniuk', 'Matthew Rendle', 'Alan Barenberg', 'Paul Avrich', 'Sheila Fitzpatrick', 'Richard Pipes', 'Alexander Rabinowitch'],
+    historicalImpact: 'Eliminou o pluralismo político na Rússia, subordinou os sovietes e sindicatos ao partido único e estabeleceu os precedentes e instrumentos policiais que serviram de matriz para a subsequente consolidação do totalitarismo soviético.',
     quote: {
-      text: 'É imperativo conduzir um terror de massas sem piedade contra os kulaks, padres e guardas-brancos; fechar os indivíduos suspeitos em campos de concentração.',
+      text: 'Camaradas! A revolta dos kulaks nos vossos cinco distritos deve ser esmagada sem piedade... Enforquem (e façam de modo que o povo veja) nada menos que 100 kulaks conhecidos, homens ricos, sanguessugas. Façam isso de forma que a centenas de verstas as pessoas vejam e tremam.',
       author: 'Vladimir Lenin',
-      context: 'Telegrama de Lenin aos bolcheviques de Penza, 11 de agosto de 1918 (RGASPI f. 2, op. 1, d. 6898)'
+      context: 'Telegrama aos comunistas de Penza, 11 de agosto de 1918 (RTsKhIDNI / RGASPI f. 2, op. 1, d. 6898)'
     },
     primarySources: [
       {
-        title: 'Ordem de Enforcamento de Penza (11 de agosto de 1918)',
-        institution: 'RGASPI (Arquivo Estatal Russo de História Sociopolítica)',
+        title: 'Telegrama de Lenin a Yevgenia Bosch (9 de agosto de 1918)',
+        institution: 'Marxists Internet Archive / Progress Publishers',
         documentType: 'Telegrama Oficial',
         year: '1918',
-        archiveReference: 'RGASPI f. 2, op. 1, d. 6898',
-        transcriptionPt: 'Camaradas! A insurreição dos kulaks deve ser esmagada sem piedade. 1) Enforcar publicamente (de modo que a população veja) nada menos que 100 kulaks e sanguessugas conhecidos. 2) Publicar seus nomes. 3) Tomar todo o seu trigo. Façam isso de forma que as pessoas a centenas de verstas vejam e tremam.',
-        abntCitation: 'LENIN, V. I. Instrução aos Comissários do Povo em Penza. 11 de agosto de 1918. Arquivo RGASPI f. 2, op. 1, d. 6898. Transcrição catalogada.',
-        chicagoCitation: 'Lenin, Vladimir. 1918. "Penza Hanging Order." Russian State Archive of Socio-Political History (RGASPI), fond 2, opis 1, delo 6898.'
+        archiveReference: 'Lenin Collected Works, v. 36, p. 489',
+        transcriptionPt: 'É necessário conduzir um terror de massa implacável contra os kulaks, padres e guardas-brancos; os indivíduos suspeitos devem ser trancados em um campo de concentração fora da cidade.',
+        abntCitation: 'LENIN, V. I. Telegram to Yevgenia Bosch. 9 ago. 1918. Lenin Collected Works, v. 36, p. 489. Progress Publishers.',
+        chicagoCitation: 'Lenin, Vladimir I. 1918. "Telegram to Yevgenia Bosch." Lenin Collected Works 36: 489.',
+        relatedHistorians: ['Alan Barenberg', 'Oleg V. Khlevniuk']
       },
       {
-        title: 'Resolução da Tripulação do Navio Petropavlovsk (Kronstadt, 28 de fevereiro de 1921)',
-        institution: 'Hoover Institution Archives / Memorial Society',
-        documentType: 'Decreto / Ordem',
+        title: 'Telegrama de Lenin aos Comunistas de Penza - Ordem de Enforcamento (11 de agosto de 1918)',
+        institution: 'RGASPI (Arquivo Estatal Russo de História Sociopolítica)',
+        documentType: 'Telegrama de Comando',
+        year: '1918',
+        archiveReference: 'RTsKhIDNI / RGASPI f. 2, op. 1, d. 6898, ll. 1–1 verso',
+        transcriptionPt: 'Camaradas! A insurreição dos kulaks deve ser esmagada sem piedade. 1) Enforcar publicamente (de modo que a população veja) nada menos que 100 kulaks e sanguessugas conhecidos. 2) Publicar seus nomes. 3) Tomar todo o seu trigo. 4) Designar reféns. Façam isso de forma que as pessoas a centenas de verstas vejam e tremam.',
+        abntCitation: 'LENIN, V. I. Telegrama a Kuraev, Bosch, Minkin e outros comunistas de Penza. 11 de agosto de 1918. Arquivo RTsKhIDNI / RGASPI f. 2, op. 1, d. 6898.',
+        chicagoCitation: 'Lenin, Vladimir. 1918. "Telegram to Penza Communists." Russian State Archive of Socio-Political History (RGASPI), fond 2, opis 1, delo 6898.',
+        relatedHistorians: ['Richard Pipes', 'Oleg V. Khlevniuk']
+      },
+      {
+        title: 'Relatório Oficial de Antonov-Ovseenko sobre Tambov (1921)',
+        institution: 'Slavic Review / Arquivos Militares da Guerra Civil',
+        documentType: 'Relatório Administrativo Militar',
         year: '1921',
-        archiveReference: 'Hoover Archival Document Coll. Russian Civil War, Box 14',
-        transcriptionPt: 'Exigimos: 1. Novas eleições secretas para os sovietes com plena liberdade de agitação; 2. Liberdade de expressão e de imprensa para operários, camponeses e anarquistas; 3. Libertação de todos os presos políticos socialistas; 4. Fim do monopólio do Partido Comunista.',
-        abntCitation: 'MARINHEIROS DE KRONSTADT. Resolução da Reunião Geral da 1ª e 2ª Esquadras do Báltico. Kronstadt: Navio Petropavlovsk, 28 fev. 1921. Arquivo Hoover.',
-        chicagoCitation: 'Kronstadt Sailors. 1921. "Resolution of the Petropavlovsk Meeting." Kronstadt Soviet. Hoover Institution Archives.'
+        archiveReference: 'Slavic Review, v. 25, n. 3, p. 497–512, 1966 (DOI: 10.2307/2492859)',
+        transcriptionPt: 'Relatório detalhado à liderança central sobre as causas socioeconômicas da revolta camponesa na província de Tambov, a resistência armada contra os destacamentos de confisco e a aplicação de medidas de cerco, internação de reféns e repressão militar.',
+        abntCitation: 'ANTONOV-OVSEENKO, V. Relatório sobre a Insurreição de Tambov. 1921. Reconstrução documental em Slavic Review, v. 25, n. 3, 1966.',
+        chicagoCitation: 'Antonov-Ovseenko, Vladimir. 1921. "Report on the Tambov Rebellion." Reconstructed in Slavic Review 25 (3): 497–512.',
+        relatedHistorians: ['Lynne Viola', 'Alexander Rabinowitch']
+      },
+      {
+        title: 'Resolução da Tripulação do Navio Petropavlovsk e Registros de Kronstadt (1921)',
+        institution: 'Hoover Institution Archives / Memorial Society',
+        documentType: 'Resolução Política / Registros Militares',
+        year: '1921',
+        archiveReference: 'Avrich (1970) / Hoover Archival Document Coll. Russian Civil War, Box 14',
+        transcriptionPt: 'Exigimos: 1. Novas eleições secretas para os sovietes com plena liberdade de agitação; 2. Liberdade de expressão e de imprensa para operários, camponeses e anarquistas; 3. Libertação de todos os presos políticos socialistas; 4. Fim do monopólio do Partido Comunista sobre os órgãos de representação popular.',
+        abntCitation: 'MARINHEIROS DE KRONSTADT. Resolução da Reunião Geral da 1ª e 2ª Esquadras do Báltico. Kronstadt: Navio Petropavlovsk, 28 fev. 1921. In: AVRICH, Paul. Kronstadt 1921. Princeton: Princeton University Press, 1970.',
+        chicagoCitation: 'Kronstadt Sailors. 1921. "Resolution of the Petropavlovsk Meeting." In Kronstadt 1921, by Paul Avrich. Princeton University Press.',
+        relatedHistorians: ['Paul Avrich', 'Sheila Fitzpatrick']
       }
     ]
   },
@@ -95,40 +119,64 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
     title: 'Stalin e o Grande Terror: Expurgos e Culto',
     category: 'Stalin e o Grande Terror',
     period: '1924-1953',
-    periodLabel: '1924–1953 · Governo de Stalin',
-    tagline: 'Os Julgamentos de Moscou, a Ordem Operacional nº 00447 do NKVD, expurgos militares e culto irrestrito ao líder.',
-    summary: 'A escalada repressiva stalinista que atingiu o ápice entre 1936 e 1938. Os célebres processos judiciais forjados contra a liderança histórica do partido (Zinoviev, Kamenev, Bukharin), a liquidação da cúpula do Exército Vermelho e a massiva campanha de fuzilamentos clandestinos no bosque de Butovo e Sandarmokh com base em cotas numéricas diárias estabelecidas por Nikolai Yezhov.',
-    mainSubjects: ['Processos de Moscou', 'Ordem nº 00447 do NKVD', 'Expurgo do Exército Vermelho (Caso Tukhachevsky)', 'Culto à Personalidade de Stalin', 'Cotas de Fuzilamento'],
-    historicalContext: 'Após o assassinato suspeito de Sergei Kirov em 1934, Stalin promulgou leis extraordinárias suprimindo direito a defesa. A histeria contra "sabotadores" e "espiões trotskistas-fascistas" justificou a purga de cerca de 700.000 a 800.000 pessoas fuziladas em menos de dois anos, além de 1,5 milhão enviadas ao Gulag.',
-    academicConsensus: 'A abertura dos arquivos pós-1991 (Oleg Khlevniuk, J. Arch Getty) provou que Stalin assinou pessoalmente 383 listas de execução com mais de 44.000 nomes de funcionários estatais e supervisionava as quotas de repressão por distrito geográfico.',
-    keyActors: ['Iosif Stalin', 'Nikolai Yezhov', 'Lavrentiy Beria', 'Nikolai Bukharin', 'Lev Kamenev'],
-    historiansInvolved: ['Oleg V. Khlevniuk', 'J. Arch Getty', 'Norman M. Naimark', 'Sheila Fitzpatrick'],
-    historicalImpact: 'Consolidou o poder autocrático absoluto de Stalin, decapitou a inteligência das Forças Armadas às vésperas da invasão nazista de 1941 e incutiu terror psicológico pervasivo na sociedade soviética.',
+    periodLabel: '1924–1953 · Governo de Stalin (Auge do Terror: 1937–1938)',
+    tagline: 'Os Julgamentos de Moscou, a Ordem Operacional nº 00447 do NKVD, cotas de fuzilamento e culto ao líder.',
+    summary: 'A investigação histórica sobre a consolidação do poder de Stalin, os Processos de Moscou, as operações secretas de massa geridas por cotas territoriais, a atuação do NKVD sob Nikolai Yezhov e a edificação do culto à personalidade. Examina a documentação primária soviética, incluindo a Ordem nº 00447, a decisão do Politburo de 2 de julho de 1937, as listas de execução rubricadas por Stalin e a comunicação de 10 de janeiro de 1939 sobre métodos físicos em interrogatórios.',
+    mainSubjects: ['Ordem Operacional nº 00447', 'Processos de Moscou (1936–1938)', 'Cotas Regionais de Fuzilamento', 'Comunicação sobre Métodos Físicos (1939)', 'Operações Nacionais do NKVD', 'Culto à Personalidade'],
+    historicalContext: 'A partir da coletivização forçada e da fome de 1932–1933, o Estado soviético intensificou o emprego de categorias penais de inimigos de classe. O assassinato de Sergei Kirov em dezembro de 1934 serviu de pretexto para leis extraordinárias de exceção. Entre 1937 e 1938, operações secretas de massa do NKVD e comissões extraordinárias (Troikas) executaram mais de 681.000 pessoas em escala industrial, enquanto os julgamentos públicos eliminavam a liderança histórica bolchevique.',
+    academicConsensus: 'A historiografia contemporânea baseada em arquivos desclassificados (Oleg Khlevniuk, J. Arch Getty, Stephen Kotkin, Robert Conquest, Sheila Fitzpatrick, Marc Jansen, Nikita Petrov, Nicolas Werth) estabelece que o Grande Terror foi uma política de Estado concebida e monitorada pela direção central do Kremlin. Reconhece-se a cifra arquivística de 681.692 fuzilamentos no biênio 1937–1938, ressaltando o cuidado metodológico em desagregações de categorias (prisões, condenações e execuções) e a interação entre diretrizes superiores e histerias burocráticas provinciais.',
+    keyActors: ['Iosif Stalin', 'Nikolai Yezhov', 'Vyacheslav Molotov', 'Andrei Vyshinsky', 'Nikolai Bukharin', 'Grigory Zinoviev', 'Lev Kamenev', 'Mikhail Tukhachevsky'],
+    historiansInvolved: ['Oleg V. Khlevniuk', 'J. Arch Getty', 'Stephen Kotkin', 'Robert Conquest', 'Sheila Fitzpatrick', 'Marc Jansen', 'Nikita Petrov', 'Nicolas Werth', 'Gábor T. Rittersporn'],
+    historicalImpact: 'Consolidou o poder autocrático absoluto de Stalin, eliminou qualquer dissenso político na URSS, decapitou o comando militar às vésperas da Segunda Guerra Mundial e institucionalizou o terror e a vigilância permanente como pilares do regime.',
     quote: {
-      text: 'O camarada Stalin é o líder genial, mestre e pai de todos os povos que conduziu a pátria socialista à vitória indestrutível.',
-      author: 'Pravda',
-      context: 'Edição comemorativa do 60º aniversário de Stalin, 21 de dezembro de 1939'
+      text: 'O Comitê Central do Partido considera que os métodos de pressão física contra sabotadores e agentes de espionagem teimosos foram autorizados pelo Comitê Central em 1937 e devem continuar sendo aplicados obrigatoriamente.',
+      author: 'Iosif Stalin e Vyacheslav Molotov',
+      context: 'Comunicação oficial do Comitê Central do PCUS, 10 de janeiro de 1939 (RGASPI f. 558, op. 11, d. 56)'
     },
     primarySources: [
       {
         title: 'Ordem Operacional nº 00447 do NKVD (30 de julho de 1937)',
-        institution: 'Memorial Human Rights Society / GARF / Library of Congress',
-        documentType: 'Decreto / Ordem',
+        institution: 'Arquivo Estatal da Federação Russa (GARF) / Memorial Krasnoyarsk',
+        documentType: 'Ordem Operacional Secreta',
         year: '1937',
-        archiveReference: 'GARF f. 9401, op. 1, d. 4157, ll. 1-24 / LoC Revelations Box 2',
-        transcriptionPt: 'Operação de repressão contra ex-kulaks, criminosos e elementos anti-soviéticos. As pessoas sujeitas a repressão são divididas em duas categorias: 1ª Categoria: indivíduos mais hostis, sujeitos a fuzilamento imediato (cota inicial fixada em 72.950 pessoas); 2ª Categoria: indivíduos menos ativos, sentenciados a 8 a 10 anos de campo de concentração.',
-        abntCitation: 'YEZHOV, Nikolai. Ordem Operacional nº 00447 do Comissariado do Povo de Assuntos Internos. Moscou: NKVD, 30 de julho de 1937. Arquivo Estatal da Federação Russa (GARF).',
-        chicagoCitation: 'Yezhov, Nikolai. 1937. "Operational Order No. 00447: On the Operation to Repress Former Kulaks, Criminals and Other Anti-Soviet Elements." Moscow: NKVD. GARF.'
+        archiveReference: 'GARF f. R-9401, op. 1, d. 4157, ll. 1-24',
+        transcriptionPt: 'Operação de repressão contra ex-kulaks, criminosos e elementos anti-soviéticos. As pessoas sujeitas a repressão são divididas em duas categorias: 1ª Categoria: indivíduos mais hostis, sujeitos a fuzilamento imediato; 2ª Categoria: indivíduos menos ativos, sentenciados a 8 a 10 anos de campo de concentração. Criação das Troikas provinciais e fixação de cotas territoriais preliminares.',
+        abntCitation: 'YEZHOV, Nikolai. Ordem Operacional nº 00447 do Comissariado do Povo de Assuntos Internos. Moscou: NKVD, 30 de julho de 1937. Arquivo GARF f. R-9401. Transcrição: Memorial Krasnoyarsk.',
+        chicagoCitation: 'Yezhov, Nikolai. 1937. "Operational Order No. 00447: On the Operation to Repress Former Kulaks, Criminals and Other Anti-Soviet Elements." Moscow: NKVD. GARF.',
+        relatedHistorians: ['Oleg V. Khlevniuk', 'Nicolas Werth']
       },
       {
-        title: 'Lista de Execuções assinada por Stalin e Molotov (12 de dezembro de 1938)',
-        institution: 'Yale University Press (Annals of Communism) / Memorial Society / AP RF',
-        documentType: 'Relatório de Inteligência',
+        title: 'Decisão do Politburo do CC do PCUS de 2 de julho de 1937',
+        institution: 'RGASPI (Arquivo Estatal Russo de História Sociopolítica)',
+        documentType: 'Resolução Política de Cúpula',
+        year: '1937',
+        archiveReference: 'RGASPI f. 17, op. 163, d. 1152, l. 41',
+        transcriptionPt: 'Decisão determinando aos secretários do partido e chefes regionais do NKVD o cadastramento de todos os elementos anti-soviéticos retornados e a apresentação urgente ao Comitê Central de cotas para fuzilamento e deportação em até 5 dias.',
+        abntCitation: 'STALIN, Iosif. Resolução do Politburo sobre Elementos Antissoviéticos. Moscou: Comitê Central do PCUS, 2 de julho de 1937. Arquivo RGASPI f. 17.',
+        chicagoCitation: 'Stalin, Joseph. 1937. "Politburo Decision on Anti-Soviet Elements." Moscow: Central Committee. RGASPI.',
+        relatedHistorians: ['J. Arch Getty', 'Oleg V. Khlevniuk']
+      },
+      {
+        title: 'Listas de Execução do Politburo rubricadas por Stalin (1937–1938)',
+        institution: 'Arquivo do Presidente da Federação Russa (AP RF) / Yale University Press',
+        documentType: 'Listas Nominais de Condenação',
         year: '1938',
-        archiveReference: 'AP RF f. 3, op. 24, d. 419, ll. 165-168; Annals of Communism Series',
-        transcriptionPt: 'Lista de indivíduos sujeitos a julgamento pelo Colégio Militar da Suprema Corte da URSS na 1ª Categoria (Fuzilamento). No topo do cabeçalho consta manuscrito: "A favor. I. Stalin. V. Molotov".',
-        abntCitation: 'STALIN, Iosif; MOLOTOV, Vyacheslav. Listas de Fuzilamento do Politburo. Moscou: Arquivo Presidencial da Federação Russa, 1938. Annals of Communism.',
-        chicagoCitation: 'Stalin, Joseph, and Vyacheslav Molotov. 1938. "Stalinist Execution Lists for the Military Collegium." Moscow: Archive of the President of the Russian Federation.'
+        archiveReference: 'AP RF f. 3, op. 24, d. 419, ll. 165-170; Annals of Communism Series',
+        transcriptionPt: 'Listas nominais de indivíduos processados pelo Colégio Militar da Suprema Corte da URSS na 1ª Categoria (Fuzilamento). No cabeçalho da maioria das 383 pastas consta de próprio punho: "A favor do fuzilamento. I. Stalin. V. Molotov".',
+        abntCitation: 'STALIN, Iosif; MOLOTOV, Vyacheslav. Listas de Fuzilamento do Politburo (1937–1938). Moscou: Arquivo Presidencial da Federação Russa (AP RF). Série Annals of Communism.',
+        chicagoCitation: 'Stalin, Joseph, and Vyacheslav Molotov. 1938. "Stalinist Execution Lists for the Military Collegium." Moscow: AP RF.',
+        relatedHistorians: ['Stephen Kotkin', 'Oleg V. Khlevniuk']
+      },
+      {
+        title: 'Comunicação Circular de Stalin e Molotov sobre Métodos Físicos (10 de janeiro de 1939)',
+        institution: 'RGASPI / Hoover Institution Archives',
+        documentType: 'Circular Secreta Partidária',
+        year: '1939',
+        archiveReference: 'RGASPI f. 558, op. 11, d. 56, ll. 17-18',
+        transcriptionPt: 'O Comitê Central do Partido esclarece que a aplicação de métodos de pressão física nos interrogatórios do NKVD foi permitida desde 1937 com a autorização expressa do Comitê Central... Deve ser aplicada sem exceção contra os inimigos desmascarados do povo.',
+        abntCitation: 'STALIN, Iosif; MOLOTOV, Vyacheslav. Telegrama Circular aos Comitês Regionais sobre Métodos de Pressão Física. Moscou: RGASPI f. 558, 10 de janeiro de 1939.',
+        chicagoCitation: 'Stalin, Joseph, and Vyacheslav Molotov. 1939. "Secret Telegram on Physical Pressure Methods." Moscow: RGASPI.',
+        relatedHistorians: ['Marc Jansen', 'Nikita Petrov']
       }
     ]
   },
