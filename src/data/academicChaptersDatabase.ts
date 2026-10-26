@@ -1567,6 +1567,852 @@ A experiência soviética não pode ser adequadamente resumida como sucesso indu
       'KUKIĆ, L. Technical change and the postwar slowdown in Soviet economic growth in a long run perspective, 1885–2019. The Economic History Review, 2024. DOI: 10.1111/ehr.13284.',
       'WALDRON, Peter. The Russian economy, 1861–1932. In: The Oxford Handbook of Modern Russian History. Oxford: Oxford University Press, 2013.'
     ]
+  },
+  6: {
+    topicId: 6,
+    title: 'Expansão e Ocupações Soviéticas',
+    subtitle: 'Invasões, anexações e a formação da esfera de influência soviética (1939–1945)',
+    authorCatedra: 'Cátedra de História e Relações Internacionais Soviéticas · Capítulo Acadêmico nº 06',
+    introduction: `Entre 1939 e 1945, a União das Repúblicas Socialistas Soviéticas (URSS), sob a liderança de Josef Stalin, ampliou significativamente sua influência territorial e política na Europa Oriental. Esse processo envolveu a invasão e a divisão da Polônia em 1939, a guerra contra a Finlândia, a incorporação dos países bálticos, a ocupação de territórios romenos e, a partir de 1944, a presença militar soviética em grande parte da Europa Central e Oriental.
+
+A expansão soviética ocorreu em contextos distintos. No período de 1939 a 1941, destacou-se a cooperação diplomática e econômica entre Moscou e Berlim, acompanhada de acordos que estabeleceram esferas de influência e permitiram a divisão de territórios. Após a invasão alemã da União Soviética, em junho de 1941, o Exército Vermelho passou a combater a Alemanha nazista. A partir de 1944, seu avanço militar contribuiu decisivamente para a derrota alemã, mas também criou condições para a expansão do poder soviético sobre países libertados da ocupação nazista ou anteriormente aliados da Alemanha.
+
+O estudo distingue as diferentes formas de expansão territorial, examina as justificativas apresentadas pelo governo soviético, analisa as consequências para as populações locais e discute as interpretações historiográficas sobre segurança, imperialismo, ideologia e formação do bloco soviético.
+
+Palavras-chave: União Soviética; Josef Stalin; pacto Molotov-Ribbentrop; Polônia; países bálticos; Finlândia; Bessarábia; Europa Oriental; ocupação militar; anexação territorial; Segunda Guerra Mundial.`,
+    sections: [
+      {
+        number: '1',
+        title: 'Introdução: o expansionismo soviético durante a Segunda Guerra Mundial',
+        content: `A expansão territorial soviética entre 1939 e 1945 constitui um dos aspectos fundamentais para compreender a política externa de Stalin, a transformação do mapa europeu e as origens da Guerra Fria.
+
+Durante esse período, a União Soviética não atuou apenas como uma potência que defendia suas fronteiras contra a agressão alemã. Antes de ser invadida pela Alemanha, em junho de 1941, também empreendeu operações militares contra países vizinhos, incorporou territórios e participou de acordos que reorganizaram as fronteiras do Leste Europeu.
+
+Depois de 1941, a situação mudou radicalmente. A Alemanha nazista rompeu o pacto de não agressão e lançou a Operação Barbarossa. A União Soviética passou a integrar a coalizão que derrotaria o nazismo, sofrendo perdas humanas e materiais extraordinárias. Entretanto, a necessidade de derrotar a Alemanha não eliminou os objetivos territoriais e estratégicos do governo de Stalin.
+
+O avanço soviético de 1944 e 1945 contribuiu para libertar territórios da ocupação nazista, mas também permitiu a Moscou ampliar sua influência sobre governos, forças armadas, polícias e instituições políticas da Europa Oriental.
+
+Por isso, duas questões devem ser analisadas simultaneamente:
+1. A União Soviética teve um papel decisivo na derrota militar da Alemanha nazista.
+2. O governo soviético também promoveu ocupações, anexações e formas de dominação política sobre outros povos.
+
+Essas duas afirmações são historicamente compatíveis. Reconhecer a contribuição soviética para a derrota de Hitler não exige ignorar as ações expansionistas de Stalin; documentar as ocupações soviéticas, por sua vez, não justifica minimizar a dimensão militar e humana da guerra contra o nazismo.`,
+        subsections: [
+          {
+            number: '1.1',
+            title: 'O que significa expansão soviética?',
+            content: `O termo expansão soviética abrange processos diferentes.
+
+Ocupação militar: controle efetivo de um território por forças armadas estrangeiras, sem que isso implique necessariamente sua incorporação formal ao Estado ocupante.
+
+Anexação: incorporação de um território a outro Estado, frequentemente mediante o uso da força ou de um procedimento político realizado sob ocupação.
+
+Incorporação territorial: integração administrativa e constitucional de uma região ao Estado, como ocorreu com as repúblicas bálticas em 1940.
+
+Estado satélite: país que mantém formalmente sua existência e instituições nacionais, mas cuja autonomia política é fortemente limitada pela influência de uma potência externa.
+
+Esfera de influência: região em que uma potência procura estabelecer predominância estratégica e política, restringindo a capacidade de outros países de escolher livremente suas alianças.
+
+Sovietização: transformação de instituições políticas, econômicas e sociais segundo o modelo soviético, geralmente acompanhada da ascensão de partidos comunistas, da nacionalização de setores econômicos e da repressão a opositores.
+
+Essas categorias não devem ser usadas como sinônimos. A anexação dos países bálticos, por exemplo, não foi idêntica à criação posterior de governos comunistas na Polônia, na Romênia ou na Bulgária.`
+          }
+        ]
+      },
+      {
+        number: '2',
+        title: 'Antecedentes: segurança, ideologia e interesses territoriais',
+        content: `A política externa soviética durante a década de 1930 foi influenciada por preocupações de segurança, rivalidades entre grandes potências, interesses territoriais e objetivos ideológicos.
+
+A liderança de Stalin considerava que a União Soviética precisava reduzir sua vulnerabilidade diante de possíveis ataques vindos da Europa. A experiência da Primeira Guerra Mundial, da Guerra Civil Russa e das intervenções estrangeiras de 1918–1920 contribuiu para uma cultura estratégica marcada pela preocupação com as fronteiras ocidentais.
+
+Entretanto, a busca por segurança não explica sozinha todas as decisões soviéticas. A ampliação do território controlado por Moscou, a incorporação de populações e a imposição de governos alinhados ao Kremlin também expressavam objetivos de poder.
+
+A política soviética combinava, portanto, três dimensões principais:
+• Estratégica: afastar potenciais adversários das fronteiras soviéticas e controlar áreas consideradas essenciais à defesa.
+• Territorial: recuperar ou conquistar regiões anteriormente pertencentes ao Império Russo, além de obter posições militares e econômicas importantes.
+• Ideológica e política: ampliar a influência do comunismo e eliminar instituições consideradas hostis ao regime soviético.
+
+O peso de cada dimensão variou conforme o território e o momento histórico.`,
+        subsections: [
+          {
+            number: '2.1',
+            title: 'A crise da segurança coletiva',
+            content: `Durante a década de 1930, a União Soviética participou de iniciativas diplomáticas destinadas a conter a expansão alemã. No entanto, a deterioração das relações internacionais e a desconfiança entre Moscou e as potências ocidentais dificultaram a formação de uma estratégia comum contra Hitler.
+
+O Acordo de Munique, de setembro de 1938, pelo qual Reino Unido, França e Itália aceitaram a anexação dos Sudetos pela Alemanha, contribuiu para a percepção soviética de que as potências ocidentais poderiam priorizar seus próprios interesses em detrimento da segurança da URSS.
+
+Isso ajuda a explicar o cálculo estratégico de Stalin, mas não torna inevitável nem moralmente neutra a decisão posterior de dividir territórios com Hitler.
+
+A diplomacia soviética continuou a buscar alternatives em 1939. Ao mesmo tempo, as negociações com a Alemanha avançaram e culminaram no pacto Molotov-Ribbentrop.`
+          }
+        ]
+      },
+      {
+        number: '3',
+        title: 'Agosto de 1939: o pacto Molotov-Ribbentrop',
+        content: `Em 23 de agosto de 1939, a Alemanha nazista e a União Soviética assinaram um pacto de não agressão. O acordo recebeu o nome dos ministros das Relações Exteriores dos dois países: Joachim von Ribbentrop e Viacheslav Molotov.
+
+O texto público estabelecia compromissos de não agressão e neutralidade em determinadas circunstâncias. Entretanto, um protocolo secreto definiu áreas de interesse alemãs e soviéticas na Europa Oriental.
+
+O protocolo tratava, entre outras questões, da posição da Polônia, da Finlândia, da Estônia, da Letônia e de territórios então pertencentes à Romênia.
+
+O documento demonstrou que a aproximação não se limitava a uma promessa de neutralidade. Os dois governos discutiram a reorganização territorial de países que não participaram da negociação.
+
+A existência do protocolo secreto é documentada historicamente. O governo soviético negou sua existência durante décadas, e seu reconhecimento oficial ocorreu em 1989, durante a abertura política da era de Mikhail Gorbachev. A documentação encontrada posteriormente nos arquivos soviéticos permitiu aprofundar o estudo das negociações e das decisões de Stalin.
+
+O pacto não transformou a União Soviética em integrante formal do Eixo. Contudo, criou as condições diplomáticas para a divisão de áreas de influência e para a cooperação germano-soviética entre 1939 e 1941.`,
+        subsections: [
+          {
+            number: '3.1',
+            title: 'O que Stalin pretendia obter?',
+            content: `Entre os objetivos atribuídos à liderança soviética estavam:
+• afastar temporariamente a ameaça de uma guerra direta contra a Alemanha;
+• ampliar a profundidade estratégica das fronteiras soviéticas;
+• recuperar territórios que haviam pertencido ao Império Russo ou que Moscou reivindicava por razões históricas e estratégicas;
+• impedir que Alemanha e Japão coordenassem uma ofensiva contra a URSS;
+• ganhar tempo para fortalecer as capacidades militares soviéticas.
+
+Esses objetivos não devem ser tratados como prova de que todas as decisões soviéticas eram defensivas. Uma política pode buscar segurança e, simultaneamente, empregar a força para dominar países vizinhos.
+
+A historiografia discute a importância relativa desses fatores, mas o conteúdo do protocolo secreto e as operações militares posteriores demonstram que a expansão territorial foi um componente concreto da política soviética.`
+          }
+        ]
+      },
+      {
+        number: '4',
+        title: 'Setembro de 1939: a invasão e a divisão da Polônia',
+        content: `Em 1º de setembro de 1939, a Alemanha invadiu a Polônia pelo oeste. Em 17 de setembro, o Exército Vermelho atravessou a fronteira oriental polonesa.
+
+A justificativa pública soviética afirmava que o Estado polonês havia entrado em colapso e que Moscou precisava proteger as populações ucranianas e bielorrussas que viviam na região.
+
+Entretanto, o protocolo secreto de agosto já havia estabelecido uma divisão de áreas de influência. A intervenção soviética ocorreu no contexto desse entendimento com Berlim.
+
+A Polônia enfrentou, assim, uma invasão por duas potências. Seu território foi dividido e suas instituições nacionais foram submetidas à ocupação.
+
+Em 28 de setembro de 1939, Alemanha e União Soviética assinaram um novo tratado de fronteira e amizade, ajustando a divisão territorial anteriormente prevista.`,
+        subsections: [
+          {
+            number: '4.1',
+            title: 'A administração soviética nos territórios ocupados',
+            content: `Nas regiões polonesas incorporadas pela União Soviética, as autoridades promoveram mudanças políticas e administrativas.
+
+Entre as medidas implementadas estavam:
+• dissolução ou desarticulação de instituições do Estado polonês;
+• repressão a dirigentes políticos, militares e administrativos;
+• nacionalização de propriedades e reorganização econômica;
+• imposição de estruturas políticas controladas pelo Partido Comunista;
+• deportações de setores da população considerados hostis ao novo poder.
+
+As autoridades soviéticas organizaram votações e processos de incorporação territorial, mas eles ocorreram sob ocupação militar e sem condições de competição política livre. Por isso, não podem ser tratados como consultas democráticas independentes.`
+          },
+          {
+            number: '4.2',
+            title: 'O massacre de Katyn',
+            content: `Um dos episódios mais conhecidos da repressão soviética contra a Polônia foi o massacre de Katyn e de outros locais de execução.
+
+Em março de 1940, a liderança soviética aprovou a execução de milhares de prisioneiros poloneses, incluindo oficiais militares, policiais e integrantes de outras categorias detidas pelo aparelho de segurança.
+
+As execuções foram realizadas principalmente na primavera de 1940. O episódio tornou-se símbolo da destruição de setores da elite militar e intelectual polonesa.
+
+Durante décadas, o governo soviético atribuiu os crimes à Alemanha nazista. Em 1990, as autoridades soviéticas reconheceram a responsabilidade soviética, e documentos posteriormente divulgados reforçaram essa conclusão.
+
+Katyn precisa ser compreendido como parte de uma política repressiva mais ampla, mas não deve ser confundido com o conjunto inteiro das deportações e detenções realizadas nos territórios ocupados.`
+          },
+          {
+            number: '4.3',
+            title: 'Deportações e repressão',
+            content: `Entre 1939 e 1941, centenas de milhares de cidadãos poloneses foram deportados, presos ou transferidos compulsoriamente para diferentes regiões da União Soviética.
+
+As estimativas variam conforme a definição utilizada e os grupos incluídos. Alguns estudos contabilizam deportados em operações específicas; outros incluem prisioneiros, pessoas enviadas a campos de trabalho e outras categorias de deslocamento forçado.
+
+Por isso, qualquer número apresentado em um estudo acadêmico deve indicar:
+1. o período abrangido;
+2. a população considerada;
+3. se inclui deportados, presos ou ambos;
+4. se registra pessoas removidas ou mortes decorrentes das operações.
+
+O artigo de Piotr J. Wróbel, publicado em The Polish Review em 2014, discute justamente a variação das estimativas e o debate sobre as motivações sociais, políticas e nacionais das deportações.`
+          }
+        ]
+      },
+      {
+        number: '5',
+        title: 'Novembro de 1939 a março de 1940: a Guerra de Inverno contra a Finlândia',
+        content: `A Finlândia havia conquistado sua independência em 1917, após a Revolução Russa. Nas negociações de 1939, Stalin exigiu alterações fronteiriças e concessões territoriais que, segundo o governo soviético, seriam necessárias para proteger Leningrado, cidade localizada relativamente próxima da fronteira finlandesa.
+
+As negociações fracassaram. Em 30 de novembro de 1939, a União Soviética invadiu a Finlândia.
+
+Começou a Guerra de Inverno.
+
+O Exército Vermelho possuía ampla superioridade numérica e material, mas encontrou forte resistência finlandesa. O terreno, as condições climáticas, o conhecimento local e a capacidade defensiva finlandesa dificultaram o avanço soviético.
+
+A campanha também expôs deficiências soviéticas de comando, coordenação, logística e preparação operacional.
+
+A Finlândia não derrotou militarmente a União Soviética. O conflito terminou em março de 1940 com o Tratado de Moscou, pelo qual os finlandeses cederam territórios, incluindo áreas do istmo da Carélia.`,
+        subsections: [
+          {
+            number: '5.1',
+            title: 'Significado histórico',
+            content: `A guerra demonstrou os limites da capacidade soviética de converter superioridade material em vitória rápida.
+
+A resistência finlandesa também influenciou a percepção de observadores estrangeiros, inclusive dirigentes alemães, sobre o desempenho do Exército Vermelho.
+
+Entretanto, a invasão alemã da União Soviética em 1941 não pode ser explicada exclusivamente pelo resultado da Guerra de Inverno. Os objetivos ideológicos, econômicos e territoriais de Hitler eram anteriores, e o planejamento da Operação Barbarossa envolveu um conjunto mais amplo de fatores.
+
+A Finlândia voltaria a combater a União Soviética a partir de 1941, em cooperação militar com a Alemanha, buscando principalmente recuperar os territórios perdidos e perseguindo seus próprios objetivos estratégicos.`
+          }
+        ]
+      },
+      {
+        number: '6',
+        title: 'Junho a agosto de 1940: os países bálticos',
+        content: `Estônia, Letônia e Lituânia eram Estados independentes no período entre guerras.
+
+Em 1939, a União Soviética impôs acordos que permitiram o estabelecimento de bases militares soviéticas nos três países. Em junho de 1940, sob pressão e intervenção soviéticas, foram apresentados ultimatos e ampliada a presença militar da URSS.
+
+Seguiu-se a instalação de governos favoráveis a Moscou. Processos eleitorais realizados em condições de ocupação foram utilizados para justificar a incorporação territorial.
+
+Em agosto de 1940, Estônia, Letônia e Lituânia foram formalmente incorporadas à União Soviética como repúblicas soviéticas.
+
+A anexação não foi reconhecida por diversos países ocidentais, incluindo os Estados Unidos.`,
+        subsections: [
+          {
+            number: '6.1',
+            title: 'Sovietização e repressão',
+            content: `A incorporação foi acompanhada por uma transformação profunda das instituições locais.
+
+As autoridades soviéticas:
+• dissolveram ou eliminaram estruturas políticas independentes;
+• nacionalizaram propriedades e empresas;
+• reorganizaram a administração pública;
+• perseguiram setores das elites políticas, militares, econômicas e culturais;
+• prenderam e deportaram pessoas consideradas inimigas do novo regime.
+
+Em junho de 1941, pouco antes da invasão alemã, ocorreu uma grande onda de deportações nos países bálticos.
+
+A escala e os critérios das deportações variaram conforme o território e a operação. As vítimas incluíram integrantes de elites políticas, militares e econômicas, funcionários públicos, famílias e outras pessoas classificadas pelas autoridades como potencialmente hostis.`
+          },
+          {
+            number: '6.2',
+            title: 'A ocupação alemã e o retorno soviético',
+            content: `Em 1941, a Alemanha invadiu a União Soviética e ocupou os países bálticos. A ocupação nazista foi acompanhada pelo assassinato sistemático de judeus e de outros grupos perseguidos, além de repressão contra adversários políticos.
+
+Em 1944 e 1945, o Exército Vermelho reconquistou a região e restabeleceu o controle soviético.
+
+O retorno soviético não significou a restauração da independência. As autoridades retomaram a sovietização, reprimiram movimentos de resistência e realizaram novas deportações nos anos seguintes.
+
+Essa sequência exige uma distinção fundamental: os países bálticos foram submetidos primeiro à incorporação soviética, depois à ocupação alemã e, finalmente, ao restabelecimento do domínio soviético.
+
+A experiência dos dois regimes não foi idêntica. Os objetivos raciais do nazismo e as políticas soviéticas de repressão política, social e nacional devem ser examinados segundo seus próprios mecanismos históricos, sem apagar as vítimas de nenhum deles.`
+          }
+        ]
+      },
+      {
+        number: '7',
+        title: 'Junho de 1940: Bessarábia e Bucovina do Norte',
+        content: `Em junho de 1940, a União Soviética apresentou ultimatos à Romênia e ocupou a Bessarábia e a Bucovina do Norte.
+
+A Bessarábia correspondia, em linhas gerais, a uma região entre os rios Prut e Dniester, anteriormente incorporada à Romênia após a Primeira Guerra Mundial. A Bucovina do Norte também fazia parte do território romeno.
+
+A União Soviética reivindicava a Bessarábia com base em argumentos históricos e territoriais. A Bucovina do Norte, por sua vez, não havia sido incluída de maneira equivalente nas reivindicações territoriais originalmente estabelecidas no protocolo secreto de 1939, e sua ocupação representou uma ampliação das exigências soviéticas.
+
+Após a ocupação, o território foi reorganizado administrativamente. A maior parte da Bessarábia foi integrada à nova República Socialista Soviética da Moldávia, enquanto outras áreas foram incorporadas à República Socialista Soviética da Ucrânia. A Bucovina do Norte também passou à república ucraniana soviética.
+
+As mudanças foram acompanhadas de nacionalizações, repressão política e deportações.
+
+Em 1941, a Romênia, então aliada da Alemanha, participou da guerra contra a União Soviética e recuperou temporariamente os territórios perdidos. Em 1944, o avanço do Exército Vermelho restabeleceu o controle soviético.
+
+O episódio ilustra a relação entre a expansão territorial e as mudanças de alinhamento internacional durante a guerra.`
+      },
+      {
+        number: '8',
+        title: '1941–1943: a invasão alemã e a transformação da guerra',
+        content: `Em 22 de junho de 1941, a Alemanha lançou a Operação Barbarossa, invadindo a União Soviética.
+
+A ofensiva destruiu a cooperação anterior entre os dois regimes e transformou a guerra no Leste Europeu em um conflito de dimensões extraordinárias.
+
+A União Soviética passou a integrar a coalizão contra a Alemanha nazista. O Exército Vermelho suportou enormes perdas e desempenhou papel decisivo nas batalhas de Moscou, Stalingrado e Kursk.
+
+A partir de 1943, o equilíbrio militar começou a mudar de maneira mais consistente a favor dos soviéticos.
+
+Essa transformação é indispensável para entender a expansão posterior: o Exército Vermelho avançou para o oeste não apenas como força de ocupação, mas também como exército de uma potência que combatia uma invasão de caráter racial, colonial e exterminador promovida pela Alemanha nazista.
+
+Contudo, a natureza da guerra contra Hitler não eliminou as disputas sobre o futuro dos territórios recuperados.
+
+Stalin pretendia garantir que os países vizinhos não se tornassem plataformas para uma nova ameaça à União Soviética. A liderança soviética também buscava influência sobre os governos, as forças armadas e as orientações internacionais desses países.
+
+O avanço militar de 1944 e 1945 criou as condições para a implementação desses objetivos.`
+      },
+      {
+        number: '9',
+        title: '1944–1945: o retorno soviético à Europa Oriental',
+        content: `A partir de 1944, o Exército Vermelho avançou pela Europa Oriental, expulsando as forças alemãs e seus aliados de diversos territórios.
+
+A presença militar soviética alterou radicalmente o equilíbrio político regional.
+
+Em países como Polônia, Romênia, Bulgária e Hungria, a presença do Exército Vermelho e a atuação dos serviços soviéticos facilitaram a ascensão de partidos comunistas e a eliminação progressiva de adversários políticos.
+
+Os processos não foram uniformes. A situação de cada país dependia de sua estrutura política, da presença militar soviética, dos movimentos comunistas locais, das forças de resistência e dos acordos diplomáticos entre os Aliados.`,
+        subsections: [
+          {
+            number: '9.1',
+            title: 'Polônia: libertação militar e subordinação política',
+            content: `O avanço soviético expulsou as forças alemãs de grande parte da Polônia, mas não resultou na restauração plena da ordem política polonesa anterior à guerra.
+
+Stalin rejeitava a autoridade do governo polonês no exílio, sediado em Londres, e apoiava estruturas políticas concorrentes alinhadas a Moscou.
+
+O destino do levante de Varsóvia, iniciado em agosto de 1944 por forças da resistência polonesa ligadas ao governo no exílio, tornou-se um dos episódios mais controversos da relação entre a União Soviética e a resistência polonesa.
+
+A proximidade das forças soviéticas, a ausência de apoio militar efetivo suficiente ao levante e as decisões políticas de Stalin contribuíram para uma situação em que a resistência polonesa foi derrotada pelos alemães. A interpretação das decisões operacionais e das possibilidades reais de intervenção soviética continua a ser objeto de discussão historiográfica.
+
+O resultado político do pós-guerra foi a consolidação de um governo polonês dominado por comunistas e dependente do apoio soviético.`
+          },
+          {
+            number: '9.2',
+            title: 'Romênia',
+            content: `Em agosto de 1944, a Romênia rompeu com a Alemanha e passou a combater as forças alemãs.
+
+A presença soviética tornou-se determinante na reorganização política do país. O Partido Comunista, inicialmente minoritário, ampliou seu poder com apoio externo e pressão sobre as instituições existentes.
+
+Em 1947, a monarquia foi abolida e consolidou-se um regime comunista. Esse resultado ocorreu depois do período aqui estudado, mas foi preparado pelas condições militares e políticas criadas em 1944 e 1945.`
+          },
+          {
+            number: '9.3',
+            title: 'Bulgária',
+            content: `A Bulgária também passou por uma transformação política com a chegada das forças soviéticas em setembro de 1944.
+
+Os comunistas ampliaram sua influência e participaram de um processo de eliminação de adversários e transformação institucional. O estabelecimento de um regime comunista consolidado ocorreu nos anos seguintes.`
+          },
+          {
+            number: '9.4',
+            title: 'Hungria',
+            content: `A Hungria, aliada da Alemanha, foi palco de combates intensos durante o avanço soviético.
+
+A ocupação militar e a derrota alemã abriram caminho para uma reorganização política em que os comunistas, apoiados pela União Soviética, ampliaram progressivamente seu poder.
+
+A consolidação do regime comunista, porém, não aconteceu integralmente em 1945. O processo continuou no pós-guerra.`
+          },
+          {
+            number: '9.5',
+            title: 'Tchecoslováquia',
+            content: `A Tchecoslováquia seguiu uma trajetória diferente da de outros países da região. O governo no exílio e a resistência nacional tinham maior legitimidade política, e o país mantinha vínculos importantes com a União Soviética.
+
+Ainda assim, a presença militar soviética e a crescente influência comunista alteraram o equilíbrio político. O golpe comunista decisivo ocorreu em fevereiro de 1948, fora do recorte cronológico deste capítulo.`
+          },
+          {
+            number: '9.6',
+            title: 'O significado do avanço soviético',
+            content: `A expansão da influência soviética na Europa Oriental não deve ser descrita como um processo uniforme de anexação territorial.
+
+Na maior parte desses países, a URSS não os incorporou formalmente como repúblicas soviéticas. Em vez disso, sua influência foi exercida por meio de presença militar, apoio a partidos comunistas, controle sobre estruturas de segurança e pressão diplomática.
+
+O conceito de sovietização ajuda a compreender essa transformação, mas deve ser aplicado com atenção às diferenças nacionais e à cronologia de cada processo.`
+          }
+        ]
+      },
+      {
+        number: '10',
+        title: '1945: Alemanha, Prússia Oriental e a reorganização territorial',
+        content: `Em 1945, a derrota alemã abriu uma nova etapa na organização da Europa.
+
+A Alemanha foi dividida em zonas de ocupação administradas pelas quatro potências vencedoras: Estados Unidos, Reino Unido, França e União Soviética. Berlim também foi dividida em setores.
+
+A União Soviética incorporou a parte norte da antiga Prússia Oriental, incluindo Königsberg, posteriormente denominada Kaliningrado.
+
+A reorganização territorial da Polônia deslocou suas fronteiras para oeste. A União Soviética manteve os territórios poloneses orientais ocupados em 1939, enquanto a Polônia recebeu antigas regiões alemãs a oeste.
+
+Essas mudanças provocaram deslocamentos populacionais em grande escala, envolvendo poloneses, alemães, ucranianos e outros grupos.
+
+É necessário distinguir as decisões das potências aliadas sobre as fronteiras do pós-guerra das operações soviéticas de anexação anteriores. Os acordos diplomáticos posteriores reconheceram ou aceitaram determinadas mudanças territoriais, mas isso não transforma retroativamente todas as invasões anteriores em atos voluntários dos países atingidos.`,
+        subsections: [
+          {
+            number: '10.1',
+            title: 'Transcarpátia',
+            content: `Em 1945, a União Soviética também obteve a Transcarpátia, região que integrava a Tchecoslováquia no período entre guerras e que havia passado por mudanças de soberania durante a guerra.
+
+O acordo entre a União Soviética e a Tchecoslováquia permitiu sua incorporação à república soviética da Ucrânia.
+
+Esse caso ilustra como a expansão territorial soviética combinou operações militares, tratados e reorganizações de fronteiras.`
+          }
+        ]
+      },
+      {
+        number: '11',
+        title: 'Agosto de 1945: a ofensiva soviética contra o Japão',
+        content: `A expansão territorial soviética no fim da guerra também ocorreu na Ásia.
+
+Em 8 de agosto de 1945, a União Soviética declarou guerra ao Japão e iniciou uma ofensiva contra as forças japonesas na Manchúria.
+
+O Exército Vermelho avançou rapidamente e derrotou importantes forças japonesas na região.
+
+As operações soviéticas também alcançaram o sul de Sacalina e as ilhas Curilas, territórios cuja transferência para a União Soviética se consolidou no contexto da rendição japonesa e dos acordos do pós-guerra.
+
+A entrada soviética na guerra contra o Japão precisa ser entendida no contexto dos compromissos diplomáticos entre os Aliados, das decisões estratégicas de Stalin e do colapso militar japonês em agosto de 1945.
+
+A guerra terminou formalmente com a assinatura da rendição japonesa em 2 de setembro de 1945.
+
+Embora a campanha soviética contra o Japão tenha contribuído para a derrota japonesa, ela também ampliou a posição territorial e estratégica da União Soviética no Nordeste da Ásia.`
+      },
+      {
+        number: '12',
+        title: 'Repressão, deportações e custos humanos',
+        content: `As ocupações soviéticas foram acompanhadas, em diferentes territórios e momentos, por prisões, deportações, execuções, nacionalizações e repressão de instituições consideradas hostis.
+
+As vítimas incluíram dirigentes políticos, militares, policiais, proprietários de terras, funcionários públicos, intelectuais, membros de organizações nacionais e pessoas classificadas como ameaças à segurança do Estado.
+
+A natureza e a escala da repressão variaram de acordo com o território. Na Polônia ocupada, as autoridades atingiram setores do Estado e da sociedade que poderiam sustentar uma ordem política independente. Nos países bálticos, a repressão acompanhou a incorporação territorial e a transformação das instituições. Em outras regiões, as medidas foram adaptadas às condições locais.
+
+As deportações não devem ser descritas apenas como deslocamentos populacionais. Em muitos casos, foram operações coercitivas conduzidas por órgãos de segurança, com separação de famílias, transporte em condições precárias e envio a regiões distantes da União Soviética.
+
+Entretanto, a análise histórica exige cuidado com os números. As estimativas podem variar conforme o grupo estudado, o período e a definição de deportação, prisão, execução ou morte durante o deslocamento.
+
+Também é necessário evitar a ideia de que todos os habitantes dos territórios ocupados tiveram experiências idênticas. Houve colaboração, resistência, adaptação, sobrevivência e diferentes respostas sociais, embora a liberdade de organização política tenha sido severamente limitada nos territórios submetidos ao controle soviético.`
+      },
+      {
+        number: '13',
+        title: 'O debate historiográfico: segurança ou imperialismo?',
+        content: `A interpretação da expansão soviética permanece objeto de debate entre historiadores.
+
+Uma abordagem enfatiza os dilemas de segurança enfrentados pela União Soviética. A experiência de invasões anteriores, o fortalecimento da Alemanha e a incerteza sobre as intenções ocidentais ajudariam a explicar a decisão de Stalin de criar uma zona de proteção no Leste Europeu.
+
+Outra abordagem enfatiza o caráter imperial da política soviética. O uso da force contra países vizinhos, as anexações territoriais e a repressão das elites locais demonstrariam que a busca por segurança foi acompanhada por projetos de dominação.
+
+Uma terceira abordagem procura compreender a interação entre esses fatores. Nessa interpretação, segurança, ideologia e expansão territorial não são explicações mutuamente excludentes. A liderança soviética poderia considerar uma região essencial à defesa do Estado e, ao mesmo tempo, impor ali seu próprio poder.
+
+A pesquisa baseada em arquivos permitiu reconstruir melhor as decisões do Politburo, as negociações diplomáticas, as operações do NKVD e os mecanismos de sovietização. Contudo, o acesso aos arquivos não eliminou todos os debates. As estimativas demográficas continuam variando, e os pesquisadores divergem quanto ao peso relativo dos objetivos de Stalin em diferentes momentos.`,
+        subsections: [
+          {
+            number: '13.1',
+            title: 'Historiadores e contribuições',
+            content: `Geoffrey Roberts examina as relações germano-soviéticas, as decisões diplomáticas e os objetivos estratégicos de Stalin antes da invasão alemã.
+
+Roger Moorhouse apresenta uma análise crítica do pacto Molotov-Ribbentrop e da cooperação germano-soviética, destacando suas consequências para a Polônia e outros países da região.
+
+Piotr J. Wróbel estuda as deportações de cidadãos poloneses e os debates sobre a natureza e a dimensão desses deslocamentos.
+
+Natalija Lebedeva pesquisa as deportações de poloneses e habitantes dos países bálticos, com atenção à documentação de arquivo.
+
+Norman Naimark analisa a sovietização da Europa Oriental e os mecanismos pelos quais a presença soviética contribuiu para a instalação de regimes comunistas.
+
+Tommaso Piffer examina as relações entre a libertação militar e a ocupação soviética da Europa Central e Oriental em 1944–1945.
+
+Esses estudos não formam um bloco interpretativo único. Suas contribuições devem ser comparadas de acordo com os problemas pesquisados, as fontes utilizadas e as conclusões específicas de cada obra.`
+          }
+        ]
+      }
+    ],
+    conclusion: `Entre 1939 e 1945, a União Soviética ampliou seu território e sua influência política por meio de operações militares, acordos diplomáticos, anexações e ocupações.
+
+A primeira fase, entre 1939 e 1941, foi marcada pelo pacto com a Alemanha nazista, pela divisão da Polônia, pela guerra contra a Finlândia e pela incorporação dos países bálticos e de territórios romenos.
+
+A segunda fase começou com a invasão alemã da URSS em junho de 1941. A partir de então, o Exército Vermelho desempenhou um papel decisivo na derrota da Alemanha nazista.
+
+A terceira fase, entre 1944 e 1945, foi caracterizada pelo avanço soviético na Europa Oriental e pela ampliação da influência de Moscou sobre os governos da região. A ocupação militar facilitou processos de sovietização que, em diversos países, culminaram em regimes comunistas consolidados nos anos seguintes.
+
+A análise histórica deve reconhecer que a derrota do nazismo e a expansão do poder soviético ocorreram simultaneamente. A União Soviética contribuiu de forma decisiva para a derrota de Hitler, mas também submeteu outros povos a ocupações, anexações, deportações e formas de controle político.
+
+A documentação disponível permite estudar essas ações sem depender exclusivamente da propaganda soviética, da propaganda nazista ou das narrativas nacionais posteriores. O objetivo da investigação acadêmica é reconstruir os acontecimentos, estabelecer o que as fontes demonstram e distinguir fatos documentados, interpretações históricas e questões ainda debatidas.`,
+    bibliographicReferences: [
+      'CIENCIALA, Anna M. The Nazi-Soviet Pact of August 23, 1939: When Did Stalin Decide to Align with Hitler, and Was Poland the Culprit? In: IDEOLOGY, Politics, and Diplomacy in East Central Europe. Rochester: University of Rochester Press, 2003, p. 147–226.',
+      'LEBEDEVA, Natalija. The Deportation of the Polish and Baltic Population to the USSR in 1939–1941: its Regional Specifics. Genocidas ir rezistencija, v. 2, n. 10, p. 7–16, 2001.',
+      'MOORHOUSE, Roger. The Devils’ Alliance: Hitler’s Pact with Stalin, 1939–1941. London: Bodley Head, 2014.',
+      'NAIMARK, Norman. The Sovietization of Eastern Europe, 1944–1953. In: LEFFLER, Melvyn P.; WESTAD, Odd Arne (ed.). The Cambridge History of the Cold War. Cambridge: Cambridge University Press, 2010.',
+      'PIFFER, Tommaso. Central and Eastern Europe between Liberation and Soviet Occupation: 1944–1945. In: The Big Three Allies and the European Resistance: Intelligence, Politics, and the Origins of the Cold War, 1939–1945. Oxford: Oxford University Press, 2024, p. 194–219. DOI: 10.1093/oso/9780198826347.003.0009.',
+      'ROBERTS, Geoffrey. The Soviet Union and the Origins of the Second World War: Russo-German Relations and the Road to War, 1933–1941. London: Macmillan, 1995.',
+      'WRÓBEL, Piotr J. Class War or Ethnic Cleansing? Soviet Deportations of Polish Citizens from the Eastern Provinces of Poland, 1939–1941. The Polish Review, v. 59, n. 2, p. 19–42, 2014. DOI: 10.5406/Polishreview.59.2.0019.'
+    ]
+  },
+  7: {
+    topicId: 7,
+    title: 'Crises e Dissolução da URSS',
+    subtitle: '1985–1991 — Era Gorbachev, Chernobyl e o colapso do Estado soviético',
+    authorCatedra: 'Cátedra de História Russa e Soviética · Capítulo Acadêmico',
+    introduction: `A dissolução da União das Repúblicas Socialistas Soviéticas (URSS), em dezembro de 1991, encerrou a existência de um Estado multinacional que havia ocupado posição central na política internacional desde a Revolução Russa de 1917. O colapso ocorreu durante o governo de Mikhail Gorbachev, que assumiu a liderança soviética em março de 1985 e iniciou reformas destinadas a modernizar a economia, ampliar a transparência administrativa e reformular o sistema político. As medidas conhecidas como perestroika e glasnost, entretanto, alteraram o funcionamento das instituições, ampliaram a liberdade de expressão e facilitaram a organização de movimentos nacionais e republicanos que desafiaram a autoridade de Moscou.
+
+O acidente nuclear de Chernobyl, em abril de 1986, revelou deficiências de segurança, comunicação e transparência do Estado. Embora tenha contribuído para a perda de confiança pública, não explica isoladamente a dissolução soviética. A crise econômica, as tensões nacionais, as disputas entre Gorbachev e Boris Yeltsin, o enfraquecimento do Partido Comunista e o fracasso do golpe de agosto de 1991 foram componentes igualmente importantes.`,
+    sections: [
+      {
+        number: '1',
+        title: 'Introdução: uma superpotência em transformação',
+        content: `Em 1991, a União Soviética deixou de existir. O acontecimento surpreendeu muitos observadores internacionais, pois o país possuía um vasto território, forças armadas poderosas, um arsenal nuclear e influência política sobre uma parte significativa do mundo.
+
+A dissolução não ocorreu por uma única decisão, nem pode ser reduzida à falência econômica, à ação de adversários externos ou às reformas de um único dirigente. Foi resultado de uma crise sistêmica na qual problemas econômicos antigos se combinaram com transformações políticas que enfraqueceram os mecanismos tradicionais de controle do Estado.
+
+A pesquisa histórica distingue dois processos relacionados, mas não idênticos:
+1. Transformação do regime: enfraquecimento do monopólio político do Partido Comunista e ampliação da competição política.
+2. Desintegração do Estado: perda da autoridade do governo central sobre as quinze repúblicas que compunham a União.
+
+Mark Kramer destaca a interação entre a transformação do regime comunista e a desintegração do Estado soviético. A reforma iniciada pelo centro político abriu espaço para pressões provenientes das repúblicas, enquanto os conflitos entre dirigentes nacionais dificultaram a preservação da União (KRAMER, 2022).
+
+Portanto, é necessário evitar duas explicações simplificadoras: a de que a URSS caiu exclusivamente porque sua economia era inviável e a de que o país foi derrubado apenas por uma conspiração externa. As condições econômicas importaram, mas decisões políticas, instituições e movimentos sociais determinaram como a crise se desenvolveu.`
+      },
+      {
+        number: '2',
+        title: 'A herança da estagnação econômica',
+        content: '',
+        subsections: [
+          {
+            number: '2.1',
+            title: 'O modelo soviético nas décadas anteriores',
+            content: `A economia soviética era organizada predominantemente por planejamento central. O Estado estabelecia metas de produção, controlava setores estratégicos e direcionava investimentos para prioridades políticas e industriais.
+
+O sistema havia demonstrado capacidade de mobilizar recursos para determinados objetivos, incluindo industrialização acelerada, defesa nacional, exploração espacial e grandes projetos científicos. Entretanto, também acumulava dificuldades estruturais.
+
+Entre os problemas mais importantes estavam:
+• incentivos limitados à inovação e à melhoria da qualidade;
+• dificuldades de coordenação entre empresas e ministérios;
+• desperdício de recursos e produção de mercadorias pouco adequadas à demanda;
+• baixa flexibilidade para responder às mudanças no consumo;
+• escassez recorrente de determinados bens;
+• custos elevados da competição militar com os Estados Unidos.
+
+A economia soviética não deixou de produzir bens industriais, nem entrou em colapso completo imediatamente após a chegada de Gorbachev. O problema estava na crescente dificuldade de sustentar o crescimento, elevar a produtividade e modernizar os setores civis sem comprometer outras prioridades do Estado.
+
+Chris Miller argumenta que a crise das reformas não pode ser compreendida somente pela ineficiência econômica. As disputas políticas e a incapacidade de construir uma estratégia de reforma coerente tiveram papel fundamental (MILLER, 2016).`
+          },
+          {
+            number: '2.2',
+            title: 'Petróleo, receitas externas e vulnerabilidade',
+            content: `As exportações de petróleo e gás constituíam fontes importantes de moeda estrangeira para a União Soviética. Esses recursos ajudavam a financiar importações, incluindo alimentos e equipamentos.
+
+A queda dos preços internacionais do petróleo em 1985–1986 reduziu as receitas externas disponíveis e dificultou o financiamento das necessidades econômicas do país.
+
+Entretanto, a crise petrolífera não explica sozinha a dissolução. A própria indústria petrolífera soviética apresentava problemas de produtividade e investimento antes do colapso dos preços. Além disso, o impacto da queda das receitas dependeu das escolhas políticas, da estrutura das importações e das dificuldades de reformar a economia.
+
+O economista Yegor Gaidar enfatiza a vulnerabilidade financeira criada pela dependência das receitas de exportação de energia. Sua interpretação deve ser considerada em conjunto com outras pesquisas, pois a importância relativa dos fatores econômicos e políticos permanece objeto de discussão historiográfica (GAIDAR, 2007; MILLER, 2016).`
+          },
+          {
+            number: '2.3',
+            title: 'O custo da competição militar',
+            content: `A União Soviética precisava sustentar forças armadas, indústria de defesa, pesquisa militar e um vasto sistema estratégico de dissuasão nuclear.
+
+A competição com os Estados Unidos não foi o único motivo das dificuldades econômicas, mas limitou as opções disponíveis aos dirigentes. Reduzir gastos militares poderia liberar recursos para o consumo e a modernização civil, porém também envolvia riscos estratégicos e políticos.
+
+A intervenção soviética no Afeganistão, iniciada em dezembro de 1979, acrescentou custos financeiros, militares e humanos. O conflito também prejudicou a imagem internacional do país e contribuiu para a insatisfação interna.
+
+A liderança de Gorbachev procurou reduzir a tensão internacional, negociar acordos de controle de armamentos e modificar a política externa. Essas medidas faziam parte de uma tentativa mais ampla de diminuir os custos da competição com o Ocidente e criar condições para a reforma interna.`
+          }
+        ]
+      },
+      {
+        number: '3',
+        title: 'Mikhail Gorbachev e o projeto de reforma',
+        content: `Mikhail Gorbachev tornou-se secretário-geral do Partido Comunista da União Soviética em março de 1985. Ele não chegou ao poder com um programa explícito de dissolução do país. Sua intenção inicial era revitalizar o socialismo soviético, combater a estagnação e melhorar a eficiência do Estado.
+
+Duas políticas ficaram associadas ao seu governo: perestroika e glasnost.`,
+        subsections: [
+          {
+            number: '3.1',
+            title: 'Perestroika: reestruturação',
+            content: `A palavra russa perestroika significa reestruturação. O termo passou a designar o conjunto de reformas destinadas a modificar o funcionamento da economia e, posteriormente, de outras instituições.
+
+As iniciativas procuravam aumentar a produtividade, conceder maior autonomia a determinadas unidades econômicas e modificar mecanismos administrativos excessivamente centralizados.
+
+Entretanto, as reformas não produziram uma transição organizada e estável para uma economia de mercado. Elementos do planejamento central continuaram existindo, enquanto novas formas de autonomia e atividade econômica alteravam as relações entre empresas, ministérios e governo.
+
+A combinação de mecanismos antigos e novos criou dificuldades de coordenação. O Estado perdeu parte da capacidade de impor decisões, mas ainda não havia estabelecido instituições capazes de substituir de maneira consistente os mecanismos anteriores.
+
+A crise econômica que se aprofundou no final da década de 1980 não deve ser atribuída a uma única medida. Ela resultou da interação entre problemas estruturais preexistentes, reformas incompletas, conflitos políticos e dificuldades de implementação.`
+          },
+          {
+            number: '3.2',
+            title: 'Glasnost: transparência e abertura pública',
+            content: `Glasnost significa abertura ou transparência. No governo Gorbachev, o termo passou a identificar uma ampliação progressiva do debate público e da divulgação de informações anteriormente controladas pelo Estado.
+
+Jornalistas, escritores, pesquisadores e cidadãos começaram a discutir problemas que haviam sido censurados ou apresentados de maneira distorcida pela propaganda oficial.
+
+Entre os temas que ganharam espaço estavam:
+• repressões políticas do período stalinista;
+• problemas econômicos e escassez de produtos;
+• corrupção e privilégios de dirigentes;
+• desastres ambientais e industriais;
+• conflitos nacionais e questões históricas;
+• falhas das instituições soviéticas.
+
+A abertura não significou liberdade de expressão plena e imediata. As restrições foram sendo alteradas ao longo do processo, e setores da burocracia continuaram resistindo às mudanças.
+
+A consequência política, porém, foi profunda: o Partido Comunista perdeu parte de sua capacidade de controlar a interpretação pública do passado e do presente. A população passou a dispor de mais informações e de novas possibilidades para questionar a legitimidade das autoridades.`
+          },
+          {
+            number: '3.3',
+            title: 'A reforma política e o enfraquecimento do Partido',
+            content: `A partir do final da década de 1980, as reformas ultrapassaram o campo econômico. Mudanças eleitorais e institucionais ampliaram a competição política, enquanto dirigentes e movimentos republicanos passaram a desafiar o poder central.
+
+Em 1989, ocorreram eleições para o Congresso dos Deputados do Povo da União Soviética, com competição eleitoral mais significativa do que a tradicional seleção de candidatos previamente aprovados pelo sistema partidário.
+
+Em 1990, o artigo 6.º da Constituição soviética, que estabelecia o papel dirigente do Partido Comunista, foi alterado. A mudança representou um golpe institucional no monopólio político que havia estruturado o Estado soviético.
+
+A abertura política tinha sido concebida como instrumento de renovação do sistema, mas também criou condições para a contestação pública do próprio sistema.
+
+Esse resultado não era inevitável desde 1985. Ele se desenvolveu por meio de decisões sucessivas, conflitos entre dirigentes e mobilização social.`
+          }
+        ]
+      },
+      {
+        number: '4',
+        title: 'Chernobyl: acidente nuclear e crise de confiança',
+        content: '',
+        subsections: [
+          {
+            number: '4.1',
+            title: 'O acidente de 26 de abril de 1986',
+            content: `Na madrugada de 26 de abril de 1986, ocorreu um grave acidente no reator número 4 da usina nuclear de Chernobyl, localizada na então República Socialista Soviética da Ucrânia, perto da cidade de Pripyat.
+
+O acidente ocorreu durante um teste relacionado ao comportamento do sistema elétrico da instalação. Uma combinação de características do reator RBMK, condições operacionais inadequadas e falhas de segurança contribuiu para uma excursão de potência, explosões e a destruição do núcleo do reator.
+
+O projeto do RBMK possuía características que podiam aumentar perigosamente a reatividade em determinadas condições. Entre elas estava o comportamento das pontas de grafite das hastes de controle durante o início da inserção. O efeito dessas características, contudo, precisa ser compreendido em conjunto com as condições operacionais, os procedimentos e as deficiências da cultura de segurança.
+
+É incorreto explicar o acidente exclusivamente por erro humano ou exclusivamente por um defeito técnico. Investigações posteriores apontaram a interação entre fatores de projeto, procedimentos operacionais, organização institucional e insuficiências na comunicação dos riscos.`
+          },
+          {
+            number: '4.2',
+            title: 'A resposta inicial do Estado',
+            content: `As autoridades soviéticas demoraram a comunicar publicamente a dimensão do desastre. A população de Pripyat foi evacuada em 27 de abril, aproximadamente 36 horas após o acidente.
+
+A primeira reunião extraordinária do Politburo sobre a situação ocorreu em 28 de abril. No dia seguinte, a comissão operacional do Politburo discutiu medidas relacionadas à avaliação da radiação, assistência médica, evacuação, mobilização de recursos e divulgação de informações.
+
+Documentos publicados pelo National Security Archive permitem acompanhar a resposta da liderança soviética. O protocolo operacional de 29 de abril mostra que as autoridades discutiram tanto a necessidade de obter informações confiáveis sobre a contaminação quanto problemas na assistência aos evacuados. Ele também registra decisões para organizar medidas de emergência e aprovar textos de comunicação oficial (NATIONAL SECURITY ARCHIVE, 2019).
+
+A existência desses documentos não significa que todas as informações tenham sido divulgadas imediatamente à população. A resposta administrativa e a comunicação pública foram processos distintos.
+
+A detecção de radioatividade em outros países europeus aumentou a pressão internacional por explicações. A tentativa de preservar o controle da informação agravou as críticas à cultura de segredo estatal.`
+          },
+          {
+            number: '4.3',
+            title: 'Consequências sanitárias',
+            content: `O acidente liberou materiais radioativos que se dispersaram sobre amplas áreas da Ucrânia, de Belarus, da Rússia e de outros países europeus.
+
+Entre os principais radionuclídeos envolvidos estavam o iodo-131 e o césio-137. O iodo radioativo pode se acumular na tireoide, especialmente quando a exposição ocorre por meio de alimentos contaminados, como o leite.
+
+A Organização Mundial da Saúde registra que aproximadamente 350 mil trabalhadores de limpeza foram inicialmente mobilizados em 1986–1987. O número de liquidadores registrados posteriormente chegou a cerca de 600 mil, embora apenas uma parcela tenha recebido doses elevadas de radiação. Aproximadamente 116 mil pessoas foram evacuadas na primavera e no verão de 1986, e outras 230 mil foram realocadas nos anos seguintes (OMS, 2006).
+
+Esses números representam categorias e períodos diferentes. Não se deve afirmar que todas as pessoas registradas como liquidadores receberam a mesma dose, nem que todas sofreram consequências clínicas equivalentes.
+
+Também é necessário distinguir as mortes ocorridas nas primeiras semanas, as doenças comprovadamente associadas à exposição e as estimativas estatísticas de possíveis efeitos tardios.
+
+O aumento dos casos de câncer de tireoide entre pessoas expostas quando crianças ou adolescentes está bem documentado. A estimativa do total de mortes futuras atribuíveis à radiação, porém, depende dos modelos epidemiológicos utilizados e permanece sujeita a incertezas.`
+          },
+          {
+            number: '4.4',
+            title: 'Chernobyl e a crise de legitimidade',
+            content: `Chernobyl tornou-se um símbolo das contradições entre a imagem oficial de competência científica e as falhas de segurança, comunicação e responsabilização.
+
+A catástrofe contribuiu para o fortalecimento da discussão pública sobre a transparência do governo. Também estimulou a crítica à burocracia e à falta de mecanismos independentes de fiscalização.
+
+Entretanto, não há base suficiente para tratar o acidente como causa única da dissolução da URSS. A crise econômica, as disputas políticas e os movimentos nacionais já possuíam dinâmicas próprias.
+
+O historiador Serhii Plokhy analisa Chernobyl como uma tragédia tecnológica e política que expôs problemas profundos do sistema soviético (PLOKHY, 2018). Sua contribuição é especialmente importante para compreender a relação entre segurança nuclear, burocracia e confiança pública.`
+          }
+        ]
+      },
+      {
+        number: '5',
+        title: 'A questão nacional e a soberania das repúblicas',
+        content: '',
+        subsections: [
+          {
+            number: '5.1',
+            title: 'Um Estado multinacional',
+            content: `A União Soviética era constituída por quinze repúblicas federadas. Sua estrutura constitucional reconhecia formalmente essas unidades, mas o poder político efetivo permanecia fortemente concentrado no Partido Comunista e nas instituições centrais.
+
+Durante décadas, o governo federal controlou importantes decisões políticas, econômicas e militares. As identidades nacionais, entretanto, não desapareceram. Línguas, tradições, memórias históricas e projetos políticos continuaram presentes nas sociedades republicanas.
+
+A abertura política permitiu que essas questões fossem debatidas de maneira mais pública. Em diversas repúblicas, movimentos sociais passaram a exigir maior autonomia, reconhecimento histórico e, em alguns casos, independência.`
+          },
+          {
+            number: '5.2',
+            title: 'Os países bálticos',
+            content: `Estônia, Letônia e Lituânia possuíam experiências históricas distintas das de muitas outras regiões soviéticas. Os três países haviam sido Estados independentes antes de sua incorporação à URSS, em 1940, após a expansão territorial soviética no contexto do pacto germano-soviético e das ações subsequentes de Moscou.
+
+A incorporação soviética foi contestada por setores das sociedades bálticas, e a memória da independência anterior permaneceu politicamente importante.
+
+Durante a segunda metade da década de 1980, movimentos populares e organizações políticas ampliaram suas demandas. Em 1990, as três repúblicas avançaram em direção à restauração da independência.
+
+A resistência do governo central às reivindicações nacionais e os episódios de violência ocorridos durante o processo aumentaram a desconfiança em relação a Moscou.`
+          },
+          {
+            number: '5.3',
+            title: 'Ucrânia e outras repúblicas',
+            content: `A mobilização nacional não se limitou aos países bálticos. Na Ucrânia, Belarus, Geórgia, Armênia, Moldávia e outras repúblicas, os conflitos políticos envolveram diferentes combinações de identidade nacional, interesses econômicos, disputas territoriais e resistência ao poder central.
+
+A Ucrânia ocupava uma posição particularmente importante por sua população, capacidade industrial, produção agrícola e localização estratégica.
+
+A crise de confiança provocada por Chernobyl contribuiu para o debate público ucraniano, mas não criou sozinha o movimento de independência. A questão nacional possuía raízes anteriores e foi fortalecida pelas transformações políticas do final da década de 1980.
+
+O processo também foi marcado por tensões étnicas e conflitos territoriais. Por isso, não deve ser descrito como uma sucessão inteiramente pacífica de declarações de independência.`
+          }
+        ]
+      },
+      {
+        number: '6',
+        title: 'A ascensão de Boris Yeltsin e o conflito entre centros de poder',
+        content: `Boris Yeltsin tornou-se um dos principais adversários políticos da liderança tradicional do Partido Comunista. Após entrar em conflito com setores da direção partidária, passou a defender reformas mais profundas e a construir uma base política própria na República Socialista Federativa Soviética da Rússia.
+
+Em junho de 1991, Yeltsin foi eleito presidente da República Russa por votação popular direta. Sua legitimidade eleitoral passou a competir com a autoridade de Gorbachev, que ocupava a presidência da União Soviética.
+
+Formou-se, assim, uma situação paradoxal: a maior república da União possuía um dirigente eleito com base política própria, enquanto o governo central tentava preservar a autoridade federal.
+
+O conflito não era apenas pessoal. Ele envolvia a distribuição de poder, o controle das instituições, a condução das reformas e o futuro da União.
+
+A disputa entre Gorbachev e Yeltsin enfraqueceu a capacidade de coordenação do Estado. Ao mesmo tempo, dirigentes republicanos passaram a considerar que a soberania de suas próprias unidades poderia oferecer maior controle sobre recursos, políticas públicas e decisões institucionais.`
+      },
+      {
+        number: '7',
+        title: 'O golpe de agosto de 1991',
+        content: '',
+        subsections: [
+          {
+            number: '7.1',
+            title: 'A tentativa de interromper as reformas',
+            content: `Em 19 de agosto de 1991, integrantes da linha-dura do sistema soviético anunciaram a formação do Comitê Estatal para o Estado de Emergência, conhecido pela sigla russa GKChP.
+
+Os conspiradores pretendiam interromper o processo político em curso e impedir uma reorganização da União que reduziria o poder das instituições centrais.
+
+Gorbachev estava isolado em sua residência na Crimeia, e os golpistas tentaram impor medidas de emergência. Entretanto, encontraram resistência política e social, especialmente em Moscou.
+
+Boris Yeltsin tornou-se uma das principais figuras da oposição ao golpe. A mobilização pública, as divisões entre os próprios agentes do Estado e a falta de apoio suficiente dentro das instituições militares e de segurança contribuíram para o fracasso da tentativa.
+
+O golpe desmoronou em poucos dias.`
+          },
+          {
+            number: '7.2',
+            title: 'Consequências políticas',
+            content: `O fracasso do golpe não restaurou a autoridade anterior de Gorbachev. Pelo contrário, enfraqueceu ainda mais o Partido Comunista e fortaleceu Yeltsin.
+
+As autoridades russas passaram a assumir o controle de instituições anteriormente vinculadas ao governo da União. O Partido Comunista perdeu grande parte de sua capacidade de comando, e diversas repúblicas aceleraram suas declarações de independência.
+
+O golpe foi um momento decisivo porque demonstrou que setores da antiga estrutura soviética já não conseguiam impor sua vontade de maneira coordenada.
+
+O episódio não foi a única causa da dissolução, mas reduziu drasticamente as possibilidades de preservar a União sob a forma institucional existente.`
+          }
+        ]
+      },
+      {
+        number: '8',
+        title: 'O referendo de março e a crise da União',
+        content: `Em 17 de março de 1991, foi realizado um referendo sobre a preservação de uma União Soviética renovada. Nas repúblicas participantes, a maioria dos votantes apoiou a manutenção de uma União reformulada.
+
+Entretanto, a votação não ocorreu de maneira uniforme em todo o território soviético: algumas repúblicas não participaram, e as perguntas e condições políticas variaram em determinados contextos.
+
+O resultado mostrou que havia apoio popular significativo à ideia de preservar alguma forma de União, mas não resolveu a disputa sobre sua estrutura política, a distribuição de poderes ou as condições de soberania das repúblicas.
+
+Esse resultado é importante para evitar a interpretação de que toda a população soviética desejava necessariamente a dissolução do país.
+
+As preferências variavam conforme a região, o grupo social, as condições econômicas e a compreensão do que significaria uma União renovada.
+
+O problema central era que o governo já não dispunha de autoridade suficiente para impor uma solução aceita por todos os principais atores políticos.`
+      },
+      {
+        number: '9',
+        title: 'Os Acordos de Belavezha e o fim da URSS',
+        content: '',
+        subsections: [
+          {
+            number: '9.1',
+            title: '8 de dezembro de 1991',
+            content: `Em 8 de dezembro de 1991, os dirigentes da Rússia, da Ucrânia e de Belarus assinaram os Acordos de Belavezha.
+
+O documento declarou que a União Soviética deixava de existir como sujeito de direito internacional e realidade geopolítica, além de estabelecer a Comunidade de Estados Independentes (CEI).
+
+Os acordos foram uma decisão fundamental para a dissolução, mas também provocaram controvérsias constitucionais e políticas. Seus signatários não representavam, por si sós, todas as repúblicas da União, e a legitimidade jurídica do procedimento foi questionada por diferentes atores.
+
+Em 21 de dezembro, dirigentes de outras repúblicas participaram da Declaração de Alma-Ata, que ampliou a estrutura da CEI e reconheceu a nova realidade política.
+
+A dissolução não foi simplesmente uma decisão tomada por unanimidade por todas as populações soviéticas. Resultou de negociações entre dirigentes, declarações de soberania, decisões parlamentares, conflitos institucionais e mudanças na distribuição efetiva do poder.`
+          },
+          {
+            number: '9.2',
+            title: 'A renúncia de Gorbachev',
+            content: `Em 25 de dezembro de 1991, Gorbachev anunciou sua renúncia à presidência da União Soviética. Naquela noite, a bandeira soviética foi arriada no Kremlin.
+
+Em 26 de dezembro, o Soviete das Repúblicas do Soviete Supremo da URSS adotou a declaração que reconhecia o fim da existência da União Soviética.
+
+É importante distinguir esses dois marcos: 25 de dezembro corresponde ao discurso de renúncia de Gorbachev; 26 de dezembro marca o ato formal final do órgão legislativo da União.
+
+O desaparecimento da URSS não significou que todos os problemas políticos, econômicos e sociais tivessem sido resolvidos. Os novos Estados enfrentaram dificuldades de transição, conflitos territoriais, disputas sobre ativos e dívidas, transformações econômicas e desafios de construção institucional.`
+          }
+        ]
+      },
+      {
+        number: '10',
+        title: 'O encerramento da Guerra Fria',
+        content: `A dissolução da União Soviética representou o fim de uma das duas superpotências que haviam estruturado a ordem internacional da Guerra Fria.
+
+O processo de encerramento da Guerra Fria, contudo, começou antes de dezembro de 1991. A redução das tensões, os acordos de controle de armamentos, as transformações no Leste Europeu e a reunificação alemã em 1990 foram etapas anteriores dessa mudança.
+
+O colapso soviético encerrou o sistema bipolar em sua forma clássica, mas não produziu automaticamente uma ordem internacional estável. Os Estados sucessores herdaram fronteiras, forças militares, armas nucleares e problemas econômicos e territoriais que exigiram negociações posteriores.
+
+O caso ucraniano é particularmente importante. Após a dissolução, a Ucrânia herdou armas nucleares soviéticas estacionadas em seu território e participou de negociações que levaram à sua renúncia ao arsenal estratégico. O Memorando de Budapeste, assinado em 5 de dezembro de 1994, estabeleceu compromissos de segurança em conexão com a adesão ucraniana ao Tratado de Não Proliferação Nuclear como Estado não nuclear.
+
+O memorando não deve ser descrito como uma garantia militar de defesa equivalente a uma aliança de defesa coletiva. Seus compromissos e limites jurídicos precisam ser distinguidos das interpretações políticas posteriores.`
+      },
+      {
+        number: '11',
+        title: 'Debate historiográfico: por que a União Soviética entrou em colapso?',
+        content: `Não existe uma única explicação consensual que atribua a dissolução soviética a uma causa isolada. A historiografia debate a importância relativa de fatores econômicos, políticos, institucionais, nacionais e internacionais.`,
+        subsections: [
+          {
+            number: '11.1',
+            title: 'A interpretação econômica',
+            content: `Uma linha de interpretação enfatiza a perda de dinamismo da economia planejada, os problemas de produtividade, a dependência de receitas externas e as dificuldades de financiar simultaneamente o consumo, a modernização industrial e a competição militar.
+
+Yegor Gaidar destaca a vulnerabilidade econômica associada às receitas de exportação e à dependência de importações. Essa perspectiva ajuda a compreender as restrições financeiras que a liderança enfrentou, mas não resolve, sozinha, a questão de por que a crise resultou na dissolução do Estado.`
+          },
+          {
+            number: '11.2',
+            title: 'A interpretação político-institucional',
+            content: `Chris Miller atribui grande importância às decisões e aos conflitos políticos que acompanharam as reformas. A liderança soviética tentou reformar a economia sem conseguir estabelecer uma estratégia estável que coordenasse os mecanismos existentes com as novas instituições.
+
+As divisões entre dirigentes, a resistência burocrática e a perda de autoridade do centro dificultaram a condução das mudanças.
+
+Nessa interpretação, a dissolução não foi consequência automática de uma economia ineficiente. A maneira como as reformas foram concebidas, implementadas e contestadas foi determinante para o resultado.`
+          },
+          {
+            number: '11.3',
+            title: 'A questão nacional',
+            content: `Outra linha de pesquisa enfatiza a relação entre o Estado soviético e suas repúblicas. O enfraquecimento do Partido Comunista abriu espaço para movimentos que reivindicavam soberania e independência.
+
+As repúblicas não atuaram de maneira uniforme. Seus interesses políticos, suas experiências históricas e suas condições econômicas variavam. Ainda assim, a perda de autoridade do governo central permitiu que os conflitos nacionais se convertessem em disputas concretas pelo controle das instituições e dos territórios.`
+          },
+          {
+            number: '11.4',
+            title: 'A interpretação internacional',
+            content: `A competição com os Estados Unidos, a corrida armamentista, a guerra no Afeganistão, as mudanças no Leste Europeu e as negociações diplomáticas influenciaram as escolhas soviéticas.
+
+A queda dos preços do petróleo também restringiu recursos disponíveis. Entretanto, alegações de que uma estratégia externa específica teria provocado deliberadamente o colapso da União não devem ser tratadas como fatos estabelecidos sem evidências documentais suficientes.
+
+As pressões externas interagiram com vulnerabilidades internas. O desfecho dependeu também das decisões tomadas pelos próprios dirigentes soviéticos e republicanos.`
+          },
+          {
+            number: '11.5',
+            title: 'Chernobyl como fator de aceleração',
+            content: `Chernobyl teve importância política, social e simbólica. A demora na divulgação de informações, os riscos à saúde e as falhas de segurança contribuíram para questionar a credibilidade das instituições.
+
+Entretanto, não é adequado concluir que a catástrofe, sozinha, provocou a dissolução. A crise econômica, as reformas, os movimentos nacionais e o conflito entre os centros de poder já estavam em andamento.
+
+A interpretação mais equilibrada é considerar Chernobyl um fator que agravou a crise de confiança e se articulou a processos mais amplos.`
+          }
+        ]
+      }
+    ],
+    conclusion: `A dissolução da União Soviética não deve ser explicada como uma consequência inevitável de um único problema nem como resultado exclusivo de uma conspiração externa.
+
+O sistema soviético havia demonstrado capacidade de mobilização industrial, militar e científica. Ao mesmo tempo, enfrentava dificuldades de produtividade, escassez, burocratização, falta de transparência e concentração de poder.
+
+Gorbachev procurou reformar o sistema, não simplesmente eliminá-lo. Contudo, as reformas alteraram as instituições políticas e as relações entre o governo central e as repúblicas sem produzir um novo equilíbrio estável.
+
+Chernobyl expôs os custos humanos e institucionais da falta de transparência. A crise econômica limitou as opções disponíveis. Os movimentos nacionais desafiaram a autoridade de Moscou. As disputas entre Gorbachev, Yeltsin e outros dirigentes enfraqueceram a coordenação estatal. O golpe de agosto de 1991 acelerou a desintegração.
+
+A União Soviética deixou de existir em dezembro de 1991, mas o significado histórico do acontecimento permanece objeto de debate. A análise acadêmica deve distinguir fatos documentados, interpretações dos historiadores e afirmações que ultrapassam as evidências disponíveis.`,
+    bibliographicReferences: [
+      'GAIDAR, Yegor. Collapse of an Empire: Lessons for Modern Russia. Washington, DC: Brookings Institution Press, 2007.',
+      'KRAMER, Mark. The Dissolution of the Soviet Union: A Case Study of Discontinuous Change. Journal of Cold War Studies, v. 24, n. 1, p. 188–218, 2022. DOI: 10.1162/jcws_a_01059.',
+      'MILLER, Chris. The Struggle to Save the Soviet Economy: Mikhail Gorbachev and the Collapse of the USSR. Chapel Hill: University of North Carolina Press, 2016.',
+      'PLOKHY, Serhii. Chernobyl: History of a Tragedy. London: Allen Lane, 2018.',
+      'WORLD HEALTH ORGANIZATION. Health Effects of the Chernobyl Accident and Special Health Care Programmes. Geneva: WHO, 2006.',
+      'NATIONAL SECURITY ARCHIVE. Top Secret Chernobyl: The Nuclear Disaster through the Eyes of the Soviet Politburo, KGB, and U.S. Intelligence. Washington, DC: George Washington University, 2019.'
+    ]
   }
 };
 
