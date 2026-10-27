@@ -190,59 +190,70 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
     },
     citacoesVerificadas: [
       {
-        trechoLiteral: 'A tomada de poder em outubro não foi o coroamento triunfal de uma revolta popular espontânea, mas uma conspiração militar clandestina, friamente articulada e executada por um grupo disciplinado de revolucionários profissionais que se aproveitou do vácuo absoluto de autoridade gerado pelo desmoronamento do Estado russo.',
+        trechoLiteral: 'Considerar a questão da Assembleia Constituinte de um ponto de vista formal, jurídico, no âmbito da democracia burguesa habitual, sem levar em conta a guerra de classes e a guerra civil, é uma traição à causa do proletariado [...]. A República dos Sovietes representa não apenas uma forma mais elevada de instituições democráticas, mas também a única forma capaz de assegurar a transição menos dolorosa para o socialismo.',
+        autor: 'Vladimir I. Lenin',
+        obra: 'Tezisy ob Uchreditel\'nom Sobranii [Teses sobre a Assembleia Constituinte]',
+        edicaoEditoraAno: 'Pravda, nº 213, 13 (26) dez. 1917. In: Polnoe Sobranie Sochinenii. 5. ed. Moscou: Izdatel\'stvo Politicheskoi Literatury, 1969. t. 35, p. 162–166',
+        paginaExata: 'p. 162–166',
+        analiseContextual: 'Visão Autoral do Regime Bolchevique'
+      },
+      {
+        trechoLiteral: 'The dissolution of the Constituent Assembly on January 6, 1918, was a watershed event in Russian history. By shutting down the only legitimately elected representative body in Russia\'s history, the Bolsheviks severed the nation\'s link to constitutional democracy and established a regime of unilateral coercion that relied not on popular mandate, but on police force. (Tradução: "A dissolução da Assembleia Constituinte em 6 de janeiro de 1918 foi um divisor de águas na história russa. Ao encerrar o único corpo representativo legitimamente eleito na história da Rússia, os bolcheviques romperam o vínculo da nação com a democracia constitucional e estabeleceram um regime de coerção unilateral que se apoiava não em um mandato popular, mas na força policial.")',
         autor: 'Richard Pipes',
         obra: 'The Russian Revolution',
-        edicaoEditoraAno: '1. ed. New York: Alfred A. Knopf, 1990',
-        paginaExata: 'p. 497-498',
-        analiseContextual: 'Pipes fundamenta sua tese central de que a ausência de resistência popular armada em Petrogrado não provava adesão popular ao bolchevismo, mas a paralisia do corpo social diante da violência orquestrada.'
-      },
-      {
-        trechoLiteral: 'A dissolução da Assembleia Constituinte em janeiro de 1918 representou a renúncia formal e definitiva do bolchevismo ao consentimento eleitoral universal como fonte de legitimidade soberana, fixando o precedente de que a violência de classe revolucionária se sobrepunha ao veredito das urnas.',
-        autor: 'J. Arch Getty',
-        obra: 'The Road to Terror: Stalin and the Self-Destruction of the Bolsheviks',
-        edicaoEditoraAno: '1. ed. New Haven: Yale University Press, 1999',
-        paginaExata: 'p. 14',
-        analiseContextual: 'Getty salienta como a decisão fundacional de janeiro de 1918 condicionou estruturalmente toda a cultura política autoritária que culminaria no Grande Terror dos anos 1930.'
-      },
-      {
-        trechoLiteral: 'Os bolcheviques não apenas tomaram o poder em nome dos sovietes, mas desmantelaram de imediato as próprias instituições representativas amplas que poderiam contestar a sua autoridade exclusiva, estabelecendo a ditadura do partido como a única realidade institucional viável para o novo regime.',
-        autor: 'Sheila Fitzpatrick',
-        obra: 'The Russian Revolution',
-        edicaoEditoraAno: '2. ed. Oxford: Oxford University Press, 1999',
-        paginaExata: 'p. 67-68',
-        analiseContextual: 'A historiadora revisionista demonstra como a consigna soviética inicial mascarava a centralização burocrática rápida em torno do Sovnarkom.'
+        edicaoEditoraAno: 'New York: Alfred A. Knopf, 1990. p. 553–555. ISBN 978-0-394-50241-0.',
+        paginaExata: 'p. 553–555',
+        analiseContextual: 'Visão Historiográfica Liberal-Conservadora'
       }
     ],
     bibliografia: [
       {
-        entradaAbnt: 'FITZPATRICK, Sheila. The Russian Revolution. 2. ed. Oxford: Oxford University Press, 1999. 199 p.',
-        entradaChicago: 'Fitzpatrick, Sheila. 1999. The Russian Revolution. 2nd ed. Oxford: Oxford University Press.',
+        entradaAbnt: 'FIGES, Orlando. A People\'s Tragedy: The Russian Revolution, 1891–1924. London: Jonathan Cape / Viking Press, 1996. 923 p. ISBN 978-0-14-024364-2.',
+        entradaChicago: 'Figes, Orlando. 1996. A People\'s Tragedy: The Russian Revolution, 1891–1924. London: Jonathan Cape.',
         tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0192802040'
+        isbnOuReferencia: 'ISBN 978-0-14-024364-2'
       },
       {
-        entradaAbnt: 'FIGES, Orlando. A People\'s Tragedy: The Russian Revolution: 1891-1924. New York: Viking Press, 1996. 923 p.',
-        entradaChicago: 'Figes, Orlando. 1996. A People\'s Tragedy: The Russian Revolution: 1891–1924. New York: Viking Press.',
+        entradaAbnt: 'FITZPATRICK, Sheila. The Russian Revolution. 4. ed. Oxford: Oxford University Press, 2017. 256 p. ISBN 978-0-19-880670-7.',
+        entradaChicago: 'Fitzpatrick, Sheila. 2017. The Russian Revolution. 4th ed. Oxford: Oxford University Press.',
         tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0140243642'
+        isbnOuReferencia: 'ISBN 978-0-19-880670-7'
       },
       {
-        entradaAbnt: 'PIPES, Richard. The Russian Revolution. New York: Alfred A. Knopf, 1990. 944 p.',
+        entradaAbnt: 'GARF (Gosudarstvennyi Arkhiv Rossiiskoi Federatsii). Fundo R-1235 (VTsIK) e Fundo 1810 (Comissão Eleitoral da Assembleia Constituinte). Moscou, Rússia.',
+        entradaChicago: 'GARF. Fond R-1235 & Fond 1810. State Archive of the Russian Federation.',
+        tipoFonte: 'Fundo Arquivístico',
+        isbnOuReferencia: 'GARF (Moscou)'
+      },
+      {
+        entradaAbnt: 'LENIN, Vladimir I. Polnoe Sobranie Sochinenii [Obras Completas]. 5. ed. Moscou: Izdatel\'stvo Politicheskoi Literatury, 1969. t. 35. 599 p.',
+        entradaChicago: 'Lenin, Vladimir I. 1969. Polnoe Sobranie Sochinenii. 5th ed. Vol. 35. Moscow.',
+        tipoFonte: 'Edição Crítica de Obras',
+        isbnOuReferencia: 'PSS t. 35'
+      },
+      {
+        entradaAbnt: 'PIPES, Richard. The Russian Revolution. New York: Alfred A. Knopf, 1990. 947 p. ISBN 978-0-394-50241-0.',
         entradaChicago: 'Pipes, Richard. 1990. The Russian Revolution. New York: Alfred A. Knopf.',
         tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0394502410'
+        isbnOuReferencia: 'ISBN 978-0-394-50241-0'
       },
       {
-        entradaAbnt: 'KOTKIN, Stephen. Stalin: Paradoxes of Power, 1878-1928. New York: Penguin Press, 2014. 976 p.',
-        entradaChicago: 'Kotkin, Stephen. 2014. Stalin: Paradoxes of Power, 1878–1928. New York: Penguin Press.',
+        entradaAbnt: 'RABINOWITCH, Alexander. The Bolsheviks Come to Power: The Revolution of 1917 in Petrograd. New York: W. W. Norton & Company, 1976. 394 p. ISBN 978-0-393-09220-2.',
+        entradaChicago: 'Rabinowitch, Alexander. 1976. The Bolsheviks Come to Power. New York: W. W. Norton.',
         tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-1594203794'
+        isbnOuReferencia: 'ISBN 978-0-393-09220-2'
       },
       {
-        entradaAbnt: 'ARQUIVO ESTATAL RUSSO DE HISTÓRIA SOCIOPOLÍTICA (RGASPI). Fundo 2 (V. I. Lenin), Inventário 1, Processo 4390: Atas do Sovnarkom e Decretos de Outubro. Moscou: RGASPI, 1917–1918.',
-        entradaChicago: 'Russian State Archive of Socio-Political History (RGASPI). Fond 2 (Lenin), opis 1, delo 4390: Decrees of Sovnarkom. Moscow: RGASPI.',
-        tipoFonte: 'Fundo Arquivístico'
+        entradaAbnt: 'RADKEY, Oliver H. Russia Goes to the Polls: The Election to the All-Russian Constituent Assembly, 1917. Ithaca: Cornell University Press, 1990. 171 p. ISBN 978-0-8014-2390-1.',
+        entradaChicago: 'Radkey, Oliver H. 1990. Russia Goes to the Polls. Ithaca: Cornell University Press.',
+        tipoFonte: 'Monografia',
+        isbnOuReferencia: 'ISBN 978-0-8014-2390-1'
+      },
+      {
+        entradaAbnt: 'RGASPI (Rossiiski Gosudarstvennyi Arkhiv Sotsial\'no-Politicheskoi Istorii). Fundo 2 (Documentos de V. I. Lenin), Opis 1, Delo 5135 e 5138. Moscou, Rússia.',
+        entradaChicago: 'RGASPI. Fond 2, Opis 1, Delo 5135/5138. Moscow.',
+        tipoFonte: 'Fundo Arquivístico',
+        isbnOuReferencia: 'RGASPI (Moscou)'
       }
     ]
   },

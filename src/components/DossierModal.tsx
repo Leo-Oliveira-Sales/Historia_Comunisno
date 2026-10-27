@@ -5,6 +5,7 @@ import { ACADEMIC_CHAPTERS } from '../data/academicChaptersDatabase';
 import { CHRONOLOGIES_BY_TOPIC, DETAILED_EPISODES_BY_TOPIC } from '../data/detailedHistoricalEpisodes';
 import { getCanonicalEditorialDossier } from '../data/canonicalEditorialDatabase';
 import { RESEARCH_DOSSIERS } from '../data/researchDossiersDatabase';
+import { TOPIC_CITATIONS_DATABASE } from '../data/citationsDatabase';
 import { playStampSound, playTypewriterClack } from '../utils/audio';
 import { 
   X, 
@@ -956,12 +957,50 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           {/* TAB: CITATIONS */}
           {activeTab === 'citations' && (
             <div id="citations-list" className="space-y-6 max-w-4xl mx-auto w-full box-border overflow-hidden">
-              <div className="bg-[#161619] p-5 rounded-xl border border-stone-800 space-y-3">
-                <h3 className="text-amber-400 font-mono uppercase text-xs font-bold">Referências & Bibliografia</h3>
-                {chapter?.bibliographicReferences.map((ref, idx) => (
-                  <p key={idx} className={`font-mono text-stone-300 ${getFontSizeClass('body')}`}>{ref}</p>
-                ))}
-              </div>
+              {TOPIC_CITATIONS_DATABASE[topic.id] ? (
+                <div className="space-y-6">
+                  <div className="bg-[#161619] p-5 sm:p-6 rounded-xl border border-stone-800 space-y-4">
+                    <h2 className="text-lg font-serif font-bold text-amber-300 border-b border-stone-800 pb-3 uppercase tracking-wide">
+                      Citações Literais Verificadas e Fontes Documentais
+                    </h2>
+                    <div className="space-y-5">
+                      {TOPIC_CITATIONS_DATABASE[topic.id].citations.map((c) => (
+                        <div key={c.number} className="bg-[#121214] p-4 rounded-lg border border-stone-800/80 space-y-2">
+                          <div className="flex items-center justify-between gap-2 flex-wrap">
+                            <span className="text-xs font-mono font-bold text-amber-400">
+                              {c.number}. {c.author} ({c.category}):
+                            </span>
+                          </div>
+                          <blockquote className="font-serif italic text-stone-200 text-sm sm:text-base leading-relaxed border-l-2 border-amber-500 pl-3 my-2">
+                            "{c.quoteText}"
+                          </blockquote>
+                          <p className="text-xs font-mono text-stone-400">
+                            <strong className="text-stone-300">Fonte:</strong> {c.source}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="bg-[#161619] p-5 sm:p-6 rounded-xl border border-stone-800 space-y-3">
+                    <h2 className="text-base font-serif font-bold text-stone-100 uppercase border-b border-stone-800 pb-3">
+                      Referências Bibliográficas Consolidadas (Normas ABNT / Chicago)
+                    </h2>
+                    <div className="space-y-2 font-mono text-xs text-stone-300">
+                      {TOPIC_CITATIONS_DATABASE[topic.id].consolidatedReferences.map((ref, idx) => (
+                        <p key={idx} className="leading-relaxed">• {ref}</p>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="bg-[#161619] p-5 rounded-xl border border-stone-800 space-y-3">
+                  <h3 className="text-amber-400 font-mono uppercase text-xs font-bold">Referências & Bibliografia</h3>
+                  {chapter?.bibliographicReferences.map((ref, idx) => (
+                    <p key={idx} className={`font-mono text-stone-300 ${getFontSizeClass('body')}`}>{ref}</p>
+                  ))}
+                </div>
+              )}
             </div>
           )}
 
