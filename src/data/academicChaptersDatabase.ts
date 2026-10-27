@@ -6,6 +6,7 @@ import { CHAPTER_16 } from './chapters/chapter_16';
 import { CHAPTER_17 } from './chapters/chapter_17';
 import { CHAPTER_18 } from './chapters/chapter_18';
 import { CHAPTER_19 } from './chapters/chapter_19';
+import { CHAPTER_20 } from './chapters/chapter_20';
 export interface AcademicChapterSection {
   number: string;
   title: string;
@@ -3678,5 +3679,6 @@ O objetivo deste dossiê é permitir que o leitor compreenda o acontecimento por
   17: CHAPTER_17,
 
   18: CHAPTER_18,
-  19: CHAPTER_19
+  19: CHAPTER_19,
+  20: CHAPTER_20
 };

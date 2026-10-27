@@ -5,6 +5,7 @@ import { DOSSIER_16_TEXT } from './dossiers/dossier_16';
 import { DOSSIER_17_TEXT } from './dossiers/dossier_17';
 import { DOSSIER_18_TEXT } from './dossiers/dossier_18';
 import { DOSSIER_19_TEXT } from './dossiers/dossier_19';
+import { DOSSIER_20_TEXT } from './dossiers/dossier_20';
 
 export const RESEARCH_DOSSIERS: Record<number, string> = {
   1: `# DOSSIÊ ACADÊMICO Nº 01
@@ -2827,6 +2828,7 @@ O objetivo deste dossiê é permitir que o leitor compreenda o acontecimento por
 
   18: DOSSIER_18_TEXT,
 
-  19: DOSSIER_19_TEXT
+  19: DOSSIER_19_TEXT,
+  20: DOSSIER_20_TEXT
 
 };
