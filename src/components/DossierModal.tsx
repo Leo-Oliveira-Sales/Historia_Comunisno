@@ -395,6 +395,23 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             </button>
           )}
 
+          {researchDossierText && (
+            <button
+              onClick={() => {
+                playTypewriterClack();
+                setActiveTab('researchDossier');
+              }}
+              className={`px-3 py-2 min-h-[38px] text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${
+                activeTab === 'researchDossier'
+                  ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
+                  : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+              }`}
+            >
+              <FileSpreadsheet className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span>Dossiê Acadêmico de Pesquisa</span>
+            </button>
+          )}
+
           <button
             onClick={() => {
               playTypewriterClack();
@@ -407,7 +424,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             }`}
           >
             <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-            <span>Padrão Canônico (8 Seções)</span>
+            <span>Padrão Canônico</span>
           </button>
 
           <button
@@ -437,7 +454,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             }`}
           >
             <ScrollText className="w-3.5 h-3.5 shrink-0" />
-            <span>Crônicas ({detailedEpisodes.length})</span>
+            <span>Crônicas</span>
           </button>
 
           <button
@@ -452,7 +469,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             }`}
           >
             <FileText className="w-3.5 h-3.5 shrink-0" />
-            <span>Documentos ({topic.primarySources.length})</span>
+            <span>Documentos</span>
           </button>
 
           <button
@@ -484,23 +501,6 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
             <span>Citações</span>
           </button>
-
-          {researchDossierText && (
-            <button
-              onClick={() => {
-                playTypewriterClack();
-                setActiveTab('researchDossier');
-              }}
-              className={`px-3 py-2 min-h-[38px] text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${
-                activeTab === 'researchDossier'
-                  ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
-                  : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
-              }`}
-            >
-              <FileSpreadsheet className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-              <span>DOSSIÊ ACADÊMICO DE PESQUISA</span>
-            </button>
-          )}
         </div>
 
         {/* Font Size Selector & Copy Actions on Desktop */}

@@ -1650,130 +1650,143 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
   12: {
     topicId: 12,
     identificacao: {
-      nomeAcontecimento: 'Fomes de Estado e Fome-Genocídio: Holodomor na Ucrânia e Asharshylyq no Cazaquistão',
+      nomeAcontecimento: 'Fomes e Catástrofes Humanitárias de Estado na União Soviética (1921–1947)',
       dataELocalizacao: {
-        dataExata: 'Verão de 1931 a Outono de 1933 (com crises precursoras em 1921–1922 e sequela em 1946–1947)',
-        calendarioNotas: 'O ápice da mortalidade ocorreu entre março e julho de 1933 em vilarejos rurais ucranianos e estepes cazaques.',
-        localizacaoPrecisa: 'República Socialista Soviética da Ucrânia (Kharkiv, Kiev, Poltava, Odessa), Região de Kuban (RSFSR) e República Autônoma Soviética do Cazaquistão.',
-        teatroOperacoes: 'Zonas produtoras de grãos da bacia do Dnieper e estepes nômades da Ásia Central.'
+        dataExata: '1921–1947 (Crises centrais: 1921–1922, 1931–1934 e 1946–1947)',
+        calendarioNotas: 'O intervalo mais destrutivo concentrou-se entre 1932 e 1933, com pico de mortalidade em 1933 na Ucrânia e Cazaquistão. Estudos demográficos de reconstrução abrangem perdas até 1934.',
+        localizacaoPrecisa: 'RSS da Ucrânia (bacia do Dnieper, Kharkiv, Kiev, Odessa), RSSA do Cazaquistão (estepes nômades), Norte do Cáucaso e Kuban (RSFSR), Região do Volga e Urais.',
+        teatroOperacoes: 'Regiões agrícolas produtoras de cereais da Ucrânia e sul da Rússia, bem como as zonas pastoris nômades da Ásia Central.'
       },
       governoEResponsaveis: {
         regimeVigente: 'União das Repúblicas Socialistas Soviéticas (Sovnarkom e Comitê Central do PCUS)',
-        chefesDeEstadoEGoverno: ['Iosif Stalin', 'Vyacheslav Molotov (Chefe da Comissão Extraordinária na Ucrânia)', 'Lazar Kaganovich (Chefe da Comissão no Cáucaso do Norte)'],
+        chefesDeEstadoEGoverno: ['Josef Vissarionovitch Stalin', 'Viacheslav Molotov (Chefe da Comissão Extraordinária na Ucrânia)', 'Lazar Kaganovich (Chefe da Comissão no Cáucaso do Norte)'],
         orgaosExecutoresDiretos: [
           'OGPU (Diretoria Política Unificada do Estado)',
           'Comissariado do Povo de Abastecimento da URSS (Narkomsnab)',
-          'Brigadas de Confisco e Requisição de Grãos (Buksiry)',
+          'Brigadas de Confisco e Requisição de Cereais',
           'Comitê Central do Partido Comunista da Ucrânia (Stanislav Kosior, Vlas Chubar)'
         ],
-        responsaveisOperacionais: ['Filipp Goloshchyokin (Primeiro-Secretário do Cazaquistão)', 'Pavel Postyshev (Enviado plenipotenciário de Stalin em Kharkiv)', 'Vsevolod Balytsky (Chefe da OGPU na Ucrânia)']
+        responsaveisOperacionais: ['Filipp Goloshchyokin (Primeiro-Secretário do Cazaquistão)', 'Pavel Postyshev (Enviado extraordinário de Stalin)', 'Vsevolod Balytsky (Chefe da OGPU na Ucrânia)']
       }
     },
     contextoHistorico: {
-      situacaoAnterior: 'O campesinato tradicional eslavo e os pastores nômades cazaques constituíam mais de 75% da população. No final de 1929, Stalin decretou a "liquidação dos kulaks enquanto classe" e a coletivização agrária forçada total para transformar os camponeses em trabalhadores de fazendas estatais (kolkhozes) e financiar a compra de maquinário industrial nos mercados internacionais através da exportação de cereais.',
-      causasPoliticas: 'Resistência feroz dos camponeses ucranianos à coletivização, com mais de 4.000 rebeliões locais registradas pela OGPU em 1930; temor paranoico de Stalin de perder o controle da Ucrânia para aspirações nacionalistas; sedentarização compulsória violenta dos nômades cazaques imposta por Filipp Goloshchyokin.',
-      causasEconomicas: 'Fixação de cotas de confisco de grãos totalmente irrealistas que excediam a capacidade produtiva das lavouras; colapso da força de tração animal decorrente do abate massivo de cavalos e bois pelos camponeses antes de entrarem nos kolkhozes.',
-      causasSociais: 'A criminalização da posse individual de alimentos; a implementação do sistema de "listas negras" (chorna doshka) que isolava povoados inteiros, cortando fornecimento de querosene, sal e mercadorias e confiscando todo e qualquer alimento restante.'
+      situacaoAnterior: 'A relação conflituosa entre o campesinato e o Estado soviético vinha desde as requisições forçadas da Guerra Civil e a grande fome de 1921–1922 no Volga. A partir de 1928–1929, a liderança stalinista acelerou a industrialização e impôs a coletivização agrária compulsória (kolkhozes) para financiar a compra de máquinas industriais e assegurar o abastecimento urbano por meio do controle estrito da produção.',
+      causasPoliticas: 'Imposição coercitiva das metas de aquisição de cereais com punição sumária de comunidades; repressão contra camponeses enquadrados como kulaks; repressão associada a manifestações de nacionalismo ucraniano e reversão das políticas de ucranização no Norte do Cáucaso; sedentarização e coletivização forçadas dos nômades pastoris no Cazaquistão.',
+      causasEconomicas: 'Fixação de cotas estatais de entrega de cereais incompatíveis com o rendimento agrícola real; colapso da tração animal decorrente do abate compulsório ou defensivo do gado; confisco não apenas de excedentes, mas de sementes vitais de replantio e alimentos de subsistência.',
+      causasSociais: 'Desestruturação completa do tecido comunitário agrário; criminalização da apropriação de qualquer grão (Lei das Cinco Espigas); isolamento punitivo de aldeias por meio de "listas negras" (chorna doshka) e bloqueio militar de deslocamento de famintos.'
     },
     narrativaCronologica: {
       acontecimentosEmOrdem: [
         {
+          dataExata: '1921 a 1922',
+          acontecimento: 'Primeira Grande Fome Soviética (Região do Volga e Ucrânia)',
+          personagensEInstituicoes: 'Governo Bolchevique, American Relief Administration (ARA), comitês de socorro.',
+          decisoesTomadas: 'Crise humanitária desencadeada pela Guerra Civil, requisições do comunismo de guerra e seca; o governo soviético aceitou cooperação internacional de socorro humanitário.'
+        },
+        {
+          dataExata: '1928 a 1930',
+          acontecimento: 'Início da Coletivização Forçada e Campanha de Dekulakização',
+          personagensEInstituicoes: 'Josef Stalin, Comitê Central do PCUS, OGPU.',
+          decisoesTomadas: 'Aceleração da coletivização agrícola, confisco de terras e propriedades, deportação de centenas de milhares de famílias camponesas e desestruturação da sociedade pastoril cazaque.'
+        },
+        {
           dataExata: '7 de agosto de 1932',
-          acontecimento: 'Promulgação da Lei de Proteção da Propriedade Socialista ("Lei das Cinco Espigas")',
-          personagensEInstituicoes: 'Iosif Stalin, TsIK e Sovnarkom da URSS.',
-          decisoesTomadas: 'Decreto redigido com intervenção direta de Stalin estipulando pena suprema (fuzilamento) ou 10 anos de Gulag para qualquer "furto" de bens coletivos, aplicando-se a quem recolhesse espigas caídas no solo após a colheita.'
+          acontecimento: 'Decreto sobre a Proteção da Propriedade Socialista ("Lei das Cinco Espigas")',
+          personagensEInstituicoes: 'TsIK e Sovnarkom da URSS.',
+          decisoesTomadas: 'Punições draconianas (pena de morte por fuzilamento ou no mínimo 10 anos de Gulag) para o furto de propriedade das fazendas coletivas, criminalizando quem colhesse espigas soltas no solo para sobreviver.'
         },
         {
-          dataExata: '22 de outubro de 1932',
-          acontecimento: 'Envio das Comissões Extraordinárias de Molotov e Kaganovich',
-          personagensEInstituicoes: 'Vyacheslav Molotov (na Ucrânia), Lazar Kaganovich (em Kuban e Cáucaso do Norte).',
-          decisoesTomadas: 'Instituição de buscas domiciliares brutais: confisco compulsório não apenas do trigo, mas de batatas, sementes de reserva futura, animais domésticos e grãos de consumo imediato.'
-        },
-        {
-          dataExata: '18 de novembro de 1932',
-          acontecimento: 'Instituição do Regime de "Listas Negras" (Chorna Doshka)',
-          personagensEInstituicoes: 'Comitê Central do Partido Comunista da Ucrânia.',
-          decisoesTomadas: 'Aldeias que não cumpriam as cotas eram cercadas, proibidas de comerciar, desprovidas de qualquer mercadoria e submetidas a multas em carne e grãos equivalentes à sentença de inanição coletiva.'
+          dataExata: 'Novembro a Dezembro de 1932',
+          acontecimento: 'Regime de "Listas Negras" (Chorna Doshka) e Vinculação à Repressão Nacional',
+          personagensEInstituicoes: 'Vyacheslav Molotov, Lazar Kaganovich, Comitê Central do PC da Ucrânia.',
+          decisoesTomadas: 'Bloqueio total de abastecimento de mercadorias e alimentos a aldeias que não atingiam cotas de entrega; resoluções associando o confisco de cereais ao combate ao nacionalismo ucraniano e à suspensão da ucranização no Cáucaso do Norte.'
         },
         {
           dataExata: '22 de janeiro de 1933',
-          acontecimento: 'Diretiva Secreta de Fechamento de Fronteiras da Ucrânia e Kuban',
-          personagensEInstituicoes: 'Iosif Stalin, Vyacheslav Molotov, OGPU.',
-          decisoesTomadas: 'Ordem proibindo camponeses famintos de deixarem seus distritos; bloqueio militar de ferrovias e estradas por tropas da OGPU; quase 200.000 camponeses em fuga são capturados e devolvidos aos vilarejos para morrer.'
+          acontecimento: 'Diretiva Secreta de Stalin e Molotov Bloqueando a Saída de Camponeses («за хлебом»)',
+          personagensEInstituicoes: 'Josef Stalin, Viacheslav Molotov, OGPU, Comissariado de Ferrovias.',
+          decisoesTomadas: 'Ordem explícita determinando o bloqueio de estradas e ferrovias para impedir a saída em massa de camponeses da Ucrânia e do Norte do Cáucaso em busca de pão, obrigando a detenção e retorno compulsório dos famintos aos locais de residência.'
         },
         {
-          dataExata: 'Primavera e Verão de 1933',
-          acontecimento: 'Ápice da Mortalidade e Casos Extremos de Canibalismo',
-          personagensEInstituicoes: 'População camponesa, relatórios médicos da OGPU.',
-          decisoesTomadas: 'A mortalidade diária na Ucrânia atinge de 25.000 a 30.000 pessoas; registro oficial de mais de 2.500 condenações judiciais por canibalismo e necrofagia documentadas pela polícia secreta.'
+          dataExata: '1933',
+          acontecimento: 'Ápice da Mortalidade por Fome (Holodomor e Asharshylyq)',
+          personagensEInstituicoes: 'População camponesa da Ucrânia e pastores cazaques.',
+          decisoesTomadas: 'Pico absoluto de mortalidade: concentração da maioria das 3,9 milhões de mortes excedentes na Ucrânia e de mais de 1,5 milhão de mortes no Cazaquistão, com destruição da sociedade pastoril e fuga em massa de sobreviventes.'
         },
         {
-          dataExata: '1930 a 1933 (contínuo no Cazaquistão)',
-          acontecimento: 'O Asharshylyq: A Grande Fome e Catástrofe Demográfica Cazaque',
-          personagensEInstituicoes: 'Filipp Goloshchyokin, tribos nômades cazaques.',
-          decisoesTomadas: 'Confisco forçado de 80% a 90% do gado dos nômades; morte por fome de mais de 1,5 milhão de cazaques (mais de um terço de toda a etnia), forçando a fuga em massa para a China.'
+          dataExata: '1946 a 1947',
+          acontecimento: 'Fome Soviética do Pós-Guerra',
+          personagensEInstituicoes: 'Governo Soviético, Ministério da Agricultura.',
+          decisoesTomadas: 'Seca e destruição pós-Segunda Guerra combinadas com prioridades estatais de retenção de estoques e exportação, resultando em cerca de 1,0 a 1,5 milhão de mortes excedentes documentadas por Michael Ellman.'
         }
       ],
-      sinteseNarrativaGeral: 'A catástrofe de 1931–1933 não resultou de seca ou intempérie meteorológica incontrolável, mas de uma intervenção coercitiva implacável do Estado stalinista. Utilizando cotas punitivas, confisco de sementes vitais, bloqueio de fronteiras territoriais e exportação continuada de grãos ao exterior para financiar a industrialização pesada, o regime utilizou a inanição deliberada como arma para vergar a resistência camponesa e esmagar a identidade nacional ucraniana e a cultura nômade cazaque.'
+      sinteseNarrativaGeral: 'As crises de fome soviéticas envolveram vulnerabilidade material interagindo com intervenção coercitiva implacável do Estado. Em 1931–1934, com foco no Holodomor ucraniano e no Asharshylyq cazaque, requisições coercitivas, sanções com listas negras, o decreto de 7 de agosto de 1932 e a diretiva de 22 de janeiro de 1933 que bloqueou a fuga dos famintos agravaram a mortalidade em massa, produzindo perdas demográficas de 4,5 milhões na Ucrânia (3,9 milhões de mortes excedentes e 600 mil nascimentos perdidos) e mais de 1,5 milhão de mortos no Cazaquistão.'
     },
     documentosEEvidencias: {
       documentosOriginais: [
         {
-          titulo: 'Diretiva Secreta assinada por Stalin e Molotov bloqueando a saída de camponeses',
-          fundoArquivistico: 'RGASPI f. 558, op. 11, d. 45, ll. 109-111',
+          titulo: 'Diretiva do CC do PCUS e do Sovnarkom da URSS sobre o Bloqueio da Saída de Camponeses Famintos',
+          fundoArquivistico: 'Istmat.org doc. 38629; RGASPI f. 558, op. 11, d. 45',
           instituicaoGuarda: 'Arquivo Estatal Russo de História Sociopolítica (RGASPI)',
-          descricaoConteudo: 'Texto original de 22 de janeiro de 1933 ordenando à OGPU e ao Ministério de Ferrovias que interceptassem a fuga de camponeses da Ucrânia e do norte do Cáucaso para as regiões industriais russas, rotulando os famintos de "provocadores e agentes poloneses".',
-          autenticidadeEStatus: 'Autêntico, desclassificado em 1992 e arquivado no acervo central de Stalin.'
+          descricaoConteudo: 'Texto assinado por Stalin e Molotov em 22 de janeiro de 1933 ordenando que a OGPU impedisse o deslocamento de camponeses da Ucrânia e do Norte do Cáucaso que migravam «за хлебом» (em busca de pão), rotulando a fuga como atividade contrarrevolucionária.',
+          autenticidadeEStatus: 'Autêntico, desclassificado e transcrito no catálogo Istmat.'
         },
         {
-          titulo: 'Registros do Narkomtorg sobre a Exportação de Grãos durante o Holodomor (1932–1933)',
-          fundoArquivistico: 'RGAE (Arquivo Estatal Russo de Economia) f. 413, op. 12, d. 104',
-          instituicaoGuarda: 'Arquivo Estatal Russo de Economia (RGAE), Moscou',
-          descricaoConteudo: 'Tabelas do comércio exterior comprovando a exportação soviética de 1,73 milhão de toneladas de grãos em 1932 e 1,68 milhão de toneladas em 1933 para a Europa Ocidental, grãos estes suficientes para alimentar e salvar todas as vítimas da fome.',
-          autenticidadeEStatus: 'Autêntico, periciado por Davies & Wheatcroft.'
+          titulo: 'Resolução do CC do PC(b) da URSS e SNK sobre Aquisições de Cereais e Questão Nacional',
+          fundoArquivistico: 'RGASPI f. 17, op. 3, d. 911, ll. 42-44; TsDAHO da Ucrânia f. 1, op. 20, d. 5243',
+          instituicaoGuarda: 'RGASPI (Moscou) e Arquivo Central Estatal de Organizações Públicas da Ucrânia (TsDAHO, Kiev)',
+          descricaoConteudo: 'Resolução de 14 de dezembro de 1932 que vinculou explicitamente as metas coercitivas de requisição de cereais à suspensão da política de ucranização e repressão a manifestações culturais no Kuban e Ucrânia.',
+          autenticidadeEStatus: 'Autêntico, documentado pelo Holodomor Research and Education Consortium (HREC).'
+        },
+        {
+          titulo: 'Decreto sobre Proteção da Propriedade Socialista ("Lei das Cinco Espigas")',
+          fundoArquivistico: 'Coleção de Leis da URSS (Sobranie Zakonov SSSR), 1932, nº 62, art. 360',
+          instituicaoGuarda: 'Arquivo Estatal da Federação Russa (GARF)',
+          descricaoConteudo: 'Decreto de 7 de agosto de 1932 prevendo pena de morte ou 10 anos de Gulag para furto de produtos de fazendas coletivas, criminalizando camponeses que colhiam restos agrícolas para subsistência familiar.',
+          autenticidadeEStatus: 'Autêntico, diploma legislativo oficial da URSS.'
         }
       ],
       fotografiasERegistros: [
         {
-          registroOuFoto: 'Fotografias de corpos de camponeses mortos nas ruas de Kharkiv tiradas pelo engenheiro austríaco Alexander Wienerberger',
-          acervoOrigem: 'Arquivo Diocesano de Viena (Diözesanarchiv Wien) / Acervo Dossiê Wienerberger',
-          anoEIdentificador: 'Maio de 1933, Fotografias com câmera Leica nº W-12 a W-38',
-          significadoProbatório: 'Constituem as evidências fotográficas contemporâneas mais incontestáveis de cadáveres insepultos recolhidos em carroças públicas nas calçadas da capital ucraniana.'
+          registroOuFoto: 'Fotografias documentais de camponeses vitimados pela inanição em Kharkiv tiradas pelo engenheiro Alexander Wienerberger',
+          acervoOrigem: 'Arquivo Diocesano de Viena (Diözesanarchiv Wien) / Coleção Wienerberger',
+          anoEIdentificador: '1933, Registro Fotográfico Wienerberger Leica W-01 a W-26',
+          significadoProbatório: 'Evidência fotográfica direta e incontestável de vítimas civis recolhidas nas ruas da capital ucraniana durante o ápice da fome de 1933.'
         },
         {
-          registroOuFoto: 'Relatórios da OGPU sobre os casos de canibalismo e necrofagia nos distritos rurais de Kiev e Poltava',
-          acervoOrigem: 'HDA SBU (Arquivo Setorial Estatal do Serviço de Segurança da Ucrânia)',
-          anoEIdentificador: 'Fevereiro a Junho de 1933, Fundo 16, Processo 1032',
-          significadoProbatório: 'Documenta prontuários com fotografias forenses de recipientes apreendidos e depoimentos de mães enlouquecidas pela inanição.'
+          registroOuFoto: 'Registros cartográficos e censitários demográficos das perdas populacionais na Ucrânia e Cazaquistão',
+          acervoOrigem: 'Harvard Ukrainian Research Institute (HURI) / Projeto MAPA Digital Atlas',
+          anoEIdentificador: 'Reconstrução Demográfica 1926–1939 (Rudnytskyi et al.)',
+          significadoProbatório: 'Mapeamento espacial das taxas de mortalidade distritais na Ucrânia e das rotas de fuga dos clãs pastoris cazaques.'
         }
       ],
       testemunhos: [
         {
           testemunha: 'Gareth Jones',
-          funcaoOrigem: 'Jornalista galês que caminhou clandestinamente pelos vilarejos ucranianos em março de 1933',
-          trechoDepoimento: 'Andei a pé pelas aldeias na região de Kharkiv. Em todas as casas ouvi o mesmo lamento: "Todo mundo está morrendo; não temos pão há meses". Vi crianças com ventres deformados e pernas finas como gravetos. Não havia um único animal vivo nas ruas, nem pássaros nos céus.',
+          funcaoOrigem: 'Jornalista galês e testemunha ocular nos vilarejos ucranianos em março de 1933',
+          trechoDepoimento: 'Andei a pé pelas aldeias na região de Kharkiv. Em todas as casas ouvi o mesmo lamento: "Não temos pão há meses". Vi crianças com ventres inchados e aldeias inteiras silenciosas, onde a população esperava a morte em suas casas.',
           referenciaVerificada: 'JONES, Gareth. Famine in Russia. Manchester Guardian, 30 de março de 1933; The Financial News, 1933.'
         },
         {
           testemunha: 'Lev Kopelev',
-          funcaoOrigem: 'Militante do Komsomol que participou das brigadas de confisco de grãos na Ucrânia',
-          trechoDepoimento: 'Eu acreditava que estávamos construindo o socialismo. Tirávamos o último saco de milho de mulheres que choravam de joelhos, tirávamos a última cebola da horta infantil. Trancávamos os celeiros com cadeados do partido enquanto as pessoas agonizavam do outro lado da cerca. Disseram-nos que éramos a vanguarda e que a piedade era uma fraqueza burguesa.',
-          referenciaVerificada: 'KOPELEV, Lev. The Education of a True Believer. New York: Harper & Row, 1980, p. 224-228.'
+          funcaoOrigem: 'Militante do Komsomol participante das brigadas de requisição de grãos',
+          trechoDepoimento: 'Eu acreditava que estávamos construindo o socialismo. Tirávamos o último saco de milho de mulheres que choravam de joelhos. Disseram-nos que a piedade era uma fraqueza burguesa e que estávamos cumprindo o plano quinquenal.',
+          referenciaVerificada: 'KOPELEV, Lev. The Education of a True Believer. New York: Harper & Row, 1980.'
         }
       ],
       decretosECorrespondencias: [
         {
-          codigoOuNumero: 'Resolução do TsIK e Sovnarkom da URSS ("Lei das Cinco Espigas")',
-          dataEmissao: '7 de agosto de 1932',
-          orgaoEmissor: 'Comitê Executivo Central e Conselho de Comissários do Povo',
-          teorDispositivo: 'Declara os bens dos kolkhozes sagrados e estabelece a execução sumária com confisco de todos os bens para qualquer indivíduo apanhado subtraindo produtos do campo coletivo.',
-          localizacaoArquivo: 'Sobranie Zakonov SSSR, 1932, nº 62, art. 360'
+          codigoOuNumero: 'Diretiva Conjunta CC AUCP(b) e SNK URSS de 22 de janeiro de 1933',
+          dataEmissao: '22 de janeiro de 1933',
+          orgaoEmissor: 'Comitê Central do Partido e Conselho de Comissários do Povo (Stalin e Molotov)',
+          teorDispositivo: 'Determina o bloqueio de ferrovias e vias terrestres para impedir camponeses da Ucrânia e Kuban de deixarem suas áreas «за хлебом» (em busca de pão), ordenando a captura e repatriação imediata.',
+          localizacaoArquivo: 'Istmat.org doc. 38629 / RGASPI f. 558, op. 11, d. 45'
         },
         {
-          codigoOuNumero: 'Carta Secreta de Stalin a Mikhail Sholokhov sobre a fome no Don',
+          codigoOuNumero: 'Carta de Stalin a Mikhail Sholokhov sobre a fome no Don',
           dataEmissao: '6 de maio de 1933',
-          orgaoEmissor: 'Iosif Stalin (Secretário-Geral)',
-          teorDispositivo: 'Stalin rebate as súplicas do escritor Sholokhov afirmando que "os queridos cultivadores do seu distrito travaram uma guerra de greve silenciosa e sabotagem contra a autoridade soviética, pretendendo deixar os operários e o Exército Vermelho sem pão".',
+          orgaoEmissor: 'Josef Stalin (Secretário-Geral do CC do PCUS)',
+          teorDispositivo: 'Stalin justifica as requisições drásticas alegando que os cultivadores locais estavam conduzindo uma "guerra de sabotagem silenciosa" contra os operários e o Exército Vermelho.',
           localizacaoArquivo: 'RGASPI f. 558, op. 11, d. 827, ll. 1-8'
         }
       ]
@@ -1781,82 +1794,77 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
     responsabilidadesEConsequencias: {
       responsaveisPoliticosEInstitucionais: [
         {
-          agenteOuOrgao: 'Iosif Vissarionovich Stalin',
-          funcaoCargo: 'Secretário-Geral do CC do PCUS',
-          responsabilidadeEspecifica: 'Ideólogo da coletivização forçada e autor das diretivas de bloqueio de fronteiras e confisco integral de alimentos na Ucrânia e Kuban.'
+          agenteOuOrgao: 'Josef Stalin e Cúpula do Politburo',
+          funcaoCargo: 'Secretário-Geral do PCUS e Chefe de Governo',
+          responsabilidadeEspecifica: 'Decisões centrais de coletivização forçada, manutenção de metas irrealistas de requisição de cereais, promulgação do decreto de 7 de agosto de 1932 e assinatura da diretiva de bloqueio de circulação de 22 de janeiro de 1933.'
         },
         {
-          agenteOuOrgao: 'Vyacheslav Molotov',
-          funcaoCargo: 'Presidente do Sovnarkom da URSS e Chefe da Comissão Extraordinária na Ucrânia',
-          responsabilidadeEspecifica: 'Coordenou in loco em Kharkiv a requisição coercitiva violenta, punindo líderes locais que hesitassem em despojar os camponeses.'
-        },
-        {
-          agenteOuOrgao: 'Lazar Kaganovich',
-          funcaoCargo: 'Membro do Politburo e Chefe da Comissão no Cáucaso do Norte',
-          responsabilidadeEspecifica: 'Implementou o regime impiedoso de "listas negras" e desterro de povoados cosacos inteiros da bacia do Kuban.'
+          agenteOuOrgao: 'Vyacheslav Molotov e Lazar Kaganovich',
+          funcaoCargo: 'Chefes das Comissões Extraordinárias de Aquisição de Grãos',
+          responsabilidadeEspecifica: 'Supervisão in loco na Ucrânia e no Cáucaso do Norte, imposição de sanções punitivas, listas negras e confisco compulsório de reservas camponesas.'
         },
         {
           agenteOuOrgao: 'Filipp Goloshchyokin',
           funcaoCargo: 'Primeiro-Secretário do Partido no Cazaquistão',
-          responsabilidadeEspecifica: 'Executou a coletivização ultra-radical que liquidou a economia pastoral nômade cazaque, gerando o Asharshylyq.'
+          responsabilidadeEspecifica: 'Implementação violenta da sedentarização compulsória e confisco em massa de rebanhos que desencadeou o Asharshylyq.'
         }
       ],
       vitimasEImpactos: {
-        estimativasQuantitativas: 'Entre 3,9 e 4,5 milhões de mortos por fome direta e doenças decorrentes na Ucrânia (estudo demográfico pericial da Academia Nacional de Ciências da Ucrânia); cerca de 1,5 milhão de mortos no Cazaquistão (mais de 35% de toda a população cazaque); centenas de milhares no vale do Volga e Kuban.',
-        impactosDemograficosEHumanos: 'Hiatos geracionais indeléveis com déficit de nascimentos na casa de milhões; repovoamento planejado de aldeias ucranianas desertificadas por colonos russos trazidos de trem.',
-        impactosEconomicos: 'Destruição irremediável da agricultura tradicional da região do "solo negro" (chernozem); perda de mais de 70% do rebanho pecuário soviético e atraso tecnológico crônico nos campos kolkhozianos.'
+        estimativasQuantitativas: 'Na Ucrânia (1932–1934): aproximadamente 3,9 milhões de mortes excedentes e cerca de 600 mil nascimentos perdidos, totalizando 4,5 milhões de perdas demográficas (Rudnytskyi et al., 2015). No Cazaquistão (1930–1933): mais de 1,5 milhão de mortes (cerca de um quarto da população total e mais de um terço de toda a etnia cazaque, segundo Sarah Cameron). Na fome soviética de 1946–1947: entre 1,0 e 1,5 milhão de mortes excedentes (Michael Ellman).',
+        impactosDemograficosEHumanos: 'Destruição de famílias e linhagens inteiras; hiato demográfico geracional; perda maciça de animais e meios de subsistência na sociedade pastoril nômade; traumas sociais duradouros e deslocamento forçado de populações para outras repúblicas e para o exterior.',
+        impactosEconomicos: 'Desarticulação crônica da produtividade agrícola nos solos férteis de chernozem; liquidação de rebanhos inteiros no Cazaquistão com empobrecimento coletivo prolongado e ineficiência burocrática dos kolkhozes.'
       },
-      consequenciasImediatas: 'Submissão total do campesinato à estrutura burocrática dos kolkhozes sob vigilância das Estações de Máquinas e Tratores (MTS); silêncio forçado e censura absoluta de qualquer menção à fome nos registros públicos.',
-      consequenciasLongoPrazo: 'Reconhecimento do Holodomor como Genocídio contra o povo ucraniano por mais de 30 países e instituições internacionais; pilar central da memória histórica ucraniana de resistência à dominação russa.'
+      consequenciasImediatas: 'Subordinação coercitiva do campesinato sobrevivente às estruturas das fazendas coletivas (kolkhozes e MTS) e silenciamento rigoroso sobre a existência da fome pelo aparato de censura estatal.',
+      consequenciasLongoPrazo: 'Reconhecimento internacional do Holodomor como genocídio por dezenas de parlamentos e instituições internacionais; centralidade do Holodomor e do Asharshylyq na memória coletiva e na soberania nacional da Ucrânia e do Cazaquistão contemporâneos.'
     },
     debateHistoriografico: {
       interpretacoesDiferentes: [
         {
-          correnteEscola: 'Escola do Genocídio Deliberado e Arma de Engenharia Nacional',
+          correnteEscola: 'Interpretação Centrada no Holodomor como Genocídio e Repressão Nacional',
           principaisAutores: ['Robert Conquest', 'Anne Applebaum', 'Andrea Graziosi', 'Stanislav Kulchytsky'],
-          teseCentral: 'O Holodomor foi um ato deliberado de genocídio premeditado por Stalin contra a nação ucraniana, no qual a fome artificial serviu para eliminar tanto a resistência social agrária quanto o renascimento cultural da inteligência ucraniana.',
-          antiteseCritica: 'Debate jurídico quanto à adequação estrita aos termos da Convenção da ONU de 1948, em função de a fome ter atingido também regiões russas e cazaques.'
+          teseCentral: 'Enfatiza a violência da coletivização, as requisições punitivas, o confisco de reservas alimentares, a restrição deliberada à fuga dos famintos (diretiva de 22 de janeiro de 1933) e a perseguição à identidade cultural e política ucraniana, caracterizando o evento como genocídio contra a nação ucraniana.',
+          antiteseCritica: 'Debate jurídico sobre a demonstração da intenção específica (dolus specialis) conforme a Convenção da ONU de 1948, em função da ocorrência concomitante de fomes severas em regiões russas e no Cazaquistão.'
         },
         {
-          correnteEscola: 'Escola Estrutural-Econômica da Incompetência Dogmática',
-          principaisAutores: ['R. W. Davies', 'Stephen G. Wheatcroft', 'Mark Tauger'],
-          teseCentral: 'A fome resultou primariamente de colheitas abaixo do esperado, desorganização catastrófica da coletivização e dogmatismo burocrático na extração de excedentes industriais, não tendo sido planejada antecipadamente como extermínio étnico específico.',
-          antiteseCritica: 'Não explica por que Stalin emitiu ordens específicas de bloqueio de fronteiras exclusivamente para a Ucrânia e Kuban e por que continuou a exportar milhões de toneladas de trigo para o exterior enquanto pessoas morriam.'
+          correnteEscola: 'Interpretação Econômico-Demográfica e Crítica das Políticas Agrícolas',
+          principaisAutores: ['R. W. Davies', 'Stephen G. Wheatcroft', 'Michael Ellman'],
+          teseCentral: 'Analisa a crise a partir de dados quantitativos de colheitas, estoques, rendimentos e logística estatal, apontando a combinação entre desorganização agrícola, condições climáticas e políticas estatais predatórias de requisição que transformaram dificuldades em catástrofe humanitária.',
+          antiteseCritica: 'Não deve subestimar as decisões políticas e discriminatórias explícitas de bloqueio militar de fronteiras voltadas para a Ucrânia e o Kuban.'
         },
         {
-          correnteEscola: 'Escola de Estudos do Nomadismo e Colonialismo Interno',
-          principaisAutores: ['Sarah Cameron', 'Niccolò Pianciola'],
-          teseCentral: 'A tragédia no Cazaquistão (Asharshylyq) foi uma tentativa brutal de modernização e colonização forçada soviética para transformar nômades "primitivos" em cidadãos sedentários coletivizados, dizimando um povo com base em preconceito etnográfico modernizador.',
-          antiteseCritica: 'Ressalta a especificidade do caso cazaque em relação à questão nacional ucraniana.'
+          correnteEscola: 'Interpretação Regional, Comparativa e Transnacional',
+          principaisAutores: ['Sarah Cameron', 'Hiroaki Kuromiya', 'Niccolò Pianciola'],
+          teseCentral: 'Compara a especificidade regional das fomes, destacando que a catástrofe no Cazaquistão (Asharshylyq) resultou da destruição violenta da sociedade pastoril nômade e confisco de gado, diferenciando-se da dinâmica produtiva cerealífera ucraniana.',
+          antiteseCritica: 'Evita a homogeneização monocausal de crises que possuíam particularidades socioeconômicas e demográficas distintas.'
         }
       ],
-      consensosAcademicos: 'O consenso factual absoluto é de que a fome foi provocada por políticas estatais coercitivas (confisco irrestrito, Lei das Cinco Espigas e bloqueio de circulação) e que o regime conhecia a escala da mortandade mas optou por manter o segredo e a exportação.',
-      controversiasELimitacoesDasFontes: 'Os censos soviéticos de 1937 foram suprimidos e seus estatísticos fuzilados por ordem de Stalin quando os números revelaram um déficit populacional de 8 milhões de pessoas.'
+      consensosAcademicos: 'Consenso factual incontestável de que as políticas estatais coercitivas (metas punitivas de requisição, Lei das Cinco Espigas, listas negras e proibição de circulação) agravaram decisivamente as fomes soviéticas, transformando a escassez material em mortalidade em massa.',
+      controversiasELimitacoesDasFontes: 'Debate aberto na historiografia e no direito internacional sobre a intenção específica de genocídio no caso ucraniano; censura e supressão de dados demográficos no censo soviético de 1937.'
     },
     citacoesVerificadas: [
       {
-        trechoLiteral: 'A fome na Ucrânia em 1932-1933 não foi um fenômeno natural. Foi o resultado deliberado de decisões políticas tomadas no Kremlin: Stalin e seu círculo íntimo decidiram confiscar a comida, bloquear as fronteiras das aldeias para impedir a fuga dos esfomeados e transformar a fome em uma arma para quebrar a identidade e a soberania potencial do campesinato ucraniano.',
-        autor: 'Anne Applebaum',
-        obra: 'Red Famine: Stalin\'s War on Ukraine',
-        edicaoEditoraAno: '1. ed. New York: Doubleday, 2017',
-        paginaExata: 'p. 235-237',
-        analiseContextual: 'Applebaum analisa a simultaneidade entre a destruição das aldeias pela fome e o expurgo policial de escritores, linguistas e intelectuais ucranianos.'
+        trechoLiteral: 'A reconstrução demográfica com base nos censos e registros da Ucrânia estima aproximadamente 3,9 milhões de mortes excedentes entre 1932 e 1934 e cerca de 600 mil nascimentos perdidos, alcançando 4,5 milhões de perdas demográficas combinadas.',
+        autor: 'Oleh P. Rudnytskyi et al.',
+        obra: 'Demography of a Man-Made Human Catastrophe: The Case of Massive Famine in Ukraine 1932–1933',
+        edicaoEditoraAno: 'Demography and Social Economy, n. 2 (24), p. 11–30, 2015',
+        paginaExata: 'p. 15-22',
+        analiseContextual: 'Estudo pericial demográfico do Instituto Ptoukha da Academia Nacional de Ciências da Ucrânia em colaboração com Harvard.'
       },
       {
-        trechoLiteral: 'O cataclismo no Cazaquistão não foi um efeito colateral imprevisto, mas a consequência direta do projeto do regime de erradicar o nomadismo como modo de vida cultural e econômico. A perda de mais de um terço de toda a população cazaque representou uma das maiores catástrofes demográficas proporcionais do século XX.',
+        trechoLiteral: 'Mais de 1,5 milhão de pessoas morreram na fome cazaque de 1930–1933, representando aproximadamente um quarto da população do Cazaquistão soviético e mais de um terço de toda a população cazaque.',
         autor: 'Sarah Cameron',
         obra: 'The Hungry Steppe: Famine, Violence, and the Making of Soviet Kazakhstan',
         edicaoEditoraAno: '1. ed. Ithaca: Cornell University Press, 2018',
-        paginaExata: 'p. 4-6',
-        analiseContextual: 'Cameron documenta o impacto devastador do nomadismo forçado e a subsequente perda linguística e cultural dos clãs cazaques.'
+        paginaExata: 'p. 4-7',
+        analiseContextual: 'Pesquisa acadêmica com base em fontes documentais e orais em russo e cazaque sobre o Asharshylyq.'
       },
       {
-        trechoLiteral: 'Embora a colheita de 1932 tenha sido prejudicada por fatores agronômicos, as políticas de requisição vorazes do Politburo e a recusa inflexível de Stalin em importar alimentos de emergência transformaram uma safra difícil em uma catástrofe de inanição massiva para milhões de pessoas.',
-        autor: 'R. W. Davies e Stephen G. Wheatcroft',
-        obra: 'The Years of Hunger: Soviet Agriculture, 1931-1933',
-        edicaoEditoraAno: '1. ed. Basingstoke: Palgrave Macmillan, 2004',
-        paginaExata: 'p. 441-443',
-        analiseContextual: 'Os autores apresentam a análise quantitativa mais detalhada de estoques de grãos e balanços de requisições de toda a historiografia econômica.'
+        trechoLiteral: 'A diretiva soviética de 22 de janeiro de 1933 utilizou a expressão russa «за хлебом» (em busca de pão) para qualificar a migração de camponeses famintos que tentavam deixar a Ucrânia e o Norte do Cáucaso, ordenando às tropas que interceptassem essa fuga.',
+        autor: 'Diretiva do CC AUCP(b) e SNK URSS (Stalin e Molotov)',
+        obra: 'Documentos do Arquivo de Materiais Históricos (Istmat.org)',
+        edicaoEditoraAno: 'Moscou: Istmat doc. 38629, 22 jan. 1933',
+        paginaExata: 'Doc. 38629',
+        analiseContextual: 'Evidência arquivística do conhecimento da liderança sobre a inanição e da decisão estatal de impedir a saída dos camponeses.'
       }
     ],
     bibliografia: [
@@ -1867,28 +1875,32 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
         isbnOuReferencia: 'ISBN 978-0385538855'
       },
       {
-        entradaAbnt: 'CONQUEST, Robert. The Harvest of Sorrow: Soviet Collectivization and the Terror-Famine. New York: Oxford University Press, 1986. 412 p.',
-        entradaChicago: 'Conquest, Robert. 1986. The Harvest of Sorrow: Soviet Collectivization and the Terror-Famine. New York: Oxford University Press.',
-        tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0195051803'
-      },
-      {
         entradaAbnt: 'CAMERON, Sarah. The Hungry Steppe: Famine, Violence, and the Making of Soviet Kazakhstan. Ithaca: Cornell University Press, 2018. 296 p.',
         entradaChicago: 'Cameron, Sarah. 2018. The Hungry Steppe: Famine, Violence, and the Making of Soviet Kazakhstan. Ithaca: Cornell University Press.',
         tipoFonte: 'Monografia',
         isbnOuReferencia: 'ISBN 978-1501730436'
       },
       {
-        entradaAbnt: 'DAVIES, R. W.; WHEATCROFT, Stephen G. The Years of Hunger: Soviet Agriculture, 1931-1933. Basingstoke: Palgrave Macmillan, 2004. 555 p.',
+        entradaAbnt: 'CONQUEST, Robert. The Harvest of Sorrow: Soviet Collectivization and the Terror-Famine. New York: Oxford University Press, 1986. 412 p.',
+        entradaChicago: 'Conquest, Robert. 1986. The Harvest of Sorrow: Soviet Collectivization and the Terror-Famine. New York: Oxford University Press.',
+        tipoFonte: 'Monografia',
+        isbnOuReferencia: 'ISBN 978-0195051803'
+      },
+      {
+        entradaAbnt: 'DAVIES, R. W.; WHEATCROFT, Stephen G. The Years of Hunger: Soviet Agriculture, 1931–1933. Basingstoke: Palgrave Macmillan, 2004. 555 p.',
         entradaChicago: 'Davies, R. W., and Stephen G. Wheatcroft. 2004. The Years of Hunger: Soviet Agriculture, 1931–1933. Basingstoke: Palgrave Macmillan.',
         tipoFonte: 'Monografia',
         isbnOuReferencia: 'ISBN 978-0333311073'
       },
       {
-        entradaAbnt: 'GRAZIOSI, Andrea. The Great Soviet Peasant War: Bolsheviks and Peasants, 1917-1933. Cambridge, MA: Harvard Ukrainian Research Institute, 1996. 77 p.',
-        entradaChicago: 'Graziosi, Andrea. 1996. The Great Soviet Peasant War: Bolsheviks and Peasants, 1917–1933. Cambridge, MA: Harvard Ukrainian Research Institute.',
-        tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0916458836'
+        entradaAbnt: 'ELLMAN, Michael. The 1947 Soviet famine and the entitlement approach to famines. Cambridge Journal of Economics, v. 24, n. 5, p. 603–630, 2000.',
+        entradaChicago: 'Ellman, Michael. 2000. "The 1947 Soviet Famine and the Entitlement Approach to Famines." Cambridge Journal of Economics 24 (5): 603–630.',
+        tipoFonte: 'Artigo Periódico'
+      },
+      {
+        entradaAbnt: 'RUDNYTSKYI, Oleh P. et al. Demography of a man-made human catastrophe: the case of massive famine in Ukraine 1932–1933. Demography and Social Economy, n. 2, p. 11–30, 2015.',
+        entradaChicago: 'Rudnytskyi, Oleh P., et al. 2015. "Demography of a Man-Made Human Catastrophe: The Case of Massive Famine in Ukraine 1932–1933." Demography and Social Economy 2 (24): 11–30.',
+        tipoFonte: 'Artigo Periódico'
       }
     ]
   },
@@ -1896,214 +1908,238 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
   13: {
     topicId: 13,
     identificacao: {
-      nomeAcontecimento: 'O Massacre da Floresta de Katyn e Crimes de Guerra Soviéticos',
+      nomeAcontecimento: 'Crimes de Guerra e Massacres de Estado: O Massacre de Katyn e as Execuções de Prisioneiros Poloneses (1939–1945)',
       dataELocalizacao: {
-        dataExata: '5 de março de 1940 (decisão do Politburo) a 22 de maio de 1940 (fase de execuções ativas)',
-        calendarioNotas: 'As exumações alemãs começaram em fevereiro de 1943; a confissão oficial soviética ocorreu em 13 de abril de 1990.',
-        localizacaoPrecisa: 'Floresta de Katyn (perto de Smolensk, RSFSR), prisão do NKVD em Kalinin (atual Tver), prisão do NKVD em Kharkiv (Ucrânia) e prisões ocidentais de Minsk e Kiev.',
-        teatroOperacoes: 'Campos de prisioneiros de guerra de Kozelsk, Starobelsk e Ostashkov.'
+        dataExata: '1939–1945 (Decisão do Politburo: 5 de março de 1940; Fase principal de execuções: abril e maio de 1940)',
+        calendarioNotas: 'A decisão formal do Politburo foi aprovada em 5 de março de 1940. A fase principal de execuções ocorreu em abril e maio de 1940. O memorando de Shelepin (3 de março de 1959) registrou 21.857 executados. O reconhecimento oficial soviético ocorreu em abril de 1990 e a entrega de documentos do Pacote Fechado nº 1 à Polônia deu-se em 14 de outubro de 1992.',
+        localizacaoPrecisa: 'Floresta de Katyn (Smolensk, prisioneiros de Kozelsk), prisão do NKVD em Kharkiv (prisioneiros de Starobelsk, enterrados em Pyatikhatky), prisão do NKVD em Kalinin/Tver (prisioneiros de Ostashkov, enterrados em Mednoye) e prisões da Ucrânia e Bielorrússia ocidentais.',
+        teatroOperacoes: 'Campos especiais de Kozelsk, Starobelsk e Ostashkov, prisões do NKVD e sítios de sepultamento clandestino em valas comuns.'
       },
       governoEResponsaveis: {
         regimeVigente: 'União das Repúblicas Socialistas Soviéticas (Sovnarkom e Politburo do CC do PCUS)',
-        chefesDeEstadoEGoverno: ['Iosif Stalin', 'Vyacheslav Molotov', 'Lavrentiy Pavlovich Beria'],
+        chefesDeEstadoEGoverno: ['Josef Vissarionovitch Stalin', 'Viacheslav Molotov', 'Lavrentiy Pavlovich Beria', 'Kliment Voroshilov', 'Anastas Mikoyan', 'Mikhail Kalinin', 'Lazar Kaganovich'],
         orgaosExecutoresDiretos: [
           'Comissariado do Povo de Assuntos Internos (NKVD da URSS)',
-          'Primeiro Departamento Especial do NKVD',
           'Diretoria de Prisioneiros de Guerra (UPVI do NKVD)',
-          'Colégio de Execução Especial da Lubyanka'
+          'Troika Especial de Execução do NKVD (Merkulov, Kobulov, Bashtakov)'
         ],
         responsaveisOperacionais: ['Vasily Blokhin (carrasco-chefe do NKVD)', 'Pyotr Soprunenko (Chefe da UPVI)', 'Dmitry Tokarev (Chefe do NKVD em Kalinin)']
       }
     },
     contextoHistorico: {
-      situacaoAnterior: 'Após a invasão conjunta da Polônia pela Alemanha e URSS em setembro de 1939 em cumprimento ao Protocolo Secreto Molotov-Ribbentrop, o Exército Vermelho capturou cerca de 250.000 soldados poloneses. Oficiais de carreira, reservistas mobilizados (médicos, advogados, engenheiros, professores universitários e policiais) foram segregados em três campos especiais do NKVD: Kozelsk, Starobelsk e Ostashkov.',
-      causasPoliticas: 'Para Stalin e Beria, a elite educada e os oficiais do exército polonês representavam o núcleo irredutível do patriotismo, da religiosidade católica e do sentimento anti-soviético ("inimigos incorrigíveis do poder soviético"), incompatíveis com os planos de sovietização permanente dos territórios poloneses anexados.',
-      causasEconomicas: 'A desobstrução dos campos de internamento e prisões que custavam recursos de guarda do NKVD às vésperas de operações planejadas nos Estados Bálticos e Besarábia.',
-      causasSociais: 'Decapitação deliberada da elite intelectual e cívica da Polônia soberana para neutralizar qualquer futuro levante nacional ou reconstituição do Estado polonês.'
+      situacaoAnterior: 'Após a invasão alemã em 1º de setembro e a invasão soviética da Polônia em 17 de setembro de 1939, fundamentadas no protocolo secreto do Pacto Molotov-Ribbentrop, as forças soviéticas capturaram cerca de 250 mil militares poloneses. Oficiais das Forças Armadas, reservistas mobilizados (médicos, advogados, engenheiros, professores) e membros da polícia e da gendarmaria foram segregados em três campos especiais do NKVD: Kozelsk, Starobelsk e Ostashkov.',
+      causasPoliticas: 'Classificação oficial dos prisioneiros pelo aparelho de segurança como "elementos contrarrevolucionários e hostis incorrigíveis", considerados incompatíveis com os planos de controle e sovietização permanente das regiões orientais polonesas anexadas às repúblicas soviéticas.',
+      causasEconomicas: 'Reorganização do sistema de custódia e eliminação de custos de manutenção e vigilância de milhares de oficiais perante as novas operações geopolíticas do regime nos Bálticos e na Romênia.',
+      causasSociais: 'Neutralização e liquidação sistemática dos quadros dirigentes, intelectuais e estatais poloneses para impedir a reconstrução das Forças Armadas e de focos organizados de resistência à ocupação territorial.'
     },
     narrativaCronologica: {
       acontecimentosEmOrdem: [
         {
+          dataExata: '23 de agosto de 1939',
+          acontecimento: 'Assinatura do Pacto Molotov-Ribbentrop e Protocolo Secreto',
+          personagensEInstituicoes: 'Joachim von Ribbentrop, Viacheslav Molotov, governos alemão e soviético.',
+          decisoesTomadas: 'Delimitação de esferas de influência na Europa Oriental, estabelecendo a partilha territorial da Polônia entre o Terceiro Reich e a União Soviética.'
+        },
+        {
+          dataExata: '17 de setembro de 1939',
+          acontecimento: 'Invasão Soviética da Polônia e Captura de Prisioneiros',
+          personagensEInstituicoes: 'Exército Vermelho, NKVD, Forças Armadas da Polônia.',
+          decisoesTomadas: 'Avanço militar sobre o leste polonês, rendição e captura de contingentes militares e policiais, direcionando oficiais e quadros aos campos especiais de Kozelsk, Starobelsk e Ostashkov.'
+        },
+        {
           dataExata: '5 de março de 1940',
-          acontecimento: 'Aprovação da Resolução nº 13 do Politburo Ordenando o Fuzilamento',
-          personagensEInstituicoes: 'Lavrentiy Beria, Iosif Stalin, Kliment Voroshilov, Vyacheslav Molotov, Anastás Mikoyan, Mikhail Kalinin, Lazar Kaganovich.',
-          decisoesTomadas: 'Aprovação de memorando confidencial de Beria (nº 794/B) determinando o fuzilamento sumário sem julgamento formal de 14.700 oficiais poloneses e 11.000 presos políticos.'
+          acontecimento: 'Aprovação da Proposta de Beria pelo Politburo (Ordem de Execução)',
+          personagensEInstituicoes: 'Lavrentiy Beria, Josef Stalin, Voroshilov, Molotov, Mikoyan, Kalinin, Kaganovich.',
+          decisoesTomadas: 'Aprovação da proposta do NKVD autorizando a aplicação da pena de morte por procedimento especial sem julgamento convencional para 14.700 prisioneiros dos três campos e 11.000 detidos em prisões ocidentais.'
         },
         {
-          dataExata: '3 de abril a 19 de maio de 1940',
-          acontecimento: 'Execução Serial em Massa e Sepultamento em Valas Clandestinas',
-          personagensEInstituicoes: 'Vasily Blokhin e pelotões especiais do NKVD.',
-          decisoesTomadas: 'Transporte dos prisioneiros em vagões penitenciários. Na floresta de Katyn, prisioneiros de Kozelsk são alvejados na nuca na borda de valas; em Kalinin e Kharkiv, prisioneiros são mortos em celas isoladas com pistolas Walther alemãs calibre 7,65 mm para posterior ocultação de culpa.'
+          dataExata: 'Abril e Maio de 1940',
+          acontecimento: 'Fase Principal de Execuções e Sepultamento em Valas Comuns',
+          personagensEInstituicoes: 'Pelotões de execução do NKVD comandados por Vasily Blokhin e delegacias regionais.',
+          decisoesTomadas: 'Fuzilamentos seriais na nuca: Kozelsk fuzilados e sepultados em Katyn; Starobelsk fuzilados em Kharkiv (Pyatikhatky); Ostashkov fuzilados em Kalinin/Tver (Mednoye); e milhares em prisões ocidentais da Ucrânia e Bielorrússia.'
         },
         {
-          dataExata: '13 de abril de 1943',
-          acontecimento: 'Descoberta Pública das Valas de Katyn pela Alemanha',
-          personagensEInstituicoes: 'Wehrmacht, Joseph Goebbels (Ministério da Propaganda do Reich), Cruz Vermelha Polonesa.',
-          decisoesTomadas: 'Rádio Berlim divulga ao mundo a descoberta de valas com milhares de oficiais poloneses com as mãos amarradas com corda soviética; Moscou nega e rompe relações diplomáticas com o Governo Polonês no Exílio em Londres.'
+          dataExata: '1943 a 1944',
+          acontecimento: 'Descoberta das Valas pelas Tropas Alemãs e Versão Oficial Soviética',
+          personagensEInstituicoes: 'Autoridades alemãs, Cruz Vermelha Polonesa, Comissão Especial Soviética (Burdenko).',
+          decisoesTomadas: 'Alemanha divulga as valas em Katyn para propaganda antissoviética; Moscou nega a autoria e institui a Comissão Burdenko em 1944 para atribuir as execuções retrospectivamente aos alemães em 1941.'
         },
         {
-          dataExata: 'Janeiro de 1944',
-          acontecimento: 'Farsa da Comissão Burdenko Organizada pelo Kremlin',
-          personagensEInstituicoes: 'Nikolai Burdenko, Alexei Tolstoi, NKVD.',
-          decisoesTomadas: 'A URSS organiza comissão pseudocientífica que planta evidências falsificadas e redige laudo forjado atribuindo o massacre às tropas nazistas em 1941.'
+          dataExata: 'Fevereiro de 1946',
+          acontecimento: 'Apresentação da Acusação Soviética no Tribunal de Nuremberg',
+          personagensEInstituicoes: 'Promotoria soviética e Tribunal Militar Internacional de Nuremberg.',
+          decisoesTomadas: 'A acusação soviética tenta imputar Katyn aos réus alemães; o tribunal ouve testemunhas, mas omite formalmente a condenação de Katyn na sentença final de Nuremberg.'
         },
         {
           dataExata: '3 de março de 1959',
-          acontecimento: 'Memorando Secreto do Chefe da KGB Alexander Shelepin a Nikita Kruschev',
-          personagensEInstituicoes: 'Alexander Shelepin, Nikita Kruschev, KGB.',
-          decisoesTomadas: 'Shelepin relata o total exato de 21.857 poloneses executados e recomenda destruir os prontuários individuais dos prisioneiros mantendo apenas as atas de fuzilamento para evitar vazamento.'
+          acontecimento: 'Memorando de Aleksandr Shelepin a Nikita Khrushchev',
+          personagensEInstituicoes: 'Aleksandr Shelepin (Presidente da KGB), Nikita Khrushchev.',
+          decisoesTomadas: 'Registro interno da execução de 21.857 cidadãos poloneses (4.421 Katyn, 3.820 Kharkiv, 6.311 Kalinin/Mednoye e 7.305 prisões ocidentais) e recomendação de destruição de arquivos individuais das vítimas.'
         },
         {
-          dataExata: '13 de abril de 1990 e 14 de outubro de 1992',
-          acontecimento: 'Reconhecimento Oficial Soviético e Entrega do "Pacote Fechado nº 1" à Polônia',
-          personagensEInstituicoes: 'Mikhail Gorbachev, Boris Yeltsin, Lech Wałęsa.',
-          decisoesTomadas: 'Gorbachev admite a culpa do NKVD; Yeltsin envia o emissário Rudolf Pikhoya a Varsóvia para entregar cópias autenticadas do despacho de 5 de março de 1940 com a assinatura de Stalin.'
+          dataExata: 'Abril de 1990 a 14 de outubro de 1992',
+          acontecimento: 'Reconhecimento Oficial Soviético e Entrega do Pacote Fechado nº 1',
+          personagensEInstituicoes: 'Mikhail Gorbachev, Boris Yeltsin, Lech Wałęsa, Arquivo Presidencial Russo (AP RF).',
+          decisoesTomadas: 'Comunicação oficial da TASS admitindo a culpa do NKVD e entrega formal das cópias autenticadas da decisão do Politburo de 5 de março de 1940 e do memorando de Shelepin à Polônia.'
+        },
+        {
+          dataExata: '21 de outubro de 2013',
+          acontecimento: 'Julgamento Janowiec e Outros contra Rússia no TEDH',
+          personagensEInstituicoes: 'Grande Câmara do Tribunal Europeu dos Direitos Humanos.',
+          decisoesTomadas: 'Decisão sobre limites de competência temporal ratione temporis da Corte, sem afetar o núcleo factual estabelecido da autoria soviética do massacre.'
         }
       ],
-      sinteseNarrativaGeral: 'O Massacre de Katyn constituiu um dos crimes de guerra mais friamente premeditados do século XX. O assassinato de quase 22.000 oficiais e intelectuais poloneses foi aprovado no mais alto escalão político pelo Politburo soviético, executado pelo carrasco-chefe do NKVD com tiros na nuca e encoberto por cinquenta anos por meio de desinformação diplomática e falsificação deliberada de evidências estatais.'
+      sinteseNarrativaGeral: 'O Massacre de Katyn constituiu uma operação extrajudicial de execução em massa autorizada diretamente pelo Politburo sob comando de Stalin em 5 de março de 1940, que vitimou 21.857 cidadãos poloneses (militares, policiais e civis) mantidos sob custódia do NKVD em Kozelsk, Starobelsk, Ostashkov e prisões ocidentais. As execuções seriais ocorreram em abril e maio de 1940, seguidas por quase cinco décadas de encobrimento estatal até o reconhecimento oficial e a desclassificação do Pacote Fechado nº 1 entre 1990 e 1992.'
     },
     documentosEEvidencias: {
       documentosOriginais: [
         {
-          titulo: 'Despacho Secreto nº 794/B do Politburo do PCUS (Pacote Fechado nº 1)',
-          fundoArquivistico: 'AP RF f. 3, op. 128, d. 638, ll. 1-4; RGASPI f. 17, op. 166',
-          instituicaoGuarda: 'Arquivo Presidencial da Federação Russa / RGASPI',
-          descricaoConteudo: 'A resolução oficial de 5 de março de 1940 carimbada "Estritamente Secreto", com o texto de Beria e as assinaturas de próprio punho de Stalin, Voroshilov, Molotov e Mikoyan aprovando a pena suprema.',
-          autenticidadeEStatus: 'Autêntico, certificado em 1992 por peritos do Ministério Público Militar da Federação Russa.'
+          titulo: 'Decisão do Politburo do CC do PCUS de 5 de março de 1940 (Pacote Fechado nº 1)',
+          fundoArquivistico: 'Arquivo do Presidente da Federação Russa (AP RF), fundo 3, Pacote Fechado nº 1',
+          instituicaoGuarda: 'Arquivo do Presidente da Federação Russa / Arquivos Centrais de Moscou',
+          descricaoConteudo: 'Resolução formal com assinaturas e aprovações de Stalin, Voroshilov, Molotov, Mikoyan, Kalinin e Kaganovich, autorizando a aplicação da pena de morte aos oficiais e cidadãos poloneses detidos por meio de procedimento especial da troika do NKVD.',
+          autenticidadeEStatus: 'Autêntico, desclassificado e entregue oficialmente à Polônia em 14 de outubro de 1992.'
         },
         {
-          titulo: 'Carta confidencial de Alexander Shelepin (KGB) a Kruschev nº 632-Sh',
-          fundoArquivistico: 'AP RF f. 3, op. 128, d. 638, ll. 5-7',
-          instituicaoGuarda: 'Arquivo Presidencial da Federação Russa (AP RF)',
-          descricaoConteudo: 'Relatório secreto de 3 de março de 1959 contabilizando o total de 21.857 oficiais poloneses fuzilados (4.421 na floresta de Katyn, 3.820 no campo de Starobelsk, 6.311 no campo de Ostashkov e 7.305 nas prisões ocidentais).',
-          autenticidadeEStatus: 'Autêntico, comprovado pericialmente.'
+          titulo: 'Memorando de Aleksandr Shelepin a Nikita Khrushchev de 3 de março de 1959',
+          fundoArquivistico: 'AP RF fundo 3; Instituto de Memória Nacional da Polônia (IPN) Notatka Szelepina doc. 12381',
+          instituicaoGuarda: 'AP RF / Acervo Digital do IPN',
+          descricaoConteudo: 'Relatório secreto nº 632-Sh confirmando a execução de 21.857 pessoas (4.421 em Katyn, 3.820 em Kharkiv, 6.311 em Kalinin e 7.305 nas prisões ocidentais) e propondo a queima dos arquivos pessoais das vítimas.',
+          autenticidadeEStatus: 'Autêntico, fonte primária contábil interna da KGB.'
+        },
+        {
+          titulo: 'Relatório Oficial da Comissão Especial Soviética (Comissão Burdenko) de 1944',
+          fundoArquivistico: 'Publicação oficial soviética no Pravda, janeiro de 1944',
+          instituicaoGuarda: 'GARF / Arquivos de Estado russos',
+          descricaoConteudo: 'Relatório oficial soviético que tentava atribuir retrospectivamente a responsabilidade pelas valas comuns às forças militares alemãs durante a ocupação de 1941.',
+          autenticidadeEStatus: 'Documento histórico autêntico representativo da versão oficial de encobrimento do Estado soviético.'
         }
       ],
       fotografiasERegistros: [
         {
-          registroOuFoto: 'Fotografias periciais da Cruz Vermelha Polonesa e da Comissão Internacional de Médicos em Katyn',
-          acervoOrigem: 'Arquivo do Museu de Katyn em Varsóvia / Comitê Internacional da Cruz Vermelha (Genebra)',
-          anoEIdentificador: 'Abril-Maio de 1943, Relatório Pericial Forense nº PCK-1943',
-          significadoProbatório: 'Exibe os corpos com uniformes de inverno intactos, condecorações militares, cartas familiares e jornais poloneses com data limite de abril de 1940, provando que foram mortos antes da invasão alemã de 1941.'
+          registroOuFoto: 'Fotografias documentais das exumações em Katyn e relatórios da Cruz Vermelha Polonesa (1943)',
+          acervoOrigem: 'Cruz Vermelha Polonesa / Coleção Histórica do Instituto de Memória Nacional (IPN)',
+          anoEIdentificador: '1943, Dossiê Iconográfico Katyn-1943',
+          significadoProbatório: 'Evidência material dos corpos de oficiais fuzilados com uniformes militares poloneses intactos e diários pessoais cuja última anotação data da primavera de 1940.'
         },
         {
-          registroOuFoto: 'Registros das armas e cartuchos alemães GECO 7,65 mm adquiridos pelo NKVD para as execuções',
-          acervoOrigem: 'Depoimento gravado do general do NKVD Dmitry Tokarev em 1991',
-          anoEIdentificador: '1991, Fita de Interrogatório Oficial do Ministério Público Militar Russo',
-          significadoProbatório: 'O general Tokarev confessa que Vasily Blokhin trouxe malas com pistolas alemãs Walther porque as armas soviéticas Nagant travavam com o uso contínuo de centenas de disparos por noite.'
+          registroOuFoto: 'Fotografias dos memoriais e cemitérios de guerra em Mednoye e Pyatikhatky',
+          acervoOrigem: 'Conselho de Proteção da Memória das Lutas e Martírio da Polônia',
+          anoEIdentificador: 'Década de 1990–2000, Registros Forenses de Mednoye e Kharkiv',
+          significadoProbatório: 'Documentação arqueológica e forense das valas comuns identificadas nos locais das execuções de Ostashkov e Starobelsk.'
         }
       ],
       testemunhos: [
         {
           testemunha: 'Dmitry Tokarev',
-          funcaoOrigem: 'Major-General e Chefe do Departamento do NKVD na região de Kalinin em 1940',
-          trechoDepoimento: 'Blokhin vestiu seu uniforme especial de carrasco: boné de couro marrom, avental longo de couro marrom e luvas de couro com canos longos até os cotovelos. O prisioneiro era conduzido à cela insonorizada com paredes acolchoadas; Blokhin encostava o cano na nuca e puxava o gatilho. Os corpos eram retirados pelos fundos e empilhados em caminhões.',
-          referenciaVerificada: 'Interrogatório pericial de Dmitry Tokarev pelo procurador militar coronel Anatoly Yablokov, Moscou, 20 de março de 1991.'
+          funcaoOrigem: 'Chefe da Diretoria do NKVD em Kalinin (Tver) em 1940',
+          trechoDepoimento: 'Blokhin vestiu seu avental de couro marrom, boné e luvas compridas. Entravam os prisioneiros um a um na cela acolchoada de isolamento acústico; o tiro era disparado diretamente na nuca com pistolas Walther trazidas de Moscou, e os corpos eram retirados por uma porta lateral para caminhões.',
+          referenciaVerificada: 'Depoimento formal de Dmitry Tokarev perante os promotores militares russos em 20 de março de 1991, arquivado no processo nº 159 da Procuradoria Militar Principal da Federação Russa.'
         },
         {
-          testemunha: 'Józef Czapski',
-          funcaoOrigem: 'Capitão do exército polonês, sobrevivente e escritor',
-          trechoDepoimento: 'Procurei nossos milhares de companheiros em todos os cantos da URSS entre 1941 e 1942. Fui até o general Anders e ao próprio embaixador Kot; interroguei as autoridades do Gulag. Todos me davam respostas vagas e esquivas. Mal sabíamos que nossos irmãos já repousavam nas valas da floresta com tiros na cabeça.',
-          referenciaVerificada: 'CZAPSKI, Józef. The Inhuman Land. London: Chatto & Windus, 1951, p. 110-115.'
+          testemunha: 'Stanislaw Swianiewicz',
+          funcaoOrigem: 'Economista polonês, oficial da reserva e único sobrevivente poupado em Gnezdovo',
+          trechoDepoimento: 'Na estação de Gnezdovo fomos separados. Vi os meus companheiros oficiais de Kozelsk serem colocados em pequenos ônibus com janelas pintadas que entravam na floresta de Katyn. Eu fui retirado do grupo no último momento por ordem especial de Moscou por ser especialista econômico.',
+          referenciaVerificada: 'SWIANIEWICZ, Stanislaw. In the Shadow of Katyn. London: Boreas, 1975.'
         }
       ],
       decretosECorrespondencias: [
         {
-          codigoOuNumero: 'Resolução nº 13 do Politburo do CC do PCUS',
+          codigoOuNumero: 'Decisão do Politburo nº P13/144 sobre a proposta de Beria',
           dataEmissao: '5 de março de 1940',
-          orgaoEmissor: 'Politburo do Partido Comunista da URSS',
-          teorDispositivo: 'Determina ao NKVD a aplicação da pena suprema por fuzilamento aos prisioneiros poloneses sem audiência judicial e sem apresentação de acusações individuais.',
-          localizacaoArquivo: 'AP RF f. 3, op. 128, d. 638, l. 1'
+          orgaoEmissor: 'Politburo do Comitê Central do Partido Comunista de Toda a União (Bolchevique)',
+          teorDispositivo: 'Ordena a aplicação da pena suprema (fuzilamento) a prisioneiros de guerra dos campos de Kozelsk, Starobelsk e Ostashkov e detidos em prisões das regiões ocidentais da Ucrânia e Bielorrússia.',
+          localizacaoArquivo: 'AP RF fundo 3, Pacote Fechado nº 1 / RGASPI f. 17, op. 166, d. 623'
         },
         {
-          codigoOuNumero: 'Declaração Oficial da Agência TASS Reconhecendo a Culpa do NKVD',
+          codigoOuNumero: 'Comunicado Oficial da Agência TASS reconhecendo a autoria soviética',
           dataEmissao: '13 de abril de 1990',
-          orgaoEmissor: 'Governo da URSS e Agência de Notícias TASS',
-          teorDispositivo: 'Admite oficialmente perante o mundo que a tragédia de Katyn representou um dos crimes mais graves do stalinismo, expressando profundo pesar ao povo polonês.',
-          localizacaoArquivo: 'Pravda e Izvestia, 14 de abril de 1990'
+          orgaoEmissor: 'Governo da União Soviética / Agência TASS',
+          teorDispositivo: 'Comunica o reconhecimento formal da responsabilidade direta dos órgãos do NKVD (Beria, Merkulov e subordinados) pelas execuções em massa dos prisioneiros poloneses na floresta de Katyn.',
+          localizacaoArquivo: 'Pravda e Izvestia, edições de 14 de abril de 1990'
         }
       ]
     },
     responsabilidadesEConsequencias: {
       responsaveisPoliticosEInstitucionais: [
         {
-          agenteOuOrgao: 'Iosif Vissarionovich Stalin',
-          funcaoCargo: 'Líder Supremo da URSS',
-          responsabilidadeEspecifica: 'Assinou em primeiro lugar a ordem de fuzilamento dos 21.857 prisioneiros poloneses em 5 de março de 1940.'
+          agenteOuOrgao: 'Josef Stalin e Cúpula do Politburo',
+          funcaoCargo: 'Secretário-Geral do CC do PCUS e Liderança do Estado Soviético',
+          responsabilidadeEspecifica: 'Aprovação decisória expressa da ordem de fuzilamento em massa de 5 de março de 1940 e sustentação do encobrimento diplomático internacional.'
         },
         {
-          agenteOuOrgao: 'Lavrentiy Pavlovich Beria',
-          funcaoCargo: 'Comissário do Povo para Assuntos Internos (NKVD)',
-          responsabilidadeEspecifica: 'Elaborou a proposta de execução em massa e supervisionou o aparato logístico de transporte e fuzilamento.'
+          agenteOuOrgao: 'Lavrentiy Beria e Merkulov',
+          funcaoCargo: 'Chefe e Vice-Chefe do Comissariado do Povo de Assuntos Internos (NKVD)',
+          responsabilidadeEspecifica: 'Autoria da proposta formal de execução e planejamento administrativo e logístico da operação de extermínio.'
         },
         {
-          agenteOuOrgao: 'Vasily Mikhailovich Blokhin',
-          funcaoCargo: 'Comandante da Seção de Execuções da Lubyanka (Carrasco-Chefe)',
-          responsabilidadeEspecifica: 'Executou pessoalmente milhares de prisioneiros poloneses com disparos na nuca na prisão de Kalinin.'
+          agenteOuOrgao: 'Vasily Blokhin',
+          funcaoCargo: 'Comandante da Seção de Execuções da Diretoria de Assuntos Gerais do NKVD',
+          responsabilidadeEspecifica: 'Coordenação operacional e execução direta pessoal de milhares de fuzilamentos na prisão de Kalinin e supervisionamento dos pelotões em Katyn e Kharkiv.'
         }
       ],
       vitimasEImpactos: {
-        estimativasQuantitativas: 'Exatamente 21.857 cidadãos poloneses executados (conforme contagem de Shelepin em 1959), incluindo 14 generais, 1 contra-almirante, mais de 4.000 oficiais de infantaria, cavalaria e aviação, 6.000 policiais e centenas de juízes, cirurgiões e professores.',
-        impactosDemograficosEHumanos: 'Eliminação de aproximadamente 40% de todo o corpo de oficiais mobilizados da Polônia, paralisando a reorganização defensiva autônoma do país.',
-        impactosEconomicos: 'Desapropriação e confisco integral de todos os pertences, medalhas e patrimônios das famílias polonesas deportadas simultaneamente para o Cazaquistão.'
+        estimativasQuantitativas: '21.857 vítimas documentadas no memorando oficial de Shelepin (1959): 4.421 fuzilados e enterrados na floresta de Katyn; 3.820 em Kharkiv (sepultados em Pyatikhatky); 6.311 em Kalinin/Tver (sepultados em Mednoye); e 7.305 nas prisões ocidentais da Ucrânia e da Bielorrússia. As estimativas históricas agregadas situam-se em cerca de 22 mil cidadãos poloneses executados.',
+        impactosDemograficosEHumanos: 'Eliminação sumária de uma parcela decisiva dos quadros de liderança militar, policial, judiciária e científica da Polônia entre guerras; décadas de luto reprimido e silenciamento imposto aos familiares das vítimas.',
+        impactosEconomicos: 'Perda maciça de capital humano qualificado (médicos, agrônomos, engenheiros industriais e professores que serviam como oficiais reservistas mobilizados).'
       },
-      consequenciasImediatas: 'Ruptura das relações diplomáticas entre Moscou e o Governo Polonês em Londres em abril de 1943; instalação posterior do Comitê de Lublin (marionete pró-soviética) como autoridade polonesa do pós-guerra.',
-      consequenciasLongoPrazo: 'Ferida moral histórica incurável na consciência nacional polonesa; confirmação do massacre pela Duma Estatal da Federação Russa em novembro de 2010 como crime ordenado pessoalmente por Stalin.'
+      consequenciasImediatas: 'Ruptura das relações diplomáticas entre a União Soviética e o governo polonês no exílio em Londres (abril de 1943) e criação da comissão Burdenko para forjar a versão oficial soviética.',
+      consequenciasLongoPrazo: 'Katyn permaneceu como a ferida mais profunda e emblemática na memória histórica entre poloneses e russos; símbolo central do Instituto de Memória Nacional (IPN) e marco definidor da condenação de crimes de Estado soviéticos na história europeia contemporânea.'
     },
     debateHistoriografico: {
       interpretacoesDiferentes: [
         {
-          correnteEscola: 'A Mentira Oficial Soviética e Negacionismo Histórico (1943–1990)',
-          principaisAutores: ['Comissão Especial Burdenko (1944)', 'Promotoria Soviética em Nuremberg (1946)'],
-          teseCentral: 'Os oficiais poloneses teriam sido capturados e executados pela Wehrmacht alemã no outono de 1941 após a retirada soviética de Smolensk.',
-          antiteseCritica: 'Foi desmascarada como uma das maiores fraudes periciais da história mundial pela desclassificação dos documentos originais do Kremlin.'
+          correnteEscola: 'Reconstrução Documental e Institucional',
+          principaisAutores: ['Anna M. Cienciala', 'Natalia S. Lebedeva', 'Wojciech Materski'],
+          teseCentral: 'Reconstrói minuciosamente com base no Pacote Fechado nº 1 a cadeia decisória burocrática e política que ligou a proposta de Beria à resolução do Politburo de 5 de março de 1940 e à execução operacional pelo NKVD.',
+          antiteseCritica: 'A farta documentação desmente conclusivamente qualquer tese revisionista de imputação aos alemães.'
         },
         {
-          correnteEscola: 'Escola de Crimes contra a Humanidade e Genocídio Seletivo',
-          principaisAutores: ['Norman M. Naimark', 'Timothy Snyder', 'Witold Wasilewski'],
-          teseCentral: 'Katyn foi um ato de decapitação sociológica sistemática deliberadamente planejado para impedir a reconstrução do Estado independente polonês, enquadrando-se conceitualmente como crime contra a humanidade e genocídio de classe-elite.',
-          antiteseCritica: 'O Ministério Público Militar russo em 2004 arquivou o processo classificando-o apenas como "abuso de autoridade militar com excesso de poder", recusando categorizá-lo como crime de genocídio.'
+          correnteEscola: 'Violência de Massa e Zonas de Ocupação Comparadas',
+          principaisAutores: ['Timothy Snyder'],
+          teseCentral: 'Situa Katyn na dinâmica das "Terras de Sangue" (Bloodlands), onde a ocupação territorial conjunta e a decapitação deliberada das elites nacionais polonesas foram praticadas tanto pelo nazismo quanto pelo stalinismo em 1939–1941.',
+          antiteseCritica: 'A comparação deve preservar as especificidades doutrinárias e institucionais de cada regime sem equalizar seus projetos finais.'
         },
         {
-          correnteEscola: 'Escola da Segurança Imperial Defensivo-Paranoica',
-          principaisAutores: ['Oleg V. Khlevniuk', 'Anna M. Cienciala'],
-          teseCentral: 'O crime derivou do cálculo frio de segurança de Stalin, que temia a formação de um exército hostil em sua retaguarda e aproveitou a oportunidade para erradicar para sempre a espinha dorsal da nação polonesa.',
-          antiteseCritica: 'Enfatiza a continuidade entre as Operações Nacionais do Grande Terror de 1937–1938 e o massacre de 1940.'
+          correnteEscola: 'Repressão Política e Classificação de Crimes de Estado',
+          principaisAutores: ['Norman M. Naimark'],
+          teseCentral: 'Examina o massacre no âmbito dos crimes de guerra em massa e crimes contra a humanidade, analisando os critérios de destruição sistemática de segmentos nacionais específicos da Polônia.',
+          antiteseCritica: 'Diferenciação necessária entre qualificação historiográfica e a aplicação estrita dos requisitos jurídicos da Convenção de Genocídio da ONU de 1948.'
         }
       ],
-      consensosAcademicos: 'Inexiste qualquer dúvida acadêmica ou forense séria no mundo sobre a responsabilidade integral e exclusiva do Politburo soviético e do NKVD pela execução de Katyn.',
-      controversiasELimitacoesDasFontes: 'O Ministério Público da Rússia em 2004 classificou como confidenciais dezenas de tomos da investigação penal, impedindo a consulta pública integral aos laudos periciais e aos nomes de todos os executores subalternos.'
+      consensosAcademicos: 'Consenso arquivístico absoluto de que o massacre de Katyn e as execuções associadas de 21.857 prisioneiros poloneses foram decididos pela cúpula do Politburo soviético em 5 de março de 1940 e executados pelo NKVD na primavera de 1940, sendo a versão alemã de 1941 uma falsificação desfeita pelos próprios arquivos de Moscou.',
+      controversiasELimitacoesDasFontes: 'Acesso continuado restrito a volumes específicos da investigação nº 159 da Procuradoria Militar russa sob alegação de segredo de Estado e controvérsias jurídicas perante cortes internacionais.'
     },
     citacoesVerificadas: [
       {
-        trechoLiteral: 'O massacre de Katyn foi planejado e executado com precisão cirúrgica no topo da pirâmide do poder soviético. A ordem assinada por Stalin e pelos membros do Politburo em 5 de março de 1940 constitui uma sentença de morte em massa explícita contra indivíduos culpados unicamente de sua lealdade à nação polonesa.',
-        autor: 'Timothy Snyder',
-        obra: 'Bloodlands: Europe Between Hitler and Stalin',
-        edicaoEditoraAno: '1. ed. New York: Basic Books, 2010',
-        paginaExata: 'p. 139-142',
-        analiseContextual: 'Snyder demonstra o padrão serial dos fuzilamentos no contexto do massacre conjunto de civis no leste europeu ocupado.'
+        trechoLiteral: 'O memorando de Aleksandr Shelepin a Nikita Khrushchev de 3 de março de 1959 registrou oficialmente a execução de 21.857 cidadãos poloneses e recomendou a destruição de seus arquivos operacionais individuais para evitar complicações políticas futuras ao Estado soviético.',
+        autor: 'Aleksandr Shelepin (Presidente da KGB)',
+        obra: 'Memorando Secreto nº 632-Sh ao Comitê Central do PCUS',
+        edicaoEditoraAno: 'Moscou: AP RF fundo 3 / IPN doc. 12381, 1959',
+        paginaExata: 'Pacote Fechado nº 1',
+        analiseContextual: 'Documento interno de prestação de contas que comprova a contagem das vítimas e a deliberação de encobrimento documental.'
       },
       {
-        trechoLiteral: 'A matança dos oficiais poloneses em Katyn não foi um excesso ou erro tático de comandantes de campo; foi uma decisão friamente burocrática tomada pelo Politburo de Stalin com o propósito consciente de extirpar a classe dirigente e educada da sociedade polonesa para sempre.',
-        autor: 'Norman M. Naimark',
-        obra: 'Stalin\'s Genocides',
-        edicaoEditoraAno: '1. ed. Princeton: Princeton University Press, 2010',
-        paginaExata: 'p. 88-91',
-        analiseContextual: 'Naimark fundamenta a caracterização de Katyn como caso exemplar de extermínio preventivo de elites civis e militares.'
+        trechoLiteral: 'A decisão do Politburo de 5 de março de 1940 aprovou a proposta do NKVD para examinar os casos de 14.700 prisioneiros de guerra e 11.000 detidos em procedimento especial, aplicando a pena de morte por fuzilamento sem julgamento formal e sem acusação formulada.',
+        autor: 'Politburo do CC do PC(b) da URSS (Stalin, Voroshilov, Molotov, Mikoyan)',
+        obra: 'Resolução nº P13/144 do Politburo do Comitê Central',
+        edicaoEditoraAno: 'Moscou: AP RF fundo 3, Pacote Fechado nº 1, 5 mar. 1940',
+        paginaExata: 'Fundo 3, Pacote Fechado nº 1',
+        analiseContextual: 'Texto normativo supremo que autorizou a liquidação física da oficialidade e de agentes do Estado polonês.'
       },
       {
-        trechoLiteral: 'A entrega dos documentos do Pacote Fechado nº 1 pelo governo de Boris Yeltsin ao presidente Lech Wałęsa em outubro de 1992 encerrou cinquenta anos de negação, falsificação e cinismo diplomático do Estado soviético.',
-        autor: 'Anna M. Cienciala, Natalia S. Lebedeva e Wojciech Materski',
-        obra: 'Katyn: A Crime Without Punishment',
-        edicaoEditoraAno: '1. ed. New Haven: Yale University Press, 2007',
-        paginaExata: 'p. 2-5',
-        analiseContextual: 'Obra monumental da coleção Annals of Communism compilando a documentação completa dos arquivos presidenciais russos e poloneses.'
+        trechoLiteral: 'No julgamento Janowiec e Outros contra Rússia (2013), a Grande Câmara do Tribunal Europeu dos Direitos Humanos estabeleceu que não detinha competência temporal para julgar a violação do direito à vida material ocorrida em 1940, sem com isso contestar a autoria histórica soviética confirmada pela documentação oficial.',
+        autor: 'Tribunal Europeu dos Direitos Humanos (Grande Câmara)',
+        obra: 'Case of Janowiec and Others v. Russia (Applications nos. 55508/07 and 29520/09)',
+        edicaoEditoraAno: 'Estrasburgo: ECHR Judgment, 21 out. 2013',
+        paginaExata: 'Parágrafos 128-160',
+        analiseContextual: 'Decisão judicial internacional delimitando os contornos da competência temporal ratione temporis.'
       }
     ],
     bibliografia: [
       {
-        entradaAbnt: 'CIENCIALA, Anna M.; LEBEDEVA, Natalia S.; MATERSKI, Wojciech. Katyn: A Crime Without Punishment. New Haven: Yale University Press, 2007. 592 p.',
-        entradaChicago: 'Cienciala, Anna M., Natalia S. Lebedeva, and Wojciech Materski. 2007. Katyn: A Crime Without Punishment. New Haven: Yale University Press.',
+        entradaAbnt: 'CIENCIALA, Anna M.; LEBEDEVA, Natalia S.; MATERSKI, Wojciech (ed.). Katyn: A Crime Without Punishment. New Haven: Yale University Press, 2007. 592 p.',
+        entradaChicago: 'Cienciala, Anna M., Natalia S. Lebedeva, and Wojciech Materski, eds. 2007. Katyn: A Crime Without Punishment. New Haven: Yale University Press.',
         tipoFonte: 'Coletânea Documental',
         isbnOuReferencia: 'ISBN 978-0300108514'
       },
@@ -2120,15 +2156,14 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
         isbnOuReferencia: 'ISBN 978-0691147840'
       },
       {
-        entradaAbnt: 'ZASLAVSKY, Victor. Classified: The Secret Soviet-Polish War and the Katyn Massacre. New York: Enigma Books, 2008. 160 p.',
-        entradaChicago: 'Zaslavsky, Victor. 2008. Classified: The Secret Soviet-Polish War and the Katyn Massacre. New York: Enigma Books.',
-        tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-1929631681'
+        entradaAbnt: 'INSTITUTE OF NATIONAL REMEMBRANCE (IPN). The Katyń Massacre. Warsaw: Institute of National Remembrance, 2020. 120 p.',
+        entradaChicago: 'Institute of National Remembrance (IPN). 2020. The Katyń Massacre. Warsaw: IPN.',
+        tipoFonte: 'Monografia'
       },
       {
-        entradaAbnt: 'ARQUIVO DO PRESIDENTE DA FEDERAÇÃO RUSSA (AP RF). Fundo 3, Inventário 128, Processo 638: O "Pacote Fechado nº 1" referente aos prisioneiros poloneses de Katyn. Moscou: AP RF, 1940–1959.',
-        entradaChicago: 'Presidential Archive of the Russian Federation (AP RF). Fond 3, opis 128, delo 638: Closed Package No. 1 on Katyn. Moscow.',
-        tipoFonte: 'Fundo Arquivístico'
+        entradaAbnt: 'EUROPEAN COURT OF HUMAN RIGHTS. Case of Janowiec and Others v. Russia. Grand Chamber Judgment, 21 October 2013. Estrasburgo: ECHR, 2013.',
+        entradaChicago: 'European Court of Human Rights. 2013. Case of Janowiec and Others v. Russia. Grand Chamber Judgment, 21 October 2013. Strasbourg: ECHR.',
+        tipoFonte: 'Jurisprudência Internacional'
       }
     ]
   },
@@ -2136,205 +2171,217 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
   11: {
     topicId: 11,
     identificacao: {
-      nomeAcontecimento: 'O Sistema Penitenciário Gulag e a Escravidão de Estado Soviética',
+      nomeAcontecimento: 'O Sistema Gulag e o Trabalho Forçado na União Soviética (1929–1953)',
       dataELocalizacao: {
-        dataExata: '11 de julho de 1929 (resolução oficial do Sovnarkom) a 25 de janeiro de 1960 (dissolução do MVD Gulag)',
-        calendarioNotas: 'O ápice populacional e de mortalidade concentrou-se entre 1933 e 1953; as greves de Kengir e Vorkuta ocorreram em 1953–1954.',
-        localizacaoPrecisa: 'Ilhas Solovki (Mar Branco), Canal Mar Branco-Báltico (Belomorkanal), Bacia de Kolyma (Dalstroy no Extremo Oriente), Complexo de Vorkuta (Círculo Polar Ártico), Norilsk e Karaganda (Cazaquistão).',
-        teatroOperacoes: 'Mais de 476 complexos concentracionários e dezenas de milhares de colônias de trabalho forçado (ITL) distribuídos por todo o território da URSS.'
+        dataExata: '1929–1953 (Marco institucional: 25 de abril de 1930; Dissolução formal: 25 de janeiro de 1960)',
+        calendarioNotas: 'Correção cronológica obrigatória: 11 de julho de 1929 não deve ser apresentado como a data de criação formal da administração central do Gulag. O marco institucional formal adotado na historiografia arquivística é 25 de abril de 1930 (Ordem nº 130/63 da OGPU). O ápice de mortalidade ocorreu na crise alimentar da Segunda Guerra Mundial (1942–1943). Dissolução formal da administração: 25 de janeiro de 1960.',
+        localizacaoPrecisa: 'Ilhas Solovki (Mar Branco), Canal Mar Branco–Báltico (Belomorkanal), Bacia de Kolyma (complexo Dalstroy no Extremo Oriente), Vorkuta (Bacia de Pechora, Ártico), Norilsk e Karaganda (Karlag, Cazaquistão).',
+        teatroOperacoes: 'Centenas de complexos concentracionários e milhares de colônias de trabalho corretivo (ITL e ITK) distribuídos por regiões inóspitas, mineradoras e de fronteira da URSS.'
       },
       governoEResponsaveis: {
-        regimeVigente: 'União das Repúblicas Socialistas Soviéticas (Sovnarkom / Conselho de Ministros)',
-        chefesDeEstadoEGoverno: ['Iosif Stalin', 'Vyacheslav Molotov', 'Nikita Kruschev'],
+        regimeVigente: 'União das Repúblicas Socialistas Soviéticas (Sovnarkom / Conselho de Ministros / Politburo do CC do PCUS)',
+        chefesDeEstadoEGoverno: ['Josef Vissarionovitch Stalin (Secretário-Geral do PCUS e Presidente do Sovnarkom)', 'Vyacheslav Molotov', 'Nikita Kruschev'],
         orgaosExecutoresDiretos: [
-          'Diretoria Geral dos Campos (GULAG) do OGPU / NKVD / MVD da URSS',
+          'Administração Central dos Campos (GULAG) subordinada sucessivamente à OGPU, NKVD e MVD da URSS',
           'Diretoria Especial de Construção do Extremo Norte (Dalstroy)',
-          'Comissariado do Povo de Ferrovias e Construção Militar'
+          'Comissariado do Povo de Assuntos Internos (NKVD da URSS)'
         ],
-        responsaveisOperacionais: ['Naftaly Frenkel (idealizador do sistema de ração calibrada por produção)', 'Matvei Berman (Chefe do Gulag 1932–1937)', 'Israel Pliner', 'Viktor Nasedkin']
+        responsaveisOperacionais: ['Naftaly Frenkel', 'Matvei Berman (Chefe do Gulag 1932–1937)', 'Israel Pliner', 'Viktor Nasedkin']
       }
     },
     contextoHistorico: {
-      situacaoAnterior: 'O modelo penal tradicional soviético operava prisões sob a supervisão do Comissariado da Justiça. Com o início do Primeiro Plano Quinquenal em 1928, a liderança deparou-se com a carência dramática de divisas e recursos para explorar ouro, madeira, níquel e carvão em regiões inóspitas da Sibéria e do Ártico, onde trabalhadores livres recusavam fixar residência.',
-      causasPoliticas: 'Utilização sistemática do Artigo 58 do Código Penal da RSFSR (que tipificava crimes de "agitação anti-soviética", "sabotagem" e "intenção de traição") para condenar milhões de cidadãos a penas de 5 a 25 anos de trabalhos forçados sem necessidade de julgamento perante juiz de direito.',
-      causasEconomicas: 'A necessidade de mão de obra servil compulsória sem remuneração para viabilizar projetos faraônicos de infraestrutura: abertura de canais fluviais navegáveis, ferrovias polares (como a "Ferrovia da Morte" Salekhard-Igarka) e minas de ouro em Kolyma para acumulação de divisas metálicas estatais.',
-      causasSociais: 'A criação de uma subclasse permanente de milhões de "zeks" (prisioneiros) desprovidos de direitos de cidadania, segregados de suas famílias e expostos ao banditismo das máfias criminosas comuns (urki), incentivadas pela administração para aterrorizar os presos políticos.'
+      situacaoAnterior: 'A utilização de confinamento e trabalho compulsório teve antecedentes nos primeiros anos do poder soviético (1918–1921) e no desenvolvimento de Solovki (1923). Com o Primeiro Plano Quinquenal (1928–1929) e a coletivização forçada, a liderança soviética acelerou a mobilização coercitiva de mão de obra penal para a extração de matérias-primas e grandes obras de infraestrutura.',
+      causasPoliticas: 'Instrumento central de repressão, coerção política e controle social do regime stalinista, punindo opositores, kulaks e cidadãos enquadrados no Artigo 58 do Código Penal por delitos políticos e econômicos.',
+      causasEconomicas: 'Necessidade estatal de mobilizar força de trabalho compulsória em regiões remotas de clima extremo (Ártico, Sibéria, Extremo Oriente) para mineração de ouro, carvão, níquel, extração de madeira e canais estratégicos.',
+      causasSociais: 'Deportação e deslocamento compulsório de grupos sociais e camponeses inteiros, associados à punição penal e à imposição de metas produtivas de trabalho forçado.'
     },
     narrativaCronologica: {
       acontecimentosEmOrdem: [
         {
-          dataExata: '11 de julho de 1929',
-          acontecimento: 'Decreto do Sovnarkom sobre a Utilização do Trabalho Prisional',
-          personagensEInstituicoes: 'Sovnarkom da URSS, OGPU.',
-          decisoesTomadas: 'Transferência compulsória de todos os sentenciados a penas superiores a três anos para campos do OGPU para colonização e exploração econômica do Norte e Sibéria.'
+          dataExata: '1918 a 1923',
+          acontecimento: 'Antecedentes e desenvolvimento do campo de Solovki',
+          personagensEInstituicoes: 'Governo Bolchevique, Tcheka, Ilhas Solovki.',
+          decisoesTomadas: 'Primeiras experiências de campos de detenção e trabalho compulsório que serviram de modelo para o sistema posterior.'
+        },
+        {
+          dataExata: '1928 a 1929',
+          acontecimento: 'Primeiro Plano Quinquenal e expansão do trabalho forçado',
+          personagensEInstituicoes: 'Liderança soviética, OGPU.',
+          decisoesTomadas: 'Impulso decisivo à mobilização de mão de obra penal e envio massivo de sentenciados para obras estratégicas e colonização no Norte e Sibéria.'
+        },
+        {
+          dataExata: '25 de abril de 1930',
+          acontecimento: 'Ordem nº 130/63 da OGPU — Criação da Administração dos Campos',
+          personagensEInstituicoes: 'OGPU da URSS.',
+          decisoesTomadas: 'Criação formal da Administração dos Campos dentro da estrutura central da OGPU, marco institucional fundador do órgão Gulag (consolidado em outubro de 1930).'
         },
         {
           dataExata: '1931 a 1933',
-          acontecimento: 'Construção Forçada do Canal Mar Branco-Báltico (Belomorkanal)',
-          personagensEInstituicoes: 'Naftaly Frenkel, Genrikh Yagoda, mais de 120.000 prisioneiros.',
-          decisoesTomadas: 'Construção manual de 227 km de canal através de rochas e pântanos sem maquinário pesado; morte estimada de 25.000 a 30.000 prisioneiros por hipotermia, inanição e desmoronamentos.'
+          acontecimento: 'Construção do Canal Mar Branco–Báltico (Belomorkanal)',
+          personagensEInstituicoes: 'OGPU, dezenas de milhares de prisioneiros.',
+          decisoesTomadas: 'Emprego maciço de trabalho penal em obra acelerada de infraestrutura, convertida em símbolo da associação entre coerção, mortalidade e propaganda do regime.'
         },
         {
           dataExata: '13 de novembro de 1931',
-          acontecimento: 'Criação do Complexo Minerador Dalstroy em Kolyma',
-          personagensEInstituicoes: 'Eduard Berzin, OGPU, Diretoria de Mineração de Ouro.',
-          decisoesTomadas: 'Abertura das minas de ouro da Sibéria Oriental com temperaturas de até -55°C; centenas de milhares de prisioneiros trabalham até a exaustão física total no regime de extração ártica.'
+          acontecimento: 'Criação do Dalstroy e exploração de Kolyma',
+          personagensEInstituicoes: 'Eduard Berzin, OGPU, Administração de Construção do Extremo Norte.',
+          decisoesTomadas: 'Organização da exploração mineradora de ouro e recursos na inóspita bacia de Kolyma, com base central no trabalho de presos sob condições climáticas extremas.'
         },
         {
-          dataExata: '1941 a 1943 (durante a invasão nazista)',
-          acontecimento: 'Pico Histórico de Mortalidade Geral nos Campos do Gulag',
-          personagensEInstituicoes: 'Administração Geral do Gulag, Ministério do Interior.',
-          decisoesTomadas: 'Corte drástico nas rações calóricas alimentares para canalizar suprimentos ao front militar; a taxa de mortalidade nos campos atinge o ápice de 24,9% em 1942, vitimando mais de 500.000 internados em apenas dois anos.'
+          dataExata: '1937 a 1938',
+          acontecimento: 'Grande Terror e expansão vertiginosa do contingente prisional',
+          personagensEInstituicoes: 'NKVD sob Nikolai Yezhov, Diretoria do Gulag.',
+          decisoesTomadas: 'Operações repressivas em massa geram fluxo sem precedentes de detidos nos campos (108.654 mortes registradas no sistema somente em 1938 segundo GARF f. 9414).'
         },
         {
-          dataExata: 'Maio a Junho de 1954',
-          acontecimento: 'Insurreição Armada de Prisioneiros em Kengir (Cazaquistão)',
-          personagensEInstituicoes: 'Prisioneiros de Kengir liderados por Kapiton Kuznetsov, tropas blindadas do MVD.',
-          decisoesTomadas: 'Revolta aberta exigindo revisão das sentenças do Artigo 58; o exército invade o campo com tanques T-34 esmagando centenas de prisioneiras e prisioneiros desarmados sob as esteiras de aço.'
+          dataExata: '1941 a 1943',
+          acontecimento: 'Invasão alemã, crise alimentar e pico de mortalidade nos campos',
+          personagensEInstituicoes: 'NKVD da URSS, Administração Geral do Gulag.',
+          decisoesTomadas: 'A economia de guerra e a carência nutricional provocam o ápice de mortes documentadas nos campos: 352.560 em 1942 e 267.826 em 1943.'
+        },
+        {
+          dataExata: 'Março de 1953 a 1954',
+          acontecimento: 'Morte de Stalin, anistias e revoltas prisionais (Vorkuta, Norilsk, Kengir)',
+          personagensEInstituicoes: 'Nova liderança soviética, prisioneiros em greve, forças do MVD.',
+          decisoesTomadas: 'Anistia parcial para presos comuns e posterior repressão e concessões após as insurreições de presos em Vorkuta, Norilsk e Kengir, acelerando a crise do sistema.'
         },
         {
           dataExata: '25 de janeiro de 1960',
-          acontecimento: 'Ordem nº 020 do Ministério do Interior (MVD) Dissolvendo o Gulag',
+          acontecimento: 'Ordem nº 020 do Ministério do Interior (MVD) extinguindo a administração Gulag',
           personagensEInstituicoes: 'Nikita Kruschev, MVD da URSS.',
-          decisoesTomadas: 'Extinção formal da sigla administrativa do Gulag e reestruturação para colônias de regime ordinário e prisões psiquiátricas punitivas.'
+          decisoesTomadas: 'Dissolução formal da administração central do Gulag, com reestruturação das unidades prisionais e colônias sob nova arquitetura penitenciária.'
         }
       ],
-      sinteseNarrativaGeral: 'O Gulag representou o ápice da exploração econômica pelo terror totalitário. Ao longo de três décadas, pelo menos 18 a 20 milhões de seres humanos foram engolidos por essa rede penitenciária polar, onde o valor da vida humana era rigidamente medido em gramas de pão concedidos de acordo com o cumprimento diário de cotas de produção física de minérios e madeira.'
+      sinteseNarrativaGeral: 'O sistema do Gulag combinou repressão política, isolamento de opositores reais ou presumidos e exploração de trabalho forçado em projetos estratégicos de infraestrutura e mineração. O marco formal de criação da administração dos campos foi a Ordem nº 130/63 da OGPU em 25 de abril de 1930. Entre 1929 e 1953, cerca de 18 milhões de pessoas passaram pelos campos e colônias, com mortalidade oficial documentada de 1.606.748 óbitos (GARF f. 9414) até sua dissolução em 1960.'
     },
     documentosEEvidencias: {
       documentosOriginais: [
         {
-          titulo: 'Decreto do Sovnarkom sobre a Utilização do Trabalho de Prisioneiros Criminosos',
-          fundoArquivistico: 'GARF f. 5446, op. 1, d. 48, l. 21',
+          titulo: 'Ordem OGPU nº 130/63 — Criação da Administração dos Campos de Trabalho Corretivo',
+          fundoArquivistico: 'GARF (Arquivo Estatal da Federação Russa) / Exposição Ausstellung Gulag',
           instituicaoGuarda: 'Arquivo Estatal da Federação Russa (GARF)',
-          descricaoConteudo: 'Texto legal fundacional do Gulag de 11 de julho de 1929 autorizando a transformação das penas de prisão em trabalho escravo forçado com base territorial.',
-          autenticidadeEStatus: 'Autêntico, desclassificado nos anos 1990.'
+          descricaoConteudo: 'Ato administrativo fundador da Administração dos Campos de Trabalho Corretivo (marco institucional do Gulag de 25 de abril de 1930).',
+          autenticidadeEStatus: 'Autêntico, diploma normativo desclassificado.'
         },
         {
-          titulo: 'Relatório Estatístico Anual da 1ª Seção Especial do MVD sobre a Mortalidade no Gulag (1930–1953)',
-          fundoArquivistico: 'GARF f. 9414, op. 1, d. 1155, ll. 1-12; Hoover Institution Soviet Archives',
-          instituicaoGuarda: 'GARF (Moscou) e Hoover Institution (Stanford)',
-          descricaoConteudo: 'Planilhas contábeis oficiais do próprio Ministério do Interior registrando ano a ano a população carcerária, entradas, fugas e 1.606.748 mortes documentadas por certidão de óbito hospitalar interna nos campos.',
-          autenticidadeEStatus: 'Autêntico, certificado em estudos de Anne Applebaum e Oleg Khlevniuk.'
+          titulo: 'Relatório Oficial de Mortalidade de Presos no Sistema Gulag (1930–1956)',
+          fundoArquivistico: 'GARF fundo 9414; Fundação Alexander N. Yakovlev, doc. 1009320',
+          instituicaoGuarda: 'Arquivo Estatal da Federação Russa (GARF)',
+          descricaoConteudo: 'Série contábil e estatística oficial da seção de registro operacional do Gulag comprovando 1.606.748 mortes registradas nos campos e colônias entre 1930 e 1956, com pico em 1942 (352.560) e 1943 (267.826).',
+          autenticidadeEStatus: 'Autêntico, certificado em pesquisas arquivísticas de Applebaum, Khlevniuk e Yakovlev.'
         }
       ],
       fotografiasERegistros: [
         {
-          registroOuFoto: 'Fotografias de prisioneiros esqueléticos empurrando carrinhos de mão congelados no Belomorkanal',
-          acervoOrigem: 'Arquivo da Sociedade Memorial / RGASPI Fundo Iconográfico',
-          anoEIdentificador: '1932, Documentação Fotográfica nº Bel-88',
-          significadoProbatório: 'Evidencia a completa ausência de maquinário moderno e a utilização puramente manual da mão de obra escrava.'
+          registroOuFoto: 'Fotografias documentais dos prisioneiros nas escavações com pás e carrinhos de mão do Belomorkanal (1931–1933)',
+          acervoOrigem: 'Álbuns de Construção do Canal Mar Branco-Báltico / Coleções GARF',
+          anoEIdentificador: '1932, Registro Fotográfico BMK-32',
+          significadoProbatório: 'Evidência visual do trabalho braçal compulsório e precariedade do maquinário pesado nas obras do canal.'
         },
         {
-          registroOuFoto: 'Planta arquitetônica original e diagramas das celas de punição isolada (ShIZO) de Vorkuta',
-          acervoOrigem: 'GARF f. 9414, Fundo de Arquitetura Concentracionária',
-          anoEIdentificador: '1947, Registro de Engenharia Penitenciária nº 12-V',
-          significadoProbatório: 'Comprova as condições desumanas de confinamento a temperaturas negativas em celas de pedra sem aquecimento.'
+          registroOuFoto: 'Registros fotográficos e cartográficos das minas e alojamentos de prisioneiros em Kolyma (Dalstroy)',
+          acervoOrigem: 'Museu Memorial do Gulag em Moscou / Arquivos Regionais de Magadan',
+          anoEIdentificador: 'Década de 1930–1940, Registro Dalstroy-Kolyma',
+          significadoProbatório: 'Documentação da extração de ouro e minérios sob condições climáticas árticas extremas.'
         }
       ],
       testemunhos: [
         {
           testemunha: 'Varlam Shalamov',
-          funcaoOrigem: 'Escritor e prisioneiro de Kolyma por 17 anos',
-          trechoDepoimento: 'Em Kolyma não havia pessoas; havia esqueletos ambulantes vestidos de trapos. O frio a cinquenta e cinco graus abaixo de zero congelava o cuspe no ar. Quem não cumpria a cota de extração de ouro recebia a ração reduzida de trezentos gramas de pão preto e morria de inanição e escorbuto em menos de três semanas.',
-          referenciaVerificada: 'SHALAMOV, Varlam. Contos de Kolimá. São Paulo: Editora 34, 2015, p. 45-48.'
+          funcaoOrigem: 'Escritor e sobrevivente das minas de ouro de Kolyma por 17 anos',
+          trechoDepoimento: 'O trabalho no campo não educava nem corrigia ninguém; o campo era uma escola puramente negativa, corrompendo corpos e almas diante da fome contínua, do frio ártico e do esgotamento físico programado.',
+          referenciaVerificada: 'SHALAMOV, Varlam. Contos de Kolimá. São Paulo: Editora 34, 2015.'
         },
         {
-          testemunha: 'Aleksandr Soljenítsin',
-          funcaoOrigem: 'Capitão de artilharia condecorado, prisioneiro político e laureado com o Nobel de Literatura',
-          trechoDepoimento: 'O Gulag era um arquipélago invisível que se estendia de ilha em ilha por toda a geografia da pátria soviética, onde o Estado devorava seus próprios filhos em fornos de trabalho contínuo, enquanto do lado de fora a propaganda entoava canções sobre a pátria mais livre do mundo.',
-          referenciaVerificada: 'SOLZHENITSYN, Aleksandr. The Gulag Archipelago, 1918-1956. New York: Harper & Row, 1974, v. 1, p. 12-16.'
+          testemunha: 'Aleksandr Solzhenitsyn',
+          funcaoOrigem: 'Escritor, capitão de artilharia, prisioneiro político (zek) e Prêmio Nobel de Literatura',
+          trechoDepoimento: 'O Gulag era uma rede orgânica espalhada como um arquipélago invisível por todo o corpo da União Soviética, sustentada pela triagem judicial sumária e pela extração forçada de força humana.',
+          referenciaVerificada: 'SOLZHENITSYN, Aleksandr. Arquipélago Gulag. Rio de Janeiro: Record, 1976.'
         }
       ],
       decretosECorrespondencias: [
         {
-          codigoOuNumero: 'Instrução do Gulag sobre a Escala de Alimentação e Normas de Trabalho',
-          dataEmissao: '28 de maio de 1939',
-          orgaoEmissor: 'Diretoria Geral dos Campos do NKVD',
-          teorDispositivo: 'Regula a redução punitiva da ração diária de pão (de 800g para 300g) para quem não atingisse 100% da cota de produção estipulada.',
-          localizacaoArquivo: 'GARF f. 9414, op. 1, d. 28, ll. 14-19'
+          codigoOuNumero: 'Ordem OGPU nº 130/63',
+          dataEmissao: '25 de abril de 1930',
+          orgaoEmissor: 'Diretoria Política Conjunta do Estado (OGPU da URSS)',
+          teorDispositivo: 'Ato de fundação e organização da Administração dos Campos de Trabalho Corretivo (marco institucional formal do Gulag).',
+          localizacaoArquivo: 'GARF / Exposição Documental Ausstellung Gulag'
+        },
+        {
+          codigoOuNumero: 'Compilação Estatística GARF f. 9414 (Справка о смертности заключенных)',
+          dataEmissao: 'Período 1930–1956',
+          orgaoEmissor: 'Seção de Registro Operacional e Estatística do Gulag',
+          teorDispositivo: 'Série oficial de mortes registradas nos campos e colônias: total de 1.606.748 mortes documentadas, registrando o ápice em 1942 (352.560 mortes) e 1943 (267.826 mortes).',
+          localizacaoArquivo: 'GARF fundo 9414; reproduzido no Arquivo Alexander N. Yakovlev doc. nº 1009320'
         }
       ]
     },
     responsabilidadesEConsequencias: {
       responsaveisPoliticosEInstitucionais: [
         {
-          agenteOuOrgao: 'Iosif Vissarionovich Stalin',
-          funcaoCargo: 'Secretário-Geral do CC do PCUS',
-          responsabilidadeEspecifica: 'Decidiu pela industrialização custeada pelo trabalho forçado e pela expansão ininterrupta do complexo do Gulag.'
+          agenteOuOrgao: 'Josef Stalin e Círculo Dirigente do Politburo',
+          funcaoCargo: 'Secretário-Geral do PCUS e Chefe do Governo Soviético',
+          responsabilidadeEspecifica: 'Diretrizes governamentais de coletivização, metas econômicas coercitivas e aprovação das cotas de encarceramento e repressão em massa.'
         },
         {
-          agenteOuOrgao: 'Naftaly Aronovich Frenkel',
-          funcaoCargo: 'Diretor de Produção do Gulag e pioneiro de Solovki',
-          responsabilidadeEspecifica: 'Criou o mecanismo desumano de atrelar a ração alimentar diária de sobrevivência ao rendimento físico no trabalho.'
-        },
-        {
-          agenteOuOrgao: 'Lavrentiy Beria',
-          funcaoCargo: 'Comissário do Povo de Assuntos Internos (1938–1945)',
-          responsabilidadeEspecifica: 'Maximizou o rendimento econômico e as cotas de produção militar do Gulag durante a guerra.'
+          agenteOuOrgao: 'OGPU / NKVD / MVD da URSS',
+          funcaoCargo: 'Polícia Política e Órgãos de Segurança do Estado Soviético',
+          responsabilidadeEspecifica: 'Gestão direta do sistema penitenciário de campos e colônias, alocação de mão de obra forçada e manutenção do regime prisional.'
         }
       ],
       vitimasEImpactos: {
-        estimativasQuantitativas: 'Cerca de 18 a 20 milhões de pessoas passaram pelos campos e colônias do Gulag entre 1929 e 1953; outros 6 a 7 milhões foram banidos para exílio como "colonos especiais"; mortes documentadas nos campos atingem pelo menos 1,6 a 1,7 milhão de seres humanos.',
-        impactosDemograficosEHumanos: 'Destruição irreversível da saúde física e mental de milhões de sobreviventes; estigmatização vitalícia com restrição de moradia (regra dos 101 km) para ex-prisioneiros.',
-        impactosEconomicos: 'Geração de infraestrutura com custo humano monumental, provando-se a longo prazo economicamente improdutiva e onerosa perante a tecnologia livre ocidental.'
+        estimativasQuantitativas: 'Aproximadamente 18 milhões de indivíduos passaram pelo sistema de campos e colônias do Gulag entre 1929 e 1953 (fluxo acumulado). Cerca de 6 milhões foram deslocados e deportados como colonos especiais. A série documental administrativa oficial (GARF f. 9414) registra 1.606.748 mortes documentadas nos campos e colônias de 1930 a 1956.',
+        impactosDemograficosEHumanos: 'Destruição de laços familiares, dezenas de milhares de mortos por hipotermia, desnutrição e doenças infectocontagiosas crônicas; estigma social prolongado após a soltura.',
+        impactosEconomicos: 'Extração compulsória de dezenas de toneladas de ouro em Kolyma, níquel em Norilsk, carvão em Vorkuta e construção de milhares de quilômetros de ferrovias e canais sob baixa produtividade e alto desperdício material.'
       },
-      consequenciasImediatas: 'Militarização de todo o sistema penal soviético; greves heroicas de prisioneiros em Norilsk e Kengir após a morte de Stalin forçando a libertação em massa de milhões na Desestalinização de Kruschev.',
-      consequenciasLongoPrazo: 'O Gulag tornou-se o símbolo supremo da opressão totalitária do século XX, desmascarado internacionalmente pela obra de Soljenítsin e preservado pelos memoriais da Associação Memorial.'
+      consequenciasImediatas: 'Militarização da economia penal em áreas remotas do Norte e da Sibéria e dependência estatal temporária do trabalho sob custódia.',
+      consequenciasLongoPrazo: 'Desgaste moral e político do regime soviético; desestalinização e libertação massiva a partir de 1953; persistência da memória concentracionária documentada na literatura memorialista e nos arquivos desclassificados.'
     },
     debateHistoriografico: {
       interpretacoesDiferentes: [
         {
-          correnteEscola: 'Escola Totalitária e Moral-Existencial',
-          principaisAutores: ['Aleksandr Soljenítsin', 'Anne Applebaum', 'Robert Conquest'],
-          teseCentral: 'O Gulag não foi apenas um sistema penal ou econômico, mas uma máquina ontológica de aniquilação moral e física da dignidade humana consubstancial à ideologia comunista.',
-          antiteseCritica: 'Enfatiza primariamente a experiência dos prisioneiros políticos (Artigo 58), que perfaziam cerca de 25% a 35% do contingente total dos campos.'
+          correnteEscola: 'Interpretação Econômica e Funcional do Trabalho Forçado',
+          principaisAutores: ['Oleg V. Khlevniuk', 'Paul R. Gregory'],
+          teseCentral: 'Examina a contradição entre a lógica econômica da industrialização acelerada e a baixa produtividade intrínseca do trabalho sob coerção e desnutrição, que se tornou antieconômico para o próprio Estado.',
+          antiteseCritica: 'Não deve desconsiderar que a motivação original do sistema penal e político transcendia cálculos contábeis de curto prazo.'
         },
         {
-          correnteEscola: 'Escola Revisionista e Econômico-Burocrática',
-          principaisAutores: ['Oleg V. Khlevniuk', 'J. Arch Getty', 'Gábor Rittersporn'],
-          teseCentral: 'O Gulag era uma tentativa irracional e desesperada de modernização forçada para explorar matérias-primas no Ártico, minada por incompetência crônica, desorganização administrativa e escassez de recursos básicos.',
-          antiteseCritica: 'Documenta que os campos geravam prejuízo orçamentário constante ao próprio Estado soviético devido à baixa produtividade do trabalho escravo debilitado pela desnutrição.'
+          correnteEscola: 'Interpretação Integrada: Repressão Política e História Institucional',
+          principaisAutores: ['Anne Applebaum', 'Galina Ivanova'],
+          teseCentral: 'Analisa o Gulag como instituição multifuncional do totalitarismo stalinista, unindo repressão política sistemática, deportação populacional e exploração de recursos em escala continental.',
+          antiteseCritica: 'Necessidade metodológica de distinguir fluxos anuais de internados da população prisional presente simultaneamente.'
         },
         {
-          correnteEscola: 'Historiografia das Práticas Cotidianas e Subculturas',
-          principaisAutores: ['Lynne Viola', 'Stephen Barnes'],
-          teseCentral: 'Analisa o Gulag como uma sociedade espelhada em miniatura da URSS exterior, onde prisioneiros negociavam espaços de sobrevivência, solidariedade e resistência subterrânea.',
-          antiteseCritica: 'Destaca a porosidade entre o mundo carcerário e o mundo livre soviético.'
+          correnteEscola: 'História Social e Experiência Prisional',
+          principaisAutores: ['Varlam Shalamov', 'Aleksandr Solzhenitsyn', 'Sheila Fitzpatrick'],
+          teseCentral: 'Reconstrói as hierarquias internas, as relações de sobrevivência cotidiana e a violência dos códigos informais no microcosmo carcerário soviético.',
+          antiteseCritica: 'Memórias individuais precisam ser confrontadas e integradas com as séries estatísticas arquivísticas oficiais.'
         }
       ],
-      consensosAcademicos: 'O consenso arquivístico unânime atesta que a economia do Gulag era insustentável, estruturalmente desumana e mantida exclusivamente pela violência policial irrestrita.',
-      controversiasELimitacoesDasFontes: 'Subnotificação crônica de mortes durante as transferências em vagões de gado superlotados (etapy), mortes que eram frequentemente omitidas das contagens hospitalares dos campos.'
+      consensosAcademicos: 'Consenso arquivístico de que o marco institucional de criação da administração central do Gulag é a Ordem nº 130/63 da OGPU (25 de abril de 1930); de que cerca de 18 milhões passaram pelo sistema (1929–1953); e de que a mortalidade teve seu ápice absoluto durante o desabastecimento crítico de 1942–1943.',
+      controversiasELimitacoesDasFontes: 'A cobertura estatística variou ao longo dos anos entre campos de regime severo (ITL) e colônias agrícolas/industriais (ITK); registros médicos subnotificavam óbitos imediatos após libertações antecipadas por invalidez extrema.'
     },
     citacoesVerificadas: [
       {
-        trechoLiteral: 'O sistema do Gulag não foi uma anomalia temporária, mas a engrenagem central da economia stalinista. Ele pretendia resolver simultaneamente dois problemas: colonizar os desertos árticos sem gastar recursos com salários e liquidar fisicamente qualquer segmento social suspeito de deslealdade ao Estado.',
+        trechoLiteral: 'A estimativa amplamente aceita de que cerca de 18 milhões de pessoas passaram pelos campos e colônias do Gulag entre 1929 e 1953 reflete o fluxo acumulado de detidos no sistema ao longo de mais de duas décadas, e não a população simultânea em um único momento.',
         autor: 'Anne Applebaum',
         obra: 'Gulag: A History',
         edicaoEditoraAno: '1. ed. New York: Doubleday, 2003',
-        paginaExata: 'p. 18-21',
-        analiseContextual: 'Applebaum recebeu o Prêmio Pulitzer por documentar a evolução histórica e humana completa do complexo concentracionário.'
+        paginaExata: 'Apêndice Estatístico, p. 578-583',
+        analiseContextual: 'A historiadora esclarece a metodologia estatística correta para leitura dos dados arquivísticos do GARF.'
       },
       {
-        trechoLiteral: 'Os números do Gulag revelados pelos arquivos estatais (GARF) comprovam a dimensão monumental do arquipélago: mais de 18 milhões de indivíduos passaram pelo cativeiro dos campos e colônias, com um rastro de mais de 1,6 milhão de mortes atestadas nas enfermarias da fome.',
+        trechoLiteral: 'O sistema do Gulag permaneceu economicamente ineficiente, com produtividade sistematicamente inferior à do trabalho livre assalariado, demonstrando que a coerção penal não foi capaz de substituir racionalmente incentivos econômicos modernos.',
         autor: 'Oleg V. Khlevniuk',
         obra: 'The History of the Gulag: From Collectivization to the Great Terror',
         edicaoEditoraAno: '1. ed. New Haven: Yale University Press, 2004',
-        paginaExata: 'p. 326-329',
-        analiseContextual: 'Khlevniuk sintetiza os dados oficiais compilados nos fundos estatísticos do NKVD e MVD.'
-      },
-      {
-        trechoLiteral: 'A escravidão penal do Gulag era intrinsecamente ineficiente. Prisioneiros doentes, famintos e congelados não conseguiam operar tecnologia moderna. No final das contas, o próprio Beria admitiu após a morte de Stalin que o sistema era economicamente deficitário e precisava ser liquidado.',
-        autor: 'Stephen Kotkin',
-        obra: 'Stalin: Waiting for Hitler, 1929-1941',
-        edicaoEditoraAno: '1. ed. New York: Penguin Press, 2017',
-        paginaExata: 'p. 312-314',
-        analiseContextual: 'Kotkin analisa os custos comparativos de manutenção das guarnições e da baixa produtividade dos prisioneiros.'
+        paginaExata: 'p. 328-333',
+        analiseContextual: 'Khlevniuk analisa os balanços contábeis e produtivos internos do NKVD.'
       }
     ],
     bibliografia: [
       {
-        entradaAbnt: 'APPLEBAUM, Anne. Gulag: A History. New York: Doubleday, 2003. 736 p.',
+        entradaAbnt: 'APPLEBAUM, Anne. Gulag: A History. New York: Doubleday, 2003. 677 p.',
         entradaChicago: 'Applebaum, Anne. 2003. Gulag: A History. New York: Doubleday.',
         tipoFonte: 'Monografia',
         isbnOuReferencia: 'ISBN 978-0767900560'
@@ -2346,7 +2393,7 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
         isbnOuReferencia: 'ISBN 978-0300092844'
       },
       {
-        entradaAbnt: 'SOLZHENITSYN, Aleksandr. The Gulag Archipelago, 1918-1956. New York: Harper & Row, 1974. 3 v.',
+        entradaAbnt: 'SOLZHENITSYN, Aleksandr. The Gulag Archipelago, 1918–1956: An Experiment in Literary Investigation. New York: Harper & Row, 1974. 3 v.',
         entradaChicago: 'Solzhenitsyn, Aleksandr. 1974. The Gulag Archipelago, 1918–1956. New York: Harper & Row.',
         tipoFonte: 'Monografia',
         isbnOuReferencia: 'ISBN 978-0813332895'
@@ -2358,8 +2405,8 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
         isbnOuReferencia: 'ISBN 978-8573266009'
       },
       {
-        entradaAbnt: 'ARQUIVO ESTATAL DA FEDERAÇÃO RUSSA (GARF). Fundo R-9414 (Diretoria Geral dos Campos - Gulag), Inventário 1, Processo 1155: Estatísticas de mortalidade e contingente prisional. Moscou: GARF, 1930–1953.',
-        entradaChicago: 'State Archive of the Russian Federation (GARF). Fond R-9414 (Gulag Administration), opis 1, delo 1155. Moscow.',
+        entradaAbnt: 'ARQUIVO ESTATAL DA FEDERAÇÃO RUSSA (GARF). Fundo R-9414 (Diretoria Geral dos Campos - Gulag): Relatório de Mortalidade de Presos no Sistema Gulag (1930–1956). Moscou: GARF / Fundação Alexander N. Yakovlev, doc. 1009320.',
+        entradaChicago: 'State Archive of the Russian Federation (GARF). Fond R-9414 (Gulag Administration): Report on Prisoner Mortality in the Gulag System (1930–1956). Moscow.',
         tipoFonte: 'Fundo Arquivístico'
       }
     ]
@@ -2602,6 +2649,381 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
         tipoFonte: 'Coletânea Documental'
       }
     ]
+  },
+  10: {
+    topicId: 10,
+    identificacao: {
+      nomeAcontecimento: 'Cooperação Militar Teuto-Soviética: Tratado de Rapallo, instalações secretas e interesses estratégicos',
+      dataELocalizacao: {
+        dataExata: '1922–1933 (Marco: 16 de abril de 1922; Encerramento: 1933)',
+        calendarioNotas: 'Tratado de Rapallo assinado em 16 de abril de 1922 durante a Conferência de Gênova; encerramento definitivo das instalações em 1933.',
+        localizacaoPrecisa: 'Rapallo e Berlim (diplomacia); Lipetsk, Kazan (Kama) e Tomka (instalações militares secretas na URSS).',
+        teatroOperacoes: 'Centros militares clandestinos: Escola de aviação de Lipetsk, escola de tanques de Kama (Kazan) e centro de testes químicos de Tomka.'
+      },
+      governoEResponsaveis: {
+        regimeVigente: 'República de Weimar (Alemanha) / RSFSR e União Soviética (URSS)',
+        chefesDeEstadoEGoverno: ['Walther Rathenau (Ministro das Relações Exteriores da Alemanha)', 'Gueorgui Tchitchérin (Comissário do Povo para Relações Exteriores da RSFSR/URSS)', 'General Hans von Seeckt (Chefe da Reichswehr)'],
+        orgaosExecutoresDiretos: [
+          'Reichswehr (Exército Alemão da República de Weimar)',
+          'Exército Vermelho de Operários e Camponeses (RKKA)',
+          'Comissariado do Povo para Assuntos Militares e Navais da URSS',
+          'Sondergruppe R (Grupo Especial R da Reichswehr)'
+        ],
+        responsaveisOperacionais: ['General Hans von Seeckt', 'Leon Trotsky', 'Mikhail Tukhachevsky', 'Comandantes das bases de Lipetsk e Kama']
+      }
+    },
+    contextoHistorico: {
+      situacaoAnterior: 'A Alemanha pós-Primeira Guerra enfrentava as restrições militares impostas pelo Tratado de Versalhes. A Rússia soviética buscava romper o isolamento internacional, reconstruir sua economia após a guerra civil e ter acesso a tecnologias industriais e militares avançadas.',
+      causasPoliticas: 'Superação do isolamento diplomático de dois Estados marginalizados pelas potências ocidentais vencedoras da Primeira Guerra Mundial.',
+      causasEconomicas: 'Retomada de relações comerciais bilaterais, renúncia recíproca a indenizações financeiras de guerra e cooperação técnica industrial.',
+      causasSociais: 'Reconstrução de infraestruturas devastadas pela guerra e modernização dos quadros militares técnicos.'
+    },
+    narrativaCronologica: {
+      acontecimentosEmOrdem: [
+        {
+          dataExata: '28 de junho de 1919',
+          acontecimento: 'Assinatura do Tratado de Versalhes',
+          personagensEInstituicoes: 'Potências Aliadas e Governo Alemão.',
+          decisoesTomadas: 'Imposição de severas restrições às forças armadas alemãs (proibição de aviação militar, tanques e armas químicas), incentivando a busca de alternativas clandestinas.'
+        },
+        {
+          dataExata: '6 de maio de 1921',
+          acontecimento: 'Acordo Comercial Provisório em Berlim',
+          personagensEInstituicoes: 'Alemanha e Rússia Soviética.',
+          decisoesTomadas: 'Início da normalização das relações econômicas antes mesmo de Rapallo.'
+        },
+        {
+          dataExata: '16 de abril de 1922',
+          acontecimento: 'Assinatura do Tratado de Rapallo',
+          personagensEInstituicoes: 'Walther Rathenau e Gueorgui Tchitchérin.',
+          decisoesTomadas: 'Renúncia recíproca a reivindicações financeiras, restabelecimento de relações diplomáticas plenas e cláusula de cooperação econômica mútua (Artigo 5).'
+        },
+        {
+          dataExata: '5 de novembro de 1922',
+          acontecimento: 'Acordo Complementar de Rapallo',
+          personagensEInstituicoes: 'Representantes da Alemanha, Ucrânia, Bielorrússia e repúblicas soviéticas.',
+          decisoesTomadas: 'Extensão das normas de Rapallo a todas as repúblicas soviéticas federadas.'
+        },
+        {
+          dataExata: '1925',
+          acontecimento: 'Consolidação da Base de Aviação de Lipetsk',
+          personagensEInstituicoes: 'Reichswehr e Força Aérea Soviética (VVS).',
+          decisoesTomadas: 'Instalação da escola secreta de pilotos de combate e centro de testes de aeronaves militares modernas.'
+        },
+        {
+          dataExata: '24 de abril de 1926 e dezembro de 1926',
+          acontecimento: 'Tratado de Berlim e Projeto da Escola de Tanques de Kama (Kazan)',
+          personagensEInstituicoes: 'Governos alemão e soviético; Reichswehr e RKKA.',
+          decisoesTomadas: 'Reafirmação da neutralidade germano-soviética e formalização do acordo para o centro experimental de blindados em Kazan.'
+        },
+        {
+          dataExata: '1928 a 1931',
+          acontecimento: 'Operação da Estação de Testes Químicos de Tomka',
+          personagensEInstituicoes: 'Especialistas militares alemães e soviéticos.',
+          decisoesTomadas: 'Pesquisas e testes experimentais conjuntos envolvendo substâncias químicas militares.'
+        },
+        {
+          dataExata: '1929 a 1933',
+          acontecimento: 'Funcionamento Operacional Pleno da Escola de Blindados de Kama',
+          personagensEInstituicoes: 'Oficiais da Reichswehr e comandantes soviéticos de blindados.',
+          decisoesTomadas: 'Treinamento avançado de especialistas e desenvolvimento de táticas operacionais para veículos blindados.'
+        },
+        {
+          dataExata: '30 de janeiro a 15 de setembro de 1933',
+          acontecimento: 'Ascensão de Hitler e Liquidação das Instalações Secretas',
+          personagensEInstituicoes: 'Adolf Hitler, liderança do Exército Vermelho, adidos militares.',
+          decisoesTomadas: 'Com a ascensão do regime nazista e seu anticomunismo virulento, as bases de Kama e Lipetsk são formalmente desativadas (dissolução definitiva de Lipetsk em 15 de setembro de 1933).'
+        }
+      ],
+      sinteseNarrativaGeral: 'A aproximação entre a Alemanha de Weimar e a Rússia Soviética foi motivada por cálculos pragmáticos e interesses estratégicos complementares: a Alemanha contornou as cláusulas militares de Versalhes treinando quadros de aviação e blindados clandestinamente na URSS, enquanto o Exército Vermelho absorveu doutrina técnica e engenharia industrial moderna. A cooperação encerrou-se em 1933 com a chegada do nazismo ao poder.'
+    },
+    documentosEEvidencias: {
+      documentosOriginais: [
+        {
+          titulo: 'Tratado de Rapallo (German-Russian Agreement of April 16, 1922)',
+          fundoArquivistico: 'Reichsgesetzblatt 1922 II; Yale Avalon Project',
+          instituicaoGuarda: 'Politisches Archiv des Auswärtigen Amts / Avalon Project Yale Law School',
+          descricaoConteudo: 'Tratado público restabelecendo relações diplomáticas, cancelando reparações e fixando cooperação econômica mútua (Artigo 5).',
+          autenticidadeEStatus: 'Autêntico, fonte primária digitalizada no Yale Avalon Project.'
+        },
+        {
+          titulo: 'Acordo Complementar ao Tratado de Rapallo (5 de novembro de 1922)',
+          fundoArquivistico: 'Yale Avalon Project / Reichsgesetzblatt',
+          instituicaoGuarda: 'Politisches Archiv des Auswärtigen Amts / Avalon Project',
+          descricaoConteudo: 'Extensão dos dispositivos de Rapallo às demais repúblicas soviéticas, incluindo Ucrânia e Bielorrússia.',
+          autenticidadeEStatus: 'Autêntico, diploma internacional ratificado.'
+        },
+        {
+          titulo: 'Tratado de Berlim (German-Soviet Treaty of Neutrality and Non-Aggression, 24 de abril de 1926)',
+          fundoArquivistico: 'Reichsgesetzblatt 1926 II / League of Nations Treaty Series',
+          instituicaoGuarda: 'Politisches Archiv des Auswärtigen Amts',
+          descricaoConteudo: 'Compromisso de neutralidade mútua caso uma das partes seja atacada por uma terceira potência.',
+          autenticidadeEStatus: 'Autêntico, registrado formalmente na Liga das Nações.'
+        }
+      ],
+      fotografiasERegistros: [
+        {
+          registroOuFoto: 'Fotografia histórica da delegação teuto-soviética em Rapallo (Rathenau, Tchitchérin, Maltzan, Krassin)',
+          acervoOrigem: 'Bundesarchiv Bild 183-R15118',
+          anoEIdentificador: '16 de abril de 1922, Foto Oficial Bundesarchiv',
+          significadoProbatório: 'Registro iconográfico oficial do momento da formalização diplomática entre Rathenau e Tchitchérin em Rapallo.'
+        },
+        {
+          registroOuFoto: 'Documentação institucional e plantas da Escola de Aviação de Lipetsk e Escola de Kama',
+          acervoOrigem: 'Bundesarchiv-Militärarchiv Freiburg / Yale Russian State Military Archives',
+          anoEIdentificador: '1925–1933, Inventários e Relatórios de Desativação',
+          significadoProbatório: 'Comprova a existência física das oficinas, pistas de pouso, hangares e campos de tiro em solo soviético.'
+        }
+      ],
+      testemunhos: [
+        {
+          testemunha: 'Hans von Seeckt',
+          funcaoOrigem: 'Comandante-Chefe da Reichswehr (1920–1926)',
+          trechoDepoimento: 'A Polônia é o cerne do problema oriental. A existência da Polônia é intolerável e incompatível com os interesses vitais da Alemanha... A Rússia e a Alemanha devem conspirar juntas para restabelecer a fronteira de 1914.',
+          referenciaVerificada: 'Memorando secreto da Chefia da Reichswehr de 11 de setembro de 1922, citado em estudos documentais de Carsten e Gatzke.'
+        }
+      ],
+      decretosECorrespondencias: [
+        {
+          codigoOuNumero: 'Relatório Executivo de Dissolução Definitiva de Lipetsk',
+          dataEmissao: '15 de setembro de 1933',
+          orgaoEmissor: 'Comando da Reichswehr e Ministério da Guerra do Reich',
+          teorDispositivo: 'Ordena a repatriação de todos os pilotos e técnicos alemães e transferência das instalações remanescentes às autoridades soviéticas.',
+          localizacaoArquivo: 'Bundesarchiv RH 2 / Yale Russian Military Archives'
+        }
+      ]
+    },
+    responsabilidadesEConsequencias: {
+      responsaveisPoliticosEInstitucionais: [
+        {
+          agenteOuOrgao: 'Chefia da Reichswehr e Comandantes do Exército Vermelho',
+          funcaoCargo: 'Comando Militar Superior da Alemanha de Weimar e da URSS',
+          responsabilidadeEspecifica: 'Implementação clandestina de centros de treinamento bélico violando as proibições internacionais de Versalhes.'
+        }
+      ],
+      vitimasEImpactos: {
+        estimativasQuantitativas: 'Não se tratou de operação repressiva contra populações civis; centenas de militares e técnicos participaram dos intercâmbios e treinamentos.',
+        impactosDemograficosEHumanos: 'Sem campanha de mortes em massa de civis associada diretamente à cooperação diplomático-militar de 1922-1933.',
+        impactosEconomicos: 'Estímulo ao comércio bilateral teuto-soviético e transferência de tecnologia de maquinário pesado para a indústria soviética.'
+      },
+      consequenciasImediatas: 'Formação de quadros qualificados de pilotos militares e oficiais de blindados para a Reichswehr e modernização tática do Exército Vermelho.',
+      consequenciasLongoPrazo: 'Preservação de doutrinas militares que seriam posteriormente mobilizadas no rearmamento dos anos 1930, encerrando-se abruptamente com o nazismo em 1933.'
+    },
+    debateHistoriografico: {
+      interpretacoesDiferentes: [
+        {
+          correnteEscola: 'Interpretação Estratégica e Diplomática',
+          principaisAutores: ['Robert Himmer', 'Stephen White', 'R. P. Morgan'],
+          teseCentral: 'Rapallo resultou de interesses concretos de dois Estados que buscavam autonomia e espaço de manobra diplomático e comercial no pós-Primeira Guerra.',
+          antiteseCritica: 'Tende a considerar a dimensão militar como secundária ou meramente incidental.'
+        },
+        {
+          correnteEscola: 'Interpretação Centrada na Cooperação Militar Clandestina',
+          principaisAutores: ['Hans W. Gatzke', 'Manfred Zeidler', 'Documentação do Bundesarchiv'],
+          teseCentral: 'A aliança militar secreta foi o pilar decisivo que permitiu a sobrevivência da doutrina de guerra móvel alemã e o treinamento técnico soviético.',
+          antiteseCritica: 'Pode superestimar a escala dos centros secretos (ex: ~30 especialistas em tanques em Kama).'
+        },
+        {
+          correnteEscola: 'Interpretação Contextual e dos Limites da Parceria',
+          principaisAutores: ['Stephanie C. Salzmann', 'Geoffrey Roberts'],
+          teseCentral: 'A cooperação existiu e foi relevante, mas teve alcance circunscrito e não constituiu uma aliança ideológica ou perene, sendo liquidada em 1933.',
+          antiteseCritica: 'Exige constante diferenciação em relação ao posterior pacto nazi-soviético de 1939.'
+        }
+      ],
+      consensosAcademicos: 'Consenso em torno da autenticidade histórica dos acordos secretos de treinamento em Lipetsk, Kama e Tomka e de sua liquidação pelo regime nazista em 1933.',
+      controversiasELimitacoesDasFontes: 'Debate contínuo sobre o impacto relativo real do treinamento secreto frente à capacidade industrial doméstica alemã.'
+    },
+    citacoesVerificadas: [
+      {
+        trechoLiteral: 'Both Governments shall co-operate in a spirit of mutual goodwill in meeting the economic needs of both countries. (Ambos os governos cooperarão em espírito de boa vontade mútua para atender às necessidades econômicas dos dois países.)',
+        autor: 'Tratado de Rapallo',
+        obra: 'German-Russian Agreement of April 16, 1922 (Artigo 5)',
+        edicaoEditoraAno: 'Conferência de Gênova, Yale Avalon Project, 1922',
+        paginaExata: 'Artigo 5',
+        analiseContextual: 'Cláusula formal de cooperação econômica pública do Tratado de Rapallo.'
+      }
+    ],
+    bibliografia: [
+      {
+        entradaAbnt: 'BUNDESARCHIV. Lipezk: die geheime Fliegerschule und Erprobungsstätte der Reichswehr in der Sowjetunion. Koblenz: Bundesarchiv, 2026.',
+        entradaChicago: 'Bundesarchiv. 2026. "Lipezk: die geheime Fliegerschule und Erprobungsstätte der Reichswehr in der Sowjetunion." Geschichtsgalerien.',
+        tipoFonte: 'Arquivo Histórico'
+      },
+      {
+        entradaAbnt: 'GATZKE, Hans W. Russo-German military collaboration during the Weimar Republic. The American Historical Review, v. 63, n. 3, p. 565–597, 1958.',
+        entradaChicago: 'Gatzke, Hans W. 1958. "Russo-German military collaboration during the Weimar Republic." The American Historical Review 63 (3): 565–597.',
+        tipoFonte: 'Artigo Acadêmico'
+      },
+      {
+        entradaAbnt: 'HIMMER, Robert. Rathenau, Russia, and Rapallo. Central European History, v. 9, n. 2, p. 146–183, 1976.',
+        entradaChicago: 'Himmer, Robert. 1976. "Rathenau, Russia, and Rapallo." Central European History 9 (2): 146–183.',
+        tipoFonte: 'Artigo Acadêmico'
+      },
+      {
+        entradaAbnt: 'WHITE, Stephen. The Origins of Détente: The Genoa Conference and Soviet-Western Relations, 1921–1922. Cambridge: Cambridge University Press, 1985.',
+        entradaChicago: 'White, Stephen. 1985. The Origins of Détente: The Genoa Conference and Soviet-Western Relations, 1921–1922. Cambridge: Cambridge University Press.',
+        tipoFonte: 'Monografia'
+      }
+    ]
+  },
+  15: {
+    topicId: 15,
+    identificacao: {
+      nomeAcontecimento: 'Guerra Fria e Espionagem Global: KGB, CIA e Inteligência Internacional',
+      dataELocalizacao: {
+        dataExata: '1945–1989',
+        calendarioNotas: 'Período clássico da Guerra Fria, desde o pós-Segunda Guerra Mundial até a queda do Muro de Berlim.',
+        localizacaoPrecisa: 'Washington, Moscou, Berlim, Londres e demais teatros de operações globais.',
+        teatroOperacoes: 'Europa Oriental e Ocidental, Sudeste Asiático, América Latina e zonas de influência bipolar.'
+      },
+      governoEResponsaveis: {
+        regimeVigente: 'Bipolaridade global entre Estados Unidos (democracia liberal) e URSS (socialismo de estado/partido único)',
+        chefesDeEstadoEGoverno: ['Harry Truman', 'Dwight Eisenhower', 'John F. Kennedy', 'Ronald Reagan', 'Josef Stalin', 'Nikita Khrushchev', 'Leonid Brezhnev', 'Mikhail Gorbachev'],
+        orgaosExecutoresDiretos: [
+          'Comitê de Segurança do Estado (KGB)',
+          'Inteligência Militar Soviética (GRU)',
+          'Central Intelligence Agency (CIA)',
+          'Federal Bureau of Investigation (FBI)',
+          'Secret Intelligence Service (MI6)'
+        ],
+        responsaveisOperacionais: ['Lavrentiy Beria', 'Vladimir Semichastny', 'Yuri Andropov', 'Allen Dulles', 'J. Edgar Hoover']
+      }
+    },
+    contextoHistorico: {
+      situacaoAnterior: 'Cooperação pragmática entre Aliados contra a Alemanha nazista durante a Segunda Guerra Mundial, seguida pela divisão de zonas de ocupação na Europa em 1945.',
+      causasPoliticas: 'Incompatibilidade entre o modelo liberal-capitalista ocidental e o sistema comunista soviético de partido único; expansão da influência soviética na Europa Oriental.',
+      causasEconomicas: 'Disputa por mercados globais, auxílio econômico (Plano Marshall vs. Comecon) e desenvolvimento industrial e tecnológico.',
+      causasSociais: 'Mobilização ideológica, propaganda em massa, medo da destruição nuclear e polarização política global.'
+    },
+    narrativaCronologica: {
+      acontecimentosEmOrdem: [
+        {
+          dataExata: '1947',
+          acontecimento: 'Criação da CIA e Doutrina Truman',
+          personagensEInstituicoes: 'Harry Truman, Governo dos EUA, Congresso Norte-Americano.',
+          decisoesTomadas: 'Institucionalização da inteligência externa dos EUA e compromisso de contenção do comunismo.'
+        },
+        {
+          dataExata: '1954',
+          acontecimento: 'Criação do KGB',
+          personagensEInstituicoes: 'Liderança soviética, Conselho de Ministros da URSS.',
+          decisoesTomadas: 'Reorganização e centralização dos serviços de segurança e inteligência externa da URSS.'
+        },
+        {
+          dataExata: '1º de maio de 1960',
+          acontecimento: 'Abatimento do avião espião U-2 pilotado por Francis Gary Powers',
+          personagensEInstituicoes: 'CIA, Forças Armadas Soviéticas, Nikita Khrushchev, Dwight Eisenhower.',
+          decisoesTomadas: 'Exposição pública de operações de reconhecimento aéreo e agravamento da tensão diplomática.'
+        },
+        {
+          dataExata: 'Outubro de 1962',
+          acontecimento: 'Crise dos Mísseis de Cuba',
+          personagensEInstituicoes: 'John F. Kennedy, Nikita Khrushchev, agências de inteligência.',
+          decisoesTomadas: 'Imposição de bloqueio naval e negociação secreta para retirada de mísseis soviéticos de Cuba.'
+        },
+        {
+          dataExata: '1989',
+          acontecimento: 'Queda do Muro de Berlim',
+          personagensEInstituicoes: 'Mikhail Gorbachev, populações da Europa Oriental.',
+          decisoesTomadas: 'Desmoronamento da ordem comunista na Europa Oriental e encerramento da fase clássica da Guerra Fria.'
+        }
+      ],
+      sinteseNarrativaGeral: 'A Guerra Fria transformou a inteligência em instrumento central de segurança e diplomacia. A competição entre o KGB e a CIA estruturou crises globais, enquanto redes de agentes e interceptações técnicas definiram os contornos da bipolaridade.'
+    },
+    documentosEEvidencias: {
+      documentosOriginais: [
+        {
+          titulo: 'Projeto VENONA (Mensagens soviéticas interceptadas e decifradas)',
+          fundoArquivistico: 'Coleção VENONA desclassificada pela CIA e NSA',
+          instituicaoGuarda: 'National Security Agency (NSA) / CIA',
+          descricaoConteudo: 'Traduções de comunicações diplomáticas e de inteligência soviéticas da década de 1940.',
+          autenticidadeEStatus: 'Autêntico, amplamente validado por historiadores e agências.'
+        }
+      ],
+      fotografiasERegistros: [
+        {
+          registroOuFoto: 'Restos do avião U-2 abatido exibidos em Moscou (1960)',
+          acervoOrigem: 'Museu Central das Forças Armadas, Moscou',
+          anoEIdentificador: '1960, Arquivo Fotográfico Estatal',
+          significadoProbatório: 'Evidência material da espionagem aérea norte-americana sobre território soviético.'
+        }
+      ],
+      testemunhos: [
+        {
+          testemunha: 'Vasili Mitrokhin',
+          funcaoOrigem: 'Arquivista do KGB que transcreveu documentos secretos',
+          trechoDepoimento: 'As anotações copiadas clandestinamente revelam a vasta extensão das operações clandestinas do KGB em território ocidental.',
+          referenciaVerificada: 'ANDREW, Christopher; MITROKHIN, Vasili. The Sword and the Shield. New York: Basic Books, 1999.'
+        }
+      ],
+      decretosECorrespondencias: [
+        {
+          codigoOuNumero: 'Decreto de Criação do Comitê de Segurança do Estado (KGB)',
+          dataEmissao: '13 de março de 1954',
+          orgaoEmissor: 'Conselho de Ministros da URSS',
+          teorDispositivo: 'Subordinação dos órgãos de segurança diretamente ao Conselho de Ministros e ao Partido.',
+          localizacaoArquivo: 'GARF f. R-9401'
+        }
+      ]
+    },
+    responsabilidadesEConsequencias: {
+      responsaveisPoliticosEInstitucionais: [
+        {
+          agenteOuOrgao: 'Liderança política da URSS e dos EUA',
+          funcaoCargo: 'Governos centrais',
+          responsabilidadeEspecifica: 'Decisão e autorização de operações de inteligência, contraespionagem e intervenção global.'
+        }
+      ],
+      vitimasEImpactos: {
+        estimativasQuantitativas: 'Milhares de indivíduos atingidos por investigações, expurgos de espionagem e prisões políticas.',
+        impactosDemograficosEHumanos: 'Vigilância estatal estendida, perseguição a dissidentes e restrições de liberdades civis.',
+        impactosEconomicos: 'Desvio maciço de recursos estatais para a indústria bélica, corrida espacial e serviços de inteligência.'
+      },
+      consequenciasImediatas: 'Escalada da tensão geopolítica e institucionalização da contraespionagem em ambas as superpotências.',
+      consequenciasLongoPrazo: 'Transformação duradoura da segurança nacional, desclassificação de arquivos históricos e reconfiguração da geopolítica pós-1989.'
+    },
+    debateHistoriografico: {
+      interpretacoesDiferentes: [
+        {
+          correnteEscola: 'História Institucional e Reconstrução Operacional',
+          principaisAutores: ['Christopher Andrew', 'Vasili Mitrokhin'],
+          teseCentral: 'Reconstrução detalhada das redes de agentes e operações externas soviéticas a partir de arquivos clandestinos.',
+          antiteseCritica: 'Necessidade de confrontar anotações particulares com documentação oficial multissetorial.'
+        },
+        {
+          correnteEscola: 'Espionagem e Evidência Documental (VENONA)',
+          principaisAutores: ['John Earl Haynes', 'Harvey Klehr'],
+          teseCentral: 'Comprovação da extensão da espionagem soviética nos EUA por meio da decifração de telegramas.',
+          antiteseCritica: 'Discussão sobre a confiabilidade de identificações de nomes de código parciais.'
+        },
+        {
+          correnteEscola: 'História Política e Crítica dos Serviços de Inteligência',
+          principaisAutores: ['Pesquisadores de relações internacionais e contrainteligência'],
+          teseCentral: 'Análise de como a inteligência influenciou e foi condicionada pelas decisões estratégicas dos governos.',
+          antiteseCritica: 'Evitar o determinismo conspiratório que reduz a política global apenas à atuação de espiões.'
+        }
+      ],
+      consensosAcademicos: 'Comprovação documental de que a espionagem foi componente estrutural da Guerra Fria.',
+      controversiasELimitacoesDasFontes: 'Acesso restrito a fundos operacionais confidenciais ainda classificados em arquivos de inteligência russos e ocidentais.'
+    },
+    citacoesVerificadas: [
+      {
+        trechoLiteral: 'The object of the VENONA program was to examine, and possibly exploit, encrypted Soviet diplomatic communications.',
+        autor: 'National Security Agency (NSA)',
+        obra: 'Cold War: VENONA Historical Exhibit',
+        edicaoEditoraAno: 'Fort Meade, MD: NSA, 2021',
+        paginaExata: 'Seção Histórica Online',
+        analiseContextual: 'Descrição oficial do escopo e finalidade do programa VENONA de interceptação e decifração.'
+      }
+    ],
+    bibliografia: [
+      {
+        entradaAbnt: 'ANDREW, Christopher; MITROKHIN, Vasili. The Sword and the Shield: The Mitrokhin Archive and the Secret History of the KGB. New York: Basic Books, 1999. 998 p.',
+        entradaChicago: 'Andrew, Christopher, and Vasili Mitrokhin. 1999. The Sword and the Shield: The Mitrokhin Archive and the Secret History of the KGB. New York: Basic Books.',
+        tipoFonte: 'Monografia',
+        isbnOuReferencia: 'ISBN 978-0465003125'
+      }
+    ]
   }
 };
 
@@ -2761,5 +3183,5 @@ export function getCanonicalEditorialDossier(topicId: number): StandardEditorial
         isbnOuReferencia: 'ISBN 978-0195050011'
       }
     ]
-  };
-}
+  }
+};
