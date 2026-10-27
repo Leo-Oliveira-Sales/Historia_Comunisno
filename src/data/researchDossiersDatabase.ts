@@ -1,6 +1,10 @@
 import { DOSSIER_12_TEXT } from './dossiers/dossier_12';
 import { DOSSIER_14_TEXT } from './dossiers/dossier_14';
 import { DOSSIER_15_TEXT } from './dossiers/dossier_15';
+import { DOSSIER_16_TEXT } from './dossiers/dossier_16';
+import { DOSSIER_17_TEXT } from './dossiers/dossier_17';
+import { DOSSIER_18_TEXT } from './dossiers/dossier_18';
+import { DOSSIER_19_TEXT } from './dossiers/dossier_19';
 
 export const RESEARCH_DOSSIERS: Record<number, string> = {
   1: `# DOSSIÊ ACADÊMICO Nº 01
@@ -2817,142 +2821,12 @@ O objetivo deste dossiê é permitir que o leitor compreenda o acontecimento por
   14: DOSSIER_14_TEXT,
   15: DOSSIER_15_TEXT,
 
-  16: `# DOSSIÊ ACADÊMICO Nº 16
+  16: DOSSIER_16_TEXT,
 
-## Comunismo Internacional e Movimentos Revolucionários
+  17: DOSSIER_17_TEXT,
 
-### Ásia, África e América Latina (1949–1989)
+  18: DOSSIER_18_TEXT,
 
-**Período central:** 1949–1989
-**Espaço geográfico:** Ásia, África, América Latina e centros de decisão internacionais (Moscou, Pequim, Havana).
-**Natureza do acontecimento:** História política, diplomática, militar e social; história do comunismo global e dos movimentos de descolonização.
-**Questão central:** Em que medida os movimentos comunistas e revolucionários da Ásia, África e América Latina foram subordinados a Moscou e Pequim, e de que maneira formularam estratégias próprias a partir de condições nacionais?
+  19: DOSSIER_19_TEXT
 
----
-
-## 1. IDENTIFICAÇÃO DO ACONTECIMENTO
-
-### 1.1. Objeto de pesquisa
-Este dossiê examina a expansão, as transformações e as divisões do movimento comunista internacional entre 1949 e 1989, abrangendo a vitória comunista na China, a Guerra da Coreia e do Vietnã, a descolonização em Angola e Moçambique, a Revolução Cubana e os conflitos revolucionários latino-americanos.
-
-### 1.2. Conceitos fundamentais
-* **Comunismo internacional:** redes transnacionais de partidos e Estados.
-* **Maoismo:** corrente baseada na mobilização camponesa e na guerra prolongada.
-* **Guerra de libertação nacional:** luta anticolonial.
-* **Ruptura sino-soviética:** cisão entre a URSS e a China que fragmentou o bloco socialista.
-
----
-
-## 2. CONTEXTO HISTÓRICO
-Após 1945, a vitória chinesa de 1949 e a descolonização abriram novos espaços para o comunismo fora da Europa. A assistência soviética e chinesa coexistiu com a busca de autonomia por parte dos movimentos locais, num cenário agravado pela cisão entre Moscou e Pequim.
-
----
-
-## 3. CRONOLOGIA DOCUMENTAL
-* **1949:** Proclamação da República Popular da China.
-* **1950–1953:** Guerra da Coreia.
-* **1959:** Vitória da Revolução Cubana.
-* **1962:** Crise dos Mísseis de Cuba.
-* **1975:** Independência de Angola e Moçambique; Queda de Saigon.
-* **1989:** Transformações no Leste Europeu.
-
----
-
-## 4. DOCUMENTOS E EVIDÊNCIAS
-* Proclamação da República Popular da China (1949).
-* Arquivos da Ruptura Sino-Soviética (Lüthi, 2008).
-* Documentação sobre movimentos de libertação nacional em Angola e Moçambique (ICS-ULisboa).
-* Registros de assistência educacional e militar (Katsakioris).
-
----
-
-## 5. RESPONSABILIDADES E CONSEQUÊNCIAS
-O apoio externo de superpotências e a atuação de lideranças revolucionárias locais resultaram no fim de impérios coloniais e na formação de Estados socialistas, mas também geraram guerras civis, governos de partido único, graves violações de direitos humanos e forte dependência geopolítica.
-
----
-
-## 6. DEBATE HISTORIOGRÁFICO
-* **Expansão e consolidação institucional:** George W. Breslauer.
-* **História global e autonomia local:** Constantin Katsakioris, Odd Arne Westad.
-* **Ruptura sino-soviética e rivalidade geopolítica:** Lorenz M. Lüthi.
-
----
-
-## 7. BIBLIOGRAFIA ABNT
-BRESLAUER, George W. *The Rise and Demise of World Communism*. New York: Oxford University Press, 2021.
-LÜTHI, Lorenz M. *The Sino-Soviet Split*. Princeton: Princeton University Press, 2008.
-WESTAD, Odd Arne. *The Global Cold War*. Cambridge: Cambridge University Press, 2005.`,
-
-  17: `# DOSSIÊ ACADÊMICO CANÔNICO — Nº 17
-
-## Dissidência, Samizdat e Luta por Direitos Humanos
-
-### Resistência civil, censura e repressão na União Soviética (1968–1989)
-
-## 1. IDENTIFICAÇÃO DO ACONTECIMENTO
-
-**Título:** Dissidência, Samizdat e Luta por Direitos Humanos na União Soviética.
-**Período abrangido:** 1968–1989.
-**Eixos centrais:**
-* O movimento pelos direitos civis e o legalismo constitutional.
-* A rede clandestina de publicação e distribuição de informação (Samizdat e Tamizdat).
-* Repressão do KGB, psiquiatria punitiva e exílio forçado.
-* O impacto dos Acordos de Helsinque (1975) e o Grupo Helsinque de Moscou.
-
-**Principais personagens e dissidentes:**
-* **Andrei Sakharov:** físico nuclear, criador da bomba de hidrogênio soviética e líder do movimento pelos direitos humanos (Nobel da Paz em 1975).
-* **Aleksandr Soljenítsin:** escritor, sobrevivente do Gulag, autor de "O Arquipélago Gulag" (Nobel de Literatura em 1970).
-* **Yuri Orlov e Elena Bonner:** fundadores do Grupo Helsinque de Moscou.
-* **Yuri Andropov:** chefe do KGB (1967–1982) e formulador da estratégia de repressão seletiva e psiquiatria punitiva.
-
----
-
-## 2. CONTEXTO HISTÓRICO
-
-A fase pós-stalinista e a posterior era da Estagnação sob Brejnev encerraram o breve "Degelo" cultural de Kruschev. O julgamento dos escritores Sinyavsky e Daniel em 1966 e a invasão da Tchecoslováquia pelas tropas do Pacto de Varsóvia em agosto de 1968 evidenciaram os limites da reforma interna.
-
-Em resposta, intelectuais e cidadãos articularam uma forma inédita de resistência civil pacífica fundamentada na exigência de cumprimento das próprias leis do Estado soviético e de tratados internacionais.
-
----
-
-## 3. CRONOLOGIA DOCUMENTAL
-
-* **1966:** Julgamento dos escritores Sinyavsky e Daniel por publicarem obras no exterior (Tamizdat).
-* **25 de agosto de 1968:** Protesto dos Oito na Praça Vermelha em Moscou contra a invasão da Tchecoslováquia.
-* **1968–1983:** Circulação da *Crônica dos Eventos Atuais* (*Khronika Tekushchikh Sobytiy*), principal boletim em samizdat.
-* **1973:** Publicação de *O Arquipélago Gulag* de Soljenítsin em Paris; expulsão do autor da URSS em 1974.
-* **1975:** Assinatura dos Acordos de Helsinque com compromissos formais sobre direitos humanos no "Terceiro Cesto".
-* **1976:** Fundação do Grupo Helsinque de Moscou por Yuri Orlov, Elena Bonner e outros ativistas.
-* **1980:** Exílio forçado de Andrei Sakharov para a cidade fechada de Gorky após denúncia da invasão do Afeganistão.
-* **1986:** Liberação de Sakharov por Mikhail Gorbachev e início da libertação dos presos políticos durante a Glasnost.
-
----
-
-## 4. DOCUMENTOS E EVIDÊNCIAS
-
-* **Manifesto da Carta 77 e boletins do Samizdat:** preservados em acervos da Hoover Institution e da Sociedade Memorial.
-* **Relatórios do KGB sobre o uso da psiquiatria punitiva:** documentos desclassificados do Comitê Central (RGANI f. 3).
-* **Declaração do Grupo Helsinque de Moscou (1976):** denúncias documentadas de violações do Terceiro Cesto de Helsinque.
-
----
-
-## 5. RESPONSABILIDADES E CONSEQUÊNCIAS
-
-A repressão orquestrada pela cúpula do PCUS e executada pelo KGB privou a URSS de talentos intelectuais e científicos, corroeu a legitimidade moral do regime no plano internacional e forneceu os fundamentos éticos para a transição democrática do final dos anos 1980.
-
----
-
-## 6. DEBATE HISTORIOGRÁFICO
-
-* **Abordagem da Resistência Ética:** Ludmilla Alexeyeva e Peter Reddaway analisam a dissidência como movimento de regeneração moral do indivíduo contra o totalitarismo.
-* **Abordagem Geopolítica e Direitos Humanos:** Samuel Moyn e Anne Applebaum destacam como a linguagem dos direitos humanos em Helsinque transformou a dinâmica da Guerra Fria.
-
----
-
-## 7. BIBLIOGRAFIA ABNT
-
-ALEXEYEVA, Ludmilla. *Soviet Dissent: Contemporary Movements for National, Religious, and Human Rights*. Middletown: Wesleyan University Press, 1987.
-APPLEBAUM, Anne. *Gulag: A History*. New York: Anchor Books, 2003.
-SAKHAROV, Andrei. *Memoirs*. New York: Alfred A. Knopf, 1990.
-SOLJENÍTSIN, Aleksandr. *O Arquipélago Gulag*. Rio de Janeiro: Difel, 1976.`
 };
