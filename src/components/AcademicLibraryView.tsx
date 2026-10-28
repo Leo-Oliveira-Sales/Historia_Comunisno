@@ -302,9 +302,9 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
               </div>
 
               {/* Bottom Actions */}
-              <div className="pt-3 border-t border-stone-800 flex items-center justify-between text-xs">
-                <div className="flex items-center gap-1 font-mono text-[11px] text-stone-400">
-                  <span>Dossiês Vinculados:</span>
+              <div className="pt-3 border-t border-stone-800 flex flex-wrap items-center justify-between gap-2.5 text-xs">
+                <div className="flex flex-wrap items-center gap-1 font-mono text-[11px] text-stone-400">
+                  <span className="shrink-0">Dossiês Vinculados:</span>
                   {archive.relatedTopicIds.map((tid) => {
                     const topic = topics.find((t) => t.id === tid);
                     if (!topic) return null;
@@ -312,7 +312,7 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
                       <button
                         key={tid}
                         onClick={() => onSelectTopic(topic)}
-                        className="px-1.5 py-0.5 rounded bg-stone-800 hover:bg-amber-500 hover:text-stone-950 text-stone-300 text-[10px]"
+                        className="px-1.5 py-0.5 rounded bg-stone-800 hover:bg-amber-500 hover:text-stone-950 text-stone-300 text-[10px] shrink-0"
                         title={topic.title}
                       >
                         #{topic.categoryNumber}
@@ -325,7 +325,7 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
                   href={archive.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="px-3 py-1.5 bg-stone-800 hover:bg-stone-700 text-amber-400 rounded border border-stone-700 font-mono text-xs flex items-center gap-1.5 transition-colors"
+                  className="px-3 py-1.5 bg-stone-800 hover:bg-stone-700 text-amber-400 rounded border border-stone-700 font-mono text-xs flex items-center gap-1.5 transition-colors shrink-0 ml-auto"
                 >
                   <ExternalLink className="w-3.5 h-3.5" />
                   <span>Acessar Acervo</span>

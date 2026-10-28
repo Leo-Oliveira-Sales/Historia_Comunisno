@@ -102,7 +102,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
       </div>
 
       {/* Grid of 20 Dossier Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
         {filteredTopics.map((topic) => {
           const isSaved = savedTopicIds.includes(topic.id);
           const canonicalDossier = CANONICAL_EDITORIAL_DATABASE[topic.id];
@@ -117,8 +117,8 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
             >
               {/* Top Meta Line with zero-pill rule */}
               <div>
-                <div className="flex items-center justify-between text-xs text-stone-400 font-mono mb-2">
-                  <div className="flex items-center gap-1.5">
+                <div className="flex items-center justify-between text-xs text-stone-400 font-mono mb-2 flex-wrap gap-1">
+                  <div className="flex items-center gap-1.5 flex-wrap">
                     <span className="text-amber-400 font-bold">Nº {topic.categoryNumber}</span>
                     <span aria-hidden="true">·</span>
                     <span className="text-stone-400">{topic.category}</span>
@@ -140,7 +140,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
                   </button>
                 </div>
 
-                <h3 className="text-base sm:text-lg font-display font-bold text-stone-100 group-hover:text-amber-400 transition-colors leading-snug">
+                <h3 className="text-base sm:text-lg font-display font-bold text-stone-100 group-hover:text-amber-400 transition-colors leading-snug break-words">
                   {topic.title}
                 </h3>
 
@@ -175,20 +175,20 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
                 </div>
 
                 {/* Academic Standard Badge */}
-                <div className="mt-3 py-1.5 px-2.5 bg-[#121215] border border-amber-900/40 rounded flex items-center justify-between text-[11px] font-mono text-stone-400">
+                <div className="mt-3 py-1.5 px-2.5 bg-[#121215] border border-amber-900/40 rounded flex flex-wrap items-center justify-between gap-1.5 text-[11px] font-mono text-stone-400">
                   <span className="flex items-center gap-1.5 text-amber-400 font-medium">
-                    <Award className="w-3.5 h-3.5 text-amber-400" />
+                    <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
                     <span>Padrão 7 Seções Canônicas</span>
                   </span>
-                  <span className="text-emerald-400 font-mono text-[10px] bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-800/40">
+                  <span className="text-emerald-400 font-mono text-[10px] bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-800/40 shrink-0">
                     Auditado
                   </span>
                 </div>
               </div>
 
-              {/* Bottom Card Actions */}
-              <div className="mt-4 pt-3 border-t border-stone-800/80 flex items-center justify-between text-xs gap-2">
-                <div className="flex items-center gap-2 text-stone-400 font-mono text-[11px] min-w-0">
+              {/* Bottom Card Actions (Fully Responsive on Font Scaling) */}
+              <div className="mt-4 pt-3 border-t border-stone-800/80 flex flex-wrap items-center justify-between text-xs gap-2.5">
+                <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-stone-400 font-mono text-[11px]">
                   <div className="flex items-center gap-1.5 text-emerald-400 shrink-0" title="Documentos primários oficiais de acervos desclassificados">
                     <FileCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                     <span>{primaryCount} {primaryCount === 1 ? 'Doc. Primário' : 'Docs. Primários'}</span>
@@ -204,7 +204,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
 
                 <button
                   onClick={() => onSelectTopic(topic)}
-                  className="px-3.5 py-2 min-h-[40px] bg-stone-800 hover:bg-stone-700 active:scale-95 text-stone-200 group-hover:text-amber-300 rounded-md text-xs font-semibold flex items-center gap-1.5 transition-all border border-stone-700/60 shrink-0"
+                  className="px-3.5 py-2 min-h-[40px] bg-stone-800 hover:bg-stone-700 active:scale-95 text-stone-200 group-hover:text-amber-300 rounded-md text-xs font-semibold flex items-center gap-1.5 transition-all border border-stone-700/60 shrink-0 ml-auto"
                 >
                   <BookOpen className="w-3.5 h-3.5 text-amber-400" />
                   <span>Abrir Dossiê</span>

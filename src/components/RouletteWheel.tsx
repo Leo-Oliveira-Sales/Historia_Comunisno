@@ -264,8 +264,8 @@ export const RouletteWheel: React.FC<RouletteWheelProps> = ({
       {/* SELECTION INTERFACE: LISTA SUSPENSA (DROPDOWN) */}
       <div className="bg-[#151518] border border-stone-800 rounded-xl p-4 sm:p-5 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 shadow-xl">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-amber-950/80 border border-amber-600/60 flex items-center justify-center shrink-0">
-            <Flame className="w-5 h-5 text-amber-400" />
+          <div className="w-10 h-10 rounded-lg bg-amber-500/15 border border-amber-500/40 flex items-center justify-center shrink-0">
+            <Flame className="w-5 h-5 text-amber-500" />
           </div>
           <div>
             <div className="flex items-center gap-2">

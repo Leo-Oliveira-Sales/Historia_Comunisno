@@ -321,6 +321,86 @@ header .brand-btn,
   background: linear-gradient(to top, #edf1f7, rgba(255, 255, 255, 0.92), transparent) !important;
 }
 
+/* =========================================================================
+   WHITE THEME SPECIFIC CONTRAST & ACCENT FIXES
+   ========================================================================= */
+/* Audit and Emerald Badges in White Theme */
+[data-theme="branco"] [class*="bg-emerald-950"] {
+  background-color: #dcfce7 !important;
+  color: #065f46 !important;
+  border-color: #86efac !important;
+  font-weight: 700 !important;
+}
+[data-theme="branco"] [class*="bg-emerald-950"] * {
+  color: #065f46 !important;
+}
+
+/* Amber & Red Badges and Callout Containers in White Theme */
+[data-theme="branco"] [class*="bg-amber-950/20"],
+[data-theme="branco"] [class*="bg-amber-950/30"],
+[data-theme="branco"] [class*="bg-amber-950/40"],
+[data-theme="branco"] [class*="bg-amber-950/50"],
+[data-theme="branco"] [class*="bg-amber-950"] {
+  background-color: #fef3c7 !important;
+  color: #92400e !important;
+  border-color: #fde68a !important;
+}
+
+[data-theme="branco"] [class*="bg-red-950"] {
+  background-color: #fee2e2 !important;
+  color: #991b1b !important;
+  border-color: #fca5a5 !important;
+}
+[data-theme="branco"] [class*="bg-red-950"] * {
+  color: #991b1b !important;
+}
+
+/* Active Tab Buttons & Copy Buttons in White Theme: Solid Dark Slate with White Text */
+[data-theme="branco"] button[class*="bg-amber-950"],
+[data-theme="branco"] button[class*="bg-amber-900"] {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+  border-color: #0f172a !important;
+  font-weight: 700 !important;
+}
+[data-theme="branco"] button[class*="bg-amber-950"] *,
+[data-theme="branco"] button[class*="bg-amber-900"] * {
+  color: #ffffff !important;
+}
+
+/* Numbered Section Circles (e.g. 1, 2, 3, I, II, III, §) in White Theme */
+[data-theme="branco"] span[class*="bg-amber-950"],
+[data-theme="branco"] span[class*="bg-emerald-950"] {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+  border-color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+/* Sidebar Index Active Button in White Theme */
+[data-theme="branco"] aside button[class*="bg-amber-950"] {
+  background-color: #e2e8f0 !important;
+  color: #0f172a !important;
+  border-color: #b45309 !important;
+  font-weight: 700 !important;
+}
+[data-theme="branco"] aside button[class*="bg-amber-950"] * {
+  color: #0f172a !important;
+}
+
+/* Subheadings & Accent Texts in White Theme */
+[data-theme="branco"] h2[class*="text-amber-300"],
+[data-theme="branco"] h3[class*="text-amber-300"],
+[data-theme="branco"] h4[class*="text-amber-300"],
+[data-theme="branco"] h2[class*="text-amber-400"],
+[data-theme="branco"] h3[class*="text-amber-400"],
+[data-theme="branco"] h4[class*="text-amber-400"] {
+  color: #9a3412 !important;
+}
+[data-theme="branco"] [class*="text-amber-200"] {
+  color: #7c2d12 !important;
+}
+
 
 /* =========================================================================
    TEMA 3: BEGE VINTAGE (DOCUMENTO HISTÓRICO & LIVRO ANTIGO)
@@ -501,3 +581,84 @@ html[data-theme="bege"] body {
 [data-theme="bege"] .bg-gradient-to-t {
   background: linear-gradient(to top, #f2ecd9, rgba(250, 245, 232, 0.94), transparent) !important;
 }
+
+/* =========================================================================
+   BEGE VINTAGE THEME SPECIFIC CONTRAST & ACCENT FIXES
+   ========================================================================= */
+/* Audit and Emerald Badges in Bege Theme */
+[data-theme="bege"] [class*="bg-emerald-950"] {
+  background-color: #e2ebd8 !important;
+  color: #144723 !important;
+  border-color: #a3c28f !important;
+  font-weight: 700 !important;
+}
+[data-theme="bege"] [class*="bg-emerald-950"] * {
+  color: #144723 !important;
+}
+
+/* Amber & Red Badges and Callout Containers in Bege Theme */
+[data-theme="bege"] [class*="bg-amber-950/20"],
+[data-theme="bege"] [class*="bg-amber-950/30"],
+[data-theme="bege"] [class*="bg-amber-950/40"],
+[data-theme="bege"] [class*="bg-amber-950/50"],
+[data-theme="bege"] [class*="bg-amber-950"] {
+  background-color: #e5d9bf !important;
+  color: #582b0c !important;
+  border-color: #c4af87 !important;
+}
+
+[data-theme="bege"] [class*="bg-red-950"] {
+  background-color: #f3d8d8 !important;
+  color: #881919 !important;
+  border-color: #d2a1a1 !important;
+}
+[data-theme="bege"] [class*="bg-red-950"] * {
+  color: #881919 !important;
+}
+
+/* Active Tab Buttons & Copy Buttons in Bege Theme: Solid Wax Seal Carmine with Warm Ivory Text */
+[data-theme="bege"] button[class*="bg-amber-950"],
+[data-theme="bege"] button[class*="bg-amber-900"] {
+  background-color: #881919 !important;
+  color: #faf5e8 !important;
+  border-color: #881919 !important;
+  font-weight: 700 !important;
+}
+[data-theme="bege"] button[class*="bg-amber-950"] *,
+[data-theme="bege"] button[class*="bg-amber-900"] * {
+  color: #faf5e8 !important;
+}
+
+/* Numbered Section Circles (e.g. 1, 2, 3, I, II, III, §) in Bege Theme */
+[data-theme="bege"] span[class*="bg-amber-950"],
+[data-theme="bege"] span[class*="bg-emerald-950"] {
+  background-color: #881919 !important;
+  color: #faf5e8 !important;
+  border-color: #881919 !important;
+  font-weight: 700 !important;
+}
+
+/* Sidebar Index Active Button in Bege Theme */
+[data-theme="bege"] aside button[class*="bg-amber-950"] {
+  background-color: #e5d9bf !important;
+  color: #24180d !important;
+  border-color: #881919 !important;
+  font-weight: 700 !important;
+}
+[data-theme="bege"] aside button[class*="bg-amber-950"] * {
+  color: #24180d !important;
+}
+
+/* Subheadings & Accent Texts in Bege Theme */
+[data-theme="bege"] h2[class*="text-amber-300"],
+[data-theme="bege"] h3[class*="text-amber-300"],
+[data-theme="bege"] h4[class*="text-amber-300"],
+[data-theme="bege"] h2[class*="text-amber-400"],
+[data-theme="bege"] h3[class*="text-amber-400"],
+[data-theme="bege"] h4[class*="text-amber-400"] {
+  color: #854d0e !important;
+}
+[data-theme="bege"] [class*="text-amber-200"] {
+  color: #713f12 !important;
+}
+
