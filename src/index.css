@@ -12,6 +12,7 @@
     font-family: var(--font-sans);
     background-color: #121214;
     color: #e5e0d8;
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
 }
 
@@ -75,4 +76,428 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #4a4850;
+}
+
+/* =========================================================================
+   TEMA 2: BRANCO & CINZA (SOMBRAS ELEVADAS & MESCLA DE CINZA CLARO)
+   ========================================================================= */
+[data-theme="branco"] {
+  color-scheme: light;
+}
+
+[data-theme="branco"] body,
+html[data-theme="branco"] body {
+  background-color: #edf1f7 !important;
+  color: #1e293b !important;
+}
+
+[data-theme="branco"] ::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+[data-theme="branco"] ::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+[data-theme="branco"] ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* White Theme Background Mappings: Canvas in elegant light gray, cards in pure white */
+[data-theme="branco"] [class*="bg-[#121214]"] {
+  background-color: #edf1f7 !important;
+}
+[data-theme="branco"] header[class*="bg-[#121214]"],
+[data-theme="branco"] .sticky[class*="bg-[#121214]"] {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-bottom-color: #cbd5e1 !important;
+  box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.08) !important;
+}
+
+/* Base and container elements in pure white */
+[data-theme="branco"] [class*="bg-[#161619]"],
+[data-theme="branco"] [class*="bg-[#16161a]"],
+[data-theme="branco"] [class*="bg-[#17171a]"],
+[data-theme="branco"] [class*="bg-[#17171b]"],
+[data-theme="branco"] [class*="bg-[#18181c]"],
+[data-theme="branco"] [class*="bg-[#19191d]"],
+[data-theme="branco"] [class*="bg-[#141416]"],
+[data-theme="branco"] [class*="bg-[#141417]"],
+[data-theme="branco"] [class*="bg-[#131316]"],
+[data-theme="branco"] [class*="bg-[#121215]"],
+[data-theme="branco"] [class*="bg-[#151518]"],
+[data-theme="branco"] [class*="bg-[#0e0e11]"] {
+  background-color: #ffffff !important;
+}
+
+/* Secondary info boxes, search ribbons, nested cards in light gray blend */
+[data-theme="branco"] [class*="bg-[#101012]"],
+[data-theme="branco"] [class*="bg-[#1b1b1f]"],
+[data-theme="branco"] [class*="bg-[#202026]"],
+[data-theme="branco"] .bg-stone-900,
+[data-theme="branco"] [class*="bg-stone-900"] {
+  background-color: #f8fafc !important;
+}
+
+[data-theme="branco"] .bg-stone-800,
+[data-theme="branco"] [class*="bg-stone-800"] {
+  background-color: #f1f5f9 !important;
+}
+
+[data-theme="branco"] .hover\:bg-stone-700:hover,
+[data-theme="branco"] [class*="hover:bg-stone-700"]:hover,
+[data-theme="branco"] [class*="hover:bg-stone-800"]:hover {
+  background-color: #e2e8f0 !important;
+}
+
+/* White Theme Borders */
+[data-theme="branco"] [class*="border-stone-800"],
+[data-theme="branco"] [class*="border-stone-900"] {
+  border-color: #cbd5e1 !important;
+}
+[data-theme="branco"] [class*="border-stone-700"] {
+  border-color: #94a3b8 !important;
+}
+[data-theme="branco"] [class*="divide-stone-800"] > * + * {
+  border-color: #e2e8f0 !important;
+}
+
+/* White Theme Text Mappings: High readability slate/black */
+[data-theme="branco"] [class*="text-stone-100"] {
+  color: #0f172a !important;
+}
+[data-theme="branco"] [class*="text-stone-200"],
+[data-theme="branco"] [class*="text-[#EBE6DF]"],
+[data-theme="branco"] [class*="text-[#ebe6df]"] {
+  color: #1e293b !important;
+}
+[data-theme="branco"] [class*="text-stone-300"] {
+  color: #334155 !important;
+}
+[data-theme="branco"] [class*="text-stone-400"] {
+  color: #475569 !important;
+}
+[data-theme="branco"] [class*="text-stone-500"] {
+  color: #64748b !important;
+}
+[data-theme="branco"] [class*="text-amber-400"],
+[data-theme="branco"] [class*="text-amber-300"] {
+  color: #9a3412 !important;
+}
+[data-theme="branco"] [class*="text-emerald-400"] {
+  color: #047857 !important;
+}
+[data-theme="branco"] [class*="text-red-400"] {
+  color: #b91c1c !important;
+}
+
+/* =========================================================================
+   GLOBAL FONT SIZE SCALING ACROSS ENTIRE APP/SITE
+   ========================================================================= */
+html[data-font-size="normal"], html {
+  font-size: 16px;
+}
+html[data-font-size="medio"] {
+  font-size: 18.4px; /* +15% scale */
+}
+html[data-font-size="grande"] {
+  font-size: 20.8px; /* +30% scale */
+}
+html[data-font-size="extra-grande"] {
+  font-size: 23.2px; /* +45% scale */
+}
+
+/* Ensure body respects font size scaling smooth transition */
+html, body {
+  transition: font-size 0.15s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+/* =========================================================================
+   CLEAN NAVIGATION BUTTONS (No boxes, no borders, transparent in ALL themes)
+   ========================================================================= */
+.nav-btn-clean,
+header button.nav-btn-clean,
+header nav button,
+header .brand-btn,
+[data-theme="branco"] .nav-btn-clean,
+[data-theme="branco"] header nav button,
+[data-theme="branco"] header .brand-btn,
+[data-theme="bege"] .nav-btn-clean,
+[data-theme="bege"] header nav button,
+[data-theme="bege"] header .brand-btn {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Active Nav Link underline indicator (Sleek line instead of box) */
+.nav-btn-active {
+  position: relative;
+}
+.nav-btn-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  background-color: #f59e0b;
+  border-radius: 9999px;
+}
+[data-theme="branco"] .nav-btn-active::after {
+  background-color: #b45309;
+}
+[data-theme="bege"] .nav-btn-active::after {
+  background-color: #881919;
+}
+
+/* WHITE THEME ELEVATED SHADOWS (Cards, Buttons, Info Boxes, Modals) */
+[data-theme="branco"] .grid > div,
+[data-theme="branco"] article,
+[data-theme="branco"] [class*="rounded-xl"][class*="border"],
+[data-theme="branco"] [class*="group relative"] {
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.10), 0 2px 4px -2px rgba(15, 23, 42, 0.07), 0 10px 15px -3px rgba(15, 23, 42, 0.06), 0 0 0 1px rgba(15, 23, 42, 0.06) !important;
+}
+
+[data-theme="branco"] .grid > div:hover,
+[data-theme="branco"] [class*="group relative"]:hover {
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.16), 0 8px 10px -6px rgba(15, 23, 42, 0.10), 0 0 0 1px rgba(15, 23, 42, 0.08) !important;
+}
+
+[data-theme="branco"] button:not(.nav-btn-clean):not(header nav button):not(header .brand-btn),
+[data-theme="branco"] [role="button"]:not(.nav-btn-clean) {
+  box-shadow: 0 2px 4px 0 rgba(15, 23, 42, 0.10), 0 1px 2px -1px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(15, 23, 42, 0.05) !important;
+}
+
+[data-theme="branco"] button:not(.nav-btn-clean):not(header nav button):not(header .brand-btn):hover,
+[data-theme="branco"] [role="button"]:not(.nav-btn-clean):hover {
+  box-shadow: 0 4px 8px -1px rgba(15, 23, 42, 0.15), 0 2px 4px -1px rgba(15, 23, 42, 0.10) !important;
+}
+
+/* Info Boxes and Callout Containers */
+[data-theme="branco"] [class*="shadow-lg"],
+[data-theme="branco"] [class*="shadow-md"],
+[data-theme="branco"] [class*="p-3.5 sm:p-6"],
+[data-theme="branco"] [class*="bg-[#17171b]"] {
+  box-shadow: 0 6px 12px -2px rgba(15, 23, 42, 0.09), 0 3px 6px -2px rgba(15, 23, 42, 0.06), 0 0 0 1px rgba(15, 23, 42, 0.05) !important;
+}
+
+/* Modals and Overlays */
+[data-theme="branco"] [role="dialog"],
+[data-theme="branco"] .fixed > div {
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.35), 0 0 0 1px rgba(15, 23, 42, 0.10) !important;
+}
+
+/* White Theme Inputs */
+[data-theme="branco"] input,
+[data-theme="branco"] select,
+[data-theme="branco"] textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.05) !important;
+}
+[data-theme="branco"] input::placeholder,
+[data-theme="branco"] textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* White Theme Stamps */
+[data-theme="branco"] .dossier-stamp-red {
+  color: #b91c1c;
+  border-color: #b91c1c;
+  background-color: rgba(185, 28, 28, 0.06);
+}
+[data-theme="branco"] .dossier-stamp-amber {
+  color: #9a3412;
+  border-color: #9a3412;
+  background-color: rgba(154, 52, 18, 0.06);
+}
+
+/* White Theme Hero Gradient */
+[data-theme="branco"] .bg-gradient-to-t {
+  background: linear-gradient(to top, #edf1f7, rgba(255, 255, 255, 0.92), transparent) !important;
+}
+
+
+/* =========================================================================
+   TEMA 3: BEGE VINTAGE (DOCUMENTO HISTÓRICO & LIVRO ANTIGO)
+   ========================================================================= */
+[data-theme="bege"] {
+  color-scheme: light;
+}
+
+[data-theme="bege"] body,
+html[data-theme="bege"] body {
+  background-color: #f2ecd9 !important;
+  color: #261a0f !important;
+}
+
+[data-theme="bege"] ::-webkit-scrollbar-track {
+  background: #ede3ce;
+}
+[data-theme="bege"] ::-webkit-scrollbar-thumb {
+  background: #bfa77e;
+  border-radius: 4px;
+}
+[data-theme="bege"] ::-webkit-scrollbar-thumb:hover {
+  background: #a38c64;
+}
+
+/* Vintage Book Canvas and Folio Pages */
+[data-theme="bege"] [class*="bg-[#121214]"] {
+  background-color: #f2ecd9 !important;
+}
+[data-theme="bege"] header[class*="bg-[#121214]"],
+[data-theme="bege"] .sticky[class*="bg-[#121214]"] {
+  background-color: rgba(243, 237, 222, 0.98) !important;
+  border-bottom-color: #c4af87 !important;
+  box-shadow: 0 3px 8px rgba(60, 42, 20, 0.07) !important;
+}
+
+/* Inner Folio Pages / Card Surfaces (Soft Warm Ivory & Aged Vellum) */
+[data-theme="bege"] [class*="bg-[#161619]"],
+[data-theme="bege"] [class*="bg-[#16161a]"],
+[data-theme="bege"] [class*="bg-[#17171a]"],
+[data-theme="bege"] [class*="bg-[#17171b]"],
+[data-theme="bege"] [class*="bg-[#18181c]"],
+[data-theme="bege"] [class*="bg-[#19191d]"],
+[data-theme="bege"] [class*="bg-[#141416]"],
+[data-theme="bege"] [class*="bg-[#141417]"],
+[data-theme="bege"] [class*="bg-[#131316]"],
+[data-theme="bege"] [class*="bg-[#121215]"],
+[data-theme="bege"] [class*="bg-[#151518]"],
+[data-theme="bege"] [class*="bg-[#0e0e11]"] {
+  background-color: #faf5e8 !important;
+}
+
+/* Marginalia and Library Catalog Card Containers */
+[data-theme="bege"] [class*="bg-[#101012]"],
+[data-theme="bege"] [class*="bg-[#1b1b1f]"],
+[data-theme="bege"] [class*="bg-[#202026]"],
+[data-theme="bege"] .bg-stone-900,
+[data-theme="bege"] [class*="bg-stone-900"] {
+  background-color: #ede3ce !important;
+}
+
+[data-theme="bege"] .bg-stone-800,
+[data-theme="bege"] [class*="bg-stone-800"] {
+  background-color: #e5d9bf !important;
+}
+
+[data-theme="bege"] .hover\:bg-stone-700:hover,
+[data-theme="bege"] [class*="hover:bg-stone-700"]:hover,
+[data-theme="bege"] [class*="hover:bg-stone-800"]:hover {
+  background-color: #dbcbb0 !important;
+}
+
+/* Vintage Bookbinding Borders */
+[data-theme="bege"] [class*="border-stone-800"],
+[data-theme="bege"] [class*="border-stone-900"] {
+  border-color: #c4af87 !important;
+}
+[data-theme="bege"] [class*="border-stone-700"] {
+  border-color: #b59c70 !important;
+}
+[data-theme="bege"] [class*="divide-stone-800"] > * + * {
+  border-color: #d8c8a7 !important;
+}
+
+/* Vintage Ink Typography (Iron Gall & Dark Walnut Ink) */
+[data-theme="bege"] [class*="text-stone-100"] {
+  color: #24180d !important;
+}
+[data-theme="bege"] [class*="text-stone-200"],
+[data-theme="bege"] [class*="text-[#EBE6DF]"],
+[data-theme="bege"] [class*="text-[#ebe6df]"] {
+  color: #2d2015 !important;
+}
+[data-theme="bege"] [class*="text-stone-300"] {
+  color: #423223 !important;
+}
+[data-theme="bege"] [class*="text-stone-400"] {
+  color: #5d4b38 !important;
+}
+[data-theme="bege"] [class*="text-stone-500"] {
+  color: #7a6650 !important;
+}
+[data-theme="bege"] [class*="text-amber-400"],
+[data-theme="bege"] [class*="text-amber-300"] {
+  color: #854d0e !important;
+}
+[data-theme="bege"] [class*="text-emerald-400"] {
+  color: #1e5631 !important;
+}
+[data-theme="bege"] [class*="text-red-400"] {
+  color: #881919 !important;
+}
+
+/* Vintage Paper & Book Shadows */
+[data-theme="bege"] .grid > div,
+[data-theme="bege"] article,
+[data-theme="bege"] [class*="rounded-xl"][class*="border"],
+[data-theme="bege"] [class*="group relative"] {
+  box-shadow: 0 2px 5px -1px rgba(60, 42, 20, 0.09), 0 4px 10px rgba(60, 42, 20, 0.06), 0 0 0 1px rgba(196, 175, 135, 0.5) !important;
+}
+
+[data-theme="bege"] .grid > div:hover,
+[data-theme="bege"] [class*="group relative"]:hover {
+  box-shadow: 0 12px 24px -4px rgba(60, 42, 20, 0.15), 0 6px 12px -2px rgba(60, 42, 20, 0.09), 0 0 0 1px rgba(181, 156, 112, 0.85) !important;
+}
+
+[data-theme="bege"] button:not(.nav-btn-clean):not(header nav button):not(header .brand-btn),
+[data-theme="bege"] [role="button"]:not(.nav-btn-clean) {
+  box-shadow: 0 1px 3px 0 rgba(60, 42, 20, 0.10), 0 0 0 1px rgba(196, 175, 135, 0.4) !important;
+}
+
+[data-theme="bege"] button:not(.nav-btn-clean):not(header nav button):not(header .brand-btn):hover,
+[data-theme="bege"] [role="button"]:not(.nav-btn-clean):hover {
+  box-shadow: 0 3px 6px -1px rgba(60, 42, 20, 0.14), 0 0 0 1px rgba(181, 156, 112, 0.6) !important;
+}
+
+[data-theme="bege"] [class*="shadow-lg"],
+[data-theme="bege"] [class*="shadow-md"],
+[data-theme="bege"] [class*="p-3.5 sm:p-6"],
+[data-theme="bege"] [class*="bg-[#17171b]"] {
+  box-shadow: 0 4px 10px -2px rgba(60, 42, 20, 0.08), 0 0 0 1px rgba(196, 175, 135, 0.5) !important;
+}
+
+[data-theme="bege"] [role="dialog"],
+[data-theme="bege"] .fixed > div {
+  box-shadow: 0 25px 50px -12px rgba(45, 30, 15, 0.35), 0 0 0 1px rgba(181, 156, 112, 0.6) !important;
+}
+
+/* Vintage Paper Inputs */
+[data-theme="bege"] input,
+[data-theme="bege"] select,
+[data-theme="bege"] textarea {
+  background-color: #faf6ed !important;
+  color: #24180d !important;
+  border-color: #c4af87 !important;
+  box-shadow: inset 0 1px 2px rgba(60, 42, 20, 0.06) !important;
+}
+[data-theme="bege"] input::placeholder,
+[data-theme="bege"] textarea::placeholder {
+  color: #7a6650 !important;
+}
+
+/* Antique Wax Seal & Official Archive Stamps */
+[data-theme="bege"] .dossier-stamp-red {
+  color: #881919;
+  border-color: #881919;
+  background-color: rgba(136, 25, 25, 0.06);
+  letter-spacing: 0.18em;
+}
+[data-theme="bege"] .dossier-stamp-amber {
+  color: #854d0e;
+  border-color: #854d0e;
+  background-color: rgba(133, 77, 14, 0.06);
+  letter-spacing: 0.18em;
+}
+
+/* Vintage Antique Hero Gradient */
+[data-theme="bege"] .bg-gradient-to-t {
+  background: linear-gradient(to top, #f2ecd9, rgba(250, 245, 232, 0.94), transparent) !important;
 }

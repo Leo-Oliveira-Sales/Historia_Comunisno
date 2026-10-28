@@ -12,6 +12,8 @@ import { QuizModal } from './components/QuizModal';
 import { DossierModal } from './components/DossierModal';
 import { ResearchNotebookModal } from './components/ResearchNotebookModal';
 import { getSoundEnabled, setSoundEnabled, playTypewriterClack } from './utils/audio';
+import { AppTheme, getSavedTheme, saveTheme, applyTheme } from './utils/theme';
+import { AppFontSize, getSavedFontSize, saveFontSize, applyFontSize } from './utils/fontSize';
 import { 
   Compass, 
   Layers, 
@@ -29,6 +31,8 @@ export default function App() {
   const [selectedTopic, setSelectedTopic] = useState<DossierTopic | null>(null);
   const [isNotebookOpen, setIsNotebookOpen] = useState(false);
   const [soundEnabled, setSoundState] = useState<boolean>(true);
+  const [theme, setTheme] = useState<AppTheme>(getSavedTheme);
+  const [fontSize, setFontSize] = useState<AppFontSize>(getSavedFontSize);
 
   // Saved topics in LocalStorage
   const [savedTopicIds, setSavedTopicIds] = useState<number[]>(() => {
@@ -39,6 +43,35 @@ export default function App() {
       return [8, 12];
     }
   });
+
+  useEffect(() => {
+    applyTheme(theme);
+  }, [theme]);
+
+  useEffect(() => {
+    applyFontSize(fontSize);
+  }, [fontSize]);
+
+  const handleSelectTheme = (newTheme: AppTheme) => {
+    setTheme(newTheme);
+    applyTheme(newTheme);
+    saveTheme(newTheme);
+    playTypewriterClack();
+  };
+
+  const handleSelectFontSize = (newSize: AppFontSize) => {
+    setFontSize(newSize);
+    applyFontSize(newSize);
+    saveFontSize(newSize);
+    playTypewriterClack();
+  };
+
+  const handleToggleSound = () => {
+    const next = !soundEnabled;
+    setSoundState(next);
+    setSoundEnabled(next);
+    playTypewriterClack();
+  };
 
   useEffect(() => {
     setSoundState(getSoundEnabled());
@@ -56,13 +89,6 @@ export default function App() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedTopic, isNotebookOpen]);
-
-  const handleToggleSound = () => {
-    const next = !soundEnabled;
-    setSoundState(next);
-    setSoundEnabled(next);
-    playTypewriterClack();
-  };
 
   const handleToggleSave = (topicId: number) => {
     setSavedTopicIds((prev) => {
@@ -88,12 +114,14 @@ export default function App() {
         onClose={() => setSelectedTopic(null)}
         isSaved={savedTopicIds.includes(selectedTopic.id)}
         onToggleSave={handleToggleSave}
+        theme={theme}
+        onSelectTheme={handleSelectTheme}
       />
     );
   }
 
   return (
-    <div className="min-h-screen bg-[#121214] text-[#EBE6DF] flex flex-col selection:bg-red-900 selection:text-white">
+    <div className="min-h-screen bg-[#121214] text-[#EBE6DF] flex flex-col selection:bg-red-900 selection:text-white transition-colors duration-200">
       {/* Top Bar Contract Navigation */}
       <Header
         currentTab={currentTab}
@@ -106,6 +134,10 @@ export default function App() {
         onOpenNotebook={() => setIsNotebookOpen(true)}
         soundEnabled={soundEnabled}
         onToggleSound={handleToggleSound}
+        theme={theme}
+        onSelectTheme={handleSelectTheme}
+        fontSize={fontSize}
+        onSelectFontSize={handleSelectFontSize}
       />
 
       {/* Hero Exhibition Banner (Only visible on 20 Temas tab) */}

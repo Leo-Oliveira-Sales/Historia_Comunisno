@@ -42,14 +42,19 @@ import {
   Menu,
   ChevronDown,
   Sparkles,
-  BookOpenCheck
+  BookOpenCheck,
+  Moon,
+  Sun
 } from 'lucide-react';
+import { AppTheme } from '../utils/theme';
 
 interface DossierModalProps {
   topic: DossierTopic;
   onClose: () => void;
   isSaved: boolean;
   onToggleSave: (topicId: number) => void;
+  theme?: AppTheme;
+  onSelectTheme?: (theme: AppTheme) => void;
 }
 
 export const DossierModal: React.FC<DossierModalProps> = ({
@@ -57,6 +62,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   onClose,
   isSaved,
   onToggleSave,
+  theme = 'preto',
+  onSelectTheme,
 }) => {
   const [activeTab, setActiveTab] = useState<'chapter' | 'canonical' | 'essay' | 'stories' | 'documents' | 'context' | 'citations' | 'researchDossier'>('chapter');
   const [activeCanonicalSection, setActiveCanonicalSection] = useState<number | string>(1);
@@ -484,6 +491,56 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           >
             <Menu className="w-5 h-5" />
           </button>
+
+          {onSelectTheme && (
+            <div className="flex items-center bg-stone-900/90 border border-stone-700/80 p-0.5 rounded-lg shadow-inner">
+              <button
+                onClick={() => {
+                  playTypewriterClack();
+                  onSelectTheme('preto');
+                }}
+                className={`p-1.5 rounded min-h-[34px] min-w-[34px] flex items-center justify-center transition-colors ${
+                  theme === 'preto'
+                    ? 'bg-stone-800 text-amber-400 font-bold border border-stone-600 shadow-sm'
+                    : 'text-stone-400 hover:text-stone-200'
+                }`}
+                title="Tema Preto (Arquivo Noturno)"
+                aria-label="Tema Preto"
+              >
+                <Moon className="w-3.5 h-3.5" />
+              </button>
+              <button
+                onClick={() => {
+                  playTypewriterClack();
+                  onSelectTheme('branco');
+                }}
+                className={`p-1.5 rounded min-h-[34px] min-w-[34px] flex items-center justify-center transition-colors ${
+                  theme === 'branco'
+                    ? 'bg-stone-800 text-amber-400 font-bold border border-stone-600 shadow-sm'
+                    : 'text-stone-400 hover:text-stone-200'
+                }`}
+                title="Tema Branco (Papel Acadêmico)"
+                aria-label="Tema Branco"
+              >
+                <Sun className="w-3.5 h-3.5" />
+              </button>
+              <button
+                onClick={() => {
+                  playTypewriterClack();
+                  onSelectTheme('bege');
+                }}
+                className={`p-1.5 rounded min-h-[34px] min-w-[34px] flex items-center justify-center transition-colors ${
+                  theme === 'bege'
+                    ? 'bg-stone-800 text-amber-400 font-bold border border-stone-600 shadow-sm'
+                    : 'text-stone-400 hover:text-stone-200'
+                }`}
+                title="Tema Bege (Pergaminho Histórico)"
+                aria-label="Tema Bege"
+              >
+                <ScrollText className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          )}
 
           <button
             onClick={() => {

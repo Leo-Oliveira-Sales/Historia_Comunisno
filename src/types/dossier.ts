@@ -1,3 +1,5 @@
+export type { AppTheme } from '../utils/theme';
+
 export type HistoricalPeriod = 
   | 'todos'
   | '1905-1917' // Revolução Russa e queda czarista
