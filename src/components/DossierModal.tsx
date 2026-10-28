@@ -5,7 +5,12 @@ import { ACADEMIC_CHAPTERS } from '../data/academicChaptersDatabase';
 import { CHRONOLOGIES_BY_TOPIC, DETAILED_EPISODES_BY_TOPIC } from '../data/detailedHistoricalEpisodes';
 import { getCanonicalEditorialDossier } from '../data/canonicalEditorialDatabase';
 import { RESEARCH_DOSSIERS } from '../data/researchDossiersDatabase';
-import { TOPIC_CITATIONS_DATABASE } from '../data/citationsDatabase';
+import { 
+  TOPIC_CITATIONS_DATABASE, 
+  TopicCitationEntry, 
+  TopicHistoriographicalSynthesis, 
+  TopicReferenceCategory 
+} from '../data/citationsDatabase';
 import { playStampSound, playTypewriterClack } from '../utils/audio';
 import { 
   X, 
@@ -76,6 +81,141 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const copyResearchDossier = () => {
     if (!researchDossierText) return;
     copyToClipboard(researchDossierText, 'research_dossier');
+  };
+
+  // PROTOCOLO DE AUDITORIA DOCUMENTAL E BIBLIOGRÁFICA — RESOLUÇÃO DOS 3 BLOCOS
+  const getCitationsTabData = () => {
+    const customData = TOPIC_CITATIONS_DATABASE[topic.id];
+
+    // Bloco I: Citações literais verificadas
+    let citations: TopicCitationEntry[] = [];
+    if (customData?.citations && customData.citations.length > 0) {
+      citations = customData.citations;
+    } else if (canonicalDossier?.citacoesVerificadas && canonicalDossier.citacoesVerificadas.length > 0) {
+      citations = canonicalDossier.citacoesVerificadas.map((cv, idx) => ({
+        number: idx + 1,
+        author: cv.autor,
+        category: 'Historiografia Especializada / Citação Verificada',
+        quoteText: cv.trechoLiteral,
+        source: `${cv.obra}. ${cv.edicaoEditoraAno || ''}. ${cv.paginaExata || ''}`.trim(),
+        analise: cv.analiseContextual,
+      }));
+    } else if (topic.primarySources && topic.primarySources.length > 0) {
+      citations = topic.primarySources.map((src, idx) => ({
+        number: idx + 1,
+        author: src.documentType || 'Fonte Documental Primária',
+        category: 'Documento Primário / Acervo Desclassificado',
+        quoteText: src.transcriptionPt,
+        source: src.abntCitation || `${src.title}. ${src.year || ''} — Acervo: ${src.institution} (${src.archiveReference})`,
+        analise: src.excerptOriginal ? `Trecho Original: ${src.excerptOriginal}` : undefined,
+      }));
+    }
+
+    // Bloco II: Sínteses historiográficas e análises interpretativas
+    let syntheses: TopicHistoriographicalSynthesis[] = [];
+    if (customData?.syntheses && customData.syntheses.length > 0) {
+      syntheses = customData.syntheses;
+    } else if (canonicalDossier?.debateHistoriografico?.interpretacoesDiferentes) {
+      syntheses = canonicalDossier.debateHistoriografico.interpretacoesDiferentes.map((interp, idx) => ({
+        number: idx + 1,
+        authorOrSchool: `${interp.correnteEscola}${interp.principaisAutores?.length ? ` (${interp.principaisAutores.join(', ')})` : ''}`,
+        synthesisText: interp.teseCentral,
+        supportingReference: interp.antiteseCritica ? `Contraponto / Crítica: ${interp.antiteseCritica}` : '',
+      }));
+    }
+
+    // Bloco III: Referências bibliográficas consolidadas
+    let referenceCategories: TopicReferenceCategory[] | undefined = customData?.referenceCategories;
+    let consolidatedReferences: string[] = customData?.consolidatedReferences || [];
+
+    if (!referenceCategories && (!consolidatedReferences || consolidatedReferences.length === 0)) {
+      if (canonicalDossier?.bibliografia && canonicalDossier.bibliografia.length > 0) {
+        const hasCategories = canonicalDossier.bibliografia.some(b => b.entradaAbnt.startsWith('A. ') || b.entradaAbnt.startsWith('B. '));
+        if (hasCategories) {
+          const cats: TopicReferenceCategory[] = [];
+          let currentCat: TopicReferenceCategory | null = null;
+          canonicalDossier.bibliografia.forEach(b => {
+            if (b.entradaAbnt.startsWith('A. ') || b.entradaAbnt.startsWith('B. ') || b.entradaAbnt.startsWith('C. ')) {
+              currentCat = { category: b.entradaAbnt, items: [] };
+              cats.push(currentCat);
+            } else if (currentCat) {
+              currentCat.items.push(b.entradaAbnt);
+            } else {
+              consolidatedReferences.push(b.entradaAbnt);
+            }
+          });
+          if (cats.length > 0) referenceCategories = cats;
+        } else {
+          consolidatedReferences = canonicalDossier.bibliografia.map(b => b.entradaAbnt);
+        }
+      } else if (chapter?.bibliographicReferences && chapter.bibliographicReferences.length > 0) {
+        consolidatedReferences = chapter.bibliographicReferences;
+      }
+    }
+
+    return {
+      title: customData?.title || `Protocolo de Auditoria Documental e Bibliográfica — Registro nº ${topic.categoryNumber}`,
+      citations,
+      syntheses,
+      methodologicalNote: customData?.methodologicalNote,
+      referenceCategories,
+      consolidatedReferences,
+      consensosAcademicos: canonicalDossier?.debateHistoriografico?.consensosAcademicos,
+      controversiasELimitacoesDasFontes: canonicalDossier?.debateHistoriografico?.controversiasELimitacoesDasFontes,
+    };
+  };
+
+  const copyCitationsTab = () => {
+    const data = getCitationsTabData();
+    let text = `==========================================================\n`;
+    text += `${data.title.toUpperCase()}\n`;
+    text += `${topic.title}\n`;
+    text += `==========================================================\n\n`;
+
+    text += `I. CITAÇÕES LITERAIS VERIFICADAS\n\n`;
+    data.citations.forEach(c => {
+      text += `[${c.number}] ${c.author} (${c.category})\n`;
+      text += `"${c.quoteText}"\n`;
+      text += `Fonte: ${c.source}\n`;
+      if (c.analise) text += `Contexto: ${c.analise}\n`;
+      text += `\n`;
+    });
+
+    if (data.methodologicalNote) {
+      text += `NOTA METODOLÓGICA SOBRE AS FONTES:\n${data.methodologicalNote}\n\n`;
+    }
+
+    text += `II. SÍNTESES HISTORIOGRÁFICAS E ANÁLISES INTERPRETATIVAS\n\n`;
+    data.syntheses.forEach(s => {
+      text += `• ${s.authorOrSchool}:\n`;
+      text += `  ${s.synthesisText}\n`;
+      if (s.supportingReference) text += `  ${s.supportingReference}\n`;
+      text += `\n`;
+    });
+
+    if (data.consensosAcademicos) {
+      text += `Consenso Acadêmico:\n${data.consensosAcademicos}\n\n`;
+    }
+    if (data.controversiasELimitacoesDasFontes) {
+      text += `Limitações Documentais e das Fontes:\n${data.controversiasELimitacoesDasFontes}\n\n`;
+    }
+
+    text += `III. REFERÊNCIAS BIBLIOGRÁFICAS CONSOLIDADAS (NORMAS ABNT / CHICAGO)\n\n`;
+    if (data.referenceCategories && data.referenceCategories.length > 0) {
+      data.referenceCategories.forEach(cat => {
+        text += `${cat.category}\n`;
+        cat.items.forEach(item => {
+          text += `- ${item}\n`;
+        });
+        text += `\n`;
+      });
+    } else {
+      data.consolidatedReferences.forEach(ref => {
+        text += `• ${ref}\n`;
+      });
+    }
+
+    copyToClipboard(text, 'citations_tab_audit');
   };
 
   const getFontSizeClass = (type: 'body' | 'heading' | 'quote' = 'body') => {
@@ -150,7 +290,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
     }
 
     if (canonicalDossier) {
-      text += `--- PADRÃO EDITORIAL CANÔNICO (8 SEÇÕES) ---\n`;
+      text += `--- PADRÃO EDITORIAL CANÔNICO (7 SEÇÕES) ---\n`;
       text += `1. IDENTIFICAÇÃO:\n${canonicalDossier.identificacao.nomeAcontecimento}\nData: ${canonicalDossier.identificacao.dataELocalizacao.dataExata}\nLocal: ${canonicalDossier.identificacao.dataELocalizacao.localizacaoPrecisa}\nRegime: ${canonicalDossier.identificacao.governoEResponsaveis.regimeVigente}\n\n`;
       text += `2. CONTEXTO HISTÓRICO:\n${canonicalDossier.contextoHistorico.situacaoAnterior}\nCausas Políticas: ${canonicalDossier.contextoHistorico.causasPoliticas}\nCausas Econômicas: ${canonicalDossier.contextoHistorico.causasEconomicas}\nCausas Sociais: ${canonicalDossier.contextoHistorico.causasSociais}\n\n`;
       text += `3. NARRATIVA CRONOLÓGICA:\n${canonicalDossier.narrativaCronologica.sinteseNarrativaGeral}\n`;
@@ -163,11 +303,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       });
       text += `\n5. RESPONSABILIDADES E VÍTIMAS:\n${canonicalDossier.responsabilidadesEConsequencias.vitimasEImpactos.estimativasQuantitativas}\nConsequências Imediatas: ${canonicalDossier.responsabilidadesEConsequencias.consequenciasImediatas}\nConsequências a Longo Prazo: ${canonicalDossier.responsabilidadesEConsequencias.consequenciasLongoPrazo}\n\n`;
       text += `6. DEBATE HISTORIOGRÁFICO:\nConsenso: ${canonicalDossier.debateHistoriografico.consensosAcademicos}\nControvérsias e Limitações: ${canonicalDossier.debateHistoriografico.controversiasELimitacoesDasFontes}\n\n`;
-      text += `7. CITAÇÕES VERIFICADAS:\n`;
-      canonicalDossier.citacoesVerificadas.forEach(c => {
-        text += `"${c.trechoLiteral}"\n— ${c.autor}, ${c.obra} (${c.edicaoEditoraAno}, ${c.paginaExata})\nAnálise: ${c.analiseContextual}\n\n`;
-      });
-      text += `8. BIBLIOGRAFIA DE REFERÊNCIA:\n`;
+      text += `7. BIBLIOGRAFIA DE REFERÊNCIA:\n`;
       canonicalDossier.bibliografia.forEach(b => {
         text += `• ${b.entradaAbnt} (${b.isbnOuReferencia || b.tipoFonte})\n`;
       });
@@ -194,7 +330,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const copyCanonicalDossier = () => {
     if (!canonicalDossier) return;
     let text = `==========================================================\n`;
-    text += `PADRÃO EDITORIAL OBRIGATÓRIO (8 SEÇÕES CANÔNICAS)\n`;
+    text += `PADRÃO EDITORIAL OBRIGATÓRIO (7 SEÇÕES CANÔNICAS)\n`;
     text += `${canonicalDossier.identificacao.nomeAcontecimento.toUpperCase()}\n`;
     text += `==========================================================\n\n`;
     text += `1. IDENTIFICAÇÃO:\n${canonicalDossier.identificacao.nomeAcontecimento}\nData: ${canonicalDossier.identificacao.dataELocalizacao.dataExata}\nLocal: ${canonicalDossier.identificacao.dataELocalizacao.localizacaoPrecisa}\nRegime: ${canonicalDossier.identificacao.governoEResponsaveis.regimeVigente}\n\n`;
@@ -209,11 +345,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
     });
     text += `\n5. RESPONSABILIDADES E VÍTIMAS:\n${canonicalDossier.responsabilidadesEConsequencias.vitimasEImpactos.estimativasQuantitativas}\nConsequências Imediatas: ${canonicalDossier.responsabilidadesEConsequencias.consequenciasImediatas}\nConsequências a Longo Prazo: ${canonicalDossier.responsabilidadesEConsequencias.consequenciasLongoPrazo}\n\n`;
     text += `6. DEBATE HISTORIOGRÁFICO:\nConsenso: ${canonicalDossier.debateHistoriografico.consensosAcademicos}\nControvérsias e Limitações: ${canonicalDossier.debateHistoriografico.controversiasELimitacoesDasFontes}\n\n`;
-    text += `7. CITAÇÕES VERIFICADAS:\n`;
-    canonicalDossier.citacoesVerificadas.forEach(c => {
-      text += `"${c.trechoLiteral}"\n— ${c.autor}, ${c.obra} (${c.edicaoEditoraAno}, ${c.paginaExata})\nAnálise: ${c.analiseContextual}\n\n`;
-    });
-    text += `8. BIBLIOGRAFIA DE REFERÊNCIA:\n`;
+    text += `7. BIBLIOGRAFIA DE REFERÊNCIA:\n`;
     canonicalDossier.bibliografia.forEach(b => {
       text += `• ${b.entradaAbnt} (${b.isbnOuReferencia || b.tipoFonte})\n`;
     });
@@ -244,8 +376,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
         { num: 4, label: '4. Documentos & Provas', target: 'section-4' },
         { num: 5, label: '5. Responsabilidades', target: 'section-5' },
         { num: 6, label: '6. Debate Historiográfico', target: 'section-6' },
-        { num: 7, label: '7. Citações Verificadas', target: 'section-7' },
-        { num: 8, label: '8. Bibliografia ABNT', target: 'section-8' },
+        { num: 7, label: '7. Bibliografia ABNT', target: 'section-7' },
       ];
     } else if (activeTab === 'essay') {
       return [
@@ -282,11 +413,15 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       ];
     } else if (activeTab === 'citations') {
       return [
-        { num: 1, label: 'Referências ABNT / Chicago', target: 'citations-list' }
+        { num: 'I', label: 'I. Citações Literais', target: 'cit-block-1' },
+        { num: 'II', label: 'II. Sínteses & Análises', target: 'cit-block-2' },
+        { num: 'III', label: 'III. Bibliografia Consolidada', target: 'cit-block-3' },
       ];
     } else {
       return [
-        { num: 1, label: 'Referências ABNT / Chicago', target: 'citations-list' }
+        { num: 'I', label: 'I. Citações Literais', target: 'cit-block-1' },
+        { num: 'II', label: 'II. Sínteses & Análises', target: 'cit-block-2' },
+        { num: 'III', label: 'III. Bibliografia Consolidada', target: 'cit-block-3' },
       ];
     }
   };
@@ -815,13 +950,13 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             </article>
           )}
 
-          {/* TAB: CANONICAL EDITORIAL STANDARD (8 MANDATORY SECTIONS) */}
+          {/* TAB: CANONICAL EDITORIAL STANDARD (7 MANDATORY SECTIONS) */}
           {activeTab === 'canonical' && canonicalDossier && (
             <article className="space-y-6 sm:space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
               <div className="bg-[#161619] border border-amber-600/40 p-4 sm:p-6 rounded-xl shadow-lg relative overflow-hidden">
                 <div className="absolute top-0 right-0 bg-amber-500/10 border-l border-b border-amber-500/30 px-3.5 py-1.5 rounded-bl text-[11px] font-mono text-amber-300 flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                  <span>AUDITORIA ACADÊMICA CONFORME · 8 CRITÉRIOS</span>
+                  <span>AUDITORIA ACADÊMICA CONFORME · 7 SEÇÕES CANÔNICAS</span>
                 </div>
 
                 <div className="flex items-start gap-4">
@@ -832,11 +967,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                     <h3 className="text-lg sm:text-xl font-serif font-bold text-stone-100 flex items-center gap-2">
                       <span>Padrão Editorial Canônico Obrigatório</span>
                       <span className="text-xs font-mono font-normal text-amber-400/90 bg-amber-950/50 px-2.5 py-1 rounded border border-amber-800/60">
-                        8 Seções Normativas
+                        7 Seções Normativas
                       </span>
                     </h3>
                     <p className={`text-stone-300 leading-relaxed font-sans ${getFontSizeClass('body')}`}>
-                      Estrutura historiográfica padronizada em conformidade com as diretrizes editoriais acadêmicas: cronologia corrigida com datas exatas, fundos arquivísticos certificados, debate historiográfico tripartite e citações literais verificadas.
+                      Estrutura historiográfica padronizada em conformidade com as diretrizes editoriais acadêmicas: cronologia corrigida com datas exatas, fundos arquivísticos certificados, debate historiográfico tripartite e bibliografia de referência ABNT/Chicago.
                     </p>
                   </div>
                 </div>
@@ -894,14 +1029,19 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               </section>
 
               <section id="section-7" className="scroll-mt-24 bg-[#161619] border border-stone-800 rounded-xl p-4 sm:p-6 space-y-4">
-                <h2 className="text-base font-serif font-bold text-stone-100 uppercase border-b border-stone-800 pb-3">7. Citações Verificadas</h2>
-                <p className={`text-stone-300 ${getFontSizeClass('body')}`}>{canonicalDossier.citacoesVerificadas[0]?.trechoLiteral}</p>
-              </section>
-
-              <section id="section-8" className="scroll-mt-24 bg-[#161619] border border-stone-800 rounded-xl p-4 sm:p-6 space-y-4">
-                <h2 className="text-base font-serif font-bold text-stone-100 uppercase border-b border-stone-800 pb-3">8. Bibliografia ABNT</h2>
+                <h2 className="text-base font-serif font-bold text-stone-100 uppercase border-b border-stone-800 pb-3">7. Bibliografia ABNT</h2>
                 <div className={`font-mono text-stone-300 space-y-2 ${getFontSizeClass('body')}`}>
-                  {canonicalDossier.bibliografia.map((b, i) => <p key={i}>- {b.entradaAbnt}</p>)}
+                  {canonicalDossier.bibliografia.map((b, i) => {
+                    const isHeader = b.entradaAbnt.startsWith('A. ') || b.entradaAbnt.startsWith('B. ') || b.entradaAbnt.startsWith('C. ');
+                    if (isHeader) {
+                      return (
+                        <p key={i} className="text-amber-400 font-bold font-serif pt-2 text-sm">
+                          {b.entradaAbnt}
+                        </p>
+                      );
+                    }
+                    return <p key={i}>- {b.entradaAbnt}</p>;
+                  })}
                 </div>
               </section>
             </article>
@@ -954,55 +1094,241 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             </div>
           )}
 
-          {/* TAB: CITATIONS */}
-          {activeTab === 'citations' && (
-            <div id="citations-list" className="space-y-6 max-w-4xl mx-auto w-full box-border overflow-hidden">
-              {TOPIC_CITATIONS_DATABASE[topic.id] ? (
-                <div className="space-y-6">
-                  <div className="bg-[#161619] p-5 sm:p-6 rounded-xl border border-stone-800 space-y-4">
-                    <h2 className="text-lg font-serif font-bold text-amber-300 border-b border-stone-800 pb-3 uppercase tracking-wide">
-                      Citações Literais Verificadas e Fontes Documentais
-                    </h2>
-                    <div className="space-y-5">
-                      {TOPIC_CITATIONS_DATABASE[topic.id].citations.map((c) => (
-                        <div key={c.number} className="bg-[#121214] p-4 rounded-lg border border-stone-800/80 space-y-2">
-                          <div className="flex items-center justify-between gap-2 flex-wrap">
-                            <span className="text-xs font-mono font-bold text-amber-400">
-                              {c.number}. {c.author} ({c.category}):
-                            </span>
-                          </div>
-                          <blockquote className="font-serif italic text-stone-200 text-sm sm:text-base leading-relaxed border-l-2 border-amber-500 pl-3 my-2">
-                            "{c.quoteText}"
-                          </blockquote>
-                          <p className="text-xs font-mono text-stone-400">
-                            <strong className="text-stone-300">Fonte:</strong> {c.source}
-                          </p>
-                        </div>
-                      ))}
+          {/* TAB: CITATIONS (PROTOCOLO DE AUDITORIA DOCUMENTAL E BIBLIOGRÁFICA — 3 BLOCOS) */}
+          {activeTab === 'citations' && (() => {
+            const citData = getCitationsTabData();
+            return (
+              <div className="space-y-6 max-w-4xl mx-auto w-full box-border overflow-hidden">
+                
+                {/* PROTOCOL HEADER BANNER */}
+                <div className="bg-[#161619] border border-amber-600/50 p-4 sm:p-6 rounded-xl shadow-lg relative overflow-hidden space-y-4">
+                  <div className="flex items-center justify-between flex-wrap gap-3 border-b border-stone-800 pb-4">
+                    <div className="space-y-1">
+                      <div className="flex items-center gap-2">
+                        <span className="text-[10px] font-mono uppercase tracking-widest px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 font-bold">
+                          PROTOCOLO DE AUDITORIA DOCUMENTAL E BIBLIOGRÁFICA
+                        </span>
+                        <span className="text-[10px] font-mono text-stone-400">
+                          3 BLOCOS NORMATIVOS
+                        </span>
+                      </div>
+                      <h2 className="text-lg sm:text-2xl font-serif font-bold text-stone-100">
+                        {citData.title}
+                      </h2>
+                    </div>
+
+                    <button
+                      onClick={copyCitationsTab}
+                      className="px-3.5 py-2 min-h-[38px] bg-amber-950/80 hover:bg-amber-900 text-amber-300 text-xs font-mono rounded-lg border border-amber-600/60 flex items-center gap-2 transition-colors shrink-0"
+                      title="Copiar os 3 blocos de citações e bibliografia formatados"
+                    >
+                      {copiedCitation === 'citations_tab_audit' ? (
+                        <>
+                          <Check className="w-4 h-4 text-emerald-400" />
+                          <span>Audit Copiado!</span>
+                        </>
+                      ) : (
+                        <>
+                          <Copy className="w-4 h-4 text-amber-400" />
+                          <span>Copiar Citações & Bibliografia</span>
+                        </>
+                      )}
+                    </button>
+                  </div>
+
+                  <p className={`text-stone-300 leading-relaxed font-sans ${getFontSizeClass('body')}`}>
+                    Classificação tripartite em conformidade com as diretrizes acadêmicas de rigor historiográfico: 
+                    <strong className="text-amber-300 font-semibold"> (I) Citações Literais Verificadas</strong> com reprodução <em>ipsis litteris</em> e acervo comprovado; 
+                    <strong className="text-amber-300 font-semibold"> (II) Sínteses Historiográficas</strong> sem aspas indevidas com atribuição de correntes e teses; e 
+                    <strong className="text-amber-300 font-semibold"> (III) Referências Consolidadas</strong> padronizadas em ABNT/Chicago sem duplicidades.
+                  </p>
+                </div>
+
+                {/* BLOCO I: CITAÇÕES LITERAIS VERIFICADAS */}
+                <section id="cit-block-1" className="scroll-mt-24 bg-[#161619] p-5 sm:p-6 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                  <div className="flex items-center gap-3 border-b border-stone-800 pb-3">
+                    <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                      I
+                    </span>
+                    <div>
+                      <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                        I. Citações Literais Verificadas
+                      </h3>
+                      <p className="text-xs text-stone-400 font-mono">
+                        Reprodução fiel da fonte primária ou historiográfica com localização arquivística ou editorial comprovada
+                      </p>
                     </div>
                   </div>
 
-                  <div className="bg-[#161619] p-5 sm:p-6 rounded-xl border border-stone-800 space-y-3">
-                    <h2 className="text-base font-serif font-bold text-stone-100 uppercase border-b border-stone-800 pb-3">
-                      Referências Bibliográficas Consolidadas (Normas ABNT / Chicago)
-                    </h2>
-                    <div className="space-y-2 font-mono text-xs text-stone-300">
-                      {TOPIC_CITATIONS_DATABASE[topic.id].consolidatedReferences.map((ref, idx) => (
-                        <p key={idx} className="leading-relaxed">• {ref}</p>
+                  {citData.citations && citData.citations.length > 0 ? (
+                    <div className="space-y-4 pt-1">
+                      {citData.citations.map((c) => (
+                        <div key={c.number} className="bg-[#121214] p-4 rounded-lg border border-stone-800/80 space-y-2.5">
+                          <div className="flex items-center justify-between gap-2 flex-wrap">
+                            <span className="text-xs font-mono font-bold text-amber-400 flex items-center gap-1.5">
+                              <span className="w-5 h-5 rounded-full bg-amber-950 text-amber-300 text-[10px] flex items-center justify-center border border-amber-700/60 font-bold">
+                                {c.number}
+                              </span>
+                              {c.author}
+                            </span>
+                            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-stone-800 text-stone-300 border border-stone-700">
+                              {c.category}
+                            </span>
+                          </div>
+
+                          <blockquote className={`font-serif italic text-stone-200 border-l-2 border-amber-500 pl-3.5 my-2.5 leading-relaxed ${getFontSizeClass('quote')}`}>
+                            "{c.quoteText}"
+                          </blockquote>
+
+                          <div className="pt-1.5 border-t border-stone-800/60 flex flex-col gap-1 text-xs font-mono text-stone-400">
+                            <div>
+                              <strong className="text-stone-300">Fonte & Localização:</strong> {c.source}
+                            </div>
+                            {c.analise && (
+                              <div className="font-serif italic text-stone-400 text-xs pt-1">
+                                <strong className="text-amber-400/90 not-italic font-mono">Contexto:</strong> {c.analise}
+                              </div>
+                            )}
+                          </div>
+                        </div>
                       ))}
                     </div>
+                  ) : (
+                    <p className="text-stone-400 font-serif italic text-sm">
+                      Nenhuma citação literal adicional cadastrada para este tópico.
+                    </p>
+                  )}
+
+                  {citData.methodologicalNote && (
+                    <div className="bg-amber-950/20 border border-amber-600/30 rounded-lg p-3.5 sm:p-4 text-xs font-serif text-amber-200/90 leading-relaxed space-y-1.5 mt-4">
+                      <strong className="text-amber-300 font-bold block font-mono text-[11px] uppercase tracking-wide flex items-center gap-1.5">
+                        <AlertTriangle className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                        Nota metodológica sobre a verificação das fontes:
+                      </strong>
+                      <p className="text-stone-300 text-justify leading-relaxed">
+                        {citData.methodologicalNote}
+                      </p>
+                    </div>
+                  )}
+                </section>
+
+                {/* BLOCO II: SÍNTESES HISTORIOGRÁFICAS E ANÁLISES INTERPRETATIVAS */}
+                <section id="cit-block-2" className="scroll-mt-24 bg-[#161619] p-5 sm:p-6 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                  <div className="flex items-center gap-3 border-b border-stone-800 pb-3">
+                    <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                      II
+                    </span>
+                    <div>
+                      <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                        II. Sínteses Historiográficas e Análises Interpretativas
+                      </h3>
+                      <p className="text-xs text-stone-400 font-mono">
+                        Apresentação das teses centrais, consensos e controvérsias sem aspas indevidas · Atribuição autoral
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <div className="bg-[#161619] p-5 rounded-xl border border-stone-800 space-y-3">
-                  <h3 className="text-amber-400 font-mono uppercase text-xs font-bold">Referências & Bibliografia</h3>
-                  {chapter?.bibliographicReferences.map((ref, idx) => (
-                    <p key={idx} className={`font-mono text-stone-300 ${getFontSizeClass('body')}`}>{ref}</p>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
+
+                  {citData.syntheses && citData.syntheses.length > 0 ? (
+                    <div className="space-y-3.5 pt-1">
+                      {citData.syntheses.map((s) => (
+                        <div key={s.number} className="bg-[#121214] p-4 rounded-lg border border-stone-800/80 space-y-2">
+                          <h4 className="text-xs sm:text-sm font-mono font-bold text-amber-400 flex items-center gap-1.5">
+                            <span className="w-5 h-5 rounded-full bg-amber-950 text-amber-300 text-[10px] flex items-center justify-center border border-amber-700/60 font-bold">
+                              {s.number}
+                            </span>
+                            {s.authorOrSchool}
+                          </h4>
+                          <p className={`font-serif text-stone-300 text-justify leading-relaxed pl-6 ${getFontSizeClass('body')}`}>
+                            {s.synthesisText}
+                          </p>
+                          {s.supportingReference && (
+                            <p className="text-xs font-mono text-stone-400 pl-6 border-l border-stone-800 ml-6 mt-1">
+                              {s.supportingReference}
+                            </p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-stone-400 font-serif italic text-sm">
+                      Sínteses historiográficas em conformidade com o debate acadêmico.
+                    </p>
+                  )}
+
+                  {citData.consensosAcademicos && (
+                    <div className="bg-stone-900/80 border border-stone-800 rounded-lg p-3.5 sm:p-4 space-y-1.5 mt-3">
+                      <strong className="text-xs font-mono uppercase text-emerald-400 font-bold block">
+                        Consensos Historiográficos Consolidados:
+                      </strong>
+                      <p className={`font-serif text-stone-300 leading-relaxed text-justify ${getFontSizeClass('body')}`}>
+                        {citData.consensosAcademicos}
+                      </p>
+                    </div>
+                  )}
+
+                  {citData.controversiasELimitacoesDasFontes && (
+                    <div className="bg-stone-900/80 border border-stone-800 rounded-lg p-3.5 sm:p-4 space-y-1.5 mt-2">
+                      <strong className="text-xs font-mono uppercase text-amber-400 font-bold block">
+                        Limitações Documentais e das Fontes:
+                      </strong>
+                      <p className={`font-serif text-stone-300 leading-relaxed text-justify ${getFontSizeClass('body')}`}>
+                        {citData.controversiasELimitacoesDasFontes}
+                      </p>
+                    </div>
+                  )}
+                </section>
+
+                {/* BLOCO III: REFERÊNCIAS BIBLIOGRÁFICAS CONSOLIDADAS */}
+                <section id="cit-block-3" className="scroll-mt-24 bg-[#161619] p-5 sm:p-6 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                  <div className="flex items-center gap-3 border-b border-stone-800 pb-3">
+                    <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                      III
+                    </span>
+                    <div>
+                      <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                        III. Referências Bibliográficas Consolidadas
+                      </h3>
+                      <p className="text-xs text-stone-400 font-mono">
+                        Padronização rigorosa segundo normas ABNT / Chicago sem duplicidades
+                      </p>
+                    </div>
+                  </div>
+
+                  {citData.referenceCategories && citData.referenceCategories.length > 0 ? (
+                    <div className="space-y-5 pt-1">
+                      {citData.referenceCategories.map((cat, cIdx) => (
+                        <div key={cIdx} className="space-y-2.5">
+                          <h4 className="text-xs sm:text-sm font-mono font-bold text-amber-400 uppercase tracking-wide border-b border-stone-800/80 pb-1.5">
+                            {cat.category}
+                          </h4>
+                          <div className="space-y-2 font-mono text-xs text-stone-300 pl-3 border-l-2 border-stone-800">
+                            {cat.items.map((item, iIdx) => (
+                              <p key={iIdx} className="leading-relaxed select-all">
+                                - {item}
+                              </p>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : citData.consolidatedReferences && citData.consolidatedReferences.length > 0 ? (
+                    <div className="space-y-2 font-mono text-xs text-stone-300 select-all leading-relaxed pt-1">
+                      {citData.consolidatedReferences.map((ref, idx) => (
+                        <p key={idx} className="bg-stone-900/60 p-2 rounded border border-stone-800/60">
+                          • {ref}
+                        </p>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-stone-400 font-serif italic text-sm">
+                      Referências em conferência documental.
+                    </p>
+                  )}
+                </section>
+
+              </div>
+            );
+          })()}
 
           {/* TAB: RESEARCH DOSSIER */}
           {activeTab === 'researchDossier' && researchDossierText && (

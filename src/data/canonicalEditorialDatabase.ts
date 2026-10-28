@@ -460,46 +460,38 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
       consensosAcademicos: 'Existe consenso de que o Estado soviético desenvolveu instrumentos decisivos de coerção e monopólio político antes de Stalin, sob a liderança de Lenin e Dzerzhinsky. Há consenso igualmente de que a existência de uma ordem (como os telegramas de Penza) atesta a diretriz da liderança, mas sua execução quantitativa exige verificação documental independente.',
       controversiasELimitacoesDasFontes: 'Distinção rigorosa entre ordens expedidas e taxas de cumprimento local; fragmentação dos arquivos provinciais da Cheka; necessidade de desagregação entre mortos em combate, fuzilados, deportados e vítimas da fome.'
     },
-    citacoesVerificadas: [
-      {
-        trechoLiteral: 'A ilusão de que a violência estatal extrema foi uma inovação stalinista colapsa diante da evidência dos arquivos soviéticos desclassificados. Foi Lenin quem redigiu as ordens de enforcamento em massa, concebeu o conceito de campos de concentração de reféns e exigiu da Cheka números maiores de execuções para aterrorizar as províncias insurgentes.',
-        autor: 'Oleg V. Khlevniuk',
-        obra: 'The History of the Gulag: From Collectivization to the Great Terror',
-        edicaoEditoraAno: '1. ed. New Haven: Yale University Press, 2004',
-        paginaExata: 'p. 10-12',
-        analiseContextual: 'Khlevniuk utiliza documentação arquivística para analisar as origens do sistema concentracionário sem confundi-lo com a amplitude adquirida nos anos 1930.'
-      },
-      {
-        trechoLiteral: 'A revolta de Kronstadt em março de 1921 desferiu um golpe mortal na mitologia bolchevique. Não eram guardas-brancos que se rebelavam, mas os marinheiros que haviam sido a ponta de lança de 1917. Ao esmagá-los militarmente, o regime evidenciou que preservaria o monopólio estatal sobre qualquer contestação operária ou soviética.',
-        autor: 'Paul Avrich',
-        obra: 'Kronstadt 1921',
-        edicaoEditoraAno: '1. ed. Princeton: Princeton University Press, 1970',
-        paginaExata: 'p. 217-219',
-        analiseContextual: 'Estudo de referência na historiografia internacional distinguindo mortos em combate naval de fuzilamentos posteriores e refugiados na Finlândia.'
-      },
-      {
-        trechoLiteral: 'A evolução dos tribunais revolucionários e o recurso crescente à Comissão Extraordinária (Cheka) evidenciam a rápida transição de uma justiça revolucionária formal para um sistema dominado pela coerção policial extraordinária.',
-        autor: 'Matthew Rendle',
-        obra: 'Revolutionary tribunals and the origins of terror in early Soviet Russia',
-        edicaoEditoraAno: 'Historical Research, v. 84, n. 226, 2011',
-        paginaExata: 'p. 693–721',
-        analiseContextual: 'Artigo científico demonstrando a gênese institucional do terror na Rússia soviética inicial a partir de fontes primárias e arquivos judiciais.'
-      },
-      {
-        trechoLiteral: 'Embora os bolcheviques tenham estabelecido campos de detenção logo após 1917, o sistema do Gulag como complexo econômico e penitenciário articulado desenvolveu-se plenamente apenas a partir das grandes transformações do final da década de 1920.',
-        autor: 'Alan Barenberg',
-        obra: 'The origins and evolution of the Stalinist Gulag',
-        edicaoEditoraAno: 'Oxford University Press, 2024 (DOI: 10.1093/actrade/9780197548226.003.0002)',
-        paginaExata: 'cap. 2',
-        analiseContextual: 'Diferenciação acadêmica essencial entre os antecedentes penais leninistas e a consolidação do Gulag sob Stalin.'
-      }
-    ],
+    citacoesVerificadas: [],
     bibliografia: [
       {
-        entradaAbnt: 'AVRICH, Paul. Kronstadt 1921. Princeton: Princeton University Press, 1970. 271 p.',
+        entradaAbnt: 'A. Fontes Primárias e Acervos Arquivísticos',
+        entradaChicago: 'A. Primary Sources and Archival Collections',
+        tipoFonte: 'Seção Bibliográfica'
+      },
+      {
+        entradaAbnt: 'LENIN, Vladimir Ilyich. Telegram to Yevgenia Bosch. 9 ago. 1918. Publicado em Lenin Collected Works, v. 36, p. 489.',
+        entradaChicago: 'Lenin, Vladimir Ilyich. 1918. "Telegram to Yevgenia Bosch, 9 August 1918." In Lenin Collected Works, vol. 36, 489.',
+        tipoFonte: 'Fundo Arquivístico'
+      },
+      {
+        entradaAbnt: 'LENIN, Vladimir Ilyich. Telegram to Comrades Kuraev, Bosh, Minkin, and other Penza communists. 11 ago. 1918. Referência arquivística: RTsKhIDNI [RGASPI], fundo 2, inventário 1, documento 6898, folhas 1–1 verso. Moscou, Rússia.',
+        entradaChicago: 'Lenin, Vladimir Ilyich. 1918. "Telegram to Comrades Kuraev, Bosh, Minkin, and other Penza communists, 11 August 1918." RTsKhIDNI [RGASPI], fond 2, opis 1, delo 6898, ll. 1–1 verso. Moscow, Russia.',
+        tipoFonte: 'Fundo Arquivístico',
+        isbnOuReferencia: 'RTsKhIDNI [RGASPI], fundo 2, inventário 1, documento 6898'
+      },
+      {
+        entradaAbnt: 'LENIN, Vladimir Ilyich. Telegram to the Penza Gubernia Executive Committee. 12 ago. 1918. Publicado em Lenin Collected Works, v. 36, p. 490.',
+        entradaChicago: 'Lenin, Vladimir Ilyich. 1918. "Telegram to the Penza Gubernia Executive Committee, 12 August 1918." In Lenin Collected Works, vol. 36, 490.',
+        tipoFonte: 'Fundo Arquivístico'
+      },
+      {
+        entradaAbnt: 'B. Bibliografia Historiográfica Secundária',
+        entradaChicago: 'B. Secondary Historiographical Bibliography',
+        tipoFonte: 'Seção Bibliográfica'
+      },
+      {
+        entradaAbnt: 'AVRICH, Paul. Kronstadt 1921. Princeton: Princeton University Press, 1970.',
         entradaChicago: 'Avrich, Paul. 1970. Kronstadt 1921. Princeton: Princeton University Press.',
-        tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0691087214'
+        tipoFonte: 'Monografia'
       },
       {
         entradaAbnt: 'BARENBERG, Alan. The origins and evolution of the Stalinist Gulag. In: BARENBERG, Alan. The Gulag: A Very Short Introduction. Oxford: Oxford University Press, 2024. DOI: 10.1093/actrade/9780197548226.003.0002.',
@@ -508,45 +500,42 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
         isbnOuReferencia: 'DOI: 10.1093/actrade/9780197548226.003.0002'
       },
       {
-        entradaAbnt: 'FITZPATRICK, Sheila. The Russian Revolution. 4. ed. Oxford: Oxford University Press, 2017. 224 p.',
+        entradaAbnt: 'FITZPATRICK, Sheila. The Russian Revolution. 4. ed. Oxford: Oxford University Press, 2017. 256 p. ISBN 978-0-19-880670-7.',
         entradaChicago: 'Fitzpatrick, Sheila. 2017. The Russian Revolution. 4th ed. Oxford: Oxford University Press.',
         tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0198806707'
+        isbnOuReferencia: 'ISBN 978-0-19-880670-7'
       },
       {
-        entradaAbnt: 'KHLEVNIUK, Oleg V. The History of the Gulag: From Collectivization to the Great Terror. New Haven: Yale University Press, 2004. 418 p.',
-        entradaChicago: 'Khlevniuk, Oleg V. 2004. The History of the Gulag: From Collectivization to the Great Terror. New Haven: Yale University Press.',
-        tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0300092844'
+        entradaAbnt: 'KHLEVNIUK, Oleg V. The History of the Gulag: From Collectivization to the Great Terror. Tradução de Vadim A. Staklo. New Haven: Yale University Press, 2004.',
+        entradaChicago: 'Khlevniuk, Oleg V. 2004. The History of the Gulag: From Collectivization to the Great Terror. Translated by Vadim A. Staklo. New Haven: Yale University Press.',
+        tipoFonte: 'Monografia'
       },
       {
-        entradaAbnt: 'PIPES, Richard. Russia Under the Bolshevik Regime: 1919-1924. New York: Vintage Books, 1994. 587 p.',
-        entradaChicago: 'Pipes, Richard. 1994. Russia Under the Bolshevik Regime: 1919–1924. New York: Vintage Books.',
-        tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0679761846'
+        entradaAbnt: 'PIPES, Richard. Russia Under the Bolshevik Regime. New York: Vintage Books, 1994.',
+        entradaChicago: 'Pipes, Richard. 1994. Russia Under the Bolshevik Regime. New York: Vintage Books.',
+        tipoFonte: 'Monografia'
       },
       {
-        entradaAbnt: 'RABINOWITCH, Alexander. The Bolsheviks Come to Power: The Revolution of 1917 in Petrograd. New York: W. W. Norton, 1976. 393 p.',
+        entradaAbnt: 'RABINOWITCH, Alexander. The Bolsheviks Come to Power: The Revolution of 1917 in Petrograd. New York: W. W. Norton, 1976.',
         entradaChicago: 'Rabinowitch, Alexander. 1976. The Bolsheviks Come to Power: The Revolution of 1917 in Petrograd. New York: W. W. Norton.',
-        tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0393008937'
+        tipoFonte: 'Monografia'
       },
       {
-        entradaAbnt: 'RENDLE, Matthew. Revolutionary tribunals and the origins of terror in early Soviet Russia. Historical Research, London, v. 84, n. 226, p. 693–721, 2011. DOI: 10.1111/j.1468-2281.2010.00566.x.',
+        entradaAbnt: 'RABINOWITCH, Alexander. Prelude to Revolution: The Petrograd Bolsheviks and the July 1917 Uprising. Bloomington: Indiana University Press, 1968.',
+        entradaChicago: 'Rabinowitch, Alexander. 1968. Prelude to Revolution: The Petrograd Bolsheviks and the July 1917 Uprising. Bloomington: Indiana University Press.',
+        tipoFonte: 'Monografia'
+      },
+      {
+        entradaAbnt: 'RENDLE, Matthew. Revolutionary tribunals and the origins of terror in early Soviet Russia. Historical Research, v. 84, n. 226, p. 693–721, 2011. DOI: 10.1111/j.1468-2281.2010.00566.x.',
         entradaChicago: 'Rendle, Matthew. 2011. "Revolutionary tribunals and the origins of terror in early Soviet Russia." Historical Research 84 (226): 693–721.',
         tipoFonte: 'Artigo Científico',
         isbnOuReferencia: 'DOI: 10.1111/j.1468-2281.2010.00566.x'
       },
       {
-        entradaAbnt: 'THE TAMBOV REVOLT (1920–1921). Slavic Review, Cambridge, v. 25, n. 3, p. 497–512, 1966. DOI: 10.2307/2492859.',
+        entradaAbnt: 'THE TAMBOV REVOLT (1920–1921). Slavic Review, v. 25, n. 3, p. 497–512, 1966. DOI: 10.2307/2492859.',
         entradaChicago: '"The Tambov Revolt (1920–1921)." 1966. Slavic Review 25 (3): 497–512.',
         tipoFonte: 'Artigo Científico',
         isbnOuReferencia: 'DOI: 10.2307/2492859'
-      },
-      {
-        entradaAbnt: 'LENIN, Vladimir I. Telegrama a Yevgenia Bosch (9 ago. 1918); Telegrama a Kuraev, Bosch e Minkin (11 ago. 1918 - RTsKhIDNI f. 2, op. 1, d. 6898); Telegrama a Penza (12 ago. 1918). In: Lenin Collected Works, v. 36. Moscou: Progress Publishers, 1971.',
-        entradaChicago: 'Lenin, Vladimir I. 1971. Collected Works, Vol. 36. Moscow: Progress Publishers.',
-        tipoFonte: 'Fundo Arquivístico'
       }
     ]
   },
@@ -764,91 +753,58 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
       consensosAcademicos: 'Há consenso acadêmico de que o Grande Terror foi uma campanha institucional de violência em larga escala autorizada pela direção política central (Stalin, Politburo, NKVD), não um simples descontrole de agentes locais. O número de 681.692 fuzilamentos no biênio 1937–1938 é referendado em registros arquivísticos desclassificados do próprio NKVD.',
       controversiasELimitacoesDasFontes: 'A autoria direta do assassinato de Sergei Kirov em 1934 permanece sem comprovação conclusiva de envolvimento pessoal de Stalin (embora o aproveitamento político do atentado seja documentalmente certo); a suposta vitória eleitoral de Kirov contra Stalin no XVII Congresso carece de comprovação documental cabal.'
     },
-    citacoesVerificadas: [
-      {
-        trechoLiteral: 'A Ordem nº 00447 não foi uma resposta descontrolada de órgãos locais, mas uma operação burocraticamente concebida no topo da pirâmide soviética, que converteu a eliminação de categorias inteiras de cidadãos em metas quantitativas territoriais executadas por Troikas sem qualquer garantia judicial.',
-        autor: 'Oleg V. Khlevniuk',
-        obra: 'Master of the House: Stalin and His Inner Circle',
-        edicaoEditoraAno: '1. ed. New Haven: Yale University Press, 2009',
-        paginaExata: 'p. 166-169',
-        analiseContextual: 'Khlevniuk fundamenta a centralidade de Stalin e do Politburo na autorização e acompanhamento estrito das quotas de repressão do biênio 1937–1938.'
-      },
-      {
-        trechoLiteral: 'Os Processos de Moscou e as operações secretas de massa formaram dois lados da mesma moeda: os primeiros construíam para a opinião pública o espetáculo pedagógico da conspiração, enquanto as operações secretas do NKVD executavam a limpeza social em escala fabril longe dos olhares públicos.',
-        autor: 'J. Arch Getty; Oleg V. Naumov',
-        obra: 'The Road to Terror: Stalin and the Self-Destruction of the Bolsheviks, 1932–1939',
-        edicaoEditoraAno: '1. ed. New Haven: Yale University Press, 1999',
-        paginaExata: 'p. 470-473',
-        analiseContextual: 'Estudo seminal demonstrando a articulação entre os julgamentos espetaculares de velhos bolcheviques e a ordem secreta nº 00447.'
-      },
-      {
-        trechoLiteral: 'Stalin calculou que a sobrevivência do Estado soviético exigia a erradicação preventiva de qualquer segmento social ou político que pudesse, sob condições de agressão estrangeira iminente, formar uma base para rebeliões ou governos colaboracionistas.',
-        autor: 'Stephen Kotkin',
-        obra: 'Stalin: Waiting for Hitler, 1929–1941',
-        edicaoEditoraAno: '1. ed. New York: Penguin Press, 2017',
-        paginaExata: 'p. 439-441',
-        analiseContextual: 'Kotkin analisa a paranoia estratégica racionalizada de Stalin frente ao cerco militar japonês e alemão como motor primordial do Grande Terror.'
-      },
-      {
-        trechoLiteral: 'A comunicação de 10 de janeiro de 1939 confirma de maneira inequívoca que a aplicação de métodos físicos nos interrogatórios do NKVD foi expressamente autorizada e defendida pela cúpula do partido como instrumento oficial de coerção contra os suspeitos.',
-        autor: 'Marc Jansen; Nikita Petrov',
-        obra: 'Stalin\'s Loyal Executioner: People\'s Commissar Nikolai Ezhov, 1895–1940',
-        edicaoEditoraAno: '1. ed. Stanford: Hoover Institution Press, 2002',
-        paginaExata: 'p. 138-140',
-        analiseContextual: 'Documentação da circular de Stalin e Molotov legitimando a tortura nos interrogatórios carcerários.'
-      }
-    ],
+    citacoesVerificadas: [],
     bibliografia: [
       {
-        entradaAbnt: 'CONQUEST, Robert. The Great Terror: A Reassessment. Oxford: Oxford University Press, 2008. 608 p.',
+        entradaAbnt: 'CONQUEST, Robert. The Great Terror: A Reassessment. Oxford: Oxford University Press, 2008. 608 p. ISBN 978-0195316993.',
         entradaChicago: 'Conquest, Robert. 2008. The Great Terror: A Reassessment. Oxford: Oxford University Press.',
         tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0195317008'
+        isbnOuReferencia: 'ISBN 978-0195316993'
       },
       {
-        entradaAbnt: 'FITZPATRICK, Sheila. On Stalin\'s Team: The Years of Living Dangerously in Soviet Politics. Princeton: Princeton University Press, 2015. 384 p.',
+        entradaAbnt: 'FITZPATRICK, Sheila. On Stalin\'s Team: The Years of Living Dangerously in Soviet Politics. Princeton: Princeton University Press, 2015. 384 p. ISBN 978-0691167099.',
         entradaChicago: 'Fitzpatrick, Sheila. 2015. On Stalin\'s Team: The Years of Living Dangerously in Soviet Politics. Princeton: Princeton University Press.',
         tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0691145723'
+        isbnOuReferencia: 'ISBN 978-0691167099'
       },
       {
-        entradaAbnt: 'GETTY, J. Arch; NAUMOV, Oleg V. The Road to Terror: Stalin and the Self-Destruction of the Bolsheviks, 1932–1939. New Haven: Yale University Press, 1999. 635 p.',
+        entradaAbnt: 'GETTY, J. Arch; NAUMOV, Oleg V. The Road to Terror: Stalin and the Self-Destruction of the Bolsheviks, 1932–1939. New Haven: Yale University Press, 1999. 635 p. ISBN 978-0300077726.',
         entradaChicago: 'Getty, J. Arch, and Oleg V. Naumov. 1999. The Road to Terror: Stalin and the Self-Destruction of the Bolsheviks, 1932–1939. New Haven: Yale University Press.',
         tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0300077728'
+        isbnOuReferencia: 'ISBN 978-0300077726'
       },
       {
-        entradaAbnt: 'JANSEN, Marc; PETROV, Nikita. Stalin\'s Loyal Executioner: People\'s Commissar Nikolai Ezhov, 1895–1940. Stanford: Hoover Institution Press, 2002. 274 p.',
+        entradaAbnt: 'JANSEN, Marc; PETROV, Nikita. Stalin\'s Loyal Executioner: People\'s Commissar Nikolai Ezhov, 1895–1940. Stanford: Hoover Institution Press, 2002. 274 p. ISBN 978-0817929022.',
         entradaChicago: 'Jansen, Marc, and Nikita Petrov. 2002. Stalin\'s Loyal Executioner: People\'s Commissar Nikolai Ezhov, 1895–1940. Stanford: Hoover Institution Press.',
         tipoFonte: 'Monografia',
         isbnOuReferencia: 'ISBN 978-0817929022'
       },
       {
-        entradaAbnt: 'KHLEVNIUK, Oleg V. Master of the House: Stalin and His Inner Circle. New Haven: Yale University Press, 2009. 336 p.',
+        entradaAbnt: 'KHLEVNIUK, Oleg V. Master of the House: Stalin and His Inner Circle. New Haven: Yale University Press, 2009. 336 p. ISBN 978-0300110327.',
         entradaChicago: 'Khlevniuk, Oleg V. 2009. Master of the House: Stalin and His Inner Circle. New Haven: Yale University Press.',
         tipoFonte: 'Monografia',
-        isbnOuReferencia: 'ISBN 978-0300110661'
+        isbnOuReferencia: 'ISBN 978-0300110327'
       },
       {
-        entradaAbnt: 'KOTKIN, Stephen. Stalin: Waiting for Hitler, 1929–1941. New York: Penguin Press, 2017. 1184 p.',
+        entradaAbnt: 'KOTKIN, Stephen. Stalin: Waiting for Hitler, 1929–1941. New York: Penguin Press, 2017. 1184 p. ISBN 978-1594203800.',
         entradaChicago: 'Kotkin, Stephen. 2017. Stalin: Waiting for Hitler, 1929–1941. New York: Penguin Press.',
         tipoFonte: 'Monografia',
         isbnOuReferencia: 'ISBN 978-1594203800'
       },
       {
-        entradaAbnt: 'RITTERSPORN, Gábor T.; ROGINSKY, Alain; WERTH, Nicolas (org.). Les opérations de masse de la Grande Terreur en URSS, 1937–1938. Paris: Institut d\'histoire du temps présent, 2006. 248 p.',
-        entradaChicago: 'Rittersporn, Gábor T., Alain Roginsky, and Nicolas Werth, eds. 2006. Les opérations de masse de la Grande Terreur en URSS, 1937–1938. Paris: IHTP.',
+        entradaAbnt: 'RITTERSPORN, Gábor T.; ROGINSKY, Alain; WERTH, Nicolas (org.). Les opérations de masse de la Grande Terreur en URSS, 1937–1938. Paris: Institut d\'histoire du temps présent, 2006. 248 p. ISBN 978-2914742031.',
+        entradaChicago: 'Rittersporn, Gábor T., Alain Roginsky, and Nicolas Werth, eds. 2006. Les opérations de masse de la Grande Terreur en URSS, 1937–1938. Paris: Institut d\'histoire du temps présent.',
         tipoFonte: 'Coletânea Documental',
-        isbnOuReferencia: 'Persée doc: ihtp_0247-0101_2006_num_86_1_1839'
+        isbnOuReferencia: 'ISBN 978-2914742031'
       },
       {
-        entradaAbnt: 'ARQUIVO ESTATAL DA FEDERAÇÃO RUSSA (GARF). Fundo R-9401 (NKVD da URSS), Inventário 1, Processo 4157: Ordem Operacional nº 00447. Moscou: GARF, 1937. Transcrição: Memorial Krasnoyarsk.',
-        entradaChicago: 'State Archive of the Russian Federation (GARF). Fond R-9401, opis 1, delo 4157: NKVD Order No. 00447. Moscow.',
+        entradaAbnt: 'ARQUIVO ESTATAL DA FEDERAÇÃO RUSSA (GARF). Fundo R-9401 (NKVD da URSS), Inventário 1, Processo 4157: Ordem Operacional nº 00447. Moscou: GARF, 1937.',
+        entradaChicago: 'State Archive of the Russian Federation (GARF). Fond R-9401, opis 1, delo 4157: NKVD Order No. 00447. Moscow: GARF, 1937.',
         tipoFonte: 'Fundo Arquivístico'
       },
       {
         entradaAbnt: 'ARQUIVO DO PRESIDENTE DA FEDERAÇÃO RUSSA (AP RF). Fundo 3, Inventário 24, Processo 419: Listas de Fuzilamento do Politburo assinadas por Stalin e Molotov (1937–1938). Moscou: AP RF / RGASPI.',
-        entradaChicago: 'Archive of the President of the Russian Federation (AP RF). Fond 3, opis 24, delo 419: Stalinist Execution Lists. Moscow.',
+        entradaChicago: 'Archive of the President of the Russian Federation (AP RF). Fond 3, opis 24, delo 419: Politburo Execution Lists signed by Stalin and Molotov (1937–1938). Moscow: AP RF / RGASPI.',
         tipoFonte: 'Fundo Arquivístico'
       }
     ]
