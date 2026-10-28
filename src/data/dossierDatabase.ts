@@ -253,6 +253,16 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
         transcriptionPt: 'O Plano Quinquenal estabelece o crescimento anual da indústria pesada em mais de 20%, priorizando usinas hidrelétricas, siderurgia nos Montes Urais e tratores, subordinando a indústria leve à acumulação interna.',
         abntCitation: 'GOSPLAN URSS. O Primeiro Plano Quinquenal de Construção Econômica Nacional da URSS. Moscou: Comitê Estatal de Planejamento, 1929.',
         chicagoCitation: 'Gosplan USSR. 1929. "The Five-Year Plan for the Economic Construction of the USSR." Moscow: State Planning Commission.'
+      },
+      {
+        title: 'Relatório Técnico do Gosplan sobre Balanços Materiais e Descompasso na Indústria Pesada (1930)',
+        institution: 'Arquivo Estatal Russo de Economia (RGAE) / GARF',
+        documentType: 'Relatório de Inteligência',
+        year: '1930',
+        archiveReference: 'GARF f. R-5446, op. 12, d. 104; RGAE f. 4372',
+        transcriptionPt: 'Relatórios técnicos internos registrando desequilíbrios crônicos na entrega de insumos essenciais, gargalos de transporte ferroviário e discrepâncias estruturais entre o volume quantitativo bruto de produção e a deterioração da qualidade dos bens manufaturados.',
+        abntCitation: 'GOSPLAN DA URSS. Balanço da Execução do Plano Quinquenal na Indústria Pesada. Moscou: RGAE f. 4372 / GARF f. R-5446, 1930.',
+        chicagoCitation: 'State Planning Commission (Gosplan). 1930. "Material Balances and Industrial Plan Execution Report." Moscow: RGAE.'
       }
     ]
   },
@@ -630,6 +640,16 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
         transcriptionPt: 'Decisão do GKO: Todos os tártaros devem ser expulsos do território da Crimeia e assentados como colonos especiais no Uzbequistão. A operação deve ser concluída até 1º de junho sob a responsabilidade do camarada Beria.',
         abntCitation: 'COMITÊ DE DEFESA DO ESTADO DA URSS. Resolução nº 5859-ss sobre os tártaros da Crimeia. Moscou: GKO, 11 de maio de 1944. Arquivo Estatal GARF.',
         chicagoCitation: 'State Defense Committee (GKO). 1944. "Decree No. 5859-ss: On the Crimean Tatars." Moscow: GARF.'
+      },
+      {
+        title: 'Decreto do Comitê de Defesa do Estado nº 5076-ss sobre a Deportação de Chechenos e Inguches (Operação Lentil, 1944)',
+        institution: 'GARF / Memorial Society',
+        documentType: 'Decreto / Ordem',
+        year: '1944',
+        archiveReference: 'GARF f. R-9401, op. 2, d. 65, ll. 1–8',
+        transcriptionPt: 'Decisão do GKO: Todos os chechenos e inguches residentes no território da República Autônoma da Chechênia-Inguchétia devem ser reassentados permanentemente nas regiões do Cazaquistão e Quirguistão sob escolta armada do NKVD.',
+        abntCitation: 'COMITÊ DE DEFESA DO ESTADO DA URSS. Resolução nº 5076-ss sobre o desterro das populações chechenas e inguches. Moscou: GKO, 31 de janeiro de 1944. Arquivo Estatal GARF.',
+        chicagoCitation: 'State Defense Committee (GKO). 1944. "Decree No. 5076-ss: On the Resettlement of Chechens and Ingush." Moscow: GARF.'
       }
     ]
   },
@@ -663,6 +683,16 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
         transcriptionPt: 'Estamos dispostos a retirar de Cuba as armas que considerais ofensivas se os Estados Unidos, por sua parte, retirarem seus mísseis análogos instalados na Turquia e prometerem respeitar a soberania de Cuba.',
         abntCitation: 'KRUSCHEV, Nikita. Mensagem do Presidente do Conselho de Ministros da URSS ao Presidente Kennedy. 27 de outubro de 1962. Yale Avalon Project: Cuban Missile Crisis.',
         chicagoCitation: 'Khrushchev, Nikita. 1962. "Letter to President Kennedy during the Cuban Missile Crisis." Yale Avalon Project.'
+      },
+      {
+        title: 'Projeto VENONA: Despacho Decifrado do KGB sobre Espionagem Nuclear em Los Alamos (1944)',
+        institution: 'National Security Agency (NSA) / Wilson Center Cold War Project',
+        documentType: 'Relatório de Inteligência',
+        year: '1944',
+        archiveReference: 'VENONA Document New York KGB Station to Moscow Center, No. 1699 (NARA RG 457)',
+        transcriptionPt: 'Comunicação criptografada sobre a cooperação de fontes infiltradas no laboratório de Los Alamos ("Enormoz"), transmitindo diagramas técnicos preliminares e dados sobre o mecanismo de implosão da bomba atômica.',
+        abntCitation: 'NATIONAL SECURITY AGENCY. VENONA Soviet Espionage Decryptions: KGB New York to Moscow, 1944. Washington, DC: NSA / National Archives, 1995.',
+        chicagoCitation: 'National Security Agency. 1995. "VENONA Soviet Espionage Decryptions, 1944." Washington, DC: NSA.'
       }
     ]
   },
@@ -696,6 +726,16 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
         transcriptionPt: 'Para Mao: Considero que a China deve intervir com voluntários para auxiliar os camaradas coreanos. Se os Estados Unidos entrarem em grande guerra, a URSS prestará assistência e isso colocará a revolução mundial em posição de força.',
         abntCitation: 'STALIN, Iosif. Telegrama cifrado a Mao Tsé-Tung sobre o envio de tropas chinesas à Coreia. Moscou: 5 de outubro de 1950. Wilson Center Digital Archive.',
         chicagoCitation: 'Stalin, Joseph. 1950. "Coded Telegram to Mao Zedong on Korean War Intervention." Wilson Center CWIHP.'
+      },
+      {
+        title: 'Resolução do Presidium do Comitê Executivo da Internacional Comunista (Komintern) sobre sua Dissolução (15 de maio de 1943)',
+        institution: 'Library of Congress / RGASPI',
+        documentType: 'Resolução Política / Registros Militares',
+        year: '1943',
+        archiveReference: 'RGASPI f. 495, op. 18, d. 1332; Pravda nº 123, 16 de maio de 1943; LoC Revelations Box 2',
+        transcriptionPt: 'O Presidium do Comitê Executivo da Internacional Comunista declara que as formas de organização internacional criadas no I Congresso do Komintern tornaram-se um obstáculo diante das tarefas nacionais de cada partido comunista e resolve dissolver a Internacional Comunista.',
+        abntCitation: 'INTERNACIONAL COMUNISTA. Resolução sobre a Dissolução da III Internacional. Moscou: ECCI / RGASPI f. 495, 15 de maio de 1943.',
+        chicagoCitation: 'Executive Committee of the Communist International. 1943. "Resolution on the Dissolution of the Comintern." Moscow: RGASPI.'
       }
     ]
   },
@@ -772,6 +812,16 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
         transcriptionPt: 'Decisão: Instituir para todos os cidadãos das cidades e zonas industriais o sistema de passaporte único obrigatório com registro de domicílio (propiska). Os camponeses dos kolkhozes não recebem passaporte, ficando proibidos de abandonar seus povoados sem autorização expressa da administração.',
         abntCitation: 'UNIÃO SOVIÉTICA. Decreto sobre o Estabelecimento do Sistema Unificado de Passaportes na URSS. TsIK e Sovnarkom, 27 de dezembro de 1932. GARF.',
         chicagoCitation: 'Central Executive Committee of the USSR. 1932. "Decree on the Internal Passport System." Moscow: GARF.'
+      },
+      {
+        title: 'Decreto do Sovnarkom da RSFSR sobre a Criação da Glavlit e Centralização da Censura Prévia (6 de junho de 1922)',
+        institution: 'GARF / Library of Congress',
+        documentType: 'Decreto / Ordem',
+        year: '1922',
+        archiveReference: 'Sobranie Uzakonenii RSFSR, 1922, nº 40, art. 461 / GARF f. R-2306',
+        transcriptionPt: 'Fica criada a Diretoria Geral de Literatura e Editoras (Glavlit) junto ao Comissariado do Povo da Instrução, com o dever de exercer a censura prévia total sobre todos os livros, revistas, boletins, peças teatrais e cartazes produzidos ou importados na República Soviética.',
+        abntCitation: 'UNIÃO SOVIÉTICA. Regulamento sobre a Diretoria Geral de Literatura e Assuntos Editoriais (Glavlit). Sovnarkom, 6 de junho de 1922. GARF.',
+        chicagoCitation: 'Council of People\'s Commissars (Sovnarkom). 1922. "Decree on the Establishment of Glavlit." Moscow: GARF.'
       }
     ]
   },
@@ -848,6 +898,16 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
         transcriptionPt: 'Alerta urgente: A safra nacional é incapaz de abastecer a população das grandes cidades com pão e forragem para o gado. É imperativo despender com urgência as reservas de ouro do Estado para comprar 19 milhões de toneladas de trigo dos EUA e Canadá.',
         abntCitation: 'KOSYGIN, Alexei. Relatório sobre a Situação do Abastecimento de Cereais e Balança de Pagamentos. Moscou: Conselho de Ministros da URSS, 1972. RGANI.',
         chicagoCitation: 'Kosygin, Alexei. 1972. "Memorandum on Soviet Grain Crisis and Foreign Exchange Deficits." Moscow: RGANI.'
+      },
+      {
+        title: 'Relatório Confidencial da Comissão Estatal de Planejamento (Gosplan) sobre Déficit de Bens de Consumo (1982)',
+        institution: 'Wilson Center / RGAE (Arquivo Estatal Russo de Economia)',
+        documentType: 'Relatório Administrativo Militar',
+        year: '1982',
+        archiveReference: 'RGAE f. 4372, op. 67, d. 1891, ll. 12-28; CWIHP Digital Archive',
+        transcriptionPt: 'O desequilíbrio entre a massa monetária em poder da população e a disponibilidade física de mercadorias atingiu proporções críticas. A escassez crônica de alimentos básicos e manufaturados essenciais estimula o mercado negro e a perda de confiança no rublo.',
+        abntCitation: 'GOSPLAN DA URSS. Relatório Confidencial sobre o Desequilíbrio entre Demanda Monetária e Oferta de Bens de Consumo. Moscou: RGAE, 1982. Wilson Center.',
+        chicagoCitation: 'Gosplan. 1982. "Confidential Report on the Imbalance between Monetary Income and Consumer Goods Supply." Moscow: RGAE.'
       }
     ]
   }

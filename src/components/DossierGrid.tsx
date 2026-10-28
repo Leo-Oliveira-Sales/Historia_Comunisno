@@ -1,6 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import { DossierTopic, HistoricalPeriod } from '../types/dossier';
 import { HISTORICAL_PERIODS } from '../data/dossierDatabase';
+import { CANONICAL_EDITORIAL_DATABASE } from '../data/canonicalEditorialDatabase';
+import { ACADEMIC_CHAPTERS } from '../data/academicChaptersDatabase';
 import { Search, BookOpen, Bookmark, BookmarkCheck, FileCheck, Layers, GraduationCap, Award } from 'lucide-react';
 import { playTypewriterClack, playStampSound } from '../utils/audio';
 
@@ -103,6 +105,10 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-5">
         {filteredTopics.map((topic) => {
           const isSaved = savedTopicIds.includes(topic.id);
+          const canonicalDossier = CANONICAL_EDITORIAL_DATABASE[topic.id];
+          const chapter = ACADEMIC_CHAPTERS[topic.id];
+          const primaryCount = topic.primarySources.length;
+          const refCount = canonicalDossier?.bibliografia?.length || chapter?.bibliographicReferences?.length || 0;
 
           return (
             <div
@@ -172,7 +178,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
                 <div className="mt-3 py-1.5 px-2.5 bg-[#121215] border border-amber-900/40 rounded flex items-center justify-between text-[11px] font-mono text-stone-400">
                   <span className="flex items-center gap-1.5 text-amber-400 font-medium">
                     <Award className="w-3.5 h-3.5 text-amber-400" />
-                    <span>Padrão 8 Seções Canônicas</span>
+                    <span>Padrão 7 Seções Canônicas</span>
                   </span>
                   <span className="text-emerald-400 font-mono text-[10px] bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-800/40">
                     Auditado
@@ -181,15 +187,24 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
               </div>
 
               {/* Bottom Card Actions */}
-              <div className="mt-4 pt-3 border-t border-stone-800/80 flex items-center justify-between text-xs">
-                <div className="flex items-center gap-1.5 text-stone-400 font-mono text-[11px]">
-                  <FileCheck className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>{topic.primarySources.length} Fontes</span>
+              <div className="mt-4 pt-3 border-t border-stone-800/80 flex items-center justify-between text-xs gap-2">
+                <div className="flex items-center gap-2 text-stone-400 font-mono text-[11px] min-w-0">
+                  <div className="flex items-center gap-1.5 text-emerald-400 shrink-0" title="Documentos primários oficiais de acervos desclassificados">
+                    <FileCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                    <span>{primaryCount} {primaryCount === 1 ? 'Doc. Primário' : 'Docs. Primários'}</span>
+                  </div>
+                  {refCount > 0 && (
+                    <div className="flex items-center gap-1 text-stone-400 shrink-0" title="Obras e referências acadêmicas auditadas">
+                      <span className="text-stone-600">·</span>
+                      <GraduationCap className="w-3.5 h-3.5 text-amber-400/80 shrink-0" />
+                      <span>{refCount} Ref.</span>
+                    </div>
+                  )}
                 </div>
 
                 <button
                   onClick={() => onSelectTopic(topic)}
-                  className="px-3.5 py-2 min-h-[40px] bg-stone-800 hover:bg-stone-700 active:scale-95 text-stone-200 group-hover:text-amber-300 rounded-md text-xs font-semibold flex items-center gap-1.5 transition-all border border-stone-700/60"
+                  className="px-3.5 py-2 min-h-[40px] bg-stone-800 hover:bg-stone-700 active:scale-95 text-stone-200 group-hover:text-amber-300 rounded-md text-xs font-semibold flex items-center gap-1.5 transition-all border border-stone-700/60 shrink-0"
                 >
                   <BookOpen className="w-3.5 h-3.5 text-amber-400" />
                   <span>Abrir Dossiê</span>

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { DOSSIER_TOPICS } from './data/dossierDatabase';
+import { MONOGRAPHS_DATABASE } from './data/monographsDatabase';
+import { ARCHIVES_DATABASE } from './data/historiansAndArchives';
 import { DossierTopic } from './types/dossier';
 import { Header } from './components/Header';
 import { DossierGrid } from './components/DossierGrid';
@@ -143,7 +145,7 @@ export default function App() {
                     className="px-3.5 py-2.5 min-h-[42px] rounded-lg text-xs font-medium bg-stone-800 hover:bg-stone-700 active:scale-95 text-stone-200 border border-stone-700 flex items-center justify-center gap-2 transition-all"
                   >
                     <Building2 className="w-4 h-4 text-amber-400 shrink-0" />
-                    <span>23 Monografias & 8 Arquivos</span>
+                    <span>{MONOGRAPHS_DATABASE.length} Monografias & {ARCHIVES_DATABASE.length} Arquivos</span>
                   </button>
 
                   <button
@@ -162,17 +164,17 @@ export default function App() {
               {/* Research Metrics Strip */}
               <div className="grid grid-cols-2 gap-2.5 sm:gap-4 w-full sm:w-auto shrink-0 font-mono">
                 <div className="bg-[#19191d]/90 border border-stone-800 p-3 sm:p-3.5 rounded-lg">
-                  <div className="text-xl sm:text-2xl font-bold text-amber-400 tabular-nums">20</div>
+                  <div className="text-xl sm:text-2xl font-bold text-amber-400 tabular-nums">{DOSSIER_TOPICS.length}</div>
                   <div className="text-[10px] sm:text-[11px] text-stone-400">Tópicos Catalogados</div>
                 </div>
 
                 <div className="bg-[#19191d]/90 border border-stone-800 p-3 sm:p-3.5 rounded-lg">
-                  <div className="text-xl sm:text-2xl font-bold text-stone-100 tabular-nums">23</div>
+                  <div className="text-xl sm:text-2xl font-bold text-stone-100 tabular-nums">{MONOGRAPHS_DATABASE.length}</div>
                   <div className="text-[10px] sm:text-[11px] text-stone-400">Obras de Referência</div>
                 </div>
 
                 <div className="bg-[#19191d]/90 border border-stone-800 p-3 sm:p-3.5 rounded-lg">
-                  <div className="text-xl sm:text-2xl font-bold text-stone-100 tabular-nums">08</div>
+                  <div className="text-xl sm:text-2xl font-bold text-stone-100 tabular-nums">0{ARCHIVES_DATABASE.length}</div>
                   <div className="text-[10px] sm:text-[11px] text-stone-400">Arquivos Oficiais</div>
                 </div>
 
