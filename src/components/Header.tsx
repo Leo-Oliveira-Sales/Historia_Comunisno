@@ -214,22 +214,110 @@ export const Header: React.FC<HeaderProps> = ({
             )}
           </button>
 
-          {/* Mobile Menu Button (< 768px) */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 min-h-[44px] min-w-[44px] text-stone-300 hover:text-white hover:bg-stone-800 rounded-lg transition-colors flex items-center justify-center"
-            aria-label="Abrir Menu de Navegação"
-          >
-            {mobileMenuOpen ? <X className="w-5 h-5 text-amber-400" /> : <Menu className="w-5 h-5" />}
-          </button>
         </div>
+      </header>
 
-        {/* Mobile Drawer Navigation Overlay positioned below header */}
-        {mobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 z-40 bg-[#141417]/98 border-b border-stone-800 shadow-2xl backdrop-blur p-4 space-y-4 animate-in slide-in-from-top-2 duration-150">
-            {/* Global Font Size Selector inside Mobile Drawer */}
-            <div className="space-y-2">
-              <div className="text-[11px] font-mono uppercase text-stone-500 tracking-wider px-1 flex items-center gap-1.5">
+      {/* Mobile Floating Side Button for instant lateral menu access from anywhere */}
+      <button
+        onClick={() => setMobileMenuOpen(true)}
+        className="md:hidden fixed top-1/2 right-0 -translate-y-1/2 z-30 bg-amber-500 hover:bg-amber-400 active:scale-95 text-stone-950 font-bold px-2 py-3.5 rounded-l-xl shadow-2xl flex flex-col items-center justify-center gap-1 border-y border-l border-amber-300 text-[10px] font-mono uppercase tracking-wider transition-all"
+        title="Abrir Navegação Lateral"
+        aria-label="Abrir Navegação Lateral"
+      >
+        <Menu className="w-4 h-4 text-stone-950" />
+        <span className="[writing-mode:vertical-lr] rotate-180 font-mono tracking-widest text-[9px] font-black my-0.5">MENU</span>
+      </button>
+
+      {/* Mobile Lateral Off-Canvas Sidebar Drawer */}
+      {mobileMenuOpen && (
+        <div className="md:hidden fixed inset-0 z-50 flex justify-end">
+          {/* Dark Backdrop Overlay */}
+          <div 
+            className="fixed inset-0 bg-black/75 backdrop-blur-sm transition-opacity animate-in fade-in duration-200"
+            onClick={() => setMobileMenuOpen(false)}
+            aria-hidden="true"
+          />
+
+          {/* Lateral Slide-Over Panel */}
+          <aside 
+            className="relative z-10 w-80 max-w-[85vw] h-full bg-[#151518] border-l border-stone-800 shadow-2xl flex flex-col justify-between overflow-y-auto animate-in slide-in-from-right duration-200 p-5 space-y-6 text-stone-200"
+            role="dialog"
+            aria-label="Menu Lateral de Navegação"
+          >
+            {/* Panel Top Header */}
+            <div className="flex items-center justify-between pb-4 border-b border-stone-800">
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-red-600 inline-block"></span>
+                <span className="font-display font-bold text-sm text-stone-100 uppercase tracking-tight">
+                  Navegação do Acervo
+                </span>
+              </div>
+
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2 text-stone-400 hover:text-stone-100 hover:bg-stone-800 rounded-lg transition-colors flex items-center justify-center min-h-[44px] min-w-[44px]"
+                aria-label="Fechar Menu Lateral"
+              >
+                <X className="w-5 h-5 text-amber-400" />
+              </button>
+            </div>
+
+            {/* Primary Lateral Navigation Buttons */}
+            <div className="space-y-2 flex-1">
+              <div className="text-[10px] font-mono uppercase text-stone-500 tracking-wider px-1 mb-2 font-bold">
+                Seções do Dossiê
+              </div>
+              
+              {navItems.map((item) => {
+                const Icon = item.icon;
+                const isActive = currentTab === item.id;
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => {
+                      onSelectTab(item.id);
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`w-full text-left px-4 py-3 min-h-[48px] rounded-xl text-sm font-semibold flex items-center justify-between transition-all border ${
+                      isActive
+                        ? 'bg-amber-500/15 text-amber-400 border-amber-500/40 shadow-sm font-bold'
+                        : 'bg-stone-900/60 text-stone-300 hover:bg-stone-800/80 hover:text-stone-100 border-stone-800'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <Icon className={`w-4 h-4 ${isActive ? 'text-amber-400' : 'text-stone-400'}`} />
+                      <span>{item.label}</span>
+                    </div>
+                    {isActive && (
+                      <span className="w-2 h-2 rounded-full bg-amber-400"></span>
+                    )}
+                  </button>
+                );
+              })}
+
+              {/* Notebook direct button inside lateral list */}
+              <button
+                onClick={() => {
+                  onOpenNotebook();
+                  setMobileMenuOpen(false);
+                }}
+                className="w-full text-left px-4 py-3 min-h-[48px] rounded-xl text-sm font-semibold bg-stone-900/80 hover:bg-stone-800 text-stone-200 border border-stone-800 flex items-center justify-between transition-all mt-3"
+              >
+                <div className="flex items-center gap-3">
+                  <Bookmark className="w-4 h-4 text-amber-400" />
+                  <span>Caderno de Pesquisa</span>
+                </div>
+                {savedCount > 0 && (
+                  <span className="bg-red-700 text-white text-[11px] font-mono font-bold px-2 py-0.5 rounded-full">
+                    {savedCount}
+                  </span>
+                )}
+              </button>
+            </div>
+
+            {/* Global Font Size Controls */}
+            <div className="space-y-2 pt-4 border-t border-stone-800">
+              <div className="text-[10px] font-mono uppercase text-stone-500 tracking-wider px-1 flex items-center gap-1.5 font-bold">
                 <Type className="w-3.5 h-3.5 text-amber-400" />
                 <span>Tamanho da Fonte Global</span>
               </div>
@@ -240,10 +328,10 @@ export const Header: React.FC<HeaderProps> = ({
                     <button
                       key={fOpt.id}
                       onClick={() => onSelectFontSize(fOpt.id)}
-                      className={`px-2 py-2 rounded-lg text-xs font-mono font-bold border transition-all ${
+                      className={`py-2 rounded-lg text-xs font-mono font-bold border transition-all flex items-center justify-center min-h-[38px] ${
                         isSelected
-                          ? 'bg-amber-500 text-stone-950 font-black border-amber-500 shadow-sm'
-                          : 'bg-stone-850 text-stone-300 border-stone-700/80 hover:bg-stone-800'
+                          ? 'bg-amber-500 text-stone-950 font-black border-amber-500 shadow'
+                          : 'bg-stone-900 text-stone-300 border-stone-800 hover:bg-stone-800'
                       }`}
                     >
                       {fOpt.shortLabel}
@@ -253,9 +341,9 @@ export const Header: React.FC<HeaderProps> = ({
               </div>
             </div>
 
-            {/* Theme Selector Section inside Mobile Drawer */}
-            <div className="space-y-2 border-t border-stone-800 pt-3">
-              <div className="text-[11px] font-mono uppercase text-stone-500 tracking-wider px-1">
+            {/* Visual Theme Selector */}
+            <div className="space-y-2 pt-4 border-t border-stone-800">
+              <div className="text-[10px] font-mono uppercase text-stone-500 tracking-wider px-1 font-bold">
                 Tema Visual do Acervo
               </div>
               <div className="grid grid-cols-3 gap-2">
@@ -264,13 +352,11 @@ export const Header: React.FC<HeaderProps> = ({
                   return (
                     <button
                       key={opt.id}
-                      onClick={() => {
-                        onSelectTheme(opt.id);
-                      }}
-                      className={`px-2.5 py-2 rounded-lg text-xs font-medium flex flex-col items-center justify-center gap-1 border transition-all ${
+                      onClick={() => onSelectTheme(opt.id)}
+                      className={`p-2.5 rounded-xl text-xs font-medium flex flex-col items-center justify-center gap-1 border transition-all ${
                         isSelected
-                          ? 'bg-amber-500/15 text-amber-400 font-bold border-amber-500/50 shadow-sm'
-                          : 'bg-stone-850 text-stone-300 border-stone-700/80 hover:bg-stone-800'
+                          ? 'bg-amber-500/15 text-amber-400 font-bold border-amber-500/50 shadow'
+                          : 'bg-stone-900 text-stone-300 border-stone-800 hover:bg-stone-800'
                       }`}
                     >
                       <div className="flex items-center gap-1">
@@ -286,45 +372,12 @@ export const Header: React.FC<HeaderProps> = ({
               </div>
             </div>
 
-            <div className="border-t border-stone-800 pt-3">
-              <div className="text-[11px] font-mono uppercase text-stone-500 tracking-wider px-1 mb-2">
-                Navegação do Acervo
-              </div>
-              <div className="space-y-1.5">
-                {navItems.map((item) => {
-                  const Icon = item.icon;
-                  const isActive = currentTab === item.id;
-                  return (
-                    <button
-                      key={item.id}
-                      onClick={() => {
-                        onSelectTab(item.id);
-                        setMobileMenuOpen(false);
-                      }}
-                      className={`nav-btn-clean w-full text-left px-3.5 py-3 min-h-[48px] rounded-lg text-sm font-medium flex items-center gap-3 transition-colors ${
-                        isActive
-                          ? 'bg-amber-500/15 text-amber-400 font-semibold border-amber-500/30'
-                          : 'text-stone-300 hover:bg-stone-800/80 hover:text-stone-100'
-                      }`}
-                    >
-                      <Icon className={`w-4 h-4 ${isActive ? 'text-amber-400' : 'text-stone-400'}`} />
-                      <span>{item.label}</span>
-                    </button>
-                  );
-                })}
-              </div>
+            {/* Footer Branding */}
+            <div className="pt-4 border-t border-stone-800 text-[11px] font-mono text-stone-500 text-center">
+              Dossiê Soviético · Cátedra Historiográfica
             </div>
-          </div>
-        )}
-      </header>
-
-      {/* Dim backdrop when mobile menu is open */}
-      {mobileMenuOpen && (
-        <div 
-          className="md:hidden fixed inset-0 z-30 bg-black/60 backdrop-blur-sm"
-          onClick={() => setMobileMenuOpen(false)}
-          aria-hidden="true"
-        />
+          </aside>
+        </div>
       )}
     </>
   );
