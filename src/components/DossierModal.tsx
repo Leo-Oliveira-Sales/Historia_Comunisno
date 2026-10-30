@@ -569,7 +569,141 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       </div>
 
       {/* 2. TAB NAVIGATION CONTROLS */}
-      <div className="bg-[#141417] border-b border-stone-800 px-3 sm:px-6 py-2 flex items-center justify-between gap-3 overflow-x-auto no-scrollbar shrink-0 touch-pan-x">
+      {/* MOBILE MODE: 2 DISTINCT NAVIGATION ROWS */}
+      <div className="sm:hidden bg-[#141417] border-b border-stone-800 px-2 py-2 space-y-1.5 shrink-0">
+        {/* Row 1: Primary Dossier Modules */}
+        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-pan-x">
+          {chapter && (
+            <button
+              onClick={() => {
+                playTypewriterClack();
+                setActiveTab('chapter');
+              }}
+              className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+                activeTab === 'chapter'
+                  ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
+                  : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+              }`}
+            >
+              <BookOpenCheck className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span>Capítulo Acadêmico</span>
+            </button>
+          )}
+
+          {researchDossierText && (
+            <button
+              onClick={() => {
+                playTypewriterClack();
+                setActiveTab('researchDossier');
+              }}
+              className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+                activeTab === 'researchDossier'
+                  ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
+                  : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+              }`}
+            >
+              <FileSpreadsheet className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span>Dossiê Pesquisa</span>
+            </button>
+          )}
+
+          <button
+            onClick={() => {
+              playTypewriterClack();
+              setActiveTab('canonical');
+            }}
+            className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+              activeTab === 'canonical'
+                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 shadow-sm font-bold'
+                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+            }`}
+          >
+            <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+            <span>Padrão Canônico</span>
+          </button>
+        </div>
+
+        {/* Row 2: Secondary Analytical Tabs & Sources */}
+        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-pan-x">
+          <button
+            onClick={() => {
+              playTypewriterClack();
+              setActiveTab('essay');
+            }}
+            className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+              activeTab === 'essay'
+                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
+                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+            }`}
+          >
+            <GraduationCap className="w-3.5 h-3.5 shrink-0" />
+            <span>Ensaio</span>
+          </button>
+
+          <button
+            onClick={() => {
+              playTypewriterClack();
+              setActiveTab('stories');
+            }}
+            className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+              activeTab === 'stories'
+                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
+                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+            }`}
+          >
+            <ScrollText className="w-3.5 h-3.5 shrink-0" />
+            <span>Crônicas</span>
+          </button>
+
+          <button
+            onClick={() => {
+              playTypewriterClack();
+              setActiveTab('documents');
+            }}
+            className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+              activeTab === 'documents'
+                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
+                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+            }`}
+          >
+            <FileText className="w-3.5 h-3.5 shrink-0" />
+            <span>Documentos</span>
+          </button>
+
+          <button
+            onClick={() => {
+              playTypewriterClack();
+              setActiveTab('context');
+            }}
+            className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+              activeTab === 'context'
+                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
+                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+            }`}
+          >
+            <BookMarked className="w-3.5 h-3.5 shrink-0" />
+            <span>Síntese</span>
+          </button>
+
+          <button
+            onClick={() => {
+              playTypewriterClack();
+              setActiveTab('citations');
+            }}
+            className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+              activeTab === 'citations'
+                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
+                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+            }`}
+          >
+            <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+            <span>Citações</span>
+          </button>
+        </div>
+      </div>
+
+      {/* TABLET / DESKTOP MODE: SINGLE ROW TAB NAVIGATION */}
+      <div className="hidden sm:flex bg-[#141417] border-b border-stone-800 px-3 sm:px-6 py-2 items-center justify-between gap-3 overflow-x-auto no-scrollbar shrink-0 touch-pan-x">
         <div className="flex items-center gap-1.5 whitespace-nowrap">
           {chapter && (
             <button
