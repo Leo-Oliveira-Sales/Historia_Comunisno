@@ -745,40 +745,60 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
     title: 'Dissidência, Samizdat e Luta por Direitos Humanos',
     category: 'Dissidência e Direitos Humanos',
     period: '1964-1982',
-    periodLabel: '1968–1989 · Resistência Clandestina',
-    tagline: 'Aleksandr Soljenítsin, Andrei Sakharov, a circulação do Samizdat, a Carta 77 e o Grupo Helsinque.',
-    summary: 'A emergência da oposição moral e intelectual pacífica dentro da URSS e no Bloco Oriental. O fenômeno do Samizdat (datilografia e circulação clandestina de livros censurados de mão em mão), o impacto demolidor do lançamento ocidental de "O Arquipélago Gulag" de Soljenítsin em 1973, a coragem do físico nuclear Andrei Sakharov em defesa dos direitos civis, a Carta 77 na Tchecoslováquia (Václav Havel) e os comitês de monitoramento dos Acordos de Helsinque de 1975.',
-    mainSubjects: ['Aleksandr Soljenítsin e "O Arquipélago Gulag"', 'Andrei Sakharov e o Movimento Democrático', 'Samizdat (Publicação Clandestina)', 'Carta 77 na Tchecoslováquia', 'Grupo Helsinque de Moscou e Psiquiatria Punitiva'],
-    historicalContext: 'Após a invasão da Tchecoslováquia em 1968, as ilusões de autorreforma do socialismo dissiparam-se. A KGB sob Yuri Andropov passou a usar exílio forçado e confinamento em hospitais psiquiátricos (psikhiatricheskie bolnitsy) contra dissidentes políticos.',
-    academicConsensus: 'Historiadores concordam que a dissidência soviética expôs no Ocidente o vácuo ético do regime soviético e forneceu as bases morais para a revolução democrática pacífica de 1989 no Leste Europeu.',
-    keyActors: ['Aleksandr Soljenítsin', 'Andrei Sakharov', 'Václav Havel', 'Yuri Andropov', 'Elena Bonner'],
-    historiansInvolved: ['Anne Applebaum', 'Oleg V. Khlevniuk', 'J. Arch Getty'],
-    historicalImpact: 'Quebrou o monopólio da informação do Estado, inspirou a resistência dos trabalhadores do sindicato Solidarność na Polônia e apressou a falência ideológica do regime.',
+    periodLabel: '1965–1989 · Resistência Civil e Direitos Humanos',
+    tagline: 'Resistência civil, censura e repressão na União Soviética (1965–1989): Samizdat, Grupo de Helsinque, Andrei Sakharov e Vladimir Bukovsky.',
+    summary: 'A contestação ao monopólio estatal da informação e a defesa de liberdades civis na União Soviética entre 1965 e 1989. A emergência do Samizdat e Tamizdat, a compilação metódica da Crônica dos Acontecimentos Correntes, o impacto normativo da Ata Final de Helsinque e a criação do Grupo de Helsinque de Moscou (Yuri Orlov, Elena Bonner, Lyudmila Alexeyeva), a repressão judicial e psiquiátrica conduzida pelo KGB (denunciada por Vladimir Bukovsky e Aleksandr Podrabinek), a diversidade das correntes dissidentes e seu papel formativo na emergência da sociedade civil durante a Glasnost.',
+    mainSubjects: ['Samizdat e Tamizdat', 'A Crônica dos Acontecimentos Correntes', 'Ata Final de Helsinque e Grupo de Helsinque de Moscou', 'Repressão Estatal e Psiquiatria Punitiva', 'Andrei Sakharov, Soljenítsin e Vladimir Bukovsky', 'Glasnost e Legado Cívico'],
+    historicalContext: 'Após a queda de Khrushchev em 1964 e o julgamento dos escritores Siniavski e Daniel em 1965-1966, a oposição intelectual adotou a resistência cívica legalista. A invasão militar da Tchecoslováquia em 1968 e a assinatura da Ata de Helsinque em 1975 estruturaram redes de denúncia internacional de violações aos direitos humanos.',
+    academicConsensus: 'Historiadores concordam que a dissidência soviética foi um movimento plural e descentralizado que rompeu o monopólio da informação, redefiniu o vocabulário ético-jurídico da resistência perante o Estado totalitário e articulou a sociedade civil que veio à tona nas reformas de 1985–1989.',
+    keyActors: ['Andrei Sakharov', 'Aleksandr Soljenítsin', 'Vladimir Bukovsky', 'Yuri Orlov', 'Lyudmila Alexeyeva', 'Elena Bonner', 'Aleksandr Podrabinek', 'Yuri Andropov'],
+    historiansInvolved: ['Liudmila Alexeyeva', 'Ann Komaromi', 'Marshall S. Shatz', 'Daniel C. Thomas', 'Sarah B. Snyder', 'Sidney Bloch'],
+    historicalImpact: 'Pulverizou a unanimidade oficial da propaganda soviética, converteu compromissos diplomáticos em instrumentos cívicos de fiscalização internacional, desmascarou a psiquiatria punitiva e originou a Associação Memorial e o pluripartidarismo.',
     quote: {
-      text: 'Uma palavra de verdade pesa mais do que o mundo inteiro.',
-      author: 'Aleksandr Soljenítsin',
-      context: 'Discurso do Prêmio Nobel de Literatura de 1970'
+      text: 'A liberdade intelectual é essencial à sociedade humana: a liberdade de obter e distribuir informações, a liberdade para um debate aberto e sem medo, a liberdade de livrar-se de preconceitos oficiais e da autoridade cega.',
+      author: 'Andrei Sakharov',
+      context: 'Reflexões sobre o Progresso, a Coexistência Pacífica e a Liberdade Intelectual (1968)'
     },
     primarySources: [
       {
-        title: 'Declaração Fundacional da Carta 77 (Praga, 1º de janeiro de 1977)',
-        institution: 'Wilson Center Cold War History / Hoover Institution',
-        documentType: 'Decreto / Ordem',
-        year: '1977',
-        archiveReference: 'Hoover Institution Archives, Charter 77 Records, Box 1',
-        transcriptionPt: 'A Carta 77 é uma iniciativa cívica livre, informal e aberta a pessoas de diferentes convicções que exigem do governo tchecoslovaco o respeito prático aos direitos humanos fundamentais consagrados nos Acordos de Helsinque e nos pactos internacionais da ONU.',
-        abntCitation: 'HAVEL, Václav et al. Carta 77: Declaração de Direitos Cívicos e Liberdades Fundamentais. Praga, 1º de janeiro de 1977. Hoover Institution.',
-        chicagoCitation: 'Havel, Václav, Jan Patočka, and Jiří Hájek. 1977. "The Charter 77 Declaration." Prague. Hoover Institution Archives.'
+        title: 'Ata Final da Conferência sobre Segurança e Cooperação na Europa (Princípio VII, Direitos Humanos, Helsinque, 1975)',
+        institution: 'OSCE / Arquivo Central de Tratados Internacionais',
+        documentType: 'Ato Diplomático / Declaração Multilateral',
+        year: '1975',
+        archiveReference: 'OSCE Archive, Helsinki Final Act Records, Basket I & III',
+        transcriptionPt: 'Os Estados participantes respeitarão os direitos humanos e as liberdades fundamentais, incluindo a liberdade de pensamento, de consciência, de religião ou de convicção para todos, sem distinção de raça, sexo, língua ou religião.',
+        abntCitation: 'ORGANIZATION FOR SECURITY AND CO-OPERATION IN EUROPE (OSCE). Helsinki Final Act: Principle VII on Human Rights and Fundamental Freedoms. Helsinki, 1º de agosto de 1975.',
+        chicagoCitation: 'CSCE. 1975. "Final Act of the Conference on Security and Co-operation in Europe." Helsinki: OSCE Archive.'
       },
       {
-        title: 'Memorando da KGB sobre as Medidas contra o Escritor Soljenítsin (1974)',
-        institution: 'Memorial Society / Arquivos Centrais do FSB',
-        documentType: 'Relatório de Inteligência',
-        year: '1974',
-        archiveReference: 'RGANI f. 3, op. 69, d. 177, ll. 1-15',
-        transcriptionPt: 'Proposta do Comitê de Segurança de Estado (KGB): Soljenítsin cometeu crime de traição à pátria ao enviar ao Ocidente a obra anti-soviética "O Arquipélago Gulag". Propõe-se despojá-lo da cidadania soviética e expulsá-lo imediatamente para a República Federal da Alemanha.',
-        abntCitation: 'ANDROPOV, Yuri. Decisão do Politburo sobre a Expulsão de A. I. Soljenítsin da URSS. Moscou: KGB, 12 de fevereiro de 1974. RGANI.',
-        chicagoCitation: 'Andropov, Yuri. 1974. "KGB Report to the Politburo on the Expulsion of Aleksandr Solzhenitsyn." RGANI.'
+        title: 'Documento Fundacional nº 1 do Grupo de Apoio à Implementação dos Acordos de Helsinque na URSS (Moscou, 1976)',
+        institution: 'Sakharov Center Archive / U.S. Helsinki Commission',
+        documentType: 'Manifesto Cívico Fundacional',
+        year: '1976',
+        archiveReference: 'Moscow Helsinki Group Archive, Doc. No. 1, May 12, 1976',
+        transcriptionPt: 'O Grupo de Helsinque de Moscou tem por objetivo aceitar informações diretas de cidadãos soviéticos sobre violações das disposições humanitárias da Ata Final, compilar documentação factual fidedigna e remetê-la conjuntamente aos governos signatários e à opinião pública.',
+        abntCitation: 'ORLOV, Yuri et al. Declaração de Fundação do Grupo de Helsinque de Moscou (Documento nº 1). Moscou, 12 de maio de 1976. Moscow Helsinki Group Archive.',
+        chicagoCitation: 'Orlov, Yuri, Lyudmila Alexeyeva, Aleksandr Ginzburg, and Elena Bonner. 1976. "Foundation Declaration of the Moscow Helsinki Group." Moscow.'
+      },
+      {
+        title: 'Crônica dos Acontecimentos Correntes — Edição nº 1 (Moscou, 30 de abril de 1968)',
+        institution: 'Memorial International / Forschungsstelle Osteuropa (Universidade de Bremen)',
+        documentType: 'Publicação Samizdat Clandestina',
+        year: '1968',
+        archiveReference: 'FSO Samizdat Archive, Khronika Tekushchikh Sobytiy, No. 1',
+        transcriptionPt: 'O ano de 1968 foi proclamado pela Organização das Nações Unidas como o Ano dos Direitos Humanos. Esta publicação tem por finalidade registrar com exatidão e sem preconceito os fatos relativos a violações de direitos individuais e julgamentos na URSS.',
+        abntCitation: 'KHRONIKA TEKUSHCHIKH SOBYTIY. A Chronicle of Current Events, issue no. 1. Moscou: Samizdat clandestino, 30 de abril de 1968.',
+        chicagoCitation: 'Khronika Tekushchikh Sobytiy. 1968. "A Chronicle of Current Events, No. 1." Moscow: Samizdat Archive.'
+      },
+      {
+        title: 'Manual de Psiquiatria para Dissidentes (Vladimir Bukovsky e Dr. Semyon Gluzman, 1975)',
+        institution: 'Khronika Press / Survey: A Journal of East and West Studies',
+        documentType: 'Dossiê Técnico-Clandestino',
+        year: '1975',
+        archiveReference: 'Survey Archive, Vol. 21, Nos. 1-2, Winter-Spring 1975, pp. 179-199',
+        transcriptionPt: 'O cidadão soviético submetido a exame psiquiátrico com fins políticos deve saber que o diagnóstico de esquizofrenia de progressão lenta é atribuído àqueles que defendem a legalidade. Não manifeste arrogância nem delírios messiânicos; responda com calma documental.',
+        abntCitation: 'BUKOVSKY, Vladimir; GLUZMAN, Semyon. A Manual on Psychiatry for Dissenters. Samizdat, 1975. Republicado em Survey, v. 21, n. 1-2, 1975.',
+        chicagoCitation: 'Bukovsky, Vladimir, and Semyon Gluzman. 1975. "A Manual on Psychiatry for Dissenters." Survey 21 (1-2): 179-199.'
       }
     ]
   },
