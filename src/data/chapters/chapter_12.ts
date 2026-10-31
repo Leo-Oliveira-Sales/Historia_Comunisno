@@ -1,726 +1,266 @@
 import { AcademicChapter } from '../academicChaptersDatabase';
 
-export const CHAPTER_12_RAW_MARKDOWN = `# CAPÍTULO HISTÓRICO ACADÊMICO
-
-## Nº 12 — Fomes e Catástrofes Humanitárias de Estado
-
-### Fomes soviéticas de 1921–1922, 1931–1934 e 1946–1947
-
-## 1. Introdução: quando a fome se transforma em catástrofe política
-
-As grandes fomes da União Soviética durante a primeira metade do século XX constituem alguns dos episódios mais graves da história social e política do país. Elas resultaram de combinações distintas de destruição econômica, condições ambientais, decisões governamentais, políticas agrícolas, conflitos sociais e limitações na distribuição de alimentos.
-
-Entre as principais crises estão a fome de 1921–1922, que atingiu regiões extensas da Rússia soviética e da Ucrânia; a catástrofe de 1931–1934, particularmente devastadora na Ucrânia, no Cazaquistão e em outras regiões agrícolas; e a fome de 1946–1947, ocorrida no contexto da reconstrução posterior à Segunda Guerra Mundial.
-
-Esses acontecimentos não devem ser tratados como uma única crise contínua. Suas causas imediatas, suas circunstâncias políticas e suas consequências foram diferentes. Também não é correto atribuir todas as mortes exclusivamente a um fator natural ou, no extremo oposto, presumir que todas as crises foram planejadas desde o início com o objetivo explícito de provocar mortes em massa.
-
-O denominador comum foi a vulnerabilidade das populações diante de um Estado que controlava grande parte da produção agrícola, as requisições, o transporte e a distribuição de alimentos. Em diferentes momentos, as autoridades adotaram políticas que agravaram a escassez, impediram a fuga de pessoas famintas, priorizaram objetivos econômicos ou estratégicos e demoraram a modificar decisões que contribuíam para a mortalidade.
-
-A análise histórica precisa distinguir pelo menos quatro questões:
-
-1. **Causas materiais:** colheitas, condições climáticas, epidemias, perdas de rebanhos e destruição econômica.
-2. **Decisões políticas:** requisições, metas de entrega, confisco de alimentos, restrições de circulação e prioridades de distribuição.
-3. **Consequências demográficas:** mortes excedentes, deslocamentos populacionais e nascimentos que deixaram de ocorrer.
-4. **Intencionalidade:** o que os dirigentes sabiam, quais medidas decidiram manter e se existe evidência de uma intenção específica de destruir determinado grupo nacional ou étnico.
-
-Essa separação permite compreender a dimensão da responsabilidade estatal sem transformar uma questão histórica complexa em uma explicação monocausal.
-
-## 2. Contexto histórico: agricultura, poder e transformação social
-
-### 2.1. A sociedade rural soviética
-
-Nas primeiras décadas do século XX, grande parte da população soviética vivia em áreas rurais. A agricultura era fundamental para o abastecimento das cidades, a alimentação da população e a obtenção de produtos que poderiam ser exportados.
-
-A relação entre Estado e campesinato tornou-se progressivamente conflituosa após a Revolução de 1917. Durante a Guerra Civil, as requisições compulsórias de alimentos e as dificuldades de transporte provocaram resistência camponesa e contribuíram para a desorganização econômica.
-
-Em 1921, o governo bolchevique substituiu o sistema de requisições do comunismo de guerra por um imposto em espécie, no contexto da Nova Política Econômica. A mudança procurava reduzir a oposição rural e estimular a recuperação da produção.
-
-Essa política, porém, não eliminou os conflitos entre o Estado e os produtores agrícolas. A partir do final da década de 1920, a liderança de Josef Stalin retomou uma estratégia de transformação acelerada da agricultura, acompanhada de coletivização forçada, requisições e repressão.
-
-### 2.2. Coletivização forçada e industrialização
-
-A partir de 1929, o governo intensificou a criação de fazendas coletivas, os *kolkhozes*, e fazendas estatais, os *sovkhozes*. O objetivo era submeter a produção agrícola a um controle mais direto do Estado e facilitar a obtenção de cereais para abastecer as cidades e sustentar a industrialização.
-
-A política também procurava transformar a estrutura social do campo. Camponeses classificados como *kulaks* foram atingidos por confisco de propriedades, deportações e outras medidas repressivas.
-
-A coletivização foi realizada de maneira coercitiva e desorganizou práticas agrícolas e redes sociais. A resistência, a retirada ou o abate de animais, as perturbações na produção e as mudanças administrativas contribuíram para agravar as dificuldades de abastecimento.
-
-O Estado estabelecia metas de entrega de cereais que podiam ignorar as condições reais de produção e as necessidades de sobrevivência das comunidades. Quando as autoridades insistiam em cumprir as cotas apesar da escassez, a população rural ficava com menos alimentos para consumo e para a próxima semeadura.
-
-### 2.3. Ucrânia e Cazaquistão: experiências distintas
-
-A fome atingiu regiões diferentes, mas não produziu consequências uniformes.
-
-Na Ucrânia, a crise coincidiu com a coletivização forçada, as requisições de cereais, as punições contra comunidades que não cumpriam as metas e a intensificação da repressão contra manifestações de nacionalismo ucraniano.
-
-No Cazaquistão, a transformação coercitiva da sociedade pastoril teve efeitos devastadores. A imposição da sedentarização e da coletivização sobre populações que dependiam de rebanhos e deslocamentos sazonais desorganizou a base material de sua sobrevivência. O confisco de animais e as políticas de aquisição estatal provocaram perdas particularmente graves.
-
-A distinção é importante. A fome ucraniana e a catástrofe cazaque ocorreram no contexto das políticas stalinistas de transformação econômica e social, mas suas populações, seus sistemas de produção e os mecanismos imediatos da crise não eram idênticos.
-
-## 3. Narrativa cronológica das três grandes crises
-
-### 3.1. Fome de 1921–1922
-
-A primeira grande fome soviética após a Revolução resultou de uma combinação de fatores: os efeitos da Primeira Guerra Mundial, a Guerra Civil, a desorganização agrícola, as requisições de alimentos, as dificuldades de transporte e uma seca severa em importantes regiões produtoras.
-
-A crise atingiu especialmente a região do Volga, os Urais e outras áreas da Rússia soviética. Partes da Ucrânia também foram afetadas.
-
-A insuficiência de alimentos provocou mortes em massa, deslocamentos populacionais e epidemias. As estimativas de mortalidade variam conforme a delimitação geográfica e o método utilizado, mas a fome é geralmente descrita como uma catástrofe de vários milhões de vítimas.
-
-A resposta governamental foi contraditória. O Estado procurou manter o controle político e econômico, enquanto a dimensão da crise levou à aceitação de assistência internacional. A American Relief Administration, entre outras organizações, participou das operações de socorro.
-
-A fome de 1921–1922 não deve ser confundida com o Holodomor. Ela ocorreu em outro contexto político e econômico e teve uma relação particularmente importante com a guerra, a desorganização produtiva e a seca.
-
-### 3.2. 1928–1930: coletivização e requisições
-
-A partir de 1928, a liderança soviética intensificou a industrialização e ampliou o controle sobre o abastecimento de cereais.
-
-Em 1929, a coletivização forçada avançou rapidamente. A campanha de *dekulakização* atingiu camponeses classificados como adversários da transformação rural. Muitas famílias foram deportadas, perderam propriedades ou foram submetidas a restrições.
-
-No Cazaquistão, as políticas de sedentarização e coletivização atingiram uma sociedade fortemente dependente da criação de animais. O confisco e a perda de rebanhos comprometeram os meios de subsistência e reduziram a capacidade de enfrentar períodos de escassez.
-
-Essas transformações prepararam o terreno para a catástrofe de 1931–1933. A crise não foi simplesmente consequência de uma colheita ruim: ela se desenvolveu em uma sociedade cuja produção e circulação de alimentos haviam sido profundamente alteradas por políticas estatais.
-
-### 3.3. 1931–1932: agravamento da crise
-
-As colheitas e os rendimentos agrícolas foram afetados por problemas produtivos, condições ambientais, desorganização e políticas coercitivas. Em determinadas regiões, a seca agravou as dificuldades.
-
-Apesar da deterioração do abastecimento, as metas de aquisição de cereais continuaram a exercer pressão sobre as comunidades rurais. As autoridades realizaram buscas e confiscaram alimentos em situações nas quais famílias já enfrentavam escassez.
-
-Em 7 de agosto de 1932, foi promulgado o decreto conhecido popularmente como “Lei das Cinco Espigas”. A norma estabeleceu punições extremamente severas para o furto de propriedade socialista, incluindo produtos de fazendas coletivas.
-
-Na prática, a legislação podia atingir pessoas que retiravam pequenas quantidades de produtos agrícolas para alimentar a própria família. A aplicação variou, mas o decreto tornou mais arriscado obter alimentos fora dos canais controlados pelo Estado.
-
-A crise passou a combinar escassez material com um ambiente jurídico e administrativo que limitava as possibilidades de sobrevivência dos camponeses.
-
-### 3.4. Novembro–dezembro de 1932: medidas punitivas
-
-Em regiões da Ucrânia e do norte do Cáucaso, as autoridades utilizaram listas negras contra localidades que não cumpriam as metas de aquisição de cereais.
-
-As sanções podiam incluir restrições à entrega de mercadorias, confisco de produtos, intensificação de buscas e outras medidas destinadas a forçar o cumprimento das metas.
-
-No Kuban, território da República Socialista Federativa Soviética da Rússia com importante população de origem ucraniana, a repressão econômica também se relacionou à reversão de políticas de ucranização e à perseguição de manifestações consideradas nacionalistas.
-
-Essas medidas demonstram que a fome se desenvolveu em um ambiente de coerção deliberada. Entretanto, a análise de cada política deve distinguir seu objetivo declarado, sua aplicação concreta e as consequências previsíveis para as populações atingidas.
-
-### 3.5. Janeiro de 1933: restrições à fuga dos famintos
-
-Em 22 de janeiro de 1933, uma diretiva assinada por Josef Stalin e Viacheslav Molotov determinou medidas para impedir a saída em massa de camponeses da Ucrânia e do norte do Cáucaso em busca de alimentos.
-
-O documento atribuía a migração a supostas ações de inimigos do poder soviético e ordenava que as autoridades impedissem a saída de camponeses dessas regiões. Também determinava a detenção de pessoas que haviam alcançado outras regiões soviéticas e seu retorno aos locais de residência, após a identificação dos indivíduos classificados como contrarrevolucionários.
-
-A diretiva é uma das evidências centrais para a análise da responsabilidade estatal. Ela demonstra que a liderança conhecia a fuga de camponeses em busca de pão e escolheu restringir esse movimento, tratando-o como problema político e de segurança.
-
-A ordem não prova, isoladamente, todas as hipóteses sobre a intenção final dos dirigentes. Contudo, constitui evidência direta de que, em meio à fome, o Estado adotou medidas que dificultavam a fuga das populações afetadas.
-
-**Documento:** Diretiva do Comitê Central do Partido Comunista e do Conselho de Comissários do Povo da URSS, 22 de janeiro de 1933.
-
-Transcrição:
-https://istmat.org/node/38629
-
-### 3.6. 1933: mortalidade máxima
-
-Em 1933, a fome atingiu seu ponto mais devastador em diversas regiões.
-
-Na Ucrânia, a maior parte das mortes excedentes registradas para a crise de 1932–1934 concentrou-se em 1933. A população rural foi especialmente afetada.
-
-No Cazaquistão, a perda de rebanhos, a sedentarização forçada, a desorganização econômica e a fome provocaram mortes em massa e deslocamentos para regiões vizinhas e para a China. A crise transformou profundamente a sociedade cazaque e reduziu de maneira duradoura a participação dos cazaques na população da própria república.
-
-A mortalidade também foi elevada em outras regiões soviéticas, incluindo partes da Rússia e do norte do Cáucaso. As experiências regionais foram desiguais, tanto em números absolutos quanto em proporção da população.
-
-### 3.7. 1934: consequências demográficas
-
-Embora a fase mais intensa da fome tenha ocorrido em 1933, os estudos demográficos identificam perdas associadas à crise também em 1934.
-
-A reconstrução populacional para a Ucrânia estima aproximadamente 3,9 milhões de mortes excedentes entre 1932 e 1934 e cerca de 600 mil nascimentos perdidos. A estimativa total de perdas demográficas chega a aproximadamente 4,5 milhões quando as duas categorias são combinadas.
-
-É fundamental não descrever os 4,5 milhões como se fossem exclusivamente pessoas mortas diretamente pela fome. O indicador de nascimentos perdidos mede uma consequência demográfica indireta.
-
-### 3.8. 1946–1947: fome no pós-guerra
-
-A fome de 1946–1947 ocorreu em uma União Soviética profundamente afetada pela Segunda Guerra Mundial.
-
-A destruição de infraestrutura, as perdas agrícolas, a falta de mão de obra, as dificuldades de abastecimento e uma seca em 1946 reduziram a disponibilidade de alimentos em várias regiões.
-
-A seca foi um fator real e importante, mas não explica integralmente a dimensão da catástrofe. As decisões do Estado sobre requisições, reservas, distribuição e prioridades econômicas influenciaram quem teve acesso aos alimentos disponíveis.
-
-O historiador Michael Ellman, utilizando documentação de arquivo, estimou entre 1 milhão e 1,5 milhão de mortes excedentes. Sua análise argumenta que os estoques estatais parecem ter sido suficientes para alimentar as pessoas que morreram de fome, caso as prioridades governamentais tivessem sido diferentes.
-
-Essa conclusão é uma interpretação econômica baseada em dados de disponibilidade e distribuição. Deve ser distinguida de uma prova de que cada morte tenha sido individualmente planejada.
-
-**Referência:** Michael Ellman, “The 1947 Soviet famine and the entitlement approach to famines”, *Cambridge Journal of Economics*, 2000.
-
-https://academic.oup.com/cje/article-abstract/24/5/603/1679977
-
-## 4. Ucrânia: Holodomor, repressão e debate sobre genocídio
-
-### 4.1. O significado de Holodomor
-
-A palavra ucraniana *Holodomor* é utilizada para designar a fome catastrófica de 1932–1933 na Ucrânia soviética, frequentemente traduzida como “morte pela fome”.
-
-O termo também está associado à memória nacional ucraniana e à interpretação da catástrofe como genocídio.
-
-A fome ocorreu em um contexto de coletivização forçada, requisições de cereais, confisco de alimentos, punições contra localidades que não cumpriam as metas e repressão contra manifestações de nacionalismo ucraniano.
-
-Essas políticas produziram condições nas quais a população rural perdeu parte importante de seus meios de sobrevivência, enquanto a possibilidade de procurar alimentos em outras regiões foi restringida.
-
-### 4.2. O que os documentos demonstram?
-
-Entre os documentos centrais estão:
-
-* A legislação de 7 de agosto de 1932 sobre a proteção da propriedade socialista.
-* As decisões sobre metas de aquisição de cereais e sanções contra localidades.
-* A diretiva de 22 de janeiro de 1933 que restringiu a saída de camponeses da Ucrânia e do norte do Cáucaso.
-* A documentação sobre confisco de alimentos, relatórios de mortalidade e pedidos de assistência.
-* As decisões de dezembro de 1932 que relacionaram o problema agrícola à questão nacional ucraniana e à política linguística em áreas do norte do Cáucaso.
-
-Esses documentos demonstram que a liderança soviética adotou medidas coercitivas durante uma crise conhecida pelas autoridades. A documentação permite estudar o conhecimento governamental da situação, as prioridades políticas e os efeitos das decisões.
-
-### 4.3. O problema da intencionalidade
-
-A questão mais debatida não é se houve uma fome em massa ou se as políticas soviéticas contribuíram decisivamente para ela. Esses pontos são amplamente documentados.
-
-O debate se concentra, entre outros aspectos, em determinar se Stalin e sua liderança pretendiam provocar a morte de milhões de pessoas como objetivo específico ou se a fome resultou de políticas coercitivas e de decisões que, embora conhecidas por seu potencial destrutivo, tinham outros objetivos políticos e econômicos.
-
-Uma análise robusta precisa considerar:
-
-* A manutenção de requisições em meio à escassez.
-* O confisco de alimentos necessários à sobrevivência.
-* As restrições à circulação de camponeses famintos.
-* As punições impostas a comunidades e regiões.
-* A repressão contra a identidade nacional ucraniana.
-* A distribuição desigual dos efeitos da fome entre as regiões soviéticas.
-* As decisões tomadas quando a escala da mortalidade já era conhecida.
-
-A intenção genocida não é demonstrada simplesmente pela existência de mortes em massa. No direito internacional, genocídio exige a intenção específica de destruir, total ou parcialmente, um grupo nacional, étnico, racial ou religioso enquanto tal.
-
-Por outro lado, a ausência de uma ordem escrita que diga literalmente “matar este grupo pela fome” não encerra o debate: a intenção histórica pode ser avaliada por meio de documentos, decisões, padrões de atuação e circunstâncias.
-
-### 4.4. Reconhecimento político e conclusão histórica
-
-Diversos países e instituições reconheceram o Holodomor como genocídio. Outros governos e estudiosos adotam qualificações diferentes, enfatizando o caráter estatal da fome, a escala da repressão e as dificuldades de demonstrar juridicamente a intenção específica de destruir o grupo nacional ucraniano.
-
-O reconhecimento político, a interpretação historiográfica e a qualificação jurídica são categorias relacionadas, mas não idênticas.
-
-Uma conclusão academicamente responsável pode reconhecer que a fome foi agravada por políticas estatais coercitivas, que a liderança soviética adotou medidas que dificultaram a sobrevivência dos camponeses e que a questão da intenção genocida permanece objeto de debate. Isso não exige minimizar a catástrofe nem transformar todas as interpretações em equivalentes.
-
-## 5. Cazaquistão: Asharshylyq e a destruição da sociedade pastoril
-
-### 5.1. Uma crise distinta da ucraniana
-
-A fome no Cazaquistão, ocorrida principalmente entre 1930 e 1933, é frequentemente denominada *Asharshylyq* na memória cazaque.
-
-Antes da catástrofe, uma parte substancial da população cazaque dependia da criação de animais e de deslocamentos sazonais entre pastagens. Os rebanhos eram essenciais para a alimentação, o transporte, o vestuário e a organização econômica das comunidades.
-
-A política soviética procurou transformar essa sociedade por meio da coletivização, da sedentarização e do controle estatal da produção.
-
-### 5.2. Confisco de rebanhos e sedentarização
-
-O confisco de animais e a imposição de novas formas de organização econômica desestruturaram os meios de subsistência de muitas famílias.
-
-Ao contrário de regiões nas quais os cereais constituíam a base dominante da alimentação e da produção, a economia pastoril cazaque dependia de um sistema de criação e circulação de rebanhos. A ruptura desse sistema tornou a população especialmente vulnerável.
-
-A seca de 1931 agravou a situação, mas a catástrofe não pode ser explicada apenas por condições climáticas. A transformação coercitiva da sociedade pastoril e a perda de animais foram elementos centrais.
-
-### 5.3. Mortes, deslocamentos e transformação social
-
-Sarah Cameron estima que mais de 1,5 milhão de pessoas morreram na fome cazaque de 1930–1933, aproximadamente um quarto da população da república.
-
-A mortalidade entre os cazaques foi proporcionalmente ainda mais elevada: estimativas citadas pela historiadora indicam que mais de um terço da população cazaque morreu.
-
-Milhões de animais foram perdidos, e muitas famílias fugiram para outras regiões soviéticas ou atravessaram fronteiras internacionais, especialmente em direção à China.
-
-A fuga foi uma estratégia de sobrevivência, mas implicou separação familiar, perda de vínculos territoriais e dificuldades de retorno.
-
-### 5.4. Consequências para a identidade cazaque
-
-A fome alterou a composição demográfica e a organização econômica do Cazaquistão. A perda de rebanhos e a sedentarização forçada reduziram drasticamente a possibilidade de manter os modos de vida pastoris tradicionais.
-
-A crise contribuiu para a transformação da sociedade cazaque e para a reorganização territorial da república soviética.
-
-A história do Cazaquistão demonstra que as políticas de modernização soviética podiam produzir resultados devastadores quando aplicadas coercitivamente a sociedades cujas estruturas econômicas eram diferentes das pressupostas pelos planejadores.
-
-## 6. Responsabilidade estatal e distribuição de alimentos
-
-### 6.1. Causas naturais e decisões humanas
-
-Secas e condições climáticas adversas tiveram importância em diferentes fomes soviéticas. Negar esse fator seria incorreto.
-
-Entretanto, a presença de uma seca não explica automaticamente a dimensão das mortes. O impacto de uma crise agrícola depende da capacidade de armazenamento, dos mecanismos de distribuição, da possibilidade de deslocamento, das prioridades governamentais e da assistência às populações vulneráveis.
-
-Uma crise de produção pode transformar-se em catástrofe humanitária quando as instituições impedem que as pessoas obtenham alimentos, retiram seus meios de subsistência ou priorizam outras metas diante da escassez.
-
-### 6.2. Requisições e exportações
-
-Durante a coletivização, o governo procurou obter cereais para abastecer as cidades, sustentar o sistema de distribuição e adquirir recursos para a industrialização.
-
-A continuidade de requisições durante a fome contribuiu para reduzir a disponibilidade de alimentos nas comunidades rurais.
-
-As exportações de cereais também fazem parte do debate historiográfico. No entanto, é necessário distinguir contratos, exportações efetivamente realizadas, reservas estatais, importações, perdas de produção e necessidades de abastecimento.
-
-Não é rigoroso afirmar, sem qualificação, que todo o cereal exportado durante a crise poderia ter sido distribuído imediatamente a todas as pessoas famintas. Mas tampouco é correto ignorar as escolhas de política econômica e a manutenção de objetivos de aquisição quando a mortalidade já era elevada.
-
-A avaliação precisa ser feita por período, volume, localização e finalidade das reservas.
-
-### 6.3. Restrições à circulação
-
-As restrições impostas em janeiro de 1933 são especialmente relevantes porque mostram que o governo procurou impedir a fuga de camponeses famintos da Ucrânia e do norte do Cáucaso.
-
-Ao tratar a migração por alimentos como uma ameaça política, as autoridades limitaram uma das alternativas de sobrevivência disponíveis à população.
-
-O documento fornece evidência direta de uma decisão estatal concreta. Sua interpretação deve permanecer ligada ao texto e ao contexto, sem atribuir-lhe informações que ele não contém.
-
-### 6.4. Responsabilidade dos dirigentes
-
-A responsabilidade histórica envolve os dirigentes que formularam as políticas, os órgãos que as executaram e as autoridades locais que aplicaram requisições, confisco e punições.
-
-Stalin ocupava posição central na liderança política e participou diretamente de decisões importantes. Viacheslav Molotov e Lazar Kaganovich tiveram funções relevantes na supervisão das campanhas de aquisição de cereais. Autoridades regionais e órgãos de segurança também desempenharam papéis concretos.
-
-A distribuição da responsabilidade não exige afirmar que todos os agentes possuíam o mesmo conhecimento ou a mesma intenção. Exige reconstruir as decisões, identificar os responsáveis e avaliar o que cada um sabia e podia fazer.
-
-## 7. Debate historiográfico: três abordagens principais
-
-### 7.1. Abordagem centrada na intenção genocida e na repressão nacional
-
-Autores como Robert Conquest e Anne Applebaum enfatizam a violência da coletivização, a repressão contra o campesinato e as decisões que agravaram a fome ucraniana.
-
-Applebaum, em *Red Famine*, dedica atenção especial à relação entre a fome, as políticas de Stalin e a repressão contra a identidade nacional ucraniana.
-
-Essa abordagem considera que as medidas adotadas durante a crise, incluindo a restrição da fuga dos famintos e a repressão política, sustentam a interpretação do Holodomor como genocídio.
-
-Seu ponto forte é destacar a agência dos dirigentes e os efeitos das decisões estatais. O debate concentra-se em como interpretar a intenção específica e o peso da dimensão nacional em relação aos objetivos econômicos e políticos mais amplos do regime.
-
-### 7.2. Abordagem econômico-demográfica e crítica das políticas agrícolas
-
-R. W. Davies e Stephen G. Wheatcroft, em *The Years of Hunger*, analisam a produção agrícola, as requisições, os estoques, a política de aquisição de cereais e os efeitos da coletivização.
-
-Essa abordagem dá grande importância às condições materiais da crise e à interação entre decisões governamentais, dificuldades produtivas e condições ambientais.
-
-Ela não exige absolver o Estado. Procura explicar como a crise se desenvolveu, quais medidas agravaram a escassez e até que ponto a evidência permite afirmar uma intenção de provocar a fome como objetivo específico.
-
-Os estudos de Michael Ellman sobre a fome de 1946–1947 também enfatizam a relação entre disponibilidade de alimentos, prioridades governamentais e mortalidade.
-
-### 7.3. Abordagem regional, comparativa e transnacional
-
-Historiadores como Sarah Cameron e Hiroaki Kuromiya destacam a necessidade de comparar as diferentes regiões soviéticas sem apagar suas particularidades.
-
-Cameron mostra que a fome cazaque não pode ser compreendida apenas como uma versão da fome ucraniana: a destruição dos rebanhos e a imposição da sedentarização tiveram consequências específicas para uma sociedade pastoril.
-
-Kuromiya, ao discutir a fome de 1932–1933, examina as questões da intencionalidade e da dimensão nacional, destacando dificuldades de interpretação da documentação.
-
-Essa abordagem permite comparar as experiências ucraniana, cazaque, russa e de outras regiões, sem pressupor que todas tenham sido atingidas pelos mesmos mecanismos ou na mesma intensidade.
-
-### 7.4. Síntese historiográfica
-
-Há ampla concordância de que as políticas estatais coercitivas tiveram papel decisivo na fome de 1931–1934 e de que as decisões do governo agravaram as condições de sobrevivência de milhões de pessoas.
-
-Também existe documentação de que as autoridades conheciam a crise e adotaram medidas restritivas, inclusive contra a fuga de camponeses famintos.
-
-O debate continua sobre a intenção específica de genocídio no caso ucraniano, a relação entre os objetivos de industrialização e a repressão nacional, a comparação entre as diferentes regiões e a interpretação jurídica do acontecimento.
-
-Uma análise acadêmica não deve substituir a investigação por um slogan. Deve reconhecer as evidências de responsabilidade estatal, explicar os limites dos dados e explicitar quais conclusões são amplamente aceitas e quais permanecem disputadas.
-
-## 8. Conclusão: fome, coerção e responsabilidade histórica
-
-As grandes fomes soviéticas de 1921–1922, 1931–1934 e 1946–1947 tiveram causas e contextos diferentes. Em todas elas, porém, as decisões políticas influenciaram a capacidade das populações de enfrentar a escassez.
-
-A fome de 1921–1922 ocorreu após guerra, desorganização econômica e seca, levando o governo a aceitar assistência internacional. A catástrofe de 1931–1934 esteve profundamente ligada à coletivização forçada, às requisições, ao confisco de alimentos, às restrições de circulação e à transformação coercitiva da agricultura e da sociedade pastoril. A fome de 1946–1947 foi agravada pela destruição da guerra, pela seca e por prioridades de distribuição que limitaram a resposta à crise.
-
-Na Ucrânia, a reconstrução demográfica estima cerca de 3,9 milhões de mortes excedentes entre 1932 e 1934, além de aproximadamente 600 mil nascimentos perdidos. No Cazaquistão, estudos de Sarah Cameron apontam mais de 1,5 milhão de mortes durante a fome de 1930–1933.
-
-Esses números são estimativas baseadas em métodos e categorias específicas. Não devem ser somados sem considerar períodos, fronteiras territoriais, possíveis sobreposições e diferenças entre mortes diretas e perdas demográficas indiretas.
-
-A conclusão central é que a fome não pode ser compreendida apenas como fenômeno natural. A escassez material interagiu com decisões estatais que determinaram quem podia conservar alimentos, deslocar-se, receber assistência e sobreviver.
-
-Estudar esses episódios exige reconhecer a responsabilidade política, preservar a precisão estatística e distinguir a existência documentada de uma catástrofe das interpretações sobre sua intenção específica. Essa é a base para uma compreensão histórica rigorosa das fomes soviéticas.`;
+export const CHAPTER_12_RAW_MARKDOWN = "# FOMES E CATÁSTROFES HUMANITÁRIAS DE ESTADO\r\n\r\n## Fomes soviéticas de 1921–1922, 1931–1934 e 1946–1947\r\n\r\n**Cátedra de História Russa e Soviética · Capítulo Histórico Acadêmico nº 12**\r\n\r\n---\r\n\r\n## INTRODUÇÃO\r\n\r\nAs grandes fomes ocorridas na União Soviética durante a primeira metade do século XX constituem alguns dos episódios mais graves da história social, econômica e política do país. Seus efeitos ultrapassaram a mortalidade imediata: provocaram deslocamentos populacionais, desestruturação de comunidades rurais, transformações demográficas duradouras e profundas consequências para a organização econômica e cultural de diferentes povos soviéticos.\r\n\r\nEntre as principais crises destacam-se a fome de 1921–1922, que atingiu extensas regiões da Rússia soviética e partes da Ucrânia; a catástrofe de 1931–1934, especialmente devastadora na Ucrânia, no Cazaquistão e em outras regiões agrícolas; e a fome de 1946–1947, ocorrida durante a reconstrução posterior à Segunda Guerra Mundial.\r\n\r\nEmbora compartilhem a característica de terem ocorrido em um Estado que exercia amplo controle sobre a economia e o abastecimento, essas crises não podem ser interpretadas como um único acontecimento. Suas causas imediatas, circunstâncias políticas, mecanismos de agravamento e consequências foram diferentes.\r\n\r\nA fome de 1921–1922 esteve profundamente relacionada aos efeitos da Primeira Guerra Mundial, da Revolução Russa, da Guerra Civil, das requisições compulsórias e de uma grave seca. A crise de 1931–1934 desenvolveu-se em meio à coletivização forçada, à transformação acelerada da agricultura, às requisições de cereais, à repressão contra o campesinato e à destruição de estruturas econômicas tradicionais. Já a fome de 1946–1947 ocorreu em um país devastado pela guerra, com dificuldades produtivas, escassez de mão de obra e decisões governamentais que influenciaram a distribuição dos alimentos disponíveis.\r\n\r\nA análise histórica precisa considerar que a fome não é determinada exclusivamente pela quantidade de alimentos produzidos. A disponibilidade de alimentos, o acesso das famílias aos recursos, as possibilidades de deslocamento, os mecanismos de distribuição e as decisões políticas podem determinar quem consegue sobreviver durante uma crise.\r\n\r\nNesse sentido, as grandes fomes soviéticas revelam não apenas problemas agrícolas e ambientais, mas também a relação entre poder estatal, planejamento econômico, coerção política e vulnerabilidade social.\r\n\r\nPara compreender esses acontecimentos, é necessário distinguir quatro dimensões:\r\n\r\n1. **Causas materiais:** condições climáticas, colheitas, epidemias, perdas de rebanhos, guerras e destruição econômica.\r\n2. **Decisões políticas:** requisições, metas de entrega, confisco de alimentos, restrições de circulação e prioridades de distribuição.\r\n3. **Consequências demográficas:** mortes excedentes, deslocamentos populacionais e nascimentos que deixaram de ocorrer.\r\n4. **Intencionalidade:** o que os dirigentes sabiam, quais medidas decidiram manter e se existiu uma intenção específica de destruir determinado grupo nacional ou étnico.\r\n\r\nEssa separação permite reconhecer a responsabilidade do Estado sem reduzir acontecimentos complexos a explicações monocausais.\r\n\r\n---\r\n\r\n# 1. CONTEXTO HISTÓRICO: AGRICULTURA, PODER E TRANSFORMAÇÃO SOCIAL\r\n\r\n## 1.1 A sociedade rural soviética\r\n\r\nNas primeiras décadas do século XX, a população do território que posteriormente formaria a União Soviética era predominantemente rural. A agricultura constituía a principal fonte de subsistência de milhões de famílias e desempenhava papel fundamental no abastecimento das cidades, no funcionamento da economia e na obtenção de recursos para o Estado.\r\n\r\nA relação entre governo e campesinato tornou-se especialmente conflituosa após a Revolução de 1917.\r\n\r\nDurante a Guerra Civil Russa (1918–1921), o governo bolchevique implantou o chamado comunismo de guerra, sistema caracterizado pela centralização econômica, nacionalizações, controle da distribuição e requisições compulsórias de produtos agrícolas.\r\n\r\nAs requisições, conhecidas como *prodrazvyorstka*, permitiam que o Estado retirasse parte da produção camponesa para abastecer o Exército Vermelho, as cidades e os órgãos governamentais.\r\n\r\nEmbora justificadas pela necessidade de sustentar o esforço militar e manter o funcionamento do Estado revolucionário, essas medidas provocaram resistência no campo e contribuíram para deteriorar as relações entre o governo e os produtores rurais.\r\n\r\nA retirada compulsória de alimentos reduzia os incentivos à produção e podia comprometer a capacidade de sobrevivência das famílias, especialmente em regiões onde a agricultura já enfrentava dificuldades.\r\n\r\nEm 1921, diante da crise econômica, da resistência camponesa e do agravamento da situação alimentar, o governo substituiu gradualmente o sistema de requisições por um imposto em espécie, no contexto da Nova Política Econômica (NEP).\r\n\r\nA mudança representou uma tentativa de recuperar a produção e reduzir os conflitos com o campesinato. Entretanto, não eliminou a desconfiança entre o Estado e os produtores agrícolas.\r\n\r\nA partir do final da década de 1920, a liderança de Josef Stalin retomou uma estratégia de transformação acelerada da agricultura, marcada pela coletivização compulsória e pelo aumento do controle estatal sobre a produção.\r\n\r\n## 1.2 Coletivização forçada e industrialização\r\n\r\nA partir de 1929, o governo soviético intensificou a coletivização da agricultura.\r\n\r\nO processo consistia na reorganização das propriedades rurais em unidades coletivas, principalmente os *kolkhozes*, fazendas coletivas, e os *sovkhozes*, fazendas estatais.\r\n\r\nA coletivização procurava concentrar a produção agrícola sob controle governamental, facilitar a obtenção de cereais e permitir que o Estado direcionasse recursos para a industrialização.\r\n\r\nA política estava relacionada ao Primeiro Plano Quinquenal, iniciado em 1928, que estabeleceu metas ambiciosas para a transformação industrial e econômica da União Soviética.\r\n\r\nO governo considerava necessário aumentar a capacidade industrial do país em um período relativamente curto. Para isso, buscava controlar a produção agrícola, garantir o abastecimento urbano e obter recursos para financiar investimentos.\r\n\r\nEntretanto, a transformação foi conduzida de maneira extremamente coercitiva.\r\n\r\nCamponeses classificados como *kulaks*, categoria política utilizada para identificar supostos camponeses ricos ou adversários da coletivização, foram atingidos por confiscos, deportações, prisões e outras medidas repressivas.\r\n\r\nA classificação nem sempre correspondia a uma situação econômica objetiva. Em diversas circunstâncias, famílias com propriedades modestas também foram atingidas por serem consideradas resistentes às políticas governamentais.\r\n\r\nA coletivização provocou desorganização produtiva, resistência camponesa, abandono de propriedades e abate de animais. As mudanças administrativas também comprometeram práticas agrícolas que dependiam de conhecimentos locais e de relações comunitárias.\r\n\r\nAs metas de aquisição de cereais estabelecidas pelo governo podiam desconsiderar as condições reais da produção e as necessidades de sobrevivência das comunidades.\r\n\r\nQuando as autoridades insistiam em cumprir as cotas apesar da escassez, a população rural ficava com menos alimentos para consumo e para a próxima semeadura.\r\n\r\nR. W. Davies e Stephen G. Wheatcroft demonstram que a crise agrícola precisa ser compreendida pela interação entre dificuldades produtivas, decisões governamentais, requisições e condições ambientais. Essa interpretação não elimina a responsabilidade estatal, mas procura reconstruir os mecanismos concretos que produziram a catástrofe (DAVIES; WHEATCROFT, 2004).\r\n\r\n## 1.3 A diversidade das sociedades rurais soviéticas\r\n\r\nUm aspecto fundamental para compreender as fomes soviéticas é reconhecer que a União Soviética reunia populações com estruturas econômicas, culturais e ambientais bastante diferentes.\r\n\r\nNa Ucrânia, a agricultura cerealista tinha grande importância. A produção de trigo e outros cereais constituía uma parte fundamental da economia rural e do abastecimento soviético.\r\n\r\nNo Cazaquistão, por outro lado, uma parcela expressiva da população dependia da criação de animais e de deslocamentos sazonais entre áreas de pastagem.\r\n\r\nEssas diferenças são importantes porque as políticas de coletivização e controle econômico não produziram os mesmos efeitos em todas as regiões.\r\n\r\nNa Ucrânia, as requisições de cereais e os confiscos comprometeram diretamente a disponibilidade de alimentos das comunidades agrícolas.\r\n\r\nNo Cazaquistão, a imposição de novas formas de organização econômica, a sedentarização compulsória e a perda dos rebanhos destruíram os fundamentos materiais de uma sociedade pastoril.\r\n\r\nSarah Cameron demonstra que a fome cazaque não pode ser compreendida simplesmente como uma repetição regional da experiência ucraniana. A crise resultou de um processo específico de transformação coercitiva da sociedade pastoril (CAMERON, 2018).\r\n\r\n---\r\n\r\n# 2. A FOME DE 1921–1922: GUERRA, SECA E DESORGANIZAÇÃO ECONÔMICA\r\n\r\n## 2.1 As origens da crise\r\n\r\nA fome de 1921–1922 foi a primeira grande catástrofe alimentar do período soviético após a Revolução de 1917.\r\n\r\nSuas origens estavam relacionadas a um conjunto de fatores acumulados durante anos de conflitos e desorganização econômica.\r\n\r\nA Primeira Guerra Mundial havia comprometido a produção e o transporte. A Revolução de 1917 e a Guerra Civil ampliaram a instabilidade política, interromperam redes comerciais e provocaram destruição em diversas regiões.\r\n\r\nO sistema de requisições compulsórias do comunismo de guerra agravou as tensões entre o governo e os produtores rurais.\r\n\r\nEm 1921, uma grave seca atingiu importantes áreas agrícolas, especialmente regiões do Volga e dos Urais. A redução das colheitas ocorreu em uma sociedade que já apresentava dificuldades de abastecimento e transporte.\r\n\r\nA combinação entre baixa produção, requisições, desorganização econômica e escassez de alimentos transformou a crise agrícola em uma catástrofe humanitária.\r\n\r\n## 2.2 Regiões atingidas e mortalidade\r\n\r\nA fome atingiu especialmente a região do Volga, os Urais e outras áreas da Rússia soviética. Partes da Ucrânia também foram afetadas.\r\n\r\nA insuficiência de alimentos provocou mortes em massa, deslocamentos populacionais e a disseminação de doenças.\r\n\r\nA desnutrição reduzia a resistência física das pessoas, tornando-as mais vulneráveis a epidemias e infecções. A falta de saneamento e as dificuldades de acesso à assistência médica ampliaram os efeitos da crise.\r\n\r\nAs estimativas de mortalidade variam conforme os limites geográficos adotados, o período analisado e os métodos de reconstrução demográfica.\r\n\r\nA fome é geralmente descrita como uma catástrofe de vários milhões de vítimas, embora os números não sejam inteiramente uniformes entre os estudos.\r\n\r\nÉ importante distinguir a mortalidade diretamente relacionada à fome daquela associada a doenças, epidemias e outras consequências da desnutrição.\r\n\r\n## 2.3 A assistência internacional\r\n\r\nA resposta governamental foi contraditória.\r\n\r\nInicialmente, as autoridades procuraram preservar o controle político e econômico em meio à crise. Entretanto, a dimensão da catástrofe tornou necessária a aceitação de assistência externa.\r\n\r\nA American Relief Administration (ARA), organização norte-americana de assistência humanitária, participou de operações de socorro, fornecendo alimentos e outros recursos às populações atingidas.\r\n\r\nOutras organizações e instituições internacionais também participaram dos esforços de assistência.\r\n\r\nA atuação humanitária estrangeira demonstrou que a crise havia ultrapassado a capacidade de resposta dos mecanismos internos de abastecimento.\r\n\r\nA aceitação da ajuda internacional representou uma mudança importante na postura do governo soviético, que precisou permitir a atuação de organizações estrangeiras em um território sob seu controle.\r\n\r\n## 2.4 A diferença entre a fome de 1921–1922 e o Holodomor\r\n\r\nA fome de 1921–1922 não deve ser confundida com o Holodomor de 1932–1933.\r\n\r\nEmbora ambas tenham ocorrido durante o período soviético e envolvido políticas econômicas coercitivas, suas circunstâncias foram diferentes.\r\n\r\nA crise de 1921–1922 esteve profundamente relacionada à guerra, à desorganização econômica, às requisições do comunismo de guerra e à seca.\r\n\r\nA catástrofe de 1931–1934 ocorreu durante a coletivização forçada e foi agravada por decisões governamentais relacionadas à aquisição de cereais, ao confisco de alimentos, à repressão e às restrições de circulação.\r\n\r\nA distinção cronológica e política é indispensável para evitar que acontecimentos diferentes sejam reunidos em uma única explicação histórica.\r\n\r\n---\r\n\r\n# 3. A FOME DE 1931–1934: COLETIVIZAÇÃO, REQUISIÇÕES E REPRESSÃO\r\n\r\n## 3.1 A transformação do campo soviético\r\n\r\nA fome de 1931–1934 foi a mais devastadora das grandes crises alimentares do período stalinista.\r\n\r\nEla atingiu diversas regiões da União Soviética, especialmente a Ucrânia, o Cazaquistão, o norte do Cáucaso e partes da Rússia.\r\n\r\nSuas causas estiveram relacionadas à transformação acelerada da agricultura, à coletivização compulsória, à desorganização produtiva, às requisições de cereais e às condições ambientais.\r\n\r\nO governo procurava obter grandes quantidades de produtos agrícolas para abastecer as cidades e sustentar o processo de industrialização.\r\n\r\nEntretanto, as metas de aquisição foram estabelecidas em um contexto de mudanças profundas na organização da produção rural.\r\n\r\nA resistência camponesa, a perda de animais, os conflitos em torno da coletivização e a desorganização das atividades agrícolas reduziram a capacidade de produção de diversas comunidades.\r\n\r\nA política de aquisição de cereais continuou a exercer pressão sobre regiões que já enfrentavam dificuldades de abastecimento.\r\n\r\nRobert Conquest destacou a dimensão repressiva da coletivização e suas consequências para o campesinato. Davies e Wheatcroft, por sua vez, aprofundaram a reconstrução das condições agrícolas e das decisões econômicas que contribuíram para a crise (CONQUEST, 1986; DAVIES; WHEATCROFT, 2004).\r\n\r\n## 3.2 O Cazaquistão e a destruição da economia pastoril\r\n\r\nNo Cazaquistão, a transformação da agricultura atingiu uma sociedade cuja organização econômica dependia amplamente da criação de animais.\r\n\r\nA política soviética procurou substituir formas tradicionais de mobilidade pastoril por uma organização mais sedentária e coletivizada.\r\n\r\nO processo envolveu confisco de animais, reorganização das propriedades, sedentarização compulsória e controle estatal sobre a produção.\r\n\r\nA perda dos rebanhos comprometeu não apenas a alimentação, mas também o transporte, o vestuário e a estrutura econômica das famílias.\r\n\r\nDiferentemente de regiões predominantemente agrícolas, nas quais a disponibilidade de cereais constituía o principal elemento de sobrevivência, a economia pastoril dependia de um conjunto integrado de atividades relacionadas à criação e à circulação de animais.\r\n\r\nA destruição desse sistema tornou a população especialmente vulnerável.\r\n\r\nA crise foi agravada por condições ambientais adversas, incluindo a seca de 1931, mas não pode ser explicada exclusivamente por fatores climáticos.\r\n\r\nSarah Cameron demonstra que a transformação coercitiva da sociedade pastoril foi central para compreender a dimensão da fome cazaque e seus efeitos sobre a formação da sociedade soviética no território (CAMERON, 2018).\r\n\r\n## 3.3 A intensificação das requisições e os confiscos\r\n\r\nEm 1931 e 1932, as dificuldades agrícolas se intensificaram em diversas regiões.\r\n\r\nAs colheitas e os rendimentos foram afetados por problemas produtivos, condições ambientais, desorganização e mudanças na organização econômica.\r\n\r\nApesar da deterioração do abastecimento, as metas de aquisição de cereais continuaram a exercer pressão sobre as comunidades rurais.\r\n\r\nAs autoridades realizaram buscas e confiscaram alimentos em situações nas quais famílias já enfrentavam escassez.\r\n\r\nO problema não se limitava à quantidade de cereais produzida. A política de aquisição determinava quanto da produção permaneceria nas comunidades e quanto seria transferido para os canais controlados pelo Estado.\r\n\r\nEm uma situação de escassez, a retirada de alimentos necessários à sobrevivência podia agravar rapidamente a mortalidade.\r\n\r\nA manutenção das metas de aquisição, mesmo diante de dificuldades conhecidas, constitui um dos elementos centrais para compreender a responsabilidade governamental.\r\n\r\n## 3.4 A legislação de 7 de agosto de 1932\r\n\r\nEm 7 de agosto de 1932, foi promulgado um decreto destinado a proteger a propriedade socialista.\r\n\r\nA norma ficou popularmente conhecida como Lei das Cinco Espigas, expressão associada à aplicação de punições extremamente severas por furtos de produtos agrícolas pertencentes às fazendas coletivas e ao Estado.\r\n\r\nA legislação previa penas muito rigorosas, incluindo longos períodos de prisão e, em determinadas circunstâncias, a pena de morte.\r\n\r\nNa prática, a aplicação da norma podia atingir pessoas que retiravam pequenas quantidades de produtos agrícolas para alimentar a própria família.\r\n\r\nIsso não significa que todas as condenações tenham envolvido pessoas famintas ou pequenos furtos. Entretanto, o decreto criou um ambiente jurídico no qual a obtenção de alimentos fora dos canais autorizados pelo Estado podia resultar em punições desproporcionais.\r\n\r\nA legislação deve ser compreendida no contexto de um regime que procurava proteger a propriedade estatal e garantir o cumprimento das metas de produção e aquisição.\r\n\r\nDurante a fome, a proteção da propriedade socialista podia entrar em conflito direto com as necessidades básicas de sobrevivência das populações rurais.\r\n\r\n## 3.5 As listas negras e as medidas punitivas\r\n\r\nNo final de 1932, as autoridades intensificaram medidas contra localidades que não cumpriam as metas de aquisição de cereais.\r\n\r\nNa Ucrânia e em outras regiões, foram utilizadas listas negras contra comunidades consideradas resistentes às determinações governamentais.\r\n\r\nAs sanções podiam incluir:\r\n\r\n* Restrições à comercialização de produtos.\r\n* Suspensão de fornecimentos e mercadorias.\r\n* Intensificação das buscas por alimentos.\r\n* Confisco de produtos agrícolas.\r\n* Reforço da vigilância e da repressão administrativa.\r\n\r\nEssas medidas tinham como objetivo declarado forçar o cumprimento das metas de aquisição e combater a resistência às políticas estatais.\r\n\r\nEntretanto, em localidades que já enfrentavam escassez, as sanções reduziam ainda mais as possibilidades de sobrevivência.\r\n\r\nNo Kuban, região do norte do Cáucaso pertencente à República Socialista Federativa Soviética da Rússia, a repressão econômica também esteve relacionada à perseguição de manifestações de nacionalismo ucraniano e à reversão de políticas de ucranização.\r\n\r\nAndrea Graziosi analisa o conflito entre o poder bolchevique e o campesinato como um processo amplo de transformação social e resistência, contribuindo para compreender a relação entre a política agrária e a violência estatal (GRAZIOSI, 1996).\r\n\r\n## 3.6 A diretiva de 22 de janeiro de 1933: restrições à fuga dos famintos\r\n\r\nUm dos documentos mais importantes para a análise da responsabilidade estatal durante a fome foi a diretiva de 22 de janeiro de 1933, assinada por Josef Stalin e Viacheslav Molotov.\r\n\r\nO documento determinava medidas para impedir a saída em massa de camponeses da Ucrânia e do norte do Cáucaso em busca de alimentos.\r\n\r\nA liderança soviética interpretava a migração de camponeses como resultado de supostas atividades de inimigos do poder soviético, incluindo agentes contrarrevolucionários e estrangeiros.\r\n\r\nA diretiva ordenava que as autoridades impedissem a saída de camponeses das regiões atingidas. Também previa a detenção de pessoas que haviam alcançado outras regiões soviéticas e seu retorno, após a identificação dos indivíduos considerados envolvidos em atividades contrarrevolucionárias.\r\n\r\nO documento demonstra que a liderança conhecia a fuga de camponeses em busca de alimentos e escolheu tratar esse movimento como um problema político e de segurança.\r\n\r\nA restrição da circulação teve consequências particularmente graves porque a migração constituía uma das alternativas de sobrevivência disponíveis às populações atingidas.\r\n\r\nA importância histórica da diretiva está em demonstrar uma decisão concreta do governo durante a fome. Ela não resolve isoladamente todas as questões relativas à intenção genocida, mas constitui evidência direta de que as autoridades adotaram medidas que dificultavam a fuga de populações famintas.\r\n\r\n**Documento histórico:** Diretiva do Comitê Central do Partido Comunista e do Conselho de Comissários do Povo da URSS, 22 de janeiro de 1933.\r\n\r\n## 3.7 O ano de 1933 e o aumento da mortalidade\r\n\r\nEm 1933, a fome atingiu seu ponto mais devastador em diversas regiões soviéticas.\r\n\r\nNa Ucrânia, a maior parte das mortes excedentes relacionadas à crise concentrou-se nesse ano.\r\n\r\nA população rural foi especialmente afetada, pois dependia diretamente da produção agrícola e estava mais exposta aos confiscos e às requisições.\r\n\r\nA desnutrição provocou o enfraquecimento físico, o aumento da vulnerabilidade a doenças e a desestruturação de comunidades inteiras.\r\n\r\nNo Cazaquistão, a perda dos rebanhos, a sedentarização compulsória e a desorganização econômica provocaram mortes em massa e deslocamentos para outras regiões soviéticas e para territórios vizinhos, especialmente a China.\r\n\r\nA mortalidade também foi elevada em partes da Rússia e do norte do Cáucaso.\r\n\r\nAs experiências regionais foram diferentes, tanto em números absolutos quanto na proporção da população atingida.\r\n\r\nHiroaki Kuromiya ressalta que a interpretação da fome de 1932–1933 exige examinar conjuntamente os fatores econômicos, políticos e nacionais, evitando explicações que desconsiderem a diversidade regional da crise (KUROMIYA, 2008).\r\n\r\n## 3.8 As consequências demográficas na Ucrânia\r\n\r\nEmbora a fase mais intensa da fome tenha ocorrido em 1933, as perdas demográficas associadas à crise também se estenderam a 1934.\r\n\r\nO estudo de Oleh Rudnytskyi, Nataliia Levchuk, Oleh Wolowyna, Pavlo Shevchuk e Alla Kovbasiuk reconstruiu as perdas demográficas da Ucrânia entre 1932 e 1934.\r\n\r\nOs pesquisadores estimaram aproximadamente:\r\n\r\n* **3,9 milhões de mortes excedentes.**\r\n* **600 mil nascimentos perdidos.**\r\n* **4,5 milhões de perdas demográficas totais.**\r\n\r\nA distinção entre as categorias é indispensável.\r\n\r\nAs mortes excedentes representam a diferença entre as mortes observadas e aquelas que seriam esperadas em condições demográficas normais.\r\n\r\nOs nascimentos perdidos representam crianças que deixaram de nascer em consequência das condições da crise, incluindo a mortalidade dos pais, a desnutrição e a desorganização familiar.\r\n\r\nPortanto, os 4,5 milhões não devem ser apresentados como se representassem exclusivamente pessoas mortas diretamente pela fome.\r\n\r\nA reconstrução demográfica constitui uma ferramenta fundamental para compreender a dimensão da catástrofe, mas seus indicadores precisam ser apresentados de acordo com as categorias utilizadas pelos pesquisadores (RUDNYTSKYI et al., 2015).\r\n\r\n---\r\n\r\n# 4. UCRÂNIA: HOLODOMOR, REPRESSÃO E DEBATE SOBRE GENOCÍDIO\r\n\r\n## 4.1 O significado histórico de Holodomor\r\n\r\nA palavra ucraniana *Holodomor* é utilizada para designar a fome catastrófica de 1932–1933 na Ucrânia soviética. O termo é frequentemente traduzido como morte pela fome.\r\n\r\nAlém de identificar o acontecimento histórico, a palavra adquiriu grande importância na memória nacional ucraniana, estando associada à interpretação da catástrofe como genocídio.\r\n\r\nA fome ocorreu em um contexto de coletivização forçada, requisições de cereais, confisco de alimentos, punições contra localidades que não cumpriam as metas e repressão contra manifestações de nacionalismo ucraniano.\r\n\r\nEssas políticas reduziram os meios de sobrevivência da população rural, enquanto as restrições à circulação dificultaram a procura de alimentos em outras regiões.\r\n\r\nRobert Conquest, em *The Harvest of Sorrow*, destacou a violência da coletivização e a relação entre a repressão estatal e a fome na Ucrânia (CONQUEST, 1986).\r\n\r\nAnne Applebaum, em *Red Famine*, aprofundou a relação entre a fome, as políticas de Stalin e a repressão contra a identidade nacional ucraniana (APPLEBAUM, 2017).\r\n\r\n## 4.2 O que os documentos demonstram?\r\n\r\nA investigação histórica sobre o Holodomor utiliza diferentes conjuntos documentais.\r\n\r\nEntre os mais importantes estão:\r\n\r\n1. A legislação de 7 de agosto de 1932 sobre a proteção da propriedade socialista.\r\n2. As decisões relativas às metas de aquisição de cereais.\r\n3. Os documentos sobre sanções contra localidades que não cumpriam as cotas.\r\n4. A diretiva de 22 de janeiro de 1933 que restringiu a saída de camponeses da Ucrânia e do norte do Cáucaso.\r\n5. Relatórios administrativos sobre mortalidade e abastecimento.\r\n6. Documentos relativos a confisco de alimentos e pedidos de assistência.\r\n7. Decisões de dezembro de 1932 relacionadas à questão nacional ucraniana e à política de ucranização em determinadas regiões.\r\n\r\nEsses documentos permitem reconstruir o conhecimento das autoridades sobre a situação alimentar, as prioridades políticas e os mecanismos de execução das medidas governamentais.\r\n\r\nA documentação também demonstra que a fome não foi simplesmente um fenômeno natural diante do qual o governo permaneceu passivo.\r\n\r\nAs autoridades mantiveram políticas coercitivas, aplicaram punições econômicas e restringiram movimentos populacionais em meio à crise.\r\n\r\n## 4.3 Responsabilidade estatal e intencionalidade genocida\r\n\r\nUma das questões mais debatidas na historiografia é a interpretação da intencionalidade das políticas soviéticas durante a fome ucraniana.\r\n\r\nHá ampla documentação de que as políticas governamentais contribuíram para agravar a crise e de que a liderança soviética adotou medidas que dificultaram a sobrevivência de milhões de pessoas.\r\n\r\nEntretanto, a discussão sobre genocídio envolve uma questão adicional: determinar se houve intenção específica de destruir, total ou parcialmente, o grupo nacional ucraniano enquanto tal.\r\n\r\nO conceito jurídico de genocídio, estabelecido na Convenção das Nações Unidas de 1948, exige a intenção específica de destruir um grupo nacional, étnico, racial ou religioso, total ou parcialmente.\r\n\r\nA existência de mortes em massa, isoladamente, não demonstra automaticamente essa intenção específica.\r\n\r\nPor outro lado, a ausência de uma ordem escrita que declare literalmente a intenção de matar determinado grupo também não encerra a investigação histórica. A intenção pode ser examinada por meio de documentos, decisões, padrões de atuação, conhecimento dos dirigentes e circunstâncias políticas.\r\n\r\nO debate historiográfico concentra-se em diferentes interpretações:\r\n\r\n* A relação entre a coletivização e a repressão contra a população ucraniana.\r\n* O peso da dimensão nacional na política de Stalin.\r\n* A manutenção das requisições durante a fome.\r\n* O confisco de alimentos necessários à sobrevivência.\r\n* As restrições à circulação dos camponeses famintos.\r\n* A perseguição a manifestações de identidade nacional.\r\n* O conhecimento das autoridades sobre a mortalidade.\r\n* A possibilidade de distinguir objetivos econômicos, políticos e nacionais.\r\n\r\nA responsabilidade estatal pode ser reconhecida independentemente de uma conclusão definitiva sobre a qualificação jurídica do genocídio.\r\n\r\n## 4.4 As principais interpretações historiográficas\r\n\r\nA interpretação do Holodomor como genocídio é defendida por historiadores que destacam a combinação entre a fome, as medidas repressivas e a política de Stalin contra a identidade nacional ucraniana.\r\n\r\nAnne Applebaum enfatiza a relação entre as políticas econômicas e a repressão nacional, apresentando o Holodomor como parte de uma ofensiva do regime contra a sociedade ucraniana (APPLEBAUM, 2017).\r\n\r\nRobert Conquest também atribuiu grande importância à violência estatal e à responsabilidade da liderança soviética na produção e no agravamento da fome (CONQUEST, 1986).\r\n\r\nOutra abordagem, representada por R. W. Davies e Stephen G. Wheatcroft, concentra-se na reconstrução das condições econômicas, agrícolas e administrativas da crise.\r\n\r\nEsses autores analisam a produção, as requisições, os estoques, as dificuldades agrícolas e as decisões governamentais, procurando estabelecer os mecanismos concretos que produziram a fome (DAVIES; WHEATCROFT, 2004).\r\n\r\nHiroaki Kuromiya, por sua vez, examina as questões da intencionalidade e da dimensão nacional, destacando as dificuldades de interpretar a documentação soviética e a necessidade de considerar as diferentes regiões atingidas (KUROMIYA, 2008).\r\n\r\nEssas interpretações não devem ser apresentadas como se negassem necessariamente a responsabilidade estatal. O ponto de divergência está principalmente na interpretação da intenção específica e na relação entre os objetivos econômicos, políticos e nacionais do regime.\r\n\r\n## 4.5 Reconhecimento político e conclusão histórica\r\n\r\nDiversos países e instituições reconheceram o Holodomor como genocídio.\r\n\r\nOutros governos e pesquisadores adotam qualificações diferentes, enfatizando o caráter estatal da fome, a escala da repressão e as dificuldades de demonstrar juridicamente a intenção específica de destruir o grupo nacional ucraniano.\r\n\r\nÉ necessário distinguir três categorias:\r\n\r\n**Reconhecimento político:** posição oficial adotada por governos, parlamentos ou instituições.\r\n\r\n**Interpretação historiográfica:** conclusão construída por pesquisadores a partir de documentos, dados demográficos e análise contextual.\r\n\r\n**Qualificação jurídica:** aplicação de critérios legais específicos para determinar se um acontecimento constitui genocídio.\r\n\r\nEssas categorias estão relacionadas, mas não são idênticas.\r\n\r\nUma análise acadêmica responsável deve reconhecer as evidências da responsabilidade estatal, apresentar os argumentos favoráveis e contrários às diferentes interpretações e explicar os limites documentais da investigação.\r\n\r\nIsso não significa relativizar a catástrofe ou tratar todas as interpretações como equivalentes. Significa distinguir o que está amplamente documentado daquilo que continua sendo objeto de debate.\r\n\r\n---\r\n\r\n# 5. CAZAQUISTÃO: ASHARSHYLYQ E A DESTRUIÇÃO DA SOCIEDADE PASTORIL\r\n\r\n## 5.1 Uma catástrofe regional específica\r\n\r\nA fome no Cazaquistão, ocorrida principalmente entre 1930 e 1933, é frequentemente denominada *Asharshylyq* na memória cazaque.\r\n\r\nEmbora tenha ocorrido no mesmo contexto geral de coletivização forçada e transformação econômica da União Soviética, a catástrofe cazaque apresentou características próprias.\r\n\r\nAntes da crise, uma parcela expressiva da população dependia da criação de animais e de deslocamentos sazonais entre áreas de pastagem.\r\n\r\nOs rebanhos constituíam a principal base material de muitas comunidades, fornecendo alimentos, transporte, vestuário e recursos para a sobrevivência.\r\n\r\nA mobilidade pastoril não era simplesmente uma tradição cultural. Ela estava relacionada às condições ambientais da estepe e à necessidade de deslocar os animais conforme a disponibilidade de pastagens e água.\r\n\r\nA imposição de um modelo econômico baseado na sedentarização e na coletivização alterou profundamente essa organização.\r\n\r\n## 5.2 Confisco de animais e sedentarização compulsória\r\n\r\nA política soviética procurou reorganizar a sociedade pastoril por meio do controle estatal dos rebanhos, da coletivização e da fixação de populações em assentamentos permanentes.\r\n\r\nO processo provocou resistência e desorganização econômica.\r\n\r\nO confisco de animais comprometeu os meios de subsistência de famílias que dependiam diretamente da criação de rebanhos.\r\n\r\nA perda dos animais também prejudicou a capacidade de deslocamento, o acesso a pastagens e a obtenção de alimentos.\r\n\r\nA crise foi agravada por condições ambientais adversas, mas não pode ser explicada apenas pela seca.\r\n\r\nA transformação coercitiva da sociedade pastoril e a perda de rebanhos constituíram elementos centrais da catástrofe.\r\n\r\nSarah Cameron demonstra que a fome resultou de um projeto de engenharia social que procurava transformar a população nômade em uma sociedade sedentária e integrada às estruturas econômicas soviéticas (CAMERON, 2018).\r\n\r\n## 5.3 Mortalidade e deslocamentos populacionais\r\n\r\nSarah Cameron estima que mais de 1,5 milhão de pessoas morreram durante a fome cazaque de 1930–1933, aproximadamente um quarto da população da república.\r\n\r\nA mortalidade proporcional entre os cazaques foi ainda mais elevada. As estimativas apresentadas pela historiadora indicam que mais de um terço da população cazaque morreu.\r\n\r\nMilhões de animais foram perdidos, e muitas famílias fugiram para outras regiões soviéticas ou atravessaram fronteiras internacionais, especialmente em direção à China.\r\n\r\nA fuga representou uma estratégia de sobrevivência diante da destruição dos meios tradicionais de subsistência.\r\n\r\nEntretanto, também provocou separação familiar, perda de vínculos territoriais e dificuldades de retorno.\r\n\r\nA mortalidade não atingiu todos os grupos populacionais da mesma maneira. As comunidades cazaques foram particularmente vulneráveis em razão de sua dependência econômica dos rebanhos e da destruição de suas estruturas produtivas.\r\n\r\n## 5.4 Consequências demográficas e culturais\r\n\r\nA fome alterou profundamente a composição demográfica do Cazaquistão.\r\n\r\nA perda de grande parte da população cazaque e a reorganização econômica da república modificaram as relações entre os diferentes grupos que habitavam o território.\r\n\r\nA destruição dos rebanhos e a sedentarização compulsória reduziram drasticamente a possibilidade de manutenção dos modos de vida pastoris tradicionais.\r\n\r\nA crise também contribuiu para transformar a identidade nacional cazaque e a relação da população com o território.\r\n\r\nO processo de reconstrução posterior ocorreu em uma sociedade profundamente modificada pela violência, pela perda populacional e pela transformação das atividades econômicas.\r\n\r\nA experiência cazaque demonstra que as políticas de modernização soviética podiam produzir resultados devastadores quando aplicadas coercitivamente a sociedades cujas estruturas econômicas eram diferentes daquelas pressupostas pelos planejadores.\r\n\r\n---\r\n\r\n# 6. A FOME DE 1946–1947: A CRISE NO PÓS-GUERRA\r\n\r\n## 6.1 A União Soviética após a Segunda Guerra Mundial\r\n\r\nA fome de 1946–1947 ocorreu em uma União Soviética profundamente afetada pela Segunda Guerra Mundial.\r\n\r\nA invasão alemã e os combates no território soviético haviam provocado destruição de infraestrutura, perda de mão de obra, deslocamentos populacionais e danos à produção agrícola.\r\n\r\nMilhões de pessoas haviam morrido durante a guerra, enquanto extensas áreas agrícolas e industriais precisavam ser reconstruídas.\r\n\r\nA economia soviética enfrentava dificuldades de abastecimento, escassez de equipamentos, problemas de transporte e limitações na capacidade produtiva.\r\n\r\nEm 1946, uma seca atingiu importantes regiões agrícolas, contribuindo para a redução das colheitas.\r\n\r\nA combinação entre destruição de guerra, baixa produção, dificuldades logísticas e condições climáticas adversas criou um ambiente extremamente vulnerável à fome.\r\n\r\n## 6.2 A seca e a disponibilidade de alimentos\r\n\r\nA seca de 1946 foi um fator importante para compreender a crise.\r\n\r\nA redução das colheitas diminuiu a disponibilidade de alimentos em várias regiões, especialmente nas áreas mais dependentes da produção agrícola.\r\n\r\nEntretanto, a existência de uma seca não explica automaticamente a dimensão da mortalidade.\r\n\r\nO impacto de uma crise alimentar depende também da distribuição dos alimentos disponíveis, das reservas, das prioridades governamentais e da capacidade de assistência às populações vulneráveis.\r\n\r\nO Estado soviético controlava grande parte dos mecanismos de aquisição, armazenamento e distribuição de alimentos.\r\n\r\nConsequentemente, as decisões governamentais influenciaram diretamente quais grupos sociais e regiões teriam acesso aos recursos disponíveis.\r\n\r\n## 6.3 Estoques estatais e prioridades econômicas\r\n\r\nMichael Ellman analisou a fome de 1946–1947 utilizando documentação de arquivo e ferramentas da economia das crises alimentares.\r\n\r\nO pesquisador estimou entre 1 milhão e 1,5 milhão de mortes excedentes.\r\n\r\nEm sua interpretação, os estoques estatais parecem ter sido suficientes para alimentar as pessoas que morreram de fome, caso as prioridades governamentais tivessem sido diferentes.\r\n\r\nEllman argumenta que a catástrofe poderia ter sido significativamente reduzida por uma política de distribuição mais voltada às populações vulneráveis (ELLMAN, 2000).\r\n\r\nEssa interpretação é importante porque demonstra que a fome não depende exclusivamente da disponibilidade física de alimentos.\r\n\r\nA existência de estoques em determinadas instituições não significa que os alimentos estivessem automaticamente disponíveis para todas as populações.\r\n\r\nÉ necessário considerar a localização dos estoques, os mecanismos de transporte, as prioridades econômicas e as decisões administrativas.\r\n\r\nA conclusão de Ellman é uma interpretação econômica baseada na documentação disponível. Ela não demonstra que cada morte tenha sido individualmente planejada, mas evidencia a importância das escolhas governamentais para compreender a dimensão da crise.\r\n\r\n## 6.4 A responsabilidade estatal no pós-guerra\r\n\r\nA liderança soviética enfrentava o desafio de reconstruir o país e preservar a capacidade industrial e militar do Estado.\r\n\r\nEntretanto, as prioridades econômicas adotadas influenciaram a distribuição dos recursos durante a crise.\r\n\r\nA manutenção de determinados objetivos de produção, abastecimento e armazenamento limitou a capacidade de resposta às necessidades das populações famintas.\r\n\r\nA responsabilidade governamental deve ser analisada considerando o conhecimento das autoridades, as informações disponíveis, as decisões de distribuição e a possibilidade de modificar as prioridades.\r\n\r\nA fome de 1946–1947 demonstra que uma catástrofe alimentar pode ocorrer mesmo quando o Estado possui mecanismos de armazenamento e controle da distribuição.\r\n\r\nO problema não está apenas na quantidade total de alimentos, mas também nas condições institucionais que determinam quem consegue acessá-los.\r\n\r\n---\r\n\r\n# 7. RESPONSABILIDADE ESTATAL E DISTRIBUIÇÃO DE ALIMENTOS\r\n\r\n## 7.1 Causas naturais e decisões humanas\r\n\r\nAs condições ambientais tiveram importância em diferentes fomes soviéticas.\r\n\r\nSecas, colheitas insuficientes e dificuldades climáticas contribuíram para a redução da produção agrícola.\r\n\r\nNegar esses fatores seria historicamente incorreto.\r\n\r\nEntretanto, atribuir as catástrofes exclusivamente às condições naturais também seria inadequado.\r\n\r\nUma crise de produção pode transformar-se em uma catástrofe humanitária quando as instituições retiram os meios de subsistência da população, restringem a circulação, dificultam o acesso à assistência ou priorizam outros objetivos diante da escassez.\r\n\r\nO impacto de uma fome depende da interação entre fatores ambientais, econômicos, políticos e sociais.\r\n\r\n## 7.2 Requisições e exportações de cereais\r\n\r\nDurante a coletivização, o governo procurou obter grandes quantidades de cereais para abastecer as cidades, sustentar o sistema de distribuição e financiar a industrialização.\r\n\r\nA continuidade das requisições durante a crise contribuiu para reduzir a disponibilidade de alimentos nas comunidades rurais.\r\n\r\nAs exportações de cereais também fazem parte do debate historiográfico.\r\n\r\nEntretanto, é necessário distinguir:\r\n\r\n* Volumes contratados e exportações efetivamente realizadas.\r\n* Reservas estatais e alimentos disponíveis nas regiões atingidas.\r\n* Necessidades de abastecimento urbano e rural.\r\n* Perdas de produção e dificuldades de transporte.\r\n* Objetivos de industrialização e necessidades imediatas de sobrevivência.\r\n\r\nNão é rigoroso afirmar, sem qualificação, que todo o cereal exportado durante a crise poderia ter sido imediatamente distribuído a todas as pessoas famintas.\r\n\r\nEntretanto, também não é correto ignorar as escolhas de política econômica e a manutenção de objetivos de aquisição quando a mortalidade já era elevada.\r\n\r\nA avaliação precisa considerar os volumes, os períodos, as localidades e as finalidades das reservas.\r\n\r\nDavies e Wheatcroft apresentam uma análise detalhada da relação entre produção agrícola, estoques e política de aquisição durante a fome de 1932–1933 (DAVIES; WHEATCROFT, 1995; DAVIES; WHEATCROFT, 2004).\r\n\r\n## 7.3 Restrições à circulação e controle populacional\r\n\r\nAs restrições impostas em janeiro de 1933 constituem uma das evidências documentais mais relevantes para a análise da responsabilidade estatal.\r\n\r\nAo impedir a saída de camponeses famintos da Ucrânia e do norte do Cáucaso, o governo limitou uma das alternativas de sobrevivência disponíveis às populações atingidas.\r\n\r\nA diretiva também demonstra como a liderança soviética interpretava problemas sociais e econômicos por meio de categorias políticas e de segurança.\r\n\r\nA migração em busca de alimentos foi tratada como uma ameaça ao regime, e não apenas como consequência de uma emergência humanitária.\r\n\r\nO documento deve ser analisado em seu contexto e de acordo com seu conteúdo, sem atribuir-lhe informações que não estão presentes no texto original.\r\n\r\n## 7.4 A responsabilidade dos dirigentes e das instituições\r\n\r\nA responsabilidade histórica envolve diferentes níveis do aparelho estatal.\r\n\r\nStalin ocupava posição central na liderança política e participou diretamente de decisões importantes relacionadas à coletivização, à aquisição de cereais e à repressão.\r\n\r\nViacheslav Molotov e Lazar Kaganovich desempenharam funções relevantes na supervisão das campanhas de aquisição e na execução das políticas determinadas pela liderança.\r\n\r\nAutoridades regionais, órgãos administrativos, dirigentes partidários locais e organismos de segurança também participaram da aplicação das medidas.\r\n\r\nA distribuição da responsabilidade não exige afirmar que todos os agentes possuíam o mesmo conhecimento ou a mesma intenção.\r\n\r\nÉ necessário reconstruir as decisões, identificar os responsáveis e avaliar o que cada um sabia, quais medidas podia adotar e quais consequências eram previsíveis.\r\n\r\nA responsabilidade política não se limita à intenção inicial de uma política. Também envolve a manutenção de medidas quando seus efeitos destrutivos já são conhecidos.\r\n\r\n---\r\n\r\n# 8. DEBATE HISTORIOGRÁFICO: DIFERENTES ABORDAGENS SOBRE AS FOMES SOVIÉTICAS\r\n\r\n## 8.1 A abordagem centrada na repressão e na intenção genocida\r\n\r\nUma das principais linhas de interpretação enfatiza a violência da coletivização, a responsabilidade da liderança soviética e a repressão contra populações consideradas adversárias do regime.\r\n\r\nRobert Conquest, em *The Harvest of Sorrow*, destacou a dimensão repressiva das políticas stalinistas e suas consequências para o campesinato ucraniano (CONQUEST, 1986).\r\n\r\nAnne Applebaum, em *Red Famine*, aprofunda a relação entre a fome, a política de Stalin e a repressão contra a identidade nacional ucraniana (APPLEBAUM, 2017).\r\n\r\nEssa abordagem considera que a combinação de requisições, confisco de alimentos, punições contra localidades e restrições à fuga dos famintos sustenta a interpretação do Holodomor como genocídio.\r\n\r\nSeu principal mérito é destacar a agência dos dirigentes e as consequências concretas das decisões estatais.\r\n\r\nO debate concentra-se em como interpretar a intenção específica e o peso da dimensão nacional em relação aos objetivos econômicos e políticos mais amplos do regime.\r\n\r\n## 8.2 A abordagem econômico-demográfica\r\n\r\nR. W. Davies e Stephen G. Wheatcroft desenvolveram uma interpretação centrada na reconstrução das condições econômicas e agrícolas da crise.\r\n\r\nEm *The Years of Hunger*, os autores analisam a produção agrícola, as requisições, os estoques, a política de aquisição de cereais e os efeitos da coletivização (DAVIES; WHEATCROFT, 2004).\r\n\r\nEssa abordagem atribui grande importância à interação entre dificuldades produtivas, decisões governamentais e condições ambientais.\r\n\r\nNão se trata necessariamente de absolver o Estado ou negar a responsabilidade política.\r\n\r\nO objetivo é compreender como a crise se desenvolveu, quais medidas agravaram a escassez e até que ponto a documentação permite afirmar a existência de uma intenção específica de provocar a fome como objetivo final.\r\n\r\nOs estudos de Michael Ellman sobre a fome de 1946–1947 também contribuem para essa abordagem, ao examinar a relação entre disponibilidade de alimentos, prioridades governamentais e mortalidade (ELLMAN, 2000).\r\n\r\n## 8.3 A abordagem regional e comparativa\r\n\r\nHistoriadores como Sarah Cameron e Hiroaki Kuromiya destacam a necessidade de comparar as diferentes regiões soviéticas sem apagar suas particularidades.\r\n\r\nCameron demonstra que a fome cazaque não pode ser compreendida apenas como uma versão regional da fome ucraniana.\r\n\r\nA destruição dos rebanhos, a sedentarização compulsória e a transformação de uma sociedade pastoril tiveram consequências específicas para a população cazaque (CAMERON, 2018).\r\n\r\nKuromiya, ao discutir a fome de 1932–1933, examina a dimensão nacional, as dificuldades de interpretação da documentação e as diferentes possibilidades de compreender a intencionalidade das políticas soviéticas (KUROMIYA, 2008).\r\n\r\nEssa abordagem permite comparar as experiências ucraniana, cazaque, russa e de outras regiões, sem pressupor que todas tenham sido atingidas pelos mesmos mecanismos ou na mesma intensidade.\r\n\r\n## 8.4 A importância da demografia histórica\r\n\r\nOs estudos demográficos constituem uma contribuição fundamental para a compreensão das fomes soviéticas.\r\n\r\nA reconstrução da mortalidade permite estimar as perdas populacionais, identificar diferenças regionais e compreender a distribuição dos impactos entre grupos sociais.\r\n\r\nO trabalho de Rudnytskyi e colaboradores sobre a Ucrânia demonstra a importância de distinguir mortes excedentes e nascimentos perdidos.\r\n\r\nEssa separação evita que diferentes categorias sejam somadas ou apresentadas como se representassem o mesmo fenômeno (RUDNYTSKYI et al., 2015).\r\n\r\nA demografia histórica também exige atenção às mudanças territoriais, às migrações, às limitações dos registros e aos métodos utilizados para estimar a população que existiria sem a catástrofe.\r\n\r\n## 8.5 Síntese historiográfica\r\n\r\nHá ampla documentação de que as políticas estatais coercitivas desempenharam papel decisivo na fome de 1931–1934 e de que as decisões governamentais agravaram as condições de sobrevivência de milhões de pessoas.\r\n\r\nTambém está documentado que as autoridades conheciam a crise e adotaram medidas restritivas, inclusive contra a fuga de camponeses famintos.\r\n\r\nO debate continua em torno da intenção específica de genocídio no caso ucraniano, da relação entre os objetivos de industrialização e a repressão nacional, da comparação entre as diferentes regiões e da interpretação jurídica dos acontecimentos.\r\n\r\nNa fome de 1921–1922, o peso da guerra, das requisições e da seca é fundamental para compreender a crise.\r\n\r\nNa fome de 1931–1934, a coletivização, a repressão e as decisões de aquisição de cereais ocupam posição central.\r\n\r\nNa fome de 1946–1947, a destruição da guerra, a seca e as prioridades governamentais de distribuição constituem os principais elementos explicativos.\r\n\r\nUma análise acadêmica não deve substituir a investigação por slogans políticos. Deve reconhecer as evidências de responsabilidade estatal, explicar os limites dos dados e explicitar quais conclusões são amplamente aceitas e quais permanecem em debate.\r\n\r\n---\r\n\r\n# CONCLUSÃO\r\n\r\nAs grandes fomes soviéticas de 1921–1922, 1931–1934 e 1946–1947 constituem acontecimentos distintos, produzidos por combinações diferentes de fatores econômicos, ambientais, políticos e sociais.\r\n\r\nA fome de 1921–1922 ocorreu em um contexto de guerra, desorganização econômica, requisições compulsórias e seca. A dimensão da catástrofe levou o governo soviético a aceitar assistência internacional, incluindo as operações humanitárias da American Relief Administration.\r\n\r\nA catástrofe de 1931–1934 esteve profundamente relacionada à coletivização forçada, às requisições de cereais, ao confisco de alimentos, à repressão contra o campesinato e à transformação coercitiva de diferentes sociedades rurais.\r\n\r\nNa Ucrânia, a fome esteve associada a medidas que comprometeram a sobrevivência da população rural e restringiram a possibilidade de procurar alimentos em outras regiões. A interpretação do Holodomor como genocídio envolve a análise da relação entre essas políticas, a repressão nacional e a intenção específica da liderança soviética.\r\n\r\nNo Cazaquistão, a destruição dos rebanhos, a sedentarização compulsória e a desorganização da economia pastoril provocaram uma catástrofe demográfica e cultural de proporções extraordinárias.\r\n\r\nA fome de 1946–1947, por sua vez, ocorreu em um país devastado pela Segunda Guerra Mundial. A seca e a redução da produção foram fatores importantes, mas as prioridades de distribuição e as decisões governamentais também influenciaram a dimensão da mortalidade.\r\n\r\nOs números disponíveis demonstram a magnitude das perdas, mas exigem interpretação cuidadosa.\r\n\r\nNa Ucrânia, a reconstrução demográfica estima aproximadamente 3,9 milhões de mortes excedentes e 600 mil nascimentos perdidos entre 1932 e 1934. No Cazaquistão, Sarah Cameron estima mais de 1,5 milhão de mortes durante a fome de 1930–1933. Para 1946–1947, Michael Ellman apresenta uma estimativa de 1 milhão a 1,5 milhão de mortes excedentes.\r\n\r\nEssas estatísticas não devem ser somadas sem considerar períodos, fronteiras territoriais, categorias demográficas e diferenças entre mortes diretas e perdas populacionais indiretas.\r\n\r\nA principal conclusão histórica é que as fomes soviéticas não podem ser compreendidas apenas como fenômenos naturais ou como consequências inevitáveis de dificuldades agrícolas.\r\n\r\nA escassez material interagiu com decisões estatais que determinaram quem podia conservar alimentos, deslocar-se, receber assistência e sobreviver.\r\n\r\nO controle governamental sobre a produção, a aquisição e a distribuição de alimentos ampliou a responsabilidade política das autoridades diante das crises.\r\n\r\nEstudar esses acontecimentos exige reconhecer a dimensão das catástrofes, preservar a precisão estatística, examinar criticamente os documentos e distinguir a responsabilidade estatal da discussão sobre a intenção específica de cada política.\r\n\r\nEssa abordagem permite compreender as fomes soviéticas como parte fundamental da história do poder, da economia e da sociedade na União Soviética, sem reduzir a investigação histórica a justificativas ideológicas ou explicações simplificadoras.\r\n\r\n---\r\n\r\n# REFERÊNCIAS BIBLIOGRÁFICAS\r\n\r\n* APPLEBAUM, Anne. *Red famine: Stalin's war on Ukraine*. New York: Doubleday, 2017.\r\n\r\n* CAMERON, Sarah. *The hungry steppe: famine, violence, and the making of Soviet Kazakhstan*. Ithaca: Cornell University Press, 2018. DOI: 10.7591/cornell/9781501730436.001.0001.\r\n\r\n* CONQUEST, Robert. *The harvest of sorrow: Soviet collectivization and the terror-famine*. New York: Oxford University Press, 1986.\r\n\r\n* DAVIES, R. W.; WHEATCROFT, Stephen G. *The years of hunger: Soviet agriculture, 1931–1933*. Basingstoke: Palgrave Macmillan, 2004.\r\n\r\n* ELLMAN, Michael. The 1947 Soviet famine and the entitlement approach to famines. *Cambridge Journal of Economics*, v. 24, n. 5, p. 603–630, 2000. DOI: 10.1093/cje/24.5.603.\r\n\r\n* GRAZIOSI, Andrea. *The Great Soviet Peasant War: Bolsheviks and Peasants, 1917–1933*. Cambridge, MA: Harvard Ukrainian Research Institute, 1996.\r\n\r\n* KUROMIYA, Hiroaki. The Soviet famine of 1932–1933 reconsidered. *Europe-Asia Studies*, v. 60, n. 4, p. 663–675, 2008. DOI: 10.1080/09668130801999912.\r\n\r\n* RUDNYTSKYI, Oleh P. et al. Demography of a man-made human catastrophe: the case of massive famine in Ukraine 1932–1933. *Demography and Social Economy*, n. 2 (24), p. 11–30, 2015. DOI: 10.15407/dse2015.02.011.\r\n\r\n* WHEATCROFT, Stephen G.; DAVIES, R. W. Stalin, grain stocks and the famine of 1932–1933. *Slavic Review*, v. 54, n. 3, 1995. DOI: 10.2307/2501740.\r\n";
 
 export const CHAPTER_12: AcademicChapter = {
-  topicId: 12,
-  title: 'Fomes e Catástrofes Humanitárias de Estado',
-  subtitle: 'Fomes soviéticas de 1921–1922, 1931–1934 e 1946–1947',
-  authorCatedra: 'Cátedra de História Russa e Soviética · Capítulo Acadêmico nº 12',
-  introduction: `As grandes fomes da União Soviética durante a primeira metade do século XX constituem alguns dos episódios mais graves da história social e política do país. Elas resultaram de combinações distintas de destruição econômica, condições ambientais, decisões governamentais, políticas agrícolas, conflitos sociais e limitações na distribuição de alimentos.
-
-Entre as principais crises estão a fome de 1921–1922, que atingiu regiões extensas da Rússia soviética e da Ucrânia; a catástrofe de 1931–1934, particularmente devastadora na Ucrânia, no Cazaquistão e em outras regiões agrícolas; e a fome de 1946–1947, ocorrida no contexto da reconstrução posterior à Segunda Guerra Mundial.
-
-Esses acontecimentos não devem ser tratados como uma única crise contínua. Suas causas imediatas, suas circunstâncias políticas e suas consequências foram diferentes. Também não é correto atribuir todas as mortes exclusivamente a um fator natural ou, no extremo oposto, presumir que todas as crises foram planejadas desde o início com o objetivo explícito de provocar mortes em massa.
-
-O denominador comum foi a vulnerabilidade das populações diante de um Estado que controlava grande parte da produção agrícola, as requisições, o transporte e a distribuição de alimentos. Em diferentes momentos, as autoridades adotaram políticas que agravaram a escassez, impediram a fuga de pessoas famintas, priorizaram objetivos econômicos ou estratégicos e demoraram a modificar decisões que contribuíam para a mortalidade.
-
-A análise histórica precisa distinguir pelo menos quatro questões:
-1. Causas materiais: colheitas, condições climáticas, epidemias, perdas de rebanhos e destruição econômica.
-2. Decisões políticas: requisições, metas de entrega, confisco de alimentos, restrições de circulação e prioridades de distribuição.
-3. Consequências demográficas: mortes excedentes, deslocamentos populacionais e nascimentos que deixaram de ocorrer.
-4. Intencionalidade: o que os dirigentes sabiam, quais medidas decidiram manter e se existe evidência de uma intenção específica de destruir determinado grupo nacional ou étnico.
-
-Essa separação permite compreender a dimensão da responsabilidade estatal sem transformar uma questão histórica complexa em uma explicação monocausal.`,
-  sections: [
+  "topicId": 12,
+  "title": "Fomes e Catástrofes Humanitárias de Estado",
+  "subtitle": "Fomes soviéticas de 1921–1922, 1931–1934 e 1946–1947",
+  "authorCatedra": "Cátedra de História Russa e Soviética · Capítulo Histórico Acadêmico nº 12",
+  "introduction": "As grandes fomes ocorridas na União Soviética durante a primeira metade do século XX constituem alguns dos episódios mais graves da história social, econômica e política do país. Seus efeitos ultrapassaram a mortalidade imediata: provocaram deslocamentos populacionais, desestruturação de comunidades rurais, transformações demográficas duradouras e profundas consequências para a organização econômica e cultural de diferentes povos soviéticos.\n\nEntre as principais crises destacam-se a fome de 1921–1922, que atingiu extensas regiões da Rússia soviética e partes da Ucrânia; a catástrofe de 1931–1934, especialmente devastadora na Ucrânia, no Cazaquistão e em outras regiões agrícolas; e a fome de 1946–1947, ocorrida durante a reconstrução posterior à Segunda Guerra Mundial.\n\nEmbora compartilhem a característica de terem ocorrido em um Estado que exercia amplo controle sobre a economia e o abastecimento, essas crises não podem ser interpretadas como um único acontecimento. Suas causas imediatas, circunstâncias políticas, mecanismos de agravamento e consequências foram diferentes.\n\nA fome de 1921–1922 esteve profundamente relacionada aos efeitos da Primeira Guerra Mundial, da Revolução Russa, da Guerra Civil, das requisições compulsórias e de uma grave seca. A crise de 1931–1934 desenvolveu-se em meio à coletivização forçada, à transformação acelerada da agricultura, às requisições de cereais, à repressão contra o campesinato e à destruição de estruturas econômicas tradicionais. Já a fome de 1946–1947 ocorreu em um país devastado pela guerra, com dificuldades produtivas, escassez de mão de obra e decisões governamentais que influenciaram a distribuição dos alimentos disponíveis.\n\nA análise histórica precisa considerar que a fome não é determinada exclusivamente pela quantidade de alimentos produzidos. A disponibilidade de alimentos, o acesso das famílias aos recursos, as possibilidades de deslocamento, os mecanismos de distribuição e as decisões políticas podem determinar quem consegue sobreviver durante uma crise.\n\nNesse sentido, as grandes fomes soviéticas revelam não apenas problemas agrícolas e ambientais, mas também a relação entre poder estatal, planejamento econômico, coerção política e vulnerabilidade social.\n\nPara compreender esses acontecimentos, é necessário distinguir quatro dimensões:\n\n1. **Causas materiais:** condições climáticas, colheitas, epidemias, perdas de rebanhos, guerras e destruição econômica.\n2. **Decisões políticas:** requisições, metas de entrega, confisco de alimentos, restrições de circulação e prioridades de distribuição.\n3. **Consequências demográficas:** mortes excedentes, deslocamentos populacionais e nascimentos que deixaram de ocorrer.\n4. **Intencionalidade:** o que os dirigentes sabiam, quais medidas decidiram manter e se existiu uma intenção específica de destruir determinado grupo nacional ou étnico.\n\nEssa separação permite reconhecer a responsabilidade do Estado sem reduzir acontecimentos complexos a explicações monocausais.",
+  "sections": [
     {
-      number: '2',
-      title: 'Contexto histórico: agricultura, poder e transformação social',
-      content: '',
-      subsections: [
+      "number": "1",
+      "title": "Contexto Histórico: Agricultura, Poder e Transformação Social",
+      "content": "",
+      "subsections": [
         {
-          number: '2.1',
-          title: 'A sociedade rural soviética',
-          content: `Nas primeiras décadas do século XX, grande parte da população soviética vivia em áreas rurais. A agricultura era fundamental para o abastecimento das cidades, a alimentação da população e a obtenção de produtos que poderiam ser exportados.
-
-A relação entre Estado e campesinato tornou-se progressivamente conflituosa após a Revolução de 1917. Durante a Guerra Civil, as requisições compulsórias de alimentos e as dificuldades de transporte provocaram resistência camponesa e contribuíram para a desorganização econômica.
-
-Em 1921, o governo bolchevique substituiu o sistema de requisições do comunismo de guerra por um imposto em espécie, no contexto da Nova Política Econômica. A mudança procurava reduzir a oposição rural e estimular a recuperação da produção.
-
-Essa política, porém, não eliminou os conflitos entre o Estado e os produtores agrícolas. A partir do final da década de 1920, a liderança de Josef Stalin retomou uma estratégia de transformação acelerada da agricultura, acompanhada de coletivização forçada, requisições e repressão.`
+          "number": "1.1",
+          "title": "A sociedade rural soviética",
+          "content": "Nas primeiras décadas do século XX, a população do território que posteriormente formaria a União Soviética era predominantemente rural. A agricultura constituía a principal fonte de subsistência de milhões de famílias e desempenhava papel fundamental no abastecimento das cidades, no funcionamento da economia e na obtenção de recursos para o Estado.\n\nA relação entre governo e campesinato tornou-se especialmente conflituosa após a Revolução de 1917.\n\nDurante a Guerra Civil Russa (1918–1921), o governo bolchevique implantou o chamado comunismo de guerra, sistema caracterizado pela centralização econômica, nacionalizações, controle da distribuição e requisições compulsórias de produtos agrícolas.\n\nAs requisições, conhecidas como *prodrazvyorstka*, permitiam que o Estado retirasse parte da produção camponesa para abastecer o Exército Vermelho, as cidades e os órgãos governamentais.\n\nEmbora justificadas pela necessidade de sustentar o esforço militar e manter o funcionamento do Estado revolucionário, essas medidas provocaram resistência no campo e contribuíram para deteriorar as relações entre o governo e os produtores rurais.\n\nA retirada compulsória de alimentos reduzia os incentivos à produção e podia comprometer a capacidade de sobrevivência das famílias, especialmente em regiões onde a agricultura já enfrentava dificuldades.\n\nEm 1921, diante da crise econômica, da resistência camponesa e do agravamento da situação alimentar, o governo substituiu gradualmente o sistema de requisições por um imposto em espécie, no contexto da Nova Política Econômica (NEP).\n\nA mudança representou uma tentativa de recuperar a produção e reduzir os conflitos com o campesinato. Entretanto, não eliminou a desconfiança entre o Estado e os produtores agrícolas.\n\nA partir do final da década de 1920, a liderança de Josef Stalin retomou uma estratégia de transformação acelerada da agricultura, marcada pela coletivização compulsória e pelo aumento do controle estatal sobre a produção."
         },
         {
-          number: '2.2',
-          title: 'Coletivização forçada e industrialização',
-          content: `A partir de 1929, o governo intensificou a criação de fazendas coletivas, os kolkhozes, e fazendas estatais, os sovkhozes. O objetivo era submeter a produção agrícola a um controle mais direto do Estado e facilitar a obtenção de cereais para abastecer as cidades e sustentar a industrialização.
-
-A política também procurava transformar a estrutura social do campo. Camponeses classificados como kulaks foram atingidos por confisco de propriedades, deportações e outras medidas repressivas.
-
-A coletivização foi realizada de maneira coercitiva e desorganizou práticas agrícolas e redes sociais. A resistência, a retirada ou o abate de animais, as perturbações na produção e as mudanças administrativas contribuíram para agravar as dificuldades de abastecimento.
-
-O Estado estabelecia metas de entrega de cereais que podiam ignorar as condições reais de produção e as necessidades de sobrevivência das comunidades. Quando as autoridades insistiam em cumprir as cotas apesar da escassez, a população rural ficava com menos alimentos para consumo e para a próxima semeadura.`
+          "number": "1.2",
+          "title": "Coletivização forçada e industrialização",
+          "content": "A partir de 1929, o governo soviético intensificou a coletivização da agricultura.\n\nO processo consistia na reorganização das propriedades rurais em unidades coletivas, principalmente os *kolkhozes*, fazendas coletivas, e os *sovkhozes*, fazendas estatais.\n\nA coletivização procurava concentrar a produção agrícola sob controle governamental, facilitar a obtenção de cereais e permitir que o Estado direcionasse recursos para a industrialização.\n\nA política estava relacionada ao Primeiro Plano Quinquenal, iniciado em 1928, que estabeleceu metas ambiciosas para a transformação industrial e econômica da União Soviética.\n\nO governo considerava necessário aumentar a capacidade industrial do país em um período relativamente curto. Para isso, buscava controlar a produção agrícola, garantir o abastecimento urbano e obter recursos para financiar investimentos.\n\nEntretanto, a transformação foi conduzida de maneira extremamente coercitiva.\n\nCamponeses classificados como *kulaks*, categoria política utilizada para identificar supostos camponeses ricos ou adversários da coletivização, foram atingidos por confiscos, deportações, prisões e outras medidas repressivas.\n\nA classificação nem sempre correspondia a uma situação econômica objetiva. Em diversas circunstâncias, famílias com propriedades modestas também foram atingidas por serem consideradas resistentes às políticas governamentais.\n\nA coletivização provocou desorganização produtiva, resistência camponesa, abandono de propriedades e abate de animais. As mudanças administrativas também comprometeram práticas agrícolas que dependiam de conhecimentos locais e de relações comunitárias.\n\nAs metas de aquisição de cereais estabelecidas pelo governo podiam desconsiderar as condições reais da produção e as necessidades de sobrevivência das comunidades.\n\nQuando as autoridades insistiam em cumprir as cotas apesar da escassez, a população rural ficava com menos alimentos para consumo e para a próxima semeadura.\n\nR. W. Davies e Stephen G. Wheatcroft demonstram que a crise agrícola precisa ser compreendida pela interação entre dificuldades produtivas, decisões governamentais, requisições e condições ambientais. Essa interpretação não elimina a responsabilidade estatal, mas procura reconstruir os mecanismos concretos que produziram a catástrofe (DAVIES; WHEATCROFT, 2004)."
         },
         {
-          number: '2.3',
-          title: 'Ucrânia e Cazaquistão: experiências distintas',
-          content: `A fome atingiu regiões diferentes, mas não produziu consequências uniformes.
-
-Na Ucrânia, a crise coincidiu com a coletivização forçada, as requisições de cereais, as punições contra comunidades que não cumpriam as metas e a intensificação da repressão contra manifestações de nacionalismo ucraniano.
-
-No Cazaquistão, a transformação coercitiva da sociedade pastoril teve efeitos devastadores. A imposição da sedentarização e da coletivização sobre populações que dependiam de rebanhos e deslocamentos sazonais desorganizou a base material de sua sobrevivência. O confisco de animais e as políticas de aquisição estatal provocaram perdas particularmente graves.
-
-A distinção é importante. A fome ucraniana e a catástrofe cazaque ocorreram no contexto das políticas stalinistas de transformação econômica e social, mas suas populações, seus sistemas de produção e os mecanismos imediatos da crise não eram idênticos.`
+          "number": "1.3",
+          "title": "A diversidade das sociedades rurais soviéticas",
+          "content": "Um aspecto fundamental para compreender as fomes soviéticas é reconhecer que a União Soviética reunia populações com estruturas econômicas, culturais e ambientais bastante diferentes.\n\nNa Ucrânia, a agricultura cerealista tinha grande importância. A produção de trigo e outros cereais constituía uma parte fundamental da economia rural e do abastecimento soviético.\n\nNo Cazaquistão, por outro lado, uma parcela expressiva da população dependia da criação de animais e de deslocamentos sazonais entre áreas de pastagem.\n\nEssas diferenças são importantes porque as políticas de coletivização e controle econômico não produziram os mesmos efeitos em todas as regiões.\n\nNa Ucrânia, as requisições de cereais e os confiscos comprometeram diretamente a disponibilidade de alimentos das comunidades agrícolas.\n\nNo Cazaquistão, a imposição de novas formas de organização econômica, a sedentarização compulsória e a perda dos rebanhos destruíram os fundamentos materiais de uma sociedade pastoril.\n\nSarah Cameron demonstra que a fome cazaque não pode ser compreendida simplesmente como uma repetição regional da experiência ucraniana. A crise resultou de um processo específico de transformação coercitiva da sociedade pastoril (CAMERON, 2018)."
         }
       ]
     },
     {
-      number: '3',
-      title: 'Narrativa cronológica das três grandes crises',
-      content: '',
-      subsections: [
+      "number": "2",
+      "title": "A Fome de 1921–1922: Guerra, Seca e Desorganização Econômica",
+      "content": "",
+      "subsections": [
         {
-          number: '3.1',
-          title: 'Fome de 1921–1922',
-          content: `A primeira grande fome soviética após a Revolução resultou de uma combinação de fatores: os efeitos da Primeira Guerra Mundial, a Guerra Civil, a desorganização agrícola, as requisições de alimentos, as dificuldades de transporte e uma seca severa em importantes regiões produtoras.
-
-A crise atingiu especialmente a região do Volga, os Urais e outras áreas da Rússia soviética. Partes da Ucrânia também foram afetadas.
-
-A insuficiência de alimentos provocou mortes em massa, deslocamentos populacionais e epidemias. As estimativas de mortalidade variam conforme a delimitação geográfica e o método utilizado, mas a fome é geralmente descrita como uma catástrofe de vários milhões de vítimas.
-
-A resposta governamental foi contraditória. O Estado procurou manter o controle político e econômico, enquanto a dimensão da crise levou à aceitação de assistência internacional. A American Relief Administration, entre outras organizações, participou das operações de socorro.
-
-A fome de 1921–1922 não deve ser confundida com o Holodomor. Ela ocorreu em outro contexto político e econômico e teve uma relação particularmente importante com a guerra, a desorganização produtiva e a seca.`
+          "number": "2.1",
+          "title": "As origens da crise",
+          "content": "A fome de 1921–1922 foi a primeira grande catástrofe alimentar do período soviético após a Revolução de 1917.\n\nSuas origens estavam relacionadas a um conjunto de fatores acumulados durante anos de conflitos e desorganização econômica.\n\nA Primeira Guerra Mundial havia comprometido a produção e o transporte. A Revolução de 1917 e a Guerra Civil ampliaram a instabilidade política, interromperam redes comerciais e provocaram destruição em diversas regiões.\n\nO sistema de requisições compulsórias do comunismo de guerra agravou as tensões entre o governo e os produtores rurais.\n\nEm 1921, uma grave seca atingiu importantes áreas agrícolas, especialmente regiões do Volga e dos Urais. A redução das colheitas ocorreu em uma sociedade que já apresentava dificuldades de abastecimento e transporte.\n\nA combinação entre baixa produção, requisições, desorganização econômica e escassez de alimentos transformou a crise agrícola em uma catástrofe humanitária."
         },
         {
-          number: '3.2',
-          title: '1928–1930: coletivização e requisições',
-          content: `A partir de 1928, a liderança soviética intensificou a industrialização e ampliou o controle sobre o abastecimento de cereais.
-
-Em 1929, a coletivização forçada avançou rapidamente. A campanha de dekulakização atingiu camponeses classificados como adversários da transformação rural. Muitas famílias foram deportadas, perderam propriedades ou foram submetidas a restrições.
-
-No Cazaquistão, as políticas de sedentarização e coletivização atingiram uma sociedade fortemente dependente da criação de animais. O confisco e a perda de rebanhos comprometeram os meios de subsistência e reduziram a capacidade de enfrentar períodos de escassez.
-
-Essas transformações prepararam o terreno para a catástrofe de 1931–1933. A crise não foi simplesmente consequência de uma colheita ruim: ela se desenvolveu em uma sociedade cuja produção e circulação de alimentos haviam sido profundamente alteradas por políticas estatais.`
+          "number": "2.2",
+          "title": "Regiões atingidas e mortalidade",
+          "content": "A fome atingiu especialmente a região do Volga, os Urais e outras áreas da Rússia soviética. Partes da Ucrânia também foram afetadas.\n\nA insuficiência de alimentos provocou mortes em massa, deslocamentos populacionais e a disseminação de doenças.\n\nA desnutrição reduzia a resistência física das pessoas, tornando-as mais vulneráveis a epidemias e infecções. A falta de saneamento e as dificuldades de acesso à assistência médica ampliaram os efeitos da crise.\n\nAs estimativas de mortalidade variam conforme os limites geográficos adotados, o período analisado e os métodos de reconstrução demográfica.\n\nA fome é geralmente descrita como uma catástrofe de vários milhões de vítimas, embora os números não sejam inteiramente uniformes entre os estudos.\n\nÉ importante distinguir a mortalidade diretamente relacionada à fome daquela associada a doenças, epidemias e outras consequências da desnutrição."
         },
         {
-          number: '3.3',
-          title: '1931–1932: agravamento da crise',
-          content: `As colheitas e os rendimentos agrícolas foram afetados por problemas produtivos, condições ambientais, desorganização e políticas coercitivas. Em determinadas regiões, a seca agravou as dificuldades.
-
-Apesar da deterioração do abastecimento, as metas de aquisição de cereais continuaram a exercer pressão sobre as comunidades rurais. As autoridades realizaram buscas e confiscaram alimentos em situações nas quais famílias já enfrentavam escassez.
-
-Em 7 de agosto de 1932, foi promulgado o decreto conhecido popularmente como “Lei das Cinco Espigas”. A norma estabeleceu punições extremamente severas para o furto de propriedade socialista, incluindo produtos de fazendas coletivas.
-
-Na prática, a legislação podia atingir pessoas que retiravam pequenas quantidades de produtos agrícolas para alimentar a própria família. A aplicação variou, mas o decreto tornou mais arriscado obter alimentos fora dos canais controlados pelo Estado.
-
-A crise passou a combinar escassez material com um ambiente jurídico e administrativo que limitava as possibilidades de sobrevivência dos camponeses.`
+          "number": "2.3",
+          "title": "A assistência internacional",
+          "content": "A resposta governamental foi contraditória.\n\nInicialmente, as autoridades procuraram preservar o controle político e econômico em meio à crise. Entretanto, a dimensão da catástrofe tornou necessária a aceitação de assistência externa.\n\nA American Relief Administration (ARA), organização norte-americana de assistência humanitária, participou de operações de socorro, fornecendo alimentos e outros recursos às populações atingidas.\n\nOutras organizações e instituições internacionais também participaram dos esforços de assistência.\n\nA atuação humanitária estrangeira demonstrou que a crise havia ultrapassado a capacidade de resposta dos mecanismos internos de abastecimento.\n\nA aceitação da ajuda internacional representou uma mudança importante na postura do governo soviético, que precisou permitir a atuação de organizações estrangeiras em um território sob seu controle."
         },
         {
-          number: '3.4',
-          title: 'Novembro–dezembro de 1932: medidas punitivas',
-          content: `Em regiões da Ucrânia e do norte do Cáucaso, as autoridades utilizaram listas negras contra localidades que não cumpriam as metas de aquisição de cereais.
-
-As sanções podiam incluir restrições à entrega de mercadorias, confisco de produtos, intensificação de buscas e outras medidas destinadas a forçar o cumprimento das metas.
-
-No Kuban, território da República Socialista Federativa Soviética da Rússia com importante população de origem ucraniana, a repressão econômica também se relacionou à reversão de políticas de ucranização e à perseguição de manifestações consideradas nacionalistas.
-
-Essas medidas demonstram que a fome se desenvolveu em um ambiente de coerção deliberada. Entretanto, a análise de cada política deve distinguir seu objetivo declarado, sua aplicação concreta e as consequências previsíveis para as populações atingidas.`
-        },
-        {
-          number: '3.5',
-          title: 'Janeiro de 1933: restrições à fuga dos famintos',
-          content: `Em 22 de janeiro de 1933, uma diretiva assinada por Josef Stalin e Viacheslav Molotov determinou medidas para impedir a saída em massa de camponeses da Ucrânia e do norte do Cáucaso em busca de alimentos.
-
-O documento atribuía a migração a supostas ações de inimigos do poder soviético e ordenava que as autoridades impedissem a saída de camponeses dessas regiões. Também determinava a detenção de pessoas que haviam alcançado outras regiões soviéticas e seu retorno aos locais de residência, após a identificação dos indivíduos classificados como contrarrevolucionários.
-
-A diretiva é uma das evidências centrais para a análise da responsabilidade estatal. Ela demonstra que a liderança conhecia a fuga de camponeses em busca de pão e escolheu restringir esse movimento, tratando-o como problema político e de segurança.
-
-A ordem não prova, isoladamente, todas as hipóteses sobre a intenção final dos dirigentes. Contudo, constitui evidência direta de que, em meio à fome, o Estado adotou medidas que dificultavam a fuga das populações afetadas.
-
-Documento: Diretiva do Comitê Central do Partido Comunista e do Conselho de Comissários do Povo da URSS, 22 de janeiro de 1933. Transcrição: https://istmat.org/node/38629`
-        },
-        {
-          number: '3.6',
-          title: '1933: mortalidade máxima',
-          content: `Em 1933, a fome atingiu seu ponto mais devastador em diversas regiões.
-
-Na Ucrânia, a maior parte das mortes excedentes registradas para a crise de 1932–1934 concentrou-se em 1933. A população rural foi especialmente afetada.
-
-No Cazaquistão, a perda de rebanhos, a sedentarização forçada, a desorganização econômica e a fome provocaram mortes em massa e deslocamentos para regiões vizinhas e para a China. A crise transformou profundamente a sociedade cazaque e reduziu de maneira duradoura a participação dos cazaques na população da própria república.
-
-A mortalidade também foi elevada em outras regiões soviéticas, incluindo partes da Rússia e do norte do Cáucaso. As experiências regionais foram desiguais, tanto em números absolutos quanto em proporção da população.`
-        },
-        {
-          number: '3.7',
-          title: '1934: consequências demográficas',
-          content: `Embora a fase mais intensa da fome tenha ocorrido em 1933, os estudos demográficos identificam perdas associadas à crise também em 1934.
-
-A reconstrução populacional para a Ucrânia estima aproximadamente 3,9 milhões de mortes excedentes entre 1932 e 1934 e cerca de 600 mil nascimentos perdidos. A estimativa total de perdas demográficas chega a aproximadamente 4,5 milhões quando as duas categorias são combinadas.
-
-É fundamental não descrever os 4,5 milhões como se fossem exclusivamente pessoas mortas diretamente pela fome. O indicador de nascimentos perdidos mede uma consequência demográfica indireta.`
-        },
-        {
-          number: '3.8',
-          title: '1946–1947: fome no pós-guerra',
-          content: `A fome de 1946–1947 ocorreu em uma União Soviética profundamente afetada pela Segunda Guerra Mundial.
-
-A destruição de infraestrutura, as perdas agrícolas, a falta de mão de obra, as dificuldades de abastecimento e uma seca em 1946 reduziram a disponibilidade de alimentos em várias regiões.
-
-A seca foi um fator real e importante, mas não explica integralmente a dimensão da catástrofe. As decisões do Estado sobre requisições, reservas, distribuição e prioridades econômicas influenciaram quem teve acesso aos alimentos disponíveis.
-
-O historiador Michael Ellman, utilizando documentação de arquivo, estimou entre 1 milhão e 1,5 milhão de mortes excedentes. Sua análise argumenta que os estoques estatais parecem ter sido suficientes para alimentar as pessoas que morreram de fome, caso as prioridades governamentais tivessem sido diferentes.
-
-Essa conclusão é uma interpretação econômica baseada em dados de disponibilidade e distribuição. Deve ser distinguida de uma prova de que cada morte tenha sido individualmente planejada.
-
-Referência: Michael Ellman, “The 1947 Soviet famine and the entitlement approach to famines”, Cambridge Journal of Economics, 2000. https://academic.oup.com/cje/article-abstract/24/5/603/1679977`
+          "number": "2.4",
+          "title": "A diferença entre a fome de 1921–1922 e o Holodomor",
+          "content": "A fome de 1921–1922 não deve ser confundida com o Holodomor de 1932–1933.\n\nEmbora ambas tenham ocorrido durante o período soviético e envolvido políticas econômicas coercitivas, suas circunstâncias foram diferentes.\n\nA crise de 1921–1922 esteve profundamente relacionada à guerra, à desorganização econômica, às requisições do comunismo de guerra e à seca.\n\nA catástrofe de 1931–1934 ocorreu durante a coletivização forçada e foi agravada por decisões governamentais relacionadas à aquisição de cereais, ao confisco de alimentos, à repressão e às restrições de circulação.\n\nA distinção cronológica e política é indispensável para evitar que acontecimentos diferentes sejam reunidos em uma única explicação histórica."
         }
       ]
     },
     {
-      number: '4',
-      title: 'Ucrânia: Holodomor, repressão e debate sobre genocídio',
-      content: '',
-      subsections: [
+      "number": "3",
+      "title": "A Fome de 1931–1934: Coletivização, Requisições e Repressão",
+      "content": "",
+      "subsections": [
         {
-          number: '4.1',
-          title: 'O significado de Holodomor',
-          content: `A palavra ucraniana Holodomor é utilizada para designar a fome catastrófica de 1932–1933 na Ucrânia soviética, frequentemente traduzida como “morte pela fome”.
-
-O termo também está associado à memória nacional ucraniana e à interpretação da catástrofe como genocídio.
-
-A fome ocorreu em um contexto de coletivização forçada, requisições de cereais, confisco de alimentos, punições contra localidades que não cumpriam as metas e repressão contra manifestações de nacionalismo ucraniano.
-
-Essas políticas produziram condições nas quais a população rural perdeu parte importante de seus meios de sobrevivência, enquanto a possibilidade de procurar alimentos em outras regiões foi restringida.`
+          "number": "3.1",
+          "title": "A transformação do campo soviético",
+          "content": "A fome de 1931–1934 foi a mais devastadora das grandes crises alimentares do período stalinista.\n\nEla atingiu diversas regiões da União Soviética, especialmente a Ucrânia, o Cazaquistão, o norte do Cáucaso e partes da Rússia.\n\nSuas causas estiveram relacionadas à transformação acelerada da agricultura, à coletivização compulsória, à desorganização produtiva, às requisições de cereais e às condições ambientais.\n\nO governo procurava obter grandes quantidades de produtos agrícolas para abastecer as cidades e sustentar o processo de industrialização.\n\nEntretanto, as metas de aquisição foram estabelecidas em um contexto de mudanças profundas na organização da produção rural.\n\nA resistência camponesa, a perda de animais, os conflitos em torno da coletivização e a desorganização das atividades agrícolas reduziram a capacidade de produção de diversas comunidades.\n\nA política de aquisição de cereais continuou a exercer pressão sobre regiões que já enfrentavam dificuldades de abastecimento.\n\nRobert Conquest destacou a dimensão repressiva da coletivização e suas consequências para o campesinato. Davies e Wheatcroft, por sua vez, aprofundaram a reconstrução das condições agrícolas e das decisões econômicas que contribuíram para a crise (CONQUEST, 1986; DAVIES; WHEATCROFT, 2004)."
         },
         {
-          number: '4.2',
-          title: 'O que os documentos demonstram?',
-          content: `Entre os documentos centrais estão:
-* A legislação de 7 de agosto de 1932 sobre a proteção da propriedade socialista.
-* As decisões sobre metas de aquisição de cereais e sanções contra localidades.
-* A diretiva de 22 de janeiro de 1933 que restringiu a saída de camponeses da Ucrânia e do norte do Cáucaso.
-* A documentação sobre confisco de alimentos, relatórios de mortalidade e pedidos de assistência.
-* As decisões de dezembro de 1932 que relacionaram o problema agrícola à questão nacional ucraniana e à política linguística em áreas do norte do Cáucaso.
-
-Esses documentos demonstram que a liderança soviética adotou medidas coercitivas durante uma crise conhecida pelas autoridades. A documentação permite estudar o conhecimento governamental da situação, as prioridades políticas e os efeitos das decisões.`
+          "number": "3.2",
+          "title": "O Cazaquistão e a destruição da economia pastoril",
+          "content": "No Cazaquistão, a transformação da agricultura atingiu uma sociedade cuja organização econômica dependia amplamente da criação de animais.\n\nA política soviética procurou substituir formas tradicionais de mobilidade pastoril por uma organização mais sedentária e coletivizada.\n\nO processo envolveu confisco de animais, reorganização das propriedades, sedentarização compulsória e controle estatal sobre a produção.\n\nA perda dos rebanhos comprometeu não apenas a alimentação, mas também o transporte, o vestuário e a estrutura econômica das famílias.\n\nDiferentemente de regiões predominantemente agrícolas, nas quais a disponibilidade de cereais constituía o principal elemento de sobrevivência, a economia pastoril dependia de um conjunto integrado de atividades relacionadas à criação e à circulação de animais.\n\nA destruição desse sistema tornou a população especialmente vulnerável.\n\nA crise foi agravada por condições ambientais adversas, incluindo a seca de 1931, mas não pode ser explicada exclusivamente por fatores climáticos.\n\nSarah Cameron demonstra que a transformação coercitiva da sociedade pastoril foi central para compreender a dimensão da fome cazaque e seus efeitos sobre a formação da sociedade soviética no território (CAMERON, 2018)."
         },
         {
-          number: '4.3',
-          title: 'O problema da intencionalidade',
-          content: `A questão mais debatida não é se houve uma fome em massa ou se as políticas soviéticas contribuíram decisivamente para ela. Esses pontos são amplamente documentados.
-
-O debate se concentra, entre outros aspectos, em determinar se Stalin e sua liderança pretendiam provocar a morte de milhões de pessoas como objetivo específico ou se a fome resultou de políticas coercitivas e de decisões que, embora conhecidas por seu potencial destrutivo, tinham outros objetivos políticos e econômicos.
-
-Uma análise robusta precisa considerar:
-* A manutenção de requisições em meio à escassez.
-* O confisco de alimentos necessários à sobrevivência.
-* As restrições à circulação de camponeses famintos.
-* As punições impostas a comunidades e regiões.
-* A repressão contra a identidade nacional ucraniana.
-* A distribuição desigual dos efeitos da fome entre as regiões soviéticas.
-* As decisões tomadas quando a escala da mortalidade já era conhecida.
-
-A intenção genocida não é demonstrada simplesmente pela existência de mortes em massa. No direito internacional, genocídio exige a intenção específica de destruir, total ou parcialmente, um grupo nacional, étnico, racial ou religioso enquanto tal.
-
-Por outro lado, a ausência de uma ordem escrita que diga literalmente “matar este grupo pela fome” não encerra o debate: a intenção histórica pode ser avaliada por meio de documentos, decisões, padrões de atuação e circunstâncias.`
+          "number": "3.3",
+          "title": "A intensificação das requisições e os confiscos",
+          "content": "Em 1931 e 1932, as dificuldades agrícolas se intensificaram em diversas regiões.\n\nAs colheitas e os rendimentos foram afetados por problemas produtivos, condições ambientais, desorganização e mudanças na organização econômica.\n\nApesar da deterioração do abastecimento, as metas de aquisição de cereais continuaram a exercer pressão sobre as comunidades rurais.\n\nAs autoridades realizaram buscas e confiscaram alimentos em situações nas quais famílias já enfrentavam escassez.\n\nO problema não se limitava à quantidade de cereais produzida. A política de aquisição determinava quanto da produção permaneceria nas comunidades e quanto seria transferido para os canais controlados pelo Estado.\n\nEm uma situação de escassez, a retirada de alimentos necessários à sobrevivência podia agravar rapidamente a mortalidade.\n\nA manutenção das metas de aquisição, mesmo diante de dificuldades conhecidas, constitui um dos elementos centrais para compreender a responsabilidade governamental."
         },
         {
-          number: '4.4',
-          title: 'Reconhecimento político e conclusão histórica',
-          content: `Diversos países e instituições reconheceram o Holodomor como genocídio. Outros governos e estudiosos adotam qualificações diferentes, enfatizando o caráter estatal da fome, a escala da repressão e as dificuldades de demonstrar juridicamente a intenção específica de destruir o grupo nacional ucraniano.
-
-O reconhecimento político, a interpretação historiográfica e a qualificação jurídica são categorias relacionadas, mas não idênticas.
-
-Uma conclusão academicamente responsável pode reconhecer que a fome foi agravada por políticas estatais coercitivas, que a liderança soviética adotou medidas que dificultaram a sobrevivência dos camponeses e que a questão da intenção genocida permanece objeto de debate. Isso não exige minimizar a catástrofe nem transformar todas as interpretações em equivalentes.`
+          "number": "3.4",
+          "title": "A legislação de 7 de agosto de 1932",
+          "content": "Em 7 de agosto de 1932, foi promulgado um decreto destinado a proteger a propriedade socialista.\n\nA norma ficou popularmente conhecida como Lei das Cinco Espigas, expressão associada à aplicação de punições extremamente severas por furtos de produtos agrícolas pertencentes às fazendas coletivas e ao Estado.\n\nA legislação previa penas muito rigorosas, incluindo longos períodos de prisão e, em determinadas circunstâncias, a pena de morte.\n\nNa prática, a aplicação da norma podia atingir pessoas que retiravam pequenas quantidades de produtos agrícolas para alimentar a própria família.\n\nIsso não significa que todas as condenações tenham envolvido pessoas famintas ou pequenos furtos. Entretanto, o decreto criou um ambiente jurídico no qual a obtenção de alimentos fora dos canais autorizados pelo Estado podia resultar em punições desproporcionais.\n\nA legislação deve ser compreendida no contexto de um regime que procurava proteger a propriedade estatal e garantir o cumprimento das metas de produção e aquisição.\n\nDurante a fome, a proteção da propriedade socialista podia entrar em conflito direto com as necessidades básicas de sobrevivência das populações rurais."
+        },
+        {
+          "number": "3.5",
+          "title": "As listas negras e as medidas punitivas",
+          "content": "No final de 1932, as autoridades intensificaram medidas contra localidades que não cumpriam as metas de aquisição de cereais.\n\nNa Ucrânia e em outras regiões, foram utilizadas listas negras contra comunidades consideradas resistentes às determinações governamentais.\n\nAs sanções podiam incluir:\n\n* Restrições à comercialização de produtos.\n* Suspensão de fornecimentos e mercadorias.\n* Intensificação das buscas por alimentos.\n* Confisco de produtos agrícolas.\n* Reforço da vigilância e da repressão administrativa.\n\nEssas medidas tinham como objetivo declarado forçar o cumprimento das metas de aquisição e combater a resistência às políticas estatais.\n\nEntretanto, em localidades que já enfrentavam escassez, as sanções reduziam ainda mais as possibilidades de sobrevivência.\n\nNo Kuban, região do norte do Cáucaso pertencente à República Socialista Federativa Soviética da Rússia, a repressão econômica também esteve relacionada à perseguição de manifestações de nacionalismo ucraniano e à reversão de políticas de ucranização.\n\nAndrea Graziosi analisa o conflito entre o poder bolchevique e o campesinato como um processo amplo de transformação social e resistência, contribuindo para compreender a relação entre a política agrária e a violência estatal (GRAZIOSI, 1996)."
+        },
+        {
+          "number": "3.6",
+          "title": "A diretiva de 22 de janeiro de 1933: restrições à fuga dos famintos",
+          "content": "Um dos documentos mais importantes para a análise da responsabilidade estatal durante a fome foi a diretiva de 22 de janeiro de 1933, assinada por Josef Stalin e Viacheslav Molotov.\n\nO documento determinava medidas para impedir a saída em massa de camponeses da Ucrânia e do norte do Cáucaso em busca de alimentos.\n\nA liderança soviética interpretava a migração de camponeses como resultado de supostas atividades de inimigos do poder soviético, incluindo agentes contrarrevolucionários e estrangeiros.\n\nA diretiva ordenava que as autoridades impedissem a saída de camponeses das regiões atingidas. Também previa a detenção de pessoas que haviam alcançado outras regiões soviéticas e seu retorno, após a identificação dos indivíduos considerados envolvidos em atividades contrarrevolucionárias.\n\nO documento demonstra que a liderança conhecia a fuga de camponeses em busca de alimentos e escolheu tratar esse movimento como um problema político e de segurança.\n\nA restrição da circulação teve consequências particularmente graves porque a migração constituía uma das alternativas de sobrevivência disponíveis às populações atingidas.\n\nA importância histórica da diretiva está em demonstrar uma decisão concreta do governo durante a fome. Ela não resolve isoladamente todas as questões relativas à intenção genocida, mas constitui evidência direta de que as autoridades adotaram medidas que dificultavam a fuga de populações famintas.\n\n**Documento histórico:** Diretiva do Comitê Central do Partido Comunista e do Conselho de Comissários do Povo da URSS, 22 de janeiro de 1933."
+        },
+        {
+          "number": "3.7",
+          "title": "O ano de 1933 e o aumento da mortalidade",
+          "content": "Em 1933, a fome atingiu seu ponto mais devastador em diversas regiões soviéticas.\n\nNa Ucrânia, a maior parte das mortes excedentes relacionadas à crise concentrou-se nesse ano.\n\nA população rural foi especialmente afetada, pois dependia diretamente da produção agrícola e estava mais exposta aos confiscos e às requisições.\n\nA desnutrição provocou o enfraquecimento físico, o aumento da vulnerabilidade a doenças e a desestruturação de comunidades inteiras.\n\nNo Cazaquistão, a perda dos rebanhos, a sedentarização compulsória e a desorganização econômica provocaram mortes em massa e deslocamentos para outras regiões soviéticas e para territórios vizinhos, especialmente a China.\n\nA mortalidade também foi elevada em partes da Rússia e do norte do Cáucaso.\n\nAs experiências regionais foram diferentes, tanto em números absolutos quanto na proporção da população atingida.\n\nHiroaki Kuromiya ressalta que a interpretação da fome de 1932–1933 exige examinar conjuntamente os fatores econômicos, políticos e nacionais, evitando explicações que desconsiderem a diversidade regional da crise (KUROMIYA, 2008)."
+        },
+        {
+          "number": "3.8",
+          "title": "As consequências demográficas na Ucrânia",
+          "content": "Embora a fase mais intensa da fome tenha ocorrido em 1933, as perdas demográficas associadas à crise também se estenderam a 1934.\n\nO estudo de Oleh Rudnytskyi, Nataliia Levchuk, Oleh Wolowyna, Pavlo Shevchuk e Alla Kovbasiuk reconstruiu as perdas demográficas da Ucrânia entre 1932 e 1934.\n\nOs pesquisadores estimaram aproximadamente:\n\n* **3,9 milhões de mortes excedentes.**\n* **600 mil nascimentos perdidos.**\n* **4,5 milhões de perdas demográficas totais.**\n\nA distinção entre as categorias é indispensável.\n\nAs mortes excedentes representam a diferença entre as mortes observadas e aquelas que seriam esperadas em condições demográficas normais.\n\nOs nascimentos perdidos representam crianças que deixaram de nascer em consequência das condições da crise, incluindo a mortalidade dos pais, a desnutrição e a desorganização familiar.\n\nPortanto, os 4,5 milhões não devem ser apresentados como se representassem exclusivamente pessoas mortas diretamente pela fome.\n\nA reconstrução demográfica constitui uma ferramenta fundamental para compreender a dimensão da catástrofe, mas seus indicadores precisam ser apresentados de acordo com as categorias utilizadas pelos pesquisadores (RUDNYTSKYI et al., 2015)."
         }
       ]
     },
     {
-      number: '5',
-      title: 'Cazaquistão: Asharshylyq e a destruição da sociedade pastoril',
-      content: '',
-      subsections: [
+      "number": "4",
+      "title": "Ucrânia: Holodomor, Repressão e Debate sobre Genocídio",
+      "content": "",
+      "subsections": [
         {
-          number: '5.1',
-          title: 'Uma crise distinta da ucraniana',
-          content: `A fome no Cazaquistão, ocorrida principalmente entre 1930 e 1933, é frequentemente denominada Asharshylyq na memória cazaque.
-
-Antes da catástrofe, uma parte substancial da população cazaque dependia da criação de animais e de deslocamentos sazonais entre pastagens. Os rebanhos eram essenciais para a alimentação, o transporte, o vestuário e a organização econômica das comunidades.
-
-A política soviética procurou transformar essa sociedade por meio da coletivização, da sedentarização e do controle estatal da produção.`
+          "number": "4.1",
+          "title": "O significado histórico de Holodomor",
+          "content": "A palavra ucraniana *Holodomor* é utilizada para designar a fome catastrófica de 1932–1933 na Ucrânia soviética. O termo é frequentemente traduzido como morte pela fome.\n\nAlém de identificar o acontecimento histórico, a palavra adquiriu grande importância na memória nacional ucraniana, estando associada à interpretação da catástrofe como genocídio.\n\nA fome ocorreu em um contexto de coletivização forçada, requisições de cereais, confisco de alimentos, punições contra localidades que não cumpriam as metas e repressão contra manifestações de nacionalismo ucraniano.\n\nEssas políticas reduziram os meios de sobrevivência da população rural, enquanto as restrições à circulação dificultaram a procura de alimentos em outras regiões.\n\nRobert Conquest, em *The Harvest of Sorrow*, destacou a violência da coletivização e a relação entre a repressão estatal e a fome na Ucrânia (CONQUEST, 1986).\n\nAnne Applebaum, em *Red Famine*, aprofundou a relação entre a fome, as políticas de Stalin e a repressão contra a identidade nacional ucraniana (APPLEBAUM, 2017)."
         },
         {
-          number: '5.2',
-          title: 'Confisco de rebanhos e sedentarização',
-          content: `O confisco de animais e a imposição de novas formas de organização econômica desestruturaram os meios de subsistência de muitas famílias.
-
-Ao contrário de regiões nas quais os cereais constituíam a base dominante da alimentação e da produção, a economia pastoril cazaque dependia de um sistema de criação e circulação de rebanhos. A ruptura desse sistema tornou a população especialmente vulnerável.
-
-A seca de 1931 agravou a situação, mas a catástrofe não pode ser explicada apenas por condições climáticas. A transformação coercitiva da sociedade pastoril e a perda de animais foram elementos centrais.`
+          "number": "4.2",
+          "title": "O que os documentos demonstram?",
+          "content": "A investigação histórica sobre o Holodomor utiliza diferentes conjuntos documentais.\n\nEntre os mais importantes estão:\n\n1. A legislação de 7 de agosto de 1932 sobre a proteção da propriedade socialista.\n2. As decisões relativas às metas de aquisição de cereais.\n3. Os documentos sobre sanções contra localidades que não cumpriam as cotas.\n4. A diretiva de 22 de janeiro de 1933 que restringiu a saída de camponeses da Ucrânia e do norte do Cáucaso.\n5. Relatórios administrativos sobre mortalidade e abastecimento.\n6. Documentos relativos a confisco de alimentos e pedidos de assistência.\n7. Decisões de dezembro de 1932 relacionadas à questão nacional ucraniana e à política de ucranização em determinadas regiões.\n\nEsses documentos permitem reconstruir o conhecimento das autoridades sobre a situação alimentar, as prioridades políticas e os mecanismos de execução das medidas governamentais.\n\nA documentação também demonstra que a fome não foi simplesmente um fenômeno natural diante do qual o governo permaneceu passivo.\n\nAs autoridades mantiveram políticas coercitivas, aplicaram punições econômicas e restringiram movimentos populacionais em meio à crise."
         },
         {
-          number: '5.3',
-          title: 'Mortes, deslocamentos e transformação social',
-          content: `Sarah Cameron estima que mais de 1,5 milhão de pessoas morreram na fome cazaque de 1930–1933, aproximadamente um quarto da população da república.
-
-A mortalidade entre os cazaques foi proporcionalmente ainda mais elevada: estimativas citadas pela historiadora indicam que mais de um terço da população cazaque morreu.
-
-Milhões de animais foram perdidos, e muitas famílias fugiram para outras regiões soviéticas ou atravessaram fronteiras internacionais, especialmente em direção à China.
-
-A fuga foi uma estratégia de sobrevivência, mas implicou separação familiar, perda de vínculos territoriais e dificuldades de retorno.`
+          "number": "4.3",
+          "title": "Responsabilidade estatal e intencionalidade genocida",
+          "content": "Uma das questões mais debatidas na historiografia é a interpretação da intencionalidade das políticas soviéticas durante a fome ucraniana.\n\nHá ampla documentação de que as políticas governamentais contribuíram para agravar a crise e de que a liderança soviética adotou medidas que dificultaram a sobrevivência de milhões de pessoas.\n\nEntretanto, a discussão sobre genocídio envolve uma questão adicional: determinar se houve intenção específica de destruir, total ou parcialmente, o grupo nacional ucraniano enquanto tal.\n\nO conceito jurídico de genocídio, estabelecido na Convenção das Nações Unidas de 1948, exige a intenção específica de destruir um grupo nacional, étnico, racial ou religioso, total ou parcialmente.\n\nA existência de mortes em massa, isoladamente, não demonstra automaticamente essa intenção específica.\n\nPor outro lado, a ausência de uma ordem escrita que declare literalmente a intenção de matar determinado grupo também não encerra a investigação histórica. A intenção pode ser examinada por meio de documentos, decisões, padrões de atuação, conhecimento dos dirigentes e circunstâncias políticas.\n\nO debate historiográfico concentra-se em diferentes interpretações:\n\n* A relação entre a coletivização e a repressão contra a população ucraniana.\n* O peso da dimensão nacional na política de Stalin.\n* A manutenção das requisições durante a fome.\n* O confisco de alimentos necessários à sobrevivência.\n* As restrições à circulação dos camponeses famintos.\n* A perseguição a manifestações de identidade nacional.\n* O conhecimento das autoridades sobre a mortalidade.\n* A possibilidade de distinguir objetivos econômicos, políticos e nacionais.\n\nA responsabilidade estatal pode ser reconhecida independentemente de uma conclusão definitiva sobre a qualificação jurídica do genocídio."
         },
         {
-          number: '5.4',
-          title: 'Consequências para a identidade cazaque',
-          content: `A fome alterou a composição demográfica e a organização econômica do Cazaquistão. A perda de rebanhos e a sedentarização forçada reduziram drasticamente a possibilidade de manter os modos de vida pastoris tradicionais.
-
-A crise contribuiu para a transformação da sociedade cazaque e para a reorganização territorial da república soviética.
-
-A história do Cazaquistão demonstra que as políticas de modernização soviética podiam produzir resultados devastadores quando aplicadas coercitivamente a sociedades cujas estruturas econômicas eram diferentes das pressupostas pelos planejadores.`
+          "number": "4.4",
+          "title": "As principais interpretações historiográficas",
+          "content": "A interpretação do Holodomor como genocídio é defendida por historiadores que destacam a combinação entre a fome, as medidas repressivas e a política de Stalin contra a identidade nacional ucraniana.\n\nAnne Applebaum enfatiza a relação entre as políticas econômicas e a repressão nacional, apresentando o Holodomor como parte de uma ofensiva do regime contra a sociedade ucraniana (APPLEBAUM, 2017).\n\nRobert Conquest também atribuiu grande importância à violência estatal e à responsabilidade da liderança soviética na produção e no agravamento da fome (CONQUEST, 1986).\n\nOutra abordagem, representada por R. W. Davies e Stephen G. Wheatcroft, concentra-se na reconstrução das condições econômicas, agrícolas e administrativas da crise.\n\nEsses autores analisam a produção, as requisições, os estoques, as dificuldades agrícolas e as decisões governamentais, procurando estabelecer os mecanismos concretos que produziram a fome (DAVIES; WHEATCROFT, 2004).\n\nHiroaki Kuromiya, por sua vez, examina as questões da intencionalidade e da dimensão nacional, destacando as dificuldades de interpretar a documentação soviética e a necessidade de considerar as diferentes regiões atingidas (KUROMIYA, 2008).\n\nEssas interpretações não devem ser apresentadas como se negassem necessariamente a responsabilidade estatal. O ponto de divergência está principalmente na interpretação da intenção específica e na relação entre os objetivos econômicos, políticos e nacionais do regime."
+        },
+        {
+          "number": "4.5",
+          "title": "Reconhecimento político e conclusão histórica",
+          "content": "Diversos países e instituições reconheceram o Holodomor como genocídio.\n\nOutros governos e pesquisadores adotam qualificações diferentes, enfatizando o caráter estatal da fome, a escala da repressão e as dificuldades de demonstrar juridicamente a intenção específica de destruir o grupo nacional ucraniano.\n\nÉ necessário distinguir três categorias:\n\n**Reconhecimento político:** posição oficial adotada por governos, parlamentos ou instituições.\n\n**Interpretação historiográfica:** conclusão construída por pesquisadores a partir de documentos, dados demográficos e análise contextual.\n\n**Qualificação jurídica:** aplicação de critérios legais específicos para determinar se um acontecimento constitui genocídio.\n\nEssas categorias estão relacionadas, mas não são idênticas.\n\nUma análise acadêmica responsável deve reconhecer as evidências da responsabilidade estatal, apresentar os argumentos favoráveis e contrários às diferentes interpretações e explicar os limites documentais da investigação.\n\nIsso não significa relativizar a catástrofe ou tratar todas as interpretações como equivalentes. Significa distinguir o que está amplamente documentado daquilo que continua sendo objeto de debate."
         }
       ]
     },
     {
-      number: '6',
-      title: 'Responsabilidade estatal e distribuição de alimentos',
-      content: '',
-      subsections: [
+      "number": "5",
+      "title": "Cazaquistão: Asharshylyq e a Destruição da Sociedade Pastoril",
+      "content": "",
+      "subsections": [
         {
-          number: '6.1',
-          title: 'Causas naturais e decisões humanas',
-          content: `Secas e condições climáticas adversas tiveram importância em diferentes fomes soviéticas. Negar esse fator seria incorreto.
-
-Entretanto, a presença de uma seca não explica automaticamente a dimensão das mortes. O impacto de uma crise agrícola depende da capacidade de armazenamento, dos mecanismos de distribuição, da possibilidade de deslocamento, das prioridades governamentais e da assistência às populações vulneráveis.
-
-Uma crise de produção pode transformar-se em catástrofe humanitária quando as instituições impedem que as pessoas obtenham alimentos, retiram seus meios de subsistência ou priorizam outras metas diante da escassez.`
+          "number": "5.1",
+          "title": "Uma catástrofe regional específica",
+          "content": "A fome no Cazaquistão, ocorrida principalmente entre 1930 e 1933, é frequentemente denominada *Asharshylyq* na memória cazaque.\n\nEmbora tenha ocorrido no mesmo contexto geral de coletivização forçada e transformação econômica da União Soviética, a catástrofe cazaque apresentou características próprias.\n\nAntes da crise, uma parcela expressiva da população dependia da criação de animais e de deslocamentos sazonais entre áreas de pastagem.\n\nOs rebanhos constituíam a principal base material de muitas comunidades, fornecendo alimentos, transporte, vestuário e recursos para a sobrevivência.\n\nA mobilidade pastoril não era simplesmente uma tradição cultural. Ela estava relacionada às condições ambientais da estepe e à necessidade de deslocar os animais conforme a disponibilidade de pastagens e água.\n\nA imposição de um modelo econômico baseado na sedentarização e na coletivização alterou profundamente essa organização."
         },
         {
-          number: '6.2',
-          title: 'Requisições e exportações',
-          content: `Durante a coletivização, o governo procurou obter cereais para abastecer as cidades, sustentar o sistema de distribuição e adquirir recursos para a industrialização.
-
-A continuidade de requisições durante a fome contribuiu para reduzir a disponibilidade de alimentos nas comunidades rurais.
-
-As exportações de cereais também fazem parte do debate historiográfico. No entanto, é necessário distinguir contratos, exportações efetivamente realizadas, reservas estatais, importações, perdas de produção e necessidades de abastecimento.
-
-Não é rigoroso afirmar, sem qualificação, que todo o cereal exportado durante a crise poderia ter sido distribuído imediatamente a todas as pessoas famintas. Mas tampouco é correto ignorar as escolhas de política econômica e a manutenção de objetivos de aquisição quando a mortalidade já era elevada.
-
-A avaliação precisa ser feita por período, volume, localização e finalidade das reservas.`
+          "number": "5.2",
+          "title": "Confisco de animais e sedentarização compulsória",
+          "content": "A política soviética procurou reorganizar a sociedade pastoril por meio do controle estatal dos rebanhos, da coletivização e da fixação de populações em assentamentos permanentes.\n\nO processo provocou resistência e desorganização econômica.\n\nO confisco de animais comprometeu os meios de subsistência de famílias que dependiam diretamente da criação de rebanhos.\n\nA perda dos animais também prejudicou a capacidade de deslocamento, o acesso a pastagens e a obtenção de alimentos.\n\nA crise foi agravada por condições ambientais adversas, mas não pode ser explicada apenas pela seca.\n\nA transformação coercitiva da sociedade pastoril e a perda de rebanhos constituíram elementos centrais da catástrofe.\n\nSarah Cameron demonstra que a fome resultou de um projeto de engenharia social que procurava transformar a população nômade em uma sociedade sedentária e integrada às estruturas econômicas soviéticas (CAMERON, 2018)."
         },
         {
-          number: '6.3',
-          title: 'Restrições à circulação',
-          content: `As restrições impostas em janeiro de 1933 são especialmente relevantes porque mostram que o governo procurou impedir a fuga de camponeses famintos da Ucrânia e do norte do Cáucaso.
-
-Ao tratar a migração por alimentos como uma ameaça política, as autoridades limitaram uma das alternativas de sobrevivência disponíveis à população.
-
-O documento fornece evidência direta de uma decisão estatal concreta. Sua interpretação deve permanecer ligada ao texto e ao contexto, sem atribuir-lhe informações que ele não contém.`
+          "number": "5.3",
+          "title": "Mortalidade e deslocamentos populacionais",
+          "content": "Sarah Cameron estima que mais de 1,5 milhão de pessoas morreram durante a fome cazaque de 1930–1933, aproximadamente um quarto da população da república.\n\nA mortalidade proporcional entre os cazaques foi ainda mais elevada. As estimativas apresentadas pela historiadora indicam que mais de um terço da população cazaque morreu.\n\nMilhões de animais foram perdidos, e muitas famílias fugiram para outras regiões soviéticas ou atravessaram fronteiras internacionais, especialmente em direção à China.\n\nA fuga representou uma estratégia de sobrevivência diante da destruição dos meios tradicionais de subsistência.\n\nEntretanto, também provocou separação familiar, perda de vínculos territoriais e dificuldades de retorno.\n\nA mortalidade não atingiu todos os grupos populacionais da mesma maneira. As comunidades cazaques foram particularmente vulneráveis em razão de sua dependência econômica dos rebanhos e da destruição de suas estruturas produtivas."
         },
         {
-          number: '6.4',
-          title: 'Responsabilidade dos dirigentes',
-          content: `A responsabilidade histórica envolve os dirigentes que formularam as políticas, os órgãos que as executaram e as autoridades locais que aplicaram requisições, confisco e punições.
-
-Stalin ocupava posição central na liderança política e participou diretamente de decisões importantes. Viacheslav Molotov e Lazar Kaganovich tiveram funções relevantes na supervisão das campanhas de aquisição de cereais. Autoridades regionais e órgãos de segurança também desempenharam papéis concretos.
-
-A distribuição da responsabilidade não exige afirmar que todos os agentes possuíam o mesmo conhecimento ou a mesma intenção. Exige reconstruir as decisões, identificar os responsáveis e avaliar o que cada um sabia e podia fazer.`
+          "number": "5.4",
+          "title": "Consequências demográficas e culturais",
+          "content": "A fome alterou profundamente a composição demográfica do Cazaquistão.\n\nA perda de grande parte da população cazaque e a reorganização econômica da república modificaram as relações entre os diferentes grupos que habitavam o território.\n\nA destruição dos rebanhos e a sedentarização compulsória reduziram drasticamente a possibilidade de manutenção dos modos de vida pastoris tradicionais.\n\nA crise também contribuiu para transformar a identidade nacional cazaque e a relação da população com o território.\n\nO processo de reconstrução posterior ocorreu em uma sociedade profundamente modificada pela violência, pela perda populacional e pela transformação das atividades econômicas.\n\nA experiência cazaque demonstra que as políticas de modernização soviética podiam produzir resultados devastadores quando aplicadas coercitivamente a sociedades cujas estruturas econômicas eram diferentes daquelas pressupostas pelos planejadores."
         }
       ]
     },
     {
-      number: '7',
-      title: 'Debate historiográfico: três abordagens principais',
-      content: '',
-      subsections: [
+      "number": "6",
+      "title": "A Fome de 1946–1947: A Crise no Pós-Guerra",
+      "content": "",
+      "subsections": [
         {
-          number: '7.1',
-          title: 'Abordagem centrada na intenção genocida e na repressão nacional',
-          content: `Autores como Robert Conquest e Anne Applebaum enfatizam a violência da coletivização, a repressão contra o campesinato e as decisões que agravaram a fome ucraniana.
-
-Applebaum, em Red Famine, dedica atenção especial à relação entre a fome, as políticas de Stalin e a repressão contra a identidade nacional ucraniana.
-
-Essa abordagem considera que as medidas adotadas durante a crise, incluindo a restrição da fuga dos famintos e a repressão política, sustentam a interpretação do Holodomor como genocídio.
-
-Seu ponto forte é destacar a agência dos dirigentes e os efeitos das decisões estatais. O debate concentra-se em como interpretar a intenção específica e o peso da dimensão nacional em relação aos objetivos econômicos e políticos mais amplos do regime.`
+          "number": "6.1",
+          "title": "A União Soviética após a Segunda Guerra Mundial",
+          "content": "A fome de 1946–1947 ocorreu em uma União Soviética profundamente afetada pela Segunda Guerra Mundial.\n\nA invasão alemã e os combates no território soviético haviam provocado destruição de infraestrutura, perda de mão de obra, deslocamentos populacionais e danos à produção agrícola.\n\nMilhões de pessoas haviam morrido durante a guerra, enquanto extensas áreas agrícolas e industriais precisavam ser reconstruídas.\n\nA economia soviética enfrentava dificuldades de abastecimento, escassez de equipamentos, problemas de transporte e limitações na capacidade produtiva.\n\nEm 1946, uma seca atingiu importantes regiões agrícolas, contribuindo para a redução das colheitas.\n\nA combinação entre destruição de guerra, baixa produção, dificuldades logísticas e condições climáticas adversas criou um ambiente extremamente vulnerável à fome."
         },
         {
-          number: '7.2',
-          title: 'Abordagem econômico-demográfica e crítica das políticas agrícolas',
-          content: `R. W. Davies e Stephen G. Wheatcroft, em The Years of Hunger, analisam a produção agrícola, as requisições, os estoques, a política de aquisição de cereais e os efeitos da coletivização.
-
-Essa abordagem dá grande importância às condições materiais da crise e à interação entre decisões governamentais, dificuldades produtivas e condições ambientais.
-
-Ela não exige absolver o Estado. Procura explicar como a crise se desenvolveu, quais medidas agravaram a escassez e até que ponto a evidência permite afirmar uma intenção de provocar a fome como objetivo específico.
-
-Os estudos de Michael Ellman sobre a fome de 1946–1947 também enfatizam a relação entre disponibilidade de alimentos, prioridades governamentais e mortalidade.`
+          "number": "6.2",
+          "title": "A seca e a disponibilidade de alimentos",
+          "content": "A seca de 1946 foi um fator importante para compreender a crise.\n\nA redução das colheitas diminuiu a disponibilidade de alimentos em várias regiões, especialmente nas áreas mais dependentes da produção agrícola.\n\nEntretanto, a existência de uma seca não explica automaticamente a dimensão da mortalidade.\n\nO impacto de uma crise alimentar depende também da distribuição dos alimentos disponíveis, das reservas, das prioridades governamentais e da capacidade de assistência às populações vulneráveis.\n\nO Estado soviético controlava grande parte dos mecanismos de aquisição, armazenamento e distribuição de alimentos.\n\nConsequentemente, as decisões governamentais influenciaram diretamente quais grupos sociais e regiões teriam acesso aos recursos disponíveis."
         },
         {
-          number: '7.3',
-          title: 'Abordagem regional, comparativa e transnacional',
-          content: `Historiadores como Sarah Cameron e Hiroaki Kuromiya destacam a necessidade de comparar as diferentes regiões soviéticas sem apagar suas particularidades.
-
-Cameron mostra que a fome cazaque não pode ser compreendida apenas como uma versão da fome ucraniana: a destruição dos rebanhos e a imposição da sedentarização tiveram consequências específicas para uma sociedade pastoril.
-
-Kuromiya, ao discutir a fome de 1932–1933, examina as questões da intencionalidade e da dimensão nacional, destacando dificuldades de interpretação da documentação.
-
-Essa abordagem permite comparar as experiências ucraniana, cazaque, russa e de outras regiões, sem pressupor que todas tenham sido atingidas pelos mesmos mecanismos ou na mesma intensidade.`
+          "number": "6.3",
+          "title": "Estoques estatais e prioridades econômicas",
+          "content": "Michael Ellman analisou a fome de 1946–1947 utilizando documentação de arquivo e ferramentas da economia das crises alimentares.\n\nO pesquisador estimou entre 1 milhão e 1,5 milhão de mortes excedentes.\n\nEm sua interpretação, os estoques estatais parecem ter sido suficientes para alimentar as pessoas que morreram de fome, caso as prioridades governamentais tivessem sido diferentes.\n\nEllman argumenta que a catástrofe poderia ter sido significativamente reduzida por uma política de distribuição mais voltada às populações vulneráveis (ELLMAN, 2000).\n\nEssa interpretação é importante porque demonstra que a fome não depende exclusivamente da disponibilidade física de alimentos.\n\nA existência de estoques em determinadas instituições não significa que os alimentos estivessem automaticamente disponíveis para todas as populações.\n\nÉ necessário considerar a localização dos estoques, os mecanismos de transporte, as prioridades econômicas e as decisões administrativas.\n\nA conclusão de Ellman é uma interpretação econômica baseada na documentação disponível. Ela não demonstra que cada morte tenha sido individualmente planejada, mas evidencia a importância das escolhas governamentais para compreender a dimensão da crise."
         },
         {
-          number: '7.4',
-          title: 'Síntese historiográfica',
-          content: `Há ampla concordância de que as políticas estatais coercitivas tiveram papel decisivo na fome de 1931–1934 e de que as decisões do governo agravaram as condições de sobrevivência de milhões de pessoas.
-
-Também existe documentação de que as autoridades conheciam a crise e adotaram medidas restritivas, inclusive contra a fuga de camponeses famintos.
-
-O debate continua sobre a intenção específica de genocídio no caso ucraniano, a relação entre os objetivos de industrialização e a repressão nacional, a comparação entre as diferentes regiões e a interpretação jurídica do acontecimento.
-
-Uma análise acadêmica não deve substituir a investigação por um slogan. Deve reconhecer as evidências de responsabilidade estatal, explicar os limites dos dados e explicitar quais conclusões são amplamente aceitas e quais permanecem disputadas.`
+          "number": "6.4",
+          "title": "A responsabilidade estatal no pós-guerra",
+          "content": "A liderança soviética enfrentava o desafio de reconstruir o país e preservar a capacidade industrial e militar do Estado.\n\nEntretanto, as prioridades econômicas adotadas influenciaram a distribuição dos recursos durante a crise.\n\nA manutenção de determinados objetivos de produção, abastecimento e armazenamento limitou a capacidade de resposta às necessidades das populações famintas.\n\nA responsabilidade governamental deve ser analisada considerando o conhecimento das autoridades, as informações disponíveis, as decisões de distribuição e a possibilidade de modificar as prioridades.\n\nA fome de 1946–1947 demonstra que uma catástrofe alimentar pode ocorrer mesmo quando o Estado possui mecanismos de armazenamento e controle da distribuição.\n\nO problema não está apenas na quantidade total de alimentos, mas também nas condições institucionais que determinam quem consegue acessá-los."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "Responsabilidade Estatal e Distribuição de Alimentos",
+      "content": "",
+      "subsections": [
+        {
+          "number": "7.1",
+          "title": "Causas naturais e decisões humanas",
+          "content": "As condições ambientais tiveram importância em diferentes fomes soviéticas.\n\nSecas, colheitas insuficientes e dificuldades climáticas contribuíram para a redução da produção agrícola.\n\nNegar esses fatores seria historicamente incorreto.\n\nEntretanto, atribuir as catástrofes exclusivamente às condições naturais também seria inadequado.\n\nUma crise de produção pode transformar-se em uma catástrofe humanitária quando as instituições retiram os meios de subsistência da população, restringem a circulação, dificultam o acesso à assistência ou priorizam outros objetivos diante da escassez.\n\nO impacto de uma fome depende da interação entre fatores ambientais, econômicos, políticos e sociais."
+        },
+        {
+          "number": "7.2",
+          "title": "Requisições e exportações de cereais",
+          "content": "Durante a coletivização, o governo procurou obter grandes quantidades de cereais para abastecer as cidades, sustentar o sistema de distribuição e financiar a industrialização.\n\nA continuidade das requisições durante a crise contribuiu para reduzir a disponibilidade de alimentos nas comunidades rurais.\n\nAs exportações de cereais também fazem parte do debate historiográfico.\n\nEntretanto, é necessário distinguir:\n\n* Volumes contratados e exportações efetivamente realizadas.\n* Reservas estatais e alimentos disponíveis nas regiões atingidas.\n* Necessidades de abastecimento urbano e rural.\n* Perdas de produção e dificuldades de transporte.\n* Objetivos de industrialização e necessidades imediatas de sobrevivência.\n\nNão é rigoroso afirmar, sem qualificação, que todo o cereal exportado durante a crise poderia ter sido imediatamente distribuído a todas as pessoas famintas.\n\nEntretanto, também não é correto ignorar as escolhas de política econômica e a manutenção de objetivos de aquisição quando a mortalidade já era elevada.\n\nA avaliação precisa considerar os volumes, os períodos, as localidades e as finalidades das reservas.\n\nDavies e Wheatcroft apresentam uma análise detalhada da relação entre produção agrícola, estoques e política de aquisição durante a fome de 1932–1933 (DAVIES; WHEATCROFT, 1995; DAVIES; WHEATCROFT, 2004)."
+        },
+        {
+          "number": "7.3",
+          "title": "Restrições à circulação e controle populacional",
+          "content": "As restrições impostas em janeiro de 1933 constituem uma das evidências documentais mais relevantes para a análise da responsabilidade estatal.\n\nAo impedir a saída de camponeses famintos da Ucrânia e do norte do Cáucaso, o governo limitou uma das alternativas de sobrevivência disponíveis às populações atingidas.\n\nA diretiva também demonstra como a liderança soviética interpretava problemas sociais e econômicos por meio de categorias políticas e de segurança.\n\nA migração em busca de alimentos foi tratada como uma ameaça ao regime, e não apenas como consequência de uma emergência humanitária.\n\nO documento deve ser analisado em seu contexto e de acordo com seu conteúdo, sem atribuir-lhe informações que não estão presentes no texto original."
+        },
+        {
+          "number": "7.4",
+          "title": "A responsabilidade dos dirigentes e das instituições",
+          "content": "A responsabilidade histórica envolve diferentes níveis do aparelho estatal.\n\nStalin ocupava posição central na liderança política e participou diretamente de decisões importantes relacionadas à coletivização, à aquisição de cereais e à repressão.\n\nViacheslav Molotov e Lazar Kaganovich desempenharam funções relevantes na supervisão das campanhas de aquisição e na execução das políticas determinadas pela liderança.\n\nAutoridades regionais, órgãos administrativos, dirigentes partidários locais e organismos de segurança também participaram da aplicação das medidas.\n\nA distribuição da responsabilidade não exige afirmar que todos os agentes possuíam o mesmo conhecimento ou a mesma intenção.\n\nÉ necessário reconstruir as decisões, identificar os responsáveis e avaliar o que cada um sabia, quais medidas podia adotar e quais consequências eram previsíveis.\n\nA responsabilidade política não se limita à intenção inicial de uma política. Também envolve a manutenção de medidas quando seus efeitos destrutivos já são conhecidos."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Debate Historiográfico: Diferentes Abordagens sobre as Fomes Soviéticas",
+      "content": "",
+      "subsections": [
+        {
+          "number": "8.1",
+          "title": "A abordagem centrada na repressão e na intenção genocida",
+          "content": "Uma das principais linhas de interpretação enfatiza a violência da coletivização, a responsabilidade da liderança soviética e a repressão contra populações consideradas adversárias do regime.\n\nRobert Conquest, em *The Harvest of Sorrow*, destacou a dimensão repressiva das políticas stalinistas e suas consequências para o campesinato ucraniano (CONQUEST, 1986).\n\nAnne Applebaum, em *Red Famine*, aprofunda a relação entre a fome, a política de Stalin e a repressão contra a identidade nacional ucraniana (APPLEBAUM, 2017).\n\nEssa abordagem considera que a combinação de requisições, confisco de alimentos, punições contra localidades e restrições à fuga dos famintos sustenta a interpretação do Holodomor como genocídio.\n\nSeu principal mérito é destacar a agência dos dirigentes e as consequências concretas das decisões estatais.\n\nO debate concentra-se em como interpretar a intenção específica e o peso da dimensão nacional em relação aos objetivos econômicos e políticos mais amplos do regime."
+        },
+        {
+          "number": "8.2",
+          "title": "A abordagem econômico-demográfica",
+          "content": "R. W. Davies e Stephen G. Wheatcroft desenvolveram uma interpretação centrada na reconstrução das condições econômicas e agrícolas da crise.\n\nEm *The Years of Hunger*, os autores analisam a produção agrícola, as requisições, os estoques, a política de aquisição de cereais e os efeitos da coletivização (DAVIES; WHEATCROFT, 2004).\n\nEssa abordagem atribui grande importância à interação entre dificuldades produtivas, decisões governamentais e condições ambientais.\n\nNão se trata necessariamente de absolver o Estado ou negar a responsabilidade política.\n\nO objetivo é compreender como a crise se desenvolveu, quais medidas agravaram a escassez e até que ponto a documentação permite afirmar a existência de uma intenção específica de provocar a fome como objetivo final.\n\nOs estudos de Michael Ellman sobre a fome de 1946–1947 também contribuem para essa abordagem, ao examinar a relação entre disponibilidade de alimentos, prioridades governamentais e mortalidade (ELLMAN, 2000)."
+        },
+        {
+          "number": "8.3",
+          "title": "A abordagem regional e comparativa",
+          "content": "Historiadores como Sarah Cameron e Hiroaki Kuromiya destacam a necessidade de comparar as diferentes regiões soviéticas sem apagar suas particularidades.\n\nCameron demonstra que a fome cazaque não pode ser compreendida apenas como uma versão regional da fome ucraniana.\n\nA destruição dos rebanhos, a sedentarização compulsória e a transformação de uma sociedade pastoril tiveram consequências específicas para a população cazaque (CAMERON, 2018).\n\nKuromiya, ao discutir a fome de 1932–1933, examina a dimensão nacional, as dificuldades de interpretação da documentação e as diferentes possibilidades de compreender a intencionalidade das políticas soviéticas (KUROMIYA, 2008).\n\nEssa abordagem permite comparar as experiências ucraniana, cazaque, russa e de outras regiões, sem pressupor que todas tenham sido atingidas pelos mesmos mecanismos ou na mesma intensidade."
+        },
+        {
+          "number": "8.4",
+          "title": "A importância da demografia histórica",
+          "content": "Os estudos demográficos constituem uma contribuição fundamental para a compreensão das fomes soviéticas.\n\nA reconstrução da mortalidade permite estimar as perdas populacionais, identificar diferenças regionais e compreender a distribuição dos impactos entre grupos sociais.\n\nO trabalho de Rudnytskyi e colaboradores sobre a Ucrânia demonstra a importância de distinguir mortes excedentes e nascimentos perdidos.\n\nEssa separação evita que diferentes categorias sejam somadas ou apresentadas como se representassem o mesmo fenômeno (RUDNYTSKYI et al., 2015).\n\nA demografia histórica também exige atenção às mudanças territoriais, às migrações, às limitações dos registros e aos métodos utilizados para estimar a população que existiria sem a catástrofe."
+        },
+        {
+          "number": "8.5",
+          "title": "Síntese historiográfica",
+          "content": "Há ampla documentação de que as políticas estatais coercitivas desempenharam papel decisivo na fome de 1931–1934 e de que as decisões governamentais agravaram as condições de sobrevivência de milhões de pessoas.\n\nTambém está documentado que as autoridades conheciam a crise e adotaram medidas restritivas, inclusive contra a fuga de camponeses famintos.\n\nO debate continua em torno da intenção específica de genocídio no caso ucraniano, da relação entre os objetivos de industrialização e a repressão nacional, da comparação entre as diferentes regiões e da interpretação jurídica dos acontecimentos.\n\nNa fome de 1921–1922, o peso da guerra, das requisições e da seca é fundamental para compreender a crise.\n\nNa fome de 1931–1934, a coletivização, a repressão e as decisões de aquisição de cereais ocupam posição central.\n\nNa fome de 1946–1947, a destruição da guerra, a seca e as prioridades governamentais de distribuição constituem os principais elementos explicativos.\n\nUma análise acadêmica não deve substituir a investigação por slogans políticos. Deve reconhecer as evidências de responsabilidade estatal, explicar os limites dos dados e explicitar quais conclusões são amplamente aceitas e quais permanecem em debate."
         }
       ]
     }
   ],
-  conclusion: `As grandes fomes soviéticas de 1921–1922, 1931–1934 e 1946–1947 tiveram causas e contextos diferentes. Em todas elas, porém, as decisões políticas influenciaram a capacidade das populações de enfrentar a escassez.
-
-A fome de 1921–1922 ocorreu após guerra, desorganização econômica e seca, levando o governo a aceitar assistência internacional. A catástrofe de 1931–1934 esteve profundamente ligada à coletivização forçada, às requisições, ao confisco de alimentos, às restrições de circulação e à transformação coercitiva da agricultura e da sociedade pastoril. A fome de 1946–1947 foi agravada pela destruição da guerra, pela seca e por prioridades de distribuição que limitaram a resposta à crise.
-
-Na Ucrânia, a reconstrução demográfica estima cerca de 3,9 milhões de mortes excedentes entre 1932 e 1934, além de aproximadamente 600 mil nascimentos perdidos. No Cazaquistão, estudos de Sarah Cameron apontam mais de 1,5 milhão de mortes durante a fome de 1930–1933.
-
-Esses números são estimativas baseadas em métodos e categorias específicas. Não devem ser somados sem considerar períodos, fronteiras territoriais, possíveis sobreposições e diferenças entre mortes diretas e perdas demográficas indiretas.
-
-A conclusão central é que a fome não pode ser compreendida apenas como fenômeno natural. A escassez material interagiu com decisões estatais que determinaram quem podia conservar alimentos, deslocar-se, receber assistência e sobreviver.
-
-Estudar esses episódios exige reconhecer a responsabilidade política, preservar a precisão estatística e distinguir a existência documentada de uma catástrofe das interpretações sobre sua intenção específica. Essa é a base para uma compreensão histórica rigorosa das fomes soviéticas.`,
-  bibliographicReferences: [
-    'APPLEBAUM, Anne. Red famine: Stalin\'s war on Ukraine. New York: Doubleday, 2017.',
-    'CAMERON, Sarah. The hungry steppe: famine, violence, and the making of Soviet Kazakhstan. Ithaca: Cornell University Press, 2018. DOI: https://doi.org/10.7591/cornell/9781501730436.001.0001.',
-    'CONQUEST, Robert. The harvest of sorrow: Soviet collectivization and the terror-famine. New York: Oxford University Press, 1986.',
-    'DAVIES, R. W.; WHEATCROFT, Stephen G. The years of hunger: Soviet agriculture, 1931–1933. Basingstoke: Palgrave Macmillan, 2004.',
-    'ELLMAN, Michael. The 1947 Soviet famine and the entitlement approach to famines. Cambridge Journal of Economics, v. 24, n. 5, p. 603–630, 2000. DOI: https://doi.org/10.1093/cje/24.5.603.',
-    'GRAZIOSI, Andrea. The Great Soviet Peasant War: Bolsheviks and Peasants, 1917–1933. Cambridge, MA: Harvard Ukrainian Research Institute, 1996.',
-    'KUROMIYA, Hiroaki. The Soviet famine of 1932–1933 reconsidered. Europe-Asia Studies, v. 60, n. 4, p. 663–675, 2008. DOI: https://doi.org/10.1080/09668130801999912.',
-    'RUDNYTSKYI, Oleh P. et al. Demography of a man-made human catastrophe: the case of massive famine in Ukraine 1932–1933. Demography and Social Economy, n. 2 (24), p. 11–30, 2015. DOI: https://doi.org/10.15407/dse2015.02.011.',
-    'WHEATCROFT, Stephen G.; DAVIES, R. W. Stalin, grain stocks and the famine of 1932–1933. Slavic Review, v. 54, n. 3, 1995. DOI: https://doi.org/10.2307/2501740.'
+  "conclusion": "As grandes fomes soviéticas de 1921–1922, 1931–1934 e 1946–1947 constituem acontecimentos distintos, produzidos por combinações diferentes de fatores econômicos, ambientais, políticos e sociais.\n\nA fome de 1921–1922 ocorreu em um contexto de guerra, desorganização econômica, requisições compulsórias e seca. A dimensão da catástrofe levou o governo soviético a aceitar assistência internacional, incluindo as operações humanitárias da American Relief Administration.\n\nA catástrofe de 1931–1934 esteve profundamente relacionada à coletivização forçada, às requisições de cereais, ao confisco de alimentos, à repressão contra o campesinato e à transformação coercitiva de diferentes sociedades rurais.\n\nNa Ucrânia, a fome esteve associada a medidas que comprometeram a sobrevivência da população rural e restringiram a possibilidade de procurar alimentos em outras regiões. A interpretação do Holodomor como genocídio envolve a análise da relação entre essas políticas, a repressão nacional e a intenção específica da liderança soviética.\n\nNo Cazaquistão, a destruição dos rebanhos, a sedentarização compulsória e a desorganização da economia pastoril provocaram uma catástrofe demográfica e cultural de proporções extraordinárias.\n\nA fome de 1946–1947, por sua vez, ocorreu em um país devastado pela Segunda Guerra Mundial. A seca e a redução da produção foram fatores importantes, mas as prioridades de distribuição e as decisões governamentais também influenciaram a dimensão da mortalidade.\n\nOs números disponíveis demonstram a magnitude das perdas, mas exigem interpretação cuidadosa.\n\nNa Ucrânia, a reconstrução demográfica estima aproximadamente 3,9 milhões de mortes excedentes e 600 mil nascimentos perdidos entre 1932 e 1934. No Cazaquistão, Sarah Cameron estima mais de 1,5 milhão de mortes durante a fome de 1930–1933. Para 1946–1947, Michael Ellman apresenta uma estimativa de 1 milhão a 1,5 milhão de mortes excedentes.\n\nEssas estatísticas não devem ser somadas sem considerar períodos, fronteiras territoriais, categorias demográficas e diferenças entre mortes diretas e perdas populacionais indiretas.\n\nA principal conclusão histórica é que as fomes soviéticas não podem ser compreendidas apenas como fenômenos naturais ou como consequências inevitáveis de dificuldades agrícolas.\n\nA escassez material interagiu com decisões estatais que determinaram quem podia conservar alimentos, deslocar-se, receber assistência e sobreviver.\n\nO controle governamental sobre a produção, a aquisição e a distribuição de alimentos ampliou a responsabilidade política das autoridades diante das crises.\n\nEstudar esses acontecimentos exige reconhecer a dimensão das catástrofes, preservar a precisão estatística, examinar criticamente os documentos e distinguir a responsabilidade estatal da discussão sobre a intenção específica de cada política.\n\nEssa abordagem permite compreender as fomes soviéticas como parte fundamental da história do poder, da economia e da sociedade na União Soviética, sem reduzir a investigação histórica a justificativas ideológicas ou explicações simplificadoras.",
+  "bibliographicReferences": [
+    "APPLEBAUM, Anne. *Red famine: Stalin's war on Ukraine*. New York: Doubleday, 2017.",
+    "CAMERON, Sarah. *The hungry steppe: famine, violence, and the making of Soviet Kazakhstan*. Ithaca: Cornell University Press, 2018. DOI: 10.7591/cornell/9781501730436.001.0001.",
+    "CONQUEST, Robert. *The harvest of sorrow: Soviet collectivization and the terror-famine*. New York: Oxford University Press, 1986.",
+    "DAVIES, R. W.; WHEATCROFT, Stephen G. *The years of hunger: Soviet agriculture, 1931–1933*. Basingstoke: Palgrave Macmillan, 2004.",
+    "ELLMAN, Michael. The 1947 Soviet famine and the entitlement approach to famines. *Cambridge Journal of Economics*, v. 24, n. 5, p. 603–630, 2000. DOI: 10.1093/cje/24.5.603.",
+    "GRAZIOSI, Andrea. *The Great Soviet Peasant War: Bolsheviks and Peasants, 1917–1933*. Cambridge, MA: Harvard Ukrainian Research Institute, 1996.",
+    "KUROMIYA, Hiroaki. The Soviet famine of 1932–1933 reconsidered. *Europe-Asia Studies*, v. 60, n. 4, p. 663–675, 2008. DOI: 10.1080/09668130801999912.",
+    "RUDNYTSKYI, Oleh P. et al. Demography of a man-made human catastrophe: the case of massive famine in Ukraine 1932–1933. *Demography and Social Economy*, n. 2 (24), p. 11–30, 2015. DOI: 10.15407/dse2015.02.011.",
+    "WHEATCROFT, Stephen G.; DAVIES, R. W. Stalin, grain stocks and the famine of 1932–1933. *Slavic Review*, v. 54, n. 3, 1995. DOI: 10.2307/2501740."
   ]
 };
