@@ -119,7 +119,7 @@ export const Header: React.FC<HeaderProps> = ({
                       onSelectCollection(col.id);
                     }
                   }}
-                  title={isUpcoming ? 'Coleção III — História das Guerras Mundiais (Em Breve / Futuro)' : `${col.title}: ${col.subtitle}`}
+                  title={isUpcoming ? `Coleção ${col.romanNumeral} — ${col.title} (Em Breve / Futuro)` : `${col.title}: ${col.subtitle}`}
                   className={`px-2.5 py-1 rounded text-[11px] font-mono transition-all flex items-center gap-1.5 whitespace-nowrap min-h-[28px] ${
                     isSelected
                       ? 'bg-stone-800 text-amber-400 font-bold border border-amber-500/60 shadow-sm'

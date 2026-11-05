@@ -35,7 +35,9 @@ export interface PrimarySource {
   archiveReference: string; // Ex: NARA Record Group 242, Yale Avalon Doc #1939-08-23, LoC Revelations Box 4
   url?: string;
   excerptOriginal?: string; // Trecho original
+  transcriptionOrig?: string; // Transcrição no idioma original
   transcriptionPt: string; // Tradução / transcrição contextualizada
+  historicalRelevance?: string; // Análise de relevância histórica e jurídica
   abntCitation: string;
   chicagoCitation: string;
   relatedHistorians?: string[]; // Ex: ['Anne Applebaum', 'Oleg Khlevniuk']

@@ -1441,5 +1441,140 @@ Em Cuba, a Revolução de 1959 liderada por Fidel Castro e Che Guevara converteu
       'CHANDLER, David P. Brother Number One: A Political Biography of Pot Pot. Boulder: Westview Press, 1999.',
       'CUMINGS, Bruce. The Korean War: A History. Nova York: Modern Library, 2010.'
     ]
+  },
+
+  // =========================================================================
+  // TÓPICO 102: REVOLUÇÃO FRANCESA E LIBERALISMO (1789–1848)
+  // =========================================================================
+  102: {
+    topicId: 102,
+    title: 'Revolução Francesa e Liberalismo: Direitos do Homem, Cidadania e Ruptura com o Antigo Regime (1789–1848)',
+    subtitle: 'A transformação da soberania, o constitucionalismo e o debate sobre os limites do Estado moderno',
+    authorCatedra: 'Cátedra de História Política, Constitucionalismo e Teoria do Estado',
+    estimatedReadingMinutes: 10,
+    wordCount: 2100,
+    epigraph: {
+      text: 'A grande revolução inaugurou uma nova época porque colocou a igualdade como norma e a soberania do indivíduo como ponto de partida inegociável.',
+      author: 'François Furet',
+      work: 'Pensando a Revolução Francesa (1978)'
+    },
+    narrativeOverview: `A Revolução Francesa de 1789 constituiu uma das rupturas mais profundas da história política ocidental. Ao destruir os pilares jurídicos e corporativos do Antigo Regime — a sociedade estamental, os privilégios tributários de clero e nobreza e a monarquia absoluta de direito divino —, a Revolução redefiniu os conceitos de soberania, cidadania e direitos do indivíduo. A proclamação da Declaração dos Direitos do Homem e do Cidadão em 26 de agosto de 1789 fixou os princípios universais da igualdade civil e da liberdade legal, servindo de matriz para o constitucionalismo contemporâneo.
+
+No entanto, o processo revolucionário (1789–1848) caracterizou-se por intensas contradições: a convivência entre a proclamação de direitos universais e a limitação do sufrágio (cidadãos ativos e passivos), a exclusão política das mulheres denunciada por Olympe de Gouges, a manutenção e posterior abolição da escravidão nas colônias, e as tensões entre a soberania popular radical e as garantias individuais da liberdade liberal durante o Terror jacobino.`,
+    historicalDevelopment: `A crise fiscal e institucional da monarquia dos Bourbon levou à convocação dos Estados Gerais em 1789. A recusa dos privilégios estamentais pelo Terceiro Estado, sob a liderança teórica de Emmanuel-Joseph Sieyès (O Que é o Terceiro Estado?), culminou na autoproclamação da Assembleia Nacional e no Juramento do Jogo da Péla. A tomada da Bastilha em 14 de julho e a abolição dos privilégios feudais na Noite de 4 de Agosto aceleraram a ruína do Antigo Regime.
+
+Com a radicalização do processo a partir de 1792, provocada pela guerra externa e conflitos internos, a monarquia caiu e a Primeira República foi proclamada. Entre 1793 e 1794, sob a direção do Comitê de Salvação Pública e Maximilien Robespierre, o governo revolucionário adotou medidas de exceção (o Terror) em nome da virtude republicana e da salvação pública.
+
+A queda de Robespierre no 9 Termidor (1794) abriu caminho para a reorganização termidoriana, o Diretório, o Consulado e a centralização napoleônica com o Código Civil de 1804. Após a Restauração monárquica de 1815, o liberalismo do século XIX — formulado por Benjamin Constant e Alexis de Tocqueville — desenvolveu-se como uma reflexão sobre a necessidade de limitar o poder do Estado e garantir as liberdades privadas. As revoluções liberais e sociais de 1830 e 1848 expandiram decisivamente o debate sobre a democracia e a questão social.`,
+    institutionalAndStateMechanisms: `Os mecanismos estatais formulados ao longo do ciclo 1789–1848 reformularam a arquitetura do Estado moderno:
+1. Soberania Nacional e Poder Constituinte: A soberania deixou de residir na pessoa do rei para radicar-se na Nação (Artigo 3º da Declaração de 1789).
+2. Separação de Poderes e Garantia de Direitos: Conforme o Artigo 16 da Declaração, a existência de uma Constituição depende da garantia dos direitos e da divisão das funções estatais.
+3. Codificação Civil e Segurança Jurídica: O Código Civil de 1804 uniformizou o direito privado, consagrando a igualdade civil masculina e a inviolabilidade da propriedade privada.
+4. Distinção entre Cidadania e Liberdade: O modelo liberal pós-revolucionário de Constant e Tocqueville contrapôs a participação cívica coletiva dos antigos à autonomia privada dos modernos.`,
+    historiographicalDebate: `O debate historiográfico sobre a Revolução Francesa desenvolveu-se em torno de correntes interpretativas divergentes:
+1. Interpretação Social e Marxista (Georges Lefebvre, Albert Soboul): Analisa a Revolução como uma revolução burguesa que destruiu os entraves feudais ao desenvolvimento capitalista.
+2. Interpretação Revisionista (François Furet): Enfatiza a autonomia da linguagem política, a ideologia da soberania popular e a dinâmica da ilusão revolucionária.
+3. Interpretação Histórico-Global (Eric Hobsbawm): Relaciona a Revolução Francesa à Revolução Industrial na "Dupla Revolução" que inaugurou o mundo contemporâneo.
+4. Interpretação Liberal-Constitucional (Benjamin Constant, Alexis de Tocqueville, Norberto Bobbio): Foca na proteção dos direitos individuais e na separação de poderes contra a tirania do Estado.`,
+    scholarlyQuotes: [
+      {
+        author: 'Benjamin Constant',
+        work: 'Da Liberdade dos Antigos Comparada à dos Modernos',
+        year: '1819',
+        pageOrDoc: 'Discurso no Athénée Royal de Paris',
+        quote: 'A liberdade dos modernos é para cada um o direito de não estar submetido senão às leis, de não poder ser preso, nem detido, nem morto, nem maltratado pela vontade arbitrária de um ou de vários indivíduos.',
+        historicalAnalysis: 'Constant fundamenta o liberalismo moderno na garantia da autonomia individual privada perante o poder estatal.'
+      },
+      {
+        author: 'Alexis de Tocqueville',
+        work: 'A Democracia na América',
+        year: '1835',
+        pageOrDoc: 'Vol. I, Cap. 15',
+        quote: 'Se a liberdade vier a se perder na América, isso se devendo à omnipotência da maioria, que terá levado as minorias ao desespero e as terá forçado a recorrer à força física.',
+        historicalAnalysis: 'Tocqueville adverte contra os riscos da tirania da maioria e do despotismo tutelar centralizador.'
+      }
+    ],
+    archivalCorpus: [
+      {
+        archiveName: 'Archives Nationales de France (Paris)',
+        fondCode: 'Série C (Assembleias Nacionais) / Série AD (Atos das Autoridades)',
+        description: 'Atas originais da Assembleia Nacional Constituinte de 1789 e cópias manuscritas da Declaração dos Direitos do Homem e do Cidadão.'
+      },
+      {
+        archiveName: 'Bibliothèque Nationale de France (Gallica)',
+        fondCode: 'Imprimés / Reserve Lb-39 (Brochuras e Panfletos da Revolução)',
+        description: 'Panfletos originais de Emmanuel-Joseph Sieyès (O Que é o Terceiro Estado?) e Olympe de Gouges (1791).'
+      }
+    ],
+    concludingAssessment: `A história de 1789 a 1848 consolidou o problema central da teoria política contemporânea: como conciliar a soberania popular, a igualdade jurídica, as liberdades individuais e as demandas de participação democrática com os limites constitucionais da autoridade do Estado.`,
+    bibliographicReferences: [
+      'BOBBIO, Norberto. Liberalismo e Democracia. São Paulo: Brasiliense, 1988.',
+      'CONSTANT, Benjamin. De la liberté des Anciens comparée à celle des Modernes. 1819.',
+      'FURET, François. Pensando a Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.',
+      'HOBSBAWM, Eric. A Era das Revoluções: 1789–1848. Rio de Janeiro: Paz e Terra, 1977.',
+      'LEFEBVRE, Georges. The Coming of the French Revolution. Princeton: Princeton University Press, 1947.',
+      'SOBOUL, Albert. The French Revolution 1787–1799. London: Unwin Hyman, 1989.',
+      'TOCQUEVILLE, Alexis de. De la démocratie en Amérique. 1835–1840.'
+    ]
+  },
+  112: {
+    topicId: 112,
+    title: 'O Iluminismo e a Crise da Legitimidade do Antigo Regime',
+    subtitle: 'As transformações intelectuais, a opinião pública e o colapso institucional da monarquia absolutista (1715–1789)',
+    authorCatedra: 'Cátedra de História Moderna e Filosofia Política · Ensaio Acadêmico',
+    estimatedReadingMinutes: 9,
+    wordCount: 1950,
+    epigraph: {
+      text: 'A Revolução Francesa foi pensada antes de ser realizada: o Século das Luzes não causou o fato material de 1789, mas inventou a linguagem e a esfera pública sem as quais o Antigo Regime não poderia ter sido desmantelado.',
+      author: 'Roger Chartier',
+      work: 'As Origens Culturais da Revolução Francesa (2009, p. 112)'
+    },
+    narrativeOverview: `Durante o século XVIII, a França viveu o paradoxo de ser o centro cultural supremo da Europa ocidental e, ao mesmo tempo, um Estado aprisionado por uma estrutura sociojurídica obsoleta. A monarquia absoluta dos Bourbon governava sobre uma sociedade rigidamente dividida em três estamentos jurídicos: o Clero (Primeiro Estado), a Nobreza (Segundo Estado) e o Terceiro Estado, que reunia burgueses, artesãos, camponeses e trabalhadores urbanos — totalizando 98% da população. Enquanto as duas primeiras ordens usufruíam de isenções tributárias e privilégios feudais, o Terceiro Estado sustentava financeiramente o Tesouro Real. Esse contraste brutal entre o dinamismo econômico da burguesia e o imobilismo das ordens privilegiadas constituiu a grande tensão estrutural do Antigo Regime.`,
+    historicalDevelopment: `Em meio a essa rigidez social, o Iluminismo floresceu como um movimento de crítica radical à autoridade tradicional. Pensadores como Montesquieu (*O Espírito das Leis*, 1748) propuseram a divisão tripartite dos poderes como remédio contra o arbítrio monárquico; Voltaire (*Tratado sobre a Tolerância*, 1763) fustigou a intolerância religiosa e os privilégios eclesiásticos; e Jean-Jacques Rousseau (*Do Contrato Social*, 1762) formulou a teoria da soberania popular fundada na vontade geral, desafiando a própria concepção de direito divino dos reis. A publicação da monumental *Encyclopédie* (1751–1772), dirigida por Diderot e d'Alembert, catalogou as ciências e as artes sob a luz estrita da razão, criando um tribunal laico do conhecimento.
+
+Essas ideias não permaneceram restritas às academias eruditas. Através de salões literários, cafés urbanos, lojas maçônicas e uma prolífica literatura de panfletos clandestinos, emergiu a *opinião pública* — uma nova instância de legitimidade política independente da vontade do monarca. Quando a monarquia tentou promover reformas fiscais entre 1774 e 1787 para cobrir o imenso déficit público acumulado pelas guerras (especialmente o auxílio financeiro à Guerra de Independência Americana), encontrou a feroz resistência dos Parlamentos aristocráticos. A recusa da nobreza em abdicar de suas isenções fiscais paralisou o Estado e forçou a convocação dos Estados Gerais em 1788-1789, transformando a rebelião aristocrática na faísca inusitada que desencadearia a Revolução.`,
+    institutionalAndStateMechanisms: `A estrutura institucional do Antigo Regime fundava-se na teoria do absolutismo de direito divino, centralizado na figura do monarca em Versalhes. No entanto, o exercício do poder real dependia do registro dos éditos pelos Parlamentos — tribunais judiciários regionais dominados pela *nobreza de toga*. Sempre que o rei buscava criar novos impostos universais, os Parlamentos utilizavam o direito de *remontrance* (objeção legal) para vetar os éditos, argumentando defender as "liberdades fundamentais do reino". Esse impasse gerou um bloqueio institucional crônico: a monarquia não podia reformar a fiscalidade sem destruir a aliança com as ordens privilegiadas, nem podia governar sem os recursos do Terceiro Estado.`,
+    historiographicalDebate: `O debate historiográfico sobre as origens da Revolução divide-se tradicionalmente em três vertentes. A interpretação socioeconômica clássica marxista, representada por Georges Lefebvre e Albert Soboul, analisa o Século das Luzes como a etapa de maturação da luta de classes, na qual a ascensão econômica da burguesia destruiu os entraves feudais da sociedade estamental. 
+
+Por outro lado, a escola revisionista liderada por François Furet e Keith Michael Baker argumenta que a Revolução foi primordialmente uma mutação cultural e ideológica: o Iluminismo inventou o espaço da política democrática e a linguagem da soberania nacional, permitindo que a crise fiscal de 1787 fosse interpretada como a falência moral da monarquia. Por fim, a história cultural da leitura, capitaneada por Robert Darnton e Roger Chartier, demonstra como a literatura clandestina de libelos e pasquins desacreditou a imagem sagrada da família real, preparando a desobediência civil muito antes da queda da Bastilha.`,
+    scholarlyQuotes: [
+      {
+        author: 'Roger Chartier',
+        work: 'As Origens Culturais da Revolução Francesa',
+        year: '2009',
+        pageOrDoc: 'p. 88-92',
+        quote: 'As ideias iluministas desconsagraram a autoridade do rei e da Igreja não criando revolucionários convictos, mas tornando pensável e legítima a desobediência crítica em relação a todas as instituições herdadas.',
+        historicalAnalysis: 'Chartier demonstra que a proliferação da leitura privada e dos debates em espaços não estatais dessacralizou o poder monárquico na mentalidade coletiva dos franceses.'
+      },
+      {
+        author: 'Keith Michael Baker',
+        work: 'Inventing the French Revolution',
+        year: '1990',
+        pageOrDoc: 'p. 167-170',
+        quote: 'A "opinião pública" emergiu na França do século XVIII como um novo tribunal supremo de apelação ao qual tanto a Coroa quanto os Parlamentos recorriam para legitimar suas posições na disputa pelo poder.',
+        historicalAnalysis: 'Baker analisa a invenção conceitual da opinião pública como o momento em que a autoridade política deixou de pertencer exclusivamente à esfera arcana da corte real.'
+      }
+    ],
+    archivalCorpus: [
+      {
+        archiveName: 'Bibliothèque Nationale de France (Gallica)',
+        fondCode: 'Manuscritos / Fundo Francês 22170-22180 (Censura Real)',
+        description: 'Registros do Gabinete de Censura de Versalhes contendo relatórios de apreensão e interdição dos volumes da Encyclopédie.'
+      },
+      {
+        archiveName: 'Archives Nationales de France',
+        fondCode: 'Série K (Monumentos Históricos) / K-145 (Atas dos Parlamentos)',
+        description: 'Registros formais de objecção (remontrances) dos Parlamentos de Paris e Bordeaux contra os impostos de Calonne e Turgot.'
+      }
+    ],
+    concludingAssessment: `O Século das Luzes na França foi o grande laboratório intelectual da Modernidade. Ao questionar a ordem estamental, defender a liberdade de pensamento e proclamar a primazia da razão pública, o Iluminismo desmantelou o arcabouço simbólico do absolutismo, preparando o caminho para que 1789 inaugurasse a era do constitucionalismo e dos direitos universais.`,
+    bibliographicReferences: [
+      'BAKER, Keith Michael. Inventing the French Revolution. Cambridge: Cambridge University Press, 1990.',
+      'CHARTIER, Roger. As Origens Culturais da Revolução Francesa. São Paulo: UNESP, 2009.',
+      'DARNTON, Robert. Boemia Literária e Revolução. São Paulo: Companhia das Letras, 1987.',
+      'DOYLE, William. Origins of the French Revolution. Oxford: Oxford University Press, 1999.',
+      'FURET, François. Pensando a Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.',
+      'LEFEBVRE, Georges. 1789: O Surgimento da Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.'
+    ]
   }
 };

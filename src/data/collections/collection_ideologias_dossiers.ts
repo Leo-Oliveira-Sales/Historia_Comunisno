@@ -390,28 +390,326 @@ O protocolo de citações anteriormente apresentado junto ao material deste cap�
 Este dossiê não classifica nenhuma frase como citação literal verificada sem conferência da edição e da página. As sínteses atribuídas aos pesquisadores são paráfrases analíticas. Para uma auditoria documental definitiva, as citações diretas deverão ser conferidas nos textos originais ou em traduções identificadas.`,
 
   102: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
-# DOSSIÊ ACADÊMICO Nº 02: REVOLUÇÃO FRANCESA E LIBERALISMO
 
-**Eixo Temático:** Direitos do Homem, Cidadania, Ruptura com o Antigo Regime e Liberalismo Constitucional (1789–1848)
-**Especialistas de Referência:** François Furet, Eric Hobsbawm, Norberto Bobbio, Robert Dahl, Michael Freeden
+# DOSSIÊ ACADÊMICO Nº 02
+
+## REVOLUÇÕES BURGUESAS E TEORIA DO ESTADO
+
+### REVOLUÇÃO FRANCESA E LIBERALISMO: DIREITOS DO HOMEM, CIDADANIA E RUPTURA COM O ANTIGO REGIME
+
+**Eixo temático:** Direitos do Homem, cidadania, soberania nacional, constitucionalismo e liberalismo.
+**Recorte histórico:** 1789–1848.
+**Especialistas de referência:** François Furet, Eric Hobsbawm, Georges Lefebvre, Albert Soboul, William Doyle, Norberto Bobbio, Alexis de Tocqueville e Benjamin Constant.
 
 ---
 
 ## 1. IDENTIFICAÇÃO E PROBLEMA HISTÓRICO
-De que maneira a Revolução Francesa instaurou a política de massas e formulou a contradição estrutural entre soberania popular ilimitada (Jacobinismo) e as garantias individuais inalienáveis (Liberalismo Constitucional)?
 
-## 2. NARRATIVA CRONOLÓGICA E DINÂMICA REVOLUCIONÁRIA
-- **1789:** Convocação dos Estados Gerais; queda da Bastilha (14 de julho); abolição dos direitos feudais (4 de agosto); proclamação da Declaração dos Direitos do Homem e do Cidadão (26 de agosto).
-- **1791–1792:** Queda da monarquia constitucional; proclamação da República e emergência da topografia parlamentar Esquerda (Montanha) e Direita (Gironda).
-- **1793–1794:** O Terror jacobino liderado por Robespierre; o Comitê de Salvação Pública; a guilhotina e a mobilização total da nação contra invasores e opositores internos.
-- **1795–1815:** Reação termidoriana, Diretório, Império Napoleônico e a difusão continental do Código Civil burguês.
+**Questão central:**
 
-## 3. O PENSAMENTO LIBERAL PÓS-REVOLUCIONÁRIO
-- **Benjamin Constant (1819):** Da Liberdade dos Antigos Comparada à dos Modernos — Advertência de que a imposição forçada da virtude republicana antiga resulta em despotismo; a liberdade moderna consiste na esfera protegida da vida privada e dos direitos civis.
-- **Alexis de Tocqueville (1835–1856):** A marcha providencial da igualdade de condições e a advertência profética contra o "despotismo brando e tutelar" do Estado centralizador.
+Como a Revolução Francesa destruiu os fundamentos jurídicos e políticos do Antigo Regime e contribuiu para a formação do Estado liberal, do constitucionalismo moderno e das disputas contemporâneas sobre cidadania, soberania e democracia?
 
-## 4. O BALANÇO HISTORIOGRÁFICO DE FRANÇOIS FURET
-A escola revisionista francesa desconstruiu o dogma leninista da revolução como necessidade mecânica burguesa, demonstrando que a Revolução Francesa foi primordialmente a inauguração do espaço autônomo da ideologia política e da ilusão de que a sociedade pode ser refundada do zero pela vontade estatal.`,
+**Problemas específicos:**
+
+1. Como a crise fiscal e institucional da monarquia francesa desencadeou a ruptura revolucionária?
+2. De que maneira a Declaração de 1789 transformou a concepção de direitos e igualdade jurídica?
+3. Quais eram os limites da cidadania revolucionária?
+4. Como o jacobinismo e o Terror expressaram as tensões entre soberania popular e garantias individuais?
+5. De que maneira o liberalismo do século XIX procurou limitar o poder estatal?
+6. Como as revoluções de 1830 e 1848 ampliaram a questão democrática e social?
+
+**Tese central do dossiê:**
+
+A Revolução Francesa representou uma ruptura decisiva com a sociedade estamental e contribuiu para estabelecer as bases jurídicas e políticas do Estado moderno. Entretanto, a construção da cidadania permaneceu limitada e conflituosa, dando origem a disputas entre liberalismo, republicanismo, democracia e socialismo.
+
+---
+
+## 2. CONTEXTO HISTÓRICO E ESTRUTURAL
+
+### Antigo Regime
+
+* Sociedade estamental.
+* Privilégios jurídicos e fiscais.
+* Autoridade monárquica.
+* Influência institucional da Igreja e da aristocracia.
+* Desigualdade perante a lei.
+
+### Crise da monarquia
+
+* Endividamento estatal.
+* Gastos militares.
+* Dificuldades tributárias.
+* Resistência dos grupos privilegiados.
+* Crise de representação política.
+
+### Influência intelectual
+
+* Iluminismo.
+* Liberalismo político.
+* Contratualismo.
+* Soberania nacional.
+* Igualdade jurídica.
+* Constitucionalismo.
+
+### Transformação social
+
+* Crescimento da burguesia.
+* Mobilização camponesa.
+* Participação popular urbana.
+* Expansão da imprensa e dos debates políticos.
+* Questionamento dos privilégios hereditários.
+
+---
+
+## 3. NARRATIVA CRONOLÓGICA E DINÂMICA REVOLUCIONÁRIA
+
+| Data | Acontecimento | Importância histórica |
+| --- | --- | --- |
+| Janeiro de 1789 | Publicação de *O Que é o Terceiro Estado?* | Crítica à estrutura estamental |
+| Maio de 1789 | Estados Gerais | Crise de representação |
+| Junho de 1789 | Assembleia Nacional e Juramento do Jogo da Péla | Afirmação da soberania nacional |
+| 14 de julho de 1789 | Tomada da Bastilha | Mobilização popular |
+| Agosto de 1789 | Abolição dos privilégios e Declaração dos Direitos | Ruptura jurídica |
+| 1791 | Constituição e cidadania censitária | Monarquia constitucional |
+| 1792 | Queda da monarquia e proclamação da República | Radicalização revolucionária |
+| 1793–1794 | Terror | Repressão e centralização revolucionária |
+| Julho de 1794 | Reação Termidoriana | Queda de Robespierre |
+| 1795 | Constituição do Diretório | Reorganização republicana |
+| 1799 | Golpe de 18 de Brumário | Ascensão de Napoleão |
+| 1804 | Código Civil | Consolidação de reformas jurídicas |
+| 1815 | Congresso de Viena e Restauração | Reorganização monárquica |
+| 1819 | Discurso de Benjamin Constant | Teoria da liberdade moderna |
+| 1830 | Revolução de Julho | Liberalismo e limitação da participação |
+| 1835–1840 | Publicação de *A Democracia na América* | Análise da igualdade e da democracia |
+| 1848 | Revoluções europeias | Expansão das reivindicações democráticas e sociais |
+
+---
+
+## 4. MATRIZES TEÓRICAS E DOCUMENTAÇÃO PRIMÁRIA
+
+### 4.1 Emmanuel-Joseph Sieyès
+
+**Obra:** *O Que é o Terceiro Estado?* (1789).
+
+**Conceitos:**
+* Nação.
+* Representação.
+* Terceiro Estado.
+* Poder constituinte.
+
+**Importância:**
+Contribuiu para a formulação da soberania nacional e para a crítica da representação estamental.
+
+### 4.2 Declaração dos Direitos do Homem e do Cidadão
+
+**Data:** 26 de agosto de 1789.
+
+**Artigos fundamentais:**
+* Artigo 1º: liberdade e igualdade jurídica.
+* Artigo 2º: liberdade, propriedade, segurança e resistência à opressão.
+* Artigo 3º: soberania nacional.
+* Artigo 4º: limites da liberdade.
+* Artigo 6º: lei como expressão da vontade geral.
+* Artigo 7º: garantias contra prisões arbitrárias.
+* Artigo 10: liberdade de opinião.
+* Artigo 11: liberdade de expressão.
+* Artigo 16: garantia de direitos e separação de poderes.
+* Artigo 17: proteção da propriedade.
+
+**Importância:**
+Documento central para o constitucionalismo moderno e para a história dos direitos civis.
+
+### 4.3 Olympe de Gouges
+
+**Documento:** *Declaração dos Direitos da Mulher e da Cidadã* (1791).
+
+**Conceitos:**
+* Igualdade entre os sexos.
+* Cidadania feminina.
+* Participação política.
+* Universalidade dos direitos.
+
+**Importância:**
+Denunciou a exclusão das mulheres da cidadania política revolucionária.
+
+### 4.4 Robespierre e o governo revolucionário
+
+**Documentação:** discursos políticos e documentos da Convenção Nacional e do Comitê de Salvação Pública.
+
+**Conceitos:**
+* Virtude republicana.
+* Defesa da República.
+* Soberania popular.
+* Governo revolucionário.
+* Repressão política.
+
+**Importância:**
+Permite compreender as justificativas políticas utilizadas para legitimar a centralização e as medidas excepcionais do período do Terror.
+
+### 4.5 Benjamin Constant
+
+**Obra:** *Da Liberdade dos Antigos Comparada à dos Modernos* (1819).
+
+**Conceitos:**
+* Liberdade individual.
+* Participação política.
+* Representação.
+* Autonomia privada.
+* Limitação do poder.
+
+**Importância:**
+Contribuiu para a formulação do liberalismo constitucional pós-revolucionário.
+
+### 4.6 Alexis de Tocqueville
+
+**Obras:**
+* *A Democracia na América* (1835–1840).
+* *O Antigo Regime e a Revolução* (1856).
+
+**Conceitos:**
+* Igualdade de condições.
+* Tirania da maioria.
+* Despotismo tutelar.
+* Centralização administrativa.
+* Associações livres.
+
+**Importância:**
+Examinou os riscos políticos associados à democracia de massas e à concentração administrativa do Estado.
+A segunda obra é posterior ao recorte cronológico, sendo utilizada como interpretação retrospectiva.
+
+---
+
+## 5. O TERROR E O DEBATE SOBRE A SOBERANIA POPULAR
+
+**Problema de pesquisa:**
+Até que ponto a defesa da República e da soberania popular pode justificar medidas excepcionais contra opositores políticos?
+
+**Elementos históricos:**
+* Guerra externa.
+* Insurreições internas.
+* Centralização executiva.
+* Comitê de Salvação Pública.
+* Lei dos Suspeitos.
+* Tribunal Revolucionário.
+* Execuções políticas.
+
+**Interpretações:**
+* François Furet destaca a autonomia da política revolucionária e os perigos da ideologia que reivindica representar integralmente a vontade popular.
+* Jacob Talmon investiga a tradição que denomina democracia totalitária.
+* Historiadores de tradição social, como Georges Lefebvre e Albert Soboul, enfatizam as condições sociais, a guerra e a mobilização popular.
+
+**Nota conceitual:**
+O governo jacobino não deve ser automaticamente classificado como totalitário no sentido histórico utilizado para regimes do século XX. A comparação exige delimitação conceitual e contextualização.
+
+---
+
+## 6. O LIBERALISMO CONSTITUCIONAL E A LIMITAÇÃO DO ESTADO
+
+**Princípios fundamentais:**
+1. Direitos individuais.
+2. Igualdade jurídica.
+3. Legalidade.
+4. Liberdade de expressão.
+5. Proteção da propriedade.
+6. Separação de poderes.
+7. Representação política.
+8. Limitação da autoridade governamental.
+
+**Benjamin Constant:**
+Defendeu a proteção da independência individual e a distinção entre participação política e liberdade privada.
+
+**Tocqueville:**
+Alertou para a concentração administrativa, a tirania da maioria e a perda da autonomia social.
+
+**Norberto Bobbio:**
+Ajudou a sistematizar as diferenças e relações entre liberalismo e democracia.
+
+**Síntese:**
+O liberalismo constitucional procura limitar o poder político e proteger os direitos individuais. A democracia procura ampliar a participação dos cidadãos na formação das decisões coletivas. A história do século XIX demonstra que essas duas tradições nem sempre avançaram simultaneamente.
+
+---
+
+## 7. O CICLO REVOLUCIONÁRIO DE 1830 E 1848
+
+### Revolução de 1830
+* Queda de Carlos X.
+* Ascensão de Luís Filipe.
+* Monarquia de Julho.
+* Fortalecimento de setores liberais.
+* Permanência do sufrágio censitário.
+
+### Revoluções de 1848
+* Queda da Monarquia de Julho.
+* Proclamação da Segunda República francesa.
+* Sufrágio universal masculino.
+* Mobilização operária.
+* Reivindicações sociais.
+* Conflitos entre republicanos moderados e setores populares.
+
+**Importância histórica:**
+As revoluções de 1848 demonstraram que a igualdade jurídica e a liberdade econômica não solucionavam os problemas de representação, participação política e desigualdade social.
+A questão social passou a integrar definitivamente o debate sobre a organização do Estado moderno.
+
+---
+
+## 8. DEBATE HISTORIOGRÁFICO E CONCLUSÃO DE PESQUISA
+
+### Interpretação social e marxista
+**Referências:** Georges Lefebvre e Albert Soboul.
+Enfatiza:
+* Conflitos de classe.
+* Transformações econômicas.
+* Crise da sociedade feudal.
+* Ascensão da burguesia.
+* Mobilização popular.
+
+### Interpretação revisionista
+**Referência:** François Furet.
+Enfatiza:
+* Autonomia da política.
+* Linguagem revolucionária.
+* Soberania popular.
+* Ideologia.
+* Relação entre radicalização e violência.
+
+### Interpretação liberal e constitucional
+**Referências:** Benjamin Constant, Alexis de Tocqueville e Norberto Bobbio.
+Enfatiza:
+* Direitos individuais.
+* Limitação do Estado.
+* Representação política.
+* Constitucionalismo.
+* Proteção contra a tirania.
+
+### Interpretação histórico-global
+**Referência:** Eric Hobsbawm.
+Relaciona a Revolução Francesa à Revolução Industrial e às transformações políticas, econômicas e sociais do período 1789–1848.
+
+### Conclusão de pesquisa
+A Revolução Francesa constituiu uma ruptura fundamental com o Antigo Regime e contribuiu para a formação do Estado liberal e constitucional.
+Entretanto, a universalidade dos direitos proclamados não se converteu imediatamente em cidadania universal. As disputas sobre sufrágio, igualdade social, direitos das mulheres e emancipação dos escravizados demonstram que a modernidade política foi construída por processos históricos contraditórios.
+O período de 1789 a 1848 consolidou o problema central da teoria política contemporânea: conciliar liberdade, igualdade, soberania, representação e participação democrática.
+
+---
+
+## REFERÊNCIAS BIBLIOGRÁFICAS ESSENCIAIS
+
+### Fontes primárias
+CONSTANT, Benjamin. *De la liberté des Anciens comparée à celle des Modernes*. 1819.
+DECLARAÇÃO DOS DIREITOS DO HOMEM E DO CIDADÃO. França, 1789.
+GOUGES, Olympe de. *Déclaration des droits de la femme et de la citoyenne*. 1791.
+NAPOLEÃO BONAPARTE. *Code civil des Français*. 1804.
+SIEYÈS, Emmanuel-Joseph. *Qu'est-ce que le Tiers-État?* 1789.
+TOCQUEVILLE, Alexis de. *De la démocratie en Amérique*. 1835–1840.
+
+### Historiografia
+BOBBIO, Norberto. *Liberalismo e Democracia*. São Paulo: Brasiliense, 1988.
+DOYLE, William. *The Oxford History of the French Revolution*. Oxford: Oxford University Press, 1989.
+FURET, François. *Pensando a Revolução Francesa*. Rio de Janeiro: Paz e Terra, 1989.
+HOBSBAWM, Eric. *A Era das Revoluções: 1789–1848*. Rio de Janeiro: Paz e Terra, 1977.
+LEFEBVRE, Georges. *The Coming of the French Revolution*. Princeton: Princeton University Press, 1947.
+SOBOUL, Albert. *The French Revolution 1787–1799*. London: Unwin Hyman, 1989.
+TALMON, J. L. *The Origins of Totalitarian Democracy*. London: Secker & Warburg, 1952.`,
 
   103: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
 # DOSSIÊ ACADÊMICO Nº 03: REVOLUÇÃO INDUSTRIAL E CAPITALISMO
@@ -561,5 +859,119 @@ Como a análise conceitual comparada das grandes tradições políticas contempo
 - **Totalitarismo vs. Autoritarismo (Linz, Friedrich e Brzezinski):** A distinção sociológica fundamental entre controle absoluto da sociedade e regimes de pluralismo limitado.
 - **A Lição do Século XX:** A defesa intransigente do Estado de Direito, da divisão de poderes e da primazia incondicional da dignidade humana.`,
 
-  111: DOSSIER_16_TEXT
+  111: DOSSIER_16_TEXT,
+
+  112: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
+
+# DOSSIÊ ACADÊMICO Nº 12
+
+## FRANÇA NO SÉCULO DAS LUZES
+
+### Iluminismo, absolutismo, crise do Antigo Regime e as origens da Revolução Francesa (1715–1789)
+
+**Eixo temático:** Razão, direitos naturais, crítica ao absolutismo, opinião pública e crise fiscal e institucional.
+**Recorte principal:** 1715–1789.
+**Especialistas de referência:** François Furet, Robert Darnton, Roger Chartier, Keith Michael Baker, Georges Lefebvre, William Doyle, Jonathan Israel.
+
+---
+
+## 1. IDENTIFICAÇÃO E PROBLEMA HISTÓRICO
+
+**Questão central:**
+
+Como as transformações intelectuais, sociais, econômicas e institucionais da França no século XVIII (1715–1789) minaram os fundamentos de legitimidade da monarquia absoluta e do Antigo Regime, criando as condições de possibilidade para a eclosão da Revolução Francesa?
+
+**Problema histórico ampliado:**
+
+A eclosão da Revolução Francesa não pode ser explicada por uma causa única, nem como mero resultado mecânico das ideias iluministas ou como explosão espontânea da miséria popular. Trata-se de um processo multifatorial no qual o Iluminismo reformulou o vocabulário político e a cultura da crítica, a sociedade estamental sofreu com o acirramento de privilégios e tensões sociais, a economia enfrentou gargalos fiscais e crises rurais, e a monarquia absoluta perdeu sua autoridade diante da resistência dos Parlamentos e do colapso das finanças estatais.
+
+---
+
+## 2. CONCEITOS FUNDAMENTAIS E VOCABULÁRIO POLÍTICO
+
+- **Antigo Regime (*Ancien Régime*):** Estrutura política, social e jurídica da França pré-1789, caracterizada pelo absolutismo monárquico, pela sociedade estamental (ordens) e por privilégios corporativos e regionais.
+- **Sociedade de Ordens:** Divisão hierárquica e jurídica da população em três estamentos: Clero (Primeiro Estado), Nobreza (Segundo Estado) e Terceiro Estado (burguesia, camponeses e trabalhadores urbanos).
+- **Iluminismo (*Lumières*):** Movimento intelectual do século XVIII que valorizou a razão crítica, a ciência, a tolerância e a reformulação das instituições políticas e sociais.
+- **Esfera Pública / Opinião Pública:** Espaço de discussão autônomo em relação ao Estado e à Igreja (salões, cafés, academias, imprensa), no qual ideias e políticas governamentais passavam a ser julgadas publicamente.
+- **Despotismo Esclarecido / Absolutismo Ilustrado:** Tentativas de reforma administrativa e econômica promovidas por monarcas ou ministros influenciados por ideias racionalistas, sem renunciar à autoridade soberana.
+- **Fisiocracia:** Doutrina econômica que considerava a terra e a agricultura como as verdadeiras fontes de riqueza, defendendo a liberdade de comércio de grãos (*laissez-faire*) e a tributação única sobre a propriedade rústica.
+- **Parlamentos (França do Antigo Regime):** Tribunais superiores de justiça com a prerrogativa de registrar os éditos reais e apresentar remanejamentos (*remontrances*), transformando-se em bastiões de resistência aristocrática contra a autoridade do rei.
+- **Cahiers de doléances (Cadernos de Queixas):** Registros oficiais das reivindicações, petições e propostas redigidas pelas comunidades e corporações de toda a França por ocasião da convocação dos Estados Gerais em 1788-1789.
+
+---
+
+## 3. ESTRUTURA SOCIAL E CONTRADIÇÕES ESTAMENTAIS
+
+1. **Primeiro Estado (Clero):** Representava cerca de 0,5% da população, detinha cerca de 10% das terras agrícolas, cobrava o dízimo e gozava de isenção de impostos diretos, pagando apenas uma contribuição voluntária (*don gratuit*).
+2. **Segundo Estado (Nobreza):** Representava cerca de 1,5% da população, controlava entre 20% e 25% das terras e monopolizava os altos cargos no exército, na magistratura e na corte. Apresentava divisão entre a nobreza de espada (*noblesse d’épée*) e a nobreza de toga (*noblesse de robe*).
+3. **Terceiro Estado:** Compreendia aproximadamente 98% da população francesa. Incluía a alta burguesia letrada e financeira, profissionais liberais, artesãos, trabalhadores urbanos e uma vasta massa camponesa (80% da população) que suportava a maior parte da carga tributária (*taille*, *gabelle*) e obrigações senhoriais.
+
+---
+
+## 4. O ILUMINISMO FRANCÊS E A TRANSFORMAÇÃO CULTURAL
+
+- **Montesquieu (*O Espírito das Leis*, 1748):** Formulação da teoria dos freios e contrapesos e da divisão tripartite dos poderes (Legislativo, Executivo e Judiciário) como salvaguarda contra o despotismo.
+- **Voltaire (*Tratado sobre a Tolerância*, 1763):** Defesa intransigente da liberdade de pensamento, do anticlericalismo, do combate ao fanatismo religioso e da defesa dos direitos civis.
+- **Rousseau (*Do Contrato Social*, 1762):** Teoria da soberania inalienável e indivisível pertencente ao povo e orientada pela *vontade geral*, assentando a igualdade civil como imperativo político.
+- **Diderot e d’Alembert (*Encyclopédie*, 1751–1772):** A monumental empresa editorial em 28 volumes que catalogou o conhecimento científico, técnico e humanístico sob o espírito da crítica racional, desafiando a censura monárquica e eclesiástica.
+
+---
+
+## 5. CRISES ECONÔMICAS, AGRÁRIAS E REFORMAS IMPOSSÍVEIS
+
+- **Tentativas de Reforma Fiscal (1774–1787):** Os ministros Turgot, Necker, Calonne e Brienne tentaram reformar o sistema tributário para tributar as terras da nobreza e do clero a fim de conter o déficit público.
+- **A Guerra das Farinhas (1775):** A liberalização do comércio de grãos promovida por Turgot provocou a alta do preço do pão e ondas de saques em vilas e cidades rurais.
+- **O Impacto Financeiro da Guerra Americana (1778–1783):** O auxílio militar e financeiro às Treze Colônias duplicou a dívida da Coroa Francesa, levando a monarquia à beira da falência em 1786.
+- **As Crises Climáticas e Rurais (1788–1789):** Tempestades de granizo e invernos rigorosos destruíram as colheitas, resultando em desemprego, escassez de mantimentos e explosão dos preços dos alimentos na véspera da Revolução.
+
+---
+
+## 6. A RESISTÊNCIA ARISTOCRÁTICA E A REVOLTA DOS PARLAMENTOS (1787–1788)
+
+- **A Assembleia dos Notáveis (1787):** Reunião dos nobres convocada por Calonne que recusou categoricamente a criação do imposto territorial universal, exigindo a prestação de contas das finanças estatais.
+- **A Paralisia Institucional:** Os Parlamentos recusam-se a registrar os éditos de reforma tributária e declaram que apenas os Estados Gerais possuíam competência legal para aprovar novos impostos.
+- **O Revezamento Revolucionário:** A nobreza, ao tentar defender seus privilégios contra o absolutismo, abriu a porta para o desmantelamento de todo o edifício monárquico.
+
+---
+
+## 7. A GUERRA DE PANFLETOS E A REDAÇÃO DOS CAHIERS DE DOLÉANCES (1788–1789)
+
+- **A Suspensão da Censura (Agosto de 1788):** A convocação dos Estados Gerais autorizou a livre circulação de panfletos em todo o país.
+- **O Panfleto de Sieyès (*O Que é o Terceiro Estado?*, Janeiro de 1789):** Proclamou a soberania absoluta do Terceiro Estado como a totalidade da Nação.
+- **Os Cadernos de Queixas (*Cahiers de doléances*):** Milhares de documentos redigidos nas paróquias e corporações expressando demandas por igualdade fiscal, constituição escrita, abolição de privilégios e reforma do judiciário.
+
+---
+
+## 8. PRINCIPAIS CONTROVÉRSIAS HISTORIOGRÁFICAS
+
+1. **O Iluminismo causou a Revolução?** Historiadores como Roger Chartier e Robert Darnton demonstram que as ideias não causaram mecanicamente os fatos; em vez disso, criaram uma nova *cultura política* e *habitus de leitura* que tornou a autoridade monárquica dessacralizada e contestável.
+2. **A Revolução foi estritamente burguesa?** A interpretação clássica de Lefebvre e Soboul foca na ascensão de uma burguesia capitalista contra a ordem feudal. A interpretação revisionista de Furet, Cobban e Taylor destaca que os líderes de 1789 eram predominantemente juristas, burocratas e homens de letras, e não industriais.
+3. **O papel da aristocracia:** A historiografia ressalta que o primeiro golpe contra a monarquia absoluta foi desferido pela própria nobreza nos Parlamentos (1787–1788).
+
+---
+
+## 9. CHRONOLOGIA ESSENCIAL (1715–1789)
+
+- **1715:** Morte de Luís XIV; início da Regência de Filipe de Orleans.
+- **1748:** Publicação de *O Espírito das Leis* de Montesquieu.
+- **1751:** Lançamento do Tomo I da *Encyclopédie* de Diderot e d’Alembert.
+- **1762:** Publicação de *Do Contrato Social* de Rousseau; execução de Jean Calas em Toulouse.
+- **1774:** Morte de Luís XV; coroação de Luís XVI e nomeação de Turgot para as Finanças.
+- **1775:** Surto da Guerra das Farinhas em razão da alta do preço do pão.
+- **1778:** França assina tratado de aliança militar com os Estados Unidos contra a Grã-Bretanha.
+- **1787:** Reunião da Assembleia dos Notáveis; recusa aristocrática dos impostos universais.
+- **1788 (Agosto):** Declaração de falência do Tesouro Francês e convocação dos Estados Gerais para maio de 1789.
+- **1789 (Janeiro):** Publicação do panfleto de Sieyès e início da redação dos *Cahiers de doléances*.
+
+---
+
+## 10. RECOMENDAÇÕES BIBLIOGRÁFICAS
+
+- BAKER, Keith Michael. *Inventing the French Revolution*. Cambridge: Cambridge University Press, 1990.
+- CHARTIER, Roger. *As Origens Culturais da Revolução Francesa*. São Paulo: UNESP, 2009.
+- DARNTON, Robert. *Boemia Literária e Revolução: O Submundo das Letras no Antigo Regime*. São Paulo: Companhia das Letras, 1987.
+- DOYLE, William. *Origins of the French Revolution*. Oxford: Oxford University Press, 1999.
+- FURET, François. *Pensando a Revolução Francesa*. Rio de Janeiro: Paz e Terra, 1989.
+- ISRAEL, Jonathan. *Democratic Enlightenment: Philosophy, Revolution, and Human Rights 1750–1790*. Oxford: Oxford University Press, 2011.
+- LEFEBVRE, Georges. *1789: O Surgimento da Revolução Francesa*. Rio de Janeiro: Paz e Terra, 1989.`
 };

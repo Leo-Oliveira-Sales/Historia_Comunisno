@@ -154,6 +154,48 @@ export const CHRONOLOGIES_BY_TOPIC: Record<number, ChronologyMilestone[]> = {
     { date: '1784', event: 'Kant publica Resposta à Pergunta: O que é o Iluminismo?', significance: 'Definição do Iluminismo como emancipação intelectual humana através da coragem de pensar autonomamente (Sapere Aude).' },
     { date: '1787', event: 'Convenção de Filadélfia e Constituição dos EUA', significance: 'Primeira constituição escrita moderna fundamentada na separação de poderes de Montesquieu e no contratualismo.' },
     { date: '1789', event: 'Revolução Francesa e Declaração dos Direitos do Homem', significance: 'Consagração universal dos princípios iluministas de liberdade, igualdade, propriedade e resistência à opressão.' }
+  ],
+
+  102: [
+    { date: 'Janeiro de 1789', event: 'Publicação de "O Que é o Terceiro Estado?" por Sieyès', significance: 'Crítica à estrutura estamental e afirmação da soberania representativa do Terceiro Estado.' },
+    { date: 'Maio de 1789', event: 'Convocação dos Estados Gerais em Versalhes', significance: 'Impasse sobre a votação por ordem ou por cabeça e crise de representação monárquica.' },
+    { date: 'Junho de 1789', event: 'Juramento do Jogo da Péla e Assembleia Nacional', significance: 'O Terceiro Estado declara-se Assembleia Nacional Soberana e jura criar uma Constituição.' },
+    { date: '14 de julho de 1789', event: 'Tomada da Bastilha em Paris', significance: 'Insurreição popular contra o absolutismo e entrada massiva do povo na arena política.' },
+    { date: 'Agosto de 1789', event: 'Abolição dos Privilégios Feudais e Declaração dos Direitos', significance: 'Fim do feudalismo e proclamação da igualdade civil e dos direitos universais do homem.' },
+    { date: '1791', event: 'Constituição de 1791 e Declaração de Olympe de Gouges', significance: 'Monarquia constitucional censitária e denúncia da exclusão política das mulheres.' },
+    { date: '1792', event: 'Queda da Monarquia e Proclamação da Primeira República', significance: 'Insurreição de agosto, julgamento do rei e formação da Convenção Nacional.' },
+    { date: '1793–1794', event: 'O Terror e o Comitê de Salvação Pública', significance: 'Governo revolucionário sob Robespierre, Lei dos Suspeitos e repressão cívica.' },
+    { date: 'Julho de 1794', event: 'Reação Termidoriana e Queda de Robespierre', significance: 'Execução de Robespierre, fim do Terror e reorganização republicana do Diretório.' },
+    { date: '1804', event: 'Promulgação do Código Civil Francês (Código Napoleônico)', significance: 'Consolidação da igualdade civil masculina, laicidade e proteção da propriedade.' },
+    { date: '1819', event: 'Discurso de Benjamin Constant sobre a Liberdade dos Modernos', significance: 'Formulação do liberalismo constitucional e defesa das garantias da autonomia privada.' },
+    { date: '1830', event: 'Revolução de Julho (Três Gloriosas) na França', significance: 'Queda de Carlos X e ascensão do liberalismo burguês na Monarquia de Julho.' },
+    { date: '1835–1840', event: 'Publicação de "A Democracia na América" por Tocqueville', significance: 'Análise sobre a igualdade de condições, a tirania da maioria e o despotismo tutelar.' },
+    { date: '1848', event: 'Revoluções de 1848 e Segunda República Francesa', significance: 'Adoção do sufrágio universal masculino e emergência da questão social do operariado.' }
+  ],
+
+  112: [
+    { date: '1 de Setembro de 1715', event: 'Morte de Luís XIV e Início da Regência do Duque de Orléans', significance: 'Encerramento de 72 anos de reinado do Rei Sol; os Parlamentos recuperam seu direito de remontrance (objeção formal) em troca da anulação do testamento régio, restabelecendo a oposição judiciária à Coroa.' },
+    { date: '1734', event: 'Publicação das Cartas Filosóficas (Lettres Philosophiques) de Voltaire', significance: 'Elogio do sistema parlamentar e da tolerância religiosa britânicos em contraposição ao absolutismo francês; a obra é condenada pelo Parlamento de Paris e queimada em praça pública.' },
+    { date: 'Novembro de 1748', event: 'Publicação de O Espírito das Leis de Montesquieu', significance: 'Formulação da teoria dos freios e contrapesos e da separação tripartite dos poderes (Legislativo, Executivo, Judiciário) como salvaguarda contra o despotismo monárquico.' },
+    { date: '1 de Julho de 1751', event: 'Lançamento do Tomo I da Encyclopédie de Diderot e d’Alembert', significance: 'Início da monumental empresa editorial de 28 volumes que catalogou todo o conhecimento sob o método da razão crítica secular, enfrentando condenações da Igreja Católica e da censura real.' },
+    { date: '1756–1763', event: 'Guerra dos Sete Anos e Crise Geopolítica da Monarquia', significance: 'Derrota humilhante para a Grã-Bretanha no Tratado de Paris (1763), perda das possessões no Canadá e na Índia e endividamento vertiginoso do Tesouro Real dos Bourbon.' },
+    { date: 'Abril de 1762', event: 'Publicação de Do Contrato Social e Execução de Jean Calas', significance: 'Rousseau sistematiza a teoria da soberania inalienável da vontade geral; em Toulouse, o comerciante protestante Calas é supliciado na roda, desencadeando a campanha internacional de Voltaire pela tolerância.' },
+    { date: '10 de Maio de 1774', event: 'Ascensão de Luís XVI e Nomeação de Turgot para as Finanças', significance: 'Coroação do jovem monarca aos 19 anos; o economista fisiocrata Anne Robert Jacques Turgot assume a Controladoria-Geral com o lema "Nem bancarrota, nem aumento de impostos, nem novos empréstimos".' },
+    { date: 'Abril–Maio de 1775', event: 'A Guerra das Farinhas (Guerre des Farines)', significance: 'A liberalização do comércio de grãos promovida por Turgot coincide com escassez de colheita, gerando saques de padarias e motins em Paris e Versalhes, contidos por tropas militares.' },
+    { date: 'Fevereiro de 1776', event: 'Os Seis Éditos de Turgot e Queda do Ministério Reformista', significance: 'Tentativa de abolir as corporações de ofício (jurandes) e a corveia senhorial; a fúria dos Parlamentos e da corte aristocrática força Luís XVI a demitir o ministro fisiocrata.' },
+    { date: '4 de Julho de 1776', event: 'Declaração de Independência dos EUA e Difusão na França', significance: 'O texto de Thomas Jefferson proclama direitos inalienáveis e soberania popular, fascinando a nobreza liberal e os letrados parisienses, simbolizados pelo Marquês de La Fayette.' },
+    { date: 'Fevereiro de 1778', event: 'Tratado de Aliança Militar Franco-Americana', significance: 'A França entra oficialmente na Guerra de Independência dos EUA; a intervenção naval e militar é vitoriosa em Yorktown (1781), mas o custo de mais de 1 bilhão de libras sela a ruína financeira da Coroa.' },
+    { date: 'Fevereiro de 1781', event: 'Publicação do Compte Rendu au Roi por Jacques Necker', significance: 'Pela primeira vez na história, o diretor-geral das finanças torna público o orçamento do Estado, vendendo 100.000 exemplares e desnudando as pensões fabulosas dos cortesãos de Versalhes.' },
+    { date: 'Agosto de 1785', event: 'O Caso do Colar de Diamantes (Affaire du Collier)', significance: 'Escândalo financeiro e moral envolvendo o Cardeal de Rohan e uma suposta compra de joia milionária para a rainha Maria Antonieta; o julgamento público destrói o resquício de sacralidade da monarquia.' },
+    { date: '20 de Agosto de 1786', event: 'Calonne Apresenta a Realidade da Bancarrota a Luís XVI', significance: 'O novo controlador-geral demonstra que o déficit anual ultrapassa 100 milhões de libras e que a dívida absorve metade das receitas, propondo a Subvenção Territorial sobre todas as terras sem isenções.' },
+    { date: '22 de Fevereiro de 1787', event: 'Reunião da Assembleia dos Notáveis em Versalhes', significance: 'Composta por 144 altos aristocratas, prelados e magistrados, a assembleia recusa categoricamente o imposto territorial de Calonne e exige a convocação dos Estados Gerais.' },
+    { date: '3 de Maio de 1788', event: 'Grandes Remontrances do Parlamento de Paris', significance: 'Os magistrados declaram que apenas a Nação reunida nos Estados Gerais tem o direito de votar novos impostos; a tentativa régia de prender líderes parlamentares gera revoltas na Bretanha e no Delfinado.' },
+    { date: '7 de Junho de 1788', event: 'O Dia das Telhas (Journée des Tuiles) em Grenoble', significance: 'A população urbana rebela-se contra as tropas reais que tentavam expulsar os magistrados do Parlamento local, atirando telhas dos telhados; prelúdio insurrecional da solidariedade entre Terceiro Estado e magistratura.' },
+    { date: '8 de Agosto de 1788', event: 'Convocação Oficial dos Estados Gerais e Suspensão da Censura', significance: 'Diante da suspensão de pagamentos do Tesouro e do colapso do crédito, Brienne e Luís XVI convocam os Estados Gerais para 1º de Maio de 1789 e convidam os letrados a enviarem sugestões sobre o formato da assembleia.' },
+    { date: 'Inverno de 1788–1789', event: 'Crise Agrária, Tempestades de Granizo e Escassez de Pão', significance: 'O mais rigoroso inverno do século congela rios e moinhos, fazendo o preço do pão atingir até 80% do salário de um trabalhador urbano em Paris, multiplicando motins da fome.' },
+    { date: 'Janeiro de 1789', event: 'Publicação do Panfleto de Sieyès: O Que é o Terceiro Estado?', significance: 'Emmanuel-Joseph Sieyès estabelece a fórmula revolucionária: "O Terceiro Estado é uma Nação completa"; exige votação por cabeça e a transformação dos deputados comuns em representantes soberanos.' },
+    { date: 'Março–Abril de 1789', event: 'Redação de mais de 60.000 Cadernos de Queixas (Cahiers de Doléances)', significance: 'Em todas as paróquias e corporações da França, os cidadãos registram formalmente suas reivindicações por igualdade fiscal, constituição escrita e abolição das prerrogativas feudais.' },
+    { date: '5 de Maio de 1789', event: 'Sessão Solene de Abertura dos Estados Gerais em Versalhes', significance: 'Luís XVI e Necker inauguram a assembleia perante 1.200 deputados, limitando o debate a questões contábeis; a recusa do Terceiro Estado em verificar poderes separadamente inicia a ruptura que culminará na Assembleia Nacional.' }
   ]
 };
 
@@ -576,6 +618,78 @@ Ao tomar conhecimento da atrocidade do julgamento sumário motivado por mero ód
 Durante três anos ininterruptos, Voltaire financiou advogados, acolheu a viúva e os filhos de Calas e pressionou o Conselho Real em Paris até obter a anulação formal do julgamento e a reabilitação pública da memória de Jean Calas em 1765. Cada carta escrita pelo filósofo terminava com seu famoso bordão Écrasez l'infâme! (Esmagai a infame!). Essa vitória transformou a opinião pública em uma força política autônoma superior à própria vontade dos tribunais monárquicos.`,
       eyewitnessOrDocQuote: 'A liberdade de pensar é a vida da alma. Não concordo com uma só palavra do que dizes, mas defenderei até a morte o teu direito de dizê-lo.',
       quoteAuthor: 'Voltaire, síntese formulada no Tratado sobre a Tolerância e na correspondência de Ferney'
+    }
+  ],
+
+  102: [
+    {
+      title: 'O Juramento do Jogo da Péla (20 de junho de 1789): A Afirmação da Soberania Nacional',
+      location: 'Quadra de Jeu de Paume, Versalhes',
+      narrative: `Na manhã de 20 de junho de 1789, ao encontrarem as portas de sua sala de reuniões trancadas por ordens do rei Luís XVI sob o pretexto de reformas, os deputados do Terceiro Estado, liderados por Jean-Sylvain Bailly e apoiados por juristas e intelectuais, dirigiram-se sob chuva a uma quadra coberta de tênis rústico (Jeu de Paume) nas proximidades do Palácio de Versalhes.
+
+Ali, cercados pela população entusiasmada, ergueram os braços e prestaram um juramento solene: o compromisso inegociável de jamais se separarem e de se reunirem onde quer que as circunstâncias o exigissem até que a Constituição do Reino da França estivesse firmemente estabelecida. O gesto rompeu com a autoridade absoluta do monarca e consagrou o nascimento da Assembleia Nacional como poder soberano da nação.`,
+      eyewitnessOrDocQuote: 'A Assembleia Nacional é chamada a fixar a Constituição do reino, realizar a regeneração da ordem pública e manter os verdadeiros princípios da monarquia.',
+      quoteAuthor: 'Texto do Juramento do Jogo da Péla, lido por Jean-Sylvain Bailly (20 de junho de 1789)'
+    },
+    {
+      title: 'A Queda da Bastilha e a Noite de 4 de Agosto de 1789: A Ruptura com o Feudalismo',
+      location: 'Fortaleza da Bastilha e Salle des Menus-Plaisirs, Paris/Versalhes',
+      narrative: `Em 14 de julho de 1789, diante de boatos de reações militares da Coroa contra a Assembleia, a população parisiense marchou contra a fortaleza medieval da Bastilha, prisão de Estado e depósito de pólvora. A tomada do baluarte absolutista tornou-se a faísca da participação popular na Revolução.
+
+Menos de um mês depois, na noite de 4 de agosto de 1789, em meio ao "Grande Medo" nas zonas rurais, a Assembleia aprovou em sessão dramática a abolição dos privilégios feudais, dízimos e direitos senhoriais, decretando a destruição completa do regime feudal e a instituição da igualdade civil perante a lei.`,
+      eyewitnessOrDocQuote: 'A Assembleia Nacional destrói inteiramente o regime feudal e decreta que os direitos e deveres tanto feudais quanto censitários são abolidos sem indenização.',
+      quoteAuthor: 'Decreto da Assembleia Nacional Constituinte na Noite de 4 de Agosto de 1789'
+    },
+    {
+      title: 'O Discurso do Athénée Royal (1819): Benjamin Constant e a Liberdade dos Modernos',
+      location: 'Athénée Royal de Paris',
+      narrative: `Em 1819, após o vendaval revolucionário e o Império Napoleônico, o pensador liberal Benjamin Constant proferiu sua célebre conferência "Da Liberdade dos Antigos Comparada à dos Modernos".
+
+Constant alertou contra a tentativa jacobina de forçar os cidadãos modernos a viverem a liberdade virtuosa e participativa de Esparta ou Atenas. Para os modernos, a liberdade consiste na independência privada, na segurança dos direitos civis, na liberdade de imprensa, de culto e na proteção contra qualquer intervenção arbitrária do Estado.`,
+      eyewitnessOrDocQuote: 'A liberdade dos modernos é o direito de não estar submetido senão às leis, de expressar sua opinião, escolher sua profissão e desfrutar em paz da independência privada.',
+      quoteAuthor: 'Benjamin Constant, conferência no Athénée Royal de Paris (1819)'
+    }
+  ],
+
+  112: [
+    {
+      title: 'A Batalha da Enciclopédia: Diderot, a Censura Real e a Ofensiva do Conhecimento',
+      location: 'Oficina de Impressão de André Le Breton e Salões de Paris',
+      narrative: `Em 1751, quando o primeiro volume da Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers chegou às mãos dos subscritores em Paris, uma onda de choque percorreu a corte de Versalhes e os corredores da Sorbonne. Sob a liderança do filósofo Denis Diderot e do matemático Jean le Rond d'Alembert, o projeto ambicionava nada menos que reunir todo o conhecimento humano acumulado e reordená-lo sob a luz estrita da razão, desferindo golpes letais contra o dogmatismo clerical e os privilégios feudal-absolutistas.
+      
+Em 1752 e novamente em 1759, após a publicação do verbete "Autoridade Política" (no qual Diderot afirmava categoricamente que "nenhum homem recebeu da natureza o direito de comandar os outros"), o Conselho do Rei Luís XV decretou a proibição formal da publicação e a apreensão de todos os exemplares. O Papa Clemente XIII colocou a obra no Index Librorum Prohibitorum sob pena de excomunhão para quem a lesse.
+      
+Apesar do terror das batidas policiais da Bastilha, Diderot recusou-se a fugir. Com a cumplicidade silenciosa de Chrétien-Guillaume de Lamoignon de Malesherbes — o censor real que ironicamente admirava os iluministas e escondeu os manuscritos originais em sua própria casa para evitar que fossem queimados —, Diderot trabalhou clandestinamente durante mais de vinte anos. Imprimindo os volumes restantes em prensas secretas sob o selo de impressores de Neuchâtel e distribuindo os tomos escondidos em fundos falsos de carruagens, a equipe da Encyclopédie concluiu 28 volumes que transformaram irreversivelmente as mentes letradas da Europa.`,
+      eyewitnessOrDocQuote: 'Nenhum homem recebeu da natureza o direito de comandar os outros. A liberdade é um presente do céu, e cada indivíduo da mesma espécie tem o direito de gozar dela logo que goze da razão.',
+      quoteAuthor: 'Denis Diderot, verbete "Autoridade Política" (Autorité Politique) da Encyclopédie (1751)'
+    },
+    {
+      title: 'O Caso Calas e o Grito de Voltaire: A Opinião Pública contra o Fanatismo Religioso',
+      location: 'Toulouse e Castelo de Ferney',
+      narrative: `Em 1762, o comerciante protestante Jean Calas foi injustamente condenado ao suplício da roda em Toulouse, sob a acusação forjada pelo parlamento católico de ter assassinado seu filho para impedir sua conversão. Voltaire tomou o caso, mobilizou a opinião pública internacional e publicou o Tratado sobre a Tolerância (1763), conseguindo a anulação do julgamento e a reabilitação da memória de Calas pelo Conselho do Rei em 1765.`,
+      eyewitnessOrDocQuote: 'Não é aos homens que me dirijo; é a ti, Deus de todos os seres... Que as pequenas diferenças entre nossas roupas e nossas línguas não sejam sinais de ódio.',
+      quoteAuthor: 'Voltaire, Tratado sobre a Tolerância (1763)'
+    },
+    {
+      title: 'A Revolta dos Parlamentos (1787–1788): A Aristocracia Bloqueia a Monarquia',
+      location: 'Palácio de Justiça de Paris e Versalhes',
+      narrative: `Diante do déficit catastrófico provocado pelas guerras, os ministros de Luís XVI tentaram criar um imposto territorial universal. Os Parlamentos, tribunais dominados pela nobreza de toga, recusaram o registro dos éditos e exigiram a convocação dos Estados Gerais, paralisando a administração real e desnudando a fraqueza da monarquia.`,
+      eyewitnessOrDocQuote: 'Apenas a Nação reunida nos Estados Gerais tem o poder de conceder ao Rei os subsídios financeiros necessários.',
+      quoteAuthor: 'Declaração do Parlamento de Paris (Maio de 1788)'
+    },
+    {
+      title: 'O Panfleto de Sieyès e o Despertar do Terceiro Estado (1789)',
+      location: 'Paris e Versalhes',
+      narrative: `Em janeiro de 1789, o abade Emmanuel-Joseph Sieyès publicou O Que é o Terceiro Estado?, afirmando que os 98% da população francesa que não eram nobres nem clérigos constituíam a Nação completa. O panfleto tornou-se a cartilha ideológica que encorajou os deputados do Terceiro Estado a desafiarem as ordens privilegiadas nos Estados Gerais.`,
+      eyewitnessOrDocQuote: 'O que é o Terceiro Estado? Tudo. O que tem sido ele até agora na ordem política? Nada. O que ele pede? Tornar-se algo.',
+      quoteAuthor: 'Emmanuel-Joseph Sieyès, O Que é o Terceiro Estado? (1789)'
+    },
+    {
+      title: 'A Fisiocracia e a Guerra das Farinhas (1775): O Livre Mercado e a Revolta Popular',
+      location: 'Bacia de Paris e Versalhes',
+      narrative: `Em 1774, o ministro Turgot aplicou as teorias fisiocráticas de livre mercado de grãos. Uma má colheita provocou a explosão do preço do pão e ondas de saques em padarias e moinhos (a "Guerra das Farinhas"), revelando o choque dramático entre o liberalismo econômico nascente e a economia moral da multidão camponesa.`,
+      eyewitnessOrDocQuote: 'Se o pão faltar, o povo tem o direito de exigi-lo pelo preço justo da sua sobrevivência.',
+      quoteAuthor: 'Panfleto popular distribuído durante a Guerra das Farinhas (1775)'
     }
   ]
 };

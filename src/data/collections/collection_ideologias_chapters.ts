@@ -277,45 +277,716 @@ export const IDEOLOGIAS_CHAPTERS: Record<number, AcademicChapter> = {
   // =========================================================================
   102: {
     topicId: 102,
-    title: 'Revolução Francesa e Liberalismo: Direitos do Homem, Cidadania e a Ruptura com o Antigo Regime',
-    subtitle: 'A demolição do privilégio corporativo, o nascimento das polaridades políticas modernas e os limites do poder estatal',
-    authorCatedra: 'Cátedra de História Política e Constitucionalismo Europeu',
-    introduction: 'A Revolução Francesa de 1789 não foi apenas um levante social francês; foi o cataclismo político que instaurou a contemporaneidade no planeta. Ao proclamar solenemente a Declaração dos Direitos do Homem e do Cidadão e submeter a milenar monarquia de direito divino ao veredicto da nação soberana, o evento abriu uma era de experimentação constitucional radical. No seu curso, gerou o mapa das correntes políticas modernas — da direita reacionária à esquerda jacobina — e compeliu pensadores liberais como Benjamin Constant e Alexis de Tocqueville a repensarem as salvaguardas da liberdade em sociedades de massa igualitárias.',
+    title: 'REVOLUÇÕES BURGUESAS E TEORIA DO ESTADO: Revolução Francesa e Liberalismo: direitos do homem, cidadania e ruptura com o Antigo Regime',
+    subtitle: 'A transformação da soberania, a formação do constitucionalismo moderno e as disputas entre liberdade individual, igualdade política e democracia (Recorte histórico: 1789–1848)',
+    authorCatedra: 'Cátedra de História Política, Constitucionalismo e Teoria do Estado',
+    introduction: `A Revolução Francesa, iniciada em 1789, representou uma das transformações políticas mais importantes da história contemporânea. Ao questionar os fundamentos jurídicos e institucionais do Antigo Regime, derrubar a monarquia absoluta, abolir privilégios estamentais e proclamar direitos universais, o movimento revolucionário alterou profundamente a maneira como as sociedades europeias compreendiam a autoridade, a cidadania e a organização do Estado.
+
+A importância histórica da Revolução não se limita à substituição de uma forma de governo por outra. Seu impacto alcançou a estrutura social, a propriedade, a administração pública, a legislação, a participação política e a própria definição de nação.
+
+A soberania deixou de ser reivindicada exclusivamente em nome da dinastia monárquica e passou a ser formulada em nome da nação. A igualdade jurídica tornou-se um princípio central da nova ordem política, enquanto a cidadania passou a representar uma condição de pertencimento à comunidade política, embora sua aplicação permanecesse limitada por critérios de gênero, propriedade e posição social.
+
+O processo revolucionário também produziu contradições. A defesa da liberdade coexistiu com períodos de repressão política; a igualdade jurídica conviveu com desigualdades econômicas; e a proclamação dos direitos universais não impediu a continuidade da escravidão colonial durante parte do período.
+
+A Revolução Francesa não deve ser interpretada como um acontecimento exclusivamente burguês. A burguesia desempenhou papel decisivo na formulação de determinadas reivindicações políticas e econômicas, mas camponeses, trabalhadores urbanos, artesãos, mulheres, setores populares e diferentes grupos aristocráticos também participaram do processo, frequentemente com interesses divergentes.
+
+Entre 1789 e 1848, a Europa experimentou sucessivas transformações políticas: a monarquia constitucional, a república revolucionária, o governo jacobino, o Diretório, o Consulado, o Império Napoleônico, a Restauração monárquica, as revoluções liberais de 1830 e as revoluções de 1848.
+
+Esse período foi decisivo para a formação das grandes tradições políticas modernas. Liberalismo, republicanismo, conservadorismo, democracia e socialismo passaram a disputar a organização legítima do Estado e a definição dos direitos dos indivíduos.
+
+O objetivo deste capítulo é compreender a Revolução Francesa como um processo histórico amplo, analisando suas causas, etapas, transformações institucionais, contradições e consequências para a formação do pensamento político contemporâneo.`,
     sections: [
       {
         number: '1',
-        title: 'O Colapso da Sociedade Estamental e o Grito do Terceiro Estado',
-        content: 'A estrutura feudal do Antigo Regime francês dividia a população em três estamentos herméticos: o Primeiro Estado (clero), o Segundo Estado (nobreza) e o Terceiro Estado (composto por camponeses, artesãos e a florescente burguesia urbana, totalizando 98% da nação). Asfixiado por privilégios tributários feudais e uma crise fiscal calamitosa decorrente de guerras imperiais, o Terceiro Estado encontrou no panfleto do Abade Sieyès — O Que é o Terceiro Estado? (1789) — a sua formulação soberana: "O que é o Terceiro Estado? Tudo. O que ele tem sido na ordem política até hoje? Nada. O que ele deseja? Tornar-se algo". A tomada da Bastilha em 14 de julho selou a transferência irrevogável do poder para a Assembleia Nacional Constituinte.'
+        title: 'O ANTIGO REGIME: SOCIEDADE ESTAMENTAL, PRIVILÉGIOS E CRISE DO ESTADO MONÁRQUICO',
+        subsections: [
+          {
+            number: '1.1',
+            title: 'A estrutura social do Antigo Regime',
+            content: `Antes de 1789, a França era organizada segundo uma estrutura social e jurídica tradicionalmente denominada Antigo Regime.
+
+A sociedade francesa apresentava uma organização estamental, na qual a posição jurídica e social dos indivíduos dependia, em grande medida, de sua condição de nascimento, pertencimento corporativo e reconhecimento institucional.
+
+A divisão convencional compreendia três ordens:
+
+Primeiro Estado — Clero:
+• Integrava a estrutura institucional da Igreja Católica.
+• Possuía privilégios jurídicos e fiscais.
+• Exercia influência cultural, educacional e política.
+• Controlava importantes propriedades e rendas.
+
+Segundo Estado — Nobreza:
+• Reunia grupos aristocráticos com diferentes níveis de riqueza e influência.
+• Possuía privilégios hereditários.
+• Ocupava posições importantes na administração, no exército e na corte.
+• Conservava direitos senhoriais em diferentes regiões.
+
+Terceiro Estado:
+• Reunia a maioria da população francesa.
+• Incluía burgueses, comerciantes, profissionais liberais, artesãos, trabalhadores urbanos e camponeses.
+• Apresentava enormes diferenças internas de riqueza e posição social.
+• Suportava grande parte da carga tributária e das obrigações econômicas.
+
+É importante não tratar os três estados como grupos economicamente homogêneos. A burguesia mercantil e financeira possuía interesses muito diferentes dos camponeses pobres e dos trabalhadores urbanos.
+
+O Terceiro Estado também não constituía uma classe única. Sua unidade política em 1789 resultou, em grande medida, da oposição aos privilégios e das disputas sobre representação e soberania.`
+          },
+          {
+            number: '1.2',
+            title: 'Privilégios jurídicos e desigualdade fiscal',
+            content: `A sociedade do Antigo Regime era caracterizada por diferentes privilégios e obrigações.
+
+Os impostos não eram distribuídos de maneira uniforme. Determinados grupos e instituições possuíam isenções ou condições especiais, enquanto outros suportavam obrigações fiscais significativas.
+
+Além dos tributos estatais, os camponeses estavam sujeitos, em diferentes regiões, a obrigações senhoriais, pagamentos relacionados à propriedade e encargos religiosos.
+
+Essa organização produzia tensões sociais e contribuía para a percepção de que a ordem jurídica protegia privilégios herdados em detrimento da igualdade entre os indivíduos.
+
+A crítica aos privilégios tornou-se um dos elementos fundamentais da mobilização revolucionária.`
+          },
+          {
+            number: '1.3',
+            title: 'A crise financeira da monarquia',
+            content: `A monarquia francesa enfrentava graves dificuldades fiscais.
+
+Os gastos militares, as despesas da corte, os compromissos financeiros do Estado e o endividamento acumulado contribuíram para uma crise que se agravou durante o século XVIII.
+
+A participação francesa na Guerra de Independência dos Estados Unidos aumentou os encargos financeiros do Estado, embora não tenha sido a única causa da crise.
+
+As tentativas de reforma tributária encontraram resistência de setores privilegiados e de instituições políticas que procuravam preservar suas prerrogativas.
+
+A crise financeira transformou-se, assim, em crise institucional.
+
+O problema já não era apenas arrecadar mais recursos, mas definir quem possuía autoridade para estabelecer os impostos e reformar a estrutura do Estado.`
+          },
+          {
+            number: '1.4',
+            title: 'O Iluminismo e a crítica política',
+            content: `As ideias iluministas contribuíram para questionar os fundamentos tradicionais da autoridade.
+
+A defesa da igualdade jurídica, da liberdade individual, da tolerância e da soberania nacional forneceu instrumentos intelectuais para criticar as estruturas do Antigo Regime.
+
+Entretanto, não se deve atribuir a Revolução exclusivamente à influência das ideias filosóficas.
+
+A crise econômica, as disputas fiscais, as tensões sociais e os conflitos institucionais foram elementos indispensáveis para compreender a ruptura de 1789.
+
+A Revolução surgiu da interação entre transformações intelectuais e circunstâncias históricas concretas.`
+          }
+        ]
       },
       {
         number: '2',
-        title: 'A Declaração de 1789: Universalidade dos Direitos e Primazia da Cidadania',
-        content: 'Em 26 de agosto de 1789, a Assembleia adotou a Declaração dos Direitos do Homem e do Cidadão. O texto substituiu o privilégio de sangue pelo princípio da igualdade jurídica: "Os homens nascem e permanecem livres e iguais em direitos". A liberdade individual, a presunção de inocência, a liberdade de consciência e culto, a inviolabilidade da propriedade privada e a separação de poderes foram fixados como princípios universais válidos para qualquer regime político legítimo em qualquer latitude do globo.'
+        title: '1789: A RUPTURA REVOLUCIONÁRIA E A FORMAÇÃO DA SOBERANIA NACIONAL',
+        subsections: [
+          {
+            number: '2.1',
+            title: 'A convocação dos Estados Gerais',
+            content: `Em 1789, diante da crise financeira, Luís XVI convocou os Estados Gerais, instituição representativa das três ordens tradicionais do reino, que não se reunia desde 1614.
+
+A convocação abriu uma disputa sobre a representação política.
+
+O sistema tradicional previa a deliberação por ordem, o que poderia permitir que clero e nobreza se unissem contra o Terceiro Estado.
+
+Os representantes do Terceiro Estado defendiam uma representação proporcional à população e a votação individual dos deputados.
+
+A questão da representação revelou um conflito mais profundo: quem constituía a nação e quem possuía legitimidade para falar em seu nome?`
+          },
+          {
+            number: '2.2',
+            title: 'Sieyès e a afirmação do Terceiro Estado',
+            content: `Em janeiro de 1789, Emmanuel-Joseph Sieyès publicou o panfleto O Que é o Terceiro Estado?.
+
+A obra questionava a organização estamental e defendia que o Terceiro Estado constituía a parte essencial da nação.
+
+Sua formulação mais conhecida sintetizava três perguntas: o que era o Terceiro Estado, o que havia sido politicamente e o que pretendia se tornar.
+
+A resposta tornou-se uma das expressões mais conhecidas da ruptura revolucionária: o Terceiro Estado reivindicava reconhecimento político correspondente à sua importância social e econômica.
+
+Sieyès contribuiu para deslocar a discussão da representação dos estados tradicionais para a representação da nação.`
+          },
+          {
+            number: '2.3',
+            title: 'A Assembleia Nacional',
+            content: `Em junho de 1789, os representantes do Terceiro Estado declararam-se Assembleia Nacional.
+
+O movimento foi acompanhado pelo Juramento do Jogo da Péla, no qual os deputados se comprometeram a não se separar antes de estabelecer uma constituição.
+
+Esse episódio demonstrou que a autoridade política começava a ser reivindicada em nome da nação representada, e não apenas pela vontade do monarca.
+
+A crise constitucional estava instalada.`
+          },
+          {
+            number: '2.4',
+            title: 'A tomada da Bastilha',
+            content: `Em 14 de julho de 1789, a população de Paris tomou a Bastilha, fortaleza que simbolizava a autoridade monárquica e a repressão estatal.
+
+O episódio tornou-se um dos principais símbolos da Revolução.
+
+Sua importância ultrapassou o significado militar imediato: demonstrou que a mobilização popular urbana poderia interferir diretamente no destino das instituições políticas.
+
+A participação popular foi decisiva para a sobrevivência e a radicalização inicial do movimento revolucionário.`
+          },
+          {
+            number: '2.5',
+            title: 'A abolição dos privilégios feudais',
+            content: `Na noite de 4 de agosto de 1789, a Assembleia aprovou medidas destinadas a abolir privilégios feudais e estamentais.
+
+O processo foi juridicamente complexo, e a eliminação de determinadas obrigações e direitos ocorreu mediante disposições que precisaram ser desenvolvidas posteriormente.
+
+Ainda assim, a decisão representou uma ruptura fundamental com a estrutura jurídica do Antigo Regime.
+
+A igualdade jurídica passou a ocupar posição central na reorganização da sociedade francesa.`
+          }
+        ]
       },
       {
         number: '3',
-        title: 'Jacobinismo, o Terror e o Nascimento do Conceito de Totalitarismo Democrático',
-        content: 'A dinâmica revolucionária entre 1792 e 1794, sob a ameaça de invasão estrangeira e insurreição monarquista interna, empurrou a ala montanhesa/jacobina de Robespierre e Saint-Just a instituir a ditadura do Comitê de Salvação Pública e o Terror revolucionário. Justificado em nome da "Virtude Pública", o Terror levou milhares à guilhotina e operou a primeira experiência moderna de mobilização total (levée en masse) e expurgo sistemático de opositores em nome de uma pureza cívica inegociável — o que François Furet e Jacob Talmon identificaram como o embrião do totalitarismo ideológico do século XX.'
+        title: 'A DECLARAÇÃO DOS DIREITOS DO HOMEM E DO CIDADÃO: LIBERDADE, IGUALDADE E SOBERANIA',
+        subsections: [
+          {
+            number: '3.1',
+            title: 'A proclamação dos direitos em 1789',
+            content: `Em 26 de agosto de 1789, a Assembleia Nacional Constituinte aprovou a Declaração dos Direitos do Homem e do Cidadão.
+
+O documento tornou-se uma referência fundamental para a história do constitucionalismo e dos direitos políticos modernos.
+
+A Declaração estabeleceu princípios relacionados à liberdade, à igualdade jurídica, à propriedade, à segurança e à resistência à opressão.
+
+Seu conteúdo representou uma contestação direta aos privilégios hereditários e à arbitrariedade governamental.`
+          },
+          {
+            number: '3.2',
+            title: 'Igualdade jurídica',
+            content: `O artigo 1º afirma que os homens nascem e permanecem livres e iguais em direitos.
+
+O princípio estabelece que a condição jurídica não deveria depender de privilégios de nascimento.
+
+A igualdade jurídica não significava, contudo, igualdade econômica ou social.
+
+A Revolução eliminou importantes distinções legais do Antigo Regime, mas não suprimiu automaticamente a desigualdade material.`
+          },
+          {
+            number: '3.3',
+            title: 'Liberdade e limites da autoridade',
+            content: `A Declaração concebe a liberdade como a possibilidade de agir sem prejudicar os direitos de outras pessoas.
+
+O artigo 4º relaciona a liberdade aos limites necessários para garantir o exercício dos direitos pelos demais membros da sociedade.
+
+O artigo 5º estabelece que a lei deve proibir apenas ações prejudiciais à sociedade.
+
+Esses princípios contribuíram para a formação de uma concepção moderna de legalidade: o poder estatal deveria agir conforme normas gerais, e não segundo a vontade arbitrária do governante.`
+          },
+          {
+            number: '3.4',
+            title: 'Propriedade e segurança jurídica',
+            content: `O artigo 17 reconhece a propriedade como direito inviolável e sagrado, admitindo desapropriação mediante necessidade pública legalmente constatada e justa indenização.
+
+A proteção da propriedade tornou-se um elemento fundamental do constitucionalismo liberal.
+
+Esse princípio refletia também os interesses de setores proprietários que buscavam segurança jurídica diante da antiga estrutura de privilégios.
+
+A proteção da propriedade, entretanto, geraria debates posteriores sobre desigualdade econômica, acesso aos recursos e limites da intervenção estatal.`
+          },
+          {
+            number: '3.5',
+            title: 'Soberania nacional',
+            content: `O artigo 3º estabelece que o princípio de toda soberania reside essencialmente na nação.
+
+Essa formulação representa uma ruptura com a concepção de que o poder político pertenceria exclusivamente à pessoa do monarca.
+
+A nação passou a ser apresentada como titular da autoridade política.
+
+Entretanto, a soberania nacional não significava necessariamente democracia direta ou sufrágio universal.
+
+A questão de quem poderia representar a nação permaneceu em disputa.`
+          },
+          {
+            number: '3.6',
+            title: 'Separação de poderes',
+            content: `O artigo 16 estabelece que uma sociedade na qual os direitos não estejam garantidos e a separação dos poderes não esteja determinada não possui Constituição.
+
+O dispositivo demonstra a importância da limitação institucional do poder para o pensamento constitucional revolucionário.
+
+A liberdade dependia tanto do reconhecimento de direitos quanto da organização de instituições capazes de impedir abusos.`
+          }
+        ]
       },
       {
         number: '4',
-        title: 'O Liberalismo Pós-Termidoriano: Benjamin Constant e as Salvaguardas da Liberdade',
-        content: 'Com a queda de Robespierre no 9 Termidor e o subsequente cesarismo napoleônico, o liberalismo político se reconstruiu com foco primordial na contenção das tiranias — fossem elas absolutistas ou democráticas. Benjamin Constant, em seu célebre discurso Da Liberdade dos Antigos Comparada à dos Modernos (1819), advertiu contra a anacrônica tentativa jacobina de impor aos cidadãos modernos a liberdade virtuosa de Esparta. Para os modernos, a liberdade consiste no gozo pacífico da independência privada, dos negócios civis, da privacidade do lar e das liberdades individuais de expressão e locomoção garantidas por leis claras.'
+        title: 'A CIDADANIA REVOLUCIONÁRIA E SEUS LIMITES',
+        subsections: [
+          {
+            number: '4.1',
+            title: 'Cidadãos ativos e passivos',
+            content: `A Constituição francesa de 1791 estabeleceu distinções entre cidadãos ativos e passivos.
+
+A participação eleitoral estava condicionada a critérios relacionados à idade, ao domicílio, à contribuição tributária e à condição masculina.
+
+Essa estrutura demonstra que a proclamação universal dos direitos não se converteu imediatamente em participação política universal.
+
+O liberalismo revolucionário reconhecia direitos civis mais amplos do que o Antigo Regime, mas mantinha restrições ao exercício da soberania eleitoral.`
+          },
+          {
+            number: '4.2',
+            title: 'As mulheres e a exclusão política',
+            content: `As mulheres participaram ativamente da Revolução Francesa.
+
+Estiveram presentes nas manifestações, nas mobilizações populares, nos debates políticos e em diferentes formas de organização coletiva.
+
+Entretanto, foram excluídas da cidadania política plena.
+
+Em 1791, Olympe de Gouges publicou a Declaração dos Direitos da Mulher e da Cidadã, denunciando a contradição entre a universalidade proclamada em 1789 e a exclusão das mulheres.
+
+Sua intervenção tornou-se um marco na história do pensamento político feminista.`
+          },
+          {
+            number: '4.3',
+            title: 'Escravidão e colonialismo',
+            content: `A Revolução Francesa também enfrentou a questão colonial.
+
+A escravidão permanecia fundamental para a economia de determinadas possessões francesas, especialmente nas Antilhas.
+
+A linguagem universalista dos direitos entrou em conflito com a manutenção dessas estruturas.
+
+Em 1794, a Convenção Nacional aboliu a escravidão nas colônias francesas, em meio às pressões revolucionárias e à insurreição de São Domingos.
+
+A medida foi revertida por Napoleão em 1802, demonstrando a instabilidade das conquistas revolucionárias nesse campo.
+
+A abolição definitiva da escravidão nas colônias francesas ocorreu em 1848.`
+          },
+          {
+            number: '4.4',
+            title: 'A Revolução Haitiana',
+            content: `A Revolução Haitiana, iniciada em 1791, foi um dos acontecimentos mais importantes da história atlântica.
+
+A insurreição dos escravizados em São Domingos transformou-se em uma revolução política e militar que culminou na independência do Haiti em 1804.
+
+O processo demonstrou que os princípios de liberdade e igualdade poderiam ser apropriados por grupos que haviam sido excluídos da cidadania proclamada pelas revoluções europeias.
+
+A Revolução Haitiana também expôs as contradições do universalismo europeu.`
+          }
+        ]
       },
       {
         number: '5',
-        title: 'Tocqueville e o Destino Democrático da Igualdade',
-        content: 'Alexis de Tocqueville, em A Democracia na América (1835–1840) e O Antigo Regime e a Revolução (1856), identificou que a marcha em direção à igualdade de condições era um fato providencial inexorável. No entanto, alertou profeticamente sobre o perigo de um novo despotismo tutelar: uma massa de indivíduos isolados e mercantilizados que abdica da vigilância política ativa em troca de segurança imediata oferecida por um Estado centralizado imenso e protetor. A única salvaguarda contra essa tirania suave repousaria nas associações livres da sociedade civil, na descentralização administrativa e na imprensa independente.'
+        title: 'A REPÚBLICA, O JACOBINISMO E O TERROR REVOLUCIONÁRIO (1792–1794)',
+        subsections: [
+          {
+            number: '5.1',
+            title: 'A queda da monarquia',
+            content: `A Revolução entrou em uma nova fase em 1792.
+
+A guerra contra potências europeias, os conflitos internos e a radicalização política enfraqueceram a monarquia constitucional.
+
+Em agosto de 1792, a insurreição popular contribuiu para a queda da monarquia.
+
+Em setembro, a Convenção Nacional foi estabelecida e a República proclamada.
+
+A soberania passou a ser formalmente organizada sob uma nova estrutura republicana.`
+          },
+          {
+            number: '5.2',
+            title: 'Girondinos e montanheses',
+            content: `A Convenção Nacional foi marcada por disputas entre diferentes grupos políticos.
+
+Os girondinos eram associados a posições republicanas mais moderadas em determinados temas e possuíam importante presença entre deputados das províncias.
+
+Os montanheses, identificados com a Montanha, defendiam posições mais radicais em relação à condução da guerra e à mobilização revolucionária.
+
+Os grupos não eram blocos ideológicos perfeitamente homogêneos.
+
+As categorias esquerda e direita começaram a ganhar significado político no contexto das disputas revolucionárias, mas sua formação foi gradual e não pode ser reduzida à simples oposição entre girondinos e montanheses.`
+          },
+          {
+            number: '5.3',
+            title: 'O Comitê de Salvação Pública',
+            content: `Em 1793, diante da guerra externa, de revoltas internas e de uma crise política profunda, a Convenção ampliou os poderes dos órgãos revolucionários.
+
+O Comitê de Salvação Pública tornou-se uma das principais estruturas executivas do governo revolucionário.
+
+Sua atuação esteve associada à centralização administrativa, à organização militar e à repressão de opositores considerados ameaças à República.
+
+Maximilien Robespierre tornou-se uma das figuras mais influentes dessa fase, embora não tenha exercido sozinho o poder revolucionário.`
+          },
+          {
+            number: '5.4',
+            title: 'O Terror',
+            content: `O período conhecido como Terror, especialmente entre 1793 e 1794, caracterizou-se pela utilização sistemática de instrumentos repressivos contra indivíduos e grupos considerados inimigos da Revolução.
+
+A Lei dos Suspeitos, de setembro de 1793, ampliou as possibilidades de detenção.
+
+O Tribunal Revolucionário julgou acusados de crimes contra a ordem revolucionária.
+
+As execuções atingiram aristocratas, religiosos, adversários políticos, antigos aliados revolucionários e pessoas acusadas de atividades contrarrevolucionárias.
+
+A violência revolucionária ocorreu em um contexto de guerra, insurreições internas, conflitos sociais e disputas pelo controle do Estado.
+
+Essas circunstâncias ajudam a explicar o processo, mas não eliminam a responsabilidade política pelas medidas repressivas.`
+          },
+          {
+            number: '5.5',
+            title: 'Virtude republicana e violência política',
+            content: `Robespierre relacionava a sobrevivência da República à virtude cívica e à defesa da comunidade política.
+
+Em seu pensamento, a República precisava proteger-se de forças que ameaçavam sua existência.
+
+A tensão surgiu quando a defesa da virtude pública passou a justificar mecanismos excepcionais de repressão.
+
+A linguagem do bem comum e da salvação nacional foi utilizada para legitimar medidas que restringiram direitos e eliminaram adversários.
+
+Esse episódio tornou-se fundamental para os debates sobre os limites da soberania popular e os riscos de uma política que identifica dissidência com traição.`
+          },
+          {
+            number: '5.6',
+            title: 'O debate sobre o totalitarismo',
+            content: `Alguns intérpretes, especialmente Jacob Talmon, analisaram determinadas tradições revolucionárias a partir da ideia de democracia totalitária.
+
+François Furet também investigou a relação entre ideologia revolucionária, soberania popular e violência política.
+
+Entretanto, a aplicação do conceito de totalitarismo à Revolução Francesa é controversa.
+
+O termo foi desenvolvido principalmente para analisar regimes políticos do século XX, como o nazismo e o stalinismo.
+
+É mais rigoroso examinar as práticas de centralização, repressão, mobilização política e eliminação de opositores sem afirmar que o governo jacobino constituiu simplesmente um regime totalitário no sentido histórico contemporâneo.`
+          }
+        ]
+      },
+      {
+        number: '6',
+        title: 'TERMIDOR, DIRETÓRIO E NAPOLEÃO: DA REVOLUÇÃO À CENTRALIZAÇÃO ESTATAL',
+        subsections: [
+          {
+            number: '6.1',
+            title: 'A queda de Robespierre',
+            content: `Em 9 de Termidor do Ano II, correspondente a 27 de julho de 1794, Robespierre foi derrubado por adversários dentro da Convenção.
+
+Sua execução, no dia seguinte, marcou o fim da fase mais intensa do Terror.
+
+O movimento termidoriano iniciou uma reorganização política que procurou reduzir o poder dos mecanismos revolucionários mais radicais.`
+          },
+          {
+            number: '6.2',
+            title: 'O Diretório (1795–1799)',
+            content: `A Constituição de 1795 estabeleceu um novo sistema político.
+
+O Diretório organizou o Poder Executivo em cinco diretores e instituiu um sistema legislativo bicameral.
+
+O regime procurou impedir tanto a restauração monárquica quanto o retorno da radicalização jacobina.
+
+Entretanto, enfrentou instabilidade econômica, conflitos políticos, oposição monarquista, mobilização popular e dependência crescente do apoio militar.`
+          },
+          {
+            number: '6.3',
+            title: 'O golpe de 18 de Brumário',
+            content: `Em 9 de novembro de 1799, Napoleão Bonaparte participou do golpe de 18 de Brumário, que encerrou o Diretório.
+
+O Consulado foi estabelecido e Napoleão tornou-se a principal autoridade do novo regime.
+
+A mudança representou a transição de uma década de experimentação revolucionária para uma forma de governo mais centralizada.`
+          },
+          {
+            number: '6.4',
+            title: 'O Código Civil de 1804',
+            content: `O Código Civil francês, promulgado em 1804, consolidou importantes transformações jurídicas iniciadas durante a Revolução.
+
+Entre seus princípios estavam:
+• Igualdade civil masculina perante a lei.
+• Proteção da propriedade privada.
+• Segurança dos contratos.
+• Organização jurídica da família.
+• Uniformização de normas civis.
+
+O Código eliminou diversas estruturas jurídicas do Antigo Regime e influenciou sistemas legais de numerosos países.
+
+Entretanto, não deve ser confundido com um documento plenamente igualitário. O direito familiar estabeleceu forte autoridade masculina e restrições à autonomia jurídica das mulheres.`
+          },
+          {
+            number: '6.5',
+            title: 'A contradição napoleônica',
+            content: `Napoleão preservou conquistas fundamentais da Revolução, especialmente a igualdade civil masculina, a reorganização administrativa e a proteção jurídica da propriedade.
+
+Ao mesmo time, concentrou poderes políticos, restringiu a oposição e estabeleceu um regime autoritário.
+
+Sua experiência demonstra que a modernização jurídica e administrativa não conduz necessariamente à democracia política.`
+          }
+        ]
+      },
+      {
+        number: '7',
+        title: 'RESTAURAÇÃO, LIBERALISMO E A QUESTÃO DA LIBERDADE (1815–1830)',
+        subsections: [
+          {
+            number: '7.1',
+            title: 'A queda de Napoleão',
+            content: `A derrota de Napoleão em 1815 encerrou o período imperial e abriu espaço para a reorganização das monarquias europeias.
+
+O Congresso de Viena procurou restabelecer o equilíbrio internacional e fortalecer a legitimidade dinástica.
+
+A Restauração francesa recolocou os Bourbons no poder.
+
+Entretanto, não foi possível retornar integralmente à estrutura social e jurídica anterior a 1789.
+
+A propriedade, a legislação civil e diversas transformações administrativas permaneceram.`
+          },
+          {
+            number: '7.2',
+            title: 'O liberalismo pós-revolucionário',
+            content: `O liberalismo do século XIX desenvolveu-se em diálogo com as experiências revolucionárias.
+
+Seus pensadores procuraram proteger as liberdades individuais contra o absolutismo, mas também contra possíveis formas de concentração do poder em nome da soberania popular.
+
+A questão central passou a ser como preservar a liberdade em sociedades nas quais a participação política e a igualdade jurídica estavam em expansão.`
+          },
+          {
+            number: '7.3',
+            title: 'Benjamin Constant: liberdade dos antigos e liberdade dos modernos',
+            content: `Em 1819, Benjamin Constant apresentou o discurso Da Liberdade dos Antigos Comparada à dos Modernos.
+
+Constant distinguiu duas concepções de liberdade.
+
+A liberdade dos antigos estava associada à participação direta dos cidadãos nas decisões coletivas, à deliberação pública e ao exercício da soberania.
+
+A liberdade dos modernos relacionava-se à autonomia individual, à segurança jurídica, à liberdade de consciência, à propriedade, à circulação e à proteção da vida privada.
+
+Constant argumentava que as sociedades modernas, caracterizadas pela extensão territorial, pelo comércio e pela divisão do trabalho, exigiam formas institucionais diferentes das pequenas comunidades políticas da Antiguidade.
+
+Sua reflexão procurava demonstrar que a participação política não deveria eliminar a independência individual.
+
+A liberdade moderna necessitava de representação política, direitos civis e limites constitucionais ao poder.`
+          },
+          {
+            number: '7.4',
+            title: 'O liberalismo e a democracia',
+            content: `O liberalismo não se confunde automaticamente com democracia.
+
+O liberalismo enfatiza direitos individuais, limitação do poder e proteção jurídica.
+
+A democracia enfatiza a participação política e a autoridade dos cidadãos na formação das decisões coletivas.
+
+Historicamente, essas tradições estabeleceram alianças, mas também entraram em conflito.
+
+O século XIX foi marcado justamente pela disputa sobre a extensão do sufrágio e sobre a possibilidade de conciliar liberdade individual com igualdade política.`
+          }
+        ]
+      },
+      {
+        number: '8',
+        title: 'TOCQUEVILLE: IGUALDADE DE CONDIÇÕES E OS RISCOS DA CENTRALIZAÇÃO',
+        subsections: [
+          {
+            number: '8.1',
+            title: 'A democracia como transformação social',
+            content: `Alexis de Tocqueville publicou os dois volumes de A Democracia na América em 1835 e 1840.
+
+Sua investigação procurou compreender as características da sociedade norte-americana e as transformações associadas à igualdade de condições.
+
+Para Tocqueville, a expansão da igualdade constituíam uma tendência histórica de grande alcance.
+
+Essa igualdade não significava necessariamente igualdade econômica absoluta, mas transformação das relações sociais e enfraquecimento das distinções hereditárias.`
+          },
+          {
+            number: '8.2',
+            title: 'A tirania da maioria',
+            content: `Tocqueville identificou um risco importante nas democracias: a possibilidade de a maioria exercer pressão excessiva sobre indivíduos e minorias.
+
+A liberdade não depende apenas da existência de eleições.
+
+É necessário proteger a pluralidade, a liberdade de opinião, as associações e as instituições que impedem a concentração social e política da autoridade.`
+          },
+          {
+            number: '8.3',
+            title: 'O despotismo tutelar',
+            content: `Tocqueville também examinou a possibilidade de uma forma de despotismo administrativo na qual os cidadãos, isolados e concentrados em seus interesses privados, transferem progressivamente suas responsabilidades a um Estado centralizado.
+
+Esse poder pode oferecer segurança e administrar diferentes aspectos da vida social, enquanto reduz a capacidade de participação autônoma dos indivíduos.
+
+A preocupação de Tocqueville não era simplesmente com o tamanho do Estado, mas com a perda de autonomia política da sociedade.`
+          },
+          {
+            number: '8.4',
+            title: 'Associações e descentralização',
+            content: `Como salvaguardas contra a centralização, Tocqueville destacou:
+• Associações livres.
+• Imprensa independente.
+• Participação local.
+• Autonomia municipal.
+• Pluralidade de instituições.
+• Formação de hábitos de liberdade.
+
+Em O Antigo Regime e a Revolução (1856), publicado depois do recorte deste capítulo, Tocqueville analisou a continuidade de estruturas administrativas centralizadoras entre a monarquia e o Estado revolucionário.
+
+A obra constitui uma interpretação retrospectiva relevante para compreender a relação entre Revolução e centralização estatal.`
+          }
+        ]
+      },
+      {
+        number: '9',
+        title: '1830 E 1848: NOVAS REVOLUÇÕES E A TRANSFORMAÇÃO DA QUESTÃO SOCIAL',
+        subsections: [
+          {
+            number: '9.1',
+            title: 'A Revolução de Julho de 1830',
+            content: `Em julho de 1830, a França experimentou uma nova revolução.
+
+A oposição às medidas autoritárias de Carlos X provocou mobilização popular e sua deposição.
+
+Luís Filipe de Orleans assumiu o poder e iniciou a Monarquia de Julho.
+
+O novo regime representou uma vitória de setores liberais, mas manteve restrições significativas à participação política.
+
+O sufrágio censitário limitava a influência eleitoral aos grupos que atendiam a determinados critérios de riqueza e contribuição fiscal.
+
+A Revolução de 1830 demonstrou que a queda do absolutismo não havia solucionado a questão democrática.`
+          },
+          {
+            number: '9.2',
+            title: 'O liberalismo burguês e os limites do sufrágio',
+            content: `Durante a Monarquia de Julho, a burguesia proprietária consolidou importante influência política.
+
+A liberdade econômica e a proteção da propriedade foram preservadas, mas a participação eleitoral permaneceu restrita.
+
+A exclusão de amplos setores da população alimentou movimentos republicanos e democráticos.
+
+A questão política central passou a incluir não apenas a liberdade individual, mas também a ampliação da cidadania.`
+          },
+          {
+            number: '9.3',
+            title: 'A questão social e o movimento operário',
+            content: `A industrialização europeia transformou as relações de trabalho e a estrutura social.
+
+O crescimento das cidades, a expansão do trabalho assalariado e a formação de novas classes trabalhadoras criaram problemas sociais que não poderiam ser resolvidos apenas pela igualdade jurídica.
+
+A pobreza urbana, as condições de trabalho, os baixos salários e a ausência de proteção social passaram a ocupar posição central nos debates políticos.
+
+O liberalismo clássico enfrentou críticas de correntes socialistas, republicanas e democráticas que reivindicavam maior igualdade material e participação política.`
+          },
+          {
+            number: '9.4',
+            title: 'As revoluções de 1848',
+            content: `Em 1848, uma onda revolucionária atingiu diferentes regiões europeias.
+
+Na França, a oposição à Monarquia de Julho culminou na Revolução de Fevereiro e na proclamação da Segunda República.
+
+Entre as reivindicações estavam:
+• Ampliação do sufrágio.
+• Liberdades políticas.
+• Reformas sociais.
+• Direito ao trabalho.
+• Participação popular.
+• Superação de estruturas autoritárias.
+
+O sufrágio universal masculino foi estabelecido na França em 1848.
+
+Entretanto, as disputas entre republicanos moderados, socialistas e setores populares revelaram divergências profundas sobre o significado da República.`
+          },
+          {
+            number: '9.5',
+            title: 'Junho de 1848 e a divisão social da República',
+            content: `Em junho de 1848, a repressão às jornadas operárias de Paris demonstrou a profundidade das tensões sociais.
+
+A República, embora fundada sob princípios de cidadania e participação, enfrentava dificuldades para conciliar as reivindicações sociais dos trabalhadores com os interesses dos setores proprietários.
+
+O episódio tornou evidente que a questão democrática não se limitava ao reconhecimento formal dos direitos políticos.
+
+A organização econômica, as condições de trabalho e a desigualdade material passaram a ocupar posição central na disputa sobre o Estado moderno.`
+          }
+        ]
+      },
+      {
+        number: '10',
+        title: 'O DEBATE HISTORIOGRÁFICO: A REVOLUÇÃO BURGUESA, A INTERPRETAÇÃO REVISIONISTA E O LEGADO POLÍTICO',
+        subsections: [
+          {
+            number: '10.1',
+            title: 'A interpretação social da Revolução',
+            content: `Uma tradição historiográfica de influência marxista interpretou a Revolução Francesa como uma revolução burguesa que destruiu os obstáculos feudais ao desenvolvimento capitalista.
+
+Nessa interpretação, a transformação das relações jurídicas e políticas favoreceu a consolidação de uma sociedade baseada na propriedade privada, no mercado e na igualdade formal dos indivíduos.
+
+Georges Lefebvre e Albert Soboul são referências importantes dessa tradição.
+
+Essa abordagem destaca a participação das classes sociais, os conflitos econômicos e as mobilizações populares.`
+          },
+          {
+            number: '10.2',
+            title: 'François Furet e a interpretação revisionista',
+            content: `François Furet apresentou uma interpretação crítica das leituras que reduziam a Revolução a uma necessidade econômica ou a uma simples etapa da ascensão burguesa.
+
+Em Pensando a Revolução Francesa, Furet enfatizou a autonomia da política e da linguagem revolucionária.
+
+Sua interpretação destaca a maneira pela qual a ideia de soberania popular e a pretensão de representar a vontade coletiva contribuíram para a dinâmica da Revolução.
+
+O autor também examinou a relação entre ideologia revolucionária e violência política.
+
+Sua abordagem influenciou profundamente a historiografia, mas não representa um consenso absoluto.`
+          },
+          {
+            number: '10.3',
+            title: 'Eric Hobsbawm e a Era das Revoluções',
+            content: `Eric Hobsbawm, em A Era das Revoluções: 1789–1848, examinou a transformação conjunta da economia, da política e da sociedade europeias.
+
+O autor relaciona a Revolução Francesa à Revolução Industrial, interpretando ambas como processos fundamentais para a formação do mundo contemporâneo.
+
+Sua abordagem destaca as transformações econômicas, sociais e políticas que acompanharam a expansão do capitalismo.`
+          },
+          {
+            number: '10.4',
+            title: 'A interpretação liberal e constitucional',
+            content: `A historiografia liberal enfatiza a importância da ruptura com o absolutismo, da igualdade jurídica, da propriedade, das liberdades individuais e do constitucionalismo.
+
+Norberto Bobbio, ao estudar as relações entre liberalismo e democracia, contribuiu para esclarecer as diferenças entre a proteção dos direitos individuais e a participação política.
+
+Essas tradições podem convergir, mas não são idênticas.`
+          },
+          {
+            number: '10.5',
+            title: 'Síntese historiográfica',
+            content: `A Revolução Francesa pode ser examinada simultaneamente como:
+• Uma ruptura com a ordem jurídica do Antigo Regime.
+• Uma transformação das estruturas de propriedade e das relações sociais.
+• Uma experiência de soberania nacional e popular.
+• Um processo de construção do constitucionalismo moderno.
+• Uma experiência de radicalização e violência política.
+• Um marco na formação do liberalismo, do republicanismo e da democracia moderna.
+
+Nenhuma dessas dimensões, isoladamente, explica toda a complexidade do processo.`
+          }
+        ]
       }
     ],
-    conclusion: 'A Revolução Francesa forjou o liberalismo contemporâneo não como uma ideologia estática, mas como uma perpétua autocrítica das instituições públicas. Ela ensinou que a soberania popular desprovida de garantias liberais desemboca no terror da maioria, assim como o liberalismo desprovido de justiça democrática decai em oligarquia plutocrática.',
+    conclusion: `Entre 1789 e 1848, a Europa atravessou uma transformação decisiva de suas estruturas políticas e jurídicas.
+
+A Revolução Francesa destruiu importantes fundamentos do Antigo Regime, estabeleceu a igualdade jurídica como princípio político e transferiu a legitimidade da autoridade para a nação.
+
+A Declaração dos Direitos do Homem e do Cidadão tornou-se um documento fundamental do constitucionalismo moderno, enquanto as diferentes experiências revolucionárias demonstraram que a liberdade, a igualdade e a soberania poderiam assumir significados distintos.
+
+O período também revelou contradições fundamentais. A defesa dos direitos universais conviveu com a exclusão política das mulheres, a escravidão colonial e a limitação do sufrágio. A soberania popular, por sua vez, não impediu a formação de estruturas repressivas durante o Terror.
+
+O liberalismo do século XIX procurou responder aos problemas deixados pela Revolução, especialmente a necessidade de proteger os indivíduos contra a arbitrariedade estatal e os excessos da autoridade coletiva.
+
+Benjamin Constant destacou a importância da liberdade individual nas sociedades modernas. Tocqueville examinou os riscos da centralização e da tirania da maioria. As revoluções de 1830 e 1848 demonstraram que a igualdade jurídica não encerrava a disputa pela participação política e pela justiça social.
+
+Ao final desse período, o Estado moderno encontrava-se profundamente transformado, mas sua organização permanecia em disputa.
+
+A questão central da política contemporânea já estava estabelecida: como conciliar soberania popular, liberdade individual, igualdade jurídica, participação democrática e limites constitucionais ao poder?
+
+A história entre 1789 e 1848 constitui uma das principais origens dessa discussão.`,
     bibliographicReferences: [
+      'CONSTANT, Benjamin. De la liberté des Anciens comparée à celle des Modernes. 1819.',
+      'DECLARAÇÃO DOS DIREITOS DO HOMEM E DO CIDADÃO. França, 26 ago. 1789.',
+      'GOUGES, Olympe de. Déclaration des droits de la femme et de la citoyenne. 1791.',
+      'NAPOLEÃO BONAPARTE. Code civil des Français. 1804.',
+      'SIEYÈS, Emmanuel-Joseph. Qu\'est-ce que le Tiers-État? 1789.',
+      'TOCQUEVILLE, Alexis de. De la démocratie en Amérique. 1835–1840.',
+      'TOCQUEVILLE, Alexis de. L\'Ancien Régime et la Révolution. 1856.',
       'BOBBIO, Norberto. Liberalismo e Democracia. São Paulo: Brasiliense, 1988.',
-      'CONSTANT, Benjamin. Da Liberdade dos Antigos Comparada à dos Modernos. Filosofia Política, Porto Alegre, v. 2, 1985.',
-      'DAHL, Robert. Polyarchy: Participation and Opposition. New Haven: Yale University Press, 1971.',
+      'DOYLE, William. The Oxford History of the French Revolution. Oxford: Oxford University Press, 1989.',
       'FURET, François. Pensando a Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.',
       'HOBSBAWM, Eric. A Era das Revoluções: 1789–1848. Rio de Janeiro: Paz e Terra, 1977.',
-      'TOCQUEVILLE, Alexis de. A Democracia na América. São Paulo: Martins Fontes, 2005.'
+      'LEFEBVRE, Georges. The Coming of the French Revolution. Princeton: Princeton University Press, 1947.',
+      'SOBOUL, Albert. The French Revolution 1787–1799. London: Unwin Hyman, 1989.',
+      'TALMON, J. L. The Origins of Totalitarian Democracy. London: Secker & Warburg, 1952.',
+      'FURET, François; OZOUF, Mona (org.). A Critical Dictionary of the French Revolution. Cambridge: Harvard University Press, 1989.'
     ]
   },
 
@@ -703,5 +1374,466 @@ export const IDEOLOGIAS_CHAPTERS: Record<number, AcademicChapter> = {
   111: {
     ...CHAPTER_16,
     topicId: 111
+  },
+
+  // =========================================================================
+  // CAPÍTULO 12 (TÓPICO 112): FRANÇA NO SÉCULO DAS LUZES
+  // =========================================================================
+  112: {
+    topicId: 112,
+    title: 'França no Século das Luzes: Iluminismo, absolutismo e crise do Antigo Regime (1715–1789)',
+    subtitle: 'Da sociedade de ordens à contestação da monarquia: as transformações intelectuais, políticas, econômicas e sociais que antecederam a Revolução Francesa',
+    authorCatedra: 'Cátedra de História Moderna e Filosofia Política',
+    introduction: `A Revolução Francesa de 1789 não surgiu repentinamente, tampouco pode ser explicada exclusivamente pela influência de filósofos iluministas ou pela insatisfação popular contra a monarquia. Sua eclosão foi resultado de um processo histórico complexo, formado pela combinação de transformações intelectuais, tensões sociais, dificuldades econômicas, conflitos políticos e uma profunda crise de legitimidade do Estado francês.
+
+Durante o século XVIII, a França ocupava posição central na política, na cultura e na diplomacia europeias. Sua monarquia era uma das expressões mais importantes do absolutismo, enquanto Paris se consolidava como um dos principais centros de produção intelectual do continente. Ao mesmo tempo, a sociedade francesa permanecia organizada por privilégios jurídicos e fiscais herdados de uma estrutura política tradicional, conhecida como Antigo Regime.
+
+Nesse contexto, desenvolveu-se o Iluminismo, movimento intelectual que valorizava a razão, a investigação crítica, a liberdade de pensamento e a possibilidade de reformar as instituições humanas. Os filósofos iluministas questionaram diferentes fundamentos da autoridade política e religiosa, contribuindo para transformar a maneira como os europeus discutiam o poder, a sociedade, a justiça e os direitos individuais.
+
+Entretanto, o Iluminismo não foi um movimento homogêneo, nem apresentou um programa político único. Reuniu autores com posições distintas sobre a organização do Estado, a extensão das reformas e o papel da religião. Além disso, as ideias filosóficas não atuaram isoladamente: sua difusão esteve relacionada à emergência de novas formas de sociabilidade, ao crescimento do mercado editorial e à formação progressiva de uma opinião pública capaz de examinar criticamente as ações dos governantes.
+
+Ao lado das transformações culturais, a França enfrentou graves dificuldades econômicas e fiscais. O endividamento do Estado, agravado pela participação em guerras internacionais, coincidiu com resistências políticas às tentativas de reforma tributária. A oposição dos Parlamentos — tribunais encarregados de registrar as leis reais — revelou os limites da autoridade monárquica e transformou o problema financeiro em um conflito constitucional.
+
+O objetivo deste capítulo é analisar a França no Século das Luzes, examinando a estrutura da sociedade de ordens, as características do absolutismo francês, o impacto das ideias iluministas, os gargalos da economia, a crise final da monarquia e o debate historiográfico sobre os antecedentes de 1789.`,
+    sections: [
+      {
+        number: '1',
+        title: 'A FRANÇA DO SÉCULO XVIII E O ANTIGO REGIME: ESTRUTURA SOCIAL E JURÍDICA',
+        subsections: [
+          {
+            number: '1.1',
+            title: 'A sociedade de ordens',
+            content: `A sociedade francesa do século XVIII era organizada segundo o modelo estamental, tradicionalmente dividido em três ordens ou estados: o Clero (Primeiro Estado), a Nobreza (Segundo Estado) e o Terceiro Estado.
+
+Essa divisão não se fundamentava primariamente no nível de renda ou na classe econômica dos indivíduos, mas em distinções jurídicas, de nascimento, função social e privilégios reconhecidos pelo Estado e pela tradição. A posição jurídica condicionava os direitos, as obrigações fiscais, o acesso a cargos públicos e as normas aplicáveis a cada grupo.
+
+Embora a estrutura estamental sugerisse estabilidade, o desenvolvimento econômico e urbano do século XVIII acentuou as contradições entre a ordem jurídica tradicional e as transformações sociais em curso.`
+          },
+          {
+            number: '1.2',
+            title: 'Clero e nobreza: privilégios, distinção e isenções',
+            content: `O Primeiro Estado reunia os membros da Igreja Católica e compreendia menos de 1% da população. Além de exercer monopólio sobre o culto público, a Igreja possuía extensas propriedades rurais, cobrava o dízimo e mantinha isenção de impostos diretos, contribuindo para o Estado mediante uma doação voluntária (don gratuit). A instituição era internamente heterogênea: o alto clero, recrutado na nobreza, desfrutava de grandes rendas, enquanto o baixo clero paroquial viva em condições muito mais modestas.
+
+O Segundo Estado agrupava a nobreza, que representava cerca de 1,5% a 2% da população, mas controlava parcela significativa das terras e ocupava os postos de comando no exército, na diplomacia e nas altas magistraturas. A nobreza dividia-se entre a aristocracia tradicional de origem militar (noblesse d’épée) e a nobreza de toga (noblesse de robe), formada por famílias de origem burguesa que haviam adquirido cargos venais na administração e nos tribunais.
+
+Ambas as ordens privilegedas mantinham isenções tributárias parciais ou totais e defendiam a preservação das distinções jurídicas que asseguravam sua preeminência política e social.`
+          },
+          {
+            number: '1.3',
+            title: 'O Terceiro Estado: heterogeneidade, encargos e contradições',
+            content: `O Terceiro Estado compreendia aproximadamente 98% da população francesa e caracterizava-se por profunda diversidade socioeconômica.
+
+Reunia a burguesia mercantil, bancária e manufatureira; juristas, médicos, professores e administradores; artesãos, lojistas e trabalhadores urbanos; além da vasta maioria camponesa. Apesar de suas diferenças internas, esses grupos compartilhavam a condição de não pertencerem às ordens privilegiadas e de suportarem a maior parte da carga tributária da monarquia.
+
+A ascensão econômica da burguesia ao longo do século XVIII acentuou seu descontentamento diante das barreiras jurídicas que limitavam seu acesso às instâncias decisórias do Estado. A desigualdade de encargos e a falta de representação transformaram o Terceiro Estado no principal motor de contestação à ordem tradicional.`
+          },
+          {
+            number: '1.4',
+            title: 'A servidão residual e as obrigações senhoriais no mundo rural',
+            content: `No mundo rural, onde vivia mais de 80% dos franceses, a servidão em sentido estrito havia declinado em grande parte do território, persistindo apenas em formas residuais em algumas províncias orientais.
+
+No entanto, a população camponesa permanecia sujeita a um complexo sistema de obrigações senhoriais e reais. Os camponeses deviam pagar direitos de uso de moinhos e lagares (banalités), taxas sobre a transferência de propriedades (lods et ventes), prestações de trabalho (corvée) e o dízimo à Igreja, além dos impostos reais diretos e indiretos (taille, gabelle, capitation).
+
+A reação aristocrática do século XVIII, marcada pelo esforço dos senhores em reativar antigos direitos senhoriais esquecidos para aumentar suas rendas, agravou as tensões no campo e alimentou um profundo sentimento anti-senhorial.`
+          }
+        ]
+      },
+      {
+        number: '2',
+        title: 'A MONARQUIA ABSOLUTA E SEUS LIMITES INSTITUCIONAIS',
+        subsections: [
+          {
+            number: '2.1',
+            title: 'O modelo absolutista francês: teoria e prática',
+            content: `A monarquia francesa era concebida como absoluta e de direito divino. Segundo a doutrina jurídica tradicional, o rei concentrava em sua pessoa a plenitude da soberania, não prestando contas de sua autoridade a nenhuma instituição humana, mas apenas a Deus.
+
+Na prática, contudo, o absolutismo não significava um poder ilimitado ou arbitrário incontestado. O exercício da autoridade real encontrava limites nas leis fundamentais do reino, nos privilégios corporativos, nas tradições locais e na necessidade de negociar com elites provinciais.
+
+A própria estrutura administrativa do Estado dependia da cooperação de corporações, oficiais venais e tribunais regionais, o que limitava a capacidade de centralização decisória da Coroa.`
+          },
+          {
+            number: '2.2',
+            title: 'Os Parlamentos e a resistência judiciária',
+            content: `Os Parlamentos franceses — com destaque para o Parlamento de Paris — não eram assembleias representativas eleitas, mas tribunais superiores de justiça cujos cargos eram negociados e hereditários (nobreza de toga).
+
+Além de suas funções judiciais, os Parlamentos possuíam a prerrogativa de registrar os éditos e ordenanças reais antes que entrassem em vigor. Caso considerassem uma lei contrária às tradições ou privilégios do reino, podiam apresentar objeções formais (remontrances).
+
+Ao longo do século XVIII, os Parlamentos utilizaram sistematicamente essa prerrogativa para bloquear reformas tributárias e administrativas da Coroa. Ao apresentarem-se publicamente como defensores das "liberdades do reino" contra o "despotismo ministerial", os Parlamentos conquistaram popularidade, embora buscassem fundamentalmente proteger os privilégios da nobreza de toga.`
+          },
+          {
+            number: '2.3',
+            title: 'A centralização administrativa e os intendentes reais',
+            content: `Para fortalecer a autoridade central e contornar os poderes locais, a monarquia utilizou a figura dos intendentes — funcionários nomeados diretamente pelo rei e revogáveis a qualquer momento.
+
+Os intendentes atuavam nas províncias supervisionando a arrecadação de impostos, a manutenção da ordem pública, o recrutamento militar e a execução das obras públicas.
+
+A expansão da burocracia dos intendentes gerou frequentes conflitos com os Parlamentos e os governadores provinciais, alimentando acusações de centralização excessiva e autoritarismo administrativo.`
+          },
+          {
+            number: '2.4',
+            title: 'A imagem do monarca e a dessacralização da autoridade real',
+            content: `A legitimidade da monarquia absoluta assentava-se também na dimensão simbólica e sagrada da figura real, consolidada no ritual da coroação em Reims e na representação do rei como pai e protetor de seus súditos.
+
+Durante os reinados de Luís XV (1715–1774) e Luís XVI (1774–1793), essa imagem sagrada sofreu um processo progressivo de erosão. Escândalos da corte, dificuldades militares na Guerra dos Sete Anos, intrigas políticas e a proliferação de libelos clandestinos minaram o prestígio da família real.
+
+A dessacralização da autoridade monárquica enfraqueceu a lealdade tradicional da população e tornou a figura do rei passível de crítica pública aberta.`
+          }
+        ]
+      },
+      {
+        number: '3',
+        title: 'O ILUMINISMO FRANCÊS: AS LUZES, A RAZÃO E A CRÍTICA DA AUTORIDADE',
+        subsections: [
+          {
+            number: '3.1',
+            title: 'Paris como centro intelectual da Europa',
+            content: `Durante o século XVIII, Paris afirmou-se como a capital cultural do continente europeu. A língua francesa era o idioma diplomático e intelectual das elites, e as publicações parisienses circulavam por toda a Europa.
+
+O Iluminismo francês (Lumières) caracterizou-se pela valorização da razão crítica como instrumento de exame de todas as instituições humanas, recusando o argumento de autoridade fundado exclusivamente na tradição ou na dogmática religiosa.
+
+A atividade dos filósofos iluministas esteve voltada para a reforma da sociedade, a promoção do progresso material e moral, a defesa da liberdade de pensamento e a humanização das leis.`
+          },
+          {
+            number: '3.2',
+            title: 'Montesquieu: moderantismo, constitucionalismo e a separação dos poderes',
+            content: `Charles de Secondat, Barão de Montesquieu (1689–1755), formulou em O Espírito das Leis (1748) uma das obras mais influentes da filosofia política moderna.
+
+Montesquieu investigou a relação entre as leis positivas e as circunstâncias históricas, geográficas, econômicas e culturais de cada sociedade. Ao analisar os diferentes regimes políticos (república, monarquia e despotismo), defendeu que a liberdade política exige a limitação institucional do poder.
+
+Sua contribuição mais célebre foi a sistematização da teoria da separação dos poderes em Executivo, Legislativo e Judiciário. Ao argumentar que "é preciso que, pela disposição das coisas, o poder freie o poder", Montesquieu forneceu os fundamentos teóricos para o constitucionalismo moderno e a contenção da arbitrariedade estatal.`
+          },
+          {
+            number: '3.3',
+            title: 'Voltaire: anticlericalismo, tolerância e defesa da razão pública',
+            content: `François-Marie Arouet, conhecido como Voltaire (1694–1778), destacou-se pela crítica devastadora ao fanatismo religioso, à intolerância e à arbitrariedade judicial.
+
+Em obras como Cartas Filosóficas (1734) e Tratado sobre a Tolerância (1763), defendeu a liberdade de consciência, o direito a um julgamento justo e a laicização das instituições civis.
+
+Sua atuação direta na reabilitação pública de vítimas de erros judiciais motivados por preconceito religioso — como no famoso Caso Calas — transformou-o na encarnação do intelectual engajado na defesa dos direitos civis e na mobilização da opinião pública contra as injustiças do Estado e da Igreja.`
+          },
+          {
+            number: '3.4',
+            title: 'Rousseau: soberania popular, igualdade e crítica da civilização',
+            content: `Jean-Jacques Rousseau (1712–1778) ocupou posição singular e frequentemente crítica no interior do próprio movimento iluminista.
+
+No Discurso sobre a Origem e os Fundamentos da Desigualdade entre os Homens (1755), apontou a propriedade privada e as convenções sociais como origens da corrupção moral e das desigualdades injustas.
+
+Em Do Contrato Social (1762), desenvolveu sua teoria da soberania popular inalienável e indivisível, fundada no conceito de vontade geral. Para Rousseau, a única autoridade política legítima é aquela que deriva do pacto no qual cada cidadão, ao se unir a todos, obedece apenas a si mesmo e permanece tão livre quanto antes. Sua reflexão forneceu uma das matrizes fundamentais do pensamento democrático e republicano.`
+          }
+        ]
+      },
+      {
+        number: '4',
+        title: 'A ENCICLOPÉDIA E A DIFUSÃO DA ESFERA PÚBLICA DE DEBATE',
+        subsections: [
+          {
+            number: '4.1',
+            title: 'Diderot, d’Alembert e a grande empresa editorial',
+            content: `A Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers, publicada entre 1751 e 1772 sob a direção de Denis Diderot e Jean le Rond d’Alembert, constituiu a maior empreitada intelectual e editorial do século XVIII.
+
+Reunindo contribuições dos principais pensadores da época, a obra ambicionava catalogar o estado dos conhecimentos humanos e reorganizá-los sob os princípios da razão crítica e do método científico.
+
+A publicação enfrentou repetidas interdições da censura real e condenações da Igreja Católica, mas continuou a ser impressa e distribuída clandestinamente graças à persistência de seus editores e ao apoio discreto de protetores na alta administração.`
+          },
+          {
+            number: '4.2',
+            title: 'A organização do conhecimento e o espírito crítico',
+            content: `A Enciclopédia não era um mero compêndio neutro de fatos, mas um instrumento deliberado de combate ideológico.
+
+Nos verbetes dedicados à política, à religião, à filosofia, à economia e às artes mecânicas, os autores introduziam reflexões críticas sobre a autoridade, a superstição, o trabalho e os direitos individuais.
+
+Ao valorizar as artes mecânicas e o trabalho produtivo ao lado das ciências teóricas, a obra desafiava o desprezo aristocrático pelas atividades manuais e promovia a visão de uma sociedade fundada no mérito e na utilidade social.`
+          },
+          {
+            number: '4.3',
+            title: 'A circulação de ideias: salões, academias, lojas maçônicas e cafés',
+            content: `A difusão do pensamento iluminista esteve associada à expansão de novas redes de sociabilidade urbana.
+
+Os salões literários parisienses, frequentemente organizados por mulheres letradas (como Madame Geoffrin, Mademoiselle de Lespinasse e Madame Necker), tornaram-se espaços de encontro e debate entre filósofos, diplomatas e membros da elite.
+
+Paralelamente, as academias provinciais, as sociedades de leitura, os cafés e as lojas maçônicas multiplicaram-se por toda a França, permitindo que ideias reformistas fossem discutidas fora do controle direto da corte e da Igreja.`
+          },
+          {
+            number: '4.4',
+            title: 'A emergência da opinião pública como tribunal político',
+            content: `A combinação entre o crescimento do mercado editorial, o aumento da alfabetização urbana e a expansão dos espaços de sociabilidade favoreceu a emergência do conceito de opinião pública.
+
+A opinião pública passou a ser compreendida como um tribunal abstrato, mas politicamente eficaz, perante o qual as decisões dos ministros, os julgamentos dos tribunais e a conduta dos governantes deviam ser justificadas de forma racional.
+
+Essa transformação enfraqueceu a concepção tradicional de que os assuntos de Estado pertenciam ao segredo exclusivo do monarca (arcana imperii), abrindo caminho para a politicidade aberta.`
+          }
+        ]
+      },
+      {
+        number: '5',
+        title: 'ECONOMIA E FISCALIDADE: CRESCIMENTO, DESIGUALDADE E CRISE AGRÁRIA',
+        subsections: [
+          {
+            number: '5.1',
+            title: 'A economia francesa no século XVIII: agricultura, comércio e manufaturas',
+            content: `Durante o século XVIII, a França experimentou crescimento demográfico significativo, atingindo cerca de 26 milhões de habitantes em 1789.
+
+O comércio colonial — especialmente a exploração açucareira baseada no trabalho escravo em São Domingos — e o comércio marítimo expandiram-se rapidamente, enriquecendo os portos de Bordeaux, Nantes e Marselha.
+
+Apesar desse dinamismo mercantil, a economia francesa permanecia predominantemente agrária e vulnerável a variações climáticas, com baixa produtividade média em comparação com a agricultura britânica.`
+          },
+          {
+            number: '5.2',
+            title: 'A Fisiocracia: Quesnay, Turgot e a defesa da liberdade econômica',
+            content: `No campo da teoria econômica, desenvolveu-se na França a Fisiocracia, liderada por François Quesnay e apoiada por Anne Robert Jacques Turgot.
+
+Os fisiocratas sustentavam que a agricultura era a única fonte verdadeira de riqueza líquida (produit net) e defendiam a eliminação de regulamentações corporativas, barreiras alfandegárias internas e fixação de preços.
+
+Sua célebre máxima laissez-faire, laissez-passer expressava a convicção de que a economia deveria ser regida por leis naturais de livre mercado. Contudo, a aplicação de suas propostas de liberalização do comércio de grãos em momentos de escassez gerou forte resistência popular.`
+          },
+          {
+            number: '5.3',
+            title: 'A questão tributária: impulsionadores, isenções e ineficiência arrecadatória',
+            content: `O sistema tributário da monarquia francesa era notoriamente ineficiente, desigual e caótico.
+
+A arrecadação de impostos indiretos (como a gabelle, imposto sobre o sal) era privatizada e concedida a empresários financeiros (fermiers généraux), que extraíam lucros substanciais e agiam com grande severidade.
+
+Além disso, as isenções concedidas ao clero, à nobreza, a diversas cidades e a províncias inteiras faziam com que a carga tributária recaísse desproporcionalmente sobre o Terceiro Estado, especialmente a população rural.`
+          },
+          {
+            number: '5.4',
+            title: 'Crises de subsistência, maus anos agrícolas e revoltas da fome',
+            content: `Nas décadas de 1770 e 1780, a França foi atingida por sucessivas crises climáticas que resultaram em más colheitas de cereais.
+
+O aumento vertiginoso do preço do pão — alimento básico das famílias populares — comprometeu a renda dos trabalhadores urbanos e camponeses pobres, provocando ondas de fome, desespero e rebeliões rurais e urbanas.
+
+A incapacidade do Estado de assegurar o abastecimento a preços acessíveis desestabilizou o consenso social e converteu a escassez material em descontentamento político direto.`
+          }
+        ]
+      },
+      {
+        number: '6',
+        title: 'AS TENTATIVAS DE REFORMA E A RESISTÊNCIA DOS PRIVILEGIADOS (1774–1788)',
+        subsections: [
+          {
+            number: '6.1',
+            title: 'O reinado de Luís XVI e as expectativas de reforma',
+            content: `Com a ascensão de Luís XVI ao trono em 1774, houve forte expectativa de modernização administrativa e financeira do reino.
+
+O novo monarca nomeou reformistas para o ministério, destacando-se Turgot para a Controladoria-Geral das Finanças.
+
+Entretanto, Luís XVI caracterizava-se por hesitação política e vulnerabilidade a pressões da facção da corte ligada aos setores mais conservadores da nobreza e da rainha Maria Antonieta.`
+          },
+          {
+            number: '6.2',
+            title: 'As experiências de Turgot, Necker, Calonne e Brienne',
+            content: `Sucessivos ministros tentaram sanar o déficit crônico das finanças reais.
+
+Turgot (1774–1776) buscou reduzir gastos da corte, abolir as corporações de ofício e a corveia real, substituindo-a por um imposto sobre os proprietários rurais. Suas medidas provocaram a oposição violenta dos Parlamentos e da nobreza, culminando em sua demissão.
+
+Jacques Necker (1777–1781) recorreu a empréstimos maciços para financiar a Guerra Americana e publicou em 1781 o Compte rendu au Roi, revelando pela primeira vez ao público as despesas do Estado e as pensões da corte.
+
+Charles-Alexandre de Calonne (1783–1787) reconheceu a impossibilidade de manter o sistema por empréstimos e propôs uma reforma radical: a criação da subvenção territorial, um imposto incidente sobre todas as terras sem exceção estamental.`
+          },
+          {
+            number: '6.3',
+            title: 'A Assembleia dos Notáveis e a recusa dos privilegiados',
+            content: `Para contornar a oposição esperada do Parlamento de Paris, Calonne convocou em 1787 a Assembleia dos Notáveis — reunião extraordinária de altos nobres, bispos e magistrados indicados pela Coroa.
+
+Para surpresa do ministro, os Notáveis recusaram-se a aprovar o novo imposto sem o exame completo das contas do Estado e declararam que a aprovação de novas taxas permanentes exigia a representação da nação.
+
+A recusa da Assembleia dos Notáveis evidenciou que as ordens privilegiadas preferiam paralisar o Estado a renunciar voluntariamente às suas isenções fiscais.`
+          },
+          {
+            number: '6.4',
+            title: 'A Revolta dos Parlamentos e a paralisação do Estado',
+            content: `Substituído por Loménie de Brienne, o governo tentou impor a reforma tributária diretamente ao Parlamento de Paris por meio de sessões reais forçadas (lit de justice).
+
+O Parlamento declarou nulas as ordens do rei, afirmando que apenas os Estados Gerais possuíam autoridade para autorizar novos impostos.
+
+A tentativa da Coroa de dissolver os Parlamentos provocou tumultos em várias províncias, como a famosa Dia das Telhas em Grenoble (1788). Diante da paralisia dos pagamentos e da ameaça de falência iminente, Luís XVI cedeu e convocou os Estados Gerais para maio de 1789.`
+          }
+        ]
+      },
+      {
+        number: '7',
+        title: 'A CRISE DA LEGITIMIDADE POLÍTICA E A GUERRA DOS PANFLETOS',
+        subsections: [
+          {
+            number: '7.1',
+            title: 'A proliferação da literatura política clandestina',
+            content: `Com a crise institucional de 1788, o controle da censura real colapsou na prática.
+
+Milhares de panfletos, brochuras, libelos e caricaturas passaram a circular livremente por Paris e pelas províncias.
+
+Essa literatura clandestina discutia abertamente a natureza da Constituição francesa, a injustiça dos privilégios e a necessidade de reformar radicalmente o Estado.`
+          },
+          {
+            number: '7.2',
+            title: 'Libelos, escândalos de corte e a perda de prestígio da monarquia',
+            content: `Paralelamente aos tratados de filosofia política, uma vasta produção de libelos de boulevard explorava escândalos financeiros e sexuais envolvendo figuras da corte e da aristocracia.
+
+Episódios como o Affaire do Colar de Diamantes (1785) foram amplamente explorados pela imprensa clandestina para apresentar a corte de Versalhes como um centro de corrupção e decadência moral.
+
+Estudos de história cultural demonstram que essa literatura de pasquins contribuiu decisivamente para dessacralizar a monarquia na imaginação das massas urbanas.`
+          },
+          {
+            number: '7.3',
+            title: 'A difusão do vocabulário político iluminista entre as elites e a burguesia',
+            content: `O debate de 1788–1789 promoveu a rápida popularização de um novo vocabulário político.
+
+Conceitos como Nação, Soberania, Direitos, Constituição, Cidadão e Vontade Geral deixaram de ser termos abstratos da filosofia e converteram-se em palavras de ordem da mobilização política diária.
+
+A burguesia letrada utilizou esse repertório conceitual para transformar uma disputa sobre finanças em uma exigência de refundação da ordem política.`
+          },
+          {
+            number: '7.4',
+            title: 'A transformação da linguagem dos direitos e da representação',
+            content: `A discussão sobre como os Estados Gerais deveriam ser compostos alterou o foco do debate.
+
+Enquanto a nobreza defendia o modelo tradicional de 1614 (com votação separada por ordem, assegurando dois votos aos privilegiados contra um do Terceiro Estado), a burguesia exigia a dobradinha do número de deputados do Terceiro Estado e a votação por cabeça.
+
+A reivindicação de que o voto deveria ser individual e não corporativo expressava o triunfo da linguagem dos direitos individuais sobre a visão tradicional estamental.`
+          }
+        ]
+      },
+      {
+        number: '8',
+        title: 'O IMPACTO DAS REVOLUÇÕES ATLÂNTICAS E O EXEMPLO AMERICANO',
+        subsections: [
+          {
+            number: '8.1',
+            title: 'A participação francesa na Guerra de Independência dos Estados Unidos',
+            content: `A intervenção militar e naval da França na Guerra de Independência Americana (1778–1783) ao lado dos colonos insurretos contra a Grã-Bretanha teve desdobramentos decisivos para o futuro da monarquia dos Bourbon.
+
+A vitória militar elevou o prestígio diplomático da França, mas o custo financeiro da expedição foi devastador para o Tesouro Real, acelerando a crise de endividamento do Estado.`
+          },
+          {
+            number: '8.2',
+            title: 'O custo financeiro da intervenção e o agravamento do déficit',
+            content: `O financiamento da guerra americana foi realizado quase integralmente por meio de empréstimos promovidos por Necker com elevadas taxas de juros.
+
+Em 1788, o pagamento dos juros da dívida consumia mais de 50% de todo o orçamento anual do Estado francês.
+
+A incapacidade de rolar a dívida sem novos impostos acabou forçando a monarquia a abrir o debate constitucional que culminaria na Revolução.`
+          },
+          {
+            number: '8.3',
+            title: 'O fascínio pela Revolução Americana: La Fayette, Franklin e o mito da liberdade',
+            content: `Além do impacto financeiro, a Revolução Americana exerceu profundo fascínio cultural e ideológico sobre as elites francesas.
+
+A presença de Benjamin Franklin como embaixador dos EUA em Paris e o retorno de jovens aristocratas liberais que haviam lutado na América — como o Marquês de La Fayette — popularizaram a causa republicana e constitucional.
+
+A experiência das Treze Colônias demonstrava concretamente que era possível fundar uma nova ordem política baseada em uma Constituição escrita e no reconhecimento dos direitos naturais.`
+          },
+          {
+            number: '8.4',
+            title: 'A Declaração de Independência dos EUA (1776) como modelo normativo',
+            content: `A Declaração de Independência norte-americana de 1776, redigida por Thomas Jefferson, circulou amplamente na França e serviu de modelo normativo para os juristas revolucionários.
+
+A afirmação solene de que todos os homens são criados iguais e dotados de direitos inalienáveis à vida, à liberdade e à busca da felicidade antecipou diretamente os princípios que seriam inscritos na Declaração dos Direitos do Homem e do Cidadão em 1789.`
+          }
+        ]
+      },
+      {
+        number: '9',
+        title: 'O TERCEIRO ESTADO EM MARCHA: DA CONVOCAÇÃO À DESSACRALIZAÇÃO',
+        subsections: [
+          {
+            number: '9.1',
+            title: 'A decisão de convocar os Estados Gerais em 1788',
+            content: `Em 8 de agosto de 1788, acuado pela paralisia financeira e pela recusa dos Parlamentos, Luís XVI decretou a convocação dos Estados Gerais para o dia 1º de maio de 1789.
+
+A decisão pôs fim a 175 anos de absolutismo sem assembleias representativas (os Estados Gerais não se reuniam desde 1614).
+
+Ao convocar os representantes do reino, o rei admitiu tacitamente a incapacidade da monarquia de governar sem o consentimento dos súditos.`
+          },
+          {
+            number: '9.2',
+            title: 'A redação dos Cahiers de doléances: queixas, expectativas e demandas',
+            content: `O processo eleitoral para os Estados Gerais envolveu a redação dos Cahiers de doléances (Cadernos de Queixas) em todas as paróquias, corporações e províncias da França.
+
+Esses milhares de documentos constituem uma fonte histórica inestimável sobre os anseios e descontentamentos da população na véspera da Revolução.
+
+Enquanto os cadernos da nobreza e do clero defendiam a preservação das distinções estamentais e da propriedade senhorial, os cadernos do Terceiro Estado exigiam igualdade tributária, abolição de impostos feudais, liberdade de imprensa e uma Constituição escrita.`
+          },
+          {
+            number: '9.3',
+            title: 'Emmanuel-Joseph Sieyès e o manifesto do Terceiro Estado',
+            content: `Em janeiro de 1789, o abade Emmanuel-Joseph Sieyès publicou o panfleto O Que é o Terceiro Estado?, que se tornou o texto teórico mais influente do período preparatório.
+
+Sieyès atacou frontalmente os privilégios da nobreza, classificando-os como um corpo parasitário estranho à nação, e afirmou que o Terceiro Estado continha em si tudo o que era necessário para formar uma nação completa.
+
+Ao defender que a vontade do Terceiro Estado era a vontade nacional soberana, o texto forneceu a justificativa ideológica para a autoproclamação da Assembleia Nacional em junho de 1789.`
+          },
+          {
+            number: '9.4',
+            title: 'A transição da crítica teórica para a ação política direta',
+            content: `Nas semanas que antecederam a abertura dos Estados Gerais em maio de 1789, o clima político na França era de intensa expectativa e agitação popular.
+
+A combinação entre a crise de subsistência nas cidades, as revoltas camponesas no campo e a politização dos representantes letrados transformou a discussão teórica em mobilização direta.
+
+A crítica ao Antigo Regime havia deixado de ser uma especulação filosófica para se converter na força histórica revolucionária que desmantelaria o absolutismo francês.`
+          }
+        ]
+      },
+      {
+        number: '10',
+        title: 'AS CORRENTES INTERPRETATIVAS E O DEBATE HISTORIOGRÁFICO SOBRE AS ORIGENS DA REVOLUÇÃO',
+        subsections: [
+          {
+            number: '10.1',
+            title: 'A interpretação clássica marxista: a crise de uma sociedade feudal e a ascensão da burguesia (Lefebvre, Soboul)',
+            content: `A historiografia clássica de orientação marxista — representada por historiadores como Jean Jaurès, Georges Lefebvre e Albert Soboul — interpreta as origens da Revolução a partir das estruturas socioeconômicas.
+
+Nessa perspectiva, a Revolução Francesa foi uma revolução burguesa antifeudal e antiabsolutista que resultou do choque inevitável entre o desenvolvimento das forças produtivas capitalistas e as relações de produção estamentais.
+
+Essa abordagem destaca o papel da ascensão da burguesia e a participação decisiva das massas camponesas e dos sans-culottes urbanos no processo revolucionário.`
+          },
+          {
+            number: '10.2',
+            title: 'A crítica revisionista: a autonomia do político, a cultura e a linguagem (Furet, Taylor, Cobban)',
+            content: `A partir da década de 1950, a interpretação revisionista — inaugurada por Alfred Cobban e desenvolvida por George V. Taylor e François Furet — questionou a tese do bloco burguês antifeudal.
+
+Os revisionistas demonstraram que a nobreza e a burguesia letrada compartilhavam investimentos econômicos semelhantes e que os líderes de 1789 não eram industriais ou grandes comerciantes, mas juristas e oficiais venais.
+
+François Furet (Pensando a Revolução Francesa) enfatizou a autonomia da dinâmica política e da linguagem revolucionária, argumentando que a Revolução se explicava primordialmente por uma mutação ideológica e pela afirmação da soberania da vontade popular.`
+          },
+          {
+            number: '10.3',
+            title: 'As abordagens culturais e da história da leitura: Darnton, Chartier e Baker',
+            content: `Nas últimas décadas, a história cultural renovou a análise dos antecedentes de 1789 ao examinar a história do livro, da leitura e da sociabilidade.
+
+Robert Darnton investigou a "boemia literária" e os panfletos clandestinos que dessacralizaram a monarquia na vida cotidiana.
+
+Roger Chartier (As Origens Culturais da Revolução Francesa) demonstrou como o Iluminismo inventou novos hábitos críticos de leitura, enquanto Keith Michael Baker analisou a construção das linguagens da opinião pública, da razão e da vontade política.`
+          },
+          {
+            number: '10.4',
+            title: 'A síntese historiográfica contemporânea: causalidade múltipla e contingência histórica',
+            content: `A historiografia contemporânea (William Doyle, Jonathan Israel, Timothy Tackett) busca superar a oposição rígida entre história social e história cultural.
+
+Reconhece-se hoje que as origens da Revolução Francesa resultaram da convergência contingente e não predeterminada de múltiplos fatores: a crise fiscal do Estado, o travamento institucional promovido pela nobreza nos Parlamentos, o impacto cultural do Iluminismo, a emergência da opinião pública e a explosão da escassez agrária.
+
+A Revolução surgiu da interação dinâmica entre estruturas socioeconômicas, transformações culturais e escolhas políticas concretas dos atores diante da crise final do Antigo Regime.`
+          }
+        ]
+      }
+    ],
+    conclusion: `A França no Século das Luzes foi o laboratório intelectual e social no qual se gestaram os fundamentos da Modernidade Política. Entre a morte de Luís XIV em 1715 e a convocação dos Estados Gerais em 1789, o Iluminismo transformou a cultura europeia ao colocar a razão crítica, a liberdade individual, a tolerância e a soberania do povo no centro do debate sobre a legitimidade do poder.
+
+Ao mesmo tempo, as contradições do Antigo Regime — a desigualdade estamental, os privilégios tributários, as crises de subsistência rurais e a paralisia financeira da monarquia — demonstraram a incapacidade das estruturas absolutistas tradicionais de se reformarem internamente.
+
+Quando a aristocracia e os Parlamentos bloquearam as reformas fiscais da Coroa em 1787-1788, acabaram desencadeando uma crise constitucional que abriu espaço para a atuação autônoma do Terceiro Estado. Equipados com o vocabulário político iluminista e impulsionados pela mobilização popular, os representantes da nação transformaram a convocação dos Estados Gerais em uma ruptura histórica definitiva, encerrando o Antigo Regime e inaugurando a era das Revoluções Burguesas.`,
+    bibliographicReferences: [
+      'BAKER, Keith Michael. Inventing the French Revolution. Cambridge: Cambridge University Press, 1990.',
+      'CHARTIER, Roger. As Origens Culturais da Revolução Francesa. São Paulo: UNESP, 2009.',
+      'DARNTON, Robert. Boemia Literária e Revolução: O Submundo das Letras no Antigo Regime. São Paulo: Companhia das Letras, 1987.',
+      'DIDEROT, Denis; D’ALEMBERT, Jean le Rond. Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers. Paris, 1751–1772.',
+      'DOYLE, William. Origins of the French Revolution. Oxford: Oxford University Press, 1999.',
+      'FURET, François. Pensando a Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.',
+      'ISRAEL, Jonathan. Democratic Enlightenment: Philosophy, Revolution, and Human Rights 1750–1790. Oxford: Oxford University Press, 2011.',
+      'LEFEBVRE, Georges. 1789: O Surgimento da Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.',
+      'MONTESQUIEU, Charles de Secondat, Barão de. De l’esprit des loix. Genebra: Barrillot & Fils, 1748.',
+      'ROUSSEAU, Jean-Jacques. Du contrat social; ou, Principes du droit politique. Amsterdã: Marc-Michel Rey, 1762.',
+      'SIEYÈS, Emmanuel-Joseph. Qu’est-ce que le Tiers-État? Paris, 1789.',
+      'SOBOUL, Albert. A Revolução Francesa. Rio de Janeiro: Difel, 1989.',
+      'VOLTAIRE. Traité sur la tolérance. Genebra: Cramer, 1763.'
+    ]
   }
 };

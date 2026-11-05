@@ -662,3 +662,65 @@ html[data-theme="bege"] body {
   color: #713f12 !important;
 }
 
+/* =========================================================================
+   DOSSIÊ ACADÊMICO DE PESQUISA - HIGHLIGHTED TAB (2 TONES ELEVATED/HIGHER)
+   ========================================================================= */
+
+/* Theme 1: Preto (Arquivo Noturno) */
+.tab-research-dossier-active {
+  background-color: #d97706 !important;
+  color: #0f172a !important;
+  border-color: #f59e0b !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4) !important;
+}
+.tab-research-dossier-inactive {
+  background-color: rgba(120, 53, 15, 0.55) !important;
+  color: #fde68a !important;
+  border-color: #b45309 !important;
+  font-weight: 700 !important;
+}
+.tab-research-dossier-inactive:hover {
+  background-color: rgba(180, 83, 9, 0.8) !important;
+  color: #ffffff !important;
+}
+
+/* Theme 2: Branco & Cinza (Sombras Elevadas) */
+[data-theme="branco"] .tab-research-dossier-active {
+  background-color: #b45309 !important;
+  color: #ffffff !important;
+  border-color: #78350f !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 12px rgba(180, 83, 9, 0.35) !important;
+}
+[data-theme="branco"] .tab-research-dossier-inactive {
+  background-color: #fef3c7 !important;
+  color: #78350f !important;
+  border-color: #f59e0b !important;
+  font-weight: 700 !important;
+}
+[data-theme="branco"] .tab-research-dossier-inactive:hover {
+  background-color: #fde68a !important;
+  color: #451a03 !important;
+}
+
+/* Theme 3: Bege Vintage (Livro Antigo) */
+[data-theme="bege"] .tab-research-dossier-active {
+  background-color: #881919 !important;
+  color: #faf5e8 !important;
+  border-color: #610d0d !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 12px rgba(136, 25, 25, 0.35) !important;
+}
+[data-theme="bege"] .tab-research-dossier-inactive {
+  background-color: #e5cd9c !important;
+  color: #581c0c !important;
+  border-color: #9a3412 !important;
+  font-weight: 700 !important;
+}
+[data-theme="bege"] .tab-research-dossier-inactive:hover {
+  background-color: #d8ba82 !important;
+  color: #3b0f05 !important;
+}
+
+

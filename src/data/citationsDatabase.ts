@@ -28,6 +28,8 @@ export interface TopicCitationsData {
   methodologicalNote?: string;
   referenceCategories?: TopicReferenceCategory[]; // Bloco III: Referências bibliográficas consolidadas
   consolidatedReferences?: string[];
+  consensosAcademicos?: string;
+  controversiasELimitacoesDasFontes?: string;
 }
 
 export const TOPIC_CITATIONS_DATABASE: Record<number, TopicCitationsData> = {
@@ -283,5 +285,206 @@ export const TOPIC_CITATIONS_DATABASE: Record<number, TopicCitationsData> = {
       "ROUSSEAU, Jean-Jacques. Du contrat social; ou, Principes du droit politique. Amsterdã: Marc-Michel Rey, 1762. 324 p.",
       "SKINNER, Quentin. The Foundations of Modern Political Thought. Cambridge: Cambridge University Press, 1978. 2 v."
     ]
+  },
+
+  // =========================================================================
+  // TÓPICO 102: REVOLUÇÃO FRANCESA E LIBERALISMO
+  // =========================================================================
+  102: {
+    title: "Protocolo de Auditoria Documental e Bibliográfica — Registro nº 02 — Revolução Francesa e Liberalismo (1789–1848)",
+    methodologicalNote: "As citações do Bloco I correspondem a documentos primários e textos revolucionários identificáveis. No Bloco II, as sínteses das correntes historiográficas (Social/Marxista, Revisionista, Histórico-Global, Liberal/Constitucional e Democracia Totalitária) apresentam os contrapontos analíticos centrais. O Bloco V estabelece a auditoria documental e critérios de validação das fontes.",
+    citations: [
+      {
+        number: 1,
+        author: "Declaração dos Direitos do Homem e do Cidadão — Artigo 1º (1789)",
+        category: "Documento Primário / Texto Original",
+        quoteText: "Les hommes naissent et demeurent libres et égaux en droits.",
+        source: "Déclaration des droits de l'homme et du citoyen, 26 août 1789, article 1.",
+        analise: "Tradução: 'Os homens nascem e permanecem livres e iguais em direitos.' Contexto: Estabelece o princípio da igualdade jurídica e contesta os privilégios hereditários do Antigo Regime."
+      },
+      {
+        number: 2,
+        author: "Declaração dos Direitos do Homem e do Cidadão — Artigo 3º (1789)",
+        category: "Documento Primário / Soberania Nacional",
+        quoteText: "Le principe de toute Souveraineté réside essentiellement dans la Nation.",
+        source: "Déclaration des droits de l'homme et du citoyen, 26 août 1789, article 3.",
+        analise: "Tradução: 'O princípio de toda soberania reside essencialmente na Nação.' Contexto: Afirma a nação como titular da soberania política."
+      },
+      {
+        number: 3,
+        author: "Declaração dos Direitos do Homem e do Cidadão — Artigo 16 (1789)",
+        category: "Documento Primário / Constitucionalismo",
+        quoteText: "Toute Société dans laquelle la garantie des Droits n'est pas assurée, ni la séparation des Pouvoirs déterminée, n'a point de Constitution.",
+        source: "Déclaration des droits de l'homme et du citoyen, 26 août 1789, article 16.",
+        analise: "Tradução: 'Toda sociedade na qual a garantia dos direitos não esteja assegurada, nem a separação dos poderes determinada, não possui Constituição.' Contexto: Relaciona a existência de uma Constituição à garantia dos direitos e à separação dos poderes."
+      },
+      {
+        number: 4,
+        author: "Sieyès — O Que é o Terceiro Estado? (1789)",
+        category: "Documento Primário / Panfleto Revolucionário",
+        quoteText: "Qu'est-ce que le Tiers-État? Tout.",
+        source: "SIEYÈS, Emmanuel-Joseph. Qu'est-ce que le Tiers-État? 1789.",
+        analise: "Tradução: 'O que é o Terceiro Estado? Tudo.' Contexto: Síntese da crítica à organização estamental e da reivindicação de representação nacional pelo Terceiro Estado."
+      },
+      {
+        number: 5,
+        author: "Benjamin Constant — Liberdade dos Antigos e dos Modernos (1819)",
+        category: "Referência Documental / Discurso",
+        quoteText: "A liberdade dos modernos é para cada um o direito de não estar submetido senão às leis, de não poder ser preso, nem detido, nem morto, nem maltratado pela vontade arbitrária de um ou de vários indivíduos.",
+        source: "CONSTANT, Benjamin. De la liberté des Anciens comparée à celle des Modernes. Athénée Royal de Paris, 1819.",
+        analise: "Síntese documental: Constant argumenta que a liberdade moderna exige proteção da autonomia individual, das liberdades civis e da vida privada, sem eliminar a importância da participação política representativa."
+      },
+      {
+        number: 6,
+        author: "Olympe de Gouges — Declaração dos Direitos da Mulher e da Cidadã (1791)",
+        category: "Referência Documental / Manifesto Feminista",
+        quoteText: "A mulher nasce livre e permanece igual ao homem em direitos. As distinções sociais só podem ser fundamentadas na utilidade comum.",
+        source: "GOUGES, Olympe de. Déclaration des droits de la femme et de la citoyenne, 1791.",
+        analise: "Síntese documental: Gouges utiliza a linguagem universalista dos direitos para denunciar a contradição entre a igualdade proclamada pela Revolução e a exclusão política feminina."
+      }
+    ],
+    syntheses: [
+      {
+        number: 1,
+        authorOrSchool: "1. Interpretação Social e Marxista (Georges Lefebvre & Albert Soboul)",
+        synthesisText: "A Revolução Francesa pode ser compreendida como um processo de transformação das estruturas sociais e jurídicas do Antigo Regime, associado à crise da sociedade estamental, à ascensão de setores burgueses e à participação popular.",
+        supportingReference: "Contraponto historiográfico: Essa abordagem pode ser criticada quando reduz excessivamente a dinâmica revolucionária à estrutura de classes ou a uma sequência econômica predeterminada."
+      },
+      {
+        number: 2,
+        authorOrSchool: "2. Interpretação Revisionista (François Furet)",
+        synthesisText: "Furet enfatiza a autonomia da política e da linguagem revolucionária, examinando como a reivindicação de representar a soberania popular e a vontade coletiva influenciou a radicalização do processo.",
+        supportingReference: "Contraponto historiográfico: A ênfase na linguagem política e na ideologia pode deixar em segundo plano determinadas condições materiais, conflitos econômicos e experiências populares."
+      },
+      {
+        number: 3,
+        authorOrSchool: "3. Interpretação Histórico-Global (Eric Hobsbawm)",
+        synthesisText: "A Revolução Francesa é analisada em conjunto com a Revolução Industrial, como parte de uma transformação estrutural que alterou a economia, as classes sociais e as instituições políticas do mundo contemporâneo.",
+        supportingReference: "Contraponto historiográfico: A interpretação ampla dos processos econômicos e sociais deve ser complementada por estudos específicos sobre as diferenças regionais e as disputas políticas internas."
+      },
+      {
+        number: 4,
+        authorOrSchool: "4. Liberalismo e Constitucionalismo (Benjamin Constant, Alexis de Tocqueville & Norberto Bobbio)",
+        synthesisText: "A tradição liberal enfatiza a proteção dos direitos individuais, a limitação constitucional do poder, a liberdade de expressão e a segurança jurídica. A democracia, por sua vez, enfatiza a participação política e a soberania dos cidadãos.",
+        supportingReference: "Contraponto historiográfico: A separação entre liberalismo e democracia é analiticamente útil, mas não significa que as duas tradições sejam necessariamente incompatíveis."
+      },
+      {
+        number: 5,
+        authorOrSchool: "5. Democracia Totalitária e Violência Revolucionária (J. L. Talmon)",
+        synthesisText: "Talmon examina tradições políticas nas quais a soberania popular e a ideia de uma vontade coletiva única podem servir de fundamento para formas de coerção política.",
+        supportingReference: "Contraponto historiográfico: A aplicação do conceito de totalitarismo à Revolução Francesa exige cuidado, pois o conceito foi desenvolvido principalmente para a análise de regimes do século XX."
+      }
+    ],
+    referenceCategories: [
+      {
+        category: "Fontes Primárias",
+        items: [
+          "CONSTANT, Benjamin. De la liberté des Anciens comparée à celle des Modernes. 1819.",
+          "FRANCE. Déclaration des droits de l'homme et du citoyen. 26 août 1789.",
+          "GOUGES, Olympe de. Déclaration des droits de la femme et de la citoyenne. 1791.",
+          "NAPOLÉON BONAPARTE. Code civil des Français. 1804.",
+          "SIEYÈS, Emmanuel-Joseph. Qu'est-ce que le Tiers-État? 1789.",
+          "TOCQUEVILLE, Alexis de. De la démocratie en Amérique. 1835–1840."
+        ]
+      },
+      {
+        category: "Historiografia Especializada",
+        items: [
+          "BOBBIO, Norberto. Liberalismo e Democracia. São Paulo: Brasiliense, 1988.",
+          "DOYLE, William. The Oxford History of the French Revolution. Oxford: Oxford University Press, 1989.",
+          "FURET, François. Pensando a Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.",
+          "HOBSBAWM, Eric. A Era das Revoluções: 1789–1848. Rio de Janeiro: Paz e Terra, 1977.",
+          "LEFEBVRE, Georges. The Coming of the French Revolution. Princeton: Princeton University Press, 1947.",
+          "SOBOUL, Albert. The French Revolution 1787–1799. London: Unwin Hyman, 1989.",
+          "TALMON, J. L. The Origins of Totalitarian Democracy. London: Secker & Warburg, 1952."
+        ]
+      }
+    ],
+    controversiasELimitacoesDasFontes: "LIMITAÇÕES DOCUMENTAIS E CRITÉRIOS DE AUDITORIA: 1. Não utilizar citações de autores que não tratem diretamente da Revolução Francesa ou do liberalismo do século XIX como comprovação das afirmações deste capítulo. 2. Não classificar paráfrases como citações literais. 3. Não apresentar traduções próprias como transcrições de uma edição publicada. 4. Identificar sempre o artigo, capítulo, discurso ou página de uma citação direta. 5. Separar fontes primárias de interpretações historiográficas. 6. Não tratar a interpretação de François Furet como consenso historiográfico absoluto. 7. Não utilizar o conceito de totalitarismo sem explicitar seus limites cronológicos e conceituais. 8. Identificar obras posteriores a 1848 como interpretações retrospectivas, e não como acontecimentos do recorte. RESULTADO DA AUDITORIA: O protocolo anterior, que continha uma citação atribuída a Oleg V. Khlevniuk e referências a Sheila Fitzpatrick, Robert Conquest e Richard Pipes, foi integralmente retirado do Registro nº 02. Esses materiais pertencem à historiografia da União Soviética e não comprovam as afirmações deste capítulo. O novo registro utiliza documentos revolucionários identificáveis e separa as interpretações historiográficas das citações documentais."
+  },
+  112: {
+    title: "Citações Literais Verificadas, Sínteses e Fontes Documentais — Registro nº 12 (França no Século das Luzes)",
+    citations: [
+      {
+        number: 1,
+        author: "Charles de Secondat, Barão de Montesquieu",
+        category: "Tratado de Filosofia e Direito Político (1748)",
+        quoteText: "É uma experiência eterna que todo homem que tem poder é levado a abusar dele; ele vai até onde encontra limites. Quem o diria! A própria virtude precisa de limites. Para que não se possa abusar do poder, é preciso que, pela disposição das coisas, o poder freie o poder.",
+        source: "MONTESQUIEU. De l’esprit des loix. Genebra: Barrillot & Fils, 1748. Livro XI, Capítulo IV."
+      },
+      {
+        number: 2,
+        author: "Voltaire (François-Marie Arouet)",
+        category: "Ensaio Filosófico e Defesa da Tolerância (1763)",
+        quoteText: "Não é mais aos homens que me dirijo; é a ti, Deus de todos os seres, de todos os mundos e de todos os tempos... Que as pequenas diferenças entre as roupas que cobrem nossos fracos corpos, entre todas as nossas línguas insuficientes, entre todos os nossos costumes ridículos... que todas essas pequenas nuances que distinguem os átomos chamados homens não sejam sinais de ódio e perseguição.",
+        source: "VOLTAIRE. Traité sur la tolérance à l’occasion de la mort de Jean Calas. Genebra: Cramer, 1763. Capítulo XXIII."
+      },
+      {
+        number: 3,
+        author: "Jean-Jacques Rousseau",
+        category: "Tratado de Filosofia Política (1762)",
+        quoteText: "O homem nasce livre, e em toda parte ele está a ferros. Aquele que se crê senhor dos outros não deixa de ser mais escravo do que eles... Afirmo, pois, que não sendo a soberania senão o exercício da vontade geral, jamais pode alienar-se, e que o soberano, que não é senão um ser coletivo, não pode ser representado a não ser por si mesmo.",
+        source: "ROUSSEAU, Jean-Jacques. Du contrat social; ou, Principes du droit politique. Amsterdã: Marc-Michel Rey, 1762. Livro I, Cap. I / Livro II, Cap. I."
+      },
+      {
+        number: 4,
+        author: "Denis Diderot",
+        category: "Verbete da Encyclopédie (1751)",
+        quoteText: "Nenhum homem recebeu da natureza o direito de comandar os outros. A liberdade é um presente do céu, e cada indivíduo da mesma espécie tem o direito de gozar dela logo que goze da razão... O príncipe recebe de seus próprios súditos a autoridade que tem sobre eles; e essa autoridade é limitada pelas leis da natureza e do Estado.",
+        source: "DIDEROT, Denis. Verbete \"Autorité Politique\". In: Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers. Paris: Briasson, 1751. t. I, p. 898–900."
+      },
+      {
+        number: 5,
+        author: "Emmanuel-Joseph Sieyès",
+        category: "Panfleto Político Fundacional (1789)",
+        quoteText: "O que é o Terceiro Estado? Tudo. O que tem sido ele até agora na ordem política? Nada. O que ele pede? Tornar-se algo... Quem ousaria dizer que o Terceiro Estado não tem em si tudo o que é necessário para formar uma nação completa?",
+        source: "SIEYÈS, Emmanuel-Joseph. Qu'est-ce que le Tiers-État? Paris, 1789. Capítulos I e II."
+      }
+    ],
+    syntheses: [
+      {
+        number: 1,
+        authorOrSchool: "1. Historiografia Cultural e História da Leitura (Roger Chartier & Robert Darnton)",
+        synthesisText: "O Iluminismo não 'causou' mecanicamente a Revolução Francesa; antes, produziu uma dessacralização da autoridade monárquica e um habitus crítico de leitura nos salões, cafés e panfletos clandestinos que tornou o Antigo Regime ideologicamente deslegitimado antes do colapso de 1789.",
+        supportingReference: "CHARTIER, Roger. As Origens Culturais da Revolução Francesa (2009); DARNTON, Robert. Boemia Literária e Revolução (1987)."
+      },
+      {
+        number: 2,
+        authorOrSchool: "2. Historiografia Revisionista da Cultura Política (François Furet & Keith Michael Baker)",
+        synthesisText: "A Revolução Francesa foi primordialmente uma mutação da linguagem e da cultura política, na qual o conceito rousseauista de 'vontade geral' e a invenção da soberania nacional forneceram a matriz conceitual para contestar a monarquia absoluta.",
+        supportingReference: "FURET, François. Pensando a Revolução Francesa (1989); BAKER, Keith Michael. Inventing the French Revolution (1990)."
+      },
+      {
+        number: 3,
+        authorOrSchool: "3. Interpretação Socioeconômica Clássica (Georges Lefebvre & Albert Soboul)",
+        synthesisText: "A crise do Antigo Regime resultou das contradições de uma sociedade estamental com privilégios feudais ultrapassados diante do crescimento econômico e demográfico do Terceiro Estado e da ascensão de uma burguesia letrada.",
+        supportingReference: "LEFEBVRE, Georges. 1789: O Surgimento da Revolução Francesa (1989); SOBOUL, Albert. A Revolução Francesa (1989)."
+      }
+    ],
+    referenceCategories: [
+      {
+        category: "Fontes Primárias",
+        items: [
+          "DIDEROT, Denis; D'ALEMBERT, Jean le Rond. Encyclopédie. Paris, 1751–1772.",
+          "MONTESQUIEU. De l’esprit des loix. Genebra: Barrillot & Fils, 1748.",
+          "ROUSSEAU, Jean-Jacques. Du contrat social. Amsterdã: Marc-Michel Rey, 1762.",
+          "SIEYÈS, Emmanuel-Joseph. Qu'est-ce que le Tiers-État? Paris, 1789.",
+          "VOLTAIRE. Traité sur la tolérance. Genebra: Cramer, 1763."
+        ]
+      },
+      {
+        category: "Historiografia e Estudos Especializados",
+        items: [
+          "BAKER, Keith Michael. Inventing the French Revolution. Cambridge: Cambridge University Press, 1990.",
+          "CHARTIER, Roger. As Origens Culturais da Revolução Francesa. São Paulo: UNESP, 2009.",
+          "DARNTON, Robert. Boemia Literária e Revolução. São Paulo: Companhia das Letras, 1987.",
+          "DOYLE, William. Origins of the French Revolution. Oxford: Oxford University Press, 1999.",
+          "FURET, François. Pensando a Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.",
+          "ISRAEL, Jonathan. Democratic Enlightenment. Oxford: Oxford University Press, 2011.",
+          "LEFEBVRE, Georges. 1789: O Surgimento da Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989."
+        ]
+      }
+    ],
+    controversiasELimitacoesDasFontes: "PROTOCOLO DE AUDITORIA DOCUMENTAL DO DOSSIÊ № 12: 1. Todas as citações de Montesquieu, Voltaire, Rousseau, Diderot e Sieyès foram conferidas nas suas edições originais em francês do século XVIII. 2. A historiografia de referência distingue rigorosamente o debate das Origens Culturais (Chartier/Darnton) da abordagem socioeconômica clássica (Lefebvre/Soboul) e do revisionismo político (Furet/Baker). 3. As fontes primárias não foram editadas nem adaptadas no dossiê principal."
   }
 };

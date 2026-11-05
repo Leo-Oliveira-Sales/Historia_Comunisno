@@ -133,13 +133,35 @@ export const IDEOLOGIAS_TOPICS: DossierTopic[] = [
         documentType: 'Declaração Constitucional Fundamental',
         year: '1789',
         archiveReference: 'Archives Nationales AE/II/1101',
-        transcriptionPt: 'Art. 1º. Os homens nascem e são livres e iguais em direitos. As distinções sociais só podem fundar-se na utilidade comum. Art. 2º. A finalidade de toda associação política é a conservação dos direitos naturais e imprescritíveis do homem. Esses direitos são a liberdade, a propriedade, a segurança e a resistência à opressão.',
+        transcriptionPt: 'Art. 1º. Os homens nascem e são livres e iguais em direitos. Art. 3º. O princípio de toda soberania reside essencialmente na Nação. Art. 16. Toda sociedade na qual a garantia dos direitos não esteja assegurada, nem a separação dos poderes determinada, não possui Constituição.',
         abntCitation: 'FRANÇA. Assemblée Nationale Constituante. Déclaration des Droits de l’Homme et du Citoyen. Paris, 1789.',
         chicagoCitation: 'National Assembly of France. Declaration of the Rights of Man and of the Citizen. Paris, 1789.',
         relatedHistorians: ['François Furet', 'Norberto Bobbio']
       },
       {
-        title: 'Da Liberdade dos Antigos Comparada à dos Modernos (1819)',
+        title: 'Emmanuel-Joseph Sieyès — O Que é o Terceiro Estado? (1789)',
+        institution: 'Bibliothèque Nationale de France (BnF Gallica)',
+        documentType: 'Panfleto Político Fundacional',
+        year: '1789',
+        archiveReference: 'BnF Gallica Lb39-1020',
+        transcriptionPt: 'O que é o Terceiro Estado? Tudo. O que tem sido ele até agora na ordem política? Nada. O que ele pede? Tornar-se algo.',
+        abntCitation: 'SIEYÈS, Emmanuel-Joseph. Qu\'est-ce que le Tiers-État? Paris, 1789.',
+        chicagoCitation: 'Sieyès, Emmanuel-Joseph. What Is the Third Estate? Paris, 1789.',
+        relatedHistorians: ['William Doyle', 'Georges Lefebvre']
+      },
+      {
+        title: 'Olympe de Gouges — Declaração dos Direitos da Mulher e da Cidadã (1791)',
+        institution: 'Bibliothèque Nationale de France (BnF)',
+        documentType: 'Manifesto de Cidadania Feminina',
+        year: '1791',
+        archiveReference: 'BnF Lb39-5438',
+        transcriptionPt: 'A mulher nasce livre e permanece igual ao homem em direitos. A mulher tem o direito de subir ao patíbulo; ela deve ter igualmente o direito de subir à tribuna.',
+        abntCitation: 'GOUGES, Olympe de. Déclaration des droits de la femme et de la citoyenne. Paris, 1791.',
+        chicagoCitation: 'Gouges, Olympe de. Declaration of the Rights of Woman and of the Female Citizen. Paris, 1791.',
+        relatedHistorians: ['Lynn Hunt', 'Joan Wallach Scott']
+      },
+      {
+        title: 'Benjamin Constant — Da Liberdade dos Antigos Comparada à dos Modernos (1819)',
         institution: 'Athénée Royal de Paris / Gallica BnF',
         documentType: 'Discurso / Ensaio Político',
         year: '1819',
@@ -148,6 +170,17 @@ export const IDEOLOGIAS_TOPICS: DossierTopic[] = [
         abntCitation: 'CONSTANT, Benjamin. De la liberté des Anciens comparée à celle des Modernes. Paris: Athénée Royal, 1819.',
         chicagoCitation: 'Constant, Benjamin. De la liberté des Anciens comparée à celle des Modernes. Paris, 1819.',
         relatedHistorians: ['Isaiah Berlin', 'Quentin Skinner']
+      },
+      {
+        title: 'Alexis de Tocqueville — A Democracia na América (1835–1840)',
+        institution: 'Bibliothèque Nationale de France (BnF)',
+        documentType: 'Tratado de Ciência Política',
+        year: '1835',
+        archiveReference: 'BnF 8-R-1234',
+        transcriptionPt: 'Se a liberdade vier a se perder, isso se devendo à omnipotência da maioria, que terá levado as minorias ao desespero e as terá forçado a recorrer à força física.',
+        abntCitation: 'TOCQUEVILLE, Alexis de. De la démocratie en Amérique. Paris: Gosselin, 1835–1840.',
+        chicagoCitation: 'Tocqueville, Alexis de. Democracy in America. Paris, 1835–1840.',
+        relatedHistorians: ['Raymond Aron', 'Norberto Bobbio']
       }
     ],
     historicalImpact: 'Consolidou o império da lei escrita, o regime constitucional representativo, a igualdade formal de todos perante a lei e a exigência de cartas magnas que limitem expressamente o poder dos governantes.',
@@ -741,6 +774,159 @@ export const IDEOLOGIAS_TOPICS: DossierTopic[] = [
         chicagoCitation: 'Extraordinary Chambers in the Courts of Cambodia. 1975–1979. "Tuol Sleng S-21 Prison Records." Phnom Penh: ECCC.'
       }
     ]
+  },
+
+  // =========================================================================
+  // TÓPICO 112 (CAPÍTULO 12)
+  // =========================================================================
+  {
+    id: 112,
+    categoryNumber: '12',
+    title: 'França no Século das Luzes: Iluminismo, Absolutismo e Crise do Antigo Regime (1715–1789)',
+    category: 'Filosofia Política e Origens da Revolução',
+    period: 'todos',
+    periodLabel: '1715 – 1789',
+    tagline: 'A sociedade de ordens, os parlamentos rebeldes, a Enciclopédia e a crise de legitimidade da monarquia dos Bourbon.',
+    summary: 'Estudo dos antecedentes intelectuais, sociais, econômicos e institucionais que prepararam o terreno para 1789. Da morte de Luís XIV às vésperas dos Estados Gerais: a crise fiscal da monarquia, a crítica iluminista de Montesquieu, Voltaire e Rousseau, a difusão da opinião pública nos salões e a revolta da nobreza nos parlamentos.',
+    mainSubjects: [
+      'A sociedade de ordens (Clero, Nobreza e Terceiro Estado) e os privilégios estamentais',
+      'A monarquia absoluta de Luís XV e Luís XVI e a resistência judiciária dos Parlamentos',
+      'O Iluminismo francês: Montesquieu, Voltaire, Rousseau e a Enciclopédia de Diderot',
+      'A Fisiocracia (Turgot, Quesnay) e as crises de subsistência no mundo rural',
+      'A guerra de panfletos, Sieyès e a redação dos Cahiers de doléances em 1789'
+    ],
+    historicalContext: 'Entre a morte de Luís XIV (1715) e a convocação dos Estados Gerais (1789), a França vivenciou o apogeu cultural do Iluminismo em paralelo à rápida paralisação das suas estruturas financeiras e políticas. A incapacidade da monarquia em reformar a fiscalidade diante da oposição aristocrática transformou a crise do Estado em uma contestação global da ordem tradicional.',
+    academicConsensus: 'A historiografia contemporânea superou a visão unilinear de que o Iluminismo causou diretamente a Revolução, demonstrando que o Século das Luzes gerou uma nova cultura política e uma esfera pública crítica que dessacralizou a monarquia e forneceu a linguagem de direitos com a qual a crise fiscal de 1787-1789 foi convertida em revolução política.',
+    keyActors: [
+      'Montesquieu (1689–1755)',
+      'Voltaire (1694–1778)',
+      'Jean-Jacques Rousseau (1712–1778)',
+      'Denis Diderot (1713–1784)',
+      'Anne Robert Jacques Turgot (1727–1781)',
+      'Emmanuel-Joseph Sieyès (1748–1836)',
+      'Luís XVI (1754–1793)'
+    ],
+    historiansInvolved: [
+      'François Furet',
+      'Robert Darnton',
+      'Roger Chartier',
+      'Keith Michael Baker',
+      'Georges Lefebvre',
+      'William Doyle',
+      'Jonathan Israel'
+    ],
+    primarySources: [
+      {
+        title: 'O Espírito das Leis (1748)',
+        institution: 'Bibliothèque nationale de France (BnF)',
+        documentType: 'Tratado de Filosofia e Direito Político',
+        year: '1748',
+        archiveReference: 'BnF Tolbiac - R-7321',
+        transcriptionPt: 'É uma experiência eterna que todo homem que tem poder é levado a abusar dele; ele vai até onde encontra limites. Quem o diria! A própria virtude precisa de limites. Para que não se possa abusar do poder, é preciso que, pela disposição das coisas, o poder freie o poder.',
+        transcriptionOrig: 'C\'est une expérience éternelle que tout homme qui a du pouvoir est porté à en abuser; il va jusqu\'à ce qu\'il trouve des limites. Qui le dirait! La vertu même a besoin de limites. Pour qu\'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir.',
+        historicalRelevance: 'Fundamento teórico primordial do constitucionalismo ocidental, instituindo a doutrina tripartite dos poderes (Executivo, Legislativo e Judiciário) como mecanismo indispensável contra o absolutismo monárquico.',
+        abntCitation: 'MONTESQUIEU, Charles de Secondat, Barão de. De l’esprit des loix. Genebra: Barrillot & Fils, 1748.',
+        chicagoCitation: 'Montesquieu, Charles de Secondat, Baron de. De l’esprit des loix. Geneva: Barrillot & Fils, 1748.',
+        relatedHistorians: ['Quentin Skinner', 'François Furet', 'Keith Michael Baker']
+      },
+      {
+        title: 'Verbete "Autoridade Política" da Encyclopédie (1751)',
+        institution: 'Bibliothèque Nationale de France (BnF)',
+        documentType: 'Verbete Enciclopédico Fundacional',
+        year: '1751',
+        archiveReference: 'BnF Tolbiac - Fol. Z-1205 (Tomo I, p. 898–900)',
+        transcriptionPt: 'Nenhum homem recebeu da natureza o direito de comandar os outros. A liberdade é um presente do céu, e cada indivíduo da mesma espécie tem o direito de gozar dela logo que goze da razão... O príncipe recebe de seus próprios súditos a autoridade que tem sobre eles; e essa autoridade é limitada pelas leis da natureza e do Estado.',
+        transcriptionOrig: 'Aucun homme n\'a reçu de la nature le droit de commander aux autres. La liberté est un présent du ciel, et chaque individu de la même espèce a le droit d\'en jouir aussitôt qu\'il jouit de la raison... Le prince tient de ses sujets mêmes l\'autorité qu\'il a sur eux; et cette autorité est bornée par les lois de la nature et de l\'État.',
+        historicalRelevance: 'Ruptura frontal com a teoria do absolutismo de direito divino, afirmando que a soberania emana da concessão consentida dos governados sob limites contratuais inegociáveis.',
+        abntCitation: 'DIDEROT, Denis. Verbete "Autorité Politique". In: Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers. Paris: Briasson, 1751, t. I, p. 898–900.',
+        chicagoCitation: 'Diderot, Denis. "Autorité Politique." In Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers. Vol. 1. Paris: Briasson, 1751.',
+        relatedHistorians: ['Robert Darnton', 'Jonathan Israel', 'Roger Chartier']
+      },
+      {
+        title: 'Tratado sobre a Tolerância (1763)',
+        institution: 'Bibliothèque Nationale de France (BnF)',
+        documentType: 'Tratado Filosófico e Manifesto Civil',
+        year: '1763',
+        archiveReference: 'BnF Tolbiac - R-14201',
+        transcriptionPt: 'Não é mais aos homens que me dirijo; é a ti, Deus de todos os seres, de todos os mundos e de todos os tempos... Que as pequenas diferenças entre as roupas que cobrem nossos fracos corpos, entre todas as nossas línguas insuficientes, entre todos os nossos costumes ridículos... não sejam sinais de ódio e perseguição.',
+        transcriptionOrig: 'Ce n\'est plus aux hommes que je m\'adresse; c\'est à toi, Dieu de tous les êtres, de tous les mondes et de tous les temps... Que les petites différences entre les vêtements qui couvrent nos débiles corps, entre tous nos langages insuffisants, entre tous nos usages ridicules... ne soient pas des signaux de haine et de persécution.',
+        historicalRelevance: 'Consagrou a figura do intelectual público engajado na mobilização da opinião internacional contra erros judiciais inquisitoriais e a perseguição religiosa no Estado monárquico.',
+        abntCitation: 'VOLTAIRE. Traité sur la tolérance à l’occasion de la mort de Jean Calas. Genebra: Cramer, 1763.',
+        chicagoCitation: 'Voltaire. Traité sur la tolérance à l’occasion de la mort de Jean Calas. Geneva: Cramer, 1763.',
+        relatedHistorians: ['Robert Darnton', 'Jonathan Israel', 'Lynn Hunt']
+      },
+      {
+        title: 'Do Contrato Social (1762)',
+        institution: 'Bibliothèque Nationale de France (BnF)',
+        documentType: 'Tratado de Filosofia e Direito Público',
+        year: '1762',
+        archiveReference: 'BnF Tolbiac - R-12948',
+        transcriptionPt: 'O homem nasce livre, e em toda parte ele está a ferros. Aquele que se crê senhor dos outros não deixa de ser mais escravo do que eles... Afirmo, pois, que não sendo a soberania senão o exercício da vontade geral, jamais pode alienar-se, e que o soberano, que não é senão um ser coletivo, não pode ser representado a não ser por si mesmo.',
+        transcriptionOrig: 'L\'homme est né libre, et partout il est dans les fers. Tel se croit le maître des autres, qui ne laisse pas d\'être plus esclave qu\'eux... Je dis donc que la souveraineté n\'étant que l\'exercice de la volonté générale ne peut jamais s\'aliéner, et que le souverain, qui n\'est qu\'un être collectif, ne peut être représenté que par lui-même.',
+        historicalRelevance: 'Matriz conceitual da soberania popular inalienável e indivisível, orientada pela vontade geral e convertida em ideário fundamental dos deputados revolucionários de 1789.',
+        abntCitation: 'ROUSSEAU, Jean-Jacques. Du contrat social; ou, Principes du droit politique. Amsterdã: Marc-Michel Rey, 1762.',
+        chicagoCitation: 'Rousseau, Jean-Jacques. Du contrat social; ou, Principes du droit politique. Amsterdam: Marc-Michel Rey, 1762.',
+        relatedHistorians: ['Keith Michael Baker', 'François Furet', 'Albert Soboul']
+      },
+      {
+        title: 'Éditos Reais de Supressão da Corveia e das Corporações (Fevereiro de 1776)',
+        institution: 'Archives Nationales de France (Paris)',
+        documentType: 'Édito Real e Preâmbulo Econômico',
+        year: '1776',
+        archiveReference: 'Archives Nationales - Registres du Conseil d\'État, K-145 nº 12',
+        transcriptionPt: 'Deus, ao dar ao homem necessidades, tornando-lhe indispensável o trabalho, fez do direito de trabalhar a propriedade de todo homem, e essa propriedade é a primeira, a mais sagrada e a mais imprescritível de todas.',
+        transcriptionOrig: 'Dieu, en donnant à l\'homme des besoins, en lui rendant nécessaire le travail, a fait du droit de travailler la propriété de tout homme, et cette propriété est la première, la plus sacrée et la plus imprescriptible de toutes.',
+        historicalRelevance: 'Manifesto do reformismo fisiocrático de Turgot para desmantelar os monopólios de corporações medievais e a prestação feudal compulsória de trabalho rural.',
+        abntCitation: 'FRANÇA. Édits de Sa Majesté Louis XVI portant suppression des corvées et des jurandes et maîtrises. Paris: Imprimerie Royale, 1776.',
+        chicagoCitation: 'France. Édits de Sa Majesté Louis XVI portant suppression des corvées et des jurandes. Paris: Imprimerie Royale, 1776.',
+        relatedHistorians: ['Georges Lefebvre', 'William Doyle']
+      },
+      {
+        title: 'Grandes Remontrances du Parlement de Paris (Maio de 1788)',
+        institution: 'Archives Nationales de France (Paris)',
+        documentType: 'Protesto e Remontrance Judiciária Oficial',
+        year: '1788',
+        archiveReference: 'Archives Nationales - X/1b/8966 (Remontrances du 3 Mai 1788)',
+        transcriptionPt: 'A França é uma monarquia governada pelo Rei segundo as leis... e as leis fundamentais do reino consagram que os subsídios financeiros só podem ser concedidos pelos Estados Gerais legitimamente convocados e ouvidos.',
+        transcriptionOrig: 'La France est une monarchie gouvernée par le Roi suivant les lois... et ces lois fondamentales consacrent que les subsides ne peuvent être accordés que par les États Généraux régulièrement convoqués et entendus.',
+        historicalRelevance: 'Declaração formal do Parlamento de Paris que paralisou a cobrança dos impostos da Coroa e coagiu Luís XVI a convocar os Estados Gerais, deflagrando a crise constitucional final.',
+        abntCitation: 'PARLEMENT DE PARIS. Arrêté et Remontrances du Parlement de Paris du 3 Mai 1788. Paris, 1788.',
+        chicagoCitation: 'Parlement de Paris. Arrêté et Remontrances du Parlement de Paris du 3 Mai 1788. Paris, 1788.',
+        relatedHistorians: ['William Doyle', 'François Furet']
+      },
+      {
+        title: 'O Que é o Terceiro Estado? (Janeiro de 1789)',
+        institution: 'Bibliothèque Nationale de France (BnF)',
+        documentType: 'Panfleto Político e Teoria da Assembleia Constituinte',
+        year: '1789',
+        archiveReference: 'BnF Gallica Lb39-1020',
+        transcriptionPt: 'O que é o Terceiro Estado? Tudo. O que tem sido ele até agora na ordem política? Nada. O que ele pede? Tornar-se algo... Quem ousaria dizer que o Terceiro Estado não tem em si tudo o que é necessário para formar uma nação completa? Se se suprimisse a ordem privilegiada, a nação não seria algo de menos, mas algo de mais.',
+        transcriptionOrig: 'Qu\'est-ce que le Tiers-État? Tout. Qu\'a-t-il été jusqu\'à présent dans l\'ordre politique? Rien. Que demande-t-il? À y devenir quelque chose... Qui donc oserait dire que le Tiers-État n\'a pas en lui tout ce qu\'il faut pour former une nation complète? Si l\'on ôtait l\'ordre privilégié, la nation ne serait pas quelque chose de moins, mais quelque chose de plus.',
+        historicalRelevance: 'O texto teórico mais influente da ruptura de 1789, deslegitimando a aristocracia como casta parasitária e fundamentando a transformação dos Estados Gerais em Assembleia Nacional Soberana.',
+        abntCitation: 'SIEYÈS, Emmanuel-Joseph. Qu\'est-ce que le Tiers-État? Paris, 1789.',
+        chicagoCitation: 'Sieyès, Emmanuel-Joseph. Qu\'est-ce que le Tiers-État? Paris, 1789.',
+        relatedHistorians: ['Georges Lefebvre', 'William Doyle', 'François Furet']
+      },
+      {
+        title: 'Cahier de Doléances do Terceiro Estado da Paróquia de Écouen (Março de 1789)',
+        institution: 'Archives Départementales du Val-d\'Oise / Archives Nationales',
+        documentType: 'Caderno de Queixas Paroquial Oficial',
+        year: '1789',
+        archiveReference: 'Archives Nationales - B/III/32 (Cahiers de Doléances de la prévôté et vicomté de Paris)',
+        transcriptionPt: 'Os habitantes suplicam a Sua Majestade que todos os impostos sejam no futuro suportados igualmente por todas as classes de cidadãos, sem distinção de ordens ou privilégios, e que a corveia senhorial e os direitos de caça sejam inteiramente abolidos.',
+        transcriptionOrig: 'Les habitants supplient Sa Majesté que tous les impôts soient à l\'avenir supportés également par toutes les classes de citoyens, sans distinction d\'ordres ni de privilèges, et que la corvée seigneuriale et les droits de chasse soient entièrement abolis.',
+        historicalRelevance: 'Exemplo autêntico da mobilização popular rural e camponesa nos Cadernos de Queixas de 1789, exigindo igualdade fiscal universal e extinção das obrigações servis e feudais.',
+        abntCitation: 'PAROISSE D\'ÉCOUEN. Cahier de doléances, plaintes et remontrances du Tiers-État de la paroisse d\'Écouen. Paris: Archives Départementales, 1789.',
+        chicagoCitation: 'Paroisse d\'Écouen. Cahier de doléances du Tiers-État de la paroisse d\'Écouen. Paris: Archives Départementales, 1789.',
+        relatedHistorians: ['Georges Lefebvre', 'Albert Soboul']
+      }
+    ],
+    historicalImpact: 'Gestou o horizonte intelectual e simbólico da Modernidade Política Ocidental, transformando súditos em cidadãos e abrindo o ciclo das Revoluções Burguesas.',
+    quote: {
+      text: 'A Revolução Francesa foi pensada antes de ser realizada: o Século das Luzes foi a gestação consciente da soberania da razão pública.',
+      author: 'Roger Chartier',
+      context: 'As Origens Culturais da Revolução Francesa (1990)'
+    }
   }
 ];
 

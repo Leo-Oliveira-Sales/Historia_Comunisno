@@ -13,6 +13,7 @@ import {
   TopicHistoriographicalSynthesis, 
   TopicReferenceCategory 
 } from '../data/citationsDatabase';
+import { ADVANCED_INVESTIGATIONS_DATABASE } from '../data/advancedInvestigationDatabase';
 import { playStampSound, playTypewriterClack } from '../utils/audio';
 import { 
   X, 
@@ -66,7 +67,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   theme = 'preto',
   onSelectTheme,
 }) => {
-  const [activeTab, setActiveTab] = useState<'chapter' | 'researchDossier' | 'essay' | 'stories' | 'documents' | 'context' | 'citations'>('chapter');
+  const [activeTab, setActiveTab] = useState<'chapter' | 'researchDossier' | 'essay' | 'stories' | 'documents' | 'context' | 'citations' | 'advancedInvestigation'>('chapter');
   const [activeSection, setActiveSection] = useState<number | string>(1);
   const [copiedCitation, setCopiedCitation] = useState<string | null>(null);
   const [fontSize, setFontSize] = useState<'sm' | 'base' | 'lg'>('base');
@@ -78,6 +79,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const detailedEpisodes = DETAILED_EPISODES_BY_TOPIC[topic.id] || [];
   const canonicalDossier = getCanonicalEditorialDossier(topic.id);
   const researchDossierText = RESEARCH_DOSSIERS[topic.id] || IDEOLOGIAS_RESEARCH_DOSSIERS[topic.id];
+  const advancedInvestigation = ADVANCED_INVESTIGATIONS_DATABASE[topic.id];
 
   const copyToClipboard = (text: string, label: string) => {
     navigator.clipboard.writeText(text);
@@ -89,6 +91,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const copyResearchDossier = () => {
     if (!researchDossierText) return;
     copyToClipboard(researchDossierText, 'research_dossier');
+  };
+
+  const copyAdvancedInvestigation = () => {
+    if (!advancedInvestigation) return;
+    copyToClipboard(advancedInvestigation.rawText, 'advanced_investigation');
   };
 
   // PROTOCOLO DE AUDITORIA DOCUMENTAL E BIBLIOGRÁFICA — RESOLUÇÃO DOS 3 BLOCOS
@@ -309,11 +316,33 @@ export const DossierModal: React.FC<DossierModalProps> = ({
     fullText += `${essay.subtitle}\n`;
     fullText += `${essay.authorCatedra}\n`;
     fullText += `==========================================================\n\n`;
-    fullText += `I. SÍNTESE GERAL\n${essay.narrativeOverview}\n\n`;
-    fullText += `II. DESENVOLVIMENTO HISTÓRICO\n${essay.historicalDevelopment}\n\n`;
-    fullText += `III. MECANISMOS INSTITUCIONAIS\n${essay.institutionalAndStateMechanisms}\n\n`;
+    if (essay.epigraph) {
+      fullText += `EPÍGRAFE:\n"${essay.epigraph.text}"\n— ${essay.epigraph.author}, ${essay.epigraph.work}\n\n`;
+    }
+    fullText += `I. SÍNTESE GERAL E ANTECEDENTES\n${essay.narrativeOverview}\n\n`;
+    fullText += `II. DESENVOLVIMENTO HISTÓRICO E MARCOS\n${essay.historicalDevelopment}\n\n`;
+    fullText += `III. MECANISMOS INSTITUCIONAIS E DECRETOS\n${essay.institutionalAndStateMechanisms}\n\n`;
     fullText += `IV. DEBATE HISTORIOGRÁFICO\n${essay.historiographicalDebate}\n\n`;
-    fullText += `V. CONCLUSÃO\n${essay.concludingAssessment}\n\n`;
+    if (essay.scholarlyQuotes && essay.scholarlyQuotes.length > 0) {
+      fullText += `V. CITAÇÕES DE PESQUISADORES E ANÁLISES:\n`;
+      essay.scholarlyQuotes.forEach(sq => {
+        fullText += `• "${sq.quote}" — ${sq.author} (${sq.work}, ${sq.year}, ${sq.pageOrDoc})\n  Análise: ${sq.historicalAnalysis}\n\n`;
+      });
+    }
+    if (essay.archivalCorpus && essay.archivalCorpus.length > 0) {
+      fullText += `VI. FUNDOS ARQUIVÍSTICOS E FONTES PRIMÁRIAS:\n`;
+      essay.archivalCorpus.forEach(ac => {
+        fullText += `• ${ac.archiveName} [${ac.fondCode}]: ${ac.description}\n`;
+      });
+      fullText += `\n`;
+    }
+    fullText += `VII. CONCLUSÃO HISTÓRICA E BALANÇO\n${essay.concludingAssessment}\n\n`;
+    if (essay.bibliographicReferences && essay.bibliographicReferences.length > 0) {
+      fullText += `VIII. REFERÊNCIAS BIBLIOGRÁFICAS:\n`;
+      essay.bibliographicReferences.forEach(ref => {
+        fullText += `• ${ref}\n`;
+      });
+    }
     copyToClipboard(fullText, 'full_essay');
   };
 
@@ -371,6 +400,27 @@ export const DossierModal: React.FC<DossierModalProps> = ({
         { num: 'I', label: 'I. Citações Literais', target: 'cit-block-1' },
         { num: 'II', label: 'II. Sínteses & Análises', target: 'cit-block-2' },
         { num: 'III', label: 'III. Bibliografia Consolidada', target: 'cit-block-3' },
+      ];
+    } else if (activeTab === 'advancedInvestigation') {
+      return [
+        { num: 'Q1', label: '1. Iluminismo & Causa Direta', target: 'adv-sec-1' },
+        { num: 'Q2', label: '2. Interesses da Burguesia', target: 'adv-sec-2' },
+        { num: 'Q3', label: '3. Crise Financeira & Monarquia', target: 'adv-sec-3' },
+        { num: 'Q4', label: '4. Absolutismo na Prática', target: 'adv-sec-4' },
+        { num: 'Q5', label: '5. Livros, Panfletos & Opinião', target: 'adv-sec-5' },
+        { num: 'Q6', label: '6. Direitos Naturais & Escravidão', target: 'adv-sec-6' },
+        { num: 'Q7', label: '7. Hobsbawm vs. Furet', target: 'adv-sec-7' },
+        { num: 'Q8', label: '8. Ruptura & Continuidade', target: 'adv-sec-8' },
+        { num: 'C', label: 'Conclusão Geral', target: 'adv-sec-conclusion' },
+      ];
+    } else if (activeTab === 'context') {
+      return [
+        { num: 1, label: 'Contexto Histórico', target: 'context-historical' },
+        { num: 2, label: 'Síntese Executiva', target: 'context-summary' },
+        { num: 3, label: 'Ementa Temática', target: 'context-subjects' },
+        { num: 4, label: 'Consenso Historiográfico', target: 'context-consensus' },
+        { num: 5, label: 'Atores Centrais', target: 'context-actors' },
+        { num: 6, label: 'Especialistas', target: 'context-historians' },
       ];
     } else {
       return [
@@ -519,7 +569,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       {/* 2. TAB NAVIGATION CONTROLS */}
       {/* MOBILE MODE: 2 DISTINCT NAVIGATION ROWS */}
       <div className="sm:hidden bg-[#141417] border-b border-stone-800 px-2 py-2 space-y-1.5 shrink-0">
-        {/* Row 1: Primary Dossier Modules */}
+        {/* Row 1: Capítulo, Ensaio, Crônicas, Documentos */}
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-pan-x">
           {chapter && (
             <button
@@ -538,26 +588,6 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             </button>
           )}
 
-          {researchDossierText && (
-            <button
-              onClick={() => {
-                playTypewriterClack();
-                setActiveTab('researchDossier');
-              }}
-              className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
-                activeTab === 'researchDossier'
-                  ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
-                  : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
-              }`}
-            >
-              <FileSpreadsheet className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-              <span>Dossiê Pesquisa</span>
-            </button>
-          )}
-        </div>
-
-        {/* Row 2: Secondary Analytical Tabs & Sources */}
-        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-pan-x">
           <button
             onClick={() => {
               playTypewriterClack();
@@ -602,7 +632,10 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             <FileText className="w-3.5 h-3.5 shrink-0" />
             <span>Documentos</span>
           </button>
+        </div>
 
+        {/* Row 2: Síntese, Citações, Dossiê Acadêmico de Pesquisa (LAST TAB) */}
+        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-pan-x">
           <button
             onClick={() => {
               playTypewriterClack();
@@ -632,12 +665,47 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
             <span>Citações</span>
           </button>
+
+          {advancedInvestigation && (
+            <button
+              onClick={() => {
+                playTypewriterClack();
+                setActiveTab('advancedInvestigation');
+              }}
+              className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-bold rounded-lg transition-all flex items-center gap-1 border shrink-0 ${
+                activeTab === 'advancedInvestigation'
+                  ? 'bg-amber-500 text-stone-950 border-amber-300 font-extrabold shadow-md'
+                  : 'bg-amber-950/40 text-amber-300 hover:bg-amber-900/50 border-amber-700/60'
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-400" />
+              <span>Investigação Avançada</span>
+            </button>
+          )}
+
+          {researchDossierText && (
+            <button
+              onClick={() => {
+                playTypewriterClack();
+                setActiveTab('researchDossier');
+              }}
+              className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-bold rounded-lg transition-all flex items-center gap-1 border shrink-0 ${
+                activeTab === 'researchDossier'
+                  ? 'tab-research-dossier-active'
+                  : 'tab-research-dossier-inactive'
+              }`}
+            >
+              <FileSpreadsheet className="w-3.5 h-3.5 shrink-0" />
+              <span>Dossiê Pesquisa</span>
+            </button>
+          )}
         </div>
       </div>
 
       {/* TABLET / DESKTOP MODE: SINGLE ROW TAB NAVIGATION */}
       <div className="hidden sm:flex bg-[#141417] border-b border-stone-800 px-3 sm:px-6 py-2 items-center justify-between gap-3 overflow-x-auto no-scrollbar shrink-0 touch-pan-x">
         <div className="flex items-center gap-1.5 whitespace-nowrap">
+          {/* 1. Capítulo Acadêmico do Livro */}
           {chapter && (
             <button
               onClick={() => {
@@ -655,23 +723,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             </button>
           )}
 
-          {researchDossierText && (
-            <button
-              onClick={() => {
-                playTypewriterClack();
-                setActiveTab('researchDossier');
-              }}
-              className={`px-3 py-2 min-h-[38px] text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${
-                activeTab === 'researchDossier'
-                  ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
-                  : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
-              }`}
-            >
-              <FileSpreadsheet className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-              <span>Dossiê Acadêmico de Pesquisa</span>
-            </button>
-          )}
-
+          {/* 2. Ensaio Acadêmico */}
           <button
             onClick={() => {
               playTypewriterClack();
@@ -687,6 +739,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             <span>Ensaio Acadêmico</span>
           </button>
 
+          {/* 3. Crônicas */}
           <button
             onClick={() => {
               playTypewriterClack();
@@ -702,6 +755,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             <span>Crônicas</span>
           </button>
 
+          {/* 4. Documentos */}
           <button
             onClick={() => {
               playTypewriterClack();
@@ -717,6 +771,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             <span>Documentos</span>
           </button>
 
+          {/* 5. Síntese */}
           <button
             onClick={() => {
               playTypewriterClack();
@@ -732,6 +787,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             <span>Síntese</span>
           </button>
 
+          {/* 6. Citações */}
           <button
             onClick={() => {
               playTypewriterClack();
@@ -746,6 +802,42 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
             <span>Citações</span>
           </button>
+
+          {/* 6.5 INVESTIGAÇÃO AVANÇADA (Aba especial para Capítulo 12 / temas com investigação) */}
+          {advancedInvestigation && (
+            <button
+              onClick={() => {
+                playTypewriterClack();
+                setActiveTab('advancedInvestigation');
+              }}
+              className={`px-3 py-2 min-h-[38px] text-xs font-bold rounded-lg transition-all flex items-center gap-1.5 border shrink-0 shadow-sm ${
+                activeTab === 'advancedInvestigation'
+                  ? 'bg-amber-500 text-stone-950 border-amber-300 font-extrabold shadow-amber-500/20'
+                  : 'bg-amber-950/40 text-amber-300 hover:bg-amber-900/50 hover:text-amber-100 border-amber-600/60'
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-400" />
+              <span>Investigação Avançada</span>
+            </button>
+          )}
+
+          {/* 7. Dossiê Acadêmico de Pesquisa (ÚLTIMA ABA / LAST TAB - ELEVADO 2 TONS) */}
+          {researchDossierText && (
+            <button
+              onClick={() => {
+                playTypewriterClack();
+                setActiveTab('researchDossier');
+              }}
+              className={`px-3 py-2 min-h-[38px] text-xs font-bold rounded-lg transition-all flex items-center gap-1.5 border shrink-0 ${
+                activeTab === 'researchDossier'
+                  ? 'tab-research-dossier-active'
+                  : 'tab-research-dossier-inactive'
+              }`}
+            >
+              <FileSpreadsheet className="w-3.5 h-3.5 shrink-0" />
+              <span>Dossiê Acadêmico de Pesquisa</span>
+            </button>
+          )}
         </div>
 
         {/* Font Size Selector & Copy Actions on Desktop */}
@@ -1061,50 +1153,627 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
 
 
-          {/* TAB: ESSAY */}
+          {/* TAB: ESSAY (ENSAIO ACADÊMICO COMPLETO EM 8 SEÇÕES) */}
           {activeTab === 'essay' && essay && (
             <article className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
-              <div className="bg-[#161619] border border-stone-800 p-5 rounded-xl space-y-3">
-                <h2 className={`font-serif font-bold text-stone-100 ${getFontSizeClass('heading')}`}>{essay.title}</h2>
-                <p className="text-amber-400 font-serif italic text-sm">{essay.subtitle}</p>
+              {/* Header Banner */}
+              <div className="bg-[#161619] border border-amber-600/50 p-5 sm:p-7 rounded-2xl shadow-xl space-y-4">
+                <div className="flex items-center justify-between flex-wrap gap-3 border-b border-stone-800 pb-4">
+                  <div className="space-y-1">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="text-[10px] font-mono uppercase tracking-widest px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 font-bold">
+                        ENSAIO HISTÓRICO ACADÊMICO
+                      </span>
+                      <span className="text-[10px] font-mono text-stone-400 flex items-center gap-1">
+                        <Clock className="w-3 h-3 text-amber-400" />
+                        {essay.estimatedReadingMinutes} min · {essay.wordCount} palavras
+                      </span>
+                    </div>
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif font-bold text-stone-100">
+                      {essay.title}
+                    </h2>
+                    <p className="text-amber-400 font-serif italic text-sm sm:text-base">
+                      {essay.subtitle}
+                    </p>
+                  </div>
+
+                  <button
+                    onClick={copyFullEssay}
+                    className="px-3.5 py-2 min-h-[38px] bg-amber-950/80 hover:bg-amber-900 text-amber-300 text-xs font-mono rounded-lg border border-amber-600/60 flex items-center gap-2 transition-colors shrink-0"
+                    title="Copiar ensaio acadêmico completo com referências"
+                  >
+                    {copiedCitation === 'full_essay' ? (
+                      <>
+                        <Check className="w-4 h-4 text-emerald-400" />
+                        <span>Ensaio Copiado!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-4 h-4 text-amber-400" />
+                        <span>Copiar Ensaio Completo</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+
+                <div className="flex items-center gap-2 text-xs font-mono text-stone-400">
+                  <GraduationCap className="w-4 h-4 text-amber-400 shrink-0" />
+                  <span>{essay.authorCatedra}</span>
+                </div>
               </div>
-              <div className={`font-serif text-stone-300 text-justify whitespace-pre-line leading-relaxed ${getFontSizeClass('body')}`}>
-                {essay.narrativeOverview}
-              </div>
+
+              {/* Epigraph Card */}
+              {essay.epigraph && (
+                <div className="bg-[#121214] border-l-4 border-amber-500 p-5 rounded-r-xl space-y-2 shadow-inner">
+                  <p className="font-serif italic text-stone-300 text-base sm:text-lg leading-relaxed">
+                    "{essay.epigraph.text}"
+                  </p>
+                  <p className="text-xs font-mono text-amber-400 text-right">
+                    — {essay.epigraph.author}, <span className="text-stone-400">{essay.epigraph.work}</span>
+                  </p>
+                </div>
+              )}
+
+              {/* Section 1: Síntese e Antecedentes */}
+              <section id="essay-sec-1" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                <div className="flex items-center gap-3 border-b border-stone-800 pb-3">
+                  <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                    I
+                  </span>
+                  <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                    I. Síntese Geral e Antecedentes Estruturais
+                  </h3>
+                </div>
+                <div className={`font-serif text-stone-300 text-justify whitespace-pre-line leading-relaxed ${getFontSizeClass('body')}`}>
+                  {essay.narrativeOverview}
+                </div>
+              </section>
+
+              {/* Section 2: Desenvolvimento Histórico */}
+              <section id="essay-sec-2" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                <div className="flex items-center gap-3 border-b border-stone-800 pb-3">
+                  <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                    II
+                  </span>
+                  <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                    II. Desenvolvimento Histórico e Marcos Cronológicos
+                  </h3>
+                </div>
+                <div className={`font-serif text-stone-300 text-justify whitespace-pre-line leading-relaxed space-y-4 ${getFontSizeClass('body')}`}>
+                  {essay.historicalDevelopment}
+                </div>
+              </section>
+
+              {/* Section 3: Mecanismos Institucionais */}
+              <section id="essay-sec-3" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                <div className="flex items-center gap-3 border-b border-stone-800 pb-3">
+                  <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                    III
+                  </span>
+                  <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                    III. Mecanismos Institucionais e Jurídicos do Estado
+                  </h3>
+                </div>
+                <div className={`font-serif text-stone-300 text-justify whitespace-pre-line leading-relaxed ${getFontSizeClass('body')}`}>
+                  {essay.institutionalAndStateMechanisms}
+                </div>
+              </section>
+
+              {/* Section 4: Debate Historiográfico */}
+              <section id="essay-sec-4" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                <div className="flex items-center gap-3 border-b border-stone-800 pb-3">
+                  <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                    IV
+                  </span>
+                  <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                    IV. Debate Historiográfico e Correntes Críticas
+                  </h3>
+                </div>
+                <div className={`font-serif text-stone-300 text-justify whitespace-pre-line leading-relaxed space-y-4 ${getFontSizeClass('body')}`}>
+                  {essay.historiographicalDebate}
+                </div>
+              </section>
+
+              {/* Section 5: Citações de Pesquisadores */}
+              {essay.scholarlyQuotes && essay.scholarlyQuotes.length > 0 && (
+                <section id="essay-sec-5" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                  <div className="flex items-center gap-3 border-b border-stone-800 pb-3">
+                    <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                      V
+                    </span>
+                    <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                      V. Citações de Pesquisadores e Análise Documental
+                    </h3>
+                  </div>
+
+                  <div className="space-y-4 pt-1">
+                    {essay.scholarlyQuotes.map((sq, sqIdx) => (
+                      <div key={sqIdx} className="bg-[#121214] p-4 sm:p-5 rounded-lg border border-stone-800/80 space-y-3">
+                        <div className="flex items-center justify-between gap-2 flex-wrap">
+                          <span className="text-xs font-mono font-bold text-amber-400">
+                            {sq.author} ({sq.year})
+                          </span>
+                          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-stone-800 text-stone-300 border border-stone-700">
+                            {sq.work} · {sq.pageOrDoc}
+                          </span>
+                        </div>
+                        <blockquote className="font-serif italic text-stone-200 border-l-2 border-amber-500/70 pl-3 leading-relaxed">
+                          "{sq.quote}"
+                        </blockquote>
+                        <p className="text-xs font-mono text-stone-400 leading-relaxed bg-stone-900/60 p-2.5 rounded border border-stone-800">
+                          <strong className="text-amber-400">Análise Historiográfica:</strong> {sq.historicalAnalysis}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* Section 6: Fundos Arquivísticos */}
+              {essay.archivalCorpus && essay.archivalCorpus.length > 0 && (
+                <section id="essay-sec-6" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                  <div className="flex items-center gap-3 border-b border-stone-800 pb-3">
+                    <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                      VI
+                    </span>
+                    <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                      VI. Fundos Arquivísticos e Acervo Primário
+                    </h3>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+                    {essay.archivalCorpus.map((ac, acIdx) => (
+                      <div key={acIdx} className="bg-[#121214] p-4 rounded-lg border border-stone-800/80 space-y-2">
+                        <div className="flex items-center gap-2 text-amber-400">
+                          <Archive className="w-4 h-4 shrink-0" />
+                          <h4 className="font-mono font-bold text-xs text-stone-100">
+                            {ac.archiveName}
+                          </h4>
+                        </div>
+                        <span className="inline-block text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950/40 text-amber-300 border border-amber-800/50 font-semibold">
+                          {ac.fondCode}
+                        </span>
+                        <p className="text-xs font-serif text-stone-300 leading-relaxed">
+                          {ac.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* Section 7: Conclusão Histórica */}
+              <section id="essay-sec-7" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                <div className="flex items-center gap-3 border-b border-stone-800 pb-3">
+                  <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                    VII
+                  </span>
+                  <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                    VII. Avaliação Conclusiva e Balanço Histórico
+                  </h3>
+                </div>
+                <div className={`font-serif text-stone-300 text-justify whitespace-pre-line leading-relaxed ${getFontSizeClass('body')}`}>
+                  {essay.concludingAssessment}
+                </div>
+              </section>
+
+              {/* Section 8: Bibliografia */}
+              {essay.bibliographicReferences && essay.bibliographicReferences.length > 0 && (
+                <section id="essay-sec-8" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                  <div className="flex items-center gap-3 border-b border-stone-800 pb-3">
+                    <BookOpen className="w-5 h-5 text-amber-400 shrink-0" />
+                    <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                      VIII. Referências Bibliográficas Consolidadas
+                    </h3>
+                  </div>
+
+                  <div className="space-y-2 pt-1 font-mono text-xs text-stone-300">
+                    {essay.bibliographicReferences.map((ref, rIdx) => (
+                      <div key={rIdx} className="bg-[#121214] p-3 rounded border border-stone-800/70 select-all leading-relaxed">
+                        • {ref}
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
             </article>
           )}
 
-          {/* TAB: STORIES */}
+          {/* TAB: STORIES (CRÔNICAS HISTÓRICAS E CRONOLOGIA COMPLETA) */}
           {activeTab === 'stories' && (
-            <div className="space-y-6 max-w-4xl mx-auto w-full box-border overflow-hidden">
-              {detailedEpisodes.map((ep, idx) => (
-                <div key={idx} className="bg-[#161619] p-5 rounded-xl border border-stone-800 space-y-3">
-                  <h3 className={`font-serif font-bold text-amber-300 ${getFontSizeClass('heading')}`}>{ep.title}</h3>
-                  <p className={`font-serif text-stone-300 leading-relaxed ${getFontSizeClass('body')}`}>{ep.narrative}</p>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* TAB: DOCUMENTS */}
-          {activeTab === 'documents' && (
-            <div className="space-y-6 max-w-4xl mx-auto w-full box-border overflow-hidden">
-              {topic.primarySources.map((source, index) => (
-                <div key={index} id={`doc-source-${index}`} className="bg-[#161619] p-5 rounded-xl border border-stone-800 space-y-3">
-                  <h3 className={`font-serif font-bold text-stone-100 ${getFontSizeClass('heading')}`}>{source.title}</h3>
-                  <p className={`font-serif italic text-stone-300 leading-relaxed ${getFontSizeClass('body')}`}>"{source.transcriptionPt}"</p>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* TAB: CONTEXT */}
-          {activeTab === 'context' && (
-            <div className="space-y-6 max-w-4xl mx-auto w-full box-border overflow-hidden">
-              <div className="bg-[#161619] p-5 rounded-xl border border-stone-800 space-y-3">
-                <h3 className="text-amber-400 font-mono uppercase text-xs font-bold">Contexto Histórico</h3>
-                <p className={`font-serif text-stone-300 leading-relaxed ${getFontSizeClass('body')}`}>{topic.historicalContext}</p>
+            <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+              {/* Top Banner */}
+              <div className="bg-[#161619] border border-amber-600/50 p-5 sm:p-6 rounded-2xl shadow-xl space-y-2">
+                <span className="text-[10px] font-mono uppercase tracking-widest px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 font-bold inline-block">
+                  REGISTROS NARRATIVOS E CRONOLÓGICOS
+                </span>
+                <h2 className="text-xl sm:text-2xl font-serif font-bold text-stone-100">
+                  Crônicas Históricas e Cronologia dos Acontecimentos
+                </h2>
+                <p className="text-xs sm:text-sm font-serif text-stone-300 leading-relaxed">
+                  Reconstituição dos momentos decisivos que transformaram as mentalidades e desestabilizaram as instituições do Antigo Regime, com testemunhos e marcos datados.
+                </p>
               </div>
+
+              {/* Subsection: Passo a Passo Cronológico */}
+              {chronologies && chronologies.length > 0 && (
+                <section id="stories-crono" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-5 shadow-md">
+                  <div className="flex items-center gap-3 border-b border-stone-800 pb-3">
+                    <Calendar className="w-5 h-5 text-amber-400 shrink-0" />
+                    <div>
+                      <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                        Passo a Passo Cronológico (1715–1789)
+                      </h3>
+                      <p className="text-xs text-stone-400 font-mono">
+                        Linha do tempo documentada dos antecedentes políticos, econômicos e intelectuais
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="relative border-l-2 border-stone-800 ml-4 pl-6 space-y-6 pt-2">
+                    {chronologies.map((item, cIdx) => (
+                      <div key={cIdx} className="relative group">
+                        <span className="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-amber-950 border-2 border-amber-500 group-hover:scale-125 transition-transform" />
+                        <div className="bg-[#121214] p-4 rounded-lg border border-stone-800/80 space-y-1.5 hover:border-stone-700 transition-colors">
+                          <div className="flex items-center justify-between gap-2 flex-wrap">
+                            <span className="text-xs font-mono font-bold text-amber-400 bg-amber-950/50 px-2 py-0.5 rounded border border-amber-800/40">
+                              {item.date}
+                            </span>
+                          </div>
+                          <h4 className="font-serif font-bold text-sm sm:text-base text-stone-100 pt-1">
+                            {item.event}
+                          </h4>
+                          <p className="font-serif text-xs sm:text-sm text-stone-300 leading-relaxed">
+                            {item.significance}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* Subsection: Crônicas Oculares e Episódios */}
+              {detailedEpisodes && detailedEpisodes.length > 0 && (
+                <section id="stories-episodes" className="scroll-mt-24 space-y-5">
+                  <div className="flex items-center gap-3 border-b border-stone-800 pb-2">
+                    <ScrollText className="w-5 h-5 text-amber-400 shrink-0" />
+                    <h3 className="text-base sm:text-lg font-serif font-bold text-stone-100 uppercase tracking-wide">
+                      Crônicas e Episódios Históricos Documentados ({detailedEpisodes.length})
+                    </h3>
+                  </div>
+
+                  <div className="space-y-6">
+                    {detailedEpisodes.map((ep, idx) => (
+                      <article key={idx} className="bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                        <div className="flex items-start justify-between gap-3 flex-wrap border-b border-stone-800/80 pb-3">
+                          <div className="space-y-1">
+                            <span className="text-[10px] font-mono uppercase tracking-widest text-amber-400 font-bold block">
+                              CRÔNICA Nº {idx + 1}
+                            </span>
+                            <h3 className={`font-serif font-bold text-amber-300 ${getFontSizeClass('heading')}`}>
+                              {ep.title}
+                            </h3>
+                          </div>
+                          {ep.location && (
+                            <div className="flex items-center gap-1.5 text-xs font-mono text-stone-400 bg-stone-900 px-2.5 py-1 rounded border border-stone-800 shrink-0">
+                              <MapPin className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                              <span>{ep.location}</span>
+                            </div>
+                          )}
+                        </div>
+
+                        <div className="space-y-3">
+                          {ep.narrative.split('\n\n').map((paragraph, pIdx) => (
+                            <p key={pIdx} className={`font-serif text-stone-300 text-justify leading-relaxed ${getFontSizeClass('body')}`}>
+                              {paragraph}
+                            </p>
+                          ))}
+                        </div>
+
+                        {ep.eyewitnessOrDocQuote && (
+                          <div className="bg-[#121214] p-4 rounded-lg border-l-4 border-amber-500/80 space-y-2 mt-4 shadow-inner">
+                            <p className="font-serif italic text-stone-200 text-xs sm:text-sm leading-relaxed">
+                              "{ep.eyewitnessOrDocQuote}"
+                            </p>
+                            {ep.quoteAuthor && (
+                              <p className="text-[11px] font-mono text-amber-400 text-right">
+                                — {ep.quoteAuthor}
+                              </p>
+                            )}
+                          </div>
+                        )}
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              )}
+            </div>
+          )}
+
+          {/* TAB: DOCUMENTS (ACERVO DOCUMENTAL E FONTES PRIMÁRIAS COMPLETAS) */}
+          {activeTab === 'documents' && (
+            <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+              {/* Top Banner */}
+              <div className="bg-[#161619] border border-amber-600/50 p-5 sm:p-6 rounded-2xl shadow-xl space-y-2">
+                <span className="text-[10px] font-mono uppercase tracking-widest px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 font-bold inline-block">
+                  ACERVO PRIMÁRIO E ARQUIVÍSTICO
+                </span>
+                <h2 className="text-xl sm:text-2xl font-serif font-bold text-stone-100">
+                  Fontes Primárias Verificadas e Documentos Históricos
+                </h2>
+                <p className="text-xs sm:text-sm font-serif text-stone-300 leading-relaxed">
+                  Compilação comentada dos tratados, verbetes, remontrances parlamentares e cadernos de queixas que moldaram a contestação do Antigo Regime.
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                {topic.primarySources.map((source, index) => (
+                  <article key={index} id={`doc-source-${index}`} className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                    <div className="flex items-start justify-between gap-3 flex-wrap border-b border-stone-800 pb-3">
+                      <div className="space-y-1">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="text-[10px] font-mono uppercase tracking-wider px-2 py-0.5 rounded bg-amber-950/60 text-amber-300 border border-amber-700/50 font-bold">
+                            DOC. {index + 1}
+                          </span>
+                          {source.year && (
+                            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-stone-900 text-stone-300 border border-stone-800">
+                              Ano: {source.year}
+                            </span>
+                          )}
+                          {source.documentType && (
+                            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-stone-900 text-stone-300 border border-stone-800">
+                              {source.documentType}
+                            </span>
+                          )}
+                        </div>
+                        <h3 className={`font-serif font-bold text-stone-100 pt-1 ${getFontSizeClass('heading')}`}>
+                          {source.title}
+                        </h3>
+                      </div>
+
+                      <div className="text-right text-xs font-mono text-stone-400 space-y-0.5 shrink-0">
+                        <div className="flex items-center gap-1.5 justify-end">
+                          <Building2 className="w-3.5 h-3.5 text-amber-400" />
+                          <span className="text-stone-300 font-semibold">{source.institution}</span>
+                        </div>
+                        <div className="text-[10px] text-stone-400">
+                          Cota: <span className="text-amber-300 font-mono">{source.archiveReference}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Portuguese Transcription */}
+                    <div className="space-y-1.5">
+                      <span className="text-[10px] font-mono uppercase tracking-wider text-amber-400 font-bold block">
+                        Transcrição em Língua Portuguesa:
+                      </span>
+                      <blockquote className={`font-serif italic text-stone-200 border-l-2 border-amber-500 pl-4 py-1 leading-relaxed bg-[#121214] p-3 rounded-r-lg ${getFontSizeClass('body')}`}>
+                        "{source.transcriptionPt}"
+                      </blockquote>
+                    </div>
+
+                    {/* Original Language Transcription if exists */}
+                    {source.transcriptionOrig && (
+                      <div className="space-y-1.5">
+                        <span className="text-[10px] font-mono uppercase tracking-wider text-stone-400 font-bold block">
+                          Texto Original (Francês / Idioma da Época):
+                        </span>
+                        <blockquote className="font-serif italic text-stone-300 border-l-2 border-stone-700 pl-4 py-1 leading-relaxed bg-stone-950/60 p-3 rounded-r-lg text-xs sm:text-sm">
+                          "{source.transcriptionOrig}"
+                        </blockquote>
+                      </div>
+                    )}
+
+                    {/* Historical Relevance */}
+                    {source.historicalRelevance && (
+                      <div className="bg-stone-900/60 p-3.5 rounded-lg border border-stone-800 space-y-1">
+                        <span className="text-[10px] font-mono uppercase tracking-wider text-amber-400 font-bold block">
+                          Relevância Histórica e Jurídica:
+                        </span>
+                        <p className="text-xs sm:text-sm font-serif text-stone-300 leading-relaxed">
+                          {source.historicalRelevance}
+                        </p>
+                      </div>
+                    )}
+
+                    {/* Related Historians */}
+                    {source.relatedHistorians && source.relatedHistorians.length > 0 && (
+                      <div className="flex items-center gap-2 flex-wrap text-xs font-mono text-stone-400 pt-1">
+                        <span className="text-stone-400 font-semibold">Historiadores Vinculados:</span>
+                        {source.relatedHistorians.map((hist, hIdx) => (
+                          <span key={hIdx} className="px-2 py-0.5 rounded bg-stone-900 border border-stone-800 text-stone-300 text-[11px]">
+                            {hist}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* Standardized Citation Box */}
+                    {(source.abntCitation || source.chicagoCitation) && (
+                      <div className="pt-2 border-t border-stone-800/80 space-y-2">
+                        <div className="flex items-center justify-between text-[11px] font-mono text-stone-400">
+                          <span className="font-semibold text-amber-400">Citação Normatizada:</span>
+                          <button
+                            onClick={() => copyToClipboard(source.abntCitation || source.chicagoCitation || '', `doc_cit_${index}`)}
+                            className="flex items-center gap-1 text-[10px] hover:text-amber-300 transition-colors bg-stone-900 px-2 py-0.5 rounded border border-stone-800"
+                          >
+                            {copiedCitation === `doc_cit_${index}` ? (
+                              <>
+                                <Check className="w-3 h-3 text-emerald-400" />
+                                <span>Copiado!</span>
+                              </>
+                            ) : (
+                              <>
+                                <Copy className="w-3 h-3" />
+                                <span>Copiar ABNT</span>
+                              </>
+                            )}
+                          </button>
+                        </div>
+                        {source.abntCitation && (
+                          <div className="text-[11px] font-mono text-stone-300 bg-stone-950 p-2.5 rounded border border-stone-800/70 select-all leading-relaxed">
+                            {source.abntCitation}
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </article>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* TAB: CONTEXT (SÍNTESE HISTÓRICA E QUADRO CONCEITUAL) */}
+          {activeTab === 'context' && (
+            <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+              {/* Header Banner */}
+              <div className="bg-[#161619] border border-amber-600/50 p-5 sm:p-7 rounded-2xl shadow-xl space-y-3">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="text-[10px] font-mono uppercase tracking-widest px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 font-bold">
+                    SÍNTESE ESTRUTURAL E QUADRO CONCEITUAL
+                  </span>
+                  <span className="text-[10px] font-mono text-stone-400">
+                    Registro nº {topic.categoryNumber} · {topic.periodLabel}
+                  </span>
+                </div>
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif font-bold text-stone-100">
+                  {topic.title}
+                </h2>
+                <p className="font-serif italic text-amber-400 text-sm sm:text-base">
+                  {topic.tagline}
+                </p>
+              </div>
+
+              {/* 1. Contexto Histórico Estrutural */}
+              <section id="context-historical" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-3 shadow-md">
+                <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
+                  <span className="w-7 h-7 rounded-full bg-amber-950/80 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                    1
+                  </span>
+                  <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
+                    Contexto Histórico Estrutural
+                  </h3>
+                </div>
+                <p className={`font-serif text-stone-300 text-justify leading-relaxed ${getFontSizeClass('body')}`}>
+                  {topic.historicalContext}
+                </p>
+              </section>
+
+              {/* 2. Síntese Executiva do Período */}
+              <section id="context-summary" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-3 shadow-md">
+                <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
+                  <span className="w-7 h-7 rounded-full bg-amber-950/80 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                    2
+                  </span>
+                  <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
+                    Síntese Executiva e Panorama Geral
+                  </h3>
+                </div>
+                <p className={`font-serif text-stone-300 text-justify leading-relaxed ${getFontSizeClass('body')}`}>
+                  {topic.summary}
+                </p>
+              </section>
+
+              {/* 3. Ementa Temática e Tópicos Cardeais */}
+              {topic.mainSubjects && topic.mainSubjects.length > 0 && (
+                <section id="context-subjects" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                  <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
+                    <span className="w-7 h-7 rounded-full bg-amber-950/80 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                      3
+                    </span>
+                    <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
+                      Ementa Temática e Tópicos Cardeais
+                    </h3>
+                  </div>
+                  <div className="grid grid-cols-1 gap-2.5 pt-1">
+                    {topic.mainSubjects.map((subj, sIdx) => (
+                      <div key={sIdx} className="flex items-start gap-3 bg-[#121214] p-3.5 rounded-lg border border-stone-800/80">
+                        <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                        <span className="font-serif text-xs sm:text-sm text-stone-200 leading-relaxed">
+                          {subj}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* 4. Consenso Historiográfico Consolidado */}
+              {topic.academicConsensus && (
+                <section id="context-consensus" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-3 shadow-md">
+                  <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
+                    <ShieldCheck className="w-5 h-5 text-amber-400 shrink-0" />
+                    <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
+                      Consenso Historiográfico Consolidado
+                    </h3>
+                  </div>
+                  <div className="bg-amber-950/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                    <p className={`font-serif text-stone-200 text-justify leading-relaxed ${getFontSizeClass('body')}`}>
+                      {topic.academicConsensus}
+                    </p>
+                  </div>
+                </section>
+              )}
+
+              {/* 5. Atores Históricos Centrais */}
+              {topic.keyActors && topic.keyActors.length > 0 && (
+                <section id="context-actors" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                  <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
+                    <Users className="w-5 h-5 text-amber-400 shrink-0" />
+                    <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
+                      Atores Históricos Centrais e Atuação Institucional
+                    </h3>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                    {topic.keyActors.map((actor, aIdx) => (
+                      <div key={aIdx} className="bg-[#121214] p-3.5 rounded-lg border border-stone-800 flex items-center gap-2.5">
+                        <span className="w-6 h-6 rounded-full bg-stone-800 text-amber-300 font-mono text-xs flex items-center justify-center font-bold shrink-0">
+                          {aIdx + 1}
+                        </span>
+                        <span className="font-mono text-xs text-stone-200 font-semibold">
+                          {actor}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* 6. Especialistas e Historiadores de Referência */}
+              {topic.historiansInvolved && topic.historiansInvolved.length > 0 && (
+                <section id="context-historians" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                  <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
+                    <GraduationCap className="w-5 h-5 text-amber-400 shrink-0" />
+                    <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
+                      Especialistas e Historiadores de Referência
+                    </h3>
+                  </div>
+                  <div className="flex items-center gap-2 flex-wrap pt-1">
+                    {topic.historiansInvolved.map((hist, hIdx) => (
+                      <span key={hIdx} className="px-3 py-1.5 rounded-lg bg-[#121214] border border-stone-800 text-stone-300 font-mono text-xs flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
+                        {hist}
+                      </span>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* Historical Impact & Emblematic Quote Card */}
+              {topic.quote && (
+                <div className="bg-[#121214] border border-amber-600/40 p-5 rounded-xl space-y-2.5 shadow-inner">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-amber-400 font-bold block">
+                    CITAÇÃO EMBLEMÁTICA DA CÁTEDRA
+                  </span>
+                  <blockquote className="font-serif italic text-stone-200 text-base sm:text-lg leading-relaxed">
+                    "{topic.quote.text}"
+                  </blockquote>
+                  <p className="text-xs font-mono text-stone-400 text-right">
+                    — <span className="text-amber-300 font-semibold">{topic.quote.author}</span>, {topic.quote.context}
+                  </p>
+                </div>
+              )}
             </div>
           )}
 
@@ -1343,6 +2012,304 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               </div>
             );
           })()}
+
+          {/* TAB: ADVANCED INVESTIGATION (INVESTIGAÇÃO AVANÇADA) */}
+          {activeTab === 'advancedInvestigation' && advancedInvestigation && (
+            <article className="space-y-6 max-w-4xl mx-auto w-full box-border overflow-hidden">
+              <div className="bg-[#161619] border border-amber-500/70 p-6 sm:p-8 rounded-2xl shadow-2xl space-y-6">
+                
+                {/* Header Banner */}
+                <div className="flex items-center justify-between flex-wrap gap-3 border-b border-amber-600/40 pb-5">
+                  <div className="space-y-1.5">
+                    <div className="flex items-center gap-2">
+                      <span className="px-2.5 py-1 bg-amber-500 text-stone-950 font-mono text-[10px] sm:text-xs font-black tracking-wider uppercase rounded shadow-sm">
+                        INVESTIGAÇÃO AVANÇADA
+                      </span>
+                      <span className="text-xs font-mono text-stone-400">
+                        Capítulo {topic.categoryNumber} · {topic.periodLabel}
+                      </span>
+                    </div>
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif font-bold text-stone-100 tracking-tight">
+                      {advancedInvestigation.subtitle}
+                    </h2>
+                  </div>
+
+                  <button
+                    onClick={copyAdvancedInvestigation}
+                    className="px-4 py-2.5 bg-amber-950/80 hover:bg-amber-900 text-amber-300 text-xs font-mono rounded-lg border border-amber-600/60 flex items-center gap-2 transition-colors shrink-0 shadow-md"
+                  >
+                    {copiedCitation === 'advanced_investigation' ? (
+                      <>
+                        <Check className="w-4 h-4 text-emerald-400" />
+                        <span>Texto Copiado!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-4 h-4 text-amber-400" />
+                        <span>Copiar Investigação Completa</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+
+                {/* Question Quick Jump Menu */}
+                <div className="bg-stone-900/80 border border-stone-800 rounded-xl p-4 sm:p-5 space-y-3">
+                  <div className="flex items-center gap-2 text-xs font-mono font-bold text-amber-400 uppercase tracking-wider">
+                    <Sparkles className="w-3.5 h-3.5" />
+                    <span>8 Questões Historiográficas em Análise:</span>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-serif">
+                    {advancedInvestigation.questionsSummary.map((q, qIdx) => (
+                      <a
+                        key={qIdx}
+                        href={`#adv-sec-${qIdx + 1}`}
+                        className="p-2 rounded bg-stone-950/60 hover:bg-stone-800/80 border border-stone-800/70 text-stone-300 hover:text-amber-300 transition-colors flex items-start gap-2"
+                      >
+                        <span className="font-mono font-bold text-amber-500 shrink-0">{qIdx + 1}.</span>
+                        <span className="leading-snug line-clamp-2">{q}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Parsed & Styled Markdown Content */}
+                <div className="space-y-8 pt-2 font-serif text-stone-300">
+                  {advancedInvestigation.rawText.split('\n\n').map((paragraph, pIdx) => {
+                    const trimmed = paragraph.trim();
+                    if (!trimmed) return null;
+
+                    // Skip Title headers already in top banner
+                    if (trimmed.startsWith('# INVESTIGAÇÃO AVANÇADA') || trimmed.startsWith('## Iluminismo, Antigo Regime')) {
+                      return null;
+                    }
+
+                    if (trimmed.startsWith('### QUESTÕES PARA INVESTIGAÇÃO AVANÇADA')) {
+                      return null; // Handled by Quick Jump Menu
+                    }
+
+                    // Section Questions Anchor Mapping
+                    if (trimmed.startsWith('### 1. ') || trimmed.startsWith('### 1.')) {
+                      return (
+                        <div key={pIdx} id="adv-sec-1" className="scroll-mt-24 pt-6 border-t border-amber-600/40">
+                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
+                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q1</span>
+                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
+                          </h3>
+                        </div>
+                      );
+                    }
+
+                    if (trimmed.startsWith('### 2. ') || trimmed.startsWith('### 2.')) {
+                      return (
+                        <div key={pIdx} id="adv-sec-2" className="scroll-mt-24 pt-6 border-t border-stone-800">
+                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
+                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q2</span>
+                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
+                          </h3>
+                        </div>
+                      );
+                    }
+
+                    if (trimmed.startsWith('### 3. ') || trimmed.startsWith('### 3.')) {
+                      return (
+                        <div key={pIdx} id="adv-sec-3" className="scroll-mt-24 pt-6 border-t border-stone-800">
+                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
+                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q3</span>
+                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
+                          </h3>
+                        </div>
+                      );
+                    }
+
+                    if (trimmed.startsWith('### 4. ') || trimmed.startsWith('### 4.')) {
+                      return (
+                        <div key={pIdx} id="adv-sec-4" className="scroll-mt-24 pt-6 border-t border-stone-800">
+                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
+                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q4</span>
+                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
+                          </h3>
+                        </div>
+                      );
+                    }
+
+                    if (trimmed.startsWith('### 5. ') || trimmed.startsWith('### 5.')) {
+                      return (
+                        <div key={pIdx} id="adv-sec-5" className="scroll-mt-24 pt-6 border-t border-stone-800">
+                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
+                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q5</span>
+                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
+                          </h3>
+                        </div>
+                      );
+                    }
+
+                    if (trimmed.startsWith('### 6. ') || trimmed.startsWith('### 6.')) {
+                      return (
+                        <div key={pIdx} id="adv-sec-6" className="scroll-mt-24 pt-6 border-t border-stone-800">
+                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
+                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q6</span>
+                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
+                          </h3>
+                        </div>
+                      );
+                    }
+
+                    if (trimmed.startsWith('### 7. ') || trimmed.startsWith('### 7.')) {
+                      return (
+                        <div key={pIdx} id="adv-sec-7" className="scroll-mt-24 pt-6 border-t border-stone-800">
+                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
+                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q7</span>
+                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
+                          </h3>
+                        </div>
+                      );
+                    }
+
+                    if (trimmed.startsWith('### 8. ') || trimmed.startsWith('### 8.')) {
+                      return (
+                        <div key={pIdx} id="adv-sec-8" className="scroll-mt-24 pt-6 border-t border-stone-800">
+                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
+                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q8</span>
+                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
+                          </h3>
+                        </div>
+                      );
+                    }
+
+                    if (trimmed.startsWith('# CONCLUSÃO GERAL')) {
+                      return (
+                        <div key={pIdx} id="adv-sec-conclusion" className="scroll-mt-24 pt-8 border-t-2 border-amber-600/60 mt-8 space-y-3 bg-amber-950/20 p-6 rounded-xl border">
+                          <h2 className="text-lg sm:text-xl font-serif font-bold text-amber-300 uppercase tracking-wide flex items-center gap-2">
+                            <Sparkles className="w-4 h-4 text-amber-400" />
+                            <span>{trimmed.replace('# ', '')}</span>
+                          </h2>
+                        </div>
+                      );
+                    }
+
+                    if (trimmed.startsWith('### REFERÊNCIAS FUNDAMENTAIS') || trimmed.startsWith('Referências fundamentais')) {
+                      return (
+                        <div key={pIdx} className="pt-6 border-t border-stone-800 space-y-4">
+                          <h3 className="text-base sm:text-lg font-mono font-bold text-amber-400 uppercase tracking-wide">
+                            REFERÊNCIAS FUNDAMENTAIS PARA APROFUNDAR AS QUESTÕES
+                          </h3>
+                          <div className="overflow-x-auto rounded-xl border border-stone-800">
+                            <table className="w-full text-left text-xs font-serif">
+                              <thead className="bg-stone-900 border-b border-stone-800 text-stone-200">
+                                <tr>
+                                  <th className="p-3 font-mono font-bold text-amber-400">Autor e Obra</th>
+                                  <th className="p-3 font-mono font-bold text-amber-400">Questões Especialmente Relacionadas</th>
+                                </tr>
+                              </thead>
+                              <tbody className="divide-y divide-stone-800/80 bg-stone-950/40">
+                                {advancedInvestigation.fundamentalReferences.map((ref, rIdx) => (
+                                  <tr key={rIdx} className="hover:bg-stone-900/40 transition-colors">
+                                    <td className="p-3 text-stone-200 font-semibold">{ref.authorAndWork}</td>
+                                    <td className="p-3 font-mono text-amber-300 font-bold">{ref.relatedQuestions}</td>
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      );
+                    }
+
+                    if (trimmed.startsWith('#### ')) {
+                      return (
+                        <h4 key={pIdx} className="text-base sm:text-lg font-serif font-bold text-stone-100 mt-4 mb-2 flex items-center gap-2">
+                          <span className="w-2 h-2 rounded-full bg-amber-500"></span>
+                          <span>{trimmed.replace('#### ', '')}</span>
+                        </h4>
+                      );
+                    }
+
+                    if (trimmed.startsWith('---')) {
+                      return <hr key={pIdx} className="border-stone-800/80 my-4" />;
+                    }
+
+                    // Markdown Table Parsing (e.g. Hobsbawm vs Furet comparison table)
+                    if (trimmed.includes('|') && trimmed.includes('\n|')) {
+                      const tableLines = trimmed.split('\n').filter(l => l.trim().startsWith('|'));
+                      if (tableLines.length >= 2) {
+                        const headerCols = tableLines[0].split('|').map(c => c.trim()).filter(Boolean);
+                        const bodyRows = tableLines.slice(2).map(row => row.split('|').map(c => c.trim()).filter(Boolean));
+                        return (
+                          <div key={pIdx} className="overflow-x-auto rounded-xl border border-stone-800 my-4 shadow-inner">
+                            <table className="w-full text-left text-xs font-serif">
+                              <thead className="bg-stone-900 border-b border-stone-800 text-stone-200">
+                                <tr>
+                                  {headerCols.map((h, hIdx) => (
+                                    <th key={hIdx} className="p-3 font-mono font-bold text-amber-400">
+                                      {h}
+                                    </th>
+                                  ))}
+                                </tr>
+                              </thead>
+                              <tbody className="divide-y divide-stone-800/80 bg-stone-950/40">
+                                {bodyRows.map((row, rIdx) => (
+                                  <tr key={rIdx} className="hover:bg-stone-900/40 transition-colors">
+                                    {row.map((cell, cIdx) => (
+                                      <td key={cIdx} className={`p-3 leading-relaxed ${cIdx === 0 ? 'font-bold text-stone-200 font-mono text-[11px]' : 'text-stone-300'}`}
+                                        dangerouslySetInnerHTML={{
+                                          __html: cell
+                                            .replace(/\*\*(.*?)\*\*/g, '<strong class="text-amber-300 font-bold">$1</strong>')
+                                            .replace(/\*(.*?)\*/g, '<em class="text-stone-200">$1</em>')
+                                        }}
+                                      />
+                                    ))}
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        );
+                      }
+                    }
+
+                    // Highlight Conclusão
+                    if (trimmed.startsWith('**Conclusão:**') || trimmed.startsWith('Conclusão:')) {
+                      return (
+                        <div key={pIdx} className="bg-amber-950/30 border-l-4 border-amber-500 p-4 rounded-r-lg my-3 shadow-sm">
+                          <p className={`text-stone-200 font-serif leading-relaxed ${getFontSizeClass('body')}`}
+                            dangerouslySetInnerHTML={{
+                              __html: trimmed
+                                .replace(/\*\*Conclusão:\*\*/g, '<strong class="text-amber-400 font-bold uppercase font-mono tracking-wider mr-1">Conclusão:</strong>')
+                                .replace(/Conclusão:/g, '<strong class="text-amber-400 font-bold uppercase font-mono tracking-wider mr-1">Conclusão:</strong>')
+                                .replace(/\*\*(.*?)\*\*/g, '<strong class="text-stone-100 font-bold">$1</strong>')
+                            }}
+                          />
+                        </div>
+                      );
+                    }
+
+                    // Highlight Interpretação historiográfica
+                    if (trimmed.startsWith('**Interpretação historiográfica**') || trimmed.startsWith('**Interpretação histórica**')) {
+                      return (
+                        <div key={pIdx} className="pt-2">
+                          <span className="text-xs font-mono font-bold text-amber-400/90 uppercase tracking-wider block mb-1">
+                            {trimmed.replace(/\*\*/g, '')}
+                          </span>
+                        </div>
+                      );
+                    }
+
+                    // Regular paragraphs
+                    return (
+                      <p key={pIdx} className={`text-stone-300 font-serif text-justify leading-relaxed ${getFontSizeClass('body')}`}
+                        dangerouslySetInnerHTML={{
+                          __html: trimmed
+                            .replace(/\*\*(.*?)\*\*/g, '<strong class="text-stone-100 font-bold">$1</strong>')
+                            .replace(/\*(.*?)\*/g, '<em class="text-amber-200/90">$1</em>')
+                        }}
+                      />
+                    );
+                  })}
+                </div>
+
+              </div>
+            </article>
+          )}
 
           {/* TAB: RESEARCH DOSSIER */}
           {activeTab === 'researchDossier' && researchDossierText && (
