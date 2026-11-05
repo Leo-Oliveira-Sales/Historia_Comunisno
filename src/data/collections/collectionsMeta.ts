@@ -5,7 +5,7 @@ export const COLLECTIONS_REGISTRY: CollectionMeta[] = [
     id: 'colecao-1',
     romanNumeral: 'I',
     title: 'História da União Soviética',
-    shortTitle: 'URSS & Comunismo',
+    shortTitle: 'União Soviética URSS',
     themeCategory: 'Historiografia Soviética e Documentos Primários',
     subtitle: 'Revolução Russa, Lenin, Stalin, Sociedade Soviética, Guerra Fria e Colapso (1905–1991)',
     description: 'Acervo acadêmico integral com 20 capítulos exaustivos, documentos diplomáticos primários, tratados desclassificados e debate historiográfico de arquivos de Moscou e Washington.',
