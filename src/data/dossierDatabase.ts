@@ -699,49 +699,6 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
   {
     id: 16,
     categoryNumber: '16',
-    title: 'O Comunismo Internacional: Regimes, Revoluções e Catástrofes Humanitárias',
-    category: 'Comunismo Internacional',
-    period: 'internacional',
-    periodLabel: '1949–início do século XXI · Ásia, África e América Latina',
-    tagline: 'China de Mao, genocídio no Camboja, Derg na Etiópia, dinastia Kim na Coreia do Norte, Vietnã, África e América Latina.',
-    summary: 'A expansão global do comunismo e a emergência de regimes autoritários de partido único. Análise documental das catástrofes humanitárias, expurgos e fomes coletivas: o Grande Salto Adiante (dezenas de milhões de mortes) e a Revolução Cultural na China; o genocídio cambojano sob Pol Pot (1,7 a 2 milhões de vítimas); o Terror Vermelho na Etiópia sob o Derg; o totalitarismo dinástico norte-coreano; campos de reeducação no Vietnã e Moçambique; e repressões em Angola, Cuba e Nicarágua.',
-    mainSubjects: ['China de Mao: Grande Salto Adiante e Revolução Cultural', 'Camboja de Pol Pot e o Genocídio do Khmer Vermelho', 'Etiópia do Derg e o Terror Vermelho', 'Coreia do Norte: Dinastia Kim, Gulag e Marcha Árdua', 'Vietnã: Campos de Reeducação e Boat People', 'África: Angola (MPLA 1977) e Moçambique (FRELIMO)', 'América Latina: Cuba e Nicarágua', 'Padrões Comparativos de Violência de Estado'],
-    historicalContext: 'A exportação de modelos de partido único e economia planificada coercitiva para o Terceiro Mundo levou à concentração absoluta do poder e à repressão sistemática a dissidentes e supostos inimigos internos, frequentemente com apoio militar e financeiro soviético ou chinês.',
-    academicConsensus: 'Pesquisadores como Frank Dikötter, Yang Jisheng, Roderick MacFarquhar, Ben Kiernan, David Chandler, Stephan Haggard, Marcus Noland e Jacob Wiebel documentam as causas políticas, operacionais e ideológicas das fomes induzidas, campos de trabalho e assassinatos em massa nesses regimes.',
-    keyActors: ['Mao Tsé-Tung', 'Pol Pot (Saloth Sar)', 'Mengistu Haile Mariam', 'Kim Il-sung', 'Ho Chi Minh', 'Fidel Castro'],
-    historiansInvolved: ['Frank Dikötter', 'Yang Jisheng', 'Ben Kiernan', 'David Chandler', 'Lillian Guerra', 'Stephan Haggard'],
-    historicalImpact: 'Produziu perdas de dezenas de milhões de vidas humanas em fomes forçadas, campos de trabalhos correcionais e expurgos políticos, deixando traumas demográficos e sociais profundos em múltiplos continentes.',
-    quote: {
-      text: 'O poder político brota do cano de um fuzil.',
-      author: 'Mao Tsé-Tung',
-      context: 'Discurso na 6ª Sessão Plenária do Comitê Central do Partido Comunista Chinês, novembro de 1938'
-    },
-    primarySources: [
-      {
-        title: 'Telegrama de Stalin a Mao Tsé-Tung autorizando o apoio militar na Guerra da Coreia (5 de outubro de 1950)',
-        institution: 'Wilson Center Cold War International History Project',
-        documentType: 'Telegrama Oficial',
-        year: '1950',
-        archiveReference: 'CWIHP Digital Archive: Soviet Korean War Files, Doc nº 1950-10-05',
-        transcriptionPt: 'Para Mao: Considero que a China deve intervir com voluntários para auxiliar os camaradas coreanos. Se os Estados Unidos entrarem em grande guerra, a URSS prestará assistência e isso colocará a revolução mundial em posição de força.',
-        abntCitation: 'STALIN, Iosif. Telegrama cifrado a Mao Tsé-Tung sobre o envio de tropas chinesas à Coreia. Moscou: 5 de outubro de 1950. Wilson Center Digital Archive.',
-        chicagoCitation: 'Stalin, Joseph. 1950. "Coded Telegram to Mao Zedong on Korean War Intervention." Wilson Center CWIHP.'
-      },
-      {
-        title: 'Fichas Prisionais e Ordens de Execução de Tuol Sleng (S-21) do Khmer Vermelho',
-        institution: 'Extraordinary Chambers in the Courts of Cambodia (ECCC) / DC-Cam',
-        documentType: 'Registros Prisionais e Ordens de Execução',
-        year: '1975–1979',
-        archiveReference: 'ECCC Archives: Case 001 (Kaing Guek Eav / Duch), Document D24 / DC-Cam Collection',
-        transcriptionPt: 'Registros burocráticos meticulosos contendo fotografias de entrada, confissões forçadas sob tortura sistemática e despachos assinados pelo comandante Duch determinando o envio dos detidos para execução sumária em Choeung Ek.',
-        abntCitation: 'EXTRAORDINARY CHAMBERS IN THE COURTS OF CAMBODIA (ECCC). Registros Prisionais de Tuol Sleng (S-21). Phnom Penh: ECCC / DC-Cam, Caso 001.',
-        chicagoCitation: 'Extraordinary Chambers in the Courts of Cambodia. 1975–1979. "Tuol Sleng S-21 Prison Records." Phnom Penh: ECCC.'
-      }
-    ]
-  },
-  {
-    id: 17,
-    categoryNumber: '17',
     title: 'Dissidência, Samizdat e Luta por Direitos Humanos',
     category: 'Dissidência e Direitos Humanos',
     period: '1964-1982',
@@ -803,8 +760,8 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
     ]
   },
   {
-    id: 18,
-    categoryNumber: '18',
+    id: 17,
+    categoryNumber: '17',
     title: 'Propaganda, Agitprop e Controle Social',
     category: 'Propaganda e Controle Social',
     period: '1924-1953',
@@ -846,8 +803,8 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
     ]
   },
   {
-    id: 19,
-    categoryNumber: '19',
+    id: 18,
+    categoryNumber: '18',
     title: 'Intervenções Soviéticas no Bloco Oriental',
     category: 'Intervenções Soviéticas',
     period: '1953-1964',
@@ -889,8 +846,8 @@ export const DOSSIER_TOPICS: DossierTopic[] = [
     ]
   },
   {
-    id: 20,
-    categoryNumber: '20',
+    id: 19,
+    categoryNumber: '19',
     title: 'Crise e Falência Estrutural do Sistema Soviético',
     category: 'Crise do Sistema Soviético',
     period: '1964-1982',

@@ -1,3 +1,5 @@
+import { DOSSIER_16_TEXT } from '../dossiers/dossier_16';
+
 export const IDEOLOGIAS_RESEARCH_DOSSIERS: Record<number, string> = {
   101: `COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
 
@@ -557,5 +559,7 @@ Como a análise conceitual comparada das grandes tradições políticas contempo
 - **Morfologia das Ideologias (Freeden):** Como cada corrente desambigua conceitos-chave como liberdade, igualdade, comunidade e autoridade.
 - **Liberdade Negativa vs. Positiva (Berlin):** Os limites da coerção legítima e os perigos da perversão orgânica do bem comum.
 - **Totalitarismo vs. Autoritarismo (Linz, Friedrich e Brzezinski):** A distinção sociológica fundamental entre controle absoluto da sociedade e regimes de pluralismo limitado.
-- **A Lição do Século XX:** A defesa intransigente do Estado de Direito, da divisão de poderes e da primazia incondicional da dignidade humana.`
+- **A Lição do Século XX:** A defesa intransigente do Estado de Direito, da divisão de poderes e da primazia incondicional da dignidade humana.`,
+
+  111: DOSSIER_16_TEXT
 };

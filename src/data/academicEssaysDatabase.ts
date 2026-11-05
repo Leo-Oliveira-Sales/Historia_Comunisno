@@ -1013,68 +1013,6 @@ O presidente John F. Kennedy estabeleceu uma "quarentena naval" em torno da ilha
 
   16: {
     topicId: 16,
-    title: 'O Comunismo Internacional e Movimentos Revolucionários Globais',
-    subtitle: 'O Grande Salto Adiante de Mao, o terror do Khmer Vermelho no Camboja e os conflitos na Ásia e América Latina',
-    authorCatedra: 'Cátedra de História Comparada do Comunismo Global',
-    estimatedReadingMinutes: 9,
-    wordCount: 1840,
-    epigraph: {
-      text: 'O experimento comunista não se encerrou nas fronteiras da Rússia: quando exportado para a China de Mao e para o Camboja de Pol Pot, alcançou patamares de mortandade humana e engenharia social desumanizadora que superaram até mesmo a sua matriz de origem.',
-      author: 'Frank Dikötter',
-      work: 'Mao\'s Great Famine (2010, p. xi)'
-    },
-    narrativeOverview: `A vitória bolchevique de 1917 pretendia ser o primeiro elo de uma revolução proletária planetária. Embora a revolução imediata tenha fracassado na Europa Ocidental, o modelo leninista-stalinista de partido único militarizado, planejamento econômico centralizado e eliminação de classes sociais foi exportado com sucesso para a Ásia, América Latina e África nas décadas subsequentes à Segunda Guerra Mundial. Nessas regiões periféricas, a transposição da cartilha comunista para sociedades agrárias resultou nas maiores hecatombes humanas do século XX: a República Popular da China sob Mao Tsé-Tung vivenciou a mais letal fome da história humana durante o "Grande Salto Adiante" (1958–1962), com mais de 45 milhões de mortos, seguida pelo delírio destrutivo da "Revolução Cultural" (1966–1976); no Camboja, o Khmer Vermelho de Pol Pot (1975–1979) perpetrou um autogenocídio que exterminou quase um quarto de toda a população do país.`,
-    historicalDevelopment: `Na China, após a vitória do Partido Comunista Chinês (PCC) sobre os nacionalistas do Kuomintang em 1949, Mao Tsé-Tung promoveu a aplicação radicalizada do modelo soviético de coletivização e purga de classes. Em 1958, Mao lançou a campanha do "Grande Salto Adiante", pretendendo ultrapassar a produção industrial da Grã-Bretanha em quinze anos mediante a criação compulsória das "Comunas Populares" rurais e a fundição doméstica de aço em fornos de quintal inúteis. A expropriação forçada de toda a comida, o fechamento das cozinhas privadas e as metas insanas de colheita impostas pela burocracia desorganizaram totalmente a produção agrícola. O resultado, documentado nos arquivos provinciais chineses pelo historiador Frank Dikötter em Mao\'s Great Famine, foi a maior catástrofe de fome provocada pelo homem na história da humanidade: entre 1958 e 1962, pelo menos 45 milhões de cidadãos chineses morreram de inanição, espancamentos e trabalhos forçados. Para recuperar a autoridade abalada pela fome, Mao deflagrou em 1966 a "Grande Revolução Cultural Proletária", mobilizando milhões de jovens fanáticos organizados nos "Guardas Vermelhos" para destruir os "Quatro Velhos" (velhos costumes, velha cultura, velhos hábitos e velhas ideias), fechando universidades, queimando patrimônios budistas e confucianos milenares e humilhando, torturando ou executando centenas de milhares de professores, cientistas e intelectuais.
-
-No Camboja, a aplicação do comunismo alcançou o extremo do delírio desumanizador sob o regime do Kampuchea Democrático liderado pelo Khmer Vermelho (1975–1979) e seu ditador supremo Saloth Sar, conhecido como Pol Pot ("Irmão Número Um"). Treinados ideologicamente na Sorbonne em Paris e influenciados pelo maoismo, Pol Pot e a Angkar ("A Organização") pretendiam criar uma sociedade agrária comunista pura em um único salto histórico, abolindo de imediato a moeda, os mercados, a propriedade privada, as famílias tradicionais e a religião. Em abril de 1975, ao ocuparem a capital Phnom Penh, ordenaram o esvaziamento forçado de mais de dois milhões de habitantes sob a mira de metralhadoras em 48 horas, transformando cidadãos urbanos em escravos rurais nos campos de morte (The Killing Fields). O regime iniciou o extermínio sistemático de qualquer pessoa considerada "corrompida pela burguesia": indivíduos que usassem óculos (considerados intelectuais suspeitos), pessoas que falassem línguas estrangeiras, monges budistas e minorias étnicas (como vietnamitas e muçulmanos Cham). No centro de tortura Tuol Sleng (S-21), uma antiga escola em Phnom Penh chefiada pelo camarada Duch, mais de 18.000 homens, mulheres e crianças foram torturados meticulosamente até confessarem complôs inexistentes com a CIA ou KGB antes de serem degolados nos campos de Choeung Ek. Entre 1975 e janeiro de 1979, o Khmer Vermelho exterminou entre 1,7 e 2,2 milhões de cambojanos — cerca de 25% de toda a população da nação —, tragédia interrompida apenas pela invasão militar vietnamita.
-
-Na Península da Coreia, a tentativa de Kim Il-sung de unificar militarmente o país com a bênção e apoio bélico de Stalin e Mao deflagrou a sangrenta Guerra da Coreia (1950–1953), que deixou mais de 3 milhões de mortos e cristalizou no norte uma das mais fechadas e absolutistas dinastias comunistas totalitárias hereditárias do planeta, baseada na ideologia Juche e na manutenção de uma vasta rede de campos penais de trabalhos forçados (Kwanliso).
-
-Em Cuba, a Revolução de 1959 liderada por Fidel Castro e Che Guevara converteu-se formalmente em um Estado socialista marxista-leninista após o desembarque da Baía dos Porcos em 1961, alinhando a ilha caribenha com a URSS, estatizando 100% da economia, liquidando a imprensa livre e institucionalizando campos de trabalho e reeducação ideológica (UMAP) para opositores, católicos e homossexuais.`,
-    institutionalAndStateMechanisms: `Os regimes comunistas asiáticos e caribenhos reproduziram a estrutura da tríade soviética: subordinação do Estado ao Partido Comunista, criação de polícias políticas com jurisdição extrajudicial ilimitada (como o Santebal no Camboja e o Ministério de Segurança Pública na China) e a militarização da economia através do confisco da propriedade privada e da coletivização agrícola compulsória.`,
-    historiographicalDebate: `Durante as décadas de 1960 e 1970, intelectuais ocidentais simpatizantes da Nova Esquerda procuraram retratar o maoismo chinês e as revoluções do Terceiro Mundo como alternativas frescas e humanistas ao bureaucraticamente estagnado modelo soviético. Pesquisas históricas rigorosas baseadas em arquivos locais desclassificados — conduzidas por Ben Kiernan (Universidade de Yale) sobre o Camboja, Frank Dikötter (Universidade de Hong Kong) sobre a China, David P. Chandler sobre Pol Pot e Bruce Cumings sobre a Coreia — demoliram completamente essa ilusão romântica. Os pesquisadores provaram que a exportação da ideologia marxista-leninista para o mundo pós-colonial acelerou a letalidade do sistema, pois a fusão da violência de classe com o nacionalismo radical resultou no extermínio intencional de estratos inteiros de suas próprias populações.`,
-    scholarlyQuotes: [
-      {
-        author: 'Frank Dikötter',
-        work: 'Mao\'s Great Famine: The History of China\'s Most Devastating Catastrophe',
-        year: '2010',
-        pageOrDoc: 'p. 333-335',
-        quote: 'O Grande Salto Adiante foi o maior assassinato em massa e a mais profunda catástrofe humana planejada da história mundial. Pelo menos 45 milhões de seres humanos foram levados à morte pela fome e pela violência armada direta em apenas quatro anos para satisfazer o orgulho industrial de Mao.',
-        historicalAnalysis: 'Dikötter documenta nos arquivos provinciais do PCC o uso deliberado da retenção de alimentos como arma punitiva contra vilarejos que não batiam cotas ideológicas.'
-      },
-      {
-        author: 'Ben Kiernan',
-        work: 'The Pol Pot Regime: Race, Power, and Genocide in Cambodia under the Khmer Rouge',
-        year: '1996',
-        pageOrDoc: 'p. 456-458',
-        quote: 'O regime do Khmer Vermelho combinou o fundamentalismo da luta de classes stalinista com o preconceito racial e étnico mais cego, produzindo um genocídio que não hesitou em assassinar um quarto de sua própria gente para construir uma utopia agrária medieval purificada.',
-        historicalAnalysis: 'Kiernan comprova o caráter genocida e seletivo do extermínio praticado pela liderança de Pol Pot contra minorias religiosas e a população urbana cambojana.'
-      }
-    ],
-    archivalCorpus: [
-      {
-        archiveName: 'Documentation Center of Cambodia (DC-Cam)',
-        fondCode: 'Tuol Sleng Genocide Museum Archive (S-21 Records)',
-        description: 'Registros de confissões arrancadas sob tortura, fotografias forenses de prisioneiros e listas originais de execuções assinadas por Kaing Guek Eav (Duch).'
-      },
-      {
-        archiveName: 'Wilson Center — Digital Archive',
-        fondCode: 'Chinese Foreign Policy & Asian Communist Regimes Dossiers (1949–1979)',
-        description: 'Atas desclassificadas de encontros diplomáticos e correspondências militares entre Mao Tsé-Tung, Stalin, Kim Il-sung e Pol Pot.'
-      }
-    ],
-    concludingAssessment: `O comunismo internacional no século XX revelou uma lógica intrínseca e constante: onde quer que a cartilha marxista-leninista de partido único e destruição da propriedade privada tenha sido imposta — seja nas planícies geladas da Rússia, nas bacias orizícolas da China ou nas selvas tropicais do Camboja —, o resultado inevitável foi a supressão total da dignidade humana, o fuzilamento da dissidência e hecatombes de fome e sofrimento em escala industrial.`,
-    bibliographicReferences: [
-      'DIKÖTTER, Frank. Mao\'s Great Famine: The History of China\'s Most Devastating Catastrophe, 1958–1962. Nova York: Walker & Company, 2010.',
-      'DIKÖTTER, Frank. The Cultural Revolution: A People\'s History, 1962–1976. Nova York: Bloomsbury Press, 2016.',
-      'KIERNAN, Ben. The Pol Pot Regime: Race, Power, and Genocide in Cambodia under the Khmer Rouge, 1975–79. New Haven: Yale University Press, 1996.',
-      'CHANDLER, David P. Brother Number One: A Political Biography of Pol Pot. Boulder: Westview Press, 1999.',
-      'CUMINGS, Bruce. The Korean War: A History. Nova York: Modern Library, 2010.'
-    ]
-  },
-
-  17: {
-    topicId: 17,
     title: 'A Dissidência, os Direitos Humanos e o Samizdat na URSS',
     subtitle: 'De Aleksandr Soljenítsin e Andrei Sakharov à psiquiatria punitiva e aos Acordos de Helsinque',
     authorCatedra: 'Cátedra de Estudos da Dissidência e Direitos Fundamentais',
@@ -1139,8 +1077,8 @@ Em 1975, a URSS assinou a Ata Final da Conferência sobre Segurança e Cooperaç
     ]
   },
 
-  18: {
-    topicId: 18,
+  17: {
+    topicId: 17,
     title: 'A Propaganda, a Educação Ideológica e o Controle Social',
     subtitle: 'Do monopólio do Pravda e da Glavlit ao culto da personalidade e ao enquadramento das massas',
     authorCatedra: 'Cátedra de Sociologia Política e Cultura Soviética',
@@ -1206,8 +1144,8 @@ O fenômeno atingiu dimensões quase religiosas no delírio do "Culto à Persona
     ]
   },
 
-  19: {
-    topicId: 19,
+  18: {
+    topicId: 18,
     title: 'Intervenções e Ocupações Militares Soviéticas no Bloco Oriental',
     subtitle: 'Da repressão em Berlim (1953) e Budapeste (1956) à invasão de Praga (1968) e ao Afeganistão (1979)',
     authorCatedra: 'Cátedra de História Militar das Relações Internacionais do Leste Europeu',
@@ -1268,8 +1206,8 @@ O delírio expansionista atingiu seu clímax letal no Natal de 1979. Temendo que
     ]
   },
 
-  20: {
-    topicId: 20,
+  19: {
+    topicId: 19,
     title: 'A Crise Estrutural do Sistema Soviético: Estagnação, Corrupção e Dissolução',
     subtitle: 'Da Era Brejnev e Nomenklatura à segunda economia informal e ao esgotamento do modelo de comando',
     authorCatedra: 'Cátedra de Economia Política e Colapso Institucional Comparado',
@@ -1440,6 +1378,68 @@ Contudo, o legado iluminista deve ser compreendido sem ingenuidades apologética
       'SKINNER, Quentin. The Foundations of Modern Political Thought. 2 vols. Cambridge: Cambridge University Press, 1978.',
       'SPINOZA, Baruch. Theological-Political Treatise. 1670.',
       'VOLTAIRE. Treatise on Tolerance. 1763.'
+    ]
+  },
+
+  111: {
+    topicId: 111,
+    title: 'O Comunismo Internacional e Movimentos Revolucionários Globais',
+    subtitle: 'O Grande Salto Adiante de Mao, o terror do Khmer Vermelho no Camboja e os conflitos na Ásia e América Latina',
+    authorCatedra: 'Cátedra de História Comparada do Comunismo Global',
+    estimatedReadingMinutes: 9,
+    wordCount: 1840,
+    epigraph: {
+      text: 'O experimento comunista não se encerrou nas fronteiras da Rússia: quando exportado para a China de Mao e para o Camboja de Pol Pot, alcançou patamares de mortandade humana e engenharia social desumanizadora que superaram até mesmo a sua matriz de origem.',
+      author: 'Frank Dikötter',
+      work: 'Mao\'s Great Famine (2010, p. xi)'
+    },
+    narrativeOverview: `A vitória bolchevique de 1917 pretendia ser o primeiro elo de uma revolução proletária planetária. Embora a revolução imediata tenha fracassado na Europa Ocidental, o modelo leninista-stalinista de partido único militarizado, planejamento econômico centralizado e eliminação de classes sociais foi exportado com sucesso para a Ásia, América Latina e África nas décadas subsequentes à Segunda Guerra Mundial. Nessas regiões periféricas, a transposição da cartilha comunista para sociedades agrárias resultou nas maiores hecatombes humanas do século XX: a República Popular da China sob Mao Tsé-Tung vivenciou a mais letal fome da história humana durante o "Grande Salto Adiante" (1958–1962), com mais de 45 milhões de mortos, seguida pelo delírio destrutivo da "Revolução Cultural" (1966–1976); no Camboja, o Khmer Vermelho de Pol Pot (1975–1979) perpetrou um autogenocídio que exterminou quase um quarto de toda a população do país.`,
+    historicalDevelopment: `Na China, após a vitória do Partido Comunista Chinês (PCC) sobre os nacionalistas do Kuomintang em 1949, Mao Tsé-Tung promoveu a aplicação radicalizada do modelo soviético de coletivização e purga de classes. Em 1958, Mao lançou a campanha do "Grande Salto Adiante", pretendendo ultrapassar a produção industrial da Grã-Bretanha em quinze anos mediante a criação compulsória das "Comunas Populares" rurais e a fundição doméstica de aço em fornos de quintal inúteis. A expropriação forçada de toda a comida, o fechamento das cozinhas privadas e as metas insanas de colheita impostas pela burocracia desorganizaram totalmente a produção agrícola. O resultado, documentado nos arquivos provinciais chineses pelo historiador Frank Dikötter em Mao\'s Great Famine, foi a maior catástrofe de fome provocada pelo homem na história da humanidade: entre 1958 e 1962, pelo menos 45 milhões de cidadãos chineses morreram de inanição, espancamentos e trabalhos forçados. Para recuperar a autoridade abalada pela fome, Mao deflagrou em 1966 a "Grande Revolução Cultural Proletária", mobilizando milhões de jovens fanáticos organizados nos "Guardas Vermelhos" para destruir os "Quatro Velhos" (velhos costumes, velha cultura, velhos hábitos e velhas ideias), fechando universidades, queimando patrimônios budistas e confucianos milenares e humilhando, torturando ou executando centenas de milhares de professores, cientistas e intelectuais.
+
+No Camboja, a aplicação do comunismo alcançou o extremo do delírio desumanizador sob o regime do Kampuchea Democrático liderado pelo Khmer Vermelho (1975–1979) e seu ditador supremo Saloth Sar, conhecido como Pol Pot ("Irmão Número Um"). Treinados ideologicamente na Sorbonne em Paris e influenciados pelo maoismo, Pol Pot e a Angkar ("A Organização") pretendiam criar uma sociedade agrária comunista pura em um único salto histórico, abolindo de imediato a moeda, os mercados, a propriedade privada, as famílias tradicionais e a religião. Em abril de 1975, ao ocuparem a capital Phnom Penh, ordenaram o esvaziamento forçado de mais de dois milhões de habitantes sob a mira de metralhadoras em 48 horas, transformando cidadãos urbanos em escravos rurais nos campos de morte (The Killing Fields). O regime iniciou o extermínio sistemático de qualquer pessoa considerada "corrompida pela burguesia": indivíduos que usassem óculos (considerados intelectuais suspeitos), pessoas que falassem línguas estrangeiras, monges budistas e minorias étnicas (como vietnamitas e muçulmanos Cham). No centro de tortura Tuol Sleng (S-21), uma antiga escola em Phnom Penh chefiada pelo camarada Duch, mais de 18.000 homens, mulheres e crianças foram torturados meticulosamente até confessarem complôs inexistentes com a CIA ou KGB antes de serem degolados nos campos de Choeung Ek. Entre 1975 e janeiro de 1979, o Khmer Vermelho exterminou entre 1,7 e 2,2 milhões de cambojanos — cerca de 25% de toda a população da nação —, tragédia interrompida apenas pela invasão militar vietnamita.
+
+Na Península da Coreia, a tentativa de Kim Il-sung de unificar militarmente o país com a bênção e apoio bélico de Stalin e Mao deflagrou a sangrenta Guerra da Coreia (1950–1953), que deixou mais de 3 milhões de mortos e cristalizou no norte uma das mais fechadas e absolutistas dinastias comunistas totalitárias hereditárias do planeta, baseada na ideologia Juche e na manutenção de uma vasta rede de campos penais de trabalhos forçados (Kwanliso).
+
+Em Cuba, a Revolução de 1959 liderada por Fidel Castro e Che Guevara converteu-se formalmente em um Estado socialista marxista-leninista após o desembarque da Baía dos Porcos em 1961, alinhando a ilha caribenha com a URSS, estatizando 100% da economia, liquidando a imprensa livre e institucionalizando campos de trabalho e reeducação ideológica (UMAP) para opositores, católicos e homossexuais.`,
+    institutionalAndStateMechanisms: `Os regimes comunistas asiáticos e caribenhos reproduziram a estrutura da tríade soviética: subordinação do Estado ao Partido Comunista, criação de polícias políticas com jurisdição extrajudicial ilimitada (como o Santebal no Camboja e o Ministério de Segurança Pública na China) e a militarização da economia através do confisco da propriedade privada e da coletivização agrícola compulsória.`,
+    historiographicalDebate: `Durante as décadas de 1960 e 1970, intelectuais ocidentais simpatizantes da Nova Esquerda procuraram retratar o maoismo chinês e as revoluções do Terceiro Mundo como alternativas frescas e humanistas ao bureaucraticamente estagnado modelo soviético. Pesquisas históricas rigorosas baseadas em arquivos locais desclassificados — conduzidas por Ben Kiernan (Universidade de Yale) sobre o Camboja, Frank Dikötter (Universidade de Hong Kong) sobre a China, David P. Chandler sobre Pol Pot e Bruce Cumings sobre a Coreia — demoliram completamente essa ilusão romântica. Os pesquisadores provaram que a exportação da ideologia marxista-leninista para o mundo pós-colonial acelerou a letalidade do sistema, pois a fusão da violência de classe com o nacionalismo radical resultou no extermínio intencional de estratos inteiros de suas próprias populações.`,
+    scholarlyQuotes: [
+      {
+        author: 'Frank Dikötter',
+        work: 'Mao\'s Great Famine: The History of China\'s Most Devastating Catastrophe',
+        year: '2010',
+        pageOrDoc: 'p. 333-335',
+        quote: 'O Grande Salto Adiante foi o maior assassinato em massa e a mais profunda catástrofe humana planejada da história mundial. Pelo menos 45 milhões de seres humanos foram levados à morte pela fome e pela violência armada direta em apenas quatro anos para satisfazer o orgulho industrial de Mao.',
+        historicalAnalysis: 'Dikötter documenta nos arquivos provinciais do PCC o uso deliberado da retenção de alimentos como arma punitiva contra vilarejos que não batiam cotas ideológicas.'
+      },
+      {
+        author: 'Ben Kiernan',
+        work: 'The Pol Pot Regime: Race, Power, and Genocide in Cambodia under the Khmer Rouge',
+        year: '1996',
+        pageOrDoc: 'p. 456-458',
+        quote: 'O regime do Khmer Vermelho combinou o fundamentalismo da luta de classes stalinista com o preconceito racial e étnico mais cego, produzindo um genocídio que não hesitou em assassinar um quarto de sua própria gente para construir uma utopia agrária medieval purificada.',
+        historicalAnalysis: 'Kiernan comprova o caráter genocida e seletivo do extermínio praticado pela liderança de Pol Pot contra minorias religiosas e a população urbana cambojana.'
+      }
+    ],
+    archivalCorpus: [
+      {
+        archiveName: 'Documentation Center of Cambodia (DC-Cam)',
+        fondCode: 'Tuol Sleng Genocide Museum Archive (S-21 Records)',
+        description: 'Registros de confissões arrancadas sob tortura, fotografias forenses de prisioneiros e listas originais de execuções assinadas por Kaing Guek Eav (Duch).'
+      },
+      {
+        archiveName: 'Wilson Center — Digital Archive',
+        fondCode: 'Chinese Foreign Policy & Asian Communist Regimes Dossiers (1949–1979)',
+        description: 'Atas desclassificadas de encontros diplomáticos e correspondências militares entre Mao Tsé-Tung, Stalin, Kim Il-sung e Pol Pot.'
+      }
+    ],
+    concludingAssessment: `O comunismo internacional no século XX revelou uma lógica intrínseca e constante: onde quer que a cartilha marxista-leninista de partido único e destruição da propriedade privada tenha sido imposta — seja nas planícies geladas da Rússia, nas bacias orizícolas da China ou nas selvas tropicais do Camboja —, o resultado inevitável foi a supressão total da dignidade humana, o fuzilamento da dissidência e hecatombes de fome e sofrimento em escala industrial.`,
+    bibliographicReferences: [
+      'DIKÖTTER, Frank. Mao\'s Great Famine: The History of China\'s Most Devastating Catastrophe, 1958–1962. Nova York: Walker & Company, 2010.',
+      'DIKÖTTER, Frank. The Cultural Revolution: A People\'s History, 1962–1976. Nova York: Bloomsbury Press, 2016.',
+      'KIERNAN, Ben. The Pol Pot Regime: Race, Power, and Genocide in Cambodia under the Khmer Rouge, 1975–79. New Haven: Yale University Press, 1996.',
+      'CHANDLER, David P. Brother Number One: A Political Biography of Pot Pot. Boulder: Westview Press, 1999.',
+      'CUMINGS, Bruce. The Korean War: A History. Nova York: Modern Library, 2010.'
     ]
   }
 };

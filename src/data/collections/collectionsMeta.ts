@@ -8,10 +8,10 @@ export const COLLECTIONS_REGISTRY: CollectionMeta[] = [
     shortTitle: 'União Soviética URSS',
     themeCategory: 'Historiografia Soviética e Documentos Primários',
     subtitle: 'Revolução Russa, Lenin, Stalin, Sociedade Soviética, Guerra Fria e Colapso (1905–1991)',
-    description: 'Acervo acadêmico integral com 20 capítulos exaustivos, documentos diplomáticos primários, tratados desclassificados e debate historiográfico de arquivos de Moscou e Washington.',
-    chapterCount: 20,
+    description: 'Acervo acadêmico integral com 19 capítulos exaustivos, documentos diplomáticos primários, tratados desclassificados e debate historiográfico de arquivos de Moscou e Washington.',
+    chapterCount: 19,
     status: 'concluido',
-    badgeLabel: '20 Capítulos Concluídos',
+    badgeLabel: '19 Capítulos Concluídos',
     chronologyRange: '1905 – 1991',
     accentColor: '#DC2626', // Red
     tags: ['Lenin', 'Stalin', 'Grande Terror', 'Guerra Fria', 'Gulag', 'Arquivos Secretos']
@@ -23,10 +23,10 @@ export const COLLECTIONS_REGISTRY: CollectionMeta[] = [
     shortTitle: 'Ideologias Políticas',
     themeCategory: 'Pensamento Político, Filosofia e Regimes',
     subtitle: 'Iluminismo, Liberalismo, Socialismo, Comunismo, Anarquismo, Fascismo, Nazismo e Social-Democracia',
-    description: 'Investigação profunda das matrizes ideológicas modernas com 10 capítulos didáticos e catálogo rigoroso dos 40 maiores especialistas e pesquisadores de referência mundial.',
-    chapterCount: 10,
+    description: 'Investigação profunda das matrizes ideológicas modernas com 11 capítulos didáticos e catálogo rigoroso dos 40 maiores especialistas e pesquisadores de referência mundial.',
+    chapterCount: 11,
     status: 'ativo',
-    badgeLabel: '10 Capítulos Didáticos',
+    badgeLabel: '11 Capítulos Didáticos',
     chronologyRange: 'Século XVIII – Contemporaneidade',
     accentColor: '#D97706', // Amber
     tags: ['Iluminismo', 'Liberalismo', 'Marxismo', 'Anarquismo', 'Fascismo', 'Nazismo', 'Social-Democracia', '40 Especialistas']

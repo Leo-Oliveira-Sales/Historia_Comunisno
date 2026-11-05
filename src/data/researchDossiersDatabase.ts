@@ -2,7 +2,6 @@ import { DOSSIER_01_TEXT } from './dossiers/dossier_01';
 import { DOSSIER_12_TEXT } from './dossiers/dossier_12';
 import { DOSSIER_14_TEXT } from './dossiers/dossier_14';
 import { DOSSIER_15_TEXT } from './dossiers/dossier_15';
-import { DOSSIER_16_TEXT } from './dossiers/dossier_16';
 import { DOSSIER_17_TEXT } from './dossiers/dossier_17';
 import { DOSSIER_18_TEXT } from './dossiers/dossier_18';
 import { DOSSIER_19_TEXT } from './dossiers/dossier_19';
@@ -2693,13 +2692,8 @@ O objetivo deste dossiê é permitir que o leitor compreenda o acontecimento por
   14: DOSSIER_14_TEXT,
   15: DOSSIER_15_TEXT,
 
-  16: DOSSIER_16_TEXT,
-
-  17: DOSSIER_17_TEXT,
-
-  18: DOSSIER_18_TEXT,
-
-  19: DOSSIER_19_TEXT,
-  20: DOSSIER_20_TEXT
-
+  16: DOSSIER_17_TEXT,
+  17: DOSSIER_18_TEXT,
+  18: DOSSIER_19_TEXT,
+  19: DOSSIER_20_TEXT
 };

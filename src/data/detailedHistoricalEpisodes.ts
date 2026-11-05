@@ -107,39 +107,39 @@ export const CHRONOLOGIES_BY_TOPIC: Record<number, ChronologyMilestone[]> = {
     { date: 'Outubro de 1962', event: 'Crise dos Mísseis Nucleares em Cuba', significance: 'Khrushchev instala secretamente mísseis nucleares R-12 em Cuba, levando a humanidade à beira do holocausto termonuclear.' }
   ],
   16: [
-    { date: '1 de outubro de 1949', event: 'Proclamação da República Popular da China por Mao Tsé-Tung', significance: 'Vitória comunista sobre o Kuomintang e criação do maior Estado marxista-leninista populacional do globo.' },
-    { date: '25 de junho de 1950', event: 'Invasão da Coreia do Sul pela Coreia do Norte de Kim Il-Sung', significance: 'Guerra da Coreia com apoio militar e caças secretos soviéticos pilotados por instrutores russos em combate direto.' },
-    { date: '1 de janeiro de 1959', event: 'Triunfo da Revolução Cubana de Fidel Castro', significance: 'Queda de Fulgêncio Batista e rápida conversão de Cuba em bastião estratégico e militar soviético no Hemisfério Ocidental.' },
-    { date: '1958–1962', event: 'O Grande Salto Adiante na China de Mao', significance: 'A coletivização forçada e a siderurgia de quintal causam a maior fome da história humana, vitimando de 30 a 45 milhões de pessoas.' },
-    { date: '17 de abril de 1975', event: 'Tomada de Phnom Penh pelo Khmer Vermelho de Pol Pot', significance: 'Início da utopia agrária totalitária no Camboja, culminando no massacre de um quarto de toda a população nos "Killing Fields".' }
-  ],
-  17: [
     { date: 'Setembro de 1965', event: 'Prisão dos Escritores Andrei Sinyavsky e Yuli Daniel', significance: 'O julgamento público dos autores que publicaram no exterior marca o fim do Degelo de Khrushchev e o início da dissidência moderna.' },
     { date: '25 de agosto de 1968', event: 'Protesto dos Oito Dissidentes na Praça Vermelha', significance: 'Pequeno grupo exibe faixas contra a invasão da Tchecoslováquia; são espancados e enviados para o internamento psiquiátrico punitivo.' },
     { date: '1970–1975', event: 'Instituição do Uso Político da Psiquiatria pelo KGB', significance: 'Yuri Andropov diagnostica dissidentes políticos com a doença inventada "esquizofrenia de progressão lenta" no Instituto Serbsky.' },
     { date: 'Janeiro de 1977', event: 'Publicação da Carta 77 em Praga por Václav Havel', significance: 'Manifesto cívico exigindo que o governo comunista respeite os acordos de direitos humanos de Helsinque.' },
     { date: 'Janeiro de 1980', event: 'Exílio Forçado do Físico Andrei Sakharov para Gorky', significance: 'O laureado com o Nobel da Paz e criador da bomba de hidrogênio é isolado pelo KGB após denunciar a invasão do Afeganistão.' }
   ],
-  18: [
+  17: [
     { date: 'Novembro de 1917', event: 'Decreto Bolchevique sobre a Imprensa', significance: 'Fechamento sumário de todos os jornais da oposição liberal, menchevique e socialista-revolucionária.' },
     { date: '6 de junho de 1922', event: 'Criação do Glavlit (Diretoria Geral de Proteção de Segredos de Estado)', significance: 'Monopólio centralizado de censura prévia de todos os livros, artigos, peças de teatro e transmissões de rádio.' },
     { date: 'Agosto de 1934', event: 'I Congresso dos Escritores e o Dogma do Realismo Socialista', significance: 'Proibição das vanguardas artísticas; a literatura e a pintura tornam-se instrumentos exclusivos de exaltação do Estado e do Líder.' },
     { date: '1937–1939', event: 'Apagamento Fotográfico de Líderes Expurgados', significance: 'Comissários como Trotsky, Yezhov e Kamenev são apagados a aerógrafo das fotografias históricas oficiais com Stalin.' },
     { date: '1938', event: 'Publicação do "Breve Curso de História do PCUS"', significance: 'Bíblia ideológica stalinista com mais de 40 milhões de cópias distribuídas, reescrevendo totalmente o passado bolchevique.' }
   ],
-  19: [
+  18: [
     { date: '17 de junho de 1953', event: 'Levante Operário na Alemanha Oriental', significance: 'Greves gerais em Berlim Oriental contra o aumento das cotas de trabalho são esmagadas por tanques T-34 soviéticos.' },
     { date: '28 de junho de 1956', event: 'Revolta Operária de Poznań na Polônia', significance: 'Protestos por "Pão e Liberdade" são reprimidos pelo exército com mais de 70 operários mortos, abrindo crise no bloco.' },
     { date: '4 de novembro de 1956', event: 'Operação Torvelinho e o Massacre de Budapeste', significance: '60.000 soldados e 1.000 tanques soviéticos invadem a Hungria; 2.500 húngaros morrem e 200.000 fogem para o Ocidente.' },
     { date: '20–21 de agosto de 1968', event: 'Operação Danúbio e a Invasão da Tchecoslováquia', significance: '500.000 soldados do Pacto de Varsóvia sufocam a "Primavera de Praga" de Dubček, consolidando a Doutrina Brejnev.' },
     { date: '13 de dezembro de 1981', event: 'Declaração da Lei Marcial na Polônia pelo General Jaruzelski', significance: 'Para evitar uma invasão militar iminente do Exército Vermelho, o governo comunista polonês prende a cúpula do Solidarność.' }
   ],
-  20: [
+  19: [
     { date: '1979–1985', event: 'A Era da Estagnação e os Três Funerais do Kremlin', significance: 'Mortes sucessivas dos idosos Brejnev, Andropov e Chernenko simbolizam a paralisia estrutural e geriátrica da liderança soviética.' },
     { date: 'Março de 1985', event: 'Ascensão de Mikhail Gorbachev ao Secretariado-Geral', significance: 'Início de tentativas desesperadas de reforma econômica (Uskoreniye) e política para salvar o socialismo do colapso.' },
     { date: '9 de novembro de 1989', event: 'Queda do Muro de Berlim e Colapso dos Satélites', significance: 'Fim da Cortina de Ferro na Europa após Gorbachev declarar que o Exército Vermelho não interviria contra protestos populares.' },
     { date: '19–21 de agosto de 1991', event: 'Tentativa de Golpe da Linha-Dura (GKChP) em Moscou', significance: 'Militares e o KGB tentam tomar o poder; a resistência popular liderada por Boris Yeltsin sepulta a autoridade do PCUS.' },
-    { date: '25 de dezembro de 1991', event: 'Arriamento da Bandeira Soviética no Kremlin', significance: 'Gorbachev renuncia oficialmente ao cargo de presidente; a URSS deixa formalmente de existir no direito internacional.' }
+    { date: '25 de dezembro de 1991', event: 'Arriamento da Bandeira Soviética no Kremlin', significance: 'Gorbachev renuncia officially ao cargo de presidente; a URSS deixa formalmente de existir no direito internacional.' }
+  ],
+  111: [
+    { date: '1 de outubro de 1949', event: 'Proclamação da República Popular da China por Mao Tsé-Tung', significance: 'Vitória comunista sobre o Kuomintang e criação do maior Estado marxista-leninista populacional do globo.' },
+    { date: '25 de junho de 1950', event: 'Invasão da Coreia do Sul pela Coreia do Norte de Kim Il-Sung', significance: 'Guerra da Coreia com apoio militar e caças secretos soviéticos pilotados por instrutores russos em combate direto.' },
+    { date: '1 de janeiro de 1959', event: 'Triunfo da Revolução Cubana de Fidel Castro', significance: 'Queda de Fulgêncio Batista e rápida conversão de Cuba em bastião estratégico e militar soviético no Hemisfério Ocidental.' },
+    { date: '1958–1962', event: 'O Grande Salto Adiante na China de Mao', significance: 'A coletivização forçada e a siderurgia de quintal causam a maior fome da história humana, vitimando de 30 a 45 milhões de pessoas.' },
+    { date: '17 de abril de 1975', event: 'Tomada de Phnom Penh pelo Khmer Vermelho de Pol Pot', significance: 'Início da utopia agrária totalitária no Camboja, culminando no massacre de um quarto de toda a população nos "Killing Fields".' }
   ],
   101: [
     { date: '1651', event: 'Publicação de Leviatã por Thomas Hobbes', significance: 'Inauguração da teoria contratualista moderna e laica, justificando a soberania pelo pacto social em vez do direito divino.' },
@@ -483,20 +483,6 @@ Ao longo de horas, Schumann fumou nervosamente um cigarro após o outro, olhando
 
   16: [
     {
-      title: 'Os Campos da Morte do Tuol Sleng (S-21): O Delírio Agrário de Pol Pot',
-      location: 'Escola Secundária Tuol Svay Prey, Phnom Penh, Camboja',
-      narrative: `Em 17 de abril de 1975, guerrilheiros do Khmer Vermelho liderados por Saloth Sar (Pol Pot) marcharam sobre Phnom Penh. Em 72 horas, sob a justificativa de que um bombardeio americano era iminente, toda a população urbana de 2,5 milhões de pessoas foi expulsa a pé para os arrozais do campo: hospitais foram esvaziados à força e pacientes operados caminhavam empurrando seus próprios suportes de soro até morrerem na poeira das estradas. O regime proclamou o "Ano Zero", aboliu o dinheiro, a propriedade privada, os telefones, as escolas e as famílias.
-      
-Na capital deserta, a antiga escola secundária Tuol Svay Prey foi convertida na prisão secreta de tortura S-21 (Tuol Sleng), chefiada pelo sádico ex-professor de matemática Kaing Guek Eav (conhecido pelo codinome "Duch"). No local, mais de 18.000 pessoas — intelectuais, médicos, professores, pessoas que usavam óculos (acusadas de serem "parasitas burgueses letrados") e membros do próprio partido sob suspeita de traição — foram fotografadas de frente e de perfil com números de arquivo no peito antes de serem torturadas sistematicamente com choques elétricos e afogamento para confessarem que eram "espiões da CIA e da KGB".
-      
-Após assinarem confissões forjadas delirantes, os prisioneiros eram transportados à noite em caminhões até o pomar de Choeung Ek (os infames "Killing Fields"), onde eram forçados a se ajoelhar à beira de fossas comuns e executados não com balas (para economizar munição), mas com pancadas de barras de ferro e pás na base do crânio. Entre 1975 e 1979, o delírio utópico do Khmer Vermelho exterminou entre 1,7 e 2,2 milhões de cambojanos — quase um quarto de toda a população da nação.`,
-      eyewitnessOrDocQuote: 'Destruir você não é nenhuma perda; preservar você não traz nenhum proveito.',
-      quoteAuthor: 'Lema oficial da Angkar (Organização Central do Khmer Vermelho) repetido aos prisioneiros'
-    }
-  ],
-
-  17: [
-    {
       title: 'A "Esquizofrenia de Progressão Lenta": O Diagnóstico Psiquiátrico da Dissidência',
       location: 'Instituto de Psiquiatria Forense V.P. Serbsky, Moscou',
       narrative: `Nas décadas de 1960 e 1970, sob a presidência do KGB de Yuri Andropov, o Estado soviético desenvolveu uma das formas mais perversas de repressão política da história contemporânea: a psiquiatrização punitiva da oposição ideológica. Percebendo que julgamentos públicos de escritores provocavam protestos diplomáticos ocidentais e denúncias na imprensa internacional, Andropov e o acadêmico de psiquiatria Andrei Snezhnevsky criaram um diagnóstico clínico pseudocientífico conveniente: a "esquizofrenia de progressão lenta" (vyalotekushchaya shizofreniya).
@@ -509,7 +495,7 @@ Centenas de dissidentes ilustres, como o poeta e matemático Alexander Esenin-Vo
     }
   ],
 
-  18: [
+  17: [
     {
       title: 'O "Comissário Desaparecido": A Cirurgia Fotográfica de Nikolai Yezhov',
       location: 'Canais de Moscou e Arquivos da Editora Estatal Izvestia',
@@ -523,7 +509,7 @@ Imediatamente após a execução física de Yezhov, o Kremlin acionou sua máqui
     }
   ],
 
-  19: [
+  18: [
     {
       title: 'A "Operação Danúbio": A Morte da Primavera de Praga sob as Esteiras dos Tanques',
       location: 'Praça Venceslau e Estúdio da Rádio Tchecoslovaca, Praga',
@@ -537,7 +523,7 @@ Nas ruas de Praga, operários e estudantes ergueram barricadas pacíficas diante
     }
   ],
 
-  20: [
+  19: [
     {
       title: 'O Colapso do Kremlin: O Discurso de Renúncia de Gorbachev e a Bandeira Arriada',
       location: 'Gabinete Presidencial do Kremlin e Praça Vermelha, Moscou',
@@ -551,6 +537,20 @@ Em seu discurso lúcido e melancólico de dez minutos, Gorbachev declarou:
 Às 19h32 exatas, enquanto Gorbachev assinava os papéis de transferência dos códigos nucleares da maleta tcheget para Boris Yeltsin, dois soldados da guarnição do Kremlin subiram à cúpula do Palácio do Senado na Praça Vermelha. Em silêncio absoluto, a gigantesca bandeira vermelha com a foice e o martelo que tremulava no coração do poder soviético desde a Revolução de 1917 foi arriada pela última vez e dobrada. Segundos depois, a bandeira tricolor branca, azul e vermelha da Federação Russa subiu ao mastro sob o céu gélido de inverno. A União Soviética, o império totalitário que moldara com ferro e sangue a história do século XX, desintegrava-se pacificamente sem que um único tiro de canhão fosse disparado.`,
       eyewitnessOrDocQuote: 'O velho sistema ruiu antes que o novo tivesse tempo de entrar em funcionamento. Renuncio ao cargo de Presidente da União Soviética.',
       quoteAuthor: 'Mikhail Gorbachev, Discurso de Renúncia Transmitido ao Mundo em 25 de dezembro de 1991'
+    }
+  ],
+
+  111: [
+    {
+      title: 'Os Campos da Morte do Tuol Sleng (S-21): O Delírio Agrário de Pol Pot',
+      location: 'Escola Secundária Tuol Svay Prey, Phnom Penh, Camboja',
+      narrative: `Em 17 de abril de 1975, guerrilheiros do Khmer Vermelho liderados por Saloth Sar (Pol Pot) marcharam sobre Phnom Penh. Em 72 horas, sob a justificativa de que um bombardeio americano era iminente, toda a população urbana de 2,5 milhões de pessoas foi expulsa a pé para os arrozais do campo: hospitais foram esvaziados à força e pacientes operados caminhavam empurrando seus próprios suportes de soro até morrerem na poeira das estradas. O regime proclamou o "Ano Zero", aboliu o dinheiro, a propriedade privada, os telefones, as escolas e as famílias.
+      
+Na capital deserta, a antiga escola secundária Tuol Svay Prey foi convertida na prisão secreta de tortura S-21 (Tuol Sleng), chefiada pelo sádico ex-professor de matemática Kaing Guek Eav (conhecido pelo codinome "Duch"). No local, mais de 18.000 pessoas — intelectuais, médicos, professores, pessoas que usavam óculos (acusadas de serem "parasitas burgueses letrados") e membros do próprio partido sob suspeita de traição — foram fotografadas de frente e de perfil com números de arquivo no peito antes de serem torturadas sistematicamente com choques elétricos e afogamento para confessarem que eram "espiões da CIA e da KGB".
+      
+Após assinarem confissões forjadas delirantes, os prisioneiros eram transportados à noite em caminhões até o pomar de Choeung Ek (os infames "Killing Fields"), onde eram forçados a se ajoelhar à beira de fossas comuns e executados não com balas (para economizar munição), mas com pancadas de barras de ferro e pás na base do crânio. Entre 1975 e 1979, o delírio utópico do Khmer Vermelho exterminou entre 1,7 e 2,2 milhões de cambojanos — quase um quarto de toda a população da nação.`,
+      eyewitnessOrDocQuote: 'Destruir você não é nenhuma perda; preservar você não traz nenhum proveito.',
+      quoteAuthor: 'Lema oficial da Angkar (Organização Central do Khmer Vermelho) repetido aos prisioneiros'
     }
   ],
 

@@ -67,11 +67,8 @@ export const ACADEMIC_CHAPTERS: Record<number, AcademicChapter> = {
 
   15: CHAPTER_15,
 
-  16: CHAPTER_16,
-
-  17: CHAPTER_17,
-
-  18: CHAPTER_18,
-  19: CHAPTER_19,
-  20: CHAPTER_20
+  16: CHAPTER_17,
+  17: CHAPTER_18,
+  18: CHAPTER_19,
+  19: CHAPTER_20
 };

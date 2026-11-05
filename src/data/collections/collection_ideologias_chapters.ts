@@ -1,4 +1,5 @@
 import { AcademicChapter } from '../academicChaptersDatabase';
+import { CHAPTER_16 } from '../chapters/chapter_16';
 
 export const IDEOLOGIAS_CHAPTERS: Record<number, AcademicChapter> = {
   // =========================================================================
@@ -694,5 +695,13 @@ export const IDEOLOGIAS_CHAPTERS: Record<number, AcademicChapter> = {
       'FRIEDRICH, Carl J.; BRZEZINSKI, Zbigniew. Totalitarian Dictatorship and Autocracy. Cambridge: Harvard University Press, 1956.',
       'LINZ, Juan. Totalitarian and Authoritarian Regimes. Boulder: Lynne Rienner Publishers, 2000.'
     ]
+  },
+
+  // =========================================================================
+  // CAPÍTULO 11 (TÓPICO 111): O COMUNISMO INTERNACIONAL
+  // =========================================================================
+  111: {
+    ...CHAPTER_16,
+    topicId: 111
   }
 };
