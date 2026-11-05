@@ -21,7 +21,7 @@ import { CHAPTER_20 } from './chapters/chapter_20';
 export interface AcademicChapterSection {
   number: string;
   title: string;
-  content: string;
+  content?: string;
   subsections?: {
     number: string;
     title: string;

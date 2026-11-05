@@ -17,6 +17,9 @@ import {
 } from 'lucide-react';
 import { AppTheme, THEME_OPTIONS } from '../utils/theme';
 import { AppFontSize, FONT_SIZE_OPTIONS } from '../utils/fontSize';
+import { CollectionId } from '../types/collection';
+import { COLLECTIONS_REGISTRY, getCollectionById } from '../data/collections/collectionsMeta';
+import { playTypewriterClack } from '../utils/audio';
 
 interface HeaderProps {
   currentTab: 'dossiers' | 'roulette' | 'timeline' | 'sources' | 'quiz';
@@ -29,6 +32,8 @@ interface HeaderProps {
   onSelectTheme: (theme: AppTheme) => void;
   fontSize: AppFontSize;
   onSelectFontSize: (size: AppFontSize) => void;
+  activeCollectionId: CollectionId;
+  onSelectCollection: (id: CollectionId) => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -42,14 +47,25 @@ export const Header: React.FC<HeaderProps> = ({
   onSelectTheme,
   fontSize,
   onSelectFontSize,
+  activeCollectionId,
+  onSelectCollection,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const activeCol = getCollectionById(activeCollectionId);
 
   const navItems = [
-    { id: 'dossiers' as const, label: '20 Temas', icon: Layers },
+    { 
+      id: 'dossiers' as const, 
+      label: activeCollectionId === 'colecao-2' ? '10 Capítulos' : '20 Temas', 
+      icon: Layers 
+    },
     { id: 'roulette' as const, label: 'Roleta de Curiosidades', icon: Compass },
     { id: 'timeline' as const, label: 'Linha do Tempo', icon: Calendar },
-    { id: 'sources' as const, label: 'Acervos & Monografias', icon: BookOpen },
+    { 
+      id: 'sources' as const, 
+      label: activeCollectionId === 'colecao-2' ? '40 Especialistas' : 'Acervos & Monografias', 
+      icon: BookOpen 
+    },
     { id: 'quiz' as const, label: 'Desafio Histórico', icon: HelpCircle },
   ];
 
@@ -80,17 +96,75 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <>
-      <header className="sticky top-0 z-40 bg-[#121214]/95 backdrop-blur border-b border-stone-800/80 px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4 transition-colors">
-        {/* Zone 1: Brand Wordmark (Clean button without box or border) */}
-        <div className="flex items-center gap-2 shrink-0">
-          <button
-            onClick={() => onSelectTab('dossiers')}
-            className="brand-btn nav-btn-clean text-sm sm:text-base md:text-lg font-display font-bold tracking-tight text-stone-100 hover:text-amber-400 transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 sm:gap-2 text-left min-h-[44px] border-0 bg-transparent shadow-none"
-          >
-            <span className="w-2.5 h-2.5 rounded-full bg-red-600 inline-block shrink-0"></span>
-            <span>DOSSIÊ SOVIÉTICO</span>
-          </button>
+      <div className="sticky top-0 z-40">
+        {/* Top Archival Collection Switcher Ribbon */}
+        <div className="bg-[#0b0b0d] border-b border-stone-800/90 px-3 sm:px-6 lg:px-8 py-1.5 text-xs flex items-center justify-between gap-2 overflow-x-auto no-scrollbar">
+          <div className="flex items-center gap-1.5 sm:gap-2 text-stone-400 font-mono text-[11px] shrink-0">
+            <Layers className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+            <span className="hidden sm:inline font-semibold text-stone-300">Coleções do Acervo:</span>
+          </div>
+
+          <div className="flex items-center gap-1 sm:gap-1.5 shrink-0">
+            {COLLECTIONS_REGISTRY.map((col) => {
+              const isSelected = activeCollectionId === col.id;
+              const isUpcoming = col.status === 'em_breve';
+
+              return (
+                <button
+                  key={col.id}
+                  disabled={isUpcoming}
+                  onClick={() => {
+                    if (!isUpcoming) {
+                      playTypewriterClack();
+                      onSelectCollection(col.id);
+                    }
+                  }}
+                  title={isUpcoming ? 'Coleção III — História das Guerras Mundiais (Em Breve / Futuro)' : `${col.title}: ${col.subtitle}`}
+                  className={`px-2.5 py-1 rounded text-[11px] font-mono transition-all flex items-center gap-1.5 whitespace-nowrap min-h-[28px] ${
+                    isSelected
+                      ? 'bg-stone-800 text-amber-400 font-bold border border-amber-500/60 shadow-sm'
+                      : isUpcoming
+                      ? 'opacity-40 text-stone-500 cursor-not-allowed bg-stone-900/40 border border-stone-800/40'
+                      : 'text-stone-300 hover:text-stone-100 hover:bg-stone-800/60 bg-stone-900/60 border border-stone-800'
+                  }`}
+                >
+                  <span className="font-bold text-[10px] px-1 py-0.2 rounded bg-black/40">
+                    {col.romanNumeral}
+                  </span>
+                  <span className="hidden md:inline font-sans">{col.title}</span>
+                  <span className="md:hidden font-sans">{col.shortTitle}</span>
+                  {isSelected && (
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0 animate-pulse" />
+                  )}
+                  {isUpcoming && (
+                    <span className="text-[9px] text-stone-500 uppercase font-mono">(Em Breve)</span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
         </div>
+
+        {/* Main Sticky Header */}
+        <header className="bg-[#121214]/95 backdrop-blur border-b border-stone-800/80 px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4 transition-colors">
+          {/* Zone 1: Brand Wordmark (Clean button without box or border) */}
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              onClick={() => onSelectTab('dossiers')}
+              className="brand-btn nav-btn-clean text-sm sm:text-base md:text-lg font-display font-bold tracking-tight text-stone-100 hover:text-amber-400 transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 sm:gap-2 text-left min-h-[44px] border-0 bg-transparent shadow-none"
+            >
+              <span 
+                className="w-2.5 h-2.5 rounded-full inline-block shrink-0"
+                style={{ backgroundColor: activeCol.accentColor }}
+              />
+              <span className="uppercase">
+                {activeCollectionId === 'colecao-2' ? 'HISTÓRIA DAS IDEOLOGIAS' : 'DOSSIÊ SOVIÉTICO'}
+              </span>
+              <span className="hidden lg:inline text-[10px] font-mono font-normal text-stone-400 px-1.5 py-0.5 rounded bg-stone-800/80 border border-stone-700/60">
+                Coleção {activeCol.romanNumeral}
+              </span>
+            </button>
+          </div>
 
         {/* Zone 2: Desktop nav links (Clean text links without boxes) */}
         <nav className="hidden md:flex items-center gap-4 lg:gap-6 text-xs lg:text-sm font-medium text-stone-300">
@@ -216,6 +290,7 @@ export const Header: React.FC<HeaderProps> = ({
 
         </div>
       </header>
+      </div>
 
       {/* Mobile Floating Side Button for instant lateral menu access from anywhere */}
       <button
@@ -247,9 +322,12 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Panel Top Header */}
             <div className="flex items-center justify-between pb-4 border-b border-stone-800">
               <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-red-600 inline-block"></span>
+                <span 
+                  className="w-2.5 h-2.5 rounded-full inline-block"
+                  style={{ backgroundColor: activeCol.accentColor }}
+                />
                 <span className="font-display font-bold text-sm text-stone-100 uppercase tracking-tight">
-                  Navegação do Acervo
+                  {activeCollectionId === 'colecao-2' ? 'Ideologias Políticas' : 'Dossiê Soviético'}
                 </span>
               </div>
 
@@ -262,10 +340,52 @@ export const Header: React.FC<HeaderProps> = ({
               </button>
             </div>
 
+            {/* Collection Switcher in Mobile Drawer */}
+            <div className="space-y-1.5 pb-4 border-b border-stone-800">
+              <div className="text-[10px] font-mono uppercase text-stone-500 tracking-wider px-1 font-bold">
+                Coleções Historiográficas
+              </div>
+              <div className="space-y-1">
+                {COLLECTIONS_REGISTRY.map((col) => {
+                  const isSelected = activeCollectionId === col.id;
+                  const isUpcoming = col.status === 'em_breve';
+
+                  return (
+                    <button
+                      key={col.id}
+                      disabled={isUpcoming}
+                      onClick={() => {
+                        if (!isUpcoming) {
+                          playTypewriterClack();
+                          onSelectCollection(col.id);
+                          setMobileMenuOpen(false);
+                        }
+                      }}
+                      className={`w-full text-left p-2.5 rounded-lg text-xs font-medium flex items-center justify-between border transition-all ${
+                        isSelected
+                          ? 'bg-amber-500/15 text-amber-300 border-amber-500/60 font-bold shadow'
+                          : isUpcoming
+                          ? 'opacity-40 text-stone-500 cursor-not-allowed bg-stone-900/40 border-stone-800/40'
+                          : 'bg-stone-900/80 text-stone-300 hover:bg-stone-800 border-stone-800'
+                      }`}
+                    >
+                      <div className="flex items-center gap-2">
+                        <span className="font-mono font-bold text-amber-500">{col.romanNumeral}.</span>
+                        <span>{col.title}</span>
+                      </div>
+                      <span className="text-[10px] font-mono text-stone-500">
+                        {isUpcoming ? 'Em Breve' : `${col.chapterCount} Cap.`}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
             {/* Primary Lateral Navigation Buttons */}
             <div className="space-y-2 flex-1">
               <div className="text-[10px] font-mono uppercase text-stone-500 tracking-wider px-1 mb-2 font-bold">
-                Seções do Dossiê
+                Seções do Acervo
               </div>
               
               {navItems.map((item) => {

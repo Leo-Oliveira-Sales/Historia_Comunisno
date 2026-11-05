@@ -17,7 +17,101 @@ interface TimelineEra {
     text: string;
     author: string;
   };
+  topicIds?: number[];
 }
+
+const IDEOLOGIAS_TIMELINE_ERAS: TimelineEra[] = [
+  {
+    periodKey: '1689-1789',
+    topicIds: [101],
+    title: 'Iluminismo, Razão Crítica e Teoria Contratualista',
+    dateRange: '1689 – 1789',
+    summary: 'A emancipação intelectual pela razão crítica, a contestação do absolutismo de direito divino e a formulação pioneira dos direitos naturais inalienáveis (Locke, Montesquieu, Rousseau).',
+    milestones: [
+      '1689: John Locke publica o Segundo Tratado sobre o Governo Civil e estabelece os direitos naturais',
+      '1748: Montesquieu formula a separação e contenção tripartite dos poderes em O Espírito das Leis',
+      '1762: Jean-Jacques Rousseau formula a Vontade Geral e a soberania popular em Do Contrato Social',
+      '1776: Adam Smith publica A Riqueza das Nações e funda a economia política clássica',
+      '1784: Immanuel Kant publica Resposta à Pergunta: O que é o Iluminismo? (Sapere aude!)'
+    ],
+    quote: {
+      text: 'Ouse saber! Tenha a coragem de fazer uso do seu próprio entendimento.',
+      author: 'Immanuel Kant (1784)'
+    }
+  },
+  {
+    periodKey: '1789-1848',
+    topicIds: [102, 103, 104],
+    title: 'A Dupla Revolução: Capitalismo Industrial e Ruptura Liberal',
+    dateRange: '1789 – 1848',
+    summary: 'A Revolução Francesa derruba os privilégios estamentais feudais e proclama os Direitos do Homem, enquanto a Revolução Industrial mecanizada impõe o mercado autorregulado e gera as primeiras correntes socialistas e o anarquismo.',
+    milestones: [
+      '1789: Tomada da Bastilha e proclamação da Declaração dos Direitos do Homem e do Cidadão',
+      '1793-1794: O Terror jacobino liderado por Robespierre sob o Comitê de Salvação Pública',
+      '1819: Benjamin Constant pronuncia o discurso sobre a Liberdade dos Antigos e dos Modernos',
+      '1832: Relatório Sadler denuncia no Parlamento britânico a barbárie do trabalho fabril infantil',
+      '1840: Pierre-Joseph Proudhon publica O que é a Propriedade? e funda o mutualismo libertário'
+    ],
+    quote: {
+      text: 'A liberdade dos modernos é o direito de não estar submetido senão às leis e usufruir da independência privada.',
+      author: 'Benjamin Constant (1819)'
+    }
+  },
+  {
+    periodKey: '1848-1914',
+    topicIds: [105, 106],
+    title: 'Marxismo Científico, Movimento Operário e Segunda Internacional',
+    dateRange: '1848 – 1914',
+    summary: 'A Primavera dos Povos de 1848 marca a publicação do Manifesto Comunista. Marx e Engels constroem O Capital, enquanto partidos operários de massas e a Segunda Internacional debatem a via reformista versus a via revolucionária.',
+    milestones: [
+      'Fev/1848: Publicação do Manifesto do Partido Comunista por Marx e Engels em Londres',
+      '1864: Fundação da Associação Internacional dos Trabalhadores (AIT / Primeira Internacional)',
+      '1867: Publicação do Livro I d’O Capital por Karl Marx em Hamburgo',
+      '1871: Insurreição da Comuna de Paris e a primeira experiência de governo operário de massas',
+      '1889-1899: Fundação da Segunda Internacional e o debate revisionista liderado por Eduard Bernstein'
+    ],
+    quote: {
+      text: 'Os proletários nada têm a perder além de seus grilhões. Têm um mundo a ganhar.',
+      author: 'Karl Marx e Friedrich Engels (1848)'
+    }
+  },
+  {
+    periodKey: '1914-1945',
+    topicIds: [106, 107, 108],
+    title: 'Guerras Ideológicas: Revolução Bolchevique, Fascismo e Nazismo',
+    dateRange: '1914 – 1945',
+    summary: 'A Primeira Guerra Mundial desintegra os impérios europeus. A insurreição de Outubro de 1917 instaura o regime bolchevique na Rússia, enquanto a Itália e a Alemanha capitulam ao terror do Fascismo e do Nazismo racial.',
+    milestones: [
+      'Out/1917: Insurreição bolchevique de Lenin e Trotsky na Rússia e criação da polícia política Cheka',
+      'Out/1922: Benito Mussolini comanda a Marcha sobre Roma dos camisas-negras e assume o poder',
+      'Abr/1927: Promulgação da Carta del Lavoro e fechamento dos sindicatos pelo Estado Corporativo',
+      'Jan/1933: Adolf Hitler é nomeado chanceler e decreta o estado policial do Terceiro Reich',
+      'Jan/1942: Conferência de Wannsee coordena a execução industrial da Solução Final (Shoah)'
+    ],
+    quote: {
+      text: 'Tudo no Estado, nada contra o Estado, nada fora do Estado.',
+      author: 'Benito Mussolini e Giovanni Gentile (1932)'
+    }
+  },
+  {
+    periodKey: '1945-presente',
+    topicIds: [109, 110],
+    title: 'O Consenso do Pós-Guerra: Bem-Estar Social e Democracia Liberal',
+    dateRange: '1945 – Presente',
+    summary: 'A reconstrução democrática do pós-Segunda Guerra: a institucionalização do Estado de Bem-Estar Social (Welfare State) pelo modelo keynesiano, a Declaração Universal da ONU e a consolidação do pluralismo.',
+    milestones: [
+      '1942-1948: Relatório Beveridge e criação do National Health Service (NHS) britânico gratuito',
+      'Dez/1948: Assembleia Geral da ONU aprova a Declaração Universal dos Direitos Humanos em Paris',
+      'Nov/1959: Congresso de Bad Godesberg: o SPD alemão abandona formalmente o marxismo revolucionário',
+      '1971: John Rawls publica Uma Teoria da Justiça e reabilita o contratualismo com justiça social',
+      '1989-1991: Queda do Muro de Berlim, dissolução da URSS e os desafios contemporâneos do pluralismo'
+    ],
+    quote: {
+      text: 'O pluralismo político é o reconhecimento inegociável de que os valores humanos são múltiplos e conflitantes.',
+      author: 'Isaiah Berlin (1958)'
+    }
+  }
+];
 
 const TIMELINE_ERAS: TimelineEra[] = [
   {
@@ -126,30 +220,43 @@ const TIMELINE_ERAS: TimelineEra[] = [
 ];
 
 export const TimelineView: React.FC<TimelineViewProps> = ({ topics, onSelectTopic }) => {
+  const isIdeologias = topics.length > 0 && topics[0].id >= 101;
+  const erasToRender = isIdeologias ? IDEOLOGIAS_TIMELINE_ERAS : TIMELINE_ERAS;
+
   return (
     <div className="space-y-8">
       {/* Introduction Banner */}
       <div className="bg-[#17171a] border border-stone-800 rounded-xl p-4 sm:p-6 shadow-lg">
         <div className="flex items-center gap-2 text-xs font-mono text-amber-500 mb-2">
           <Calendar className="w-4 h-4" />
-          <span>CRONOLOGIA HISTÓRICA DOCUMENTADA · 1905 A 1991</span>
+          <span>
+            {isIdeologias
+              ? 'CRONOLOGIA DAS IDEOLOGIAS POLÍTICAS · 1689 A CONTEMPORANEIDADE'
+              : 'CRONOLOGIA HISTÓRICA DOCUMENTADA · 1905 A 1991'}
+          </span>
         </div>
         <h2 className="text-xl sm:text-2xl font-display font-bold text-stone-100">
-          Linha do Tempo dos Governos e Crises da União Soviética
+          {isIdeologias
+            ? 'Linha do Tempo das Grandes Matrizes Ideológicas e Regimes Modernos'
+            : 'Linha do Tempo dos Governos e Crises da União Soviética'}
         </h2>
         <p className="text-xs sm:text-sm text-stone-300 font-serif mt-2 max-w-3xl leading-relaxed">
-          Navegue pelas seis grandes eras do poder soviético, desde as revoluções do início do século XX até a dissolução em dezembro de 1991. Cada era contém marcos verificados e dossiês acadêmicos associados.
+          {isIdeologias
+            ? 'Acompanhe as cinco grandes eras da evolução política contemporânea: do Iluminismo e liberalismo clássico à Primavera dos Povos, marxismo, guerras ideológicas, ascensão do fascismo e consolidação do Estado de Bem-Estar Social.'
+            : 'Navegue pelas seis grandes eras do poder soviético, desde as revoluções do início do século XX até a dissolução em dezembro de 1991. Cada era contém marcos verificados e dossiês acadêmicos associados.'}
         </p>
       </div>
 
       {/* Vertical Stepper Timeline */}
       <div className="space-y-6 sm:space-y-8 relative before:absolute before:inset-0 before:left-3.5 sm:before:left-7 before:w-0.5 before:bg-stone-800 before:pointer-events-none">
-        {TIMELINE_ERAS.map((era, index) => {
+        {erasToRender.map((era, index) => {
           // Find matching topics for this era
-          const eraTopics = topics.filter((t) => {
-            if (era.periodKey === 'todos') return false;
-            return t.period === era.periodKey;
-          });
+          const eraTopics = isIdeologias
+            ? topics.filter((t) => era.topicIds?.includes(t.id))
+            : topics.filter((t) => {
+                if (era.periodKey === 'todos') return false;
+                return t.period === era.periodKey;
+              });
 
           return (
             <div key={index} className="relative pl-7 sm:pl-16 space-y-4">

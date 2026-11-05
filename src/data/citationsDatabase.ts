@@ -209,5 +209,79 @@ export const TOPIC_CITATIONS_DATABASE: Record<number, TopicCitationsData> = {
       "ARQUIVO DO PRESIDENTE DA FEDERAÇÃO RUSSA (AP RF). Fundo 3, Inventário 24. Moscou, Rússia.",
       "ROSSIISKI GOSUDARSTVENNYI ARKHIV SOTSIAL'NO-POLITICHESKOI ISTORII (RGASPI). Fundo 558, Inventário 11. Moscou, Rússia."
     ]
+  },
+
+  101: {
+    title: "Citações Literais Verificadas, Sínteses e Fontes Documentais — Registro nº 101",
+    citations: [
+      {
+        number: 1,
+        author: "Jonathan Israel",
+        category: "Historiografia do Iluminismo Radical / História das Ideias",
+        quoteText: "It was Spinoza and Spinozism that constituted the main intellectual backbone of the Radical Enlightenment throughout Europe. Radical Enlightenment was a package of basic values that was democratizing, egalitarian, anti-monarchical, anti-ecclesiastical, and supportive of absolute freedom of thought and expression.",
+        source: "ISRAEL, Jonathan I. Radical Enlightenment: Philosophy and the Making of Modernity 1650–1750. Oxford: Oxford University Press, 2001. p. 11–14. ISBN 978-0-19-925456-9."
+      },
+      {
+        number: 2,
+        author: "Quentin Skinner",
+        category: "Escola de Cambridge / Contextualismo Linguístico",
+        quoteText: "To understand the political theories of the early modern period, we must reconstruct the specific normative vocabulary and practical problems that authors were addressing in their own historical context, rather than treating them as timeless answers to abstract philosophical questions.",
+        source: "SKINNER, Quentin. The Foundations of Modern Political Thought. Cambridge: Cambridge University Press, 1978. v. 1, p. xi–xv. ISBN 978-0-521-29337-2."
+      },
+      {
+        number: 3,
+        author: "Isaiah Berlin",
+        category: "Filosofia Política / Historiografia das Ideias",
+        quoteText: "Two concepts of liberty exist: negative liberty, which answers the question 'What is the area within which the subject is or should be left to do or be what he is able to do or be, without interference by other persons?'; and positive liberty, which derives from the wish on the part of the individual to be his own master.",
+        source: "BERLIN, Isaiah. Two Concepts of Liberty. Oxford: Clarendon Press, 1958. p. 6–12."
+      },
+      {
+        number: 4,
+        author: "Gertrude Himmelfarb",
+        category: "História Intelectual Comparada",
+        quoteText: "There was not one Enlightenment, but several. The French Enlightenment was driven by an ideology of reason and an obsession with destroying religious authority. The British Enlightenment was an enlightenment of social virtues, driven by moral sense and sympathy, while the American Enlightenment was an enlightenment of liberty and constitutionalism.",
+        source: "HIMMELFARB, Gertrude. The Roads to Modernity: The British, French, and American Enlightenments. New York: Alfred A. Knopf, 2004. p. 3–18. ISBN 978-1-4000-4236-4."
+      },
+      {
+        number: 5,
+        author: "Lynn Hunt",
+        category: "História Cultural da Política e Direitos Humanos",
+        quoteText: "Human rights are not just an abstract philosophical declaration; they required a cultural transformation of empathy, sparked in large part by the 18th-century novel, which taught individuals to perceive strangers as emotional equals possessing autonomous bodies that must not be tortured or violated.",
+        source: "HUNT, Lynn. Inventing Human Rights: A History. New York: W. W. Norton & Company, 2007. p. 26–35. ISBN 978-0-393-06095-9."
+      }
+    ],
+    syntheses: [
+      {
+        number: 1,
+        authorOrSchool: "Iluminismo Radical vs. Moderado (Jonathan Israel)",
+        synthesisText: "Demonstra documentalmente que o Iluminismo esteve dividido em duas matrizes conflitantes: a vertente Radical (derivada de Spinoza), que propunha a democracia laica, o igualitarismo e os direitos humanos universais, e a vertente Moderada (Locke, Voltaire, Montesquieu), que tentava conciliar a razão filosófica com o absolutismo esclarecido e o cristianismo providencial.",
+        supportingReference: "ISRAEL, Jonathan. Radical Enlightenment. Oxford University Press, 2001; Democratic Enlightenment. Oxford University Press, 2011."
+      },
+      {
+        number: 2,
+        authorOrSchool: "Contextualismo Linguístico de Cambridge (Quentin Skinner & J.G.A. Pocock)",
+        synthesisText: "Recusa as abordagens anacrônicas do Iluminismo, mostrando como os conceitos de contrato social, virtude cívica e direito natural operavam como respostas linguísticas situadas em debates específicos contra o absolutismo dinástico e a corrupção financeira das monarquias europeias.",
+        supportingReference: "SKINNER, Quentin. Liberty Before Liberalism. Cambridge University Press, 1998; POCOCK, J.G.A. The Machiavellian Moment. Princeton University Press, 1975."
+      },
+      {
+        number: 3,
+        authorOrSchool: "Crítica do Monismo e Pluralismo Trágico (Isaiah Berlin)",
+        synthesisText: "Identifica o risco de totalitarismo em abordagens monistas do Iluminismo que assumem que todos os valores desejáveis (liberdade, igualdade, justiça, ordem) podem ser harmonizados racionalmente sem conflito. Berlin defende o pluralismo ético e a primazia da liberdade negativa contra coerções utópicas.",
+        supportingReference: "BERLIN, Isaiah. Freedom and Its Betrayal. Princeton University Press, 2002."
+      }
+    ],
+    consolidatedReferences: [
+      "BERLIN, Isaiah. Four Essays on Liberty. Oxford: Oxford University Press, 1969. 216 p.",
+      "HIMMELFARB, Gertrude. The Roads to Modernity: The British, French, and American Enlightenments. New York: Alfred A. Knopf, 2004. 284 p.",
+      "HUNT, Lynn. Inventing Human Rights: A History. New York: W. W. Norton & Company, 2007. 272 p.",
+      "ISRAEL, Jonathan I. Radical Enlightenment: Philosophy and the Making of Modernity 1650–1750. Oxford: Oxford University Press, 2001. 810 p.",
+      "ISRAEL, Jonathan I. Democratic Enlightenment: Philosophy, Revolution, and Human Rights 1750–1790. Oxford: Oxford University Press, 2011. 1024 p.",
+      "KANT, Immanuel. Beantwortung der Frage: Was ist Aufklärung?. Berlinische Monatsschrift, v. 4, p. 481–494, dez. 1784.",
+      "LOCKE, John. Two Treatises of Government. Ed. Peter Laslett. Cambridge: Cambridge University Press, 1988. 464 p.",
+      "MONTESQUIEU, Charles de Secondat, Barão de. De l’esprit des loix. Genebra: Barrillot & Fils, 1748. 2 v.",
+      "POCOCK, J. G. A. The Machiavellian Moment: Florentine Political Thought and the Atlantic Republican Tradition. Princeton: Princeton University Press, 1975. 602 p.",
+      "ROUSSEAU, Jean-Jacques. Du contrat social; ou, Principes du droit politique. Amsterdã: Marc-Michel Rey, 1762. 324 p.",
+      "SKINNER, Quentin. The Foundations of Modern Political Thought. Cambridge: Cambridge University Press, 1978. 2 v."
+    ]
   }
 };

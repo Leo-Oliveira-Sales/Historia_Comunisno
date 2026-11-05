@@ -3,6 +3,7 @@ import { DossierTopic, HistoricalPeriod } from '../types/dossier';
 import { HISTORICAL_PERIODS } from '../data/dossierDatabase';
 import { CANONICAL_EDITORIAL_DATABASE } from '../data/canonicalEditorialDatabase';
 import { ACADEMIC_CHAPTERS } from '../data/academicChaptersDatabase';
+import { IDEOLOGIAS_CHAPTERS } from '../data/collections/collection_ideologias_chapters';
 import { Search, BookOpen, Bookmark, BookmarkCheck, FileCheck, Layers, GraduationCap, Award } from 'lucide-react';
 import { playTypewriterClack, playStampSound } from '../utils/audio';
 
@@ -22,11 +23,24 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedPeriod, setSelectedPeriod] = useState<HistoricalPeriod>('todos');
+  const [selectedBlock, setSelectedBlock] = useState<string>('todos');
+
+  const isIdeologias = topics.length > 0 && topics[0].id >= 101;
 
   const filteredTopics = useMemo(() => {
     return topics.filter((t) => {
-      const matchesPeriod = selectedPeriod === 'todos' || t.period === selectedPeriod;
-      if (!matchesPeriod) return false;
+      if (isIdeologias) {
+        if (selectedBlock !== 'todos') {
+          if (selectedBlock === '1-2' && !(t.id === 101 || t.id === 102)) return false;
+          if (selectedBlock === '3-4' && !(t.id === 103 || t.id === 104)) return false;
+          if (selectedBlock === '5-6' && !(t.id === 105 || t.id === 106)) return false;
+          if (selectedBlock === '7-8' && !(t.id === 107 || t.id === 108)) return false;
+          if (selectedBlock === '9-10' && !(t.id === 109 || t.id === 110)) return false;
+        }
+      } else {
+        const matchesPeriod = selectedPeriod === 'todos' || t.period === selectedPeriod;
+        if (!matchesPeriod) return false;
+      }
 
       if (!searchTerm.trim()) return true;
       const q = searchTerm.toLowerCase();
@@ -41,7 +55,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
 
       return inTitle || inCategory || inSummary || inSubjects || inActors || inSources;
     });
-  }, [topics, selectedPeriod, searchTerm]);
+  }, [topics, isIdeologias, selectedBlock, selectedPeriod, searchTerm]);
 
   return (
     <div className="space-y-6">
@@ -69,44 +83,75 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
           </div>
         </div>
 
-        {/* Period Filter Buttons / Segmented Controls with smooth touch scrolling */}
+        {/* Filter Buttons / Segmented Controls with smooth touch scrolling */}
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs touch-pan-x no-scrollbar">
-          {HISTORICAL_PERIODS.map((period) => {
-            const isActive = selectedPeriod === period.id;
-            return (
-              <button
-                key={period.id}
-                onClick={() => {
-                  playTypewriterClack();
-                  setSelectedPeriod(period.id as HistoricalPeriod);
-                }}
-                className={`px-3 py-2 min-h-[38px] rounded-md font-medium whitespace-nowrap transition-colors shrink-0 flex items-center justify-center ${
-                  isActive
-                    ? 'bg-amber-500 text-stone-950 font-semibold shadow-sm'
-                    : 'bg-stone-800/80 text-stone-400 hover:text-stone-200 hover:bg-stone-700/80'
-                }`}
-              >
-                {period.label}
-              </button>
-            );
-          })}
+          {isIdeologias ? (
+            [
+              { id: 'todos', label: 'Todos os 10 Capítulos' },
+              { id: '1-2', label: '1–2. Iluminismo & Liberalismo' },
+              { id: '3-4', label: '3–4. Capitalismo & Socialismo' },
+              { id: '5-6', label: '5–6. Marxismo & Comunismo' },
+              { id: '7-8', label: '7–8. Fascismo & Nazismo' },
+              { id: '9-10', label: '9–10. Democracia & Síntese' },
+            ].map((blk) => {
+              const isActive = selectedBlock === blk.id;
+              return (
+                <button
+                  key={blk.id}
+                  onClick={() => {
+                    playTypewriterClack();
+                    setSelectedBlock(blk.id);
+                  }}
+                  className={`px-3 py-2 min-h-[38px] rounded-md font-mono text-xs transition-colors shrink-0 flex items-center justify-center ${
+                    isActive
+                      ? 'bg-amber-500 text-stone-950 font-semibold shadow-sm'
+                      : 'bg-stone-800/80 text-stone-400 hover:text-stone-200 hover:bg-stone-700/80'
+                  }`}
+                >
+                  {blk.label}
+                </button>
+              );
+            })
+          ) : (
+            HISTORICAL_PERIODS.map((period) => {
+              const isActive = selectedPeriod === period.id;
+              return (
+                <button
+                  key={period.id}
+                  onClick={() => {
+                    playTypewriterClack();
+                    setSelectedPeriod(period.id as HistoricalPeriod);
+                  }}
+                  className={`px-3 py-2 min-h-[38px] rounded-md font-medium whitespace-nowrap transition-colors shrink-0 flex items-center justify-center ${
+                    isActive
+                      ? 'bg-amber-500 text-stone-950 font-semibold shadow-sm'
+                      : 'bg-stone-800/80 text-stone-400 hover:text-stone-200 hover:bg-stone-700/80'
+                  }`}
+                >
+                  {period.label}
+                </button>
+              );
+            })
+          )}
         </div>
 
         {/* Count and helper text */}
         <div className="flex flex-col xs:flex-row items-start xs:items-center justify-between text-xs text-stone-400 pt-1 border-t border-stone-800/60 font-mono gap-1">
           <span>
-            {filteredTopics.length} de {topics.length} tópicos catalogados
+            {filteredTopics.length} de {topics.length} {isIdeologias ? 'capítulos didáticos' : 'tópicos catalogados'}
           </span>
-          <span className="text-[11px] text-stone-500">Documentação Primária Yale / GHDI / USHMM</span>
+          <span className="text-[11px] text-stone-500">
+            {isIdeologias ? 'Fontes Primárias & Bibliografia dos 40 Especialistas' : 'Documentação Primária Yale / GHDI / USHMM'}
+          </span>
         </div>
       </div>
 
-      {/* Grid of 20 Dossier Cards */}
+      {/* Grid of Dossier Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
         {filteredTopics.map((topic) => {
           const isSaved = savedTopicIds.includes(topic.id);
           const canonicalDossier = CANONICAL_EDITORIAL_DATABASE[topic.id];
-          const chapter = ACADEMIC_CHAPTERS[topic.id];
+          const chapter = ACADEMIC_CHAPTERS[topic.id] || IDEOLOGIAS_CHAPTERS[topic.id];
           const primaryCount = topic.primarySources.length;
           const refCount = canonicalDossier?.bibliografia?.length || chapter?.bibliographicReferences?.length || 0;
 

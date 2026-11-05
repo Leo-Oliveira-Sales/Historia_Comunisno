@@ -140,6 +140,20 @@ export const CHRONOLOGIES_BY_TOPIC: Record<number, ChronologyMilestone[]> = {
     { date: '9 de novembro de 1989', event: 'Queda do Muro de Berlim e Colapso dos Satélites', significance: 'Fim da Cortina de Ferro na Europa após Gorbachev declarar que o Exército Vermelho não interviria contra protestos populares.' },
     { date: '19–21 de agosto de 1991', event: 'Tentativa de Golpe da Linha-Dura (GKChP) em Moscou', significance: 'Militares e o KGB tentam tomar o poder; a resistência popular liderada por Boris Yeltsin sepulta a autoridade do PCUS.' },
     { date: '25 de dezembro de 1991', event: 'Arriamento da Bandeira Soviética no Kremlin', significance: 'Gorbachev renuncia oficialmente ao cargo de presidente; a URSS deixa formalmente de existir no direito internacional.' }
+  ],
+  101: [
+    { date: '1651', event: 'Publicação de Leviatã por Thomas Hobbes', significance: 'Inauguração da teoria contratualista moderna e laica, justificando a soberania pelo pacto social em vez do direito divino.' },
+    { date: '1670', event: 'Publicação do Tratado Teológico-Político por Spinoza', significance: 'Marco fundacional do Iluminismo Radical, defendendo a liberdade de expressão, a crítica bíblica e a democracia.' },
+    { date: '1688–1689', event: 'Revolução Gloriosa e aprovação do Bill of Rights', significance: 'Consolidação da Monarquia Parlamentar na Inglaterra e limitação formal do poder absoluto da Coroa.' },
+    { date: '1689', event: 'Publicação dos Dois Tratados sobre o Governo Civil por Locke', significance: 'Formulação clássica do liberalismo político, direitos naturais (vida, liberdade, propriedade) e direito à insurreição.' },
+    { date: '1748', event: 'Publicação de O Espírito das Leis por Montesquieu', significance: 'Sistematização da separação tripartite de poderes (Executivo, Legislativo, Judiciário) e sistema de freios e contrapesos.' },
+    { date: '1751', event: 'Lançamento do Primeiro Volume da Encyclopédie', significance: 'Monumento intelectual do Iluminismo organizado por Diderot e d’Alembert para difundir o conhecimento racional.' },
+    { date: '1755', event: 'Discurso sobre a Origem da Desigualdade de Rousseau', significance: 'Crítica radical da propriedade privada e das convenções sociais que corromperam a liberdade natural do homem.' },
+    { date: '1762', event: 'Publicação de Do Contrato Social por Rousseau', significance: 'Conceito de Vontade Geral e soberania popular inalienável como fundamento da legitimidade democrática.' },
+    { date: '1776', event: 'Declaração de Independência dos EUA e A Riqueza das Nações', significance: 'Aplicação prática dos ideais iluministas de direitos inalienáveis e fundação da economia política por Adam Smith.' },
+    { date: '1784', event: 'Kant publica Resposta à Pergunta: O que é o Iluminismo?', significance: 'Definição do Iluminismo como emancipação intelectual humana através da coragem de pensar autonomamente (Sapere Aude).' },
+    { date: '1787', event: 'Convenção de Filadélfia e Constituição dos EUA', significance: 'Primeira constituição escrita moderna fundamentada na separação de poderes de Montesquieu e no contratualismo.' },
+    { date: '1789', event: 'Revolução Francesa e Declaração dos Direitos do Homem', significance: 'Consagração universal dos princípios iluministas de liberdade, igualdade, propriedade e resistência à opressão.' }
   ]
 };
 
@@ -537,6 +551,31 @@ Em seu discurso lúcido e melancólico de dez minutos, Gorbachev declarou:
 Às 19h32 exatas, enquanto Gorbachev assinava os papéis de transferência dos códigos nucleares da maleta tcheget para Boris Yeltsin, dois soldados da guarnição do Kremlin subiram à cúpula do Palácio do Senado na Praça Vermelha. Em silêncio absoluto, a gigantesca bandeira vermelha com a foice e o martelo que tremulava no coração do poder soviético desde a Revolução de 1917 foi arriada pela última vez e dobrada. Segundos depois, a bandeira tricolor branca, azul e vermelha da Federação Russa subiu ao mastro sob o céu gélido de inverno. A União Soviética, o império totalitário que moldara com ferro e sangue a história do século XX, desintegrava-se pacificamente sem que um único tiro de canhão fosse disparado.`,
       eyewitnessOrDocQuote: 'O velho sistema ruiu antes que o novo tivesse tempo de entrar em funcionamento. Renuncio ao cargo de Presidente da União Soviética.',
       quoteAuthor: 'Mikhail Gorbachev, Discurso de Renúncia Transmitido ao Mundo em 25 de dezembro de 1991'
+    }
+  ],
+
+  101: [
+    {
+      title: 'A Batalha da Enciclopédia: Diderot, a Censura Real e a Ofensiva do Conhecimento',
+      location: 'Oficina de Impressão de André Le Breton e Salões de Paris',
+      narrative: `Em 1751, quando o primeiro volume da Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers chegou às mãos dos subscritores em Paris, uma onda de choque percorreu a corte de Versalhes e os corredores da Sorbonne. Sob a liderança do filósofo Denis Diderot e do matemático Jean le Rond d'Alembert, o projeto ambicionava nada menos que reunir todo o conhecimento humano acumulado e reordená-lo sob a luz estrita da razão, desferindo golpes letais contra o dogmatismo clerical e os privilégios feudal-absolutistas.
+      
+Em 1752 e novamente em 1759, após a publicação do verbete "Autoridade Política" (no qual Diderot afirmava categoricamente que "nenhum homem recebeu da natureza o direito de comandar os outros"), o Conselho do Rei Luís XV decretou a proibição formal da publicação e a apreensão de todos os exemplares. O Papa Clemente XIII colocou a obra no Index Librorum Prohibitorum sob pena de excomunhão para quem a lesse.
+      
+Apesar do terror das batidas policiais da Bastilha, Diderot recusou-se a fugir. Com a cumplicidade silenciosa de Chrétien-Guillaume de Lamoignon de Malesherbes — o censor real que ironicamente admirava os iluministas e escondeu os manuscritos originais em sua própria casa para evitar que fossem queimados —, Diderot trabalhou clandestinamente durante mais de vinte anos. Imprimindo os volumes restantes em prensas secretas sob o selo de impressores de Neuchâtel e distribuindo os tomos escondidos em fundos falsos de carruagens, a equipe da Encyclopédie concluiu 28 volumes que transformaram irreversivelmente as mentes letradas da Europa.`,
+      eyewitnessOrDocQuote: 'Nenhum homem recebeu da natureza o direito de comandar os outros. A liberdade é um presente do céu, e cada indivíduo da mesma espécie tem o direito de gozar dela logo que goze da razão.',
+      quoteAuthor: 'Denis Diderot, verbete "Autoridade Política" (Autorité Politique) da Encyclopédie (1751)'
+    },
+    {
+      title: 'A Noite em Ferney: Voltaire e a Cruzada Universal contra o Fanatismo Religioso',
+      location: 'Castelo de Ferney, Fronteira Franco-Suíça',
+      narrative: `Em março de 1762, na pequena cidade de Toulouse, o comerciante protestante Jean Calas foi submetido ao suplício da roda, teve todos os ossos quebrados e foi estrangulado em praça pública após ser falsamente acusado pelo parlamento católico local de ter assassinado o próprio filho para impedi-lo de se converter ao catolicismo.
+      
+Ao tomar conhecimento da atrocidade do julgamento sumário motivado por mero ódio confessional, Voltaire — aos 68 anos de idade e vivendo em seu refúgio estratégico em Ferney —, mobilizou uma campanha internacional sem precedentes na história intelectual. Escreveu centenas de cartas a reis, ministros e intelectuais de toda a Europa e publicou em 1763 o monumental Tratado sobre a Tolerância.
+      
+Durante três anos ininterruptos, Voltaire financiou advogados, acolheu a viúva e os filhos de Calas e pressionou o Conselho Real em Paris até obter a anulação formal do julgamento e a reabilitação pública da memória de Jean Calas em 1765. Cada carta escrita pelo filósofo terminava com seu famoso bordão Écrasez l'infâme! (Esmagai a infame!). Essa vitória transformou a opinião pública em uma força política autônoma superior à própria vontade dos tribunais monárquicos.`,
+      eyewitnessOrDocQuote: 'A liberdade de pensar é a vida da alma. Não concordo com uma só palavra do que dizes, mas defenderei até a morte o teu direito de dizê-lo.',
+      quoteAuthor: 'Voltaire, síntese formulada no Tratado sobre a Tolerância e na correspondência de Ferney'
     }
   ]
 };

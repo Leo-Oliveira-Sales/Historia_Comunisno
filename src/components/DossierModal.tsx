@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { DossierTopic } from '../types/dossier';
 import { ACADEMIC_ESSAYS } from '../data/academicEssaysDatabase';
 import { ACADEMIC_CHAPTERS } from '../data/academicChaptersDatabase';
+import { IDEOLOGIAS_CHAPTERS } from '../data/collections/collection_ideologias_chapters';
 import { CHRONOLOGIES_BY_TOPIC, DETAILED_EPISODES_BY_TOPIC } from '../data/detailedHistoricalEpisodes';
 import { getCanonicalEditorialDossier } from '../data/canonicalEditorialDatabase';
 import { RESEARCH_DOSSIERS } from '../data/researchDossiersDatabase';
+import { IDEOLOGIAS_RESEARCH_DOSSIERS } from '../data/collections/collection_ideologias_dossiers';
 import { 
   TOPIC_CITATIONS_DATABASE, 
   TopicCitationEntry, 
@@ -71,11 +73,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const [isMobileIndexOpen, setIsMobileIndexOpen] = useState<boolean>(false);
 
   const essay = ACADEMIC_ESSAYS[topic.id];
-  const chapter = ACADEMIC_CHAPTERS[topic.id];
+  const chapter = ACADEMIC_CHAPTERS[topic.id] || IDEOLOGIAS_CHAPTERS[topic.id];
   const chronologies = CHRONOLOGIES_BY_TOPIC[topic.id] || [];
   const detailedEpisodes = DETAILED_EPISODES_BY_TOPIC[topic.id] || [];
   const canonicalDossier = getCanonicalEditorialDossier(topic.id);
-  const researchDossierText = RESEARCH_DOSSIERS[topic.id];
+  const researchDossierText = RESEARCH_DOSSIERS[topic.id] || IDEOLOGIAS_RESEARCH_DOSSIERS[topic.id];
 
   const copyToClipboard = (text: string, label: string) => {
     navigator.clipboard.writeText(text);
