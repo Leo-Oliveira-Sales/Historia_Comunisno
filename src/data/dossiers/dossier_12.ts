@@ -1,5 +1,5 @@
-// Dossiê Acadêmico Canônico Nº 12 na íntegra sem nenhuma alteração
-export const DOSSIER_12_TEXT = `# DOSSIÊ ACADÊMICO CANÔNICO
+// Dossiê Acadêmico de Pesquisa Nº 12 na íntegra sem nenhuma alteração
+export const DOSSIER_12_TEXT = `# DOSSIÊ ACADÊMICO DE PESQUISA
 
 ## Registro nº 12 — Fomes e Catástrofes Humanitárias de Estado
 

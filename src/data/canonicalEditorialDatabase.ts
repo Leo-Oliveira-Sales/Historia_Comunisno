@@ -2995,7 +2995,7 @@ export const CANONICAL_EDITORIAL_DATABASE: Record<number, StandardEditorialDossi
 };
 
 /**
- * Função utilitária para buscar o dossiê no padrão editorial obrigatório canônico
+ * Função utilitária para buscar o dossiê no padrão editorial obrigatório
  * Se não houver versão customizada para o topicId, gera fallback padronizado com os 8 requisitos estruturais.
  */
 export function getCanonicalEditorialDossier(topicId: number): StandardEditorialDossier {
@@ -3003,11 +3003,11 @@ export function getCanonicalEditorialDossier(topicId: number): StandardEditorial
     return CANONICAL_EDITORIAL_DATABASE[topicId];
   }
 
-  // Gera estrutura canônica rigorosa em caso de tópicos complementares
+  // Gera estrutura padronizada rigorosa em caso de tópicos complementares
   return {
     topicId,
     identificacao: {
-      nomeAcontecimento: `Dossiê Canônico Registro nº ${topicId.toString().padStart(2, '0')}`,
+      nomeAcontecimento: `Dossiê Acadêmico Registro nº ${topicId.toString().padStart(2, '0')}`,
       dataELocalizacao: {
         dataExata: 'Período Histórico Documentado (Verificável em Arquivo)',
         calendarioNotas: 'Conforme cronologia oficial soviética e acervos desclassificados.',

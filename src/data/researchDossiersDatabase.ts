@@ -267,7 +267,7 @@ SOYFER, Valery N. The consequences of political dictatorship for Russian science
 
 ## 1. IDENTIFICAÇÃO
 
-**Registro:** Dossiê Canônico nº 05.
+**Registro:** Dossiê Acadêmico nº 05.
 **Recorte cronológico:** 1928–1985.
 **Local:** União das Repúblicas Socialistas Soviéticas.
 **Instituições centrais:** PCUS, Gosplan, ministérios econômicos, empresas estatais, Kolkhozes e Sovkhozes.
@@ -344,7 +344,7 @@ KIM, Byung-Yeon; SHIDA, Yoshisada. Shortages and the informal economy in the Sov
 
 ## 1. IDENTIFICAÇÃO
 
-**Dossiê canônico:** Registro nº 06
+**Dossiê Acadêmico:** Registro nº 06
 **Período histórico documentado:** 1939–1945
 **Localização:** Europa Oriental, Europa Central, territórios ocidentais da União Soviética e Nordeste da Ásia.
 **Regime analisado:** União das Repúblicas Socialistas Soviéticas, sob a liderança de Josef Stalin.
@@ -1375,7 +1375,7 @@ A ampliação bibliográfica deve identificar a edição consultada, a autoria, 
 
 Este dossiê não corresponde a um único acontecimento, mas a um processo histórico de quase duas décadas. Por isso, sua cronologia reúne a consolidação do movimento comunista internacional, a ascensão dos regimes fascistas, as mudanças de orientação do Komintern e as rupturas políticas ocorridas até 1939.
 
-**Título canônico:** Comunismo e Fascismo: Frentes e Rupturas — Komintern, Antifascismo e Totalitarismo.
+**Título do Dossiê:** Comunismo e Fascismo: Frentes e Rupturas — Komintern, Antifascismo e Totalitarismo.
 
 ### 1.2. Marcos cronológicos
 
@@ -1788,7 +1788,7 @@ Para aprofundar o dossiê, recomenda-se incluir estudos específicos sobre:
 
 A bibliografia deve ser ampliada com referências verificáveis, evitando completar dados editoriais, páginas ou identificadores arquivísticos por suposição.`,
 
-  10: `# DOSSIÊ ACADÊMICO CANÔNICO
+  10: `# DOSSIÊ ACADÊMICO DE PESQUISA
 
 ## Registro nº 10 — Cooperação Militar Teuto-Soviética (1922–1933)
 
@@ -2045,7 +2045,7 @@ WHITE, Stephen. **The Origins of Détente: The Genoa Conference and Soviet-Weste
 
 YALE UNIVERSITY LIBRARY. **Russian State Military Archives Collection**. Instrumento de pesquisa, série I: German-Soviet Military Cooperation. Disponível em: https://ead-pdfs.library.yale.edu/4846.pdf. Acesso em: 26 out. 2026.`,
 
-  11: `# DOSSIÊ ACADÊMICO CANÔNICO
+  11: `# DOSSIÊ ACADÊMICO DE PESQUISA
 
 ## Registro nº 11 — Gulag e Trabalho Forçado
 

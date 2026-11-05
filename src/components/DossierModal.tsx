@@ -36,7 +36,6 @@ import {
   Flame,
   ScrollText,
   CheckCircle2,
-  Award,
   AlertTriangle,
   FileSpreadsheet,
   Menu,
@@ -65,8 +64,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   theme = 'preto',
   onSelectTheme,
 }) => {
-  const [activeTab, setActiveTab] = useState<'chapter' | 'canonical' | 'essay' | 'stories' | 'documents' | 'context' | 'citations' | 'researchDossier'>('chapter');
-  const [activeCanonicalSection, setActiveCanonicalSection] = useState<number | string>(1);
+  const [activeTab, setActiveTab] = useState<'chapter' | 'researchDossier' | 'essay' | 'stories' | 'documents' | 'context' | 'citations'>('chapter');
+  const [activeSection, setActiveSection] = useState<number | string>(1);
   const [copiedCitation, setCopiedCitation] = useState<string | null>(null);
   const [fontSize, setFontSize] = useState<'sm' | 'base' | 'lg'>('base');
   const [isMobileIndexOpen, setIsMobileIndexOpen] = useState<boolean>(false);
@@ -296,25 +295,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       text += `Conclusão:\n${chapter.conclusion}\n\n`;
     }
 
-    if (canonicalDossier) {
-      text += `--- PADRÃO EDITORIAL CANÔNICO (7 SEÇÕES) ---\n`;
-      text += `1. IDENTIFICAÇÃO:\n${canonicalDossier.identificacao.nomeAcontecimento}\nData: ${canonicalDossier.identificacao.dataELocalizacao.dataExata}\nLocal: ${canonicalDossier.identificacao.dataELocalizacao.localizacaoPrecisa}\nRegime: ${canonicalDossier.identificacao.governoEResponsaveis.regimeVigente}\n\n`;
-      text += `2. CONTEXTO HISTÓRICO:\n${canonicalDossier.contextoHistorico.situacaoAnterior}\nCausas Políticas: ${canonicalDossier.contextoHistorico.causasPoliticas}\nCausas Econômicas: ${canonicalDossier.contextoHistorico.causasEconomicas}\nCausas Sociais: ${canonicalDossier.contextoHistorico.causasSociais}\n\n`;
-      text += `3. NARRATIVA CRONOLÓGICA:\n${canonicalDossier.narrativaCronologica.sinteseNarrativaGeral}\n`;
-      canonicalDossier.narrativaCronologica.acontecimentosEmOrdem.forEach(e => {
-        text += `- ${e.dataExata}: ${e.acontecimento} (${e.decisoesTomadas})\n`;
-      });
-      text += `\n4. DOCUMENTOS E PROVAS:\n`;
-      canonicalDossier.documentosEEvidencias.documentosOriginais.forEach(d => {
-        text += `• ${d.titulo} [${d.fundoArquivistico} / ${d.instituicaoGuarda}]\n  ${d.descricaoConteudo}\n`;
-      });
-      text += `\n5. RESPONSABILIDADES E VÍTIMAS:\n${canonicalDossier.responsabilidadesEConsequencias.vitimasEImpactos.estimativasQuantitativas}\nConsequências Imediatas: ${canonicalDossier.responsabilidadesEConsequencias.consequenciasImediatas}\nConsequências a Longo Prazo: ${canonicalDossier.responsabilidadesEConsequencias.consequenciasLongoPrazo}\n\n`;
-      text += `6. DEBATE HISTORIOGRÁFICO:\nConsenso: ${canonicalDossier.debateHistoriografico.consensosAcademicos}\nControvérsias e Limitações: ${canonicalDossier.debateHistoriografico.controversiasELimitacoesDasFontes}\n\n`;
-      text += `7. BIBLIOGRAFIA DE REFERÊNCIA:\n`;
-      canonicalDossier.bibliografia.forEach(b => {
-        text += `• ${b.entradaAbnt} (${b.isbnOuReferencia || b.tipoFonte})\n`;
-      });
-    }
+
 
     copyToClipboard(text, 'complete_master_dossier');
   };
@@ -334,31 +315,6 @@ export const DossierModal: React.FC<DossierModalProps> = ({
     copyToClipboard(fullText, 'full_essay');
   };
 
-  const copyCanonicalDossier = () => {
-    if (!canonicalDossier) return;
-    let text = `==========================================================\n`;
-    text += `PADRÃO EDITORIAL OBRIGATÓRIO (7 SEÇÕES CANÔNICAS)\n`;
-    text += `${canonicalDossier.identificacao.nomeAcontecimento.toUpperCase()}\n`;
-    text += `==========================================================\n\n`;
-    text += `1. IDENTIFICAÇÃO:\n${canonicalDossier.identificacao.nomeAcontecimento}\nData: ${canonicalDossier.identificacao.dataELocalizacao.dataExata}\nLocal: ${canonicalDossier.identificacao.dataELocalizacao.localizacaoPrecisa}\nRegime: ${canonicalDossier.identificacao.governoEResponsaveis.regimeVigente}\n\n`;
-    text += `2. CONTEXTO HISTÓRICO:\n${canonicalDossier.contextoHistorico.situacaoAnterior}\nCausas Políticas: ${canonicalDossier.contextoHistorico.causasPoliticas}\nCausas Econômicas: ${canonicalDossier.contextoHistorico.causasEconomicas}\nCausas Sociais: ${canonicalDossier.contextoHistorico.causasSociais}\n\n`;
-    text += `3. NARRATIVA CRONOLÓGICA:\n${canonicalDossier.narrativaCronologica.sinteseNarrativaGeral}\n`;
-    canonicalDossier.narrativaCronologica.acontecimentosEmOrdem.forEach(e => {
-      text += `- ${e.dataExata}: ${e.acontecimento} (${e.decisoesTomadas})\n`;
-    });
-    text += `\n4. DOCUMENTOS E PROVAS:\n`;
-    canonicalDossier.documentosEEvidencias.documentosOriginais.forEach(d => {
-      text += `• ${d.titulo} [${d.fundoArquivistico} / ${d.instituicaoGuarda}]\n  ${d.descricaoConteudo}\n`;
-    });
-    text += `\n5. RESPONSABILIDADES E VÍTIMAS:\n${canonicalDossier.responsabilidadesEConsequencias.vitimasEImpactos.estimativasQuantitativas}\nConsequências Imediatas: ${canonicalDossier.responsabilidadesEConsequencias.consequenciasImediatas}\nConsequências a Longo Prazo: ${canonicalDossier.responsabilidadesEConsequencias.consequenciasLongoPrazo}\n\n`;
-    text += `6. DEBATE HISTORIOGRÁFICO:\nConsenso: ${canonicalDossier.debateHistoriografico.consensosAcademicos}\nControvérsias e Limitações: ${canonicalDossier.debateHistoriografico.controversiasELimitacoesDasFontes}\n\n`;
-    text += `7. BIBLIOGRAFIA DE REFERÊNCIA:\n`;
-    canonicalDossier.bibliografia.forEach(b => {
-      text += `• ${b.entradaAbnt} (${b.isbnOuReferencia || b.tipoFonte})\n`;
-    });
-    copyToClipboard(text, 'canonical_full');
-  };
-
   const getSidebarSections = () => {
     if (activeTab === 'chapter') {
       if (!chapter) return [{ num: 0, label: 'Introdução', target: 'chapter-intro' }];
@@ -375,16 +331,6 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       list.push({ num: 98, label: 'Conclusão', target: 'chapter-conclusion' });
       list.push({ num: 99, label: 'Referências', target: 'chapter-refs' });
       return list;
-    } else if (activeTab === 'canonical') {
-      return [
-        { num: 1, label: '1. Identificação', target: 'section-1' },
-        { num: 2, label: '2. Contexto Histórico', target: 'section-2' },
-        { num: 3, label: '3. Narrativa Cronológica', target: 'section-3' },
-        { num: 4, label: '4. Documentos & Provas', target: 'section-4' },
-        { num: 5, label: '5. Responsabilidades', target: 'section-5' },
-        { num: 6, label: '6. Debate Historiográfico', target: 'section-6' },
-        { num: 7, label: '7. Bibliografia ABNT', target: 'section-7' },
-      ];
     } else if (activeTab === 'essay') {
       return [
         { num: 1, label: 'I. Síntese e Antecedentes', target: 'essay-sec-1' },
@@ -606,21 +552,6 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               <span>Dossiê Pesquisa</span>
             </button>
           )}
-
-          <button
-            onClick={() => {
-              playTypewriterClack();
-              setActiveTab('canonical');
-            }}
-            className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
-              activeTab === 'canonical'
-                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 shadow-sm font-bold'
-                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
-            }`}
-          >
-            <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-            <span>Padrão Canônico</span>
-          </button>
         </div>
 
         {/* Row 2: Secondary Analytical Tabs & Sources */}
@@ -738,21 +669,6 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               <span>Dossiê Acadêmico de Pesquisa</span>
             </button>
           )}
-
-          <button
-            onClick={() => {
-              playTypewriterClack();
-              setActiveTab('canonical');
-            }}
-            className={`px-3 py-2 min-h-[38px] text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${
-              activeTab === 'canonical'
-                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 shadow-sm font-bold'
-                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
-            }`}
-          >
-            <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-            <span>Padrão Canônico</span>
-          </button>
 
           <button
             onClick={() => {
@@ -950,7 +866,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 key={sec.num}
                 onClick={() => {
                   playTypewriterClack();
-                  setActiveCanonicalSection(sec.num);
+                  setActiveSection(sec.num);
                   setIsMobileIndexOpen(false);
                   const el = document.getElementById(sec.target);
                   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -981,12 +897,12 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 key={sec.num}
                 onClick={() => {
                   playTypewriterClack();
-                  setActiveCanonicalSection(sec.num);
+                  setActiveSection(sec.num);
                   const el = document.getElementById(sec.target);
                   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }}
                 className={`w-full text-left px-3 py-2 text-xs font-mono rounded-lg transition-all flex items-center justify-between ${
-                  activeCanonicalSection === sec.num
+                  activeSection === sec.num
                     ? 'bg-amber-950/60 text-amber-300 border border-amber-600/50 font-bold shadow-sm'
                     : 'text-stone-400 hover:text-stone-200 hover:bg-stone-900 border border-transparent'
                 }`}
@@ -1141,102 +1057,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             </article>
           )}
 
-          {/* TAB: CANONICAL EDITORIAL STANDARD (7 MANDATORY SECTIONS) */}
-          {activeTab === 'canonical' && canonicalDossier && (
-            <article className="space-y-6 sm:space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
-              <div className="bg-[#161619] border border-amber-600/40 p-4 sm:p-6 rounded-xl shadow-lg relative overflow-hidden">
-                <div className="absolute top-0 right-0 bg-amber-500/10 border-l border-b border-amber-500/30 px-3.5 py-1.5 rounded-bl text-[11px] font-mono text-amber-300 flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                  <span>AUDITORIA ACADÊMICA CONFORME · 7 SEÇÕES CANÔNICAS</span>
-                </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-amber-950/60 border border-amber-600/40 rounded-xl text-amber-400 shrink-0 mt-0.5">
-                    <Award className="w-7 h-7" />
-                  </div>
-                  <div className="space-y-2.5">
-                    <h3 className="text-lg sm:text-xl font-serif font-bold text-stone-100 flex items-center gap-2">
-                      <span>Padrão Editorial Canônico Obrigatório</span>
-                      <span className="text-xs font-mono font-normal text-amber-400/90 bg-amber-950/50 px-2.5 py-1 rounded border border-amber-800/60">
-                        7 Seções Normativas
-                      </span>
-                    </h3>
-                    <p className={`text-stone-300 leading-relaxed font-sans ${getFontSizeClass('body')}`}>
-                      Estrutura historiográfica padronizada em conformidade com as diretrizes editoriais acadêmicas: cronologia corrigida com datas exatas, fundos arquivísticos certificados, debate historiográfico tripartite e bibliografia de referência ABNT/Chicago.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* SEÇÃO 1: IDENTIFICAÇÃO */}
-              <section id="section-1" className="scroll-mt-24 bg-[#161619] border border-stone-800 rounded-xl p-4 sm:p-6 space-y-4">
-                <div className="flex items-center justify-between border-b border-stone-800 pb-3">
-                  <div className="flex items-center gap-2.5">
-                    <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs">1</span>
-                    <h2 className="text-base font-serif font-bold text-stone-100 uppercase">Identificação do Acontecimento</h2>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <h3 className={`font-serif font-bold text-amber-300 ${getFontSizeClass('heading')}`}>{canonicalDossier.identificacao.nomeAcontecimento}</h3>
-                  <p className={`text-stone-300 ${getFontSizeClass('body')}`}><strong>Data:</strong> {canonicalDossier.identificacao.dataELocalizacao.dataExata} ({canonicalDossier.identificacao.dataELocalizacao.localizacaoPrecisa})</p>
-                </div>
-              </section>
-
-              {/* SEÇÃO 2: CONTEXTO HISTÓRICO */}
-              <section id="section-2" className="scroll-mt-24 bg-[#161619] border border-stone-800 rounded-xl p-4 sm:p-6 space-y-4">
-                <div className="flex items-center justify-between border-b border-stone-800 pb-3">
-                  <div className="flex items-center gap-2.5">
-                    <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs">2</span>
-                    <h2 className="text-base font-serif font-bold text-stone-100 uppercase">Contexto Histórico</h2>
-                  </div>
-                </div>
-                <p className={`text-stone-300 font-serif leading-relaxed ${getFontSizeClass('body')}`}>{canonicalDossier.contextoHistorico.situacaoAnterior}</p>
-              </section>
-
-              {/* SEÇÃO 3: NARRATIVA CRONOLÓGICA */}
-              <section id="section-3" className="scroll-mt-24 bg-[#161619] border border-stone-800 rounded-xl p-4 sm:p-6 space-y-4">
-                <div className="flex items-center justify-between border-b border-stone-800 pb-3">
-                  <div className="flex items-center gap-2.5">
-                    <span className="w-8 h-8 rounded-full bg-amber-950/90 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs">3</span>
-                    <h2 className="text-base font-serif font-bold text-stone-100 uppercase">Narrativa Cronológica</h2>
-                  </div>
-                </div>
-                <p className={`text-stone-300 font-serif leading-relaxed ${getFontSizeClass('body')}`}>{canonicalDossier.narrativaCronologica.sinteseNarrativaGeral}</p>
-              </section>
-
-              <section id="section-4" className="scroll-mt-24 bg-[#161619] border border-stone-800 rounded-xl p-4 sm:p-6 space-y-4">
-                <h2 className="text-base font-serif font-bold text-stone-100 uppercase border-b border-stone-800 pb-3">4. Documentos e Evidências</h2>
-                <p className={`text-stone-300 ${getFontSizeClass('body')}`}>Acervo arquivístico certificado (RGASPI, GARF, Library of Congress, Yale Avalon).</p>
-              </section>
-
-              <section id="section-5" className="scroll-mt-24 bg-[#161619] border border-stone-800 rounded-xl p-4 sm:p-6 space-y-4">
-                <h2 className="text-base font-serif font-bold text-stone-100 uppercase border-b border-stone-800 pb-3">5. Responsabilidades e Consequências</h2>
-                <p className={`text-stone-300 ${getFontSizeClass('body')}`}>{canonicalDossier.responsabilidadesEConsequencias.vitimasEImpactos.estimativasQuantitativas}</p>
-              </section>
-
-              <section id="section-6" className="scroll-mt-24 bg-[#161619] border border-stone-800 rounded-xl p-4 sm:p-6 space-y-4">
-                <h2 className="text-base font-serif font-bold text-stone-100 uppercase border-b border-stone-800 pb-3">6. Debate Historiográfico</h2>
-                <p className={`text-stone-300 ${getFontSizeClass('body')}`}>{canonicalDossier.debateHistoriografico.consensosAcademicos}</p>
-              </section>
-
-              <section id="section-7" className="scroll-mt-24 bg-[#161619] border border-stone-800 rounded-xl p-4 sm:p-6 space-y-4">
-                <h2 className="text-base font-serif font-bold text-stone-100 uppercase border-b border-stone-800 pb-3">7. Bibliografia ABNT</h2>
-                <div className={`font-mono text-stone-300 space-y-2 ${getFontSizeClass('body')}`}>
-                  {canonicalDossier.bibliografia.map((b, i) => {
-                    const isHeader = b.entradaAbnt.startsWith('A. ') || b.entradaAbnt.startsWith('B. ') || b.entradaAbnt.startsWith('C. ');
-                    if (isHeader) {
-                      return (
-                        <p key={i} className="text-amber-400 font-bold font-serif pt-2 text-sm">
-                          {b.entradaAbnt}
-                        </p>
-                      );
-                    }
-                    return <p key={i}>- {b.entradaAbnt}</p>;
-                  })}
-                </div>
-              </section>
-            </article>
-          )}
 
           {/* TAB: ESSAY */}
           {activeTab === 'essay' && essay && (

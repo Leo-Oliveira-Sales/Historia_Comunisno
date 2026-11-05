@@ -171,7 +171,7 @@ export interface HistoricalCuriosity {
 }
 
 // ============================================================================
-// PADRÃO EDITORIAL OBRIGATÓRIO (7 SEÇÕES CANÔNICAS)
+// PADRÃO EDITORIAL OBRIGATÓRIO (7 SEÇÕES NORMATIVAS)
 // ============================================================================
 
 export interface CanonicalIdentificacao {

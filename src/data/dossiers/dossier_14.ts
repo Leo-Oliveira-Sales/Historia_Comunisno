@@ -1,4 +1,4 @@
-// Dossiê Acadêmico Canônico Nº 14 na íntegra sem nenhuma alteração
+// Dossiê Acadêmico de Pesquisa Nº 14 na íntegra sem nenhuma alteração
 export const DOSSIER_14_TEXT = `# Nº 14 — NACIONALIDADES E DEPORTAÇÕES DE MINORIAS ÉTNICAS
 
 ## Deportações em Massa, Punição Coletiva e Limpeza Étnica na URSS

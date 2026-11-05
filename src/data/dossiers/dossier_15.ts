@@ -1,5 +1,5 @@
-// Dossiê Acadêmico Canônico Nº 15 na íntegra sem nenhuma alteração
-export const DOSSIER_15_TEXT = `# DOSSIÊ ACADÊMICO CANÔNICO — Nº 15
+// Dossiê Acadêmico de Pesquisa Nº 15 na íntegra sem nenhuma alteração
+export const DOSSIER_15_TEXT = `# DOSSIÊ ACADÊMICO DE PESQUISA — Nº 15
 
 ## Guerra Fria e Espionagem Global
 
