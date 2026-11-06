@@ -1067,22 +1067,21 @@ De que maneira o reformismo parlamentar domesticou o capitalismo selvagem e cons
 - O Programa de Bad Godesberg (1959) do SPD alemão: a conversão formal em partido de todo o povo e a aceitação da economia social de mercado.
 - A teoria da justiça como equidade de John Rawls e a ampliação das liberdades substantivas de Amartya Sen.`,
 
-  110: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
-# DOSSIÊ ACADÊMICO Nº 10: COMPARAÇÃO ENTRE AS GRANDES IDEOLOGIAS POLÍTICAS
+  110: `Nº 10 — DOSSIÊ ACADÊMICO DE PESQUISA
+Teoria Política Comparada e Matrizes Conceituais
+Tipologia, conflitos e rupturas entre as grandes ideologias — Séculos XIX a XXI
 
-**Eixo Temático:** Tipologia Comparada, Liberdades em Conflito, Totalitarismo vs. Autoritarismo e Pluralismo
-**Especialistas de Referência:** Isaiah Berlin, Hannah Arendt, Norberto Bobbio, Raymond Aron, Juan Linz, Carl J. Friedrich, Michael Freeden
-
----
-
-## 1. IDENTIFICAÇÃO E PROBLEMA HISTÓRICO
-Como a análise conceitual comparada das grandes tradições políticas contemporâneas nos equipa para diagnosticar crises de legitimidade democrática e salvaguardar a sociedade aberta?
-
-## 2. MATRIZES COMPARATIVAS
-- **Morfologia das Ideologias (Freeden):** Como cada corrente desambigua conceitos-chave como liberdade, igualdade, comunidade e autoridade.
-- **Liberdade Negativa vs. Positiva (Berlin):** Os limites da coerção legítima e os perigos da perversão orgânica do bem comum.
-- **Totalitarismo vs. Autoritarismo (Linz, Friedrich e Brzezinski):** A distinção sociológica fundamental entre controle absoluto da sociedade e regimes de pluralismo limitado.
-- **A Lição do Século XX:** A defesa intransigente do Estado de Direito, da divisão de poderes e da primazia incondicional da dignidade humana.`,
+1. IDENTIFICAÇÃO E OBJETO DA PESQUISA
+Tema central: formação, desenvolvimento e confronto entre as grandes ideologias políticas modernas.
+Problema de pesquisa: como as diferentes ideologias definiram conceitos fundamentais como liberdade, igualdade, autoridade, propriedade, comunidade e Estado, e quais foram as consequências históricas de suas interpretações?
+Objeto de análise: liberalismo, conservadorismo, socialismo, marxismo, social-democracia, anarquismo, nacionalismo, fascismo e demais correntes relevantes.
+Recorte temporal: século XIX ao século XXI.
+Objetivo geral: desenvolver uma análise comparativa das matrizes conceituais das grandes ideologias, relacionando seus fundamentos filosóficos às experiências políticas e institucionais dos séculos XIX, XX e XXI.
+Objetivos específicos
+Identificar as origens históricas das principais ideologias.
+Comparar suas concepções de liberdade e igualdade.
+Examinar a relação entre indivíduo, sociedade e Estado.
+Investigar os conceitos de hegemonia e sociedade civil.`,
 
   111: DOSSIER_16_TEXT,
 
@@ -1198,5 +1197,7 @@ A eclosão da Revolução Francesa não pode ser explicada por uma causa única,
 - DOYLE, William. *Origins of the French Revolution*. Oxford: Oxford University Press, 1999.
 - FURET, François. *Pensando a Revolução Francesa*. Rio de Janeiro: Paz e Terra, 1989.
 - ISRAEL, Jonathan. *Democratic Enlightenment: Philosophy, Revolution, and Human Rights 1750–1790*. Oxford: Oxford University Press, 2011.
-- LEFEBVRE, Georges. *1789: O Surgimento da Revolução Francesa*. Rio de Janeiro: Paz e Terra, 1989.`
+- LEFEBVRE, Georges. *1789: O Surgimento da Revolução Francesa*. Rio de Janeiro: Paz e Terra, 1989.`,
+
 };
+
