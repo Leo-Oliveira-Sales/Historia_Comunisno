@@ -1690,5 +1690,86 @@ A Revolução Francesa foi, portanto, resultado de uma combinação entre ideias
       'SOBOUL, Albert. A Revolução Francesa. Rio de Janeiro: DIFEL, 1981.',
       'TOCQUEVILLE, Alexis de. O Antigo Regime e a Revolução. Brasília: Editora UnB, 1989 [1856].'
     ]
+  },
+
+  105: {
+    topicId: 105,
+    title: 'MARXISMO, ECONOMIA E CONSCIÊNCIA SOCIAL',
+    subtitle: 'A tensão entre determinação material, liberdade humana e transformação histórica',
+    authorCatedra: 'Cátedra de Teoria Marxista e Economia Política · Ensaio Acadêmico',
+    estimatedReadingMinutes: 8,
+    wordCount: 520,
+    narrativeOverview: `O materialismo histórico surgiu como uma tentativa de explicar a sociedade a partir das condições concretas de existência dos seres humanos.
+
+Em oposição às interpretações que atribuíam à consciência ou às ideias uma autonomia absoluta, Marx e Engels defenderam que a produção da vida material constitui um elemento fundamental da organização histórica.
+
+Essa perspectiva representou uma transformação na maneira de interpretar a história.
+
+As instituições políticas, o direito, a religião e as formas de consciência passaram a ser examinados em relação às estruturas econômicas e às relações sociais de produção.`,
+    historicalDevelopment: `Entretanto, essa formulação produziu uma dificuldade teórica.
+
+Se as condições econômicas condicionam as formas de consciência, como explicar sociedades nas quais valores, religiões, tradições e instituições políticas contribuem para conservar determinadas estruturas econômicas?
+
+A questão torna-se particularmente relevante quando se observa que crises econômicas não produzem necessariamente revoluções socialistas.
+
+A experiência europeia do século XX demonstrou que trabalhadores de sociedades industrializadas podiam apoiar movimentos nacionalistas, conservadores e fascistas.
+
+A previsão de uma transformação revolucionária baseada exclusivamente no agravamento das contradições econômicas não se realizou de maneira uniforme.`,
+    institutionalAndStateMechanisms: `Essa dificuldade estimulou diferentes reformulações dentro do marxismo.
+
+Gramsci passou a investigar o papel da hegemonia, do consentimento e da sociedade civil.
+
+A Escola de Frankfurt incorporou elementos da psicologia, da sociologia e da teoria da comunicação para compreender a formação da consciência e a estabilidade das sociedades capitalistas.
+
+Outros autores desenvolveram críticas à própria tradição marxista. Leszek Kołakowski, inicialmente vinculado ao marxismo polonês, tornou-se um de seus críticos mais importantes.`,
+    historiographicalDebate: `O desenvolvimento dessas correntes não significa que todas tenham abandonado a economia política.
+
+O que ocorreu foi uma ampliação dos objetos de investigação.
+
+A economia deixou de ser considerada suficiente, isoladamente, para explicar a reprodução da sociedade.
+
+A cultura, a linguagem, a educação, a comunicação e as instituições passaram a ser investigadas como dimensões fundamentais da organização social.
+
+A questão epistemológica central tornou-se compreender como condições materiais e formas de consciência se influenciam reciprocamente.`,
+    concludingAssessment: `O desafio permanece: evitar tanto o determinismo econômico absoluto quanto uma interpretação na qual ideias e discursos pareçam existir independentemente das condições materiais.
+
+Uma teoria social abrangente precisa explicar como economia, instituições, cultura e ação individual se relacionam historicamente.`,
+    scholarlyQuotes: [
+      {
+        author: 'Antonio Gramsci',
+        work: 'Cadernos do Cárcere',
+        year: '1932',
+        pageOrDoc: 'v. 3, p. 1311',
+        quote: 'A supremacia de um grupo social manifesta-se de dois modos: como "domínio" e como "direção intelectual e moral".',
+        historicalAnalysis: 'Gramsci distingue o exercício coercitivo do poder estatal da capacidade hegemônica de direção cultural na sociedade civil.'
+      },
+      {
+        author: 'Theodor W. Adorno e Max Horkheimer',
+        work: 'Dialética do Esclarecimento',
+        year: '1947',
+        pageOrDoc: 'p. 113',
+        quote: 'A indústria cultural vende o entretenimento padronizado como meio de reprodução da força de trabalho e integração ideológica das massas.',
+        historicalAnalysis: 'Os autores analisam como a produção industrial de bens culturais converte a arte em mecanismo de conformismo social.'
+      }
+    ],
+    archivalCorpus: [
+      {
+        archiveName: 'International Institute of Social History (IISH / Amsterdã)',
+        fondCode: 'Marx-Engels Nachlass & SPD Parteiarchiv',
+        description: 'Manuscritos originais dos Manuscritos de 1844, A Ideologia Alemã e cadernos de notas de O Capital.'
+      },
+      {
+        archiveName: 'Istituto Gramsci (Roma)',
+        fondCode: 'Quaderni del Carcere (1929-1935)',
+        description: 'Cadernos manuscritos originais redigidos por Antonio Gramsci na prisão fascista de Turi.'
+      }
+    ],
+    bibliographicReferences: [
+      'ANDERSON, Perry. Considerations on Western Marxism. Londres: New Left Books, 1976.',
+      'GRAMSCI, Antonio. Cadernos do Cárcere. 6 v. Rio de Janeiro: Civilização Brasileira, 1999-2002.',
+      'HORKHEIMER, Max; ADORNO, Theodor W. Dialética do Esclarecimento. Rio de Janeiro: Zahar, 1985 [1947].',
+      'KOŁAKOWSKI, Leszek. Main Currents of Marxism: Its Rise, Growth and Dissolution. 3 v. Oxford: Clarendon Press, 1978.',
+      'MARX, Karl. O Capital: Crítica da Economia Política (Livro I). São Paulo: Boitempo, 2013 [1867].'
+    ]
   }
 };

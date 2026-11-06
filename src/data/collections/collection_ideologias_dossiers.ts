@@ -899,22 +899,103 @@ Quais foram as primeiras propostas comunitárias contra a desumanização fabril
 - **Pierre-Joseph Proudhon (1840):** O que é a Propriedade? — A propriedade sem trabalho como espoliação parasitária; o mutualismo e o crédito popular gratuito.
 - **Mikhail Bakunin (1873):** Estatismo e Anarquia — A denúncia profética de que o "socialismo de Estado" marxiano se converteria na ditadura de uma burocracia privilegiada armada sobre o povo.`,
 
-  105: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
-# DOSSIÊ ACADÊMICO Nº 05: MARX E ENGELS: FORMAÇÃO DO MARXISMO
+  105: `DOSSIÊ ACADÊMICO DE PESQUISA
+Materialismo histórico, socialismo científico e crítica da economia política
 
-**Eixo Temático:** Materialismo Histórico, Crítica da Alienação, Mais-Valia e Luta de Classes (1843–1883)
-**Especialistas de Referência:** Gareth Stedman Jones, David McLellan, Shlomo Avineri, Leszek Kołakowski, Perry Anderson
+1. Identificação
+Tema: Formação do materialismo histórico e desenvolvimento da crítica marxista da economia política.
+Recorte principal: 1843–1883.
+Desdobramento historiográfico: século XX.
+Problema central: Como Marx e Engels desenvolveram uma interpretação materialista da história e como seus herdeiros reformularam a relação entre economia, política e cultura?
 
----
+2. Objetivo geral
+Investigar a formação do materialismo histórico, a crítica da economia política e as transformações intelectuais da tradição marxista.
 
-## 1. IDENTIFICAÇÃO E PROBLEMA HISTÓRICO
-Como Karl Marx e Friedrich Engels operaram a inversão materialista da dialética hegeliana e construíram a mais formidável crítica interna ao modo de produção capitalista?
+3. Objetivos específicos
+- Estudar a influência de Hegel e Feuerbach.
+- Analisar os Manuscritos de 1844.
+- Investigar A Ideologia Alemã.
+- Compreender a relação entre infraestrutura e superestrutura.
+- Analisar o Manifesto Comunista.
+- Estudar os conceitos fundamentais de O Capital.
+- Examinar a crítica marxista à propriedade e ao trabalho assalariado.
+- Investigar o desenvolvimento da hegemonia em Gramsci.
+- Estudar a Escola de Frankfurt.
+- Examinar a crítica de Kołakowski.
 
-## 2. NÚCLEOS CONCEITUAIS DO SOCIALISMO CIENTÍFICO
-- **Manuscritos de 1844:** A alienação do trabalhador em relação ao produto, ao processo de trabalho, à sua essência humana genérica e aos seus semelhantes.
-- **A Ideologia Alemã (1845–1846):** As condições materiais de produção determinam as formas de consciência social, o direito e o Estado.
-- **O Manifesto Comunista (1848):** "A história de todas as sociedades humanas até os dias de hoje é a história das lutas de classes".
-- **O Capital (1867):** A teoria da mercadoria, fetichismo e a apropriação sistemática da mais-valia absoluta e relativa.`,
+4. Cronologia
+| Ano | Acontecimento |
+| :--- | :--- |
+| **1843** | Crítica da Filosofia do Direito de Hegel |
+| **1844** | Manuscritos Econômico-Filosóficos |
+| **1845–1846** | A Ideologia Alemã |
+| **1848** | Manifesto do Partido Comunista |
+| **1859** | Prefácio à Contribuição à Crítica da Economia Política |
+| **1867** | O Capital, Livro I |
+| **1878** | Anti-Dühring |
+| **1883** | Morte de Karl Marx |
+| **1885** | Publicação do Livro II de O Capital |
+| **1894** | Publicação do Livro III de O Capital |
+| **1929–1935** | Cadernos do Cárcere |
+| **Década de 1930** | Consolidação das pesquisas da Escola de Frankfurt |
+| **1944–1947** | Dialética do Esclarecimento |
+| **1945** | O Uso do Conhecimento na Sociedade, de Hayek — contraponto econômico posterior |
+| **1960–1970** | Expansão do marxismo ocidental |
+| **1976–1978** | Main Currents of Marxism |
+
+5. Personagens fundamentais
+- Karl Marx.
+- Friedrich Engels.
+- Georg Wilhelm Friedrich Hegel.
+- Ludwig Feuerbach.
+- Adam Smith.
+- David Ricardo.
+- Antonio Gramsci.
+- Max Horkheimer.
+- Theodor Adorno.
+- Herbert Marcuse.
+- Walter Benjamin.
+- Leszek Kołakowski.
+- Perry Anderson.
+
+6. Conceitos centrais
+Materialismo histórico; materialismo dialético; infraestrutura; superestrutura; ideologia; alienação; fetichismo; mais-valia; luta de classes; hegemonia; sociedade civil; guerra de posição; indústria cultural; razão instrumental.
+
+7. Problemas historiográficos
+- **Problema 1 — O materialismo histórico é economicamente determinista?**
+  Investigar a diferença entre condicionamento material, determinação em última instância e determinismo mecânico.
+- **Problema 2 — O marxismo possui uma teoria suficiente da cultura?**
+  Investigar como Gramsci e Frankfurt ampliaram a análise da ideologia e da reprodução social.
+- **Problema 3 — A hegemonia representa uma ruptura com Marx?**
+  Analisar a continuidade entre a crítica da ideologia em Marx e a teoria gramsciana da direção intelectual e moral.
+- **Problema 4 — A Escola de Frankfurt abandonou a economia política?**
+  Examinar a incorporação de Freud, Weber e pesquisas sobre comunicação e cultura.
+- **Problema 5 — O marxismo permaneceu uma teoria econômica viável?**
+  Investigar a crítica de Kołakowski, os problemas das economias planificadas e as diferentes interpretações do legado marxista.
+
+8. Hipóteses de pesquisa
+- O materialismo histórico estabeleceu a centralidade das relações materiais de produção na explicação da sociedade.
+- A relação entre infraestrutura e superestrutura exigiu reformulações diante das experiências políticas do século XX.
+- Gramsci ampliou a análise da reprodução do poder por meio da hegemonia.
+- A Escola de Frankfurt incorporou psicologia, cultura e comunicação à crítica social.
+- Kołakowski contribuiu para uma crítica filosófica e histórica do marxismo como doutrina política.
+- A pesquisa científica contemporânea demonstra que a linguagem influencia a percepção, mas não determina integralmente a consciência ou o comportamento.
+
+9. Metodologia
+- leitura de fontes primárias;
+- análise conceitual;
+- história intelectual;
+- comparação entre autores;
+- análise de instituições;
+- pesquisa de comunicação e psicologia;
+- confronto entre interpretações favoráveis e críticas.
+
+10. Síntese
+A história do marxismo não pode ser compreendida como uma doutrina imutável.
+
+Desde Marx e Engels, diferentes gerações reinterpretaram os fundamentos materialistas diante de transformações econômicas, políticas e culturais.
+
+A relação entre infraestrutura e superestrutura tornou-se um dos problemas mais importantes dessa tradição.`,
 
   106: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
 # DOSSIÊ ACADÊMICO Nº 06: COMUNISMO E MOVIMENTOS REVOLUCIONÁRIOS

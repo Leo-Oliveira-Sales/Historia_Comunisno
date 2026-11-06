@@ -1587,45 +1587,597 @@ A Revolução Industrial não apenas modificou a maneira de produzir mercadorias
   // =========================================================================
   105: {
     topicId: 105,
-    title: 'Marx e Engels: A Formação do Materialismo Histórico e do Socialismo Científico',
-    subtitle: 'A ruptura com o idealismo hegeliano, o Manifesto de 1848 e a dissecação da mais-valia n’O Capital',
-    authorCatedra: 'Cátedra de Teoria Marxista e Filosofia da História',
-    introduction: 'Poucas obras exerceram impacto tão avassalador sobre os rumos políticos e epistemológicos do planeta quanto a construída em conjunto por Karl Marx e Friedrich Engels. Ao transformar o socialismo de aspiração moral romântica em método de crítica rigorosa da anatomia socioeconômica do capitalismo, os dois intelectuais renanos forneceram a base teórica para partidos operários de massas e movimentos de libertação anti-imperialistas em todo o globo.',
+    title: 'A VIRADA EPISTEMOLÓGICA DO MARXISMO',
+    subtitle: 'Da infraestrutura econômica à hegemonia cultural: Gramsci, Escola de Frankfurt e a crítica de Leszek Kołakowski',
+    authorCatedra: 'Cátedra de Teoria Marxista, Epistemologia Histórica e Filosofia Política',
+    introduction: `Uma das transformações mais importantes da tradição marxista no século XX foi a ampliação de seu objeto de investigação.
+
+No século XIX, Marx e Engels desenvolveram uma interpretação da sociedade que atribuía papel fundamental às condições materiais de produção.
+
+A economia constituía o ponto de partida para compreender as instituições políticas, as formas jurídicas e as representações ideológicas.
+
+Entretanto, a experiência histórica do século XX apresentou problemas que exigiram reformulações.
+
+O capitalismo industrial não entrou em colapso automático nos países mais desenvolvidos.
+
+As crises econômicas não produziram necessariamente revoluções socialistas.
+
+Movimentos de trabalhadores participaram de instituições parlamentares, sindicatos e sistemas de proteção social.
+
+O fascismo conseguiu mobilizar setores importantes das classes trabalhadoras.
+
+As sociedades capitalistas desenvolveram meios de comunicação de massa, publicidade, indústria cultural e novas formas de integração social.
+
+Essas experiências colocaram uma questão diante dos marxistas:
+
+**Se a estrutura econômica é fundamental para explicar a sociedade, por que as condições econômicas não conduzem automaticamente à consciência revolucionária?**
+
+A resposta exigiu ampliar a análise para instituições, cultura, educação, religião, comunicação, psicologia e linguagem.
+
+Essa transformação não ocorreu de maneira uniforme nem foi planejada por uma organização central.
+
+Foi resultado de diferentes experiências intelectuais e políticas.`,
     sections: [
       {
         number: '1',
-        title: 'Da Esquerda Hegeliana aos Manuscritos de Paris (1844)',
-        content: 'Nascido em Tréveris e formado na Universidade de Berlim, o jovem Marx integrou a Esquerda Hegeliana, absorvendo a dialética de Hegel e a crítica do teologismo de Ludwig Feuerbach. Contudo, em seu exílio parisiense em 1844, Marx percebeu que a alienação humana não decorre de ilusões religiosas abstratas, mas da estrutura concreta do trabalho sob o capitalismo industrial. Nos Manuscritos Econômico-Filosóficos de 1844, dissecou a quádrupla alienação do trabalhador: do produto do seu trabalho (que se ergue diante dele como um poder hostil), do ato produtivo (que se torna tormento), da sua essência genérica (Gattungswesen) e dos seus semelhantes.'
+        title: 'O ponto de origem: Marx e Engels',
+        content: ``,
+        subsections: [
+          {
+            number: '1.1',
+            title: 'A vida material e a consciência',
+            content: `Em A Ideologia Alemã, Marx e Engels procuram demonstrar que a história deve começar pelos indivíduos concretos e pelas condições nas quais produzem sua existência.
+
+A consciência não é apresentada como uma entidade independente das relações sociais.
+
+Os seres humanos desenvolvem ideias dentro de condições históricas determinadas.
+
+Essa formulação será posteriormente sintetizada no prefácio de 1859 à Contribuição à Crítica da Economia Política.
+
+Marx escreve que não é a consciência dos homens que determina seu ser, mas seu ser social que determina sua consciência.
+
+A afirmação estabelece a base de uma interpretação materialista da sociedade.`
+          },
+          {
+            number: '1.2',
+            title: 'As ideias dominantes',
+            content: `Em outro trecho de A Ideologia Alemã, Marx e Engels relacionam o poder material ao poder intelectual.
+
+A classe que controla os meios de produção material dispõe também de condições privilegiadas para influenciar os meios de produção intelectual.
+
+O argumento é particularmente importante porque demonstra que Marx já reconhecia a importância política da produção das ideias.
+
+A dimensão cultural não foi inventada por Gramsci.
+
+O que Gramsci fez foi desenvolver essa questão de maneira muito mais sistemática.`
+          },
+          {
+            number: '1.3',
+            title: 'O problema da interpretação economicista',
+            content: `Uma dificuldade surgiu quando parte da tradição marxista passou a interpretar a infraestrutura como causa praticamente automática das transformações políticas e culturais.
+
+Nessa leitura, mudanças econômicas deveriam produzir necessariamente mudanças na consciência.
+
+O problema é que a experiência histórica mostrou uma realidade mais complexa.
+
+Uma crise econômica pode provocar radicalização revolucionária, mas também pode produzir nacionalismo, conservadorismo, autoritarismo ou desmobilização política.
+
+A mesma situação material pode ser interpretada de maneiras diferentes por grupos sociais distintos.
+
+Essa dificuldade abriu espaço para novas investigações.`
+          }
+        ]
       },
       {
         number: '2',
-        title: 'O Materialismo Histórico na Ideologia Alemã e nas Teses sobre Feuerbach',
-        content: 'Em 1845–1846, na obra A Ideologia Alemã, Marx e Engels fixaram os postulados do materialismo histórico. A premissa de toda a história humana é a existência de indivíduos vivos que precisam produzir suas condições materiais de subsistência antes de filosofar, crer ou legislar. Não é a consciência que determina a vida, mas a vida material que determina a consciência. As relações sociais de produção e o nível de desenvolvimento das forças produtivas formam a infraestrutura econômica real sobre a qual se ergue uma superestrutura jurídica e política e à qual correspondem formas determinadas de consciência social.'
+        title: 'A experiência histórica que desafiou o marxismo tradicional',
+        content: `No início do século XX, a Europa industrializada não apresentou a transformação revolucionária prevista por determinadas interpretações do marxismo.
+
+A Primeira Guerra Mundial, a Revolução Russa de 1917, a crise do liberalismo, o crescimento dos movimentos fascistas e a consolidação dos Estados nacionais modificaram profundamente o cenário político.
+
+Em sociedades industrializadas como Alemanha e Itália, movimentos revolucionários socialistas não conseguiram conquistar o poder.
+
+Na Alemanha, o movimento operário possuía organizações importantes, mas o país também se tornou um dos principais centros de desenvolvimento do fascismo.
+
+Na Itália, o fascismo conseguiu consolidar uma ditadura.
+
+Essas experiências estimularam a investigação de fatores que ultrapassavam a economia.
+
+Era necessário compreender:
+
+- nacionalismo;
+- religião;
+- autoridade;
+- propaganda;
+- educação;
+- comunicação;
+- identidade coletiva;
+- comportamento de massas;
+- instituições políticas;
+- formação do consentimento.
+
+A pergunta deixou de ser apenas como as relações econômicas produzem determinadas formas de consciência.
+
+Passou a incluir como determinadas formas de consciência ajudam a reproduzir relações sociais e políticas.`
       },
       {
         number: '3',
-        title: 'O Manifesto Comunista de 1848 e a Luta de Classes como Motor da História',
-        content: 'Redigido às vésperas das revoluções europeias de 1848 para a Liga dos Comunistas, o Manifesto do Partido Comunista abre com a célebre afirmação de que "a história de todas as sociedades até hoje tem sido a história das lutas de classes". Longe de subestimar o capitalismo, Marx e Engels dedicaram páginas de arrebatada admiração ao dinamismo da burguesia, que "desencadeou forças produtivas mais colossais do que todas as gerações passadas reunidas" e dissolveu no ar todas as relações estáticas e sagradas do feudalismo. No entanto, ao criar o proletariado industrial moderno, a burguesia forjou os seus próprios coveiros.'
+        title: 'Antonio Gramsci: hegemonia e sociedade civil',
+        content: `Antonio Gramsci é um dos autores mais importantes dessa transformação.
+
+Seus Cadernos do Cárcere foram escritos entre 1929 e 1935, durante sua prisão pelo regime fascista italiano.
+
+Gramsci procurou compreender por que as sociedades ocidentais apresentavam maior resistência à revolução socialista do que algumas interpretações marxistas tradicionais supunham.`,
+        subsections: [
+          {
+            number: '3.1',
+            title: 'A diferença entre dominação e direção',
+            content: `Gramsci distinguiu duas dimensões do exercício do poder:
+
+**Dominação:** capacidade de impor decisões por meio da coerção.
+
+**Direção intelectual e moral:** capacidade de construir consentimento e apresentar determinada visão de mundo como legítima ou aceitável.
+
+Uma classe dominante não se sustenta apenas porque possui força econômica, militar ou administrativa.
+
+Também precisa estabelecer alianças, influenciar instituições e apresentar seus interesses como compatíveis com os interesses gerais da sociedade.
+
+Essa capacidade constitui a hegemonia.`
+          },
+          {
+            number: '3.2',
+            title: 'Sociedade política e sociedade civil',
+            content: `Gramsci desenvolveu uma análise complexa da relação entre Estado e sociedade civil.
+
+A sociedade política está relacionada aos mecanismos de governo, administração e coerção.
+
+A sociedade civil envolve instituições, organizações e espaços nos quais se desenvolvem disputas culturais e políticas.
+
+Entre esses espaços podem estar:
+
+- escolas;
+- associações;
+- sindicatos;
+- igrejas;
+- jornais;
+- organizações culturais;
+- universidades;
+- partidos;
+- instituições intelectuais.
+
+Esses espaços participam da formação de valores e da organização da vida social.
+
+Entretanto, não devem ser entendidos como instrumentos controlados automaticamente por uma única classe ou partido.
+
+São também espaços de conflito, resistência e disputa.`
+          },
+          {
+            number: '3.3',
+            title: 'Guerra de posição',
+            content: `Uma das contribuições mais importantes de Gramsci é o conceito de guerra de posição.
+
+Ele utiliza uma metáfora militar para distinguir duas formas de disputa política.
+
+**Guerra de movimento:** confronto direto e relativamente rápido contra o aparelho estatal.
+
+**Guerra de posição:** disputa prolongada pela direção política e cultural da sociedade, envolvendo instituições, alianças e organizações da sociedade civil.
+
+A ideia central é que, em sociedades ocidentais complexas, a conquista do poder estatal não poderia ser compreendida apenas como uma operação militar ou insurrecional.
+
+Seria necessário construir capacidade de direção política e moral.`
+          },
+          {
+            number: '3.4',
+            title: 'Gramsci defendia simplesmente ocupar escolas e universidades?',
+            content: `Essa interpretação aparece frequentemente em debates políticos contemporâneos, mas é uma simplificação.
+
+Gramsci atribuía grande importância à educação, aos intelectuais e à cultura.
+
+Entretanto, seu conceito de hegemonia envolve muito mais do que ocupar instituições.
+
+Inclui:
+
+- construção de alianças sociais;
+- organização política;
+- elaboração de uma visão de mundo;
+- formação de intelectuais;
+- direção moral;
+- disputa de interesses;
+- capacidade de representar projetos coletivos.
+
+Portanto, não é rigoroso reduzir sua teoria a uma receita de controle institucional.`
+          },
+          {
+            number: '3.5',
+            title: 'A transformação epistemológica',
+            content: `Gramsci ampliou a análise marxista porque passou a investigar como a sociedade produz consentimento.
+
+A economia continuava sendo importante, mas não explicava sozinha a estabilidade política.
+
+A hegemonia permitia compreender por que grupos sociais podiam aceitar instituições que não correspondiam diretamente aos seus interesses econômicos imediatos.
+
+Esse desenvolvimento representa uma importante ampliação da teoria marxista.`
+          }
+        ]
       },
       {
         number: '4',
-        title: 'A Anatomia d’O Capital: Mercadoria, Fetichismo e Mais-Valia',
-        content: 'Refugiado em Londres após o fracasso das revoluções de 1848 e sustentado financeiramente pela lealdade abnegada de Engels, Marx passou décadas na sala de leitura do Museu Britânico elaborando sua obra-prima: O Capital (Livro I publicado em 1867). Partindo da análise da mercadoria, demonstrou o "fetichismo da mercadoria", fenômeno em que as relações sociais entre os produtores aparecem disfarçadas como relações fantasmagóricas entre as coisas. No centro da acumulação capitalista reside a exploração da mais-valia (Mehrwert): a diferença não remunerada entre o valor produzido pela força de trabalho na jornada diária e o valor necessário para a reprodução física do trabalhador.'
+        title: 'A Escola de Frankfurt: cultura, psicologia e dominação',
+        content: `A Escola de Frankfurt desenvolveu outra resposta aos problemas da sociedade industrial moderna.
+
+O Instituto de Pesquisa Social, associado à Universidade de Frankfurt, tornou-se um importante centro de investigação interdisciplinar.
+
+Seus pesquisadores utilizaram elementos de Marx, Hegel, Weber, Freud e outras tradições intelectuais.
+
+Entre os principais nomes estavam:
+
+- Max Horkheimer;
+- Theodor Adorno;
+- Herbert Marcuse;
+- Erich Fromm;
+- Walter Benjamin;
+- Friedrich Pollock.`,
+        subsections: [
+          {
+            number: '4.1',
+            title: 'A crise da expectativa revolucionária',
+            content: `A experiência do fascismo, a derrota de movimentos revolucionários e a integração de trabalhadores às sociedades capitalistas levaram esses autores a questionar explicações simplificadas da consciência de classe.
+
+Por que pessoas submetidas a condições de desigualdade podiam apoiar movimentos autoritários?
+
+Por que a propaganda podia mobilizar massas?
+
+Por que o desenvolvimento tecnológico não produzia necessariamente emancipação?
+
+Essas perguntas exigiam investigar a psicologia e a cultura.`
+          },
+          {
+            number: '4.2',
+            title: 'A indústria cultural',
+            content: `Em Dialética do Esclarecimento, Horkheimer e Adorno desenvolveram a crítica da indústria cultural.
+
+A expressão procura analisar a transformação de produtos culturais em mercadorias produzidas e distribuídas em larga escala.
+
+Cinema, rádio, música e entretenimento passam a integrar estruturas industriais.
+
+A cultura deixa de ser compreendida exclusivamente como produção artística individual e passa a ser analisada também como atividade econômica organizada.
+
+Os autores argumentaram que a padronização cultural poderia reduzir a autonomia crítica dos indivíduos.
+
+A indústria cultural não seria simplesmente um conjunto de produtos ruins.
+
+Seria uma estrutura de produção e distribuição que influencia os hábitos, os desejos e as formas de percepção.`
+          },
+          {
+            number: '4.3',
+            title: 'Herbert Marcuse e o homem unidimensional',
+            content: `Em O Homem Unidimensional, publicado em 1964, Marcuse desenvolveu uma crítica às sociedades industriais avançadas.
+
+Sua tese era que a sociedade tecnológica poderia integrar os indivíduos por meio do consumo, da produção e de formas de satisfação administradas.
+
+O conflito social não desapareceria, mas poderia ser enfraquecido por mecanismos de integração.
+
+O indivíduo poderia experimentar a sociedade como um ambiente de liberdade e satisfação mesmo quando permanecesse submetido a estruturas de dominação.`
+          },
+          {
+            number: '4.4',
+            title: 'A incorporação da psicologia',
+            content: `A Escola de Frankfurt também utilizou elementos da psicanálise freudiana.
+
+A intenção era compreender como estruturas sociais influenciavam a formação da personalidade, da autoridade e das disposições políticas.
+
+Essa abordagem permitia investigar fenômenos que não poderiam ser explicados exclusivamente pela posição econômica dos indivíduos.
+
+A análise da sociedade passou a incluir processos psicológicos e culturais.`
+          },
+          {
+            number: '4.5',
+            title: 'A Escola de Frankfurt abandonou a economia?',
+            content: `Não completamente.
+
+A crítica da economia política permaneceu presente em diferentes autores e momentos da Escola.
+
+O que ocorreu foi uma ampliação interdisciplinar da teoria crítica.
+
+A economia passou a ser analisada em conjunto com cultura, psicologia, comunicação, racionalidade e instituições.
+
+Essa distinção é importante para não confundir ampliação teórica com abandono completo do pensamento econômico.`
+          }
+        ]
       },
       {
         number: '5',
-        title: 'Historiografia Pós-Soviética: O Resgate do Marx Histórico',
-        content: 'Com a abertura dos arquivos e o trabalho crítico da nova edição histórico-crítica MEGA² (Marx-Engels-Gesamtausgabe), historiadores contemporâneos como Gareth Stedman Jones e David McLellan desmantelaram a fabricação hagiográfica do stalinismo soviético. O Marx revelado pela documentação histórica é um intelectual multifacetado, permanentemente atormentado por dilemas epistemológicos, que abandonou visões lineares e teleológicas do desenvolvimento europeu nos seus últimos anos para estudar a comuna rural russa e sociedades pré-capitalistas não ocidentais.'
+        title: 'Leszek Kołakowski: a crítica ao destino histórico do marxismo',
+        content: `Leszek Kołakowski ocupa posição diferente de Gramsci e da Escola de Frankfurt.
+
+Ele foi inicialmente um intelectual marxista polonês, mas progressivamente se tornou um crítico do marxismo oficial e do comunismo autoritário.
+
+Sua trajetória é especialmente relevante porque conheceu o sistema comunista por dentro.`,
+        subsections: [
+          {
+            number: '5.1',
+            title: 'Da adesão à crítica',
+            content: `Kołakowski participou inicialmente da vida intelectual do marxismo polonês.
+
+Com o tempo, passou a criticar o dogmatismo, o autoritarismo e as pretensões de verdade absoluta do sistema ideológico oficial.
+
+Foi afastado do Partido Operário Unificado Polonês em 1966 e posteriormente deixou a Polônia.
+
+Sua experiência permitiu que analisasse não apenas os textos de Marx, mas também a evolução política das organizações que reivindicavam seu pensamento.`
+          },
+          {
+            number: '5.2',
+            title: 'Main Currents of Marxism',
+            content: `Sua obra mais conhecida sobre o tema é Main Currents of Marxism: Its Rise, Growth and Dissolution, publicada originalmente em três volumes entre 1976 e 1978.
+
+O trabalho reconstrói a formação do marxismo, suas origens filosóficas, suas diferentes correntes e sua evolução política.
+
+Kołakowski não trata o marxismo como uma doutrina perfeitamente uniforme.
+
+Examina suas tensões, contradições, transformações e consequências históricas.
+
+Sua crítica é especialmente forte em relação à associação entre a pretensão de possuir uma interpretação científica definitiva da história e a legitimação de sistemas políticos autoritários.`
+          },
+          {
+            number: '5.3',
+            title: 'O problema do marxismo como projeto de poder',
+            content: `Uma questão fundamental em Kołakowski é a transformação de uma teoria crítica em uma doutrina oficial de Estado.
+
+Quando determinada interpretação do marxismo passa a ser considerada verdade histórica incontestável, a divergência pode ser classificada como erro ideológico ou oposição política.
+
+O pensamento crítico corre o risco de transformar-se em instrumento de legitimação do poder.
+
+Esse problema não é apenas econômico.
+
+É também epistemológico e político.
+
+Envolve a relação entre conhecimento, liberdade, verdade e autoridade.`
+          },
+          {
+            number: '5.4',
+            title: 'Kołakowski e a crítica cultural',
+            content: `É possível investigar como o marxismo continuou influenciando universidades, filosofia, sociologia, história e estudos culturais mesmo depois da crise dos regimes comunistas europeus.
+
+Entretanto, é importante não atribuir a Kołakowski uma frase que não foi verificada.
+
+Ele não deve ser apresentado como autor de uma suposta afirmação de que o marxismo deixou de ser teoria econômica e se tornou exclusivamente uma crítica cultural.
+
+Sua obra oferece uma crítica histórica e filosófica muito mais ampla.
+
+Também é importante distinguir três fenômenos:
+
+1. crise dos sistemas de planejamento central;
+2. sobrevivência intelectual do marxismo;
+3. desenvolvimento de correntes acadêmicas de crítica cultural.
+
+Eles estão relacionados historicamente, mas não são acontecimentos idênticos.`
+          }
+        ]
+      },
+      {
+        number: '6',
+        title: 'A linguagem como instrumento de influência social',
+        content: `Chegamos a uma das questões mais importantes da investigação.
+
+Se as instituições culturais participam da formação da consciência, qual é o papel da linguagem?
+
+A linguagem não serve apenas para transmitir informações.
+
+Ela também organiza categorias, estabelece distinções, apresenta interpretações e influencia a maneira como acontecimentos são compreendidos.
+
+A escolha de palavras pode modificar a percepção de uma situação.
+
+Compare:
+
+- imposto versus contribuição;
+- manifestação versus distúrbio;
+- reforma versus retirada de direitos;
+- liberdade econômica versus exploração;
+- segurança pública versus repressão;
+- resistência versus radicalismo.
+
+Cada expressão pode destacar aspectos diferentes de uma mesma situação.
+
+Isso não significa que todas as palavras tenham o mesmo efeito em todos os indivíduos.
+
+O significado depende do contexto, das experiências, dos valores e das informações disponíveis.`,
+        subsections: [
+          {
+            number: '6.1',
+            title: 'A hipótese de Sapir-Whorf',
+            content: `A hipótese da relatividade linguística investiga a relação entre língua e pensamento.
+
+Em sua versão mais forte, sugeriria que a língua determina a maneira como as pessoas pensam.
+
+Essa versão determinista não possui sustentação científica suficiente.
+
+Entretanto, pesquisas contemporâneas demonstram que a linguagem pode influenciar a atenção, a categorização e determinados processos cognitivos.
+
+A conclusão mais equilibrada é que a língua pode influenciar a maneira como organizamos determinadas experiências, sem determinar integralmente nossa capacidade de pensar.`
+          },
+          {
+            number: '6.2',
+            title: 'Enquadramento comunicacional',
+            content: `O conceito de framing, ou enquadramento, é especialmente importante.
+
+Um enquadramento destaca determinados aspectos de um acontecimento e deixa outros em segundo plano.
+
+Imagine duas notícias sobre a mesma política pública.
+
+A primeira enfatiza o custo tributário.
+
+A segunda enfatiza os benefícios sociais.
+
+As duas podem descrever o mesmo programa, mas conduzem a interpretações diferentes.
+
+O enquadramento não precisa envolver mentira.
+
+Pode ocorrer simplesmente pela seleção dos aspectos destacados.`
+          },
+          {
+            number: '6.3',
+            title: 'Estudos científicos sobre framing',
+            content: `A pesquisa de Dennis Chong e James Druckman, publicada em 2007 na Annual Review of Political Science, revisou a teoria do enquadramento e os mecanismos pelos quais a apresentação das informações pode influenciar a opinião pública.
+
+Em 2022, Eran Amsalem e Alon Zoizner publicaram uma meta-análise de 138 experimentos sobre efeitos de enquadramento na política.
+
+Os autores identificaram efeitos de tamanho médio sobre atitudes e emoções políticas.
+
+Entretanto, os efeitos sobre o comportamento foram negligenciáveis na análise agregada.
+
+Essa distinção é fundamental.
+
+A linguagem pode influenciar opiniões, emoções e julgamentos, mas não existe comprovação de que controlar palavras seja suficiente para controlar as ações de uma população.`
+          },
+          {
+            number: '6.4',
+            title: 'Repetição, propaganda e persuasão',
+            content: `A repetição de mensagens pode aumentar sua familiaridade e influenciar a percepção de credibilidade.
+
+A propaganda política utiliza diferentes mecanismos:
+
+- repetição;
+- símbolos;
+- identificação coletiva;
+- simplificação;
+- apelo emocional;
+- seleção de informações;
+- construção de inimigos;
+- enquadramento moral.
+
+Entretanto, os efeitos dependem da credibilidade da fonte, da exposição, do contexto e das predisposições individuais.
+
+Os indivíduos também podem resistir, reinterpretar ou rejeitar mensagens.`
+          },
+          {
+            number: '6.5',
+            title: 'O poder da nomeação',
+            content: `A linguagem pode transformar categorias sociais.
+
+Quando uma instituição define determinada conduta como crime, direito, ameaça, privilégio ou dever, ela participa da construção de interpretações socialmente relevantes.
+
+A nomeação pode influenciar:
+
+- percepção de legitimidade;
+- identificação de grupos;
+- julgamentos morais;
+- expectativas sociais;
+- decisões políticas.
+
+Mas a linguagem não cria sozinha a realidade material.
+
+Uma palavra não elimina uma crise econômica, não produz alimentos e não modifica automaticamente as relações de propriedade.
+
+O poder simbólico opera em interação com instituições, recursos e relações sociais.`
+          }
+        ]
+      },
+      {
+        number: '7',
+        title: 'Olavo de Carvalho e a interpretação da guerra cultural no Brasil',
+        content: `Olavo de Carvalho foi um dos principais divulgadores brasileiros de uma interpretação segundo a qual a esquerda teria deslocado sua estratégia para a disputa cultural e intelectual.
+
+Sua leitura enfatizou Gramsci, a Escola de Frankfurt e a influência de correntes marxistas nas universidades, na imprensa e na produção cultural.
+
+Essa interpretação teve influência importante na formação de setores da direita brasileira contemporânea.
+
+Entretanto, é necessário separar três dimensões:
+
+**Primeira:** a existência de teorias acadêmicas sobre hegemonia cultural, ideologia, comunicação e disputa simbólica.
+
+**Segunda:** a existência de movimentos políticos que procuram influenciar instituições educacionais, culturais e comunicacionais.
+
+**Terceira:** a afirmação de que existe uma estratégia centralizada, contínua e coordenada de conquista de todas essas instituições por uma organização marxista.
+
+As duas primeiras afirmações podem ser investigadas empiricamente.
+
+A terceira exige provas específicas e não pode ser presumida a partir da existência das teorias de Gramsci ou Frankfurt.
+
+A expressão "marxismo cultural" é frequentemente utilizada em debates políticos contemporâneos, mas não representa uma categoria acadêmica consensual que descreva uma organização centralizada de transformação cultural.
+
+A pesquisa de Gilberto Calil sobre Olavo de Carvalho, publicada em 2021 na revista Argumentum, examina sua trajetória e a importância da denúncia de uma suposta influência gramscista na construção de sua narrativa política.
+
+O tema merece ser estudado como fenômeno da história intelectual e política brasileira.`
+      },
+      {
+        number: '8',
+        title: 'A virada epistemológica: o que realmente mudou?',
+        content: `A transformação pode ser organizada em quatro momentos.
+
+### Primeiro momento — Marx e Engels
+A investigação começa pelas condições materiais de existência.
+A estrutura econômica ocupa posição fundamental na explicação das instituições e das formas de consciência.
+
+### Segundo momento — Gramsci
+A investigação se amplia para compreender como a direção intelectual e moral contribui para a estabilidade da sociedade.
+O consentimento passa a ser uma dimensão central da reprodução do poder.
+
+### Terceiro momento — Escola de Frankfurt
+A análise incorpora psicologia, comunicação, indústria cultural e racionalidade instrumental.
+A dominação passa a ser estudada também por meio da formação de desejos, hábitos e formas de percepção.
+
+### Quarto momento — Crítica de Kołakowski
+O próprio desenvolvimento do marxismo torna-se objeto de investigação crítica.
+A questão deixa de ser apenas como o capitalismo reproduz suas relações sociais e passa a incluir como uma teoria revolucionária pode transformar-se em doutrina oficial e instrumento de poder.
+
+### Esquema da transformação
+
+Marx e Engels
+**Produção material, classes e ideologia**
+
+↓
+
+Gramsci
+**Hegemonia, sociedade civil e consentimento**
+
+↓
+
+Escola de Frankfurt
+**Cultura de massas, psicologia e comunicação**
+
+↓
+
+Kołakowski
+**Crítica filosófica e histórica do marxismo**
+
+Essa sequência representa uma linha de desenvolvimento intelectual, não uma sucessão obrigatória ou uma evolução homogênea.
+
+Os autores possuem diferenças importantes e não formam uma única escola teórica.`
+      },
+      {
+        number: '9',
+        title: 'Conclusão — Da produção material à produção de sentidos',
+        content: `A história do marxismo demonstra que uma teoria inicialmente concentrada na crítica da economia política acabou influenciando investigações muito mais amplas.
+
+A produção material permaneceu importante, mas tornou-se necessário estudar como as instituições culturais, os meios de comunicação, a educação e a linguagem participam da organização da sociedade.
+
+Gramsci demonstrou a importância da hegemonia.
+
+A Escola de Frankfurt investigou a cultura de massas e os mecanismos psicológicos e sociais da dominação.
+
+Kołakowski analisou criticamente a transformação histórica do marxismo e suas relações com o autoritarismo político.
+
+A pesquisa contemporânea sobre linguagem e comunicação confirma que o enquadramento das informações pode influenciar julgamentos e atitudes.
+
+Entretanto, a influência não equivale a controle absoluto.
+
+A conclusão mais consistente é que **o poder social não se manifesta apenas no controle dos recursos econômicos ou das instituições políticas. Também envolve a capacidade de influenciar as categorias, os valores e as interpretações por meio das quais os indivíduos compreendem a realidade.**
+
+A linguagem é uma dimensão importante desse processo, mas atua em conjunto com condições materiais, instituições, experiências e relações de poder.`
       }
     ],
-    conclusion: 'Marx e Engels não legaram uma cartilha estática de fórmulas infalíveis, mas um arsenal analítico monumental para compreender as contradições intrínsecas e a permanente voracidade do capital globalizado. Cada crise financeira, cada surto de automação do trabalho e cada choque ecológico recoloca no centro do debate acadêmico mundial as categorias forjadas na biblioteca de Londres.',
+    conclusion: `A história do marxismo demonstra que uma teoria inicialmente concentrada na crítica da economia política acabou influenciando investigações muito mais amplas. A conclusão mais consistente é que o poder social não se manifesta apenas no controle dos recursos econômicos ou das instituições políticas: também envolve a capacidade de influenciar as categorias, os valores e as interpretações por meio das quais os indivíduos compreendem a realidade.`,
     bibliographicReferences: [
+      'AMSALEM, Eran; ZOIZNER, Alon. Real, but Limited: A Meta-Analytic Assessment of Framing Effects in the Political Domain. British Journal of Political Science, 2022.',
       'ANDERSON, Perry. Considerations on Western Marxism. Londres: New Left Books, 1976.',
-      'AVINERI, Shlomo. The Social and Political Thought of Karl Marx. Cambridge: Cambridge University Press, 1968.',
-      'MARX, Karl; ENGELS, Friedrich. Manifesto do Partido Comunista. São Paulo: Boitempo, 1998.',
-      'MARX, Karl. O Capital: Crítica da Economia Política. Livro I. São Paulo: Boitempo, 2013.',
-      'MCLELLAN, David. Karl Marx: His Life and Thought. Londres: Macmillan, 1973.',
-      'STEDMAN JONES, Gareth. Karl Marx: Greatness and Illusion. Cambridge: Harvard University Press, 2016.'
+      'CALIL, Gilberto. Olavo de Carvalho e a hegemonia da reação no Brasil. Revista Argumentum, v. 13, n. 2, 2021.',
+      'CHONG, Dennis; DRUCKMAN, James N. Framing Theory. Annual Review of Political Science, 2007.',
+      'GRAMSCI, Antonio. Cadernos do Cárcere. 6 v. Rio de Janeiro: Civilização Brasileira, 1999-2002.',
+      'HORKHEIMER, Max; ADORNO, Theodor W. Dialética do Esclarecimento. Rio de Janeiro: Zahar, 1985 [1947].',
+      'KOŁAKOWSKI, Leszek. Main Currents of Marxism. 3 v. Oxford: Clarendon Press, 1978.',
+      'LUCY, John A. Recent Advances in the Study of Linguistic Relativity in Historical Context. Language Learning, 2016.',
+      'MARCUSE, Herbert. One-Dimensional Man. Boston: Beacon Press, 1964.',
+      'WOLFF, Phillip; HOLMES, Kevin J. Linguistic Relativity. WIREs Cognitive Science, 2011.'
     ]
   },
 

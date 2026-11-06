@@ -81,7 +81,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const canonicalDossier = getCanonicalEditorialDossier(topic.id);
   const researchDossierText = RESEARCH_DOSSIERS[topic.id] || IDEOLOGIAS_RESEARCH_DOSSIERS[topic.id];
   const advancedInvestigation = ADVANCED_INVESTIGATIONS_DATABASE[topic.id];
-  const marketLaws = MARKET_LAWS_CHAPTERS[topic.id];
+  const marketLaws = (topic.id === 103 || topic.id === 105) ? MARKET_LAWS_CHAPTERS[topic.id] : undefined;
 
   const copyToClipboard = (text: string, label: string) => {
     navigator.clipboard.writeText(text);
@@ -726,7 +726,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               }`}
             >
               <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-400" />
-              <span>As Leis de Mercado são Absolutas?</span>
+              <span>{topic.id === 105 ? 'A VIRADA EPISTEMOLÓGICA DO MARXISMO NO SÉCULO XX' : 'As Leis de Mercado são Absolutas?'}</span>
             </button>
           )}
 
@@ -868,7 +868,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             </button>
           )}
 
-          {/* 6.8 ABA ADICIONAL EXCLUSIVA: AS LEIS DE MERCADO SÃO ABSOLUTAS? */}
+          {/* 6.8 ABA ADICIONAL EXCLUSIVA */}
           {marketLaws && (
             <button
               onClick={() => {
@@ -882,7 +882,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               }`}
             >
               <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-400" />
-              <span>As Leis de Mercado são Absolutas?</span>
+              <span>{topic.id === 105 ? 'A VIRADA EPISTEMOLÓGICA DO MARXISMO NO SÉCULO XX' : 'As Leis de Mercado são Absolutas?'}</span>
             </button>
           )}
 
@@ -1710,134 +1710,294 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 </p>
               </div>
 
-              {/* 1. Contexto Histórico Estrutural */}
-              <section id="context-historical" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-3 shadow-md">
-                <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
-                  <span className="w-7 h-7 rounded-full bg-amber-950/80 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
-                    1
-                  </span>
-                  <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
-                    Contexto Histórico Estrutural
-                  </h3>
+              {topic.id === 105 ? (
+                <div className="bg-[#161619] border border-stone-800 p-6 sm:p-9 rounded-xl space-y-8 shadow-xl">
+                  {/* Header */}
+                  <div className="border-b border-stone-800 pb-5 space-y-2">
+                    <h3 className="font-serif text-2xl font-bold text-stone-100">SÍNTESE ACADÊMICA</h3>
+                    <p className="font-serif italic text-amber-400 text-base">Materialismo histórico e crítica da economia política</p>
+                  </div>
+
+                  {/* 1. Conceitos fundamentais */}
+                  <div className="space-y-4">
+                    <h4 className="font-serif font-bold text-stone-200 text-lg uppercase tracking-wide border-l-4 border-amber-500 pl-3">
+                      1. Conceitos fundamentais
+                    </h4>
+                    <div className="grid grid-cols-1 gap-3 pt-1">
+                      {[
+                        { term: 'Materialismo histórico', desc: 'interpretação da história que parte das condições materiais de existência e das relações sociais de produção.' },
+                        { term: 'Materialismo dialético', desc: 'tradição filosófica que interpreta a realidade material por meio de processos, relações e contradições.' },
+                        { term: 'Infraestrutura', desc: 'estrutura econômica constituída pelas forças produtivas e pelas relações de produção.' },
+                        { term: 'Superestrutura', desc: 'instituições jurídicas, políticas e formas de consciência relacionadas à organização material da sociedade.' },
+                        { term: 'Ideologia', desc: 'conjunto de representações, valores e ideias que interpretam, justificam ou ocultam relações sociais.' },
+                        { term: 'Alienação', desc: 'separação do trabalhador em relação ao produto, ao processo e ao controle de sua atividade produtiva.' },
+                        { term: 'Mais-valia', desc: 'diferença entre o valor produzido pelo trabalhador e o valor correspondente à sua força de trabalho, segundo a teoria marxista.' },
+                        { term: 'Fetichismo da mercadoria', desc: 'forma pela qual relações sociais de produção aparecem como relações entre coisas.' },
+                        { term: 'Luta de classes', desc: 'conflito entre grupos sociais com posições distintas nas relações de produção.' },
+                        { term: 'Hegemonia', desc: 'capacidade de exercer direção política, intelectual e moral, construindo consentimento e alianças.' },
+                        { term: 'Guerra de posição', desc: 'estratégia de disputa prolongada pela direção política e cultural da sociedade civil, em contraste com o ataque frontal ao aparelho estatal.' },
+                        { term: 'Indústria cultural', desc: 'conceito desenvolvido pela Escola de Frankfurt para analisar a produção industrializada e padronizada de bens culturais.' },
+                      ].map((item, idx) => (
+                        <div key={idx} className="bg-[#121214] p-4 rounded-lg border border-stone-800">
+                          <strong className="text-amber-300 font-serif font-bold">{item.term}:</strong>{' '}
+                          <span className="font-serif text-stone-300 text-sm">{item.desc}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* 2. Esquema do materialismo histórico clássico */}
+                  <div className="space-y-4">
+                    <h4 className="font-serif font-bold text-stone-200 text-lg uppercase tracking-wide border-l-4 border-amber-500 pl-3">
+                      2. Esquema do materialismo histórico clássico
+                    </h4>
+                    <div className="bg-[#121214] p-5 rounded-lg border border-stone-800 text-center space-y-2 font-mono text-xs sm:text-sm text-stone-300">
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Condições materiais de existência</div>
+                      <div className="text-amber-400 font-bold">↓</div>
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Forças produtivas</div>
+                      <div className="text-amber-400 font-bold">↓</div>
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Relações de produção</div>
+                      <div className="text-amber-400 font-bold">↓</div>
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Estrutura econômica</div>
+                      <div className="text-amber-400 font-bold">↓</div>
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Instituições jurídicas e políticas</div>
+                      <div className="text-amber-400 font-bold">↓</div>
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Formas de consciência social</div>
+                      <p className="font-serif text-xs italic text-stone-400 pt-3 text-justify">
+                        Esse esquema representa uma relação de condicionamento histórico, não uma sequência mecânica e automática.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* 3. Esquema da crítica da economia política */}
+                  <div className="space-y-4">
+                    <h4 className="font-serif font-bold text-stone-200 text-lg uppercase tracking-wide border-l-4 border-amber-500 pl-3">
+                      3. Esquema da crítica da economia política
+                    </h4>
+                    <div className="bg-[#121214] p-5 rounded-lg border border-stone-800 text-center space-y-2 font-mono text-xs sm:text-sm text-stone-300">
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Mercadoria</div>
+                      <div className="text-amber-400 font-bold">↓</div>
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Valor</div>
+                      <div className="text-amber-400 font-bold">↓</div>
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Dinheiro</div>
+                      <div className="text-amber-400 font-bold">↓</div>
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Capital</div>
+                      <div className="text-amber-400 font-bold">↓</div>
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Força de trabalho</div>
+                      <div className="text-amber-400 font-bold">↓</div>
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Mais-valia</div>
+                      <div className="text-amber-400 font-bold">↓</div>
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Acumulação</div>
+                      <div className="text-amber-400 font-bold">↓</div>
+                      <div className="p-2 bg-stone-900 rounded border border-stone-800">Reprodução das relações capitalistas</div>
+                    </div>
+                  </div>
+
+                  {/* 4. Linha de continuidade intelectual */}
+                  <div className="space-y-4">
+                    <h4 className="font-serif font-bold text-stone-200 text-lg uppercase tracking-wide border-l-4 border-amber-500 pl-3">
+                      4. Linha de continuidade intelectual
+                    </h4>
+                    <div className="space-y-3">
+                      {[
+                        { author: 'Marx e Engels — século XIX', desc: 'Materialismo histórico, ideologia, relações de produção e crítica da economia política.' },
+                        { author: 'Antonio Gramsci — primeira metade do século XX', desc: 'Hegemonia, sociedade civil, consentimento e guerra de posição.' },
+                        { author: 'Escola de Frankfurt — século XX', desc: 'Indústria cultural, racionalidade instrumental, autoritarismo, comunicação e crítica da sociedade de massas.' },
+                        { author: 'Leszek Kołakowski — segunda metade do século XX', desc: 'Crítica histórica e filosófica do marxismo, especialmente de sua transformação em doutrina política autoritária.' },
+                      ].map((step, sIdx) => (
+                        <div key={sIdx} className="bg-[#121214] p-4 rounded-lg border border-stone-800 space-y-1.5">
+                          <h5 className="font-serif font-bold text-amber-300 text-sm">{step.author}</h5>
+                          <p className="font-serif text-stone-300 text-xs sm:text-sm">{step.desc}</p>
+                          {sIdx < 3 && <div className="text-center text-amber-500 font-bold pt-1">↓</div>}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* 5. Atenção às diferenças */}
+                  <div className="space-y-4">
+                    <h4 className="font-serif font-bold text-stone-200 text-lg uppercase tracking-wide border-l-4 border-amber-500 pl-3">
+                      5. Atenção às diferenças
+                    </h4>
+                    <div className="bg-[#121214] p-5 rounded-lg border border-stone-800 space-y-2.5">
+                      {[
+                        'Marx e Engels não escreveram uma teoria idêntica à de Gramsci.',
+                        'Gramsci não reduziu a política à ocupação de instituições culturais.',
+                        'A Escola de Frankfurt não abandonou completamente a crítica da economia política.',
+                        'Kołakowski não foi simplesmente um representante da Escola de Frankfurt.',
+                        'O conceito de hegemonia não significa controle absoluto das mentes.',
+                        'A teoria marxista da ideologia não é idêntica às teorias contemporâneas de comunicação e psicologia.',
+                      ].map((diff, dIdx) => (
+                        <div key={dIdx} className="flex items-start gap-2.5">
+                          <span className="text-amber-400 font-bold">•</span>
+                          <span className="font-serif text-stone-300 text-xs sm:text-sm">{diff}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* 6. Questões para revisão */}
+                  <div className="space-y-4">
+                    <h4 className="font-serif font-bold text-stone-200 text-lg uppercase tracking-wide border-l-4 border-amber-500 pl-3">
+                      6. Questões para revisão
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {[
+                        'Qual é a diferença entre materialismo histórico e idealismo?',
+                        'O que Marx entende por alienação?',
+                        'Como funciona a relação entre infraestrutura e superestrutura?',
+                        'O que significa fetichismo da mercadoria?',
+                        'Qual é a importância da mais-valia?',
+                        'Como Gramsci desenvolveu o conceito de hegemonia?',
+                        'O que significa guerra de posição?',
+                        'Qual é a importância da indústria cultural?',
+                        'Qual foi a crítica de Kołakowski ao marxismo?',
+                        'Por que a relação entre economia e cultura se tornou um problema central no marxismo do século XX?',
+                      ].map((q, qIdx) => (
+                        <div key={qIdx} className="bg-[#121214] p-3.5 rounded-lg border border-stone-800 flex items-start gap-2.5">
+                          <span className="w-5 h-5 rounded-full bg-amber-950 text-amber-300 font-mono text-xs flex items-center justify-center font-bold shrink-0 mt-0.5">
+                            {qIdx + 1}
+                          </span>
+                          <span className="font-serif text-xs sm:text-sm text-stone-200 leading-relaxed">
+                            {q}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <p className={`font-serif text-stone-300 text-justify leading-relaxed ${getFontSizeClass('body')}`}>
-                  {topic.historicalContext}
-                </p>
-              </section>
-
-              {/* 2. Síntese Executiva do Período */}
-              <section id="context-summary" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-3 shadow-md">
-                <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
-                  <span className="w-7 h-7 rounded-full bg-amber-950/80 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
-                    2
-                  </span>
-                  <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
-                    Síntese Executiva e Panorama Geral
-                  </h3>
-                </div>
-                <p className={`font-serif text-stone-300 text-justify leading-relaxed ${getFontSizeClass('body')}`}>
-                  {topic.summary}
-                </p>
-              </section>
-
-              {/* 3. Ementa Temática e Tópicos Cardeais */}
-              {topic.mainSubjects && topic.mainSubjects.length > 0 && (
-                <section id="context-subjects" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
-                  <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
-                    <span className="w-7 h-7 rounded-full bg-amber-950/80 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
-                      3
-                    </span>
-                    <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
-                      Ementa Temática e Tópicos Cardeais
-                    </h3>
-                  </div>
-                  <div className="grid grid-cols-1 gap-2.5 pt-1">
-                    {topic.mainSubjects.map((subj, sIdx) => (
-                      <div key={sIdx} className="flex items-start gap-3 bg-[#121214] p-3.5 rounded-lg border border-stone-800/80">
-                        <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                        <span className="font-serif text-xs sm:text-sm text-stone-200 leading-relaxed">
-                          {subj}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              )}
-
-              {/* 4. Consenso Historiográfico Consolidado */}
-              {topic.academicConsensus && (
-                <section id="context-consensus" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-3 shadow-md">
-                  <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
-                    <ShieldCheck className="w-5 h-5 text-amber-400 shrink-0" />
-                    <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
-                      Consenso Historiográfico Consolidado
-                    </h3>
-                  </div>
-                  <div className="bg-amber-950/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
-                    <p className={`font-serif text-stone-200 text-justify leading-relaxed ${getFontSizeClass('body')}`}>
-                      {topic.academicConsensus}
-                    </p>
-                  </div>
-                </section>
-              )}
-
-              {/* 5. Atores Históricos Centrais */}
-              {topic.keyActors && topic.keyActors.length > 0 && (
-                <section id="context-actors" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
-                  <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
-                    <Users className="w-5 h-5 text-amber-400 shrink-0" />
-                    <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
-                      Atores Históricos Centrais e Atuação Institucional
-                    </h3>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-                    {topic.keyActors.map((actor, aIdx) => (
-                      <div key={aIdx} className="bg-[#121214] p-3.5 rounded-lg border border-stone-800 flex items-center gap-2.5">
-                        <span className="w-6 h-6 rounded-full bg-stone-800 text-amber-300 font-mono text-xs flex items-center justify-center font-bold shrink-0">
-                          {aIdx + 1}
-                        </span>
-                        <span className="font-mono text-xs text-stone-200 font-semibold">
-                          {actor}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              )}
-
-              {/* 6. Especialistas e Historiadores de Referência */}
-              {topic.historiansInvolved && topic.historiansInvolved.length > 0 && (
-                <section id="context-historians" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
-                  <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
-                    <GraduationCap className="w-5 h-5 text-amber-400 shrink-0" />
-                    <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
-                      Especialistas e Historiadores de Referência
-                    </h3>
-                  </div>
-                  <div className="flex items-center gap-2 flex-wrap pt-1">
-                    {topic.historiansInvolved.map((hist, hIdx) => (
-                      <span key={hIdx} className="px-3 py-1.5 rounded-lg bg-[#121214] border border-stone-800 text-stone-300 font-mono text-xs flex items-center gap-1.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
-                        {hist}
+              ) : (
+                <>
+                  {/* 1. Contexto Histórico Estrutural */}
+                  <section id="context-historical" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-3 shadow-md">
+                    <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
+                      <span className="w-7 h-7 rounded-full bg-amber-950/80 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                        1
                       </span>
-                    ))}
-                  </div>
-                </section>
-              )}
+                      <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
+                        Contexto Histórico Estrutural
+                      </h3>
+                    </div>
+                    <p className={`font-serif text-stone-300 text-justify leading-relaxed ${getFontSizeClass('body')}`}>
+                      {topic.historicalContext}
+                    </p>
+                  </section>
 
-              {/* Historical Impact & Emblematic Quote Card */}
-              {topic.quote && (
-                <div className="bg-[#121214] border border-amber-600/40 p-5 rounded-xl space-y-2.5 shadow-inner">
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-amber-400 font-bold block">
-                    CITAÇÃO EMBLEMÁTICA DA CÁTEDRA
-                  </span>
-                  <blockquote className="font-serif italic text-stone-200 text-base sm:text-lg leading-relaxed">
-                    "{topic.quote.text}"
-                  </blockquote>
-                  <p className="text-xs font-mono text-stone-400 text-right">
-                    — <span className="text-amber-300 font-semibold">{topic.quote.author}</span>, {topic.quote.context}
-                  </p>
-                </div>
+                  {/* 2. Síntese Executiva do Período */}
+                  <section id="context-summary" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-3 shadow-md">
+                    <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
+                      <span className="w-7 h-7 rounded-full bg-amber-950/80 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                        2
+                      </span>
+                      <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
+                        Síntese Executiva e Panorama Geral
+                      </h3>
+                    </div>
+                    <p className={`font-serif text-stone-300 text-justify leading-relaxed ${getFontSizeClass('body')}`}>
+                      {topic.summary}
+                    </p>
+                  </section>
+
+                  {/* 3. Ementa Temática e Tópicos Cardeais */}
+                  {topic.mainSubjects && topic.mainSubjects.length > 0 && (
+                    <section id="context-subjects" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                      <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
+                        <span className="w-7 h-7 rounded-full bg-amber-950/80 border border-amber-600/50 text-amber-300 flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                          3
+                        </span>
+                        <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
+                          Ementa Temática e Tópicos Cardeais
+                        </h3>
+                      </div>
+                      <div className="grid grid-cols-1 gap-2.5 pt-1">
+                        {topic.mainSubjects.map((subj, sIdx) => (
+                          <div key={sIdx} className="flex items-start gap-3 bg-[#121214] p-3.5 rounded-lg border border-stone-800/80">
+                            <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                            <span className="font-serif text-xs sm:text-sm text-stone-200 leading-relaxed">
+                              {subj}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </section>
+                  )}
+
+                  {/* 4. Consenso Historiográfico Consolidado */}
+                  {topic.academicConsensus && (
+                    <section id="context-consensus" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-3 shadow-md">
+                      <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
+                        <ShieldCheck className="w-5 h-5 text-amber-400 shrink-0" />
+                        <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
+                          Consenso Historiográfico Consolidado
+                        </h3>
+                      </div>
+                      <div className="bg-amber-950/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                        <p className={`font-serif text-stone-200 text-justify leading-relaxed ${getFontSizeClass('body')}`}>
+                          {topic.academicConsensus}
+                        </p>
+                      </div>
+                    </section>
+                  )}
+
+                  {/* 5. Atores Históricos Centrais */}
+                  {topic.keyActors && topic.keyActors.length > 0 && (
+                    <section id="context-actors" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                      <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
+                        <Users className="w-5 h-5 text-amber-400 shrink-0" />
+                        <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
+                          Atores Históricos Centrais e Atuação Institucional
+                        </h3>
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                        {topic.keyActors.map((actor, aIdx) => (
+                          <div key={aIdx} className="bg-[#121214] p-3.5 rounded-lg border border-stone-800 flex items-center gap-2.5">
+                            <span className="w-6 h-6 rounded-full bg-stone-800 text-amber-300 font-mono text-xs flex items-center justify-center font-bold shrink-0">
+                              {aIdx + 1}
+                            </span>
+                            <span className="font-mono text-xs text-stone-200 font-semibold">
+                              {actor}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </section>
+                  )}
+
+                  {/* 6. Especialistas e Historiadores de Referência */}
+                  {topic.historiansInvolved && topic.historiansInvolved.length > 0 && (
+                    <section id="context-historians" className="scroll-mt-24 bg-[#161619] p-5 sm:p-7 rounded-xl border border-stone-800 space-y-4 shadow-md">
+                      <div className="flex items-center gap-2.5 border-b border-stone-800 pb-3">
+                        <GraduationCap className="w-5 h-5 text-amber-400 shrink-0" />
+                        <h3 className="font-serif font-bold text-stone-100 uppercase tracking-wide text-base sm:text-lg">
+                          Especialistas e Historiadores de Referência
+                        </h3>
+                      </div>
+                      <div className="flex items-center gap-2 flex-wrap pt-1">
+                        {topic.historiansInvolved.map((hist, hIdx) => (
+                          <span key={hIdx} className="px-3 py-1.5 rounded-lg bg-[#121214] border border-stone-800 text-stone-300 font-mono text-xs flex items-center gap-1.5">
+                            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
+                            {hist}
+                          </span>
+                        ))}
+                      </div>
+                    </section>
+                  )}
+
+                  {/* Historical Impact & Emblematic Quote Card */}
+                  {topic.quote && (
+                    <div className="bg-[#121214] border border-amber-600/40 p-5 rounded-xl space-y-2.5 shadow-inner">
+                      <span className="text-[10px] font-mono uppercase tracking-widest text-amber-400 font-bold block">
+                        CITAÇÃO EMBLEMÁTICA DA CÁTEDRA
+                      </span>
+                      <blockquote className="font-serif italic text-stone-200 text-base sm:text-lg leading-relaxed">
+                        "{topic.quote.text}"
+                      </blockquote>
+                      <p className="text-xs font-mono text-stone-400 text-right">
+                        — <span className="text-amber-300 font-semibold">{topic.quote.author}</span>, {topic.quote.context}
+                      </p>
+                    </div>
+                  )}
+                </>
               )}
             </div>
           )}
@@ -2351,7 +2511,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 <div className="bg-stone-900/80 border border-stone-800 rounded-xl p-4 sm:p-5 space-y-3">
                   <div className="flex items-center gap-2 text-xs font-mono font-bold text-amber-400 uppercase tracking-wider">
                     <Sparkles className="w-3.5 h-3.5" />
-                    <span>Sumário dos 13 Eixos Analíticos:</span>
+                    <span>Sumário dos {marketLaws.sections.length} Eixos Analíticos:</span>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-serif">
                     {marketLaws.sections.map(s => (
@@ -2367,58 +2527,139 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                   </div>
                 </div>
 
-                {/* Introdução */}
-                <div id="market-intro" className="space-y-4 pt-2">
-                  <h3 className="text-sm font-mono uppercase tracking-widest text-amber-400 font-bold border-l-2 border-amber-500 pl-3">
-                    Introdução
-                  </h3>
-                  <div className="font-serif text-stone-300 text-sm sm:text-base leading-relaxed space-y-3 whitespace-pre-line">
-                    {marketLaws.introduction}
+                {/* Section Content */}
+                {marketLaws.rawMarkdown ? (
+                  <div className="space-y-6 pt-2 font-serif text-stone-300 leading-relaxed">
+                    {marketLaws.rawMarkdown.split('\n\n').map((paragraph, pIdx) => {
+                      const trimmed = paragraph.trim();
+                      if (!trimmed) return null;
+                      if (trimmed.startsWith('# CAPÍTULO EXTRA') || trimmed.startsWith('# A VIRADA EPISTEMOLÓGICA DO MARXISMO') || trimmed.startsWith('## Da infraestrutura')) {
+                        return null;
+                      }
+                      if (trimmed === '---') {
+                        return <hr key={pIdx} className="border-stone-800 my-6" />;
+                      }
+                      if (trimmed.startsWith('## ')) {
+                        const h2Text = trimmed.replace('## ', '');
+                        const secNumMatch = h2Text.match(/^(\d+)\.\s*(.*)/);
+                        const anchorId = secNumMatch ? `market-sec-${secNumMatch[1]}` : undefined;
+                        return (
+                          <div key={pIdx} id={anchorId} className="scroll-mt-24 pt-6 border-t border-stone-800">
+                            <h2 className="text-lg sm:text-xl font-serif font-bold text-amber-400 tracking-wide mb-3 flex items-start gap-2">
+                              <span>{h2Text}</span>
+                            </h2>
+                          </div>
+                        );
+                      }
+                      if (trimmed.startsWith('### ')) {
+                        return (
+                          <h3 key={pIdx} className="text-base sm:text-lg font-serif font-semibold text-amber-200 mt-6 mb-3 flex items-center gap-2">
+                            <span className="w-2 h-2 rounded-full bg-amber-500 shrink-0"></span>
+                            <span>{trimmed.replace('### ', '')}</span>
+                          </h3>
+                        );
+                      }
+                      if (trimmed.startsWith('- ')) {
+                        const listItems = trimmed.split('\n').map(item => item.replace(/^- /, '').trim());
+                        return (
+                          <ul key={pIdx} className="list-disc list-inside space-y-2 pl-2 text-stone-300 font-serif my-3">
+                            {listItems.map((li, liIdx) => (
+                              <li key={liIdx} className="leading-relaxed">{li}</li>
+                            ))}
+                          </ul>
+                        );
+                      }
+                      return (
+                        <p key={pIdx} className="text-stone-300 text-sm sm:text-base leading-relaxed">
+                          {trimmed.split(/(\*\*.*?\*\*)/g).map((part, bIdx) => {
+                            if (part.startsWith('**') && part.endsWith('**')) {
+                              return <strong key={bIdx} className="font-bold text-stone-100">{part.slice(2, -2)}</strong>;
+                            }
+                            return part;
+                          })}
+                        </p>
+                      );
+                    })}
                   </div>
-                </div>
-
-                {/* As 13 Seções */}
-                <div className="space-y-8 pt-4">
-                  {marketLaws.sections.map(sec => (
-                    <div key={sec.number} id={`market-sec-${sec.number}`} className="space-y-3 border-t border-stone-800/80 pt-6">
-                      <div className="flex items-center gap-2.5">
-                        <span className="px-2 py-0.5 bg-amber-950 border border-amber-700/60 text-amber-300 font-mono text-xs font-bold rounded">
-                          {sec.number}
-                        </span>
-                        <h4 className="text-base sm:text-lg lg:text-xl font-serif font-bold text-stone-100">
-                          {sec.title}
-                        </h4>
-                      </div>
-                      <div className="font-serif text-stone-300 text-sm sm:text-base leading-relaxed space-y-3 whitespace-pre-line pl-1">
-                        {sec.content}
+                ) : (
+                  <>
+                    {/* Introdução */}
+                    <div id="market-intro" className="space-y-4 pt-2">
+                      <h3 className="text-sm font-mono uppercase tracking-widest text-amber-400 font-bold border-l-2 border-amber-500 pl-3">
+                        Introdução
+                      </h3>
+                      <div className="font-serif text-stone-300 text-sm sm:text-base leading-relaxed space-y-3 whitespace-pre-line">
+                        {marketLaws.introduction}
                       </div>
                     </div>
-                  ))}
-                </div>
 
-                {/* Conclusão */}
-                <div id="market-conclusion" className="space-y-3 border-t-2 border-amber-600/40 pt-6">
-                  <h3 className="text-sm font-mono uppercase tracking-widest text-amber-400 font-bold border-l-2 border-amber-500 pl-3">
-                    Conclusão
-                  </h3>
-                  <div className="font-serif text-stone-300 text-sm sm:text-base leading-relaxed space-y-3 whitespace-pre-line bg-amber-950/20 border border-amber-700/30 p-5 rounded-xl">
-                    {marketLaws.conclusion}
-                  </div>
-                </div>
+                    {/* As Seções */}
+                    <div className="space-y-8 pt-4">
+                      {marketLaws.sections.map(sec => (
+                        <div key={sec.number} id={`market-sec-${sec.number}`} className="space-y-3 border-t border-stone-800/80 pt-6">
+                          <div className="flex items-center gap-2.5">
+                            <span className="px-2 py-0.5 bg-amber-950 border border-amber-700/60 text-amber-300 font-mono text-xs font-bold rounded">
+                              {sec.number}
+                            </span>
+                            <h4 className="text-base sm:text-lg lg:text-xl font-serif font-bold text-stone-100">
+                              {sec.title}
+                            </h4>
+                          </div>
+                          {sec.content && (
+                            <div className="font-serif text-stone-300 text-sm sm:text-base leading-relaxed space-y-3 whitespace-pre-line pl-1">
+                              {sec.content}
+                            </div>
+                          )}
 
-                {/* Referências Bibliográficas */}
-                <div id="market-refs" className="space-y-3 border-t border-stone-800 pt-6">
-                  <h3 className="text-sm font-mono uppercase tracking-widest text-stone-400 font-bold">
-                    Referências Bibliográficas
-                  </h3>
-                  <ul className="space-y-2 text-xs font-mono text-stone-400">
-                    {marketLaws.bibliographicReferences.map((ref, rIdx) => (
-                      <li key={rIdx} className="border-l border-amber-600/40 pl-3">
-                        {ref}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                          {/* Subseções se existirem */}
+                          {sec.subsections && sec.subsections.length > 0 && (
+                            <div className="space-y-4 pl-3 sm:pl-5 border-l-2 border-stone-800 mt-4">
+                              {sec.subsections.map(sub => (
+                                <div key={sub.number} className="space-y-2">
+                                  <h5 className="text-sm sm:text-base font-serif font-semibold text-amber-200/90 flex items-center gap-2">
+                                    <span className="font-mono text-xs text-amber-500 font-bold">{sub.number}</span>
+                                    <span>{sub.title.startsWith(sub.number) ? sub.title.replace(sub.number, '').trim() : sub.title}</span>
+                                  </h5>
+                                  <div className="font-serif text-stone-300 text-xs sm:text-sm leading-relaxed whitespace-pre-line pl-1">
+                                    {sub.content}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Conclusão */}
+                    {marketLaws.conclusion && (
+                      <div id="market-conclusion" className="space-y-3 border-t-2 border-amber-600/40 pt-6">
+                        <h3 className="text-sm font-mono uppercase tracking-widest text-amber-400 font-bold border-l-2 border-amber-500 pl-3">
+                          Conclusão
+                        </h3>
+                        <div className="font-serif text-stone-300 text-sm sm:text-base leading-relaxed space-y-3 whitespace-pre-line bg-amber-950/20 border border-amber-700/30 p-5 rounded-xl">
+                          {marketLaws.conclusion}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Referências Bibliográficas */}
+                    {marketLaws.bibliographicReferences && marketLaws.bibliographicReferences.length > 0 && (
+                      <div id="market-refs" className="space-y-3 border-t border-stone-800 pt-6">
+                        <h3 className="text-sm font-mono uppercase tracking-widest text-stone-400 font-bold">
+                          Referências Bibliográficas
+                        </h3>
+                        <ul className="space-y-2 text-xs font-mono text-stone-400">
+                          {marketLaws.bibliographicReferences.map((ref, rIdx) => (
+                            <li key={rIdx} className="border-l border-amber-600/40 pl-3">
+                              {ref}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </>
+                )}
 
               </div>
             </article>

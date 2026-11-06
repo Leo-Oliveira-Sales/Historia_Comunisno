@@ -191,6 +191,17 @@ export const CHRONOLOGIES_BY_TOPIC: Record<number, ChronologyMilestone[]> = {
     { date: '1870–1900', event: 'Segunda Revolução Industrial e Capitalismo Financeiro', significance: 'Ascensão do aço Bessemer, química pesada, eletricidade, motor a explosão e expansão imperialista global.' }
   ],
 
+  105: [
+    { date: '1843', event: 'Crítica da Filosofia do Direito de Hegel', significance: 'Marx inicia sua transição da crítica da religião para a crítica da política e do direito.' },
+    { date: '1844', event: 'Manuscritos Econômico-Filosóficos de Paris', significance: 'Primeira articulação sistemática do conceito de alienação e estudo da economia política.' },
+    { date: '1845–1846', event: 'Elaboração de A Ideologia Alemã', significance: 'Formulação dos postulados centrais do materialismo histórico com Engels.' },
+    { date: '1848', event: 'Publicação do Manifesto do Partido Comunista', significance: 'Análise da luta de classes e do dinamismo do capitalismo no contexto das Revoluções de 1848.' },
+    { date: '1859', event: 'Prefácio à Contribuição à Crítica da Economia Política', significance: 'Formulação clássica da relação entre infraestrutura econômica e superestrutura.' },
+    { date: '1867', event: 'Publicação do Livro I de O Capital', significance: 'Dissecação da mercadoria, do fetichismo, da mais-valia e da acumulação capitalista.' },
+    { date: '1878', event: 'Publicação do Anti-Dühring por Engels', significance: 'Sistematização do marxismo como visão de mundo materialista e dialética.' },
+    { date: '1883', event: 'Morte de Karl Marx', significance: 'Engels assume a tarefa de organizar e publicar os volumes II e III de O Capital.' }
+  ],
+
   112: [
     { date: '1715', event: 'Morte de Luís XIV.', significance: 'Encerramento de um dos reinados mais longos da história europeia; a estrutura política do absolutismo começa a enfrentar novos desafios.' },
     { date: '1748', event: 'Publicação de O Espírito das Leis, de Montesquieu.', significance: 'Reflexão sobre as formas de governo, as leis e a organização institucional do poder e da liberdade política.' },
@@ -752,6 +763,110 @@ A era do carvão fumegante e das correias de transmissão de couro das fábricas
 As ferrovias transcontinentais cortavam o Oeste americano e as estepes siberianas, navios cargueiros a turbina transportavam carne congelada da Argentina para a Europa e o capital financeiro dos bancos internacionais financiava impérios coloniais na África e na Ásia. A sociedade industrial entrava no século XX celebrando seu triunfo tecnológico, sem prever que aquela mesma potência produtiva colossal forjaria as armas mais mortíferas das grandes guerras mundiais.`,
       eyewitnessOrDocQuote: 'A eletricidade não é apenas uma nova fonte de luz; é a alma invisível da nova indústria que move o século que está nascendo.',
       quoteAuthor: 'Relatório Oficial da Exposição Mundial de Chicago (1893)'
+    }
+  ],
+
+  105: [
+    {
+      title: 'Crônica 1 — Paris, 1844: o encontro de duas trajetórias',
+      location: 'Paris, França (1844)',
+      narrative: `Em Paris, Karl Marx desenvolve seus estudos filosóficos e entra em contato mais intenso com o pensamento socialista e a economia política.
+
+Friedrich Engels, que conhecia as condições da indústria inglesa, também se aproxima das críticas ao capitalismo.
+
+O encontro entre os dois intelectuais produziria uma colaboração duradoura.
+
+Marx possuía formação filosófica e interesse crescente pela economia. Engels trazia experiências familiares e observações relacionadas ao mundo industrial.
+
+A colaboração entre ambos contribuiria para a formação de uma nova interpretação da sociedade.`,
+      eyewitnessOrDocQuote: 'O encontro em Paris selou nossa aliança teórica e política inseparável.',
+      quoteAuthor: 'Friedrich Engels'
+    },
+    {
+      title: 'Crônica 2 — Bruxelas, 1845–1846: a crítica aos jovens hegelianos',
+      location: 'Bruxelas, Bélgica (1845–1846)',
+      narrative: `Marx e Engels trabalham em manuscritos que posteriormente seriam conhecidos como A Ideologia Alemã.
+
+A preocupação central é criticar interpretações filosóficas que explicavam a história principalmente pelo desenvolvimento das ideias.
+
+Os autores procuram começar pelos indivíduos concretos, suas necessidades e suas atividades produtivas.
+
+A obra representa um passo importante na formação do materialismo histórico.
+
+Durante muito tempo, esses manuscritos não foram publicados integralmente. Seu conteúdo somente se tornou amplamente conhecido no século XX.`,
+      eyewitnessOrDocQuote: 'Não é a consciência que determina a vida, mas a vida material que determina a consciência.',
+      quoteAuthor: 'Karl Marx e Friedrich Engels, A Ideologia Alemã'
+    },
+    {
+      title: 'Crônica 3 — Londres, 1867: a publicação de O Capital',
+      location: 'Londres, Reino Unido (1867)',
+      narrative: `Depois de anos de dificuldades financeiras e de pesquisa, Marx publica o primeiro volume de O Capital.
+
+A obra procura investigar as estruturas internas da sociedade capitalista.
+
+O ponto de partida é a mercadoria.
+
+A partir dela, Marx desenvolve uma análise sobre valor, dinheiro, força de trabalho, produção e acumulação.
+
+O livro não é apenas uma denúncia das condições sociais das fábricas. É uma tentativa de construir uma crítica sistemática da economia política.`,
+      eyewitnessOrDocQuote: 'O valor de uma mercadoria é determinado pela quantidade de trabalho socialmente necessário para a sua produção.',
+      quoteAuthor: 'Karl Marx, O Capital (Livro I)'
+    },
+    {
+      title: 'Crônica 4 — Londres, 1883: o fim de Marx e a continuidade de Engels',
+      location: 'Londres, Reino Unido (1883)',
+      narrative: `Marx morre em Londres.
+
+Engels permanece responsável por organizar e publicar parte dos manuscritos deixados pelo amigo.
+
+A morte de Marx não encerra o desenvolvimento do marxismo.
+
+Nas décadas seguintes, diferentes organizações políticas e intelectuais passam a interpretar e adaptar suas ideias.
+
+A tradição marxista deixaria de ser apenas uma colaboração entre dois pensadores e se tornaria um movimento internacional extremamente diversificado.`,
+      eyewitnessOrDocQuote: 'O maior pensador da humanidade deixou de pensar.',
+      quoteAuthor: 'Discurso de Friedrich Engels junto ao túmulo de Marx no Cemitério de Highgate'
+    },
+    {
+      title: 'Crônica 5 — Roma, 1920: a questão da hegemonia',
+      location: 'Roma e Turim, Itália (1920–1935)',
+      narrative: `Antonio Gramsci participa das lutas políticas italianas e acompanha o crescimento do fascismo.
+
+Sua experiência política e sua análise das instituições italianas contribuem para uma reflexão sobre os limites da estratégia revolucionária tradicional.
+
+Mais tarde, encarcerado pelo regime fascista, desenvolverá nos Cadernos do Cárcere suas reflexões sobre hegemonia, sociedade civil e guerra de posição.
+
+A questão que o preocupa é como uma classe mantém sua direção política e moral sobre a sociedade.`,
+      eyewitnessOrDocQuote: 'A supremacia de um grupo social manifesta-se de dois modos: como domínio e como direção intelectual e moral.',
+      quoteAuthor: 'Antonio Gramsci, Cadernos do Cárcere'
+    },
+    {
+      title: 'Crônica 6 — Frankfurt, década de 1930: a crítica da sociedade moderna',
+      location: 'Frankfurt am Main, Alemanha (1930)',
+      narrative: `O Instituto de Pesquisa Social desenvolve pesquisas sobre capitalismo, autoridade, cultura e sociedade.
+
+A ascensão do fascismo, o fracasso de movimentos revolucionários e a transformação das sociedades industriais desafiam as interpretações tradicionais do marxismo.
+
+Horkheimer, Adorno, Marcuse e outros intelectuais ampliam a análise social.
+
+A cultura de massas, a propaganda, a família, a psicologia e os mecanismos de dominação passam a ocupar posição central.
+
+A crítica do capitalismo deixa de se concentrar exclusivamente nas relações de produção.`,
+      eyewitnessOrDocQuote: 'A indústria cultural transforma a arte e a cultura em mercadorias de consumo de massa e conformismo.',
+      quoteAuthor: 'Max Horkheimer e Theodor Adorno'
+    },
+    {
+      title: 'Crônica 7 — Varsóvia, década de 1960: a crítica interna ao marxismo',
+      location: 'Varsóvia e Oxford (1960–1978)',
+      narrative: `Leszek Kołakowski havia sido um intelectual marxista ligado ao ambiente acadêmico polonês.
+
+Com o passar do tempo, sua crítica ao dogmatismo e ao autoritarismo comunista tornou-se mais intensa.
+
+Seu afastamento do marxismo oficial representou uma transformação intelectual e política.
+
+Posteriormente, sua obra se tornaria uma das análises mais importantes da história do pensamento marxista.`,
+      eyewitnessOrDocQuote: 'A história das correntes marxistas revela a tragédia de uma crítica social que se converteu em ideologia oficial de Estado.',
+      quoteAuthor: 'Leszek Kołakowski, Main Currents of Marxism'
     }
   ],
 

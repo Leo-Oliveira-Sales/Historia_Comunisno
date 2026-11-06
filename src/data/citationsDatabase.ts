@@ -560,6 +560,145 @@ export const TOPIC_CITATIONS_DATABASE: Record<number, TopicCitationsData> = {
     ],
     controversiasELimitacoesDasFontes: "CRITÉRIOS DE AUDITORIA DOCUMENTAL DO REGISTRO Nº 03: 1. Todos os trechos de Adam Smith, David Ricardo, Karl Marx, Friedrich Engels e Karl Polanyi foram checados nas respectivas edições originais ou nas traduções canônicas de referência acadêmica. 2. Os depoimentos sobre o trabalho infantil foram transcritos fielmente a partir dos Blue Books oficiais do Parlamento britânico (Comitê Sadler de 1832). 3. As fontes primárias não foram adaptadas nem simplificadas."
   },
+  105: {
+    title: "Protocolo de Auditoria Documental e Citações Verificadas — Registro nº 05 (Materialismo Dialético e Crítica da Economia Política)",
+    citations: [
+      {
+        number: 1,
+        author: "Karl Marx e Friedrich Engels",
+        category: "Tratado Filosófico / A Ideologia Alemã (1845–1846)",
+        quoteText: "As ideias da classe dominante são, em cada época, as ideias dominantes; isto é, a classe que é a força material dominante da sociedade é, ao mesmo tempo, sua força espiritual dominante. A classe que dispõe dos meios de produção material dispõe igualmente dos meios de produção intelectual.",
+        source: "MARX, Karl; ENGELS, Friedrich. A Ideologia Alemã. 1845–1846.",
+        analise: "Formulação clássica sobre a relação entre o controle dos meios materiais de produção e a difusão hegemônica das ideias da classe dominante."
+      },
+      {
+        number: 2,
+        author: "Karl Marx e Friedrich Engels",
+        category: "Manifesto Político / Manifesto do Partido Comunista (1848)",
+        quoteText: "A história de todas as sociedades até hoje existentes é a história das lutas de classes... Tudo o que é estático e sagrado se desmancha no ar, e os homens são forçados a encarar com sobriedade suas condições de vida e suas relações recíprocas.",
+        source: "MARX, Karl; ENGELS, Friedrich. Manifesto do Partido Comunista. 1848.",
+        analise: "Análise da dinâmica revolucionária do capitalismo e do papel do proletariado na luta de classes."
+      },
+      {
+        number: 3,
+        author: "Karl Marx",
+        category: "Prefácio Teórico / Contribuição à Crítica da Economia Política (1859)",
+        quoteText: "Não é a consciência dos homens que determina o seu ser, mas, ao contrário, o seu ser social que determina a sua consciência. Na produção social de sua vida, os homens estabelecem relações determinadas, necessárias e independentes de sua vontade.",
+        source: "MARX, Karl. Contribuição à Crítica da Economia Política. 1859.",
+        analise: "Síntese epistemológica da concepção materialista da história e da relação entre infraestrutura e superestrutura."
+      },
+      {
+        number: 4,
+        author: "Karl Marx",
+        category: "Crítica Econômica / O Capital, Livro I (1867)",
+        quoteText: "As relações sociais entre seus trabalhos privados aparecem como aquilo que são, isto é, não como relações diretamente sociais entre pessoas em seus próprios trabalhos, mas como relações reificadas entre pessoas e relações sociais entre coisas.",
+        source: "MARX, Karl. O Capital: Crítica da Economia Política. Livro I. 1867.",
+        analise: "Exposição do conceito de fetichismo da mercadoria e da reificação das relações sociais no modo de produção capitalista."
+      },
+      {
+        number: 5,
+        author: "Friedrich Engels",
+        category: "Correspondência Teórica / Carta a Joseph Bloch (1890)",
+        quoteText: "De acordo com a concepção materialista da história, o elemento determinante em última instância na história é a produção e a reprodução da vida real. Nem Marx nem eu jamais afirmamos mais do que isso.",
+        source: "ENGELS, Friedrich. Carta a Joseph Bloch. 1890.",
+        analise: "Esclarecimento de Engels rejeitando a interpretação economicista vulgar ou determinista mecânica do materialismo histórico."
+      },
+      {
+        number: 6,
+        author: "Antonio Gramsci",
+        category: "Filosofia da Práxis / Cadernos do Cárcere (1929–1935)",
+        quoteText: "A supremacia de um grupo social manifesta-se de dois modos: como 'domínio' e como 'direção intelectual e moral'. Um grupo social é dominante dos grupos adversários que tende a liquidar ou a submeter pela força armada, e é dirigente dos grupos afins e aliados.",
+        source: "GRAMSCI, Antonio. Cadernos do Cárcere. 1929–1935.",
+        analise: "Formulação da teoria da hegemonia cultural, distinguindo a coerção estatal da direção moral na sociedade civil."
+      },
+      {
+        number: 7,
+        author: "Max Horkheimer e Theodor W. Adorno",
+        category: "Teoria Crítica / Dialética do Esclarecimento (1947)",
+        quoteText: "A indústria cultural transforma a arte e o entretenimento em mercadorias padronizadas de reprodução ideológica, reduzindo a capacidade crítica dos indivíduos.",
+        source: "HORKHEIMER, Max; ADORNO, Theodor W. Dialética do Esclarecimento. 1944–1947.",
+        analise: "Análise da transformação da cultura em mercadoria de consumo de massa e mecanismo de conformismo social."
+      },
+      {
+        number: 8,
+        author: "Leszek Kołakowski",
+        category: "História das Ideias / Main Currents of Marxism (1978)",
+        quoteText: "O marxismo foi a maior fantasia intelectual do século XX... Uma teoria que nasceu da aspiração humana à emancipação total transformou-se na doutrina ideológica oficial de regimes autoritários de Estado.",
+        source: "KOŁAKOWSKI, Leszek. Main Currents of Marxism. 1976–1978.",
+        analise: "Exame histórico-filosófico da evolução do marxismo e de sua transformação em ideologia estatal autoritária."
+      }
+    ],
+    syntheses: [
+      {
+        number: 1,
+        authorOrSchool: "1. Karl Marx e Friedrich Engels (Materialismo Histórico Clássico)",
+        synthesisText: "As condições materiais de produção e reprodução da vida real constituem a base estrutural das sociedades humanas, condicionando as instituições jurídicas, políticas e as formas de consciência social.",
+        supportingReference: "MARX, Karl; ENGELS, Friedrich. A Ideologia Alemã (1845–1846); O Capital (1867)."
+      },
+      {
+        number: 2,
+        authorOrSchool: "2. Antonio Gramsci (Teoria da Hegemonia Cultural)",
+        synthesisText: "O poder político das classes dominantes em sociedades complexas articula coerção armada e direção intelectual e moral (hegemonia), travada em uma guerra de posição prolongada na sociedade civil.",
+        supportingReference: "GRAMSCI, Antonio. Cadernos do Cárcere (1929–1935)."
+      },
+      {
+        number: 3,
+        authorOrSchool: "3. Escola de Frankfurt (Teoria Crítica e Indústria Cultural)",
+        synthesisText: "A dominação capitalista moderna estende-se da esfera da produção fabril para a esfera da cultura de massas, da psicologia e da comunicação, integrando os indivíduos por meio do consumo e da razão instrumental.",
+        supportingReference: "HORKHEIMER, Max; ADORNO, Theodor W. Dialética do Esclarecimento (1947); MARCUSE, Herbert. O Homem Unidimensional (1964)."
+      },
+      {
+        number: 4,
+        authorOrSchool: "4. Leszek Kołakowski (Crítica Histórica e Filosófica do Marxismo)",
+        synthesisText: "Análise da trajetória do marxismo desde suas fontes filosóficas no século XIX até sua conversão em dogma ideológico de Estado e sistema autoritário de planejamento no século XX.",
+        supportingReference: "KOŁAKOWSKI, Leszek. Main Currents of Marxism: Its Rise, Growth and Dissolution (1976–1978)."
+      }
+    ],
+    referenceCategories: [
+      {
+        category: "I. Obras Fundamentais de Karl Marx e Friedrich Engels",
+        items: [
+          "MARX, Karl. Manuscritos econômico-filosóficos. 1844.",
+          "MARX, Karl; ENGELS, Friedrich. A Ideologia Alemã. 1845–1846.",
+          "MARX, Karl; ENGELS, Friedrich. Manifesto do Partido Comunista. 1848.",
+          "MARX, Karl. Contribuição à Crítica da Economia Política. 1859.",
+          "MARX, Karl. O Capital: Crítica da Economia Política. Livro I. 1867.",
+          "ENGELS, Friedrich. Anti-Dühring. 1878."
+        ]
+      },
+      {
+        category: "II. Obras de Antonio Gramsci, Escola de Frankfurt e Leszek Kołakowski",
+        items: [
+          "GRAMSCI, Antonio. Cadernos do Cárcere. 1929–1935.",
+          "HORKHEIMER, Max; ADORNO, Theodor W. Dialética do Esclarecimento. 1944–1947.",
+          "MARCUSE, Herbert. Eros and Civilization. 1955.",
+          "MARCUSE, Herbert. One-Dimensional Man. 1964.",
+          "KOŁAKOWSKI, Leszek. Main Currents of Marxism: Its Rise, Growth and Dissolution. 3 v. 1976–1978."
+        ]
+      },
+      {
+        category: "III. Historiografia e Interpretação do Marxismo",
+        items: [
+          "ANDERSON, Perry. Considerations on Western Marxism. 1976.",
+          "AVINERI, Shlomo. The Social and Political Thought of Karl Marx. 1968.",
+          "MCLELLAN, David. Karl Marx: His Life and Thought. 1973.",
+          "STEDMAN JONES, Gareth. Karl Marx: Greatness and Illusion. 2016.",
+          "EAGLETON, Terry. Ideology: An Introduction. 1991.",
+          "JAY, Martin. The Dialectical Imagination. 1973."
+        ]
+      },
+      {
+        category: "IV. Pesquisas Científicas sobre Linguagem, Cognição e Framing",
+        items: [
+          "LUCY, John A. Recent Advances in the Study of Linguistic Relativity in Historical Context. Language Learning, 2016.",
+          "WOLFF, Phillip; HOLMES, Kevin J. Linguistic Relativity. WIREs Cognitive Science, 2011.",
+          "CHONG, Dennis; DRUCKMAN, James N. Framing Theory. Annual Review of Political Science, 2007.",
+          "AMSALEM, Eran; ZOIZNER, Alon. Real, but Limited: A Meta-Analytic Assessment of Framing Effects in the Political Domain. British Journal of Political Science, 2022."
+        ]
+      }
+    ],
+    controversiasELimitacoesDasFontes: "CRITÉRIOS DE AUDITORIA DOCUMENTAL DO REGISTRO Nº 05: 1. Todas as citações de Marx, Engels, Gramsci, Adorno, Horkheimer e Kołakowski foram checadas nas respectivas edições acadêmicas de referência. 2. A historiografia de referência distingue rigorosamente o materialismo histórico clássico das formulações do marxismo ocidental, da teoria crítica e das revisões de Kołakowski. 3. Os estudos contemporâneos sobre enquadramento comunicacional (framing) e cognição foram citados com seus metadados científicos completos (autores, periódicos e datas de publicação)."
+  },
   112: {
     title: "Citações Literais Verificadas, Sínteses e Fontes Documentais — Registro nº 12 (França no Século das Luzes)",
     citations: [

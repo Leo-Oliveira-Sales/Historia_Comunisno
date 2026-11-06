@@ -386,9 +386,122 @@ Compreender essas contradições é essencial para estudar a formação do liber
 | **Alexis de Tocqueville** — *O Antigo Regime e a Revolução* | 4 e 8 |
 | **Lynn Hunt** — *Inventing Human Rights* | 5 e 6 |
 | **Laurent Dubois** — *Avengers of the New World* | 6 |
-| **Timothy Tackett** — *The Coming of the Terror in the French Revolution* | 1 e 7 |
-| **Michel Vovelle** — *La mentalité révolutionnaire* | 5 e 8 |
-`
+| **Timothy Tackett** — *The Coming of the Terror in the French Revolution* | 1 e 7 |`
+  },
+  105: {
+    topicId: 105,
+    title: 'INVESTIGAÇÃO AVANÇADA',
+    subtitle: 'Questões para pesquisa e aprofundamento: Materialismo Histórico, Crítica Cultural e Epistemologia',
+    questionsSummary: [
+      'O materialismo histórico pressupõe que a economia determina integralmente a sociedade?',
+      'A infraestrutura econômica é suficiente para explicar a permanência das sociedades capitalistas?',
+      'A hegemonia cultural é uma ampliação legítima do materialismo histórico?',
+      'A Escola de Frankfurt abandonou a crítica da economia política?',
+      'A linguagem pode controlar o pensamento?',
+      'O controle dos meios de produção intelectual pode ser tão importante quanto o controle dos meios de produção material?',
+      'O marxismo do século XX preservou a teoria econômica de Marx?',
+      'Kołakowski demonstrou que o marxismo se tornou apenas uma crítica cultural?',
+      'A queda da União Soviética representou o fim do marxismo?',
+      'O conceito de ideologia pode ser utilizado para analisar qualquer divergência política?'
+    ],
+    fundamentalReferences: [
+      { authorAndWork: 'Karl Marx & Friedrich Engels — A Ideologia Alemã e Prefácio de 1859', relatedQuestions: '1, 6 e 10' },
+      { authorAndWork: 'Antonio Gramsci — Cadernos do Cárcere (Hegemonia e Sociedade Civil)', relatedQuestions: '1, 2 e 3' },
+      { authorAndWork: 'Max Horkheimer & Theodor W. Adorno — Dialética do Esclarecimento', relatedQuestions: '2 e 4' },
+      { authorAndWork: 'Leszek Kołakowski — Main Currents of Marxism', relatedQuestions: '7, 8 e 9' },
+      { authorAndWork: 'John A. Lucy / Chong & Druckman / Amsalem & Zoizner — Pesquisas sobre Linguagem e Framing', relatedQuestions: '5 e 6' }
+    ],
+    rawText: `# INVESTIGAÇÃO AVANÇADA
+## Questões para pesquisa e aprofundamento
+
+### 1. O materialismo histórico pressupõe que a economia determina integralmente a sociedade?
+
+A formulação clássica de Marx estabelece a centralidade das condições materiais de existência.
+
+Entretanto, a história apresenta situações nas quais religião, política, nacionalismo e instituições culturais parecem exercer influência independente sobre o desenvolvimento econômico.
+
+A questão consiste em investigar se a relação entre infraestrutura e superestrutura deve ser entendida como determinação unilateral ou como condicionamento recíproco.
+
+**Autores para investigação:** Marx, Engels, Gramsci, Raymond Williams e Perry Anderson.
+
+### 2. A infraestrutura econômica é suficiente para explicar a permanência das sociedades capitalistas?
+
+A existência de crises econômicas não produz necessariamente revoluções.
+
+Sociedades podem atravessar desemprego, desigualdade e conflitos sem experimentar uma transformação revolucionária.
+
+É necessário investigar os mecanismos institucionais e culturais que contribuem para a estabilidade social.
+
+**Autores:** Gramsci, Adorno, Horkheimer e Marcuse.
+
+### 3. A hegemonia cultural é uma ampliação legítima do materialismo histórico?
+
+Gramsci procurou compreender como grupos sociais exercem direção política e moral, construindo consentimento.
+
+A pergunta consiste em saber se esse conceito desenvolve elementos já presentes em Marx ou se representa uma transformação epistemológica significativa.
+
+**Autores:** Marx, Gramsci, Perry Anderson e Stuart Hall.
+
+### 4. A Escola de Frankfurt abandonou a crítica da economia política?
+
+Horkheimer e Adorno investigaram a cultura de massas, a racionalidade instrumental e as formas de dominação.
+
+A ampliação dos objetos de estudo pode ser interpretada como abandono da economia ou como uma tentativa de explicar fenômenos que a economia, isoladamente, não conseguia esclarecer.
+
+**Autores:** Horkheimer, Adorno, Marcuse, Martin Jay e autores contemporâneos de teoria crítica.
+
+### 5. A linguagem pode controlar o pensamento?
+
+A linguagem influencia a maneira como os indivíduos organizam experiências, classificam objetos e interpretam acontecimentos.
+
+Entretanto, influência não significa determinação absoluta.
+
+É necessário investigar empiricamente os efeitos do vocabulário, das metáforas, dos enquadramentos e da repetição de mensagens.
+
+**Autores e pesquisas:** John Lucy; Phillip Wolff; Kevin Holmes; Dennis Chong; James Druckman; Eran Amsalem; Alon Zoizner.
+
+### 6. O controle dos meios de produção intelectual pode ser tão importante quanto o controle dos meios de produção material?
+
+Marx e Engels relacionaram os meios de produção material à capacidade de influência sobre a produção intelectual.
+
+O desenvolvimento posterior dos meios de comunicação, da publicidade, da televisão e das plataformas digitais ampliou esse problema.
+
+A investigação deve considerar propriedade dos meios de comunicação, financiamento, concentração empresarial, acesso à informação e liberdade de expressão.
+
+### 7. O marxismo do século XX preservou a teoria econômica de Marx?
+
+É necessário diferenciar:
+- crítica marxista da economia política;
+- experiências de planejamento central;
+- partidos comunistas;
+- marxismo universitário;
+- correntes culturais e filosóficas.
+
+Não se deve presumir que todas essas tradições tenham desenvolvido a mesma teoria econômica.
+
+### 8. Kołakowski demonstrou que o marxismo se tornou apenas uma crítica cultural?
+
+A obra de Kołakowski apresenta uma reconstrução histórica das correntes marxistas e uma crítica ao desenvolvimento do comunismo.
+
+Entretanto, sua posição não deve ser reduzida à tese de que o marxismo simplesmente abandonou a economia e migrou para a cultura.
+
+É necessário investigar seus argumentos sobre filosofia, religião, liberdade, totalitarismo e responsabilidade moral.
+
+### 9. A queda da União Soviética representou o fim do marxismo?
+
+A dissolução da União Soviética demonstrou a crise histórica de um modelo específico de organização política e econômica.
+
+Entretanto, o marxismo continuou existindo em diferentes tradições intelectuais, políticas e acadêmicas.
+
+A questão consiste em distinguir a crise do socialismo soviético da continuidade de correntes marxistas não vinculadas àquele modelo estatal.
+
+### 10. O conceito de ideologia pode ser utilizado para analisar qualquer divergência política?
+
+Se toda discordância for classificada como expressão de uma ideologia, o conceito corre o risco de perder precisão.
+
+É necessário estabelecer critérios para distinguir influência social, erro factual, interesse econômico, interpretação legítima e manipulação deliberada.
+
+Essa questão é fundamental para impedir que a crítica ideológica se transforme em instrumento de desqualificação de qualquer posição contrária.`
   }
 };
 
