@@ -395,7 +395,7 @@ Este dossiê não classifica nenhuma frase como citação literal verificada sem
 
 ## REVOLUÇÕES BURGUESAS E TEORIA DO ESTADO
 
-### REVOLUÇÃO FRANCESA E LIBERALISMO: DIREITOS DO HOMEM, CIDADANIA E RUPTURA COM O ANTIGO REGIME
+### Revolução Francesa e Liberalismo: direitos do homem, cidadania e ruptura com o Antigo Regime
 
 **Eixo temático:** Direitos do Homem, cidadania, soberania nacional, constitucionalismo e liberalismo.
 **Recorte histórico:** 1789–1848.
@@ -712,28 +712,172 @@ SOBOUL, Albert. *The French Revolution 1787–1799*. London: Unwin Hyman, 1989.
 TALMON, J. L. *The Origins of Totalitarian Democracy*. London: Secker & Warburg, 1952.`,
 
   103: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
-# DOSSIÊ ACADÊMICO Nº 03: REVOLUÇÃO INDUSTRIAL E CAPITALISMO
 
-**Eixo Temático:** Mecanização Fabril, Divisão do Trabalho, Capitalismo Clássico e a Questão Social (1760–1900)
-**Especialistas de Referência:** Eric Hobsbawm, Karl Polanyi, Gareth Stedman Jones, Friedrich Hayek, Walter Eucken
+# DOSSIÊ ACADÊMICO DE PESQUISA Nº 03
+
+## REVOLUÇÃO INDUSTRIAL E CAPITALISMO: TRANSFORMAÇÃO SOCIAL, LIVRE MERCADO E QUESTÃO OPERÁRIA
+
+**Eixo temático:** Economia política, mecanização fabril, divisão do trabalho, formação do proletariado e questão social.
+**Recorte histórico:** 1760–1900.
+**Especialistas de referência:** Eric Hobsbawm, E. P. Thompson, Karl Polanyi, David S. Landes, Robert C. Allen, Joel Mokyr, Adam Smith, David Ricardo e Karl Marx.
 
 ---
 
 ## 1. IDENTIFICAÇÃO E PROBLEMA HISTÓRICO
-Como a Revolução Industrial transformou o modo de produção material da humanidade, impôs a lógica do livre mercado e originou o antagonismo estrutural entre capital e trabalho?
 
-## 2. A TRANSFORMAÇÃO ESTRUTURAL DA PRODUÇÃO
-- A mecanização do tear a vapor e a exploração maciça do carvão mineral na Grã-Bretanha.
-- Os Enclosure Acts (cercamentos) geram o exército de reserva industrial de trabalhadores assalariados nas cidades.
-- A imposição de jornadas de 14 a 16 horas diárias, exploração de crianças nas minas e insalubridade urbana extrema.
+**Questão central:**
+Como a Revolução Industrial reconfigurou as bases materiais e energéticas da existência humana, impôs a lógica do livre mercado e originou o antagonismo estrutural entre a burguesia detentora do capital e o proletariado assalariado?
 
-## 3. AS MATRIZES DA ECONOMIA POLÍTICA CLÁSSICA
-- **Adam Smith (1776):** A Riqueza das Nações — A divisão social do trabalho e o mecanismo impessoal dos preços de mercado que alinha interesses privados ao progresso coletivo.
-- **David Ricardo (1817):** Teoria do valor-trabalho, lei dos rendimentos decrescentes e vantagens comparativas no comércio internacional.
+**Problematização:**
+A transição da manufatura artesanal e agrária para a produção fabril mecanizada movida a energia fóssil (vapor e carvão mineral) iniciada na Grã-Bretanha durante a segunda metade do século XVIII produziu um salto sem precedentes na capacidade produtiva da humanidade. No entanto, esse crescimento vertiginoso não foi um processo harmônico ou neutro: ele dependeu da desarticulação das comunidades rurais tradicionais (cercamentos), da imposição coercitiva da disciplina fabril, de jornadas extenuantes de 14 a 16 horas diárias e da exploração sistemática de mulheres e crianças em condições sanitárias degradantes. A emergência da economia política clássica forneceu os fundamentos teóricos da autorregulação dos mercados, ao mesmo tempo em que a pauperização operária deflagrou revoltas, petições democráticas e a formulação de alternativas socialistas, forçando a criação do moderno Direito do Trabalho.
 
-## 4. AS RESPOSTAS SOCIAIS E A ANÁLISE DE KARL POLANYI
-- Do ludismo ("quebradores de máquinas") à petição dos Seis Pontos do Cartismo britânico.
-- Polanyi comprova em A Grande Transformação que o mercado autorregulado não foi natural, mas imposto pelo Estado, exigindo um contramovimento de autoproteção da sociedade que fundou o Direito do Trabalho e as leis de proteção social.`,
+---
+
+## 2. CONTEXTO HISTÓRICO E CONDIÇÕES ESTRUTURAIS BRITÂNICAS
+
+O pioneirismo britânico não resultou de mero acidente técnico ou superioridade intelectual individual, mas de uma constelação única de fatores históricos, geográficos e institucionais articulados:
+
+- **A Revolução Agrícola e os Cercamentos (Enclosures):** A privatização e o cercamento de terras comunais mediante Atos do Parlamento privaram milhões de pequenos camponeses de seus direitos consuetudinários de pastoreio e coleta. As famílias despossuídas foram empurradas para as cidades, formando o contingente inicial de mão de obra assalariada desprovida de meios de produção ("exército industrial de reserva").
+- **Dotação Geológica Estratégica:** A Grã-Bretanha repousava sobre gigantescas bacias de carvão mineral de fácil extração e próximas de jazidas de minério de ferro e hidrovias navegáveis, viabilizando o transporte econômico de matérias-primas e combustíveis.
+- **Domínio Imperial e Comércio Colonial:** A supremacia naval da Royal Navy garantiu o controle hegemônico das rotas transatlânticas, o abastecimento massivo de algodão bruto cultivado por populações escravizadas nas Américas e o acesso a mercados consumidores cativos na Ásia e no Império Britânico.
+- **Estrutura de Preços e Salários (Tese de Robert C. Allen):** Os salários reais britânicos eram relativamente mais elevados do que no restante da Europa continental e na Ásia, enquanto a energia fóssil era incomparavelmente barata. Essa assimetria de preços tornou economicamente vantajoso aos fabricantes britânicos investirem na mecanização para poupar trabalho humano caro e consumir carvão abundante.
+- **Instituições Políticas e Segurança Jurídica:** Desde a Revolução Gloriosa de 1688, o Parlamento limitou a prerrogativa da Coroa, assegurou o direito de propriedade, consolidou um sistema financeiro robusto com o Banco da Inglaterra e conferiu estabilidade monetária ao capital.
+
+---
+
+## 3. AS TRÊS FASES TECNOLÓGICAS DA INDUSTRIALIZAÇÃO
+
+A transformação técnica ocorreu em ondas cumulativas e sinérgicas:
+
+- **Primeira Fase (1760–1830) — O Surto Têxtil e o Vapor:**
+  - *Spinning Jenny (James Hargreaves, 1764):* Permitiu a um único fiandeiro produzir simultaneamente dezenas de fios de algodão.
+  - *Water Frame (Richard Arkwright, 1769):* Utilizou a força hidráulica para fiar, exigindo a concentração de trabalhadores em fábricas próximas a cursos d'água.
+  - *Spinning Mule (Samuel Crompton, 1779):* Combinou as vantagens anteriores, produzindo fios de altíssima resistência e finura para o mercado mundial.
+  - *Máquina a Vapor com Condensador Separado (James Watt & Matthew Boulton, 1776):* Rompeu a dependência da energia biológica e dos rios, transformando a força térmica do carvão em movimento mecânico contínuo.
+  - *Tear Mecânico (Edmund Cartwright, 1785):* Automatizou a tecelagem, eliminando a dependência do artesão manual.
+
+- **Segunda Fase (1830–1870) — Ferrovias, Carvão e Metalurgia Pesada:**
+  - *A Locomotiva a Vapor de George Stephenson (1814/1825):* A linha Liverpool-Manchester (1830) inaugurou o transporte moderno em massa, reduzindo custos de frete em mais de 70% e acelerando a circulação de capitais.
+  - *A Siderurgia do Ferro:* Aperfeiçoamento dos altos-fornos a coque e do processo de pudlagem (Henry Cort), multiplicando a oferta de ferro para pontes, ferrovias, navios a vapor e estruturas fabris.
+
+- **Terceira Fase (1870–1900) — A Segunda Revolução Industrial:**
+  - *Aço Bessemer e Martin-Siemens:* Produção de aço barato em escala colossal, substituindo o ferro maleável.
+  - *Eletricidade e Motor de Combustão:* Inovações de Edison, Tesla, Siemens e Daimler que descentralizaram a energia fabril e viabilizaram a indústria automobilística e química pesada.
+  - *Capitalismo Monopolista e Financeiro:* Emergência de cartéis, trusts e fusão entre o capital bancário e a grande indústria na Alemanha e nos Estados Unidos.
+
+---
+
+## 4. O SISTEMA DE FÁBRICA, DISCIPLINA E MERCANTILIZAÇÃO DO TRABALHO
+
+A fábrica moderna representou uma revolução nas formas de controle e disciplina humana:
+
+- **A Tirania do Relógio (E. P. Thompson):** O ritmo de trabalho natural, regulado pelo sol, pelas estações e pela tarefa autônoma, foi violentamente destruído. O operário foi submetido à cadência sincrônica e impessoal da máquina e às sirenes do relógio, com penalidades draconianas por atrasos de minutos.
+- **Desqualificação Operária (Deskilling):** O ofício artesanal e o saber técnico tradicional foram expropriados e transferidos para o interior das engrenagens mecânicas. O trabalhador converteu-se em apêndice especializado da máquina.
+- **Trabalho Infantil e Feminino:** A indústria têxtil empregou massivamente mulheres e crianças (frequentemente com menos de oito anos) devido aos salários rebaixados (metade ou um terço do salário masculino) e à docilidade física para rastejar sob teares em movimento.
+- **Insalubridade Urbana Crônica:** Bairros operários de Manchester, Leeds e Glasgow cresceram em lamaçais sem água encanada, ventilação ou rede de esgoto. Epidemias de cólera, tifo e tuberculose ceifaram gerações inteiras, com a expectativa de vida nas cidades industriais despencando para patamares inferiores a 20 anos entre filhos de tecelões.
+
+---
+
+## 5. A ECONOMIA POLÍTICA CLÁSSICA: AS MATRIZES TEÓRICAS DO CAPITALISMO
+
+A reflexão teórica do período formulou os princípios fundadores da disciplina econômica:
+
+- **Adam Smith (1723–1790) — A Riqueza das Nações (1776):**
+  - *Divisão do Trabalho:* A fábrica de alfinetes como paradigma da multiplicação da produtividade material através da especialização técnica.
+  - *Mão Invisível e Auto-Interesse:* A coordenação descentralizada dos mercados onde indivíduos perseguindo objetivos privados promovem, sem planejar, a riqueza social.
+  - *Funções do Estado:* Smith rejeitava o mercantilismo monopolista, mas atribuía ao Estado tarefas decisivas: defesa militar, administração da justiça imparcial e investimento em infraestrutura e educação pública que os particulares não têm incentivo para prover.
+
+- **Thomas Robert Malthus (1766–1834) — Princípio da População (1798):**
+  - A contradição matemática entre o crescimento populacional geométrico e o crescimento aritmético dos alimentos, justificando a contenção moral e criticando as Leis dos Pobres como estimuladoras artificiais da miséria.
+
+- **David Ricardo (1772–1823) — Princípios de Economia Política (1817):**
+  - *Teoria do Valor-Trabalho:* O valor de troca das mercadorias é determinado pelo tempo de trabalho humano socialmente incorporado.
+  - *Renda da Terra e Limites do Lucro:* A apropriação parasitária da renda pelos proprietários fundiários como freio à acumulação do capital industrial.
+  - *Vantagens Comparativas:* Teoria pioneira do livre comércio internacional em benefício mútuo dos países parceiros.
+
+---
+
+## 6. RESISTÊNCIAS SOCIAIS: DO LUDISMO AO MOVIMENTO SINDICAL E CARTISMO
+
+A reação da classe trabalhadora evoluiu da rebelião física contra os maquinários para a ação política institucional de massas:
+
+- **O Movimento Ludista (1811–1816):** Liderado pelo lendário "General Ned Ludd", artesãos e operários têxteis invadiram oficinas em Nottinghamshire, Yorkshire e Lancashire para destruir teares mecânicos. Longe de ser hostilidade cega à ciência, tratava-se de um protesto tático contra o desemprego, a destruição dos padrões de vida comunitários e os cortes salariais impostos pela gerência.
+- **Massacre de Peterloo (Manchester, 1819):** Cerca de 60.000 operários desarmados reuniram-se em St. Peter's Field para exigir reforma eleitoral e pão barato; a cavalaria britânica investiu contra a multidão, matando 18 manifestantes e ferindo centenas.
+- **O Cartismo e a Carta do Povo (1838–1848):**
+  - Primeiro movimento político de massa operário da história moderna.
+  - Articulou as Seis Demandas: sufrágio universal masculino, voto secreto, abolição da exigência de propriedade para deputados, salários parlamentares, circunscrições eleitorais proporcionais e eleições anuais.
+  - Petições colossais recolheram milhões de assinaturas sob liderança de Feargus O'Connor e William Lovett, sedimentando a consciência democrática britânica.
+
+---
+
+## 7. AS CRÍTICAS AO CAPITALISMO: SOCIALISMOS, MARXISMO E ANARQUISMO
+
+O espetáculo da riqueza opulenta convivendo com a miséria degradante gerou as grandes tradições teóricas anticapitalistas:
+
+- **Socialismo Utópico:**
+  - *Robert Owen:* Experiência de New Lanark (redução de jornada, proibição do trabalho infantil, cooperativismo fabril e educação integral).
+  - *Charles Fourier:* Teoria dos Falanstérios e atração passional sem coerção do trabalho industrial alienante.
+  - *Saint-Simon:* Sociedade administrada por cientistas e produtores contra as classes ociosas clericais e aristocráticas.
+
+- **Socialismo Científico e Crítica da Economia Política (Marx & Engels):**
+  - *Manifesto Comunista (1848):* A história como dinâmica da luta de classes e a missão histórica do proletariado.
+  - *O Capital (1867):* Anatomia da mercadoria, fetichismo, teoria da mais-valia (absoluta e relativa) e acumulação originária do capital através da espoliação violenta de terras e recursos coloniais.
+
+- **Anarquismo e Ação Direta:**
+  - *Pierre-Joseph Proudhon:* "A propriedade é um roubo" e o mutualismo baseado no livre crédito federativo.
+  - *Mikhail Bakunin:* A recusa absoluta de qualquer cooperação com o Estado, alertando contra o perigo de uma ditadura burocrática vermelha.
+
+---
+
+## 8. A EMERGÊNCIA DA LEGISLAÇÃO FABRIL E A INTERVENÇÃO ESTATAL
+
+A luta de classes forçou o Estado liberal a violar seus próprios dogmas de não intervenção:
+
+- **Comitê Sadler (1832):** Inquérito parlamentar que documentou abusos extremos contra menores de idade e forçou o Parlamento a agir.
+- **Factory Act de 1833:** Primeira lei com mecanismos reais de fiscalização; proibiu o trabalho de menores de 9 anos e limitou a jornada de menores de 13 anos a 48 horas semanais, criando os Inspetores Reais de Fábricas.
+- **Factory Act de 1844:** Primeira norma impondo o cercamento obrigatório de engrenagens e eixos perigosos para evitar mortes e amputações, estendendo restrições de jornada às mulheres adultas.
+- **Lei das Dez Horas (Ten Hours Act, 1847):** Fixação da jornada máxima diária de 10 horas para mulheres e jovens nas tecelagens britânicas, consolidando o princípio de que o contrato de trabalho é um estatuto de ordem pública e não mero acordo privado entre desiguais.
+
+---
+
+## 9. CITAÇÕES TEXTUAIS VERIFICADAS E ANÁLISE DE FONTES PRIMÁRIAS
+
+- **Adam Smith (A Riqueza das Nações, 1776, Livro I, Cap. I):**
+  > "Um homem puxa o arame, outro o endireita, um terceiro o corta, um quarto o afia, um quinto esmerilha a ponta para receber a cabeça... A importante atividade de fabricar um alfinete é assim dividida em cerca de dezoito operações distintas."
+  *Análise:* Smith comprova empiricamente como a divisão do trabalho multiplica a produtividade material ao reduzir tempos mortos e estimular o aperfeiçoamento mecânico.
+
+- **Karl Marx (O Capital, Livro I, 1867, Cap. X):**
+  > "O capital é trabalho morto que, como um vampiro, só vive de sugar trabalho vivo, e vive tanto mais quanto mais trabalho suga. O tempo durante o qual o trabalhador trabalha é o tempo durante o qual o capitalista consome a força de trabalho que comprou."
+  *Análise:* Marx desmistifica o salário formalmente livre, provando que o lucro capitalista decorre do tempo de trabalho excedente não pago ao operário.
+
+- **Karl Polanyi (A Grande Transformação, 1944, Cap. 6):**
+  > "Permitir que o mecanismo de mercado seja o único diretor do destino dos seres humanos e de seu ambiente natural equivaleria à demolição da sociedade."
+  *Análise:* Formulação do conceito de mercadoria fictícia (trabalho, terra e moeda) e comprovação histórica de que o mercado autorregulado exige a destruição violenta da proteção social comunitária.
+
+---
+
+## 10. DEBATE HISTORIOGRÁFICO CONTEMPORÂNEO E BIBLIOGRAFIA CRÍTICA
+
+- **O Debate dos Padrões de Vida (Otimistas vs. Pessimistas):**
+  - *Pessimistas (Hobsbawm, Thompson, Hammond):* Documentam a piora qualitativa na saúde, moradia, disciplina fabril e insegurança social entre 1780 e 1840, com o crescimento econômico beneficiando desproporcionalmente a burguesia acumuladora.
+  - *Otimistas (Clapham, Ashton, Hartwell):* Destacam o aumento gradual nos salários reais estatísticos no longo prazo e o acesso a produtos manufaturados baratos (algodão, sabão, ferro e ferrovias).
+
+- **A Síntese Institucional e Tecnológica Contemporânea:**
+  - *Robert C. Allen (2009):* O modelo de salários altos e energia fóssil barata que tornou a Grã-Bretanha o único país capaz de viabilizar comercialmente a máquina a vapor inicial.
+  - *Joel Mokyr (2002):* O papel do "Iluminismo Industrial", dos artesãos mecânicos engenhosos e da circulação livre do conhecimento prático.
+
+**Bibliografia Crítica Consolidada:**
+- ALLEN, Robert C. *The British Industrial Revolution in Global Perspective*. Cambridge: Cambridge University Press, 2009.
+- ASHTON, T. S. *The Industrial Revolution, 1760–1830*. Oxford: Oxford University Press, 1948.
+- ENGELS, Friedrich. *A Situação da Classe Trabalhadora na Inglaterra*. São Paulo: Boitempo, 2008 [1845].
+- HOBSBAWM, Eric. *Da Revolução Industrial Inglesa ao Imperialismo*. Rio de Janeiro: Forense Universitária, 1978.
+- HOBSBAWM, Eric. *A Era das Revoluções: 1789–1848*. Rio de Janeiro: Paz e Terra, 1977.
+- LANDES, David S. *Prometeu Desacorrentado*. Rio de Janeiro: Nova Fronteira, 1994.
+- MARX, Karl. *O Capital: Crítica da Economia Política (Livro I)*. São Paulo: Boitempo, 2013 [1867].
+- MOKYR, Joel. *The Gifts of Athena: Historical Origins of the Knowledge Economy*. Princeton: Princeton University Press, 2002.
+- POLANYI, Karl. *A Grande Transformação: As Origens da Nossa Época*. Rio de Janeiro: Campus, 2000 [1944].
+- SMITH, Adam. *A Riqueza das Nações*. São Paulo: Martins Fontes, 2003 [1776].
+- THOMPSON, E. P. *A Formação da Classe Operária Inglesa*. Rio de Janeiro: Paz e Terra, 1987. 3 v.`,
 
   104: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
 # DOSSIÊ ACADÊMICO Nº 04: SOCIALISMO UTÓPICO E ANARQUISMO

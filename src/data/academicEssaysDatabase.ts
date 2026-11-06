@@ -1517,64 +1517,178 @@ A queda de Robespierre no 9 Termidor (1794) abriu caminho para a reorganização
       'TOCQUEVILLE, Alexis de. De la démocratie en Amérique. 1835–1840.'
     ]
   },
-  112: {
-    topicId: 112,
-    title: 'O Iluminismo e a Crise da Legitimidade do Antigo Regime',
-    subtitle: 'As transformações intelectuais, a opinião pública e o colapso institucional da monarquia absolutista (1715–1789)',
-    authorCatedra: 'Cátedra de História Moderna e Filosofia Política · Ensaio Acadêmico',
-    estimatedReadingMinutes: 9,
-    wordCount: 1950,
+  // =========================================================================
+  // TÓPICO 103: CAPITALISMO INDUSTRIAL E ECONOMIA POLÍTICA (1760–1900)
+  // =========================================================================
+  103: {
+    topicId: 103,
+    title: 'CAPITALISMO INDUSTRIAL: LIBERDADE ECONÔMICA, PRODUTIVIDADE E QUESTÃO SOCIAL',
+    subtitle: 'Mecanização fabril, divisão do trabalho e as disputas em torno do livre mercado e da dignidade humana (1760–1900)',
+    authorCatedra: 'Cátedra de História Econômica, Economia Política e Relações de Trabalho',
+    estimatedReadingMinutes: 12,
+    wordCount: 2200,
     epigraph: {
-      text: 'A Revolução Francesa foi pensada antes de ser realizada: o Século das Luzes não causou o fato material de 1789, mas inventou a linguagem e a esfera pública sem as quais o Antigo Regime não poderia ter sido desmantelado.',
-      author: 'Roger Chartier',
-      work: 'As Origens Culturais da Revolução Francesa (2009, p. 112)'
+      text: 'O nascimento do mercado autorregulado não foi um processo espontâneo: o laissez-faire precisou da intervenção contínua da legislação do Estado para desmantelar os laços comunitários tradicionais.',
+      author: 'Karl Polanyi',
+      work: 'A Grande Transformação: As Origens Políticas e Econômicas da Nossa Época (1944)'
     },
-    narrativeOverview: `Durante o século XVIII, a França viveu o paradoxo de ser o centro cultural supremo da Europa ocidental e, ao mesmo tempo, um Estado aprisionado por uma estrutura sociojurídica obsoleta. A monarquia absoluta dos Bourbon governava sobre uma sociedade rigidamente dividida em três estamentos jurídicos: o Clero (Primeiro Estado), a Nobreza (Segundo Estado) e o Terceiro Estado, que reunia burgueses, artesãos, camponeses e trabalhadores urbanos — totalizando 98% da população. Enquanto as duas primeiras ordens usufruíam de isenções tributárias e privilégios feudais, o Terceiro Estado sustentava financeiramente o Tesouro Real. Esse contraste brutal entre o dinamismo econômico da burguesia e o imobilismo das ordens privilegiadas constituiu a grande tensão estrutural do Antigo Regime.`,
-    historicalDevelopment: `Em meio a essa rigidez social, o Iluminismo floresceu como um movimento de crítica radical à autoridade tradicional. Pensadores como Montesquieu (*O Espírito das Leis*, 1748) propuseram a divisão tripartite dos poderes como remédio contra o arbítrio monárquico; Voltaire (*Tratado sobre a Tolerância*, 1763) fustigou a intolerância religiosa e os privilégios eclesiásticos; e Jean-Jacques Rousseau (*Do Contrato Social*, 1762) formulou a teoria da soberania popular fundada na vontade geral, desafiando a própria concepção de direito divino dos reis. A publicação da monumental *Encyclopédie* (1751–1772), dirigida por Diderot e d'Alembert, catalogou as ciências e as artes sob a luz estrita da razão, criando um tribunal laico do conhecimento.
+    narrativeOverview: `A Revolução Industrial modificou profundamente a organização econômica e social do mundo moderno. A mecanização da produção, a expansão das fábricas e a ampliação dos mercados contribuíram para consolidar o capitalismo industrial como uma das principais formas de organização econômica.
 
-Essas ideias não permaneceram restritas às academias eruditas. Através de salões literários, cafés urbanos, lojas maçônicas e uma prolífica literatura de panfletos clandestinos, emergiu a *opinião pública* — uma nova instância de legitimidade política independente da vontade do monarca. Quando a monarquia tentou promover reformas fiscais entre 1774 e 1787 para cobrir o imenso déficit público acumulado pelas guerras (especialmente o auxílio financeiro à Guerra de Independência Americana), encontrou a feroz resistência dos Parlamentos aristocráticos. A recusa da nobreza em abdicar de suas isenções fiscais paralisou o Estado e forçou a convocação dos Estados Gerais em 1788-1789, transformando a rebelião aristocrática na faísca inusitada que desencadearia a Revolução.`,
-    institutionalAndStateMechanisms: `A estrutura institucional do Antigo Regime fundava-se na teoria do absolutismo de direito divino, centralizado na figura do monarca em Versalhes. No entanto, o exercício do poder real dependia do registro dos éditos pelos Parlamentos — tribunais judiciários regionais dominados pela *nobreza de toga*. Sempre que o rei buscava criar novos impostos universais, os Parlamentos utilizavam o direito de *remontrance* (objeção legal) para vetar os éditos, argumentando defender as "liberdades fundamentais do reino". Esse impasse gerou um bloqueio institucional crônico: a monarquia não podia reformar a fiscalidade sem destruir a aliança com as ordens privilegiadas, nem podia governar sem os recursos do Terceiro Estado.`,
-    historiographicalDebate: `O debate historiográfico sobre as origens da Revolução divide-se tradicionalmente em três vertentes. A interpretação socioeconômica clássica marxista, representada por Georges Lefebvre e Albert Soboul, analisa o Século das Luzes como a etapa de maturação da luta de classes, na qual a ascensão econômica da burguesia destruiu os entraves feudais da sociedade estamental. 
+Entretanto, a industrialização não pode ser analisada exclusivamente como uma história de invenções e crescimento da produção. Ela também envolveu transformações nas relações de propriedade, na organização da vida cotidiana, na divisão social do trabalho e na formação de classes sociais com interesses divergentes.
 
-Por outro lado, a escola revisionista liderada por François Furet e Keith Michael Baker argumenta que a Revolução foi primordialmente uma mutação cultural e ideológica: o Iluminismo inventou o espaço da política democrática e a linguagem da soberania nacional, permitindo que a crise fiscal de 1787 fosse interpretada como a falência moral da monarquia. Por fim, a história cultural da leitura, capitaneada por Robert Darnton e Roger Chartier, demonstra como a literatura clandestina de libelos e pasquins desacreditou a imagem sagrada da família real, preparando a desobediência civil muito antes da queda da Bastilha.`,
+Entre 1760 e 1900, a emergência do livre mercado coincidiu com o surgimento da chamada Questão Social: o conjunto de problemas associados à pauperização urbana, às jornadas desumanas de 14 a 16 horas, ao trabalho sistemático de crianças e mulheres em ambientes insalubres e à absoluta precariedade existencial do novo operariado assalariado. A teoria econômica clássica de Adam Smith e David Ricardo formulou as leis de funcionamento desse novo sistema, enquanto movimentos de resistência social e correntes críticas (do ludismo e cartismo ao socialismo e anarquismo) exigiram limites institucionais à mercantilização da vida humana.`,
+    historicalDevelopment: `A transição para a era industrial teve seu epicentro na Grã-Bretanha, impulsionada pela abundância de jazidas de carvão e ferro, pelo domínio das rotas do comércio imperial transatlântico e pelas leis de cercamento dos campos (Enclosure Acts), que desarticularam a agricultura comunal e forçaram massas de famílias camponesas a migrarem para os novos centros urbanos fabris.
+
+A introdução de inovações técnicas em cascata — como a Spinning Jenny de Hargreaves (1764), a Water Frame de Arkwright (1769), a máquina a vapor aperfeiçoada por James Watt e Matthew Boulton (1776) e o tear mecânico de Cartwright (1785) — substituiu a força motriz biológica e hidráulica pelo vapor movido a carvão mineral. Pela primeira vez na história, os limites energéticos impostos pelo solo e pela biologia foram superados, permitindo aumentos astronômicos de produtividade fabril contínua.
+
+Nas décadas seguintes, a ferrovia e o barco a vapor unificaram mercados continentais e planetários. Cidades industriais como Manchester, Birmingham e Sheffield multiplicaram suas populações em ritmo vertiginoso, desprovidas de infraestrutura sanitária ou moradia digna. A degradação física dos trabalhadores e os inquéritos parlamentares britânicos (como o célebre Sadler Report de 1832) evidenciaram a crueldade do trabalho infantil e deflagraram as primeiras reformas regulatórias (Factory Acts de 1833, 1844 e 1847). A partir de 1870, a Segunda Revolução Industrial ampliou esse horizonte com o aço Bessemer, a química sintética, a eletricidade, o motor a combustão e o capital financeiro internacional.`,
+    institutionalAndStateMechanisms: `A consolidação do capitalismo industrial dependeu da edificação de quatro mecanismos institucionais e regulatórios decisivos:
+1. Institucionalização da Propriedade Privada e Contrato de Trabalho: A substituição dos privilégios corporativos de ofício por contratos civis de prestação de serviços individuais submeteu a força de trabalho à disciplina monetária do mercado.
+2. O Sistema Fabril como Dispositivo Disciplinar: Como documentado por E. P. Thompson e Michel Foucault, a fábrica inaugurou a tirania do relógio, com horários rígidos, fiscalização punitiva, multas salariais e supressão da autonomia artesanal tradicional.
+3. A Construção do Direito do Trabalho por Meio da Luta Política: O Factory Act de 1833 instituiu a inspeção estatal pioneira; a lei de 1844 regulamentou o cercamento de engrenagens perigosas e a jornada feminina; e a Lei das Dez Horas (Ten Hours Act de 1847) marcou a primeira vitória estrutural contra o dogma do laissez-faire absoluto.
+4. O Movimento Cartista e a Exigência de Cidadania Política: A Carta do Povo (1838) articulou a luta econômica à conquista do voto secreto e universal masculino, demonstrando que a dignidade da classe trabalhadora dependia do acesso direto à representação parlamentar legislativa.`,
+    historiographicalDebate: `O debate historiográfico em torno da Revolução Industrial e da transição capitalista polariza correntes fundamentais:
+1. A Interpretação Histórico-Social Crítica (Eric Hobsbawm, E. P. Thompson): Enfatiza o custo humano devastador da industrialização inicial, demonstrando que a classe operária não foi produto passivo das máquinas, mas forjou sua identidade através de solidariedades, motins e consciência de classe política.
+2. A Tese da Mercadoria Fictícia e Duplo Movimento (Karl Polanyi): Demonstrou que o mercado autorregulado foi uma imposição artificial do Estado liberal burguês, e que o surgimento da previdência, sindicatos e leis fabris constituiu a autodefesa espontânea da sociedade contra a aniquilação mercantil.
+3. A Interpretação da História Econômica e Inovação Tecnológica (David S. Landes, Joel Mokyr, Robert C. Allen): Enfatiza a cultura do conhecimento útil, o iluminismo industrial e a peculiaridade britânica de salários relativamente altos combinados a energia fóssil extremamente barata.
+4. A Crítica Marxiana da Economia Política (Karl Marx, Friedrich Engels): Em O Capital (1867), Marx desvendou o segredo da valorização do capital na extração da mais-valia (absoluta e relativa), provando que o contrato de trabalho formalmente livre encobre uma assimetria estrutural de exploração entre os proprietários dos meios de produção e os despossuídos de capital.`,
     scholarlyQuotes: [
       {
-        author: 'Roger Chartier',
-        work: 'As Origens Culturais da Revolução Francesa',
-        year: '2009',
-        pageOrDoc: 'p. 88-92',
-        quote: 'As ideias iluministas desconsagraram a autoridade do rei e da Igreja não criando revolucionários convictos, mas tornando pensável e legítima a desobediência crítica em relação a todas as instituições herdadas.',
-        historicalAnalysis: 'Chartier demonstra que a proliferação da leitura privada e dos debates em espaços não estatais dessacralizou o poder monárquico na mentalidade coletiva dos franceses.'
+        author: 'Adam Smith',
+        work: 'Uma Investigação sobre a Natureza e as Causas da Riqueza das Nações',
+        year: '1776',
+        pageOrDoc: 'Livro I, Cap. II',
+        quote: 'Não é da benevolência do açougueiro, do cervejeiro ou do padeiro que esperamos o nosso jantar, mas da consideração que eles têm pelo seu próprio interesse. Não nos dirigimos à sua humanidade, mas ao seu amor-próprio.',
+        historicalAnalysis: 'Smith identifica no interesse individual canalizado pelo mercado e na divisão do trabalho o princípio motor da multiplicação da riqueza pública.'
       },
       {
-        author: 'Keith Michael Baker',
-        work: 'Inventing the French Revolution',
-        year: '1990',
-        pageOrDoc: 'p. 167-170',
-        quote: 'A "opinião pública" emergiu na França do século XVIII como um novo tribunal supremo de apelação ao qual tanto a Coroa quanto os Parlamentos recorriam para legitimar suas posições na disputa pelo poder.',
-        historicalAnalysis: 'Baker analisa a invenção conceitual da opinião pública como o momento em que a autoridade política deixou de pertencer exclusivamente à esfera arcana da corte real.'
+        author: 'Karl Marx',
+        work: 'O Capital: Crítica da Economia Política (Livro I)',
+        year: '1867',
+        pageOrDoc: 'Cap. X (A Jornada de Trabalho)',
+        quote: 'O capital usurpa o tempo necessário para o crescimento, o desenvolvimento e a conservação saudável do corpo. Rouba o tempo que deveria ser gasto ao ar livre e à luz do sol. Regateia o tempo das refeições e incorpora-o, se possível, ao próprio processo de produção.',
+        historicalAnalysis: 'Marx denuncia a voracidade estrutural do capital pela acumulação de tempo de mais-trabalho despendido às custas da saúde biológica e moral da classe trabalhadora.'
+      },
+      {
+        author: 'E. P. Thompson',
+        work: 'A Formação da Classe Operária Inglesa',
+        year: '1963',
+        pageOrDoc: 'Prefácio',
+        quote: 'A classe operária não surgiu como o sol numa hora marcada. Ela esteve presente em sua própria formação. A classe é uma relação histórica de homens que compartilham experiências comuns e formulam sua própria consciência.',
+        historicalAnalysis: 'Thompson rechaça o determinismo econômico vulgar e devolve o protagonismo histórico, cultural e moral aos artesãos e operários ingleses.'
       }
     ],
     archivalCorpus: [
       {
-        archiveName: 'Bibliothèque Nationale de France (Gallica)',
-        fondCode: 'Manuscritos / Fundo Francês 22170-22180 (Censura Real)',
-        description: 'Registros do Gabinete de Censura de Versalhes contendo relatórios de apreensão e interdição dos volumes da Encyclopédie.'
+        archiveName: 'The National Archives (Kew, Richmond, Reino Unido)',
+        fondCode: 'Record Series HO 40 / HO 42 (Home Office: Disturbance Papers)',
+        description: 'Relatórios confidenciais de magistrados provinciais sobre a revolta dos quebradores de máquinas (ludistas) em Yorkshire, Lancashire e Nottinghamshire (1811–1816).'
       },
       {
-        archiveName: 'Archives Nationales de France',
-        fondCode: 'Série K (Monumentos Históricos) / K-145 (Atas dos Parlamentos)',
-        description: 'Registros formais de objecção (remontrances) dos Parlamentos de Paris e Bordeaux contra os impostos de Calonne e Turgot.'
+        archiveName: 'British Parliamentary Archives (Palácio de Westminster, Londres)',
+        fondCode: 'House of Commons Sessional Papers (Sadler Committee Report 1831–1832)',
+        description: 'Transcrição estenográfica dos testemunhos sob juramento de operários mirins e médicos sobre acidentes mecânicos, jornadas de 16 horas e deformidades físicas fabris.'
+      },
+      {
+        archiveName: 'International Institute of Social History (IISH / Amsterdã)',
+        fondCode: 'Marx-Engels Papers (Fundo ARCH00860)',
+        description: 'Manuscritos econômicos preparatórios originais de Karl Marx para O Capital (1857–1867) e correspondência com Friedrich Engels sobre a indústria têxtil de Manchester.'
       }
     ],
-    concludingAssessment: `O Século das Luzes na França foi o grande laboratório intelectual da Modernidade. Ao questionar a ordem estamental, defender a liberdade de pensamento e proclamar a primazia da razão pública, o Iluminismo desmantelou o arcabouço simbólico do absolutismo, preparando o caminho para que 1789 inaugurasse a era do constitucionalismo e dos direitos universais.`,
+    concludingAssessment: `A história do capitalismo industrial entre 1760 e 1900 legou à contemporaneidade o desafio supremo da civilização: o mercado livre demonstrou ser o mecanismo mais potente já concebido para expandir a riqueza material e impulsionar a inovação tecnológica; no entanto, deixado desprovido de rédeas morais e limites institucionais democráticos, ameaça reduzir os seres humanos a meros fatores contábeis descartáveis e degradar o ecossistema planetário. A construção contínua de um Estado democrático de direito, dotado de seguridade social e regulação ambiental, é o preço indispensável para reconciliar a produtividade econômica com a dignidade da vida.`,
+    bibliographicReferences: [
+      'ALLEN, Robert C. The British Industrial Revolution in Global Perspective. Cambridge: Cambridge University Press, 2009.',
+      'ASHTON, T. S. The Industrial Revolution, 1760–1830. Oxford: Oxford University Press, 1948.',
+      'ENGELS, Friedrich. A Situação da Classe Trabalhadora na Inglaterra. São Paulo: Boitempo, 2008 [1845].',
+      'HOBSBAWM, Eric. Da Revolução Industrial Inglesa ao Imperialismo. Rio de Janeiro: Forense Universitária, 1978.',
+      'HOBSBAWM, Eric. A Era das Revoluções: 1789–1848. Rio de Janeiro: Paz e Terra, 1977.',
+      'LANDES, David S. Prometeu Desacorrentado: Transformação Tecnológica e Desenvolvimento Industrial na Europa Ocidental desde 1750 até os Dias de Hoje. Rio de Janeiro: Nova Fronteira, 1994.',
+      'MARX, Karl. O Capital: Crítica da Economia Política (Livro I). São Paulo: Boitempo, 2013 [1867].',
+      'MOKYR, Joel. The Gifts of Athena: Historical Origins of the Knowledge Economy. Princeton: Princeton University Press, 2002.',
+      'POLANYI, Karl. A Grande Transformação: As Origens da Nossa Época. Rio de Janeiro: Campus, 2000 [1944].',
+      'RICARDO, David. Princípios de Economia Política e Tributação. São Paulo: Nova Cultural, 1988 [1817].',
+      'SMITH, Adam. A Riqueza das Nações: Investigação sobre sua Natureza e suas Causas. São Paulo: Martins Fontes, 2003 [1776].',
+      'THOMPSON, E. P. A Formação da Classe Operária Inglesa. Rio de Janeiro: Paz e Terra, 1987.'
+    ]
+  },
+
+  112: {
+    topicId: 112,
+    title: 'O ILUMINISMO E A CRISE DA LEGITIMIDADE DO ANTIGO REGIME',
+    subtitle: 'Ensaio Acadêmico — França no Século das Luzes (1715–1789)',
+    authorCatedra: 'Cátedra de História Moderna e Filosofia Política · Ensaio Acadêmico',
+    estimatedReadingMinutes: 8,
+    wordCount: 520,
+    narrativeOverview: `O século XVIII francês foi marcado por uma contradição fundamental: enquanto a França se consolidava como um dos principais centros intelectuais da Europa, sua estrutura política continuava apoiada em instituições e privilégios herdados de períodos anteriores.
+
+O desenvolvimento do pensamento iluminista contribuiu para transformar as concepções de autoridade, liberdade e sociedade. Entretanto, a crise do Antigo Regime não pode ser explicada exclusivamente pela circulação das ideias filosóficas.
+
+A Revolução de 1789 surgiu da interação entre mudanças intelectuais, dificuldades financeiras, tensões sociais e disputas políticas.`,
+    historicalDevelopment: `O Iluminismo valorizou a investigação racional e a possibilidade de submeter instituições tradicionais à crítica.
+
+Montesquieu questionou a concentração do poder e examinou os mecanismos institucionais capazes de impedir o despotismo. Voltaire combateu a intolerância religiosa e os abusos judiciais. Rousseau desenvolveu uma teoria da soberania popular que posteriormente seria mobilizada por diferentes grupos revolucionários.
+
+Essas ideias não defendiam um mesmo projeto político. Suas diferenças demonstram que o Iluminismo deve ser compreendido como um campo plural de debates.`,
+    institutionalAndStateMechanisms: `A sociedade francesa apresentava uma distribuição desigual de direitos e obrigações.
+
+A burguesia possuía crescente importância econômica, enquanto grande parte da população estava submetida a diferentes formas de tributação e obrigações tradicionais.
+
+A desigualdade jurídica do Antigo Regime não significava ausência completa de mobilidade social, mas estabelecia privilégios institucionais que se tornaram cada vez mais difíceis de justificar diante das novas linguagens políticas.
+
+A crise financeira da monarquia transformou essa contradição em um problema de governo.`,
+    historiographicalDebate: `A monarquia francesa precisava reformar suas finanças, mas enfrentava resistência dos grupos que seriam atingidos pelas mudanças.
+
+A convocação dos Estados Gerais demonstrou que a Coroa já não conseguia solucionar a crise exclusivamente por meio dos instrumentos tradicionais do absolutismo.
+
+O debate sobre representação política tornou-se, assim, um conflito sobre a própria origem da autoridade.
+
+A questão central deixou de ser apenas como financiar o Estado e passou a envolver quem possuía legitimidade para representar a nação.`,
+    concludingAssessment: `O Iluminismo não produziu automaticamente a Revolução Francesa, mas contribuiu para construir uma linguagem política que permitiu questionar o absolutismo e os privilégios tradicionais.
+
+A crise econômica e fiscal, as desigualdades sociais e a incapacidade institucional da monarquia criaram as condições para que essas ideias fossem mobilizadas em uma transformação revolucionária.
+
+A Revolução Francesa foi, portanto, resultado de uma combinação entre ideias e circunstâncias históricas. Sua compreensão exige superar tanto a interpretação exclusivamente filosófica quanto a explicação puramente econômica.`,
+    scholarlyQuotes: [
+      {
+        author: 'Roger Chartier',
+        work: 'As Origens Culturais da Revolução Francesa',
+        year: '1990',
+        pageOrDoc: 'p. 18-19',
+        quote: 'Não foi o Iluminismo que fez a Revolução, mas a Revolução que fez o Iluminismo, ao construir seu próprio panteão intelectual e ao escolher retrospectivamente os autores que legitimavam sua ruptura.',
+        historicalAnalysis: 'Chartier analisa a dessacralização da monarquia e a formação de um novo espaço público crítico de leitura na França pré-revolucionária.'
+      },
+      {
+        author: 'Robert Darnton',
+        work: 'Boemia Literária e Revolução',
+        year: '1982',
+        pageOrDoc: 'p. 25-27',
+        quote: 'A erosão da legitimidade do Antigo Regime deu-se tanto nos salões dos grandes filósofos quanto nos panfletos escandalosos e libelos dos escritores marginalizados da Grub Street parisiense.',
+        historicalAnalysis: 'Darnton demonstra a importância da literatura clandestina e da circulação popular de panfletos na deslegitimação da corte e dos corpos privilegiados.'
+      }
+    ],
+    archivalCorpus: [
+      {
+        archiveName: 'Archives Nationales de France (Paris / Pierrefitte-sur-Seine)',
+        fondCode: 'Série K (Monuments historiques) e B/III (Procès-verbaux des États Généraux de 1789)',
+        description: 'Cadernos de queixas (Cahiers de Doléances) das três ordens e atas da Assembleia dos Notáveis de 1787 e Estados Gerais de 1789.'
+      },
+      {
+        archiveName: 'Bibliothèque Nationale de France (BnF - Département des Manuscrits)',
+        fondCode: 'Collection Anisson-Duperron et Manuscrits Français (Fonds Français)',
+        description: 'Registros da censura régia, permissões tácitas e correspondência dos editores da Encyclopédie com a administração da Livraria Real.'
+      }
+    ],
     bibliographicReferences: [
       'BAKER, Keith Michael. Inventing the French Revolution. Cambridge: Cambridge University Press, 1990.',
-      'CHARTIER, Roger. As Origens Culturais da Revolução Francesa. São Paulo: UNESP, 2009.',
+      'CHARTIER, Roger. As Origens Culturais da Revolução Francesa. São Paulo: UNESP, 2009 [1990].',
       'DARNTON, Robert. Boemia Literária e Revolução. São Paulo: Companhia das Letras, 1987.',
-      'DOYLE, William. Origins of the French Revolution. Oxford: Oxford University Press, 1999.',
+      'DOYLE, William. Origins of the French Revolution. 3. ed. Oxford: Oxford University Press, 1999.',
       'FURET, François. Pensando a Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.',
-      'LEFEBVRE, Georges. 1789: O Surgimento da Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.'
+      'HABERMAS, Jürgen. Mudança Estrutural da Esfera Pública. Rio de Janeiro: Tempo Brasileiro, 1984.',
+      'LEFEBVRE, Georges. 1789: O Surgimento da Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.',
+      'ROUSSEAU, Jean-Jacques. Do Contrato Social. São Paulo: Abril Cultural, 1978 [1762].',
+      'SOBOUL, Albert. A Revolução Francesa. Rio de Janeiro: DIFEL, 1981.',
+      'TOCQUEVILLE, Alexis de. O Antigo Regime e a Revolução. Brasília: Editora UnB, 1989 [1856].'
     ]
   }
 };

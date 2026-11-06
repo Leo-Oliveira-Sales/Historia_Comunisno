@@ -173,29 +173,42 @@ export const CHRONOLOGIES_BY_TOPIC: Record<number, ChronologyMilestone[]> = {
     { date: '1848', event: 'Revoluções de 1848 e Segunda República Francesa', significance: 'Adoção do sufrágio universal masculino e emergência da questão social do operariado.' }
   ],
 
+  103: [
+    { date: '1764–1767', event: 'Invenção da Spinning Jenny por James Hargreaves', significance: 'Mecanização pioneira da fiação que multiplicou a capacidade de produção de fios têxteis na Inglaterra.' },
+    { date: '1769', event: 'Patente da Máquina a Vapor por James Watt e Water Frame de Arkwright', significance: 'Substituição gradual da tração muscular e hidráulica pela energia fóssil do vapor e nascimento da fábrica moderna.' },
+    { date: '1776', event: 'Publicação de "A Riqueza das Nações" por Adam Smith', significance: 'Fundação da economia política clássica com a formulação da divisão do trabalho, valor e a mão invisível do mercado.' },
+    { date: '1785', event: 'Invenção do Tear Mecânico (Power Loom) por Edmund Cartwright', significance: 'Mecanização da tecelagem, acelerando a industrialização têxtil e a concentração de operários em galpões industriais.' },
+    { date: '1798', event: 'Publicação do "Ensaio sobre o Princípio da População" por Malthus', significance: 'Teoria da armadilha populacional contra a capacidade de produção de alimentos na economia de mercado.' },
+    { date: '1811–1816', event: 'Movimento dos Quebradores de Máquinas (Ludismo)', significance: 'Rebelião operária violenta contra o rebaixamento de salários e o desemprego tecnológico imposto pelas máquinas.' },
+    { date: '1817', event: 'Publicação dos "Princípios de Economia Política" por David Ricardo', significance: 'Teorias da renda diferencial da terra, vantagens comparativas no comércio global e valor-trabalho.' },
+    { date: '1832', event: 'Relatório do Comitê Parlamentar Sadler (Sadler Report)', significance: 'Denúncia documental estarrecedora sobre a exploração brutal de crianças e jornadas de 16 horas nas fábricas.' },
+    { date: '1833', event: 'Promulgação do Factory Act de 1833', significance: 'Primeira lei trabalhista britânica eficaz: proíbe trabalho de menores de 9 anos e cria o corpo de inspetores de fábrica.' },
+    { date: '1838', event: 'Lançamento da Carta do Povo (Início do Cartismo)', significance: 'Primeiro movimento político de massas da classe trabalhadora pela conquista do sufrágio universal e representação.' },
+    { date: '1844', event: 'Factory Act de 1844 e Fundação da Cooperativa de Rochdale', significance: 'Primeira regulamentação de proteção em máquinas perigosas, redução de jornada e nascimento do cooperativismo.' },
+    { date: '1847', event: 'Aprovação da Lei das Dez Horas (Ten Hours Act)', significance: 'Vitória histórica do movimento operário limitando a jornada diária máxima de trabalho de mulheres e jovens.' },
+    { date: '1848', event: 'Publicação do "Manifesto do Partido Comunista" de Marx e Engels', significance: 'Análise da luta de classes entre burguesia e proletariado e apelo à revolução socialista internacional.' },
+    { date: '1867', event: 'Publicação do Livro I de "O Capital" por Karl Marx', significance: 'Crítica profunda da mercadoria, teoria da mais-valia e leis de movimento da acumulação capitalista.' },
+    { date: '1870–1900', event: 'Segunda Revolução Industrial e Capitalismo Financeiro', significance: 'Ascensão do aço Bessemer, química pesada, eletricidade, motor a explosão e expansão imperialista global.' }
+  ],
+
   112: [
-    { date: '1 de Setembro de 1715', event: 'Morte de Luís XIV e Início da Regência do Duque de Orléans', significance: 'Encerramento de 72 anos de reinado do Rei Sol; os Parlamentos recuperam seu direito de remontrance (objeção formal) em troca da anulação do testamento régio, restabelecendo a oposição judiciária à Coroa.' },
-    { date: '1734', event: 'Publicação das Cartas Filosóficas (Lettres Philosophiques) de Voltaire', significance: 'Elogio do sistema parlamentar e da tolerância religiosa britânicos em contraposição ao absolutismo francês; a obra é condenada pelo Parlamento de Paris e queimada em praça pública.' },
-    { date: 'Novembro de 1748', event: 'Publicação de O Espírito das Leis de Montesquieu', significance: 'Formulação da teoria dos freios e contrapesos e da separação tripartite dos poderes (Legislativo, Executivo, Judiciário) como salvaguarda contra o despotismo monárquico.' },
-    { date: '1 de Julho de 1751', event: 'Lançamento do Tomo I da Encyclopédie de Diderot e d’Alembert', significance: 'Início da monumental empresa editorial de 28 volumes que catalogou todo o conhecimento sob o método da razão crítica secular, enfrentando condenações da Igreja Católica e da censura real.' },
-    { date: '1756–1763', event: 'Guerra dos Sete Anos e Crise Geopolítica da Monarquia', significance: 'Derrota humilhante para a Grã-Bretanha no Tratado de Paris (1763), perda das possessões no Canadá e na Índia e endividamento vertiginoso do Tesouro Real dos Bourbon.' },
-    { date: 'Abril de 1762', event: 'Publicação de Do Contrato Social e Execução de Jean Calas', significance: 'Rousseau sistematiza a teoria da soberania inalienável da vontade geral; em Toulouse, o comerciante protestante Calas é supliciado na roda, desencadeando a campanha internacional de Voltaire pela tolerância.' },
-    { date: '10 de Maio de 1774', event: 'Ascensão de Luís XVI e Nomeação de Turgot para as Finanças', significance: 'Coroação do jovem monarca aos 19 anos; o economista fisiocrata Anne Robert Jacques Turgot assume a Controladoria-Geral com o lema "Nem bancarrota, nem aumento de impostos, nem novos empréstimos".' },
-    { date: 'Abril–Maio de 1775', event: 'A Guerra das Farinhas (Guerre des Farines)', significance: 'A liberalização do comércio de grãos promovida por Turgot coincide com escassez de colheita, gerando saques de padarias e motins em Paris e Versalhes, contidos por tropas militares.' },
-    { date: 'Fevereiro de 1776', event: 'Os Seis Éditos de Turgot e Queda do Ministério Reformista', significance: 'Tentativa de abolir as corporações de ofício (jurandes) e a corveia senhorial; a fúria dos Parlamentos e da corte aristocrática força Luís XVI a demitir o ministro fisiocrata.' },
-    { date: '4 de Julho de 1776', event: 'Declaração de Independência dos EUA e Difusão na França', significance: 'O texto de Thomas Jefferson proclama direitos inalienáveis e soberania popular, fascinando a nobreza liberal e os letrados parisienses, simbolizados pelo Marquês de La Fayette.' },
-    { date: 'Fevereiro de 1778', event: 'Tratado de Aliança Militar Franco-Americana', significance: 'A França entra oficialmente na Guerra de Independência dos EUA; a intervenção naval e militar é vitoriosa em Yorktown (1781), mas o custo de mais de 1 bilhão de libras sela a ruína financeira da Coroa.' },
-    { date: 'Fevereiro de 1781', event: 'Publicação do Compte Rendu au Roi por Jacques Necker', significance: 'Pela primeira vez na história, o diretor-geral das finanças torna público o orçamento do Estado, vendendo 100.000 exemplares e desnudando as pensões fabulosas dos cortesãos de Versalhes.' },
-    { date: 'Agosto de 1785', event: 'O Caso do Colar de Diamantes (Affaire du Collier)', significance: 'Escândalo financeiro e moral envolvendo o Cardeal de Rohan e uma suposta compra de joia milionária para a rainha Maria Antonieta; o julgamento público destrói o resquício de sacralidade da monarquia.' },
-    { date: '20 de Agosto de 1786', event: 'Calonne Apresenta a Realidade da Bancarrota a Luís XVI', significance: 'O novo controlador-geral demonstra que o déficit anual ultrapassa 100 milhões de libras e que a dívida absorve metade das receitas, propondo a Subvenção Territorial sobre todas as terras sem isenções.' },
-    { date: '22 de Fevereiro de 1787', event: 'Reunião da Assembleia dos Notáveis em Versalhes', significance: 'Composta por 144 altos aristocratas, prelados e magistrados, a assembleia recusa categoricamente o imposto territorial de Calonne e exige a convocação dos Estados Gerais.' },
-    { date: '3 de Maio de 1788', event: 'Grandes Remontrances do Parlamento de Paris', significance: 'Os magistrados declaram que apenas a Nação reunida nos Estados Gerais tem o direito de votar novos impostos; a tentativa régia de prender líderes parlamentares gera revoltas na Bretanha e no Delfinado.' },
-    { date: '7 de Junho de 1788', event: 'O Dia das Telhas (Journée des Tuiles) em Grenoble', significance: 'A população urbana rebela-se contra as tropas reais que tentavam expulsar os magistrados do Parlamento local, atirando telhas dos telhados; prelúdio insurrecional da solidariedade entre Terceiro Estado e magistratura.' },
-    { date: '8 de Agosto de 1788', event: 'Convocação Oficial dos Estados Gerais e Suspensão da Censura', significance: 'Diante da suspensão de pagamentos do Tesouro e do colapso do crédito, Brienne e Luís XVI convocam os Estados Gerais para 1º de Maio de 1789 e convidam os letrados a enviarem sugestões sobre o formato da assembleia.' },
-    { date: 'Inverno de 1788–1789', event: 'Crise Agrária, Tempestades de Granizo e Escassez de Pão', significance: 'O mais rigoroso inverno do século congela rios e moinhos, fazendo o preço do pão atingir até 80% do salário de um trabalhador urbano em Paris, multiplicando motins da fome.' },
-    { date: 'Janeiro de 1789', event: 'Publicação do Panfleto de Sieyès: O Que é o Terceiro Estado?', significance: 'Emmanuel-Joseph Sieyès estabelece a fórmula revolucionária: "O Terceiro Estado é uma Nação completa"; exige votação por cabeça e a transformação dos deputados comuns em representantes soberanos.' },
-    { date: 'Março–Abril de 1789', event: 'Redação de mais de 60.000 Cadernos de Queixas (Cahiers de Doléances)', significance: 'Em todas as paróquias e corporações da França, os cidadãos registram formalmente suas reivindicações por igualdade fiscal, constituição escrita e abolição das prerrogativas feudais.' },
-    { date: '5 de Maio de 1789', event: 'Sessão Solene de Abertura dos Estados Gerais em Versalhes', significance: 'Luís XVI e Necker inauguram a assembleia perante 1.200 deputados, limitando o debate a questões contábeis; a recusa do Terceiro Estado em verificar poderes separadamente inicia a ruptura que culminará na Assembleia Nacional.' }
+    { date: '1715', event: 'Morte de Luís XIV.', significance: 'Encerramento de um dos reinados mais longos da história europeia; a estrutura política do absolutismo começa a enfrentar novos desafios.' },
+    { date: '1748', event: 'Publicação de O Espírito das Leis, de Montesquieu.', significance: 'Reflexão sobre as formas de governo, as leis e a organização institucional do poder e da liberdade política.' },
+    { date: '1751', event: 'Início da publicação da Enciclopédia.', significance: 'Organização e divulgação sistemática do conhecimento científico, técnico e filosófico sob a razão crítica.' },
+    { date: '1762', event: 'Publicação de O Contrato Social, de Rousseau.', significance: 'Desenvolvimento da teoria da soberania popular inalienável e da vontade geral como fundamento do corpo político.' },
+    { date: '1763', event: 'Tratado de Paris e publicação do Tratado sobre a Tolerância, de Voltaire.', significance: 'Encerramento da Guerra dos Sete Anos e marco na luta contra o fanatismo religioso e erros judiciais.' },
+    { date: '1774', event: 'Ascensão de Luís XVI.', significance: 'Início do reinado marcado por tentativas frustradas de reforma financeira e agravamento do déficit estatal.' },
+    { date: '1776', event: 'Declaração de Independência dos Estados Unidos.', significance: 'Formulação política dos direitos naturais e consentimento dos governados, com forte repercussão na França.' },
+    { date: '1778', event: 'França entra na guerra contra a Grã-Bretanha.', significance: 'Apoio militar e financeiro à independência norte-americana, agravando severamente a dívida pública régia.' },
+    { date: '1783', event: 'Tratado de Paris encerra a Guerra de Independência Americana.', significance: 'Vitória militar aliada, mas com exaustão do Tesouro Real e aceleração da crise de endividamento da Coroa.' },
+    { date: '1787', event: 'Assembleia dos Notáveis e aprofundamento da crise política.', significance: 'Recusa dos corpos privilegiados (nobreza e clero) em aceitar a reforma fiscal universal de Calonne.' },
+    { date: '1788', event: 'Agravamento da crise financeira e convocação dos Estados Gerais.', significance: 'Insolvência do Tesouro e convocação dos três estamentos para maio de 1789, suspendendo a censura prévia.' },
+    { date: 'Jan. 1789', event: 'Publicação de O que é o Terceiro Estado?, de Sieyès.', significance: 'Denúncia dos privilégios estamentais e afirmação de que o Terceiro Estado constitui a nação completa.' },
+    { date: 'Maio 1789', event: 'Abertura dos Estados Gerais.', significance: 'Início da assembleia em Versalhes com impasse sobre a votação por cabeça ou por ordem estamental.' },
+    { date: 'Jun. 1789', event: 'Formação da Assembleia Nacional.', significance: 'Os deputados do Terceiro Estado declaram-se representantes da soberania nacional, rompendo com o absolutismo.' },
+    { date: 'Jul. 1789', event: 'Queda da Bastilha.', significance: 'Em 14 de julho, a população parisiense toma a fortaleza real, marcando a entrada decisiva da mobilização popular.' },
+    { date: 'Verão 1789', event: 'Grande Medo.', significance: 'Onda de pânico coletivo e agitação no campo com queima de títulos senhoriais e contestação dos direitos feudais.' },
+    { date: 'Ago. 1789', event: 'Abolição de privilégios e aprovação da Declaração dos Direitos do Homem e do Cidadão.', significance: 'Desmantelamento jurídico do Antigo Regime e consagração dos princípios de liberdade, igualdade jurídica e propriedade.' }
   ]
 };
 
@@ -651,45 +664,148 @@ Constant alertou contra a tentativa jacobina de forçar os cidadãos modernos a 
     }
   ],
 
+  103: [
+    {
+      title: 'CRÔNICA 1 — A Roda de Hargreaves e o Pânico nas Oficinas de Blackburn (1768)',
+      location: 'Blackburn e Stanhill, Lancashire, Inglaterra',
+      narrative: `Na primavera de 1768, um rumor inquietante percorreu as oficinas domésticas de tecelões artesanais no condado de Lancashire: o carpinteiro James Hargreaves havia inventado um engenho de madeira que permitia a uma única pessoa fiar até dezesseis meadas de algodão ao mesmo tempo, girando apenas uma manivela.
+      
+Até então, o ritmo da tecelagem dependia do trabalho paciente de mulheres fiando em rodas manuais isoladas nas cabanas camponesas. Temendo a destruição de seus empregos e a queda irremediável do valor pago pelo fio, uma multidão enfurecida de fiandeiros artesanais armou-se com marretas e machados, invadiu a humilde casa de Hargreaves em Stanhill e estraçalhou os engenhos inovadores em praça pública. Hargreaves foi forçado a fugir para Nottingham sob ameaça de linchamento.
+      
+A fúria de Blackburn foi o primeiro prenúncio do conflito irreconciliável entre o avanço imparável da produtividade mecânica e a defesa desesperada dos meios tradicionais de subsistência comunitária.`,
+      eyewitnessOrDocQuote: 'Se permitirmos que esses novos engenhos funcionem, o pão será tirado da boca de milhares de mulheres e crianças fiandeiras que dependem da roda manual para sobreviver.',
+      quoteAuthor: 'Manifesto dos tecelões e fiandeiros de Lancashire (1768)'
+    },
+    {
+      title: 'CRÔNICA 2 — O Fogo Contido: James Watt e Matthew Boulton na Fundição de Soho (1776)',
+      location: 'Fundição de Soho, Birmingham, Inglaterra',
+      narrative: `Em março de 1776 — o mesmo ano em que Adam Smith publicava A Riqueza das Nações em Londres —, o silvo estrondoso de um êmbolo movido a vapor ecoou pela primeira vez nas oficinas da Fundição de Soho, nas cercanias de Birmingham. O fabricante Matthew Boulton e o inventor escocês James Watt haviam finalmente dominado a força expansiva do vapor com o acréscimo de um condensador separado, reduzindo em mais de 75% o consumo de carvão das antigas máquinas de Newcomen.
+      
+Boulton, homem de visão empresarial refinada, recebia príncipes, filósofos e capitalistas em sua fundição e pronunciava orgulhosamente a frase que sintetizava a nova era: "Vendo aqui, cavalheiros, o que todo o mundo deseja ter: poder e força motriz".
+      
+A máquina a vapor libertou a manufatura da servidão aos rios e quedas d'água, permitindo que as fábricas fossem instaladas no coração das cidades e junto às bacias de carvão mineral, operando dia e noite sem depender da chuva, do vento ou da fraqueza biológica dos músculos de homens e animais.`,
+      eyewitnessOrDocQuote: 'Vendo aqui, meus senhores, aquilo que o mundo inteiro deseja comprar: força mecânica!',
+      quoteAuthor: 'Matthew Boulton a James Boswell durante visita à Fundição de Soho (1776)'
+    },
+    {
+      title: 'CRÔNICA 3 — O General Ludd Cavalga à Meia-Noite: A Fúria em Nottinghamshire (1811)',
+      location: 'Condados de Nottinghamshire, Yorkshire e Lancashire',
+      narrative: `Nas noites geladas de novembro de 1811, bandos de homens mascarados armados com pistolas, bastões e grandes maços de ferreiro invadiram silenciosamente as oficinas têxteis de Arnold e Bulwell, em Nottinghamshire. Em poucos minutos de estrondo violento, reduziram a lascas de ferro e madeira os novos teares mecânicos de armação larga, que produziam meias de qualidade inferior e rebaixavam pela metade a remuneração dos artesãos locais.
+      
+Os atacantes agiam em nome do mítico "General Ned Ludd", cujo quartel-general lendário estaria localizado na Floresta de Sherwood. Cartas ameaçadoras com o selo do "Exército Reparador de Ludd" chegavam às caixas de correio de industriais gananciosos advertindo: "Se não retirarem as máquinas e não pagarem salários dignos, o General Ludd visitará suas oficinas".
+      
+O governo britânico reagiu com terror desproporcional: enviou mais de 12.000 soldados regulares para o norte da Inglaterra — mais tropas do que o Duque de Wellington comandava em Portugal contra Napoleão —, promulgou a Lei contra a Quebra de Máquinas (Frame Breaking Act de 1812), tornando a sabotagem fabril crime punível com a forca, e enforcou dezenas de ludistas no Castelo de York.`,
+      eyewitnessOrDocQuote: 'Jamais deporemos nossas armas até que os teares mecânicos sejam suprimidos e o trabalho honesto do homem seja pago com o valor de sua dignidade.',
+      quoteAuthor: 'Carta anônima assinada pelo "General Ned Ludd" endereçada a industriais de Huddersfield (1812)'
+    },
+    {
+      title: 'CRÔNICA 4 — O Céu Negro de Manchester e o Relatório do Inspetor Leonard Horner (1833)',
+      location: 'Manchester e o vale do rio Irwell, Inglaterra',
+      narrative: `Na década de 1830, a cidade de Manchester erguia-se sob uma abóbada permanente de fumaça preta sulfurosa expelida por mais de quinhentas chaminés fabris. Nas ruas lamacentas de Little Ireland, famílias inteiras de operários dividiam porões úmidos sem esgoto, onde a expectativa média de vida de um filho de tecelão não ultrapassava os dezoito anos.
+      
+Às 5h30 da manhã, o silvo agudo dos apitos convocava milhares de crianças de oito, nove e dez anos, que corriam descalças pela geada para cumprir turnos de catorze horas ininterruptas nas fiações de algodão. Como "scavengers" e "piecers", os meninos rastejavam por baixo dos teares em movimento rápido para varrer fiapos de algodão inflamáveis e amarrar fios rompidos, correndo perigo constante de terem seus dedos esmagados pelas engrenagens desprotegidas.
+      
+Quando o comitê parlamentar de Michael Sadler e o inspetor fabril Leonard Horner publicaram seus inquéritos em 1832 e 1833, a sociedade britânica foi confrontada com a face mais sombria do progresso: médicos atestavam que centenas de adolescentes apresentavam colunas tortas e ossos deformados pelo raquitismo fabril. A comoção pública forçou a aprovação do Factory Act de 1833, estabelecendo pela primeira vez na história o limite de oito horas para crianças e inspetores governamentais com poder de multar os patrões.`,
+      eyewitnessOrDocQuote: 'O barulho das máquinas é ensurdecedor. Se os meninos adormecem por cansaço, os capatazes os golpeiam com correias de couro para mantê-los acordados até o fim do turno.',
+      quoteAuthor: 'Depoimento de Matthew Crabtree, ex-operário fabril de 22 anos, perante o Comitê Sadler (1832)'
+    },
+    {
+      title: 'CRÔNICA 5 — A Tempestade Cartista: Kennington Common e a Petição dos Três Milhões (1848)',
+      location: 'Kennington Common e Ponte de Westminster, Londres',
+      narrative: `Na manhã chuvosa de 10 de abril de 1848, mais de 150.000 operários, artesãos e militantes cartistas reuniram-se no descampado de Kennington Common, ao sul de Londres, sob bandeiras verdes e vermelhas que proclamavam: "Mais vale morrer de pé do que viver de fome!".
+      
+Nas carruagens abertas repousava a Terceira Petição Nacional da Carta do Povo, um rolo gigantesco de papel contendo mais de três milhões de assinaturas que exigia as seis reivindicações fundamentais da cidadania operária: sufrágio universal masculino, voto secreto por cédula, abolição do censo de propriedade para deputados, parlamentos anuais e pagamento de salários aos parlamentares (para que um trabalhador pudesse exercer mandato político sem morrer de inanição).
+      
+Aterrorizada pela onda revolucionária que derrubava tronos em Paris, Viena e Berlim naquele ano da Primavera dos Povos, a rainha Vitória foi evacuada para a Ilha de Wight, e o octogenário Duque de Wellington mobilizou 85.000 policiais especiais e canhões para barrar a travessia das pontes sobre o rio Tâmisa. Embora a marcha tenha sido dispersada pacificamente e os deputados tenham ridicularizado a petição no plenário, o Cartismo provou que o proletariado industrial não se contentava mais com migalhas salariais: ele exigia o direito supremo de escrever as próprias leis do país.`,
+      eyewitnessOrDocQuote: 'Não pedimos caridade; exigimos os direitos políticos de cidadãos livres. Sem o voto, a classe trabalhadora continuará sendo escrava do capital.',
+      quoteAuthor: 'Feargus O’Connor, discurso em Kennington Common (10 de abril de 1848)'
+    },
+    {
+      title: 'CRÔNICA 6 — O Filósofo no Museu Britânico: Karl Marx e a Anatomia da Mercadoria (1867)',
+      location: 'Sala Redonda de Leitura do Museu Britânico, Great Russell Street, Londres',
+      narrative: `Dia após dia, durante mais de uma década e meia, um homem de vasta barba grisalha e casaco puído subia os degraus de granito do Museu Britânico pontualmente às nove da manhã e tomava assento na mesa G-7 da imensa Sala Redonda de Leitura. Era Karl Marx, exilado prussiano vivendo na miséria em dois cômodos modestos do bairro operário do Soho.
+      
+Rodeado por montanhas de livros azuis oficiais do Parlamento (os afamados Blue Books), relatórios de inspetores sanitários e tratados de economia de Adam Smith e Ricardo, Marx dissecava o organismo vivo do capitalismo industrial com a precisão de um anatomista. Seu amigo e patrono Friedrich Engels, sócio de uma tecelagem em Manchester, enviava-lhe amostras de algodão, tabelas de custos de produção e descrições detalhadas do funcionamento interno das fábricas.
+      
+Em setembro de 1867, a editora Meissner de Hamburgo publicava os primeiros mil exemplares do Livro I de O Capital: Crítica da Economia Política. No capítulo sobre a jornada de trabalho e a mais-valia, Marx revelou que o lucro do burguês não brotava da inteligência mercantil do dono da fábrica, mas do trabalho não pago extorquido do tempo vital do operário. Aquele calhamaço denso e erudito transformou-se no manifesto intelectual que armaria sindicatos e partidos socialistas no mundo inteiro.`,
+      eyewitnessOrDocQuote: 'O capital é trabalho morto que, como um vampiro, só vive sugando trabalho vivo, e vive tanto mais quanto mais trabalho suga.',
+      quoteAuthor: 'Karl Marx, O Capital (Livro I, 1867)'
+    },
+    {
+      title: 'CRÔNICA 7 — O Trem Noturno para Liverpool: A Compressão do Espaço-Tempo (1875)',
+      location: 'Estação de Euston, Londres, e Linha Great Western Railway',
+      narrative: `Nas plataformas de ferro fundido e vidro da Estação de Euston, em Londres, passageiros acomodavam-se em vagões iluminados por lâmpadas a gás enquanto locomotivas a vapor engoliam centenas de toneladas de carvão mineral por hora. A viagem até Liverpool, que nas diligências puxadas a cavalos em 1780 exigia quatro dias extenuantes de poeira e trocas de parelhas em estalagens, agora se realizava em pouco mais de quatro horas.
+      
+A ferrovia revolucionou não apenas o transporte de mercadorias e pessoas, mas a própria percepção humana do tempo e do espaço. Pela primeira vez na história da humanidade, foi necessário unificar o horário de cidades inteiras: o tempo solar local de cada paróquia foi substituído pelo horário ferroviário unificado de Greenwich (Greenwich Mean Time).
+      
+Os telégrafos elétricos, cujos fios de cobre corriam paralelos aos trilhos de aço, transmitiam as cotações do algodão e do trigo de Nova York e Bombaim antes mesmo que o sol se pusesse sobre o estuário do Tâmisa. O mundo havia encolhido; o mercado capitalista tornava-se irreversivelmente planetário e instantâneo.`,
+      eyewitnessOrDocQuote: 'A ferrovia aniquilou a distância física e unificou o relógio da humanidade sob a tirania dos horários de partida.',
+      quoteAuthor: 'Crônica de viagem da revista The Illustrated London News (1875)'
+    },
+    {
+      title: 'CRÔNICA 8 — A Segunda Aurora: As Dínamos de Chicago e a Eletricidade Industrial (1893)',
+      location: 'Exposição Mundial de Chicago (World’s Columbian Exposition) e Bacia do Ruhr, Alemanha',
+      narrative: `Na noite de 1 de maio de 1893, o presidente norte-americano Grover Cleveland apertou um botão dourado na Exposição Mundial de Chicago, acionando simultaneamente as dínamos de corrente alternada projetadas por Nikola Tesla e George Westinghouse. Instantaneamente, mais de 100.000 lâmpadas elétricas incandescentes iluminaram a fachada de gesso branco dos pavilhões neoclássicos da "Cidade Branca", arrancando um clamor de assombro de centenas de milhares de espectadores.
+      
+A era do carvão fumegante e das correias de transmissão de couro das fábricas da Primeira Revolução Industrial encontrava agora sua sucessora: a Segunda Revolução Industrial. Na Alemanha unificada e nos Estados Unidos, grandes conglomerados industriais (Krupp, Siemens, General Electric, Standard Oil) dominavam o refino do petróleo, a síntese química de corantes e fertilizantes e a fundição de aço de alta resistência pelo convertedor Bessemer.
+      
+As ferrovias transcontinentais cortavam o Oeste americano e as estepes siberianas, navios cargueiros a turbina transportavam carne congelada da Argentina para a Europa e o capital financeiro dos bancos internacionais financiava impérios coloniais na África e na Ásia. A sociedade industrial entrava no século XX celebrando seu triunfo tecnológico, sem prever que aquela mesma potência produtiva colossal forjaria as armas mais mortíferas das grandes guerras mundiais.`,
+      eyewitnessOrDocQuote: 'A eletricidade não é apenas uma nova fonte de luz; é a alma invisível da nova indústria que move o século que está nascendo.',
+      quoteAuthor: 'Relatório Oficial da Exposição Mundial de Chicago (1893)'
+    }
+  ],
+
   112: [
     {
-      title: 'A Batalha da Enciclopédia: Diderot, a Censura Real e a Ofensiva do Conhecimento',
-      location: 'Oficina de Impressão de André Le Breton e Salões de Paris',
-      narrative: `Em 1751, quando o primeiro volume da Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers chegou às mãos dos subscritores em Paris, uma onda de choque percorreu a corte de Versalhes e os corredores da Sorbonne. Sob a liderança do filósofo Denis Diderot e do matemático Jean le Rond d'Alembert, o projeto ambicionava nada menos que reunir todo o conhecimento humano acumulado e reordená-lo sob a luz estrita da razão, desferindo golpes letais contra o dogmatismo clerical e os privilégios feudal-absolutistas.
-      
-Em 1752 e novamente em 1759, após a publicação do verbete "Autoridade Política" (no qual Diderot afirmava categoricamente que "nenhum homem recebeu da natureza o direito de comandar os outros"), o Conselho do Rei Luís XV decretou a proibição formal da publicação e a apreensão de todos os exemplares. O Papa Clemente XIII colocou a obra no Index Librorum Prohibitorum sob pena de excomunhão para quem a lesse.
-      
-Apesar do terror das batidas policiais da Bastilha, Diderot recusou-se a fugir. Com a cumplicidade silenciosa de Chrétien-Guillaume de Lamoignon de Malesherbes — o censor real que ironicamente admirava os iluministas e escondeu os manuscritos originais em sua própria casa para evitar que fossem queimados —, Diderot trabalhou clandestinamente durante mais de vinte anos. Imprimindo os volumes restantes em prensas secretas sob o selo de impressores de Neuchâtel e distribuindo os tomos escondidos em fundos falsos de carruagens, a equipe da Encyclopédie concluiu 28 volumes que transformaram irreversivelmente as mentes letradas da Europa.`,
-      eyewitnessOrDocQuote: 'Nenhum homem recebeu da natureza o direito de comandar os outros. A liberdade é um presente do céu, e cada indivíduo da mesma espécie tem o direito de gozar dela logo que goze da razão.',
-      quoteAuthor: 'Denis Diderot, verbete "Autoridade Política" (Autorité Politique) da Encyclopédie (1751)'
+      title: 'CRÔNICA 1 — O PALÁCIO E A NAÇÃO',
+      location: 'Versalhes e Paris (1715)',
+      narrative: `Em 1715, a morte de Luís XIV encerrou um dos reinados mais longos da história europeia. Versalhes permanecia como símbolo da grandeza monárquica, mas a estrutura política que sustentava a autoridade real começava a enfrentar desafios cada vez mais complexos.
+
+A corte representava a tradição, o prestígio e a centralização do poder. Fora dela, entretanto, a sociedade francesa era composta por agricultores, comerciantes, trabalhadores, profissionais e proprietários com interesses muito diferentes.
+
+A França era uma potência, mas sua organização social permanecia marcada por privilégios.`
     },
     {
-      title: 'O Caso Calas e o Grito de Voltaire: A Opinião Pública contra o Fanatismo Religioso',
-      location: 'Toulouse e Castelo de Ferney',
-      narrative: `Em 1762, o comerciante protestante Jean Calas foi injustamente condenado ao suplício da roda em Toulouse, sob a acusação forjada pelo parlamento católico de ter assassinado seu filho para impedir sua conversão. Voltaire tomou o caso, mobilizou a opinião pública internacional e publicou o Tratado sobre a Tolerância (1763), conseguindo a anulação do julgamento e a reabilitação da memória de Calas pelo Conselho do Rei em 1765.`,
-      eyewitnessOrDocQuote: 'Não é aos homens que me dirijo; é a ti, Deus de todos os seres... Que as pequenas diferenças entre nossas roupas e nossas línguas não sejam sinais de ódio.',
-      quoteAuthor: 'Voltaire, Tratado sobre a Tolerância (1763)'
+      title: 'CRÔNICA 2 — OS FILÓSOFOS E A CRÍTICA',
+      location: 'Paris e os Salões Iluministas',
+      narrative: `Em Paris, livros e panfletos circulavam entre leitores, intelectuais e grupos interessados nas transformações políticas e científicas.
+
+Montesquieu examinava os limites do poder. Voltaire denunciava a intolerância. Rousseau discutia a soberania popular. Diderot e d'Alembert organizavam um projeto intelectual de divulgação do conhecimento.
+
+As ideias não derrubavam a monarquia por si mesmas, mas modificavam o vocabulário com que a autoridade era discutida.`
     },
     {
-      title: 'A Revolta dos Parlamentos (1787–1788): A Aristocracia Bloqueia a Monarquia',
-      location: 'Palácio de Justiça de Paris e Versalhes',
-      narrative: `Diante do déficit catastrófico provocado pelas guerras, os ministros de Luís XVI tentaram criar um imposto territorial universal. Os Parlamentos, tribunais dominados pela nobreza de toga, recusaram o registro dos éditos e exigiram a convocação dos Estados Gerais, paralisando a administração real e desnudando a fraqueza da monarquia.`,
-      eyewitnessOrDocQuote: 'Apenas a Nação reunida nos Estados Gerais tem o poder de conceder ao Rei os subsídios financeiros necessários.',
-      quoteAuthor: 'Declaração do Parlamento de Paris (Maio de 1788)'
+      title: 'CRÔNICA 3 — O PESO DOS IMPOSTOS',
+      location: 'Paris e as Províncias Francesas',
+      narrative: `A monarquia precisava financiar sua administração e suas guerras.
+
+O sistema tributário era complexo e desigual. Os privilégios de determinados grupos dificultavam a construção de uma arrecadação uniforme.
+
+Quando os ministros tentavam reformar as finanças, encontravam resistência.
+
+O problema fiscal transformava-se em conflito político.`
     },
     {
-      title: 'O Panfleto de Sieyès e o Despertar do Terceiro Estado (1789)',
-      location: 'Paris e Versalhes',
-      narrative: `Em janeiro de 1789, o abade Emmanuel-Joseph Sieyès publicou O Que é o Terceiro Estado?, afirmando que os 98% da população francesa que não eram nobres nem clérigos constituíam a Nação completa. O panfleto tornou-se a cartilha ideológica que encorajou os deputados do Terceiro Estado a desafiarem as ordens privilegiadas nos Estados Gerais.`,
-      eyewitnessOrDocQuote: 'O que é o Terceiro Estado? Tudo. O que tem sido ele até agora na ordem política? Nada. O que ele pede? Tornar-se algo.',
-      quoteAuthor: 'Emmanuel-Joseph Sieyès, O Que é o Terceiro Estado? (1789)'
+      title: 'CRÔNICA 4 — A NAÇÃO ENTRA EM CENA',
+      location: 'Versalhes — Reunião dos Estados Gerais (1789)',
+      narrative: `Em 1789, os Estados Gerais foram convocados.
+
+A discussão sobre a forma de votação revelou um problema maior: quem representava a nação?
+
+Os representantes do Terceiro Estado passaram a reivindicar uma posição política correspondente à sua importância social.
+
+O conflito ultrapassou a questão tributária e atingiu a própria estrutura de legitimidade da monarquia.`
     },
     {
-      title: 'A Fisiocracia e a Guerra das Farinhas (1775): O Livre Mercado e a Revolta Popular',
-      location: 'Bacia de Paris e Versalhes',
-      narrative: `Em 1774, o ministro Turgot aplicou as teorias fisiocráticas de livre mercado de grãos. Uma má colheita provocou a explosão do preço do pão e ondas de saques em padarias e moinhos (a "Guerra das Farinhas"), revelando o choque dramático entre o liberalismo econômico nascente e a economia moral da multidão camponesa.`,
-      eyewitnessOrDocQuote: 'Se o pão faltar, o povo tem o direito de exigi-lo pelo preço justo da sua sobrevivência.',
-      quoteAuthor: 'Panfleto popular distribuído durante a Guerra das Farinhas (1775)'
+      title: 'CRÔNICA 5 — O VERÃO DE 1789',
+      location: 'Paris e o Campo Francês (Julho–Agosto de 1789)',
+      narrative: `Em julho de 1789, Paris tornou-se cenário de mobilização popular.
+
+A Bastilha caiu em 14 de julho. No campo, rumores e temores provocaram uma onda de agitação conhecida como Grande Medo.
+
+A Assembleia tomou medidas contra privilégios feudais e, em agosto, aprovou a Declaração dos Direitos do Homem e do Cidadão.
+
+A sociedade francesa entrava em uma experiência política sem precedentes em sua história recente.`
     }
   ]
 };

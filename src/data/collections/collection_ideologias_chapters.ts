@@ -277,8 +277,8 @@ export const IDEOLOGIAS_CHAPTERS: Record<number, AcademicChapter> = {
   // =========================================================================
   102: {
     topicId: 102,
-    title: 'REVOLUÇÕES BURGUESAS E TEORIA DO ESTADO: Revolução Francesa e Liberalismo: direitos do homem, cidadania e ruptura com o Antigo Regime',
-    subtitle: 'A transformação da soberania, a formação do constitucionalismo moderno e as disputas entre liberdade individual, igualdade política e democracia (Recorte histórico: 1789–1848)',
+    title: 'REVOLUÇÕES BURGUESAS E TEORIA DO ESTADO',
+    subtitle: 'Revolução Francesa e Liberalismo: direitos do homem, cidadania e ruptura com o Antigo Regime',
     authorCatedra: 'Cátedra de História Política, Constitucionalismo e Teoria do Estado',
     introduction: `A Revolução Francesa, iniciada em 1789, representou uma das transformações políticas mais importantes da história contemporânea. Ao questionar os fundamentos jurídicos e institucionais do Antigo Regime, derrubar a monarquia absoluta, abolir privilégios estamentais e proclamar direitos universais, o movimento revolucionário alterou profundamente a maneira como as sociedades europeias compreendiam a autoridade, a cidadania e a organização do Estado.
 
@@ -705,7 +705,7 @@ Entretanto, não deve ser confundido com um documento plenamente igualitário. O
             title: 'A contradição napoleônica',
             content: `Napoleão preservou conquistas fundamentais da Revolução, especialmente a igualdade civil masculina, a reorganização administrativa e a proteção jurídica da propriedade.
 
-Ao mesmo time, concentrou poderes políticos, restringiu a oposição e estabeleceu um regime autoritário.
+Ao mesmo tempo, concentrou poderes políticos, restringiu a oposição e estabeleceu um regime autoritário.
 
 Sua experiência demonstra que a modernização jurídica e administrativa não conduz necessariamente à democracia política.`
           }
@@ -780,7 +780,7 @@ O século XIX foi marcado justamente pela disputa sobre a extensão do sufrágio
 
 Sua investigação procurou compreender as características da sociedade norte-americana e as transformações associadas à igualdade de condições.
 
-Para Tocqueville, a expansão da igualdade constituíam uma tendência histórica de grande alcance.
+Para Tocqueville, a expansão da igualdade constituía uma tendência histórica de grande alcance.
 
 Essa igualdade não significava necessariamente igualdade econômica absoluta, mas transformação das relações sociais e enfraquecimento das distinções hereditárias.`
           },
@@ -995,45 +995,543 @@ A história entre 1789 e 1848 constitui uma das principais origens dessa discuss
   // =========================================================================
   103: {
     topicId: 103,
-    title: 'Revolução Industrial e Capitalismo: Livre Mercado, Burguesia e Divisão do Trabalho',
-    subtitle: 'A metamorfose produtiva global, o cálculo econômico clássico e a emergência da Questão Social',
-    authorCatedra: 'Cátedra de História Econômica e Pensamento Capitalista',
-    introduction: 'A Revolução Industrial inglesa, deflagrada a partir de meados do século XVIII, alterou as bases ecológicas e materiais da existência humana de forma mais radical do que qualquer evento desde a invenção da agricultura no Neolítico. A transição da produção artesanal movida a energia biológica para a grande fábrica a vapor mecanizada gerou aumentos astronômicos de produtividade, reorganizou a geografia planetária em torno do comércio internacional e criou as classes estruturais da modernidade: a burguesia industrial detentora do capital e o proletariado assalariado.',
+    title: 'Nº 03 — ECONOMIA POLÍTICA E TRANSFORMAÇÃO SOCIAL',
+    subtitle: 'Revolução Industrial e Capitalismo: Livre mercado, burguesia e divisão do trabalho (1760–1900)',
+    authorCatedra: 'Cátedra de História Econômica, Economia Política e Relações de Trabalho',
+    introduction: `A Revolução Industrial constitui um dos processos de transformação mais importantes da história moderna. Iniciada na Grã-Bretanha durante a segunda metade do século XVIII, ela modificou profundamente a maneira como os seres humanos produziam mercadorias, organizavam o trabalho, acumulavam riqueza, estruturavam as cidades e estabeleciam relações econômicas.
+
+Até então, grande parte da população europeia vivia em sociedades predominantemente agrárias. A produção manufatureira encontrava-se distribuída entre oficinas, atividades domésticas, pequenos estabelecimentos e unidades produtivas que utilizavam, em grande medida, ferramentas e fontes tradicionais de energia.
+
+A industrialização modificou progressivamente esse cenário. A mecanização da produção, a utilização do carvão mineral, o desenvolvimento da máquina a vapor, a expansão das fábricas e a construção de ferrovias permitiram ampliar a capacidade produtiva e integrar mercados em escalas cada vez maiores.
+
+A transformação não foi exclusivamente tecnológica. Ela envolveu mudanças nas relações de propriedade, na organização empresarial, na divisão social do trabalho e nas formas de contratação da mão de obra.
+
+Nesse processo, consolidou-se uma sociedade industrial marcada pela expansão da burguesia empresarial e pela formação de uma classe trabalhadora assalariada, posteriormente identificada como proletariado.
+
+O capitalismo industrial tornou-se uma das principais formas de organização econômica do mundo contemporâneo. Sua expansão esteve associada à propriedade privada dos meios de produção, ao investimento de capital, à produção para o mercado, à contratação de trabalho assalariado e à busca de rentabilidade.
+
+Entretanto, a industrialização não ocorreu sem conflitos. O crescimento econômico coexistiu com jornadas prolongadas, trabalho infantil, acidentes, moradias precárias, desigualdade e insegurança social. As condições de trabalho deram origem a movimentos de resistência, associações operárias, sindicatos e diferentes correntes de pensamento socialista.
+
+Este capítulo investiga a formação histórica do capitalismo industrial entre aproximadamente 1760 e 1900, examinando suas origens, transformações tecnológicas, fundamentos econômicos, relações sociais, expansão internacional e principais interpretações historiográficas.`,
     sections: [
       {
         number: '1',
-        title: 'As Pré-Condições Históricas do Surto Industrial Britânico',
-        content: 'O pioneirismo britânico não decorreu de mero acaso técnico. Ele resultou de uma combinação secular de fatores: o movimento de cercamento dos campos (enclosure acts) que expulsou levas de camponeses para os centros urbanos, a abundância estratégica de jazidas de ferro e carvão mineral, o domínio comercial imperial que garantia matérias-primas coloniais (algodão) e mercados cativos, além de um sistema financeiro robusto e uma monarquia parlamentar estável e sensível aos interesses mercantis desde a Revolução Gloriosa de 1688.'
+        title: 'ANTES DA REVOLUÇÃO INDUSTRIAL: A ECONOMIA EUROPEIA DO ANTIGO REGIME',
+        content: `A Revolução Industrial não surgiu em uma sociedade economicamente imóvel. Antes de 1760, a Europa já apresentava importantes transformações comerciais, agrícolas, financeiras e demográficas.
+
+A agricultura constituía a principal atividade econômica, mas o comércio marítimo, as manufaturas, o crédito e as atividades bancárias desempenhavam funções crescentes.
+
+A produção artesanal permanecia relevante. Tecidos, ferramentas, utensílios e diversos produtos eram fabricados em oficinas, estabelecimentos familiares e pequenas unidades produtivas.
+
+Em determinadas regiões, comerciantes organizavam sistemas de produção doméstica conhecidos como putting-out system. Nesse modelo, empresários forneciam matéria-prima a trabalhadores que produziam em suas próprias casas, recebendo pagamento pelo trabalho realizado.
+
+Esse sistema permitia ampliar a produção sem exigir imediatamente a concentração de todos os trabalhadores em fábricas.
+
+A economia europeia também estava inserida em redes comerciais internacionais. Produtos agrícolas, matérias-primas, tecidos, metais e mercadorias coloniais circulavam entre diferentes continentes.
+
+A expansão comercial, entretanto, estava profundamente relacionada à formação dos impérios coloniais e ao tráfico transatlântico de pessoas escravizadas.
+
+Portanto, o capitalismo industrial não deve ser interpretado como resultado exclusivo da inovação tecnológica europeia. Sua formação também esteve relacionada ao comércio internacional, à expansão imperial, à disponibilidade de matérias-primas e à acumulação de recursos.`
       },
       {
         number: '2',
-        title: 'Adam Smith e a Racionalidade Econômica da Divisão do Trabalho',
-        content: 'Em 1776, Adam Smith publicou Uma Investigação sobre a Natureza e as Causas da Riqueza das Nações, inaugurando a ciência econômica clássica. Smith identificou na divisão social e técnica do trabalho — exemplificada na célebre fábrica de alfinetes — a mola propulsora da riqueza das nações. Ao contrário do mercantilismo bulionista que media poder pela acumulação de ouro nos cofres do rei, Smith demonstrou que a verdadeira riqueza reside no fluxo contínuo de bens e serviços gerados pela produtividade do trabalho humano livre, coordenado de forma descentralizada pelo sistema de preços e pela concorrência do mercado.'
+        title: 'POR QUE A REVOLUÇÃO INDUSTRIAL COMEÇOU NA GRÃ-BRETANHA?',
+        content: `A industrialização teve início na Grã-Bretanha por uma combinação de fatores econômicos, institucionais, geográficos, tecnológicos e comerciais.
+
+Não existe uma explicação única capaz de esclarecer integralmente esse processo.
+
+Entre os fatores frequentemente destacados pela historiografia estão:
+- Expansão dos mercados internos e externos.
+- Disponibilidade de carvão mineral.
+- Desenvolvimento de atividades comerciais e financeiras.
+- Crescimento da produção agrícola.
+- Existência de trabalhadores disponíveis para atividades assalariadas.
+- Instituições que favoreciam determinados tipos de investimento.
+- Expansão das redes de transporte.
+- Capacidade de inovação e aperfeiçoamento técnico.
+
+O historiador econômico Robert C. Allen destaca a importância da estrutura britânica de salários e preços. Segundo sua interpretação, salários relativamente elevados e energia relativamente barata tornaram economicamente vantajoso desenvolver tecnologias capazes de substituir parte do trabalho humano por máquinas e energia.
+
+Essa interpretação ajuda a compreender por que determinadas invenções se tornaram economicamente viáveis inicialmente na Grã-Bretanha.
+
+Joel Mokyr, por sua vez, atribui grande importância à circulação do conhecimento, às relações entre ciência e tecnologia e à cultura de inovação.
+
+As diferentes explicações não são necessariamente incompatíveis. A industrialização britânica resultou de condições que se reforçaram mutuamente.`
       },
       {
         number: '3',
-        title: 'A Fábrica como Aparelho Disciplinar e a Gestação do Proletariado',
-        content: 'A fábrica não foi apenas um espaço de inovações técnicas; foi uma instituição disciplinar total. Como demonstraram E. P. Thompson e Karl Polanyi, o trabalho fabril exigiu a imposição violenta de uma nova temporalidade regida pelo relógio e pela máquina, destruindo o ritmo tradicional autônomo dos artesãos. Mulheres e crianças eram amplamente contratadas por salários ínfimos em turnos de até 16 horas diárias sob castigos físicos e condições sanitárias degradantes, gerando bairros operários insalubres e pandemias de cólera e tuberculose.'
+        title: 'A REVOLUÇÃO AGRÍCOLA E A TRANSFORMAÇÃO DO CAMPO',
+        content: `A industrialização esteve relacionada a transformações anteriores na agricultura britânica.
+
+Durante os séculos XVII e XVIII, determinadas regiões passaram por mudanças na organização da propriedade, nos métodos de cultivo, na criação de animais e na utilização das terras.
+
+Os chamados enclosures, ou cercamentos, tiveram importância nesse processo.
+
+Os cercamentos consistiam na consolidação e reorganização de terras anteriormente submetidas a diferentes formas de utilização coletiva ou comunitária.
+
+Em muitos casos, foram realizados por meio de leis parlamentares, alterando profundamente as relações de propriedade e utilização da terra.
+
+Os defensores dos cercamentos argumentavam que a reorganização das propriedades poderia aumentar a produtividade e incentivar investimentos agrícolas.
+
+Entretanto, o processo também provocou perdas de direitos tradicionais de uso da terra e contribuiu, em diferentes regiões, para a vulnerabilidade de famílias camponesas.
+
+É importante evitar uma interpretação simplificada segundo a qual todos os camponeses foram imediatamente expulsos do campo. Os efeitos variaram conforme a região, a legislação e a estrutura fundiária.
+
+A transformação agrícola contribuiu para ampliar a oferta de alimentos, abastecer cidades em crescimento e favorecer a disponibilidade de mão de obra para atividades não agrícolas.
+
+A relação entre Revolução Agrícola e Revolução Industrial foi, portanto, importante, mas não automática.`
       },
       {
         number: '4',
-        title: 'Reações Sociais: Do Ludismo ao Cartismo e o Direito do Trabalho',
-        content: 'Diante da miséria material e da pauperização absoluta descrita por Friedrich Engels em A Situação da Classe Trabalhadora na Inglaterra (1845), a resistência popular expressou-se inicialmente no movimento dos "quebradores de máquinas" liderados pelo mítico General Ned Ludd. Contudo, nas décadas de 1830 e 1840, essa fúria canalizou-se para o Cartismo — o primeiro movimento político operário de massas da história —, que reivindicava o sufrágio universal masculino e o pagamento de salários a deputados como via necessária para promulgar leis fabris protetivas e a redução da jornada de trabalho.'
+        title: 'AS TRANSFORMAÇÕES TECNOLÓGICAS',
+        content: `A industrialização foi acompanhada por uma série de inovações que modificaram a produtividade e a organização da produção.`,
+        subsections: [
+          {
+            number: '4.1',
+            title: 'A indústria têxtil',
+            content: `O setor têxtil foi um dos principais espaços de inovação durante a primeira fase da Revolução Industrial.
+
+A produção de tecidos possuía grande importância econômica e envolvia diferentes etapas, como preparação das fibras, fiação e tecelagem.
+
+Entre as principais invenções estavam:
+- Spinning Jenny: desenvolvida por James Hargreaves na década de 1760, permitia produzir vários fios simultaneamente.
+- Water Frame: associada a Richard Arkwright, utilizava energia hidráulica para movimentar máquinas de fiação.
+- Spinning Mule: desenvolvida por Samuel Crompton em 1779, combinava características de máquinas anteriores e permitia produzir fios mais finos e resistentes.
+- Power Loom: tear mecânico aperfeiçoado por Edmund Cartwright, que contribuiu para mecanizar a tecelagem.
+
+Essas inovações modificaram a produtividade e favoreceram a concentração de atividades produtivas em estabelecimentos industriais.`
+          },
+          {
+            number: '4.2',
+            title: 'A máquina a vapor',
+            content: `A máquina a vapor tornou-se uma das tecnologias mais importantes da industrialização.
+
+Thomas Newcomen desenvolveu uma máquina a vapor utilizada principalmente para bombear água de minas.
+
+James Watt aperfeiçoou significativamente essa tecnologia a partir da década de 1760, introduzindo melhorias que aumentaram sua eficiência.
+
+A máquina a vapor permitiu ampliar a utilização de energia mecânica em diferentes setores, reduzindo a dependência de determinadas condições geográficas.
+
+Sua aplicação foi progressivamente expandida para fábricas, transportes e outras atividades.
+
+A tecnologia não substituiu imediatamente todas as fontes anteriores de energia. A energia hidráulica continuou importante durante boa parte da industrialização.`
+          },
+          {
+            number: '4.3',
+            title: 'Carvão e ferro',
+            content: `O carvão mineral tornou-se fundamental para a economia industrial.
+
+Sua utilização permitiu fornecer energia a máquinas, locomotivas e instalações produtivas.
+
+A metalurgia também passou por transformações importantes. O aperfeiçoamento dos processos de produção de ferro ampliou a disponibilidade de materiais utilizados em máquinas, ferramentas, pontes, ferrovias e equipamentos industriais.
+
+A indústria do ferro e, posteriormente, a expansão da produção de aço foram fundamentais para a infraestrutura industrial do século XIX.`
+          }
+        ]
       },
       {
         number: '5',
-        title: 'Karl Polanyi e a Crítica da Mercadoria Fictícia',
-        content: 'Em sua obra clássica A Grande Transformação (1944), Karl Polanyi demonstrou que o postulado de um mercado autorregulado independente da sociedade constituiu uma perigosa utopia utilitarista. Ao transformar terra, trabalho e dinheiro em "mercadorias fictícias" submetidas unicamente à lei da oferta e da procura, o capitalismo inicial ameaçou aniquilar a própria substância humana e ecológica da vida civil, disparando inevitáveis contramovimentos de autodefesa da sociedade (sindicatos, cooperativas e leis regulatórias).'
+        title: 'A FÁBRICA E A NOVA ORGANIZAÇÃO DO TRABALHO',
+        content: `Uma das mudanças mais profundas da Revolução Industrial foi a expansão do sistema fabril.
+
+Antes da industrialização, muitas atividades produtivas eram realizadas em oficinas e residências, com relativa autonomia sobre o ritmo de trabalho.
+
+A fábrica introduziu uma organização diferente.
+
+Máquinas, trabalhadores e matérias-primas passaram a ser reunidos em estabelecimentos controlados por empresários ou administradores.
+
+O tempo de trabalho passou a ser regulado por horários, turnos, supervisão e disciplina produtiva.
+
+A produção dependia cada vez mais da coordenação de diferentes trabalhadores e máquinas.
+
+A fábrica também permitiu ampliar o controle empresarial sobre as etapas de fabricação.
+
+Essa transformação não significou o desaparecimento imediato do trabalho doméstico ou artesanal. Diferentes sistemas produtivos coexistiram durante décadas.
+
+A industrialização foi um processo gradual e desigual.`
+      },
+      {
+        number: '6',
+        title: 'ADAM SMITH E A DIVISÃO DO TRABALHO',
+        content: `Adam Smith publicou A Riqueza das Nações em 1776, uma obra fundamental para a história da economia política.
+
+Smith procurou compreender os fatores que determinavam a riqueza das nações, atribuindo grande importância à produtividade do trabalho, à divisão das atividades produtivas, à acumulação de capital e à extensão dos mercados.
+
+Seu exemplo clássico é a fabricação de alfinetes.
+
+Quando a produção é dividida em tarefas especializadas, cada trabalhador pode concentrar-se em uma operação específica. A especialização permite adquirir habilidade, reduzir o tempo perdido na troca de tarefas e estimular o desenvolvimento de instrumentos e máquinas.
+
+A divisão do trabalho, entretanto, depende da extensão do mercado. Mercados maiores permitem maior especialização e ampliam as possibilidades de produção.
+
+Smith também reconheceu possíveis efeitos negativos da especialização excessiva sobre as capacidades intelectuais dos trabalhadores, especialmente quando executam tarefas extremamente repetitivas.
+
+Portanto, sua obra não deve ser reduzida à defesa irrestrita de qualquer forma de exploração empresarial.
+
+A divisão do trabalho tornou-se um dos conceitos fundamentais para compreender a organização econômica moderna.`
+      },
+      {
+        number: '7',
+        title: 'O CAPITALISMO INDUSTRIAL E SUAS CARACTERÍSTICAS',
+        content: `O capitalismo industrial desenvolveu-se por meio da articulação de diferentes elementos.`,
+        subsections: [
+          {
+            number: '7.1',
+            title: 'Propriedade privada dos meios de produção',
+            content: `Os meios de produção incluem fábricas, máquinas, ferramentas, instalações, matérias-primas e outros recursos utilizados na produção.
+
+No capitalismo, esses meios podem ser propriedade de indivíduos, famílias, sociedades empresariais e outras organizações privadas.`
+          },
+          {
+            number: '7.2',
+            title: 'Trabalho assalariado',
+            content: `Grande parte dos trabalhadores passou a vender sua força de trabalho em troca de salários.
+
+O trabalhador não precisava ser proprietário da fábrica ou das máquinas utilizadas na produção.
+
+A relação entre empregador e empregado tornou-se uma das instituições centrais da sociedade industrial.`
+          },
+          {
+            number: '7.3',
+            title: 'Acumulação de capital',
+            content: `Parte dos recursos obtidos com a atividade econômica podia ser reinvestida na aquisição de máquinas, ampliação de instalações, contratação de trabalhadores e expansão da produção.
+
+A acumulação de capital tornou-se um mecanismo fundamental para o crescimento das empresas.`
+          },
+          {
+            number: '7.4',
+            title: 'Produção orientada para o mercado',
+            content: `A produção industrial passou a depender cada vez mais da demanda de consumidores, comerciantes e outras empresas.
+
+As mercadorias eram produzidas para serem comercializadas, e não apenas para consumo direto de seus produtores.`
+          },
+          {
+            number: '7.5',
+            title: 'Concorrência e busca de rentabilidade',
+            content: `Empresas competiam por mercados, fornecedores, trabalhadores, tecnologias e consumidores.
+
+A concorrência estimulava a busca por redução de custos, ampliação da produtividade e desenvolvimento de novos produtos.
+
+Entretanto, a economia capitalista não funcionou historicamente como um mercado completamente livre de instituições. Contratos, propriedade, moeda, infraestrutura, legislação e atuação estatal foram fundamentais para seu desenvolvimento.`
+          }
+        ]
+      },
+      {
+        number: '8',
+        title: 'ADAM SMITH E O LIBERALISMO ECONÔMICO',
+        content: `Adam Smith é frequentemente considerado um dos principais representantes da economia política clássica.
+
+Em A Riqueza das Nações, Smith criticou diferentes mecanismos mercantilistas de restrição econômica e defendeu a importância da liberdade de comércio e da divisão do trabalho.
+
+Sua reflexão sobre o mercado enfatizava que indivíduos envolvidos em atividades econômicas podiam contribuir para a produção de riqueza social mesmo quando perseguiam seus próprios interesses.
+
+A conhecida metáfora da mão invisível deve ser interpretada dentro do contexto de sua obra, e não como defesa de ausência completa do Estado.
+
+Smith atribuía ao governo funções importantes, como defesa, justiça e determinadas obras e instituições públicas.
+
+Também criticava práticas monopolistas e a influência de grupos empresariais sobre decisões políticas.
+
+O liberalismo econômico clássico defendia a redução de determinadas restrições mercantilistas, mas não significava que todas as instituições públicas fossem consideradas desnecessárias.`
+      },
+      {
+        number: '9',
+        title: 'A FORMAÇÃO DA BURGUESIA INDUSTRIAL',
+        content: `A industrialização ampliou a importância econômica e social da burguesia.
+
+A burguesia industrial era formada por empresários e proprietários envolvidos na produção manufatureira mecanizada.
+
+Esses grupos controlavam capital, instalações, equipamentos e diferentes etapas do processo produtivo.
+
+A burguesia industrial não era idêntica à burguesia comercial ou financeira. Entretanto, esses setores mantinham relações estreitas.
+
+O desenvolvimento das empresas industriais dependia de crédito, investimentos, redes comerciais e acesso a mercados.
+
+A expansão da indústria fortaleceu novos grupos econômicos que passaram a reivindicar maior influência política.
+
+No século XIX, as relações entre burguesia, Estado e trabalhadores tornaram-se um dos principais temas da política europeia.`
+      },
+      {
+        number: '10',
+        title: 'A FORMAÇÃO DO PROLETARIADO INDUSTRIAL',
+        content: `A industrialização contribuiu para a formação de uma classe trabalhadora assalariada concentrada em cidades e regiões industriais.
+
+O termo proletariado passou a ser utilizado para designar trabalhadores que dependiam principalmente da venda de sua força de trabalho.
+
+A experiência operária era marcada por diferentes condições.
+
+Homens, mulheres e crianças trabalhavam em fábricas, minas, oficinas e outros estabelecimentos.
+
+As jornadas podiam ser muito prolongadas. Os ambientes apresentavam riscos de acidentes, doenças e desgaste físico.
+
+A remuneração era variável e dependia do setor, da região, da qualificação e das condições do mercado de trabalho.
+
+Não existiu uma experiência operária uniforme. Trabalhadores qualificados, não qualificados, mulheres, crianças e empregados de diferentes indústrias enfrentavam condições distintas.
+
+E. P. Thompson demonstrou a importância de compreender a formação da classe trabalhadora como um processo histórico e cultural, construído por experiências compartilhadas, conflitos e formas de organização.
+
+A classe operária não surgiu pronta: foi sendo constituída por meio de suas próprias experiências sociais e políticas.`
+      },
+      {
+        number: '11',
+        title: 'URBANIZAÇÃO E TRANSFORMAÇÃO DAS CIDADES',
+        content: `A expansão industrial provocou mudanças profundas na organização urbana.
+
+Cidades como Manchester, Birmingham e Liverpool cresceram em importância econômica.
+
+O aumento populacional esteve relacionado à concentração de atividades industriais, à migração e à expansão dos serviços.
+
+Entretanto, o crescimento urbano frequentemente ocorreu sem infraestrutura suficiente.
+
+Bairros operários apresentavam problemas de saneamento, abastecimento de água, ventilação e moradia.
+
+A superlotação favorecia a propagação de doenças.
+
+As cidades industriais também se tornaram espaços de inovação, circulação cultural, formação de associações e mobilização política.
+
+A urbanização industrial foi, portanto, simultaneamente uma expressão do crescimento econômico e um espaço de manifestação das desigualdades sociais.`
+      },
+      {
+        number: '12',
+        title: 'TRABALHO INFANTIL E FEMININO',
+        content: `Mulheres e crianças participaram intensamente da economia industrial.
+
+Em determinados setores, como a indústria têxtil, sua contratação estava relacionada a estratégias empresariais de organização e redução dos custos de produção.
+
+Crianças trabalhavam em fábricas, minas e outras atividades, muitas vezes em condições perigosas.
+
+Mulheres recebiam, em geral, salários inferiores aos dos homens em atividades comparáveis e enfrentavam restrições sociais e políticas específicas.
+
+A industrialização também modificou a organização familiar, o uso do tempo e as relações entre trabalho doméstico e trabalho remunerado.
+
+É importante evitar a ideia de que mulheres não trabalhavam antes da industrialização. Elas já desempenhavam atividades agrícolas, artesanais, comerciais e domésticas. A novidade foi a transformação de parte desse trabalho em emprego assalariado organizado pelo sistema fabril.`
+      },
+      {
+        number: '13',
+        title: 'A QUESTÃO SOCIAL E AS PRIMEIRAS REFORMAS TRABALHISTAS',
+        content: `As condições de trabalho provocaram debates sobre a responsabilidade do Estado e os limites da liberdade contratual.
+
+Durante o século XIX, diferentes grupos passaram a exigir reformas.
+
+As investigações parlamentares britânicas documentaram abusos relacionados ao trabalho infantil e às condições nas fábricas.
+
+O Factory Act de 1833 estabeleceu restrições ao trabalho infantil em determinadas indústrias e criou um sistema de inspeção fabril.
+
+O Factory Act de 1844 ampliou medidas de proteção, especialmente em relação à segurança das máquinas e às jornadas de mulheres e jovens.
+
+O Factory Act de 1847 estabeleceu limites de jornada para mulheres e jovens em determinadas atividades industriais.
+
+Essas leis não eliminaram imediatamente os abusos. Sua aplicação encontrou resistência e dificuldades de fiscalização.
+
+Entretanto, representaram um avanço na construção de mecanismos públicos de regulação das relações de trabalho.
+
+A história da industrialização demonstra que a liberdade contratual passou progressivamente a conviver com reivindicações de proteção social.`
+      },
+      {
+        number: '14',
+        title: 'LUDISMO E RESISTÊNCIA OPERÁRIA',
+        content: `No início do século XIX, trabalhadores têxteis britânicos participaram de movimentos de destruição de máquinas conhecidos como ludismo.
+
+A interpretação simplificada segundo a qual os luditas eram simplesmente contrários à tecnologia não corresponde adequadamente à complexidade do movimento.
+
+Em diferentes situações, a destruição de equipamentos representava uma forma de protesto contra reduções salariais, mudanças nas condições de trabalho, desqualificação profissional e práticas empresariais consideradas injustas.
+
+Os trabalhadores não necessariamente rejeitavam toda inovação tecnológica.
+
+A resistência estava frequentemente relacionada à maneira como as novas tecnologias eram introduzidas e utilizadas nas relações de trabalho.
+
+O ludismo demonstra que a transformação tecnológica também produz conflitos sobre controle, propriedade e distribuição dos benefícios da produtividade.`
+      },
+      {
+        number: '15',
+        title: 'O CARTISMO E A LUTA POR REPRESENTAÇÃO POLÍTICA',
+        content: `O cartismo foi um movimento político britânico que ganhou força durante as décadas de 1830 e 1840.
+
+Sua principal referência foi a Carta do Povo de 1838.
+
+O movimento reivindicava reformas políticas, incluindo:
+- Sufrágio masculino ampliado.
+- Voto secreto.
+- Distritos eleitorais mais equilibrados.
+- Remuneração dos parlamentares.
+- Fim da exigência de propriedade para candidatos ao Parlamento.
+- Eleições parlamentares anuais.
+
+O cartismo demonstrou que a questão operária não se limitava aos salários e às condições de fábrica.
+
+A participação política tornou-se uma reivindicação fundamental para setores da classe trabalhadora.
+
+Embora não tenha alcançado imediatamente todas as suas demandas, o movimento contribuiu para a história da democracia representativa britânica.`
+      },
+      {
+        number: '16',
+        title: 'SOCIALISMO, MARXISMO E CRÍTICA AO CAPITALISMO',
+        content: `A industrialização criou condições históricas para o desenvolvimento de diferentes críticas ao capitalismo.
+
+O socialismo do século XIX não constituiu uma doutrina única.
+
+Existiam correntes reformistas, cooperativistas, associativas, revolucionárias e outras propostas de reorganização econômica.`,
+        subsections: [
+          {
+            number: '16.1',
+            title: 'Socialistas utópicos',
+            content: `Robert Owen, Charles Fourier e Henri de Saint-Simon desenvolveram propostas de transformação social.
+
+Owen destacou a importância da educação, da organização comunitária e de melhores condições de trabalho.
+
+Fourier elaborou projetos de comunidades cooperativas.
+
+Saint-Simon valorizou a organização produtiva e o papel dos conhecimentos científicos e técnicos na administração da sociedade.
+
+Esses pensadores criticavam diferentes aspectos da ordem econômica existente, embora suas propostas fossem bastante distintas.`
+          },
+          {
+            number: '16.2',
+            title: 'Marx e Engels',
+            content: `Karl Marx e Friedrich Engels desenvolveram uma crítica sistemática da economia capitalista.
+
+Em O Manifesto do Partido Comunista, publicado em 1848, interpretaram a história moderna a partir dos conflitos de classe e analisaram a expansão da burguesia e do proletariado.
+
+Em O Capital, publicado a partir de 1867, Marx examinou a mercadoria, o valor, a força de trabalho, a produção de mais-valor e a acumulação de capital.
+
+Uma distinção fundamental de sua teoria é que o trabalhador vende sua força de trabalho, não o produto de seu trabalho como propriedade independente.
+
+Marx argumentou que o processo produtivo capitalista permite a apropriação de mais-valor pelo capitalista.
+
+Essa interpretação tornou-se uma das principais bases teóricas do movimento socialista e comunista.`
+          },
+          {
+            number: '16.3',
+            title: 'Anarquismo',
+            content: `O anarquismo também se desenvolveu como crítica às estruturas de autoridade e dominação.
+
+Pierre-Joseph Proudhon, Mikhail Bakunin e Piotr Kropotkin apresentaram perspectivas diferentes sobre propriedade, Estado, organização social e cooperação.
+
+Não se deve confundir anarquismo com ausência de qualquer organização social. Muitas correntes anarquistas defendiam formas de associação voluntária, autogestão e organização federativa.`
+          }
+        ]
+      },
+      {
+        number: '17',
+        title: 'A SEGUNDA REVOLUÇÃO INDUSTRIAL',
+        content: `A partir da segunda metade do século XIX, novas transformações tecnológicas e produtivas modificaram a economia industrial.
+
+O desenvolvimento da siderurgia, da química industrial, da eletricidade e de novos sistemas de comunicação ampliou a capacidade produtiva.
+
+O petróleo tornou-se progressivamente importante, especialmente com o desenvolvimento dos motores de combustão interna.
+
+A produção de aço em larga escala favoreceu a construção de ferrovias, navios, pontes e estruturas industriais.
+
+A eletricidade abriu novas possibilidades para iluminação, comunicação e organização da produção.
+
+A industrialização passou a se expandir com maior intensidade para Alemanha, Estados Unidos, França, Bélgica e outras regiões.
+
+A liderança britânica deixou de ser exclusiva.`
+      },
+      {
+        number: '18',
+        title: 'CAPITALISMO FINANCEIRO, EMPRESAS E CONCENTRAÇÃO ECONÔMICA',
+        content: `Durante o século XIX, o desenvolvimento industrial ampliou a importância dos bancos, das bolsas de valores e das sociedades por ações.
+
+Empresas que exigiam investimentos elevados passaram a depender de estruturas financeiras mais complexas.
+
+Ferrovias, siderúrgicas, companhias de navegação e grandes empreendimentos industriais mobilizavam recursos em escalas crescentes.
+
+A concorrência continuou importante, mas determinados setores apresentaram tendências de concentração empresarial.
+
+Cartéis, trusts e outras formas de associação empresarial ganharam importância em diferentes economias.
+
+A relação entre capitalismo industrial e financeiro tornou-se progressivamente mais complexa.`
+      },
+      {
+        number: '19',
+        title: 'CAPITALISMO, IMPERIALISMO E MERCADO MUNDIAL',
+        content: `A expansão industrial aumentou a demanda por matérias-primas, mercados consumidores, fontes de investimento e infraestrutura comercial.
+
+Durante o século XIX, as potências industriais ampliaram sua presença econômica e política em diferentes regiões do mundo.
+
+O imperialismo assumiu formas diversas, incluindo conquista territorial, controle político, dependência econômica e influência financeira.
+
+A expansão colonial não foi apenas consequência da industrialização, mas também se relacionou a interesses estratégicos, disputas entre Estados e estruturas comerciais anteriores.
+
+A integração do mercado mundial foi acompanhada por relações profundamente desiguais.
+
+O desenvolvimento industrial europeu esteve relacionado à exploração de recursos, à coerção colonial e a diferentes formas de trabalho compulsório.
+
+O capitalismo industrial deve, portanto, ser analisado em escala global, não apenas como uma transformação interna da Europa.`
+      },
+      {
+        number: '20',
+        title: 'MAX WEBER, MARX E AS INTERPRETAÇÕES DO CAPITALISMO',
+        content: `O capitalismo foi objeto de diferentes interpretações sociológicas e econômicas.
+
+Marx enfatizou a propriedade dos meios de produção, as relações de classe, a exploração do trabalho assalariado e a acumulação.
+
+Weber destacou a racionalização econômica, a organização empresarial, a contabilidade, o cálculo e determinadas condições culturais e institucionais relacionadas ao desenvolvimento do capitalismo moderno.
+
+Adam Smith, por sua vez, havia examinado a divisão do trabalho, os mercados e a acumulação de capital.
+
+Essas perspectivas não devem ser tratadas como equivalentes. Cada uma possui pressupostos teóricos próprios.
+
+A comparação permite compreender que o capitalismo é um fenômeno histórico multidimensional.`
+      },
+      {
+        number: '21',
+        title: 'A REVOLUÇÃO INDUSTRIAL E A TRANSFORMAÇÃO DO COTIDIANO',
+        content: `A industrialização modificou a experiência cotidiana das sociedades.
+
+A produção em massa ampliou a disponibilidade de determinados produtos.
+
+A expansão ferroviária reduziu tempos de deslocamento e facilitou o transporte de pessoas e mercadorias.
+
+A urbanização modificou relações familiares, hábitos de consumo e formas de sociabilidade.
+
+O relógio, os horários de trabalho e a disciplina fabril passaram a exercer maior influência sobre a organização da vida cotidiana.
+
+A expansão da escolarização, da imprensa e das comunicações também contribuiu para transformar as sociedades industriais.
+
+Essas mudanças não ocorreram de maneira uniforme. Os benefícios da industrialização foram distribuídos de forma desigual entre classes sociais e regiões.`
+      },
+      {
+        number: '22',
+        title: 'BALANÇO HISTÓRICO: PROGRESSO, EXPLORAÇÃO E TRANSFORMAÇÃO',
+        content: `A Revolução Industrial produziu transformações profundas na capacidade humana de produzir bens e serviços.
+
+A mecanização, a divisão do trabalho e a expansão dos mercados contribuíram para aumentos expressivos de produtividade.
+
+Ao longo do tempo, a industrialização também favoreceu o desenvolvimento de infraestrutura, tecnologias médicas, transportes e novos produtos.
+
+Entretanto, os primeiros estágios da industrialização foram marcados por condições de trabalho frequentemente degradantes e por profundas desigualdades.
+
+O crescimento da produção não garantiu automaticamente a melhoria das condições de vida de todos os grupos sociais.
+
+A história do capitalismo industrial demonstra que o desenvolvimento econômico depende de instituições, conflitos, políticas públicas e formas de distribuição dos resultados da produção.`
       }
     ],
-    conclusion: 'A Revolução Industrial reconfigurou o horizonte civilizatório ao demonstrar que a capacidade produtiva humana não conhece limites absolutos. Todavia, legou ao século XX e XXI a interrogação central da economia política: como conciliar a extraordinária vitalidade inovadora e alocativa dos mercados livres com a dignidade social e a justiça distributiva exigidas por uma cidadania democrática.',
+    conclusion: `Entre 1760 e 1900, a industrialização transformou profundamente a economia e a sociedade.
+
+A Grã-Bretanha tornou-se o primeiro grande centro da industrialização, impulsionada por condições econômicas, institucionais, comerciais, tecnológicas e energéticas específicas.
+
+A expansão das fábricas, das máquinas e dos mercados consolidou o capitalismo industrial e ampliou a importância da burguesia empresarial.
+
+Simultaneamente, formou-se uma classe trabalhadora assalariada, que passou a desenvolver formas próprias de organização, resistência e participação política.
+
+A economia política clássica, o liberalismo econômico, o socialismo, o marxismo e o anarquismo desenvolveram diferentes interpretações sobre a nova sociedade industrial.
+
+O século XIX foi, portanto, um período de extraordinária expansão produtiva, mas também de conflitos sociais, disputas políticas e transformações institucionais.
+
+A Revolução Industrial não apenas modificou a maneira de produzir mercadorias: transformou as relações entre capital e trabalho, reorganizou o espaço urbano, ampliou o mercado mundial e estabeleceu algumas das bases econômicas e sociais do mundo contemporâneo.`,
     bibliographicReferences: [
-      'HAYEK, Friedrich. The Constitution of Liberty. Chicago: University of Chicago Press, 1960.',
-      'HOBSBAWM, Eric. A Era do Capital: 1848–1875. Rio de Janeiro: Paz e Terra, 1977.',
-      'POLANYI, Karl. A Grande Transformação: As Origens Políticas e Econômicas da Nossa Época. Rio de Janeiro: Campus, 2000.',
-      'RICARDO, David. Princípios de Economia Política e Tributação. São Paulo: Abril Cultural, 1982.',
-      'SMITH, Adam. A Riqueza das Nações. São Paulo: Martins Fontes, 2003.',
-      'THOMPSON, E. P. A Formação da Classe Operária Inglesa. Rio de Janeiro: Paz e Terra, 1987.'
+      'ALLEN, Robert C. The British Industrial Revolution in Global Perspective. Cambridge: Cambridge University Press, 2009.',
+      'ASHTON, T. S. The Industrial Revolution, 1760–1830. Oxford: Oxford University Press, 1948.',
+      'ENGELS, Friedrich. A Situação da Classe Trabalhadora na Inglaterra. São Paulo: Boitempo, 2008 [1845].',
+      'HOBSBAWM, Eric. Da Revolução Industrial Inglesa ao Imperialismo. Rio de Janeiro: Forense Universitária, 1978.',
+      'HOBSBAWM, Eric. A Era das Revoluções: 1789–1848. Rio de Janeiro: Paz e Terra, 1977.',
+      'LANDES, David S. Prometeu Desacorrentado: Transformação Tecnológica e Desenvolvimento Industrial na Europa Ocidental desde 1750 até os Dias de Hoje. Rio de Janeiro: Nova Fronteira, 1994.',
+      'MARX, Karl. O Capital: Crítica da Economia Política (Livro I). São Paulo: Boitempo, 2013 [1867].',
+      'MOKYR, Joel. The Gifts of Athena: Historical Origins of the Knowledge Economy. Princeton: Princeton University Press, 2002.',
+      'POLANYI, Karl. A Grande Transformação: As Origens da Nossa Época. Rio de Janeiro: Campus, 2000 [1944].',
+      'SMITH, Adam. A Riqueza das Nações: Investigação sobre sua Natureza e suas Causas. São Paulo: Martins Fontes, 2003 [1776].',
+      'THOMPSON, E. P. A Formação da Classe Operária Inglesa. Rio de Janeiro: Paz e Terra, 1987.',
+      'WEBER, Max. A Ética Protestante e o "Espírito" do Capitalismo. São Paulo: Companhia das Letras, 2004 [1905].'
     ]
   },
 

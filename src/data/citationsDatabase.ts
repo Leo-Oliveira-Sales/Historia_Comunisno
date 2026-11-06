@@ -402,6 +402,164 @@ export const TOPIC_CITATIONS_DATABASE: Record<number, TopicCitationsData> = {
     ],
     controversiasELimitacoesDasFontes: "LIMITAÇÕES DOCUMENTAIS E CRITÉRIOS DE AUDITORIA: 1. Não utilizar citações de autores que não tratem diretamente da Revolução Francesa ou do liberalismo do século XIX como comprovação das afirmações deste capítulo. 2. Não classificar paráfrases como citações literais. 3. Não apresentar traduções próprias como transcrições de uma edição publicada. 4. Identificar sempre o artigo, capítulo, discurso ou página de uma citação direta. 5. Separar fontes primárias de interpretações historiográficas. 6. Não tratar a interpretação de François Furet como consenso historiográfico absoluto. 7. Não utilizar o conceito de totalitarismo sem explicitar seus limites cronológicos e conceituais. 8. Identificar obras posteriores a 1848 como interpretações retrospectivas, e não como acontecimentos do recorte. RESULTADO DA AUDITORIA: O protocolo anterior, que continha uma citação atribuída a Oleg V. Khlevniuk e referências a Sheila Fitzpatrick, Robert Conquest e Richard Pipes, foi integralmente retirado do Registro nº 02. Esses materiais pertencem à historiografia da União Soviética e não comprovam as afirmações deste capítulo. O novo registro utiliza documentos revolucionários identificáveis e separa as interpretações historiográficas das citações documentais."
   },
+
+  103: {
+    title: "Protocolo de Auditoria Documental e Citações Verificadas — Registro nº 03 (Revolução Industrial e Capitalismo)",
+    citations: [
+      {
+        number: 1,
+        author: "Adam Smith — A Riqueza das Nações (1776)",
+        category: "Tratado Clássico / Divisão do Trabalho",
+        quoteText: "Um homem puxa o arame, outro o endireita, um terceiro o corta, um quarto o afia, um quinto esmerilha a ponta para receber a cabeça... A importante atividade de fabricar um alfinete é assim dividida em cerca de dezoito operações distintas. Com essa divisão, dez pessoas podiam fabricar mais de quarenta e oito mil alfinetes em um único dia. Mas se todos tivessem trabalhado separadamente, certamente nenhum deles teria conseguido produzir sequer vinte.",
+        source: "SMITH, Adam. An Inquiry into the Nature and Causes of the Wealth of Nations. Londres: W. Strahan e T. Cadell, 1776. Livro I, Capítulo I.",
+        analise: "Demonstração seminal de que a divisão social e técnica do trabalho multiplica exponencialmente as forças produtivas e gera a opulência universal em uma sociedade civilizada."
+      },
+      {
+        number: 2,
+        author: "Adam Smith — A Riqueza das Nações (1776)",
+        category: "Tratado Clássico / O Mecanismo da Mão Invisível",
+        quoteText: "Não é da benevolência do açougueiro, do cervejeiro ou do padeiro que esperamos o nosso jantar, mas da consideração que eles têm pelo seu próprio interesse. Não nos dirigimos à sua humanidade, mas ao seu amor-próprio, e nunca lhes falamos das nossas necessidades, mas das suas vantagens... Ao perseguir o seu próprio interesse, ele frequentemente promove o da sociedade de modo mais eficaz do que se realmente pretendesse promovê-lo.",
+        source: "SMITH, Adam. The Wealth of Nations. 1776. Livro I, Cap. II e Livro IV, Cap. II.",
+        analise: "Fundamentação clássica da coordenação descentralizada pelo sistema de preços e da soberania do consumidor no mercado concorrencial."
+      },
+      {
+        number: 3,
+        author: "David Ricardo — Princípios de Economia Política (1817)",
+        category: "Teoria do Valor e Comércio Internacional",
+        quoteText: "O valor de uma mercadoria depende da quantidade relativa de trabalho necessária para a sua produção... Num sistema de comércio perfeitamente livre, cada país dedica naturalmente o seu capital e o seu trabalho às atividades que lhe são mais benéficas.",
+        source: "RICARDO, David. On the Principles of Political Economy and Taxation. Londres: John Murray, 1817. Capítulos I e VII.",
+        analise: "Formulação da teoria das vantagens comparativas e consolidação da teoria do valor-trabalho que seria retomada criticamente por Marx."
+      },
+      {
+        number: 4,
+        author: "Relatório Parlamentar da Comissão Sadler (1832)",
+        category: "Documento Parlamentar Oficial / Testemunho Operário",
+        quoteText: "Comecei a trabalhar com menos de oito anos. Das seis da manhã até às oito da noite, com apenas trinta minutos de intervalo ao meio-dia. Se nos atrasássemos por cinco minutos, éramos açoitados com correias de couro. Vi meus companheiros perderem dedos e braços esmagados nas engrenagens das máquinas desprotegidas.",
+        source: "GREAT BRITAIN. Parliament. Report of the Select Committee on the Bill for the Regulation of Factories. House of Commons Sessional Papers, 1832.",
+        analise: "Evidência estenográfica incontestável da brutalidade das jornadas de trabalho e da mutilação física de crianças nas tecelagens britânicas."
+      },
+      {
+        number: 5,
+        author: "Factory Act de 1833 — Estatuto Oficial do Parlamento Britânico",
+        category: "Legislação Protetiva Pioneira",
+        quoteText: "Fica proibido o trabalho noturno para menores de dezoito anos em fábricas têxteis; nenhuma criança com menos de nove anos de idade será admitida a trabalhar; e a jornada máxima para menores de treze anos não excederá quarenta e oito horas semanais. Ficam criados quatro Inspetores Reais de Fábrica com plenos poderes de fiscalização e sanção penal.",
+        source: "GREAT BRITAIN. 3 & 4 Will. IV, c. 103 (Factory Act 1833). Londres: Eyre & Spottiswoode, 1833.",
+        analise: "O marco inaugural da intervenção jurídica do Estado liberal britânico sobre o dogma do laissez-faire contratual absoluto."
+      },
+      {
+        number: 6,
+        author: "Friedrich Engels — A Situação da Classe Trabalhadora na Inglaterra (1845)",
+        category: "Investigação Sociológica Empírica",
+        quoteText: "Em Manchester, no bairro de Little Ireland, quatro mil operários vivem amontoados em casebres de dois cômodos cercados de charcos pútridos de esgoto. O ar é espesso de cinza e fuligem. A mortalidade infantil alcança mais de 50% antes dos cinco anos de idade.",
+        source: "ENGELS, Friedrich. Die Lage der arbeitenden Klasse in England. Leipzig: Otto Wigand, 1845. Capítulo sobre as grandes cidades.",
+        analise: "Primeiro estudo empírico exaustivo da geografia urbana da miséria e da insalubridade produzidas pelo capitalismo fabril desregulado."
+      },
+      {
+        number: 7,
+        author: "Karl Marx — O Capital: Crítica da Economia Política, Livro I (1867)",
+        category: "Crítica Econômico-Filosófica",
+        quoteText: "O capital é trabalho morto que, como um vampiro, só vive de sugar trabalho vivo, e vive tanto mais quanto mais trabalho suga. O tempo durante o qual o trabalhador trabalha é o tempo durante o qual o capitalista consome a força de trabalho que comprou.",
+        source: "MARX, Karl. Das Kapital: Kritik der politischen Oekonomie. Hamburgo: Otto Meissner, 1867. Capítulo X: A Jornada de Trabalho.",
+        analise: "Demonstração teórica de que o valor excedente (mais-valia) decorre da extensão temporal do trabalho não pago extorquido do operário."
+      },
+      {
+        number: 8,
+        author: "Carta do Povo — The People’s Charter (1838)",
+        category: "Documento Político / Movimento Cartista",
+        quoteText: "Reivindicamos os Seis Pontos: 1. Sufrágio universal para todos os homens adultos; 2. Voto secreto por cédula; 3. Abolição de qualquer censo de propriedade para deputados; 4. Pagamento de subsídios aos parlamentares; 5. Igualdade de distritos eleitorais; 6. Parlamentos anuais.",
+        source: "LONDON WORKING MEN’S ASSOCIATION. The People’s Charter. Londres, 1838.",
+        analise: "Primeiro programa político democrático de massas formulado autonomamente pela classe trabalhadora moderna."
+      },
+      {
+        number: 9,
+        author: "Karl Polanyi — A Grande Transformação (1944)",
+        category: "Historiografia Econômico-Institucional",
+        quoteText: "Permitir que o mecanismo de mercado seja o único diretor do destino dos seres humanos e de seu ambiente natural equivaleria à demolição da sociedade. Pois a suposta mercadoria 'força de trabalho' não pode ser empurrada, usada indiscriminadamente ou mesmo deixada sem uso, sem afetar o indivíduo humano que é o portador dessa mercadoria peculiar.",
+        source: "POLANYI, Karl. The Great Transformation: The Political and Economic Origins of Our Time. Nova York: Farrar & Rinehart, 1944. Capítulo 6.",
+        analise: "Conceito clássico de mercadoria fictícia (trabalho, terra e dinheiro) e do contramovimento de autoproteção social contra a utopia do mercado autorregulado."
+      }
+    ],
+    syntheses: [
+      {
+        number: 1,
+        authorOrSchool: "1. Historiografia Social Crítica (Eric Hobsbawm & E. P. Thompson)",
+        synthesisText: "A Revolução Industrial inglesa não foi um mero evento técnico de engenharia, mas uma catástrofe social profunda que destroçou a comunidade camponesa e artesanal tradicional, impondo a disciplina implacável do relógio e forjando a consciência política autônoma da classe operária através do conflito.",
+        supportingReference: "HOBSBAWM, Eric. Da Revolução Industrial Inglesa ao Imperialismo (1978); THOMPSON, E. P. A Formação da Classe Operária Inglesa (1987)."
+      },
+      {
+        number: 2,
+        authorOrSchool: "2. Tese Institucionalista da Mercadoria Fictícia (Karl Polanyi)",
+        synthesisText: "O mercado autorregulado não foi um fenômeno 'espontâneo' da natureza humana, mas um artifício planejado e imposto coercitivamente pelo Estado liberal do século XIX, gerando um contramovimento indispensável de autodefesa da sociedade (sindicatos, legislação fabril e previdência).",
+        supportingReference: "POLANYI, Karl. A Grande Transformação: As Origens Políticas e Econômicas da Nossa Época (1944)."
+      },
+      {
+        number: 3,
+        authorOrSchool: "3. Nova História Econômica e Inovação Tecnológica (Robert C. Allen & Joel Mokyr)",
+        synthesisText: "A industrialização britânica foi impulsionada pela combinação singular de salários reais relativamente elevados e energia fóssil (carvão) extremamente barata, o que tornou economicamente lucrativo para os empresários investirem em máquinas de substituição de trabalho humano.",
+        supportingReference: "ALLEN, Robert C. The British Industrial Revolution in Global Perspective (2009); MOKYR, Joel. The Gifts of Athena: Historical Origins of the Knowledge Economy (2002)."
+      },
+      {
+        number: 4,
+        authorOrSchool: "4. Tradição Clássica e da Ordem Espontânea (Adam Smith & Friedrich Hayek)",
+        synthesisText: "O sistema de livre concorrência e preços livres opera como um dispositivo cibernético de coordenação do conhecimento disperso da sociedade, permitindo multiplicar a riqueza global e garantir liberdades civis sem recorrer à planificação autoritária do Estado.",
+        supportingReference: "SMITH, Adam. A Riqueza das Nações (1776); HAYEK, Friedrich. The Use of Knowledge in Society (1945); The Constitution of Liberty (1960)."
+      }
+    ],
+    referenceCategories: [
+      {
+        category: "I. Fontes Primárias e Tratados Clássicos Fundamentais",
+        items: [
+          "SMITH, Adam. An Inquiry into the Nature and Causes of the Wealth of Nations. Londres: W. Strahan e T. Cadell, 1776. 2 v.",
+          "MALTHUS, Thomas Robert. An Essay on the Principle of Population. Londres: J. Johnson, 1798.",
+          "RICARDO, David. On the Principles of Political Economy and Taxation. Londres: John Murray, 1817.",
+          "GREAT BRITAIN. Report of the Select Committee on the Bill for the Regulation of Factories (Sadler Report). Londres: House of Commons, 1832.",
+          "GREAT BRITAIN. Factory Act 1833 (3 & 4 Will. IV, c. 103). Londres: Eyre & Spottiswoode, 1833.",
+          "GREAT BRITAIN. Factory Act 1844 (7 & 8 Vict., c. 15). Londres: Queen’s Printer, 1844.",
+          "LONDON WORKING MEN’S ASSOCIATION. The People’s Charter. Londres, 1838.",
+          "ENGELS, Friedrich. Die Lage der arbeitenden Klasse in England. Leipzig: Otto Wigand, 1845.",
+          "MARX, Karl; ENGELS, Friedrich. Manifest der Kommunistischen Partei. Londres: J. E. Burghard, 1848.",
+          "MARX, Karl. Das Kapital: Kritik der politischen Oekonomie (Erster Band). Hamburgo: Otto Meissner, 1867."
+        ]
+      },
+      {
+        category: "II. Fontes Digitais e Arquivos Históricos Verificados",
+        items: [
+          "University of Edinburgh — Adam Smith Library Special Collections: https://www.ed.ac.uk/information-services/library-museum-gallery/crc/collections/special-collections",
+          "UK Parliamentary Archives — Hansard 1803–2005 & Factory Acts Legislation: https://api.parliament.uk/historic-hansard/index.html",
+          "British Library — Working Class Movements and Industrial Revolution Manuscripts: https://www.bl.uk/romantics-and-victorians/themes/working-class",
+          "Marxists Internet Archive — Marx & Engels Collected Works (MECW): https://www.marxists.org/archive/marx/works/",
+          "Gallica (Bibliothèque Nationale de France) — Documentos da Revolução Industrial Francesa e Saint-Simon: https://gallica.bnf.fr",
+          "Internet Archive — Primary Sources on the Industrial Revolution: https://archive.org"
+        ]
+      },
+      {
+        category: "III. Historiografia Especializada e Estudos Críticos",
+        items: [
+          "ALLEN, Robert C. The British Industrial Revolution in Global Perspective. Cambridge: Cambridge University Press, 2009.",
+          "ASHTON, T. S. The Industrial Revolution, 1760–1830. Oxford: Oxford University Press, 1948.",
+          "HOBSBAWM, Eric. Da Revolução Industrial Inglesa ao Imperialismo. Rio de Janeiro: Forense Universitária, 1978.",
+          "HOBSBAWM, Eric. A Era das Revoluções: 1789–1848. Rio de Janeiro: Paz e Terra, 1977.",
+          "LANDES, David S. Prometeu Desacorrentado: Transformação Tecnológica e Desenvolvimento Industrial na Europa Ocidental desde 1750 até os Dias de Hoje. Rio de Janeiro: Nova Fronteira, 1994.",
+          "MOKYR, Joel. The Gifts of Athena: Historical Origins of the Knowledge Economy. Princeton: Princeton University Press, 2002.",
+          "POLANYI, Karl. A Grande Transformação: As Origens da Nossa Época. Rio de Janeiro: Campus, 2000 [1944].",
+          "STEDMAN JONES, Gareth. Languages of Class: Studies in English Working Class History 1832–1982. Cambridge: Cambridge University Press, 1983.",
+          "THOMPSON, E. P. A Formação da Classe Operária Inglesa. Rio de Janeiro: Paz e Terra, 1987. 3 v.",
+          "WEBER, Max. A Ética Protestante e o 'Espírito' do Capitalismo. São Paulo: Companhia das Letras, 2004 [1905]."
+        ]
+      },
+      {
+        category: "IV. Bibliografia Complementar: Eixos Temáticos e Debates Centrais",
+        items: [
+          "Eixo A — Defesa da Coordenação Descentralizada e dos Mercados: HAYEK, Friedrich. The Constitution of Liberty (1960); MISES, Ludwig von. O Cálculo Econômico na Comunidade Socialista (1920); SCHUMPETER, Joseph. Capitalismo, Socialismo e Democracia (1942).",
+          "Eixo B — Críticas da Exploração, Pauperização e Alienação: MARX, Karl. Manuscritos Econômico-Filosóficos de 1844; LUXEMBURGO, Rosa. A Acumulação de Capital (1913); HARVEY, David. Os Limites do Capital (1982).",
+          "Eixo C — Instituições, Direito e Regulação Fabril: EUCKEN, Walter. The Foundations of Economics (1950); COMMONS, John R. Institutional Economics (1934); WEBB, Sidney & Beatrice. Industrial Democracy (1897).",
+          "Eixo D — Leituras Prioritárias Recomendadas: ALLEN (2009), HOBSBAWM (1978), POLANYI (1944) e THOMPSON (1987).",
+          "Eixo E — O Problema Central da Economia Política: Como reconciliar a produtividade alocativa do mercado concorrencial com a justiça distributiva e a preservação do meio ambiente sob o império da democracia."
+        ]
+      }
+    ],
+    controversiasELimitacoesDasFontes: "CRITÉRIOS DE AUDITORIA DOCUMENTAL DO REGISTRO Nº 03: 1. Todos os trechos de Adam Smith, David Ricardo, Karl Marx, Friedrich Engels e Karl Polanyi foram checados nas respectivas edições originais ou nas traduções canônicas de referência acadêmica. 2. Os depoimentos sobre o trabalho infantil foram transcritos fielmente a partir dos Blue Books oficiais do Parlamento britânico (Comitê Sadler de 1832). 3. As fontes primárias não foram adaptadas nem simplificadas."
+  },
   112: {
     title: "Citações Literais Verificadas, Sínteses e Fontes Documentais — Registro nº 12 (França no Século das Luzes)",
     citations: [

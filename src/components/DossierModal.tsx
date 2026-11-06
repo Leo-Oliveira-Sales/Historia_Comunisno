@@ -14,6 +14,7 @@ import {
   TopicReferenceCategory 
 } from '../data/citationsDatabase';
 import { ADVANCED_INVESTIGATIONS_DATABASE } from '../data/advancedInvestigationDatabase';
+import { MARKET_LAWS_CHAPTERS } from '../data/marketLawsDatabase';
 import { playStampSound, playTypewriterClack } from '../utils/audio';
 import { 
   X, 
@@ -67,7 +68,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   theme = 'preto',
   onSelectTheme,
 }) => {
-  const [activeTab, setActiveTab] = useState<'chapter' | 'researchDossier' | 'essay' | 'stories' | 'documents' | 'context' | 'citations' | 'advancedInvestigation'>('chapter');
+  const [activeTab, setActiveTab] = useState<'chapter' | 'researchDossier' | 'essay' | 'stories' | 'documents' | 'context' | 'citations' | 'advancedInvestigation' | 'marketLaws'>('chapter');
   const [activeSection, setActiveSection] = useState<number | string>(1);
   const [copiedCitation, setCopiedCitation] = useState<string | null>(null);
   const [fontSize, setFontSize] = useState<'sm' | 'base' | 'lg'>('base');
@@ -80,12 +81,32 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const canonicalDossier = getCanonicalEditorialDossier(topic.id);
   const researchDossierText = RESEARCH_DOSSIERS[topic.id] || IDEOLOGIAS_RESEARCH_DOSSIERS[topic.id];
   const advancedInvestigation = ADVANCED_INVESTIGATIONS_DATABASE[topic.id];
+  const marketLaws = MARKET_LAWS_CHAPTERS[topic.id];
 
   const copyToClipboard = (text: string, label: string) => {
     navigator.clipboard.writeText(text);
     playTypewriterClack();
     setCopiedCitation(label);
     setTimeout(() => setCopiedCitation(null), 2500);
+  };
+
+  const copyMarketLaws = () => {
+    if (!marketLaws) return;
+    let text = `==========================================================\n`;
+    text += `${marketLaws.title.toUpperCase()}\n`;
+    text += `${marketLaws.subtitle}\n`;
+    text += `${marketLaws.authorCatedra}\n`;
+    text += `==========================================================\n\n`;
+    text += `INTRODUÇÃO:\n${marketLaws.introduction}\n\n`;
+    marketLaws.sections.forEach(s => {
+      text += `${s.number}. ${s.title.toUpperCase()}\n${s.content}\n\n`;
+    });
+    text += `CONCLUSÃO:\n${marketLaws.conclusion}\n\n`;
+    text += `REFERÊNCIAS BIBLIOGRÁFICAS:\n`;
+    marketLaws.bibliographicReferences.forEach(ref => {
+      text += `- ${ref}\n`;
+    });
+    copyToClipboard(text, 'market_laws');
   };
 
   const copyResearchDossier = () => {
@@ -413,6 +434,15 @@ export const DossierModal: React.FC<DossierModalProps> = ({
         { num: 'Q8', label: '8. Ruptura & Continuidade', target: 'adv-sec-8' },
         { num: 'C', label: 'Conclusão Geral', target: 'adv-sec-conclusion' },
       ];
+    } else if (activeTab === 'marketLaws') {
+      if (!marketLaws) return [];
+      const list: { num: number | string; label: string; target: string }[] = [{ num: 0, label: 'Introdução', target: 'market-intro' }];
+      marketLaws.sections.forEach(s => {
+        list.push({ num: s.number, label: `${s.number}. ${s.title.substring(0, 16)}...`, target: `market-sec-${s.number}` });
+      });
+      list.push({ num: 98, label: 'Conclusão', target: 'market-conclusion' });
+      list.push({ num: 99, label: 'Referências', target: 'market-refs' });
+      return list;
     } else if (activeTab === 'context') {
       return [
         { num: 1, label: 'Contexto Histórico', target: 'context-historical' },
@@ -683,6 +713,23 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             </button>
           )}
 
+          {marketLaws && (
+            <button
+              onClick={() => {
+                playTypewriterClack();
+                setActiveTab('marketLaws');
+              }}
+              className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-bold rounded-lg transition-all flex items-center gap-1 border shrink-0 ${
+                activeTab === 'marketLaws'
+                  ? 'bg-amber-500 text-stone-950 border-amber-300 font-extrabold shadow-md'
+                  : 'bg-amber-950/40 text-amber-300 hover:bg-amber-900/50 border-amber-700/60'
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-400" />
+              <span>As Leis de Mercado são Absolutas?</span>
+            </button>
+          )}
+
           {researchDossierText && (
             <button
               onClick={() => {
@@ -818,6 +865,24 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             >
               <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-400" />
               <span>Investigação Avançada</span>
+            </button>
+          )}
+
+          {/* 6.8 ABA ADICIONAL EXCLUSIVA: AS LEIS DE MERCADO SÃO ABSOLUTAS? */}
+          {marketLaws && (
+            <button
+              onClick={() => {
+                playTypewriterClack();
+                setActiveTab('marketLaws');
+              }}
+              className={`px-3 py-2 min-h-[38px] text-xs font-bold rounded-lg transition-all flex items-center gap-1.5 border shrink-0 shadow-sm ${
+                activeTab === 'marketLaws'
+                  ? 'bg-amber-500 text-stone-950 border-amber-300 font-extrabold shadow-amber-500/20'
+                  : 'bg-amber-950/40 text-amber-300 hover:bg-amber-900/50 hover:text-amber-100 border-amber-600/60'
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-400" />
+              <span>As Leis de Mercado são Absolutas?</span>
             </button>
           )}
 
@@ -2088,89 +2153,15 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                     }
 
                     // Section Questions Anchor Mapping
-                    if (trimmed.startsWith('### 1. ') || trimmed.startsWith('### 1.')) {
+                    const qMatch = trimmed.match(/^###\s+(\d+)\.\s*(.*)/);
+                    if (qMatch) {
+                      const qNum = qMatch[1];
+                      const qTitle = qMatch[2];
                       return (
-                        <div key={pIdx} id="adv-sec-1" className="scroll-mt-24 pt-6 border-t border-amber-600/40">
-                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
-                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q1</span>
-                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
-                          </h3>
-                        </div>
-                      );
-                    }
-
-                    if (trimmed.startsWith('### 2. ') || trimmed.startsWith('### 2.')) {
-                      return (
-                        <div key={pIdx} id="adv-sec-2" className="scroll-mt-24 pt-6 border-t border-stone-800">
-                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
-                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q2</span>
-                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
-                          </h3>
-                        </div>
-                      );
-                    }
-
-                    if (trimmed.startsWith('### 3. ') || trimmed.startsWith('### 3.')) {
-                      return (
-                        <div key={pIdx} id="adv-sec-3" className="scroll-mt-24 pt-6 border-t border-stone-800">
-                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
-                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q3</span>
-                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
-                          </h3>
-                        </div>
-                      );
-                    }
-
-                    if (trimmed.startsWith('### 4. ') || trimmed.startsWith('### 4.')) {
-                      return (
-                        <div key={pIdx} id="adv-sec-4" className="scroll-mt-24 pt-6 border-t border-stone-800">
-                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
-                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q4</span>
-                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
-                          </h3>
-                        </div>
-                      );
-                    }
-
-                    if (trimmed.startsWith('### 5. ') || trimmed.startsWith('### 5.')) {
-                      return (
-                        <div key={pIdx} id="adv-sec-5" className="scroll-mt-24 pt-6 border-t border-stone-800">
-                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
-                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q5</span>
-                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
-                          </h3>
-                        </div>
-                      );
-                    }
-
-                    if (trimmed.startsWith('### 6. ') || trimmed.startsWith('### 6.')) {
-                      return (
-                        <div key={pIdx} id="adv-sec-6" className="scroll-mt-24 pt-6 border-t border-stone-800">
-                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
-                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q6</span>
-                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
-                          </h3>
-                        </div>
-                      );
-                    }
-
-                    if (trimmed.startsWith('### 7. ') || trimmed.startsWith('### 7.')) {
-                      return (
-                        <div key={pIdx} id="adv-sec-7" className="scroll-mt-24 pt-6 border-t border-stone-800">
-                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
-                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q7</span>
-                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
-                          </h3>
-                        </div>
-                      );
-                    }
-
-                    if (trimmed.startsWith('### 8. ') || trimmed.startsWith('### 8.')) {
-                      return (
-                        <div key={pIdx} id="adv-sec-8" className="scroll-mt-24 pt-6 border-t border-stone-800">
-                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 uppercase tracking-wide mb-3 flex items-start gap-2">
-                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1">Q8</span>
-                            <span>{trimmed.replace(/###\s+\d+\.\s*/, '')}</span>
+                        <div key={pIdx} id={`adv-sec-${qNum}`} className={`scroll-mt-24 pt-6 border-t ${qNum === '1' ? 'border-amber-600/40' : 'border-stone-800'}`}>
+                          <h3 className="text-lg sm:text-xl font-serif font-bold text-amber-400 tracking-wide mb-3 flex items-start gap-2">
+                            <span className="px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded font-mono text-xs border border-amber-500/40 mt-1 shrink-0">Q{qNum}</span>
+                            <span>{qTitle}</span>
                           </h3>
                         </div>
                       );
@@ -2305,6 +2296,128 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                       />
                     );
                   })}
+                </div>
+
+              </div>
+            </article>
+          )}
+
+          {/* TAB: AS LEIS DE MERCADO SÃO ABSOLUTAS? (CAPÍTULO IX) */}
+          {activeTab === 'marketLaws' && marketLaws && (
+            <article className="space-y-6 max-w-4xl mx-auto w-full box-border overflow-hidden">
+              <div className="bg-[#161619] border border-amber-500/70 p-6 sm:p-8 rounded-2xl shadow-2xl space-y-6">
+                
+                {/* Header Banner */}
+                <div className="flex items-center justify-between flex-wrap gap-3 border-b border-amber-600/40 pb-5">
+                  <div className="space-y-1.5">
+                    <div className="flex items-center gap-2">
+                      <span className="px-2.5 py-1 bg-amber-500 text-stone-950 font-mono text-[10px] sm:text-xs font-black tracking-wider uppercase rounded shadow-sm">
+                        ESTUDO MONOGRÁFICO ESPECIAL
+                      </span>
+                      <span className="text-xs font-mono text-stone-400">
+                        Capítulo {topic.categoryNumber} · {topic.periodLabel}
+                      </span>
+                    </div>
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif font-bold text-stone-100 tracking-tight">
+                      {marketLaws.title}
+                    </h2>
+                    <p className="text-sm sm:text-base font-serif italic text-amber-300/90">
+                      {marketLaws.subtitle}
+                    </p>
+                    <p className="text-xs font-mono text-stone-400">
+                      {marketLaws.authorCatedra}
+                    </p>
+                  </div>
+
+                  <button
+                    onClick={copyMarketLaws}
+                    className="px-4 py-2.5 bg-amber-950/80 hover:bg-amber-900 text-amber-300 text-xs font-mono rounded-lg border border-amber-600/60 flex items-center gap-2 transition-colors shrink-0 shadow-md"
+                  >
+                    {copiedCitation === 'market_laws' ? (
+                      <>
+                        <Check className="w-4 h-4 text-emerald-400" />
+                        <span>Texto Copiado!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-4 h-4 text-amber-400" />
+                        <span>Copiar Capítulo Completo</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+
+                {/* Section Quick Jump Menu */}
+                <div className="bg-stone-900/80 border border-stone-800 rounded-xl p-4 sm:p-5 space-y-3">
+                  <div className="flex items-center gap-2 text-xs font-mono font-bold text-amber-400 uppercase tracking-wider">
+                    <Sparkles className="w-3.5 h-3.5" />
+                    <span>Sumário dos 13 Eixos Analíticos:</span>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-serif">
+                    {marketLaws.sections.map(s => (
+                      <a
+                        key={s.number}
+                        href={`#market-sec-${s.number}`}
+                        className="p-2 rounded bg-stone-950/60 hover:bg-stone-800/80 border border-stone-800/70 text-stone-300 hover:text-amber-300 transition-colors flex items-start gap-2"
+                      >
+                        <span className="font-mono font-bold text-amber-500 shrink-0">{s.number}.</span>
+                        <span className="leading-snug line-clamp-2">{s.title}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Introdução */}
+                <div id="market-intro" className="space-y-4 pt-2">
+                  <h3 className="text-sm font-mono uppercase tracking-widest text-amber-400 font-bold border-l-2 border-amber-500 pl-3">
+                    Introdução
+                  </h3>
+                  <div className="font-serif text-stone-300 text-sm sm:text-base leading-relaxed space-y-3 whitespace-pre-line">
+                    {marketLaws.introduction}
+                  </div>
+                </div>
+
+                {/* As 13 Seções */}
+                <div className="space-y-8 pt-4">
+                  {marketLaws.sections.map(sec => (
+                    <div key={sec.number} id={`market-sec-${sec.number}`} className="space-y-3 border-t border-stone-800/80 pt-6">
+                      <div className="flex items-center gap-2.5">
+                        <span className="px-2 py-0.5 bg-amber-950 border border-amber-700/60 text-amber-300 font-mono text-xs font-bold rounded">
+                          {sec.number}
+                        </span>
+                        <h4 className="text-base sm:text-lg lg:text-xl font-serif font-bold text-stone-100">
+                          {sec.title}
+                        </h4>
+                      </div>
+                      <div className="font-serif text-stone-300 text-sm sm:text-base leading-relaxed space-y-3 whitespace-pre-line pl-1">
+                        {sec.content}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Conclusão */}
+                <div id="market-conclusion" className="space-y-3 border-t-2 border-amber-600/40 pt-6">
+                  <h3 className="text-sm font-mono uppercase tracking-widest text-amber-400 font-bold border-l-2 border-amber-500 pl-3">
+                    Conclusão
+                  </h3>
+                  <div className="font-serif text-stone-300 text-sm sm:text-base leading-relaxed space-y-3 whitespace-pre-line bg-amber-950/20 border border-amber-700/30 p-5 rounded-xl">
+                    {marketLaws.conclusion}
+                  </div>
+                </div>
+
+                {/* Referências Bibliográficas */}
+                <div id="market-refs" className="space-y-3 border-t border-stone-800 pt-6">
+                  <h3 className="text-sm font-mono uppercase tracking-widest text-stone-400 font-bold">
+                    Referências Bibliográficas
+                  </h3>
+                  <ul className="space-y-2 text-xs font-mono text-stone-400">
+                    {marketLaws.bibliographicReferences.map((ref, rIdx) => (
+                      <li key={rIdx} className="border-l border-amber-600/40 pl-3">
+                        {ref}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
               </div>
