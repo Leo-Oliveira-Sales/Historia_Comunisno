@@ -835,74 +835,7 @@ export const IDEOLOGIAS_TOPICS: DossierTopic[] = [
     }
   },
 
-  // =========================================================================
-  // TÓPICO 110 (CAPÍTULO 10)
-  // =========================================================================
-  {
-    id: 110,
-    categoryNumber: '10',
-    title: 'Análise Historiográfica Comparada: Tipologia, Conflitos e Rupturas entre as Grandes Ideologias',
-    category: 'Teoria Política Comparada e Matrizes Conceituais',
-    period: 'todos',
-    periodLabel: 'Século XIX – Século XXI',
-    tagline: 'O confronto sistemático entre Liberalismo, Socialismo, Conservadorismo, Fascismo e Democracia sob o crivo acadêmico.',
-    summary: 'Síntese historiográfica e conceitual comparada de todas as grandes matrizes políticas que disputaram o mundo contemporâneo. A análise das variáveis-chave: concepção de natureza humana, papel do Estado, limites da liberdade versus igualdade, postura diante da propriedade privada e da violência revolucionária. O contraste rigoroso entre regimes abertos e sistemas totalitários segundo as lições consolidadas dos 40 pesquisadores de referência.',
-    mainSubjects: [
-      'A morfologia comparada das ideologias segundo Michael Freeden',
-      'Natureza humana: otimismo iluminista, pessimismo conservador e plasticidade marxiana',
-      'Liberdade negativa (liberal), liberdade substantiva (socialista) e liberdade orgânica (fascista)',
-      'A teoria do totalitarismo de Arendt, Friedrich e Brzezinski versus autoritarismo de Linz',
-      'O balanço do "Breve Século XX" e os desafios ideológicos do século XXI'
-    ],
-    historicalContext: 'Com o fim da Guerra Fria e o colapso da União Soviética em 1991, teses precipitadas sobre o "Fim da História" foram desmentidas pela reemergência de nacionalismos, autoritarismos tecnocráticos e polarizações globais, exigindo o domínio crítico das raízes históricas de cada tradição política.',
-    academicConsensus: 'O consenso epistemológico dos grandes historiadores e cientistas políticos (Aron, Berlin, Bobbio, Dahl, Linz, Freeden) estabelece que as ideologias não são aberrações elimináveis, mas estruturas conceituais necessárias de ordenação do mundo público; a salvaguarda fundamental contra as tentações tirânicas reside no respeito inflexível ao pluralismo de valores, ao Estado de Direito e à recusa de utopias que pretendam sacrificar gerações vivas no altar de futuros absolutos.',
-    keyActors: [
-      'Karl Marx (1818–1883)',
-      'John Locke (1632–1704)',
-      'Edmund Burke (1729–1797)',
-      'Benito Mussolini (1883–1945)',
-      'John Maynard Keynes (1883–1946)'
-    ],
-    historiansInvolved: [
-      'Isaiah Berlin',
-      'Hannah Arendt',
-      'Norberto Bobbio',
-      'Raymond Aron',
-      'Juan Linz',
-      'Carl J. Friedrich',
-      'Michael Freeden'
-    ],
-    primarySources: [
-      {
-        title: 'Declaração Universal dos Direitos Humanos (10 de dezembro de 1948)',
-        institution: 'Organização das Nações Unidas (ONU) / Palais de Chaillot, Paris',
-        documentType: 'Tratado Internacional de Direitos Humanos',
-        year: '1948',
-        archiveReference: 'Resolução 217 A (III) da Assembleia Geral da ONU',
-        transcriptionPt: 'Artigo 1: Todos os seres humanos nascem livres e iguais em dignidade e em direitos. Dotados de razão e de consciência, devem agir uns para com os outros em espírito de fraternidade. [...] Artigo 19: Todo ser humano tem direito à liberdade de opinião e de expressão. Artigo 25: Todo ser humano tem direito a um padrão de vida capaz de assegurar a si e à sua família saúde e bem-estar.',
-        abntCitation: 'ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Declaração Universal dos Direitos Humanos. Paris, 1948.',
-        chicagoCitation: 'United Nations. Universal Declaration of Human Rights. Paris: UN General Assembly, 1948.',
-        relatedHistorians: ['Hannah Arendt', 'Norberto Bobbio', 'John Rawls']
-      },
-      {
-        title: 'Two Concepts of Liberty (Dois Conceitos de Liberdade, 1958)',
-        institution: 'University of Oxford / Oxford University Press',
-        documentType: 'Aula Inaugural / Ensaio Filosófico',
-        year: '1958',
-        archiveReference: 'Oxford Clarendon Press OUP-1958-Berlin',
-        transcriptionPt: 'Se os homens nunca tivessem discordado sobre os fins da vida, se os nossos ancestrais tivessem permanecido imperturbáveis no Jardim do Éden, a história das ideias políticas jamais teria existido. [...] A crença de que uma única fórmula pode resolver todas as dores da humanidade é uma ilusão fatal que sempre justificou o sacrifício de homens vivos.',
-        abntCitation: 'BERLIN, Isaiah. Two Concepts of Liberty: An Inaugural Lecture delivered before the University of Oxford on 31 October 1958. Oxford: Clarendon Press, 1958.',
-        chicagoCitation: 'Berlin, Isaiah. Two Concepts of Liberty. Oxford: Clarendon Press, 1958.',
-        relatedHistorians: ['Isaiah Berlin', 'Raymond Aron']
-      }
-    ],
-    historicalImpact: 'Constitui a chave de interpretação essencial para compreender os conflitos contemporâneos, as crises de legitimidade democrática e a defesa intransigente dos direitos civis e das garantias constitucionais.',
-    quote: {
-      text: 'O pluralismo político e a aceitação pacífica do dissenso são o único escudo da humanidade contra a barbárie dos regimes que se julgam donos exclusivos da verdade absoluta.',
-      author: 'Isaiah Berlin',
-      context: 'Quatro Ensaios sobre a Liberdade (1969)'
-    }
-  },
+
 
   // =========================================================================
   // TÓPICO 111 (CAPÍTULO 11)

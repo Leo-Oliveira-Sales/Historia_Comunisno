@@ -68,14 +68,14 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   theme = 'preto',
   onSelectTheme,
 }) => {
-  const [activeTab, setActiveTab] = useState<'chapter' | 'researchDossier' | 'essay' | 'stories' | 'documents' | 'context' | 'citations' | 'advancedInvestigation' | 'marketLaws'>('chapter');
+  const essay = ACADEMIC_ESSAYS[topic.id];
+  const chapter = ACADEMIC_CHAPTERS[topic.id] || IDEOLOGIAS_CHAPTERS[topic.id];
+  const [activeTab, setActiveTab] = useState<'chapter' | 'researchDossier' | 'essay' | 'stories' | 'documents' | 'context' | 'citations' | 'advancedInvestigation' | 'marketLaws'>(chapter ? 'chapter' : 'researchDossier');
   const [activeSection, setActiveSection] = useState<number | string>(1);
   const [copiedCitation, setCopiedCitation] = useState<string | null>(null);
   const [fontSize, setFontSize] = useState<'sm' | 'base' | 'lg'>('base');
   const [isMobileIndexOpen, setIsMobileIndexOpen] = useState<boolean>(false);
 
-  const essay = ACADEMIC_ESSAYS[topic.id];
-  const chapter = ACADEMIC_CHAPTERS[topic.id] || IDEOLOGIAS_CHAPTERS[topic.id];
   const chronologies = CHRONOLOGIES_BY_TOPIC[topic.id] || [];
   const detailedEpisodes = DETAILED_EPISODES_BY_TOPIC[topic.id] || [];
   const canonicalDossier = getCanonicalEditorialDossier(topic.id);
