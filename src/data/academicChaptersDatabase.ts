@@ -18,6 +18,8 @@ import { CHAPTER_17 } from './chapters/chapter_17';
 import { CHAPTER_18 } from './chapters/chapter_18';
 import { CHAPTER_19 } from './chapters/chapter_19';
 import { CHAPTER_20 } from './chapters/chapter_20';
+import { IDEOLOGIAS_CHAPTERS } from './collections/collection_ideologias_chapters';
+
 export interface AcademicChapterSection {
   number: string;
   title: string;
@@ -41,6 +43,7 @@ export interface AcademicChapter {
 }
 
 export const ACADEMIC_CHAPTERS: Record<number, AcademicChapter> = {
+  ...IDEOLOGIAS_CHAPTERS,
   1: CHAPTER_01,
   2: CHAPTER_02,
   3: CHAPTER_03,

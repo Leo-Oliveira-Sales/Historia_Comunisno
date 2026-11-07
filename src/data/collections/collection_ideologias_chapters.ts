@@ -2052,7 +2052,7 @@ A crise da monarquia havia se transformado em uma revolução política e social
       {
         number: '11',
         title: 'A RUPTURA COM O ANTIGO REGIME E O PROBLEMA DA CONTINUIDADE HISTÓRICA',
-        content: `A Revolução Francesa promovu uma ruptura profunda com os fundamentos jurídicos e políticos da sociedade de ordens.
+        content: `A Revolução Francesa promoveu uma ruptura profunda com os fundamentos jurídicos e políticos da sociedade de ordens.
 
 A legitimidade política passou a ser discutida em termos de nação, cidadania, representação e soberania.
 
