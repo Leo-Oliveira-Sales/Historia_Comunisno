@@ -98,10 +98,10 @@ export const Header: React.FC<HeaderProps> = ({
     <>
       <div className="sticky top-0 z-40 w-full max-w-full overflow-hidden">
         {/* Top Archival Collection Switcher Ribbon */}
-        <div className="bg-[#0b0b0d] border-b border-stone-800/90 px-3 sm:px-6 lg:px-8 py-1.5 text-xs flex items-center justify-between gap-2 overflow-x-auto no-scrollbar w-full max-w-full">
+        <div className="bg-[#0b0b0d] border-b border-stone-800/90 px-2.5 sm:px-6 lg:px-8 py-1.5 text-xs flex items-center justify-start sm:justify-between gap-2 overflow-x-auto no-scrollbar w-full max-w-full touch-pan-x">
           <div className="flex items-center gap-1.5 sm:gap-2 text-stone-400 font-mono text-[11px] shrink-0">
             <Layers className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-            <span className="hidden sm:inline font-semibold text-stone-300">Coleções do Acervo:</span>
+            <span className="hidden xs:inline font-semibold text-stone-300">Coleções do Acervo:</span>
           </div>
 
           <div className="flex items-center gap-1 sm:gap-1.5 shrink-0">
@@ -120,7 +120,7 @@ export const Header: React.FC<HeaderProps> = ({
                     }
                   }}
                   title={isUpcoming ? `Coleção ${col.romanNumeral} — ${col.title} (Em Breve / Futuro)` : `${col.title}: ${col.subtitle}`}
-                  className={`px-2.5 py-1 rounded text-[11px] font-mono transition-all flex items-center gap-1.5 whitespace-nowrap min-h-[28px] ${
+                  className={`px-2 sm:px-2.5 py-1 rounded text-[11px] font-mono transition-all flex items-center gap-1 sm:gap-1.5 whitespace-nowrap min-h-[28px] ${
                     isSelected
                       ? 'bg-stone-800 text-amber-400 font-bold border border-amber-500/60 shadow-sm'
                       : isUpcoming
@@ -146,22 +146,28 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Main Sticky Header */}
-        <header className="bg-[#121214]/95 backdrop-blur border-b border-stone-800/80 px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4 transition-colors w-full max-w-full overflow-hidden">
-          {/* Zone 1: Brand Wordmark (Clean button without box or border) */}
-          <div className="flex items-center gap-2 shrink-0 min-w-0">
+        <header className="bg-[#121214]/95 backdrop-blur border-b border-stone-800/80 px-2.5 sm:px-6 lg:px-8 py-2 sm:py-3 flex items-center justify-between gap-1.5 sm:gap-4 transition-colors w-full max-w-full">
+          {/* Zone 1: Brand Wordmark (Responsive to never overflow on mobile portrait) */}
+          <div className="flex items-center gap-1 sm:gap-2 shrink min-w-0">
             <button
               onClick={() => onSelectTab('dossiers')}
-              className="brand-btn nav-btn-clean text-sm sm:text-base md:text-lg font-display font-bold tracking-tight text-stone-100 hover:text-amber-400 transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 sm:gap-2 text-left min-h-[44px] border-0 bg-transparent shadow-none"
+              className="brand-btn nav-btn-clean font-display font-bold tracking-tight text-stone-100 hover:text-amber-400 transition-colors flex items-center gap-1.5 sm:gap-2 text-left min-h-[40px] border-0 bg-transparent shadow-none min-w-0"
+              aria-label="Ir para página inicial do acervo"
             >
               <span 
-                className="w-2.5 h-2.5 rounded-full inline-block shrink-0"
+                className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full inline-block shrink-0"
                 style={{ backgroundColor: activeCol.accentColor }}
               />
-              <span className="uppercase">
-                {activeCollectionId === 'colecao-2' ? 'HISTÓRIA DAS IDEOLOGIAS' : 'DOSSIÊ SOVIÉTICO'}
+              <span className="uppercase text-xs xs:text-sm sm:text-base md:text-lg font-bold truncate">
+                <span className="inline sm:hidden">
+                  {activeCollectionId === 'colecao-2' ? 'IDEOLOGIAS' : 'DOSSIÊ SOVIÉTICO'}
+                </span>
+                <span className="hidden sm:inline">
+                  {activeCollectionId === 'colecao-2' ? 'HISTÓRIA DAS IDEOLOGIAS' : 'DOSSIÊ SOVIÉTICO'}
+                </span>
               </span>
-              <span className="hidden lg:inline text-[10px] font-mono font-normal text-stone-400 px-1.5 py-0.5 rounded bg-stone-800/80 border border-stone-700/60">
-                Coleção {activeCol.romanNumeral}
+              <span className="text-[9px] sm:text-[10px] font-mono font-normal text-stone-400 px-1 sm:px-1.5 py-0.5 rounded bg-stone-800/80 border border-stone-700/60 shrink-0">
+                Col. {activeCol.romanNumeral}
               </span>
             </button>
           </div>
@@ -180,12 +186,25 @@ export const Header: React.FC<HeaderProps> = ({
               </button>
             );
           })}
+
+          {/* Lateral Menu Trigger for Desktop */}
+          <button
+            onClick={() => {
+              playTypewriterClack();
+              setMobileMenuOpen(true);
+            }}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-mono font-bold text-amber-400 hover:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/40 rounded-lg transition-all min-h-[36px] ml-1 shadow-sm"
+            title="Abrir Menu Lateral (Roleta, Linha do Tempo e Opções)"
+          >
+            <Menu className="w-3.5 h-3.5" />
+            <span>Menu Lateral</span>
+          </button>
         </nav>
 
-        {/* Zone 3: Actions + Theme Switcher + Global Font Size Control + Mobile Hamburger */}
-        <div className="flex items-center gap-1 sm:gap-2.5 shrink-0">
+        {/* Zone 3: Actions + Theme Switcher + Global Font Size Control + Menu Drawer Button */}
+        <div className="flex items-center gap-1 sm:gap-2 shrink-0">
           
-          {/* Global Font Size Control (Desktop) */}
+          {/* Global Font Size Control (Desktop XL only) */}
           <div 
             className="hidden xl:flex items-center bg-stone-900/90 border border-stone-700/80 p-0.5 rounded-lg shadow-inner"
             role="group"
@@ -213,11 +232,11 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </div>
 
-          {/* Compact Global Font Size Cycle Button (Medium & Mobile screens) */}
+          {/* Compact Global Font Size Cycle Button (Visible on medium screens, in drawer on mobile) */}
           <button
             onClick={handleCycleFontSize}
             title={`Aumentar Tamanho da Fonte (Atual: ${fontSize.toUpperCase()})`}
-            className="p-1.5 min-h-[38px] min-w-[38px] text-stone-300 hover:text-amber-400 hover:bg-stone-800/60 rounded-lg border border-stone-700/80 transition-colors flex items-center justify-center gap-1"
+            className="hidden sm:flex xl:hidden p-1.5 min-h-[38px] min-w-[38px] text-stone-300 hover:text-amber-400 hover:bg-stone-800/60 rounded-lg border border-stone-700/80 transition-colors items-center justify-center gap-1"
             aria-label="Aumentar Fonte do App"
           >
             <Type className="w-3.5 h-3.5 text-amber-400" />
@@ -256,18 +275,17 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             onClick={handleCycleTheme}
             title={`Tema Atual: ${theme.toUpperCase()} (Clique para alternar Preto / Branco / Bege)`}
-            className="sm:hidden p-2 min-h-[44px] min-w-[44px] text-stone-300 hover:text-amber-400 hover:bg-stone-800/60 rounded-lg border border-stone-800 transition-colors flex items-center justify-center gap-1"
+            className="sm:hidden p-2 min-h-[38px] min-w-[38px] text-stone-300 hover:text-amber-400 hover:bg-stone-800/60 rounded-lg border border-stone-800 transition-colors flex items-center justify-center shrink-0"
             aria-label="Alternar Tema de Leitura"
           >
             {getThemeIcon(theme)}
-            <span className="text-[10px] font-mono uppercase font-bold text-amber-400">{theme.slice(0, 3)}</span>
           </button>
 
           {/* Audio Toggle */}
           <button
             onClick={onToggleSound}
             title={soundEnabled ? 'Desativar áudio mecânico' : 'Ativar áudio mecânico'}
-            className="p-2 min-h-[44px] min-w-[44px] text-stone-400 hover:text-stone-200 hover:bg-stone-800/60 rounded-lg transition-colors flex items-center justify-center"
+            className="p-2 min-h-[38px] min-w-[38px] text-stone-400 hover:text-stone-200 hover:bg-stone-800/60 rounded-lg transition-colors flex items-center justify-center shrink-0"
             aria-label="Controle de Áudio"
           >
             {soundEnabled ? <Volume2 className="w-4 h-4 text-amber-400" /> : <VolumeX className="w-4 h-4 text-stone-500" />}
@@ -276,35 +294,83 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Research Notebook Button */}
           <button
             onClick={onOpenNotebook}
-            className="px-2.5 sm:px-3 py-1.5 min-h-[44px] text-xs font-semibold bg-stone-800 hover:bg-stone-700 text-stone-200 border border-stone-700/80 rounded-lg transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5"
+            className="p-2 sm:px-3 sm:py-1.5 min-h-[38px] text-xs font-semibold bg-stone-800 hover:bg-stone-700 text-stone-200 border border-stone-700/80 rounded-lg transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 relative"
             aria-label="Abrir Caderno de Pesquisa"
+            title="Abrir Caderno de Pesquisa"
           >
-            <Bookmark className="w-3.5 h-3.5 text-amber-400" />
+            <Bookmark className="w-4 h-4 text-amber-400" />
             <span className="hidden sm:inline">Caderno</span>
             {savedCount > 0 && (
-              <span className="bg-red-700 text-white text-[10px] font-mono font-bold px-1.5 py-0.5 rounded-full">
+              <span className="bg-red-700 text-white text-[10px] font-mono font-bold px-1.5 py-0.5 rounded-full absolute -top-1 -right-1 sm:static">
                 {savedCount}
               </span>
             )}
           </button>
 
-          {/* Menu Button for tablets and mobile */}
+          {/* Menu Button for all screens */}
           <button
-            onClick={() => setMobileMenuOpen(true)}
-            className="xl:hidden px-2.5 py-1.5 min-h-[44px] text-xs font-semibold bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/40 rounded-lg transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5"
-            aria-label="Abrir Menu de Navegação"
-            title="Menu de Navegação"
+            onClick={() => {
+              playTypewriterClack();
+              setMobileMenuOpen(true);
+            }}
+            className="px-2.5 sm:px-3 py-1.5 min-h-[38px] text-xs font-semibold bg-amber-500/15 hover:bg-amber-500/25 active:scale-95 text-amber-300 border border-amber-500/50 rounded-lg transition-all whitespace-nowrap shrink-0 flex items-center gap-1.5 shadow-sm"
+            aria-label="Abrir Menu de Navegação Lateral"
+            title="Menu de Navegação Lateral"
           >
             <Menu className="w-4 h-4 text-amber-400" />
             <span className="font-mono text-amber-400 font-bold">Menu</span>
           </button>
         </div>
       </header>
+
+      {/* Mobile Interactive Sub-Navigation Bar (< xl) */}
+      <nav 
+        className="xl:hidden bg-[#151518]/95 backdrop-blur border-b border-stone-800/90 px-2 sm:px-4 py-1.5 flex items-center gap-1.5 overflow-x-auto no-scrollbar w-full max-w-full touch-pan-x"
+        aria-label="Navegação Rápida Mobile"
+      >
+        {navItems.map((item) => {
+          const Icon = item.icon;
+          const isActive = currentTab === item.id;
+          return (
+            <button
+              key={item.id}
+              onClick={() => {
+                playTypewriterClack();
+                onSelectTab(item.id);
+              }}
+              className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap shrink-0 transition-all min-h-[34px] border ${
+                isActive
+                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/60 font-bold shadow-sm'
+                  : 'bg-stone-900/70 text-stone-300 hover:text-stone-100 hover:bg-stone-800/60 border-stone-800'
+              }`}
+            >
+              <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-amber-400' : 'text-stone-400'}`} />
+              <span>{item.label}</span>
+              {isActive && (
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse ml-0.5" />
+              )}
+            </button>
+          );
+        })}
+
+        {/* Quick Menu Lateral Button in Mobile Strip */}
+        <button
+          onClick={() => {
+            playTypewriterClack();
+            setMobileMenuOpen(true);
+          }}
+          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono font-bold whitespace-nowrap shrink-0 transition-all min-h-[34px] bg-stone-900/90 hover:bg-stone-800 text-amber-400 border border-stone-700/80"
+          title="Abrir Menu Lateral"
+        >
+          <Menu className="w-3.5 h-3.5 text-amber-400" />
+          <span>Menu Lateral</span>
+        </button>
+      </nav>
       </div>
 
-      {/* Mobile Lateral Off-Canvas Sidebar Drawer */}
+      {/* Lateral Off-Canvas Sidebar Drawer */}
       {mobileMenuOpen && (
-        <div className="xl:hidden fixed inset-0 z-50 flex justify-end">
+        <div className="fixed inset-0 z-50 flex justify-end">
           {/* Dark Backdrop Overlay */}
           <div 
             className="fixed inset-0 bg-black/75 backdrop-blur-sm transition-opacity animate-in fade-in duration-200"

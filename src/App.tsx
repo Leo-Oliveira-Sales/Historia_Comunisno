@@ -200,7 +200,7 @@ export default function App() {
 
                 <h1 className="text-2xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight text-stone-100 text-balance leading-tight">
                   {activeCollectionId === 'colecao-2'
-                    ? 'História das Ideologias Políticas: 10 Capítulos Didáticos & 40 Especialistas'
+                    ? 'História das Ideologias Políticas: 11 Capítulos Didáticos & 40 Especialistas'
                     : 'Dossiê Soviético: 20 Categorias Temáticas & Documentação Primária'}
                 </h1>
 
