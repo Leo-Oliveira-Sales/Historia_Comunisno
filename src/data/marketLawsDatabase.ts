@@ -762,6 +762,24 @@ A conclusão mais consistente é que **o poder social não se manifesta apenas n
 
 A linguagem é uma dimensão importante desse processo, mas atua em conjunto com condições materiais, instituições, experiências e relações de poder.`
       }
+    ,
+      {
+        number: '10',
+        title: 'Estudos científicos especialmente relevantes para a investigação sobre linguagem',
+        content: `1. John A. Lucy — relatividade linguística (2016)
+
+Examina a relação entre linguagem e pensamento e apresenta uma avaliação crítica das pesquisas contemporâneas. A conclusão é que a linguagem influencia determinados processos cognitivos, e parte do pensamento.
+
+2. Dennis Chong e James Druckman — teoria do enquadramento (2007)
+
+Analisa como a maneira de apresentar informações pode influenciar a opinião pública.
+
+3. Eran Amsalem e Alon Zoizner — meta-análise de efeitos de enquadramento (2022)
+
+É especialmente importante porque reúne 138 experimentos. Encontrou efeitos médios sobre atitudes e emoções políticas, mas efeitos negligenciáveis sobre comportamento na análise agregada.
+
+4. Phillip Wolff e Kevin Holmes — relatividade linguística (2011)`
+      }
     ],
     conclusion: `A história do marxismo demonstra que uma teoria inicialmente concentrada na crítica da economia política acabou influenciando investigações muito mais amplas. A conclusão mais consistente é que o poder social não se manifesta apenas no controle dos recursos econômicos ou das instituições políticas: também envolve a capacidade de influenciar as categorias, os valores e as interpretações por meio das quais os indivíduos compreendem a realidade.`,
     bibliographicReferences: [
