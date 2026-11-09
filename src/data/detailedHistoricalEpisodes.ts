@@ -191,6 +191,17 @@ export const CHRONOLOGIES_BY_TOPIC: Record<number, ChronologyMilestone[]> = {
     { date: '1870–1900', event: 'Segunda Revolução Industrial e Capitalismo Financeiro', significance: 'Ascensão do aço Bessemer, química pesada, eletricidade, motor a explosão e expansão imperialista global.' }
   ],
 
+  104: [
+    { date: '1808', event: 'Publicação de "Théorie des quatre mouvements" por Charles Fourier', significance: 'Formulação inicial do pensamento comunitário fourierista e da organização passional nos Falanstérios.' },
+    { date: '1816–1818', event: 'Publicação de "L\'Industrie" por Henri de Saint-Simon', significance: 'Proposta de organização industrial da sociedade gerida por produtores e cientistas.' },
+    { date: '1840', event: 'Publicação de "Qu\'est-ce que la propriedade?" por Pierre-Joseph Proudhon', significance: 'Formulação do anarquismo mutualista e crítica à propriedade como apropriação parasitária.' },
+    { date: '1864', event: 'Fundação da Associação Internacional dos Trabalhadores (AIT) em Londres', significance: 'Reunião das correntes operárias europeias (marxistas, mutualistas, anarquistas e cartistas).' },
+    { date: '1871', event: 'A Eclosão da Comuna de Paris', significance: 'Primeira experiência revolucionária de autogoverno popular operário da história moderna.' },
+    { date: '1872', event: 'Congresso de Haia da Primeira Internacional e Expulsão de Bakunin', significance: 'Ruptura histórica definitiva entre as correntes marxistas autoritárias e anarquistas libertárias.' },
+    { date: '1873', event: 'Publicação de "Estatismo e Anarquia" por Mikhail Bakunin', significance: 'Formulação da crítica libertária à burocracia do Estado e ao centralismo político.' },
+    { date: '1880', event: 'Publicação de "Do Socialismo Utópico ao Socialismo Científico" por Engels', significance: 'Sistematização da crítica marxista às correntes socialistas pré-marxistas.' }
+  ],
+
   105: [
     { date: '1843', event: 'Crítica da Filosofia do Direito de Hegel', significance: 'Marx inicia sua transição da crítica da religião para a crítica da política e do direito.' },
     { date: '1844', event: 'Manuscritos Econômico-Filosóficos de Paris', significance: 'Primeira articulação sistemática do conceito de alienação e estudo da economia política.' },
@@ -763,6 +774,140 @@ A era do carvão fumegante e das correias de transmissão de couro das fábricas
 As ferrovias transcontinentais cortavam o Oeste americano e as estepes siberianas, navios cargueiros a turbina transportavam carne congelada da Argentina para a Europa e o capital financeiro dos bancos internacionais financiava impérios coloniais na África e na Ásia. A sociedade industrial entrava no século XX celebrando seu triunfo tecnológico, sem prever que aquela mesma potência produtiva colossal forjaria as armas mais mortíferas das grandes guerras mundiais.`,
       eyewitnessOrDocQuote: 'A eletricidade não é apenas uma nova fonte de luz; é a alma invisível da nova indústria que move o século que está nascendo.',
       quoteAuthor: 'Relatório Oficial da Exposição Mundial de Chicago (1893)'
+    }
+  ],
+
+  104: [
+    {
+      title: 'CRÔNICA 1 — PARIS, 1840: A PROPRIEDADE É UM ROUBO?',
+      location: 'Paris, França (1840)',
+      narrative: `Em 1840, um livro publicado em Paris provocou uma discussão que ultrapassaria as fronteiras da França.
+
+Seu autor, Pierre-Joseph Proudhon, apresentou uma pergunta aparentemente simples: o que é a propriedade?
+
+A resposta ficou conhecida por sua contundência: "A propriedade é um roubo."
+
+A frase não era apenas uma provocação. Representava uma crítica à estrutura econômica que permitia a determinados proprietários controlar os instrumentos de produção e obter rendimentos a partir do trabalho alheio.
+
+Proudhon questionava a legitimidade de uma sociedade na qual a propriedade podia transformar-se em instrumento de poder sobre outras pessoas.
+
+Sua proposta não consistia simplesmente em abolir toda posse individual. Ele procurava distinguir o uso dos bens da apropriação econômica que permitia explorar o trabalho.
+
+A partir dessa crítica, desenvolveu uma proposta baseada no mutualismo, na reciprocidade e na associação entre produtores.`,
+      eyewitnessOrDocQuote: 'A propriedade é um roubo.',
+      quoteAuthor: 'Pierre-Joseph Proudhon, Qu\'est-ce que la propriedade? (1840)'
+    },
+    {
+      title: 'CRÔNICA 2 — O FALANSTÉRIO: A SOCIEDADE PODERIA SER REORGANIZADA?',
+      location: 'França (Século XIX)',
+      narrative: `Charles Fourier observava a sociedade comercial de seu tempo e identificava nela uma profunda contradição.
+
+Os indivíduos eram obrigados a trabalhar em atividades frequentemente repetitivas, submetidos à competição e à necessidade econômica.
+
+Fourier imaginava uma alternativa: comunidades nas quais as pessoas pudessem desenvolver diferentes atividades e organizar a produção de acordo com suas inclinações.
+
+Essas comunidades seriam chamadas de falanstérios.
+
+Nelas, agricultura, indústria, educação e atividades coletivas estariam integradas.
+
+A ideia parecia extraordinária para muitos contemporâneos. Entretanto, Fourier não pretendia apenas imaginar uma sociedade perfeita. Elaborou projetos detalhados de organização comunitária, remuneração e divisão das atividades.
+
+Suas propostas inspiraram experiências concretas, embora muitas tenham enfrentado dificuldades de financiamento, administração e continuidade.`,
+      eyewitnessOrDocQuote: 'As atrações estão em razão das destinos.',
+      quoteAuthor: 'Charles Fourier, Théorie des quatre mouvements et des destinées générales (1808)'
+    },
+    {
+      title: 'CRÔNICA 3 — A SOCIEDADE INDUSTRIAL DE SAINT-SIMON',
+      location: 'Paris, França',
+      narrative: `Saint-Simon observava a Europa em transformação.
+
+A aristocracia tradicional ainda conservava privilégios, mas a produção industrial, a ciência e a técnica estavam modificando a estrutura econômica.
+
+Para ele, a sociedade deveria valorizar aqueles que efetivamente contribuíam para sua manutenção material.
+
+Cientistas, trabalhadores, agricultores, comerciantes e industriais deveriam ocupar posição central na organização social.
+
+Seu projeto não defendia simplesmente a igualdade absoluta. Propunha uma sociedade organizada racionalmente, na qual a administração da produção fosse considerada mais importante do que os privilégios hereditários.
+
+A ideia de uma sociedade administrada por conhecimento técnico antecipou debates sobre planejamento e tecnocracia.`,
+      eyewitnessOrDocQuote: 'Toda a sociedade repousa sobre a indústria. A indústria é a única garantia de sua existência, a fonte única de todas as riquezas e de toda a prosperidade.',
+      quoteAuthor: 'Henri de Saint-Simon, L\'Industrie (1816–1818)'
+    },
+    {
+      title: 'CRÔNICA 4 — BAKUNIN E O MEDO DE UMA NOVA DOMINAÇÃO',
+      location: 'Europa central e oriental',
+      narrative: `Mikhail Bakunin dedicou sua vida à luta contra diferentes formas de autoridade.
+
+Participou de movimentos revolucionários, enfrentou a repressão e passou longos períodos preso e no exílio.
+
+Sua preocupação não era apenas derrubar governos.
+
+Bakunin questionava o que aconteceria depois da revolução.
+
+Se uma minoria assumisse o controle do Estado em nome dos trabalhadores, quem controlaria essa minoria?
+
+A pergunta tornou-se central em sua crítica ao socialismo centralizado.
+
+Em Estatismo e Anarquia, publicado em 1873, argumentou que a concentração do poder político poderia produzir uma nova camada dirigente.
+
+Sua proposta era uma organização federalista, construída a partir de associações e comunidades autônomas.`,
+      eyewitnessOrDocQuote: 'Se você pegar o mais ardente revolucionário e o investir de um poder absoluto, dentro de um ano ele será pior do que o próprio Czar.',
+      quoteAuthor: 'Mikhail Bakunin, Estatismo e Anarquia (1873)'
+    },
+    {
+      title: 'CRÔNICA 5 — HAIA, 1872: A RUPTURA NA INTERNACIONAL',
+      location: 'Haia, Países Baixos (1872)',
+      narrative: `Em setembro de 1872, a disputa entre marxistas e anarquistas atingiu um momento decisivo no Congresso de Haia da Associação Internacional dos Trabalhadores.
+
+As divergências envolviam a organização da Internacional, a atuação política e o papel do Conselho Geral.
+
+Marx defendia uma organização política da classe trabalhadora capaz de intervir na luta pelo poder.
+
+Bakunin e seus aliados temiam que a centralização política comprometesse a autonomia do movimento operário.
+
+O congresso aprovou a expulsão de Bakunin e James Guillaume.
+
+A ruptura representou uma divisão importante na história do movimento socialista internacional.
+
+Não foi apenas uma disputa entre indivíduos. Expressava diferentes interpretações sobre a organização da revolução e o significado da emancipação.`,
+      eyewitnessOrDocQuote: 'A conquista do poder político tornou-se o grande dever das classes trabalhadoras.',
+      quoteAuthor: 'Resoluções do Congresso de Haia da Primeira Internacional (1872)'
+    },
+    {
+      title: 'CRÔNICA 6 — PARIS, 1871: A EXPERIÊNCIA DA COMUNA',
+      location: 'Paris, França (1871)',
+      narrative: `A Comuna de Paris foi uma experiência revolucionária de autogoverno popular.
+
+Em meio à crise provocada pela derrota francesa na Guerra Franco-Prussiana, setores da população parisiense estabeleceram uma administração revolucionária.
+
+A Comuna durou aproximadamente dois meses.
+
+Apesar de sua curta existência, tornou-se um acontecimento fundamental para o pensamento socialista e anarquista.
+
+Marx interpretou a experiência como uma forma política da emancipação dos trabalhadores.
+
+Bakunin valorizou seu caráter descentralizado e a iniciativa popular.
+
+A derrota da Comuna, em maio de 1871, demonstrou a força militar do Estado francês e produziu consequências profundas para o movimento operário europeu.`,
+      eyewitnessOrDocQuote: 'A Paris dos trabalhadores, com a sua Comuna, será celebrada para sempre como a gloriosa mensageira de uma nova sociedade.',
+      quoteAuthor: 'Karl Marx, A Guerra Civil na França (1871)'
+    },
+    {
+      title: 'CRÔNICA 7 — 1880: O SOCIALISMO UTÓPICO E A CRÍTICA MARXISTA',
+      location: 'Alemanha / Reino Unido (1880)',
+      narrative: `Em 1880, Friedrich Engels publicou Do Socialismo Utópico ao Socialismo Científico.
+
+A obra sistematizou a crítica marxista às primeiras correntes socialistas.
+
+Engels reconhecia que Saint-Simon, Fourier e Owen haviam identificado problemas importantes da sociedade capitalista.
+
+Entretanto, considerava que seus projetos não possuíam uma explicação histórica suficientemente desenvolvida das contradições econômicas e das relações de classe.
+
+O debate sobre o socialismo utópico tornou-se parte da construção da identidade teórica do marxismo.
+
+A classificação de Engels teve enorme influência, mas também passou a ser discutida por historiadores posteriores, interessados em recuperar a diversidade dos primeiros socialistas.`,
+      eyewitnessOrDocQuote: 'Para transformar o socialismo em ciência, era preciso primeiramente colocá-lo sobre uma base real.',
+      quoteAuthor: 'Friedrich Engels, Do Socialismo Utópico ao Socialismo Científico (1880)'
     }
   ],
 

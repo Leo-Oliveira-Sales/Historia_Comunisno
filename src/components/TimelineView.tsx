@@ -95,7 +95,7 @@ const IDEOLOGIAS_TIMELINE_ERAS: TimelineEra[] = [
   },
   {
     periodKey: '1945-presente',
-    topicIds: [109, 110],
+    topicIds: [109, 111, 112],
     title: 'O Consenso do Pós-Guerra: Bem-Estar Social e Democracia Liberal',
     dateRange: '1945 – Presente',
     summary: 'A reconstrução democrática do pós-Segunda Guerra: a institucionalização do Estado de Bem-Estar Social (Welfare State) pelo modelo keynesiano, a Declaração Universal da ONU e a consolidação do pluralismo.',
@@ -224,7 +224,7 @@ export const TimelineView: React.FC<TimelineViewProps> = ({ topics, onSelectTopi
   const erasToRender = isIdeologias ? IDEOLOGIAS_TIMELINE_ERAS : TIMELINE_ERAS;
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 w-full max-w-full overflow-hidden">
       {/* Introduction Banner */}
       <div className="bg-[#17171a] border border-stone-800 rounded-xl p-4 sm:p-6 shadow-lg">
         <div className="flex items-center gap-2 text-xs font-mono text-amber-500 mb-2">

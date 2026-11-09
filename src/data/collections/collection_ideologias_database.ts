@@ -393,26 +393,100 @@ export const IDEOLOGIAS_TOPICS: DossierTopic[] = [
     ],
     primarySources: [
       {
-        title: 'O que é a Propriedade? Ou Pesquisas sobre o Princípio do Direito e do Governo (1840)',
-        institution: 'Bibliothèque nationale de France (BnF)',
-        documentType: 'Ensaio Filosófico e Jurídico',
+        title: 'DOCUMENTO 01 — HENRI DE SAINT-SIMON: Nouveau Christianisme (1825)',
+        institution: 'Bibliothèque nationale de France (BnF) / Wikisource',
+        documentType: 'Ensaio Político, Moral e Religioso',
+        year: '1825',
+        archiveReference: 'BnF Tolbiac / Wikisource (Texto de 1825 / Ed. 1869)',
+        transcriptionPt: 'A religião deve dirigir a sociedade para o grande objetivo de melhorar o mais rapidamente possível a sorte da classe mais pobre. Toda a sociedade repousa sobre a indústria, e a organização industrial deve estar associada à melhoria da vida coletiva e à responsabilidade moral.',
+        historicalRelevance: 'Apresentação moral da transformação social no final da vida de Saint-Simon. O autor defende que a produção e o progresso científico devem ser direcionados para a melhoria das condições de vida dos setores mais pobres da sociedade. Orientação de pesquisa: examinar como Saint-Simon reinterpretou o cristianismo em uma perspectiva de reforma social.',
+        abntCitation: 'SAINT-SIMON, Henri de. Nouveau Christianisme: dialogues entre un conservateur et un novateur. Paris, 1825.',
+        chicagoCitation: 'Saint-Simon, Henri de. Nouveau Christianisme: dialogues entre un conservateur et un novateur. Paris: Bossange Père, 1825.',
+        relatedHistorians: ['Jeremy Jennings', 'Antoine Picon']
+      },
+      {
+        title: 'DOCUMENTO 02 — CHARLES FOURIER: Théorie des quatre mouvements (1808)',
+        institution: 'Les Classiques des sciences sociales (Ed. Simone Debout-Oleszkiewicz)',
+        documentType: 'Tratado Filosófico e Social',
+        year: '1808',
+        archiveReference: 'Les Classiques des sciences sociales — Fourier (1808)',
+        transcriptionPt: 'As atrações estão em razão dos destinos: a sociedade não deve reprimir as paixões humanas, mas organizar suas instituições comunitárias de modo a permitir sua expressão produtiva e harmoniosa no Falanstério.',
+        historicalRelevance: 'Primeira formulação sistemática do pensamento de Fourier sobre atração passional, harmonia social e falanstérios, combinando integração do trabalho agrícola, industrial e educacional com a crítica à civilização comercial.',
+        abntCitation: 'FOURIER, Charles. Théorie des quatre mouvements et des destinées générales. Leipzig, 1808.',
+        chicagoCitation: 'Fourier, Charles. Théorie des quatre mouvements et des destinées générales. Leipzig, 1808.',
+        relatedHistorians: ['Jonathan Beecher', 'Gareth Stedman Jones']
+      },
+      {
+        title: 'DOCUMENTO 03 — PIERRE-JOSEPH PROUDHON: Qu\'est-ce que la propriété? (1840)',
+        institution: 'Bibliothèque nationale de France (BnF) / Project Gutenberg',
+        documentType: 'Ensaio Filosófico, Jurídico, Econômico e Político',
         year: '1840',
-        archiveReference: 'BnF Tolbiac - R-47391',
-        transcriptionPt: 'Se eu tivesse de responder à seguinte pergunta: O que é a escravidão?, e respondesse com uma só palavra: É o assassinato!, meu pensamento seria compreendido de imediato. Por que, então, a esta outra pergunta: O que é a propriedade?, não posso responder da mesma forma: É o roubo!?, sem ter a certeza de não ser compreendido?',
-        abntCitation: 'PROUDHON, Pierre-Joseph. Qu’est-ce que la propriété? Recherche sur le principe du droit et du gouvernement. Paris: J.-F. Brocard, 1840.',
-        chicagoCitation: 'Proudhon, Pierre-Joseph. Qu’est-ce que la propriété? Paris: Brocard, 1840.',
+        archiveReference: 'BnF Catálogo / J.-F. Brocard (Paris, 1840) / Tucker Trans. (1890)',
+        transcriptionPt: 'A propriedade é um roubo. Se eu tivesse que responder à pergunta: O que é a escravidão? e respondesse: É o assassinato!, meu pensamento seria compreendido de imediato. Por que então a esta outra pergunta: O que é a propriedade? não posso responder da mesma forma: É o roubo!?',
+        historicalRelevance: 'Obra fundacional do anarquismo mutualista e da crítica jurídica à propriedade acumulada sem trabalho. Distingue a posse do fruto do próprio trabalho da propriedade como privilégio de exploração, propondo o mutualismo e a reciprocidade.',
+        abntCitation: 'PROUDHON, Pierre-Joseph. Qu\'est-ce que la propriété? Ou recherches sur le principe du droit et du gouvernement. Premier mémoire. Paris: J.-F. Brocard, 1840.',
+        chicagoCitation: 'Proudhon, Pierre-Joseph. Qu\'est-ce que la propriété? Ou recherches sur le principe du droit et du gouvernement. Premier mémoire. Paris: J.-F. Brocard, 1840.',
         relatedHistorians: ['Leszek Kołakowski', 'David McLellan']
       },
       {
-        title: 'Estatismo e Anarquia (1873)',
+        title: 'DOCUMENTO 04 — MIKHAIL BAKUNIN: Gosudarstvennost\' i anarkhiia (Estatismo e Anarquia, 1873)',
         institution: 'International Institute of Social History (IISH), Amsterdã',
-        documentType: 'Tratado Político Anarquista',
+        documentType: 'Tratado Político e Crítica do Estado',
         year: '1873',
-        archiveReference: 'IISH Bakunin Papers ARCH00045',
-        transcriptionPt: 'Nenhum Estado, por mais democrático que seja nas suas formas, nem mesmo a república mais vermelha sonhada pelos marxistas, é capaz de dar ao povo o que ele precisa: a livre organização de seus próprios interesses de baixo para cima. O Estado proletário de Marx nada mais será do que a ditadura de uma nova aristocracia de burocratas e cientistas sobre os trabalhadores.',
-        abntCitation: 'BAKUNIN, Mikhail. Gosudarstvennost’ i Anarkhiya. Zurique/Genebra: Tipografiya Rabotnika, 1873.',
-        chicagoCitation: 'Bakunin, Mikhail. Statism and Anarchy. Zurich, 1873.',
-        relatedHistorians: ['Leszek Kołakowski', 'Shlomo Avineri']
+        archiveReference: 'IISH Bakunin Reference Archive / Tipografiya Rabotnika',
+        transcriptionPt: 'Nenhum Estado, por mais democráticas que sejam suas formas, nem mesmo a república mais vermelha, popular apenas no sentido da mentira conhecida pelo nome de representação do povo, está em condições de dar ao povo o que ele precisa: a livre organização de seus próprios interesses de baixo para cima.',
+        historicalRelevance: 'Tratado político escrito em russo no auge das disputas com Marx na Internacional. Alerta que a concentração do power estatal em uma minoria que governa em nome dos trabalhadores pode produzir uma nova classe dominante de burocratas e cientistas.',
+        abntCitation: 'BAKUNIN, Mikhail. Gosudarstvennost\' i anarkhiia. Zurique/Genebra: Tipografiya Rabotnika, 1873.',
+        chicagoCitation: 'Bakunin, Mikhail. Gosudarstvennost\' i anarkhiia. Zurich/Geneva: Tipografiya Rabotnika, 1873.',
+        relatedHistorians: ['James Mark Leier', 'Peter Marshall', 'Marshall Shatz']
+      },
+      {
+        title: 'DOCUMENTO 05 — KARL MARX: The Civil War in France (A Guerra Civil na França, 1871)',
+        institution: 'International Institute of Social History (IISH) / British Library',
+        documentType: 'Manifesto Político e Análise Histórica da Comuna de Paris',
+        year: '1871',
+        archiveReference: 'IISH Council of the First International / London, 1871',
+        transcriptionPt: 'A Comuna de Paris foi essencialmente um governo da classe operária, o resultado da luta da classe produtora contra a classe apropriadora, a forma política enfim descoberta sob a qual se podia realizar a emancipação econômica do trabalho.',
+        historicalRelevance: 'Manifesto escrito em nome do Conselho Geral da AIT analisando a experiência revolucionária de autogoverno popular em Paris. Interpreta a Comuna como a forma política concreta de desmantelamento do aparato de Estado burguês.',
+        abntCitation: 'MARX, Karl. The Civil War in France: Address of the General Council of the International Working-Men\'s Association. Londres: Edward Truelove, 1871.',
+        chicagoCitation: 'Marx, Karl. The Civil War in France: Address of the General Council of the International Working-Men\'s Association. London: Edward Truelove, 1871.',
+        relatedHistorians: ['Eric Hobsbawm', 'Gareth Stedman Jones']
+      },
+      {
+        title: 'DOCUMENTO 06 — FRIEDRICH ENGELS: Socialisme utopique et socialisme scientifique (1880)',
+        institution: 'Revue Socialiste (Paris) / Marx-Engels Papers (IISH)',
+        documentType: 'Ensaio Teórico e Histórico',
+        year: '1880',
+        archiveReference: 'Revue Socialiste, Paris, 1880 / Anti-Dühring Excerpts',
+        transcriptionPt: 'O socialismo anterior era utópico porque não podia fazer outra coisa num período em que a produção capitalista estava ainda tão pouco desenvolvida. Para transformar o socialismo em ciência, era preciso primeiramente colocá-lo sobre uma base real e compreender as contradições econômicas e as relações de classe.',
+        historicalRelevance: 'Sistematização da crítica marxista às primeiras correntes socialistas (Saint-Simon, Fourier, Owen). Reconhece suas intuições geniais sobre os males do capitalismo, mas enfatiza a necessidade da explicação histórica e das leis do modo de produção.',
+        abntCitation: 'ENGELS, Friedrich. Socialisme utopique et socialisme scientifique. Paris: Revue Socialiste, 1880.',
+        chicagoCitation: 'Engels, Friedrich. Socialisme utopique et socialisme scientifique. Paris: Revue Socialiste, 1880.',
+        relatedHistorians: ['Leszek Kołakowski', 'Eric Hobsbawm']
+      },
+      {
+        title: 'DOCUMENTO 07 — ASSOCIAÇÃO INTERNACIONAL DOS TRABALHADORES: Estatutos Gerais da AIT (1864)',
+        institution: 'British Library / IISH Amsterdã',
+        documentType: 'Documento Fundacional e Estatutos de Organização',
+        year: '1864',
+        archiveReference: 'AIT General Council Minutes / London, 1864',
+        transcriptionPt: 'A emancipação da classe trabalhadora deve ser obra da própria classe trabalhadora; a luta pela emancipação dos trabalhadores não é uma luta por privilégios ou monopólios de classe, mas por direitos e deveres iguais e pela abolição de todo domínio de classe.',
+        historicalRelevance: 'Documento fundacional aprovado na St. Martin\'s Hall em Londres. Reuniu sindicalistas britânicos, mutualistas franceses, democratas radicais e anarquistas, constituindo a arena de debates do movimento operário internacional.',
+        abntCitation: 'ASSOCIAÇÃO INTERNACIONAL DOS TRABALHADORES (AIT). General Rules of the International Workingmen\'s Association. Londres, 1864.',
+        chicagoCitation: 'International Workingmen\'s Association. General Rules of the International Workingmen\'s Association. London, 1864.',
+        relatedHistorians: ['Gareth Stedman Jones', 'George Woodcock']
+      },
+      {
+        title: 'DOCUMENTO 08 — CONGRESSO DE HAIA DA PRIMEIRA INTERNACIONAL: Resoluções e Atas (1872)',
+        institution: 'International Institute of Social History (IISH), Amsterdã',
+        documentType: 'Atas Oficiais e Resoluções do V Congresso da AIT',
+        year: '1872',
+        archiveReference: 'IISH AIT Collection / Hague Congress Records (1872)',
+        transcriptionPt: 'Na sua luta contra o poder coletivo das classes possuidoras, o proletariado só pode agir como classe constituindo-se em partido político distinto e oposto a todos os antigos partidos formados pelas classes possuidoras.',
+        historicalRelevance: 'Registro documental da ruptura histórica definitiva entre as correntes marxistas e anarquistas libertárias. A aprovação da obrigatoriedade da ação política partidária levou à exclusão de Bakunin e Guillaume e à divisão da Internacional.',
+        abntCitation: 'ASSOCIAÇÃO INTERNACIONAL DOS TRABALHADORES (AIT). Compte-rendu officiel du Congrès de La Haye. Haia, 1872.',
+        chicagoCitation: 'International Workingmen\'s Association. Compte-rendu officiel du Congrès de La Haye. The Hague, 1872.',
+        relatedHistorians: ['James Mark Leier', 'Peter Marshall']
       }
     ],
     historicalImpact: 'Lançou as bases dos sindicatos anarcossindicalistas na Espanha, França, Itália e América Latina, inspirou os movimentos de autogestão operária e prefigurou a crítica contundente ao autoritarismo burocrático do socialismo de Estado.',
@@ -838,11 +912,11 @@ export const IDEOLOGIAS_TOPICS: DossierTopic[] = [
 
 
   // =========================================================================
-  // TÓPICO 111 (CAPÍTULO 11)
+  // TÓPICO 111 (CAPÍTULO 10)
   // =========================================================================
   {
     id: 111,
-    categoryNumber: '11',
+    categoryNumber: '10',
     title: 'O Comunismo Internacional: Regimes, Revoluções e Catástrofes Humanitárias',
     category: 'Comunismo Internacional',
     period: 'internacional',
@@ -885,11 +959,11 @@ export const IDEOLOGIAS_TOPICS: DossierTopic[] = [
   },
 
   // =========================================================================
-  // TÓPICO 112 (CAPÍTULO 12)
+  // TÓPICO 112 (CAPÍTULO 11)
   // =========================================================================
   {
     id: 112,
-    categoryNumber: '12',
+    categoryNumber: '11',
     title: 'França no Século das Luzes: Iluminismo, Absolutismo e Crise do Antigo Regime (1715–1789)',
     category: 'Filosofia Política e Origens da Revolução',
     period: 'todos',

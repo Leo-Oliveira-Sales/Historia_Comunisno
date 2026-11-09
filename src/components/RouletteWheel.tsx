@@ -260,7 +260,7 @@ export const RouletteWheel: React.FC<RouletteWheelProps> = ({
   ] as const;
 
   return (
-    <div className="space-y-6 max-w-4xl mx-auto">
+    <div className="space-y-6 max-w-4xl mx-auto w-full overflow-hidden">
       {/* SELECTION INTERFACE: LISTA SUSPENSA (DROPDOWN) */}
       <div className="bg-[#151518] border border-stone-800 rounded-xl p-4 sm:p-5 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 shadow-xl">
         <div className="flex items-center gap-3">

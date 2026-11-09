@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({
   const navItems = [
     { 
       id: 'dossiers' as const, 
-      label: activeCollectionId === 'colecao-2' ? '10 Capítulos' : '20 Temas', 
+      label: activeCollectionId === 'colecao-2' ? '11 Capítulos' : '20 Temas', 
       icon: Layers 
     },
     { id: 'roulette' as const, label: 'Roleta de Curiosidades', icon: Compass },
@@ -96,9 +96,9 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <>
-      <div className="sticky top-0 z-40">
+      <div className="sticky top-0 z-40 w-full max-w-full overflow-hidden">
         {/* Top Archival Collection Switcher Ribbon */}
-        <div className="bg-[#0b0b0d] border-b border-stone-800/90 px-3 sm:px-6 lg:px-8 py-1.5 text-xs flex items-center justify-between gap-2 overflow-x-auto no-scrollbar">
+        <div className="bg-[#0b0b0d] border-b border-stone-800/90 px-3 sm:px-6 lg:px-8 py-1.5 text-xs flex items-center justify-between gap-2 overflow-x-auto no-scrollbar w-full max-w-full">
           <div className="flex items-center gap-1.5 sm:gap-2 text-stone-400 font-mono text-[11px] shrink-0">
             <Layers className="w-3.5 h-3.5 text-amber-500 shrink-0" />
             <span className="hidden sm:inline font-semibold text-stone-300">Coleções do Acervo:</span>
@@ -146,9 +146,9 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Main Sticky Header */}
-        <header className="bg-[#121214]/95 backdrop-blur border-b border-stone-800/80 px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4 transition-colors">
+        <header className="bg-[#121214]/95 backdrop-blur border-b border-stone-800/80 px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4 transition-colors w-full max-w-full overflow-hidden">
           {/* Zone 1: Brand Wordmark (Clean button without box or border) */}
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex items-center gap-2 shrink-0 min-w-0">
             <button
               onClick={() => onSelectTab('dossiers')}
               className="brand-btn nav-btn-clean text-sm sm:text-base md:text-lg font-display font-bold tracking-tight text-stone-100 hover:text-amber-400 transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 sm:gap-2 text-left min-h-[44px] border-0 bg-transparent shadow-none"
@@ -167,7 +167,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
         {/* Zone 2: Desktop nav links (Clean text links without boxes) */}
-        <nav className="hidden md:flex items-center gap-4 lg:gap-6 text-xs lg:text-sm font-medium text-stone-300">
+        <nav className="hidden xl:flex items-center gap-3 2xl:gap-5 text-xs lg:text-sm font-medium text-stone-300">
           {navItems.map((item) => {
             const isActive = currentTab === item.id;
             return (
@@ -288,24 +288,23 @@ export const Header: React.FC<HeaderProps> = ({
             )}
           </button>
 
+          {/* Menu Button for tablets and mobile */}
+          <button
+            onClick={() => setMobileMenuOpen(true)}
+            className="xl:hidden px-2.5 py-1.5 min-h-[44px] text-xs font-semibold bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/40 rounded-lg transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5"
+            aria-label="Abrir Menu de Navegação"
+            title="Menu de Navegação"
+          >
+            <Menu className="w-4 h-4 text-amber-400" />
+            <span className="font-mono text-amber-400 font-bold">Menu</span>
+          </button>
         </div>
       </header>
       </div>
 
-      {/* Mobile Floating Side Button for instant lateral menu access from anywhere */}
-      <button
-        onClick={() => setMobileMenuOpen(true)}
-        className="md:hidden fixed top-1/2 right-0 -translate-y-1/2 z-30 bg-amber-500 hover:bg-amber-400 active:scale-95 text-stone-950 font-bold px-2 py-3.5 rounded-l-xl shadow-2xl flex flex-col items-center justify-center gap-1 border-y border-l border-amber-300 text-[10px] font-mono uppercase tracking-wider transition-all"
-        title="Abrir Navegação Lateral"
-        aria-label="Abrir Navegação Lateral"
-      >
-        <Menu className="w-4 h-4 text-stone-950" />
-        <span className="[writing-mode:vertical-lr] rotate-180 font-mono tracking-widest text-[9px] font-black my-0.5">MENU</span>
-      </button>
-
       {/* Mobile Lateral Off-Canvas Sidebar Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 z-50 flex justify-end">
+        <div className="xl:hidden fixed inset-0 z-50 flex justify-end">
           {/* Dark Backdrop Overlay */}
           <div 
             className="fixed inset-0 bg-black/75 backdrop-blur-sm transition-opacity animate-in fade-in duration-200"

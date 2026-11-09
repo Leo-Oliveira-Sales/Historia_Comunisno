@@ -1612,6 +1612,90 @@ Nas décadas seguintes, a ferrovia e o barco a vapor unificaram mercados contine
     ]
   },
 
+  // =========================================================================
+  // TÓPICO 104: CORRENTES EMANCIPATÓRIAS E ANTIAUTORITÁRIAS (1800–1880)
+  // =========================================================================
+  104: {
+    topicId: 104,
+    title: 'A EMANCIPAÇÃO ENTRE A COOPERAÇÃO E A LIBERDADE',
+    subtitle: 'O socialismo utópico e o anarquismo diante dos problemas da sociedade industrial do século XIX',
+    authorCatedra: 'Cátedra de Teoria Social Crítica e Movimentos Emancipatórios · Ensaio Acadêmico',
+    estimatedReadingMinutes: 8,
+    wordCount: 580,
+    epigraph: {
+      text: 'A liberdade sem o socialismo é privilégio e injustiça; o socialismo sem a liberdade é escravidão e brutalidade.',
+      author: 'Mikhail Bakunin',
+      work: 'Federalismo, Socialismo e Antiteologismo (1867)'
+    },
+    narrativeOverview: `A consolidação da sociedade industrial europeia durante o século XIX produziu uma das mais importantes transformações da história moderna. A expansão da produção mecanizada, a urbanização e a generalização do trabalho assalariado modificaram as relações econômicas e sociais, mas também intensificaram conflitos relacionados à propriedade, à distribuição da riqueza e à autoridade política.
+
+O desenvolvimento do capitalismo industrial criou novas possibilidades de produção e crescimento econômico. Entretanto, a distribuição dos benefícios desse processo foi profundamente desigual. A precariedade das condições de trabalho, a concentração de recursos produtivos e a insegurança econômica estimularam o aparecimento de diferentes projetos de transformação social.`,
+    historicalDevelopment: `Entre as primeiras respostas intelectuais estavam as propostas de Saint-Simon e Fourier. Embora diferentes entre si, ambos acreditavam que a sociedade poderia ser reorganizada de maneira racional e cooperativa. Saint-Simon defendia a valorização da produção, da ciência e da capacidade administrativa. Fourier, por sua vez, considerava que a organização social deveria respeitar a diversidade das paixões humanas e transformar o trabalho em uma atividade atraente.
+
+Essas propostas demonstravam que a crítica à sociedade industrial não se limitava à denúncia da pobreza. Tratava-se também de questionar a própria organização das relações sociais.`,
+    institutionalAndStateMechanisms: `A contribuição de Proudhon introduziu outra dimensão nesse debate. Ao questionar a legitimidade da propriedade capitalista, o pensador francês procurou demonstrar que a concentração dos meios de produção permitia estabelecer relações de dependência entre proprietários e trabalhadores. Seu mutualismo buscava construir uma economia de reciprocidade, na qual associações e produtores independentes pudessem estabelecer relações menos hierárquicas.
+
+Bakunin aprofundou a crítica à autoridade política. Sua preocupação central era que a concentração do poder estatal pudesse sobreviver às revoluções e produzir uma nova estrutura de dominação. Em sua interpretação, uma revolução que substituísse a antiga classe dirigente por uma minoria de administradores políticos não realizaria plenamente a emancipação dos trabalhadores.`,
+    historiographicalDebate: `É nesse ponto que o pensamento anarquista apresentou uma divergência decisiva em relação ao marxismo. Enquanto Marx atribuía importância à organização política da classe trabalhadora e à transformação do poder estatal, Bakunin considerava que a utilização de uma estrutura estatal centralizada poderia comprometer a liberdade que a revolução pretendia conquistar.
+
+A divergência não deve ser reduzida a uma disputa pessoal entre dois intelectuais. Ela expressava um problema fundamental do pensamento socialista: seria possível utilizar o poder político concentrado para construir uma sociedade livre de dominação?
+
+A história posterior demonstraria a complexidade dessa questão, embora não autorize concluir que todas as experiências socialistas necessariamente conduziriam ao mesmo resultado.
+
+Também é necessário reconhecer os limites das primeiras correntes socialistas. Os projetos comunitários de Fourier enfrentaram dificuldades práticas, enquanto o pensamento de Saint-Simon apresentou tensões entre administração especializada e participação popular. Proudhon e Bakunin, por sua vez, não ofereceram soluções definitivas para todos os problemas de coordenação econômica, organização política e administração coletiva.
+
+Entretanto, essas limitações não diminuem sua importância histórica.
+
+O socialismo inicial contribuiu para o desenvolvimento de propostas cooperativas, experiências comunitárias e críticas à desigualdade econômica. O anarquismo acrescentou uma reflexão profunda sobre os perigos da centralização e da formação de novas elites políticas.`,
+    scholarlyQuotes: [
+      {
+        author: 'Pierre-Joseph Proudhon',
+        work: 'Qu\'est-ce que la propriété?',
+        year: '1840',
+        pageOrDoc: 'Capítulo I',
+        quote: 'Se eu tivesse que responder à seguinte pergunta: O que é a escravidão? e respondesse em uma só palavra: É o assassinato!, meu pensamento seria imediatamente compreendido. [...] Por que então a esta outra pergunta: O que é a propriedade? não posso responder da mesma forma: É o roubo!, sem ter a certeza de não ser compreendido?',
+        historicalAnalysis: 'Proudhon sintetiza a crítica radical ao direito exclusivo de apropriação dos frutos do trabalho alheio e estabelece as bases teóricas do mutualismo libertário.'
+      },
+      {
+        author: 'Mikhail Bakunin',
+        work: 'Estatismo e Anarquia',
+        year: '1873',
+        pageOrDoc: 'Seção V',
+        quote: 'Nenhum Estado, por mais democráticas que sejam suas formas, nem mesmo a república mais vermelha, popular apenas no sentido da mentira conhecida pelo nome de representação do povo, está em condições de dar ao povo o que ele precisa: a livre organização de seus próprios interesses de baixo para cima.',
+        historicalAnalysis: 'Bakunin formula a advertência contra a ilusão do Estado revolucionário popular transitório, sustentando que toda estrutura centralizada reproduz hierarquias burocráticas.'
+      }
+    ],
+    archivalCorpus: [
+      {
+        archiveName: 'International Institute of Social History (IISH / Amsterdã)',
+        fondCode: 'Mikhail Bakunin Papers (Fundo ARCH00043)',
+        description: 'Manuscritos originais, cartas à Internacional, rascunhos de Estatismo e Anarquia e atas das seções libertárias da AIT na Suíça e Itália.'
+      },
+      {
+        archiveName: 'Bibliothèque nationale de France (BnF / Paris)',
+        fondCode: 'Fonds Pierre-Joseph Proudhon (Département des Manuscrits)',
+        description: 'Cadernos manuscritos de notas sobre economia política, correspondências com socialistas de 1848 e rascunhos de Do Princípio Federativo.'
+      }
+    ],
+    concludingAssessment: `O legado dessas tradições pode ser compreendido a partir de uma tensão que permanece central na teoria política: a necessidade de construir instituições capazes de organizar a vida coletiva sem eliminar a autonomia dos indivíduos.
+
+A emancipação social, nesse sentido, não pode ser examinada apenas pela distribuição da riqueza. Ela também envolve a forma como o poder é exercido, como as decisões são tomadas e como os indivíduos participam das instituições que regulam suas vidas.
+
+O estudo de Saint-Simon, Fourier, Proudhon e Bakunin revela que o século XIX foi marcado por uma intensa experimentação intelectual. Antes da consolidação de grandes partidos socialistas e das experiências revolucionárias do século XX, diferentes pensadores já procuravam responder aos dilemas da sociedade industrial.
+
+Suas obras permanecem fundamentais para compreender a formação histórica do socialismo e do anarquismo, bem como os debates sobre liberdade, igualdade, propriedade, cooperação e autoridade.`,
+    bibliographicReferences: [
+      'BAKUNIN, Mikhail. Étatisme et anarchie. 1873.',
+      'BEECHER, Jonathan. Charles Fourier: The Visionary and His World. Berkeley: University of California Press, 1986.',
+      'JONES, Gareth Stedman. European Socialism from the 1790s to the 1890s. In: The Cambridge History of Modern European Thought. Cambridge: Cambridge University Press, 2019.',
+      'PICON, Antoine. Utopian Socialism and Social Science. In: The Cambridge History of Science. Cambridge: Cambridge University Press, 2008.',
+      'PROUDHON, Pierre-Joseph. Qu\'est-ce que la propriété? Paris, 1840.',
+      'SAINT-SIMON, Henri de. Nouveau Christianisme. Paris, 1825.',
+      'SHATZ, Marshall. Anarchism. In: The Oxford Handbook of the History of Political Philosophy. Oxford: Oxford University Press.',
+      'WOODCOCK, George. Anarchism: A History of Libertarian Ideas and Movements. Cleveland: World Publishing, 1962.'
+    ]
+  },
+
   112: {
     topicId: 112,
     title: 'O ILUMINISMO E A CRISE DA LEGITIMIDADE DO ANTIGO REGIME',

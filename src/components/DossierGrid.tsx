@@ -35,7 +35,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
           if (selectedBlock === '3-4' && !(t.id === 103 || t.id === 104)) return false;
           if (selectedBlock === '5-6' && !(t.id === 105 || t.id === 106)) return false;
           if (selectedBlock === '7-8' && !(t.id === 107 || t.id === 108)) return false;
-          if (selectedBlock === '9-10' && !(t.id === 109 || t.id === 110)) return false;
+          if (selectedBlock === '9-11' && !(t.id === 109 || t.id === 111 || t.id === 112)) return false;
         }
       } else {
         const matchesPeriod = selectedPeriod === 'todos' || t.period === selectedPeriod;
@@ -58,9 +58,9 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
   }, [topics, isIdeologias, selectedBlock, selectedPeriod, searchTerm]);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 w-full max-w-full overflow-hidden">
       {/* Search and Period Filter Ribbon */}
-      <div className="bg-[#17171b] border border-stone-800 rounded-xl p-3.5 sm:p-6 space-y-3 sm:space-y-4 shadow-lg">
+      <div className="bg-[#17171b] border border-stone-800 rounded-xl p-3.5 sm:p-6 space-y-3 sm:space-y-4 shadow-lg overflow-hidden w-full max-w-full">
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
           {/* Search Box */}
           <div className="relative flex-1">
@@ -69,7 +69,11 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
               type="text"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder="Pesquisar por tratado, expurgo, autor (ex: Molotov, Katyn, Gulag, Rapallo)..."
+              placeholder={
+                isIdeologias
+                  ? "Pesquisar por autor, conceito ou obra (ex: Adam Smith, Marx, Fourier, Iluminismo, Contrato Social)..."
+                  : "Pesquisar por tratado, expurgo, autor (ex: Molotov, Katyn, Gulag, Rapallo)..."
+              }
               className="w-full pl-10 pr-4 py-2.5 sm:py-2 bg-[#121215] border border-stone-700/80 rounded-lg text-xs sm:text-sm text-stone-100 placeholder:text-stone-500 focus:outline-none focus:border-amber-500 transition-colors min-h-[42px]"
             />
             {searchTerm && (
@@ -84,15 +88,15 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
         </div>
 
         {/* Filter Buttons / Segmented Controls with smooth touch scrolling */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs touch-pan-x no-scrollbar">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs touch-pan-x no-scrollbar scroll-smooth w-full max-w-full">
           {isIdeologias ? (
             [
-              { id: 'todos', label: 'Todos os 10 Capítulos' },
+              { id: 'todos', label: 'Todos os 11 Capítulos' },
               { id: '1-2', label: '1–2. Iluminismo & Liberalismo' },
               { id: '3-4', label: '3–4. Capitalismo & Socialismo' },
               { id: '5-6', label: '5–6. Marxismo & Comunismo' },
               { id: '7-8', label: '7–8. Fascismo & Nazismo' },
-              { id: '9-10', label: '9–10. Democracia & Síntese' },
+              { id: '9-11', label: '9–11. Democracia & Revoluções' },
             ].map((blk) => {
               const isActive = selectedBlock === blk.id;
               return (
@@ -102,7 +106,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
                     playTypewriterClack();
                     setSelectedBlock(blk.id);
                   }}
-                  className={`px-3 py-2 min-h-[38px] rounded-md font-mono text-xs transition-colors shrink-0 flex items-center justify-center ${
+                  className={`px-3 py-2 min-h-[38px] rounded-md font-mono text-xs whitespace-nowrap transition-colors shrink-0 flex items-center justify-center ${
                     isActive
                       ? 'bg-amber-500 text-stone-950 font-semibold shadow-sm'
                       : 'bg-stone-800/80 text-stone-400 hover:text-stone-200 hover:bg-stone-700/80'
@@ -223,7 +227,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
                 <div className="mt-3 py-1.5 px-2.5 bg-[#121215] border border-amber-900/40 rounded flex flex-wrap items-center justify-between gap-1.5 text-[11px] font-mono text-stone-400">
                   <span className="flex items-center gap-1.5 text-amber-400 font-medium">
                     <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                    <span>Padrão 7 Seções Canônicas</span>
+                    <span>{isIdeologias ? 'Dossiê Cátedra 40 Autores' : 'Padrão 7 Seções Canônicas'}</span>
                   </span>
                   <span className="text-emerald-400 font-mono text-[10px] bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-800/40 shrink-0">
                     Auditado
@@ -252,7 +256,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
                   className="px-3.5 py-2 min-h-[40px] bg-stone-800 hover:bg-stone-700 active:scale-95 text-stone-200 group-hover:text-amber-300 rounded-md text-xs font-semibold flex items-center gap-1.5 transition-all border border-stone-700/60 shrink-0 ml-auto"
                 >
                   <BookOpen className="w-3.5 h-3.5 text-amber-400" />
-                  <span>Abrir Dossiê</span>
+                  <span>{isIdeologias ? 'Abrir Capítulo' : 'Abrir Dossiê'}</span>
                 </button>
               </div>
             </div>

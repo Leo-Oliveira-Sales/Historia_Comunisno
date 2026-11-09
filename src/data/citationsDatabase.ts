@@ -699,8 +699,130 @@ export const TOPIC_CITATIONS_DATABASE: Record<number, TopicCitationsData> = {
     ],
     controversiasELimitacoesDasFontes: "CRITÉRIOS DE AUDITORIA DOCUMENTAL DO REGISTRO Nº 05: 1. Todas as citações de Marx, Engels, Gramsci, Adorno, Horkheimer e Kołakowski foram checadas nas respectivas edições acadêmicas de referência. 2. A historiografia de referência distingue rigorosamente o materialismo histórico clássico das formulações do marxismo ocidental, da teoria crítica e das revisões de Kołakowski. 3. Os estudos contemporâneos sobre enquadramento comunicacional (framing) e cognição foram citados com seus metadados científicos completos (autores, periódicos e datas de publicação)."
   },
+  104: {
+    title: "CITAÇÕES HISTÓRICAS E INTELECTUAIS — Socialismo utópico e anarquismo (1800–1880)",
+    citations: [
+      {
+        number: 1,
+        author: "Pierre-Joseph Proudhon",
+        category: "Ensaio Filosófico, Jurídico e Político (1840)",
+        quoteText: "A propriedade é um roubo.",
+        source: "PROUDHON, Pierre-Joseph. Qu'est-ce que la propriété? Ou recherches sur le principe du droit et du gouvernement. Paris: J.-F. Brocard, 1840.",
+        analise: "Contexto: formulação provocativa utilizada na crítica de Proudhon à propriedade como poder de apropriação e exploração. Interpretação: a frase não deve ser separada da discussão do autor sobre posse, propriedade, trabalho e justiça econômica."
+      },
+      {
+        number: 2,
+        author: "Charles Fourier",
+        category: "Tratado Filosófico e Social (1808)",
+        quoteText: "A organização social deveria permitir que as paixões humanas fossem integradas à cooperação, em vez de serem simplesmente reprimidas pelas instituições existentes.",
+        source: "FOURIER, Charles. Théorie des quatre mouvements et des destinées générales. Leipzig, 1808.",
+        analise: "Contexto: Fourier desenvolveu uma crítica à sociedade comercial e propôs comunidades organizadas em torno da atração passional."
+      },
+      {
+        number: 3,
+        author: "Henri de Saint-Simon",
+        category: "Ensaio Político, Moral e Religioso (1825)",
+        quoteText: "A organização social deveria estar orientada à melhoria das condições de vida das classes mais pobres.",
+        source: "SAINT-SIMON, Henri de. Nouveau Christianisme. Paris, 1825.",
+        analise: "Contexto: Saint-Simon relacionou a reforma social à fraternidade e à responsabilidade moral."
+      },
+      {
+        number: 4,
+        author: "Mikhail Bakunin",
+        category: "Tratado Político e Crítica do Estado (1873)",
+        quoteText: "A concentração do poder político em uma minoria que governa em nome dos trabalhadores pode produzir uma nova forma de dominação.",
+        source: "BAKUNIN, Mikhail. Gosudarstvennost' i anarkhiia. 1873.",
+        analise: "Contexto: crítica à centralização política e à possibilidade de uma nova elite dirigente após a revolução. Observação: a formulação acima é uma síntese do argumento, não uma citação literal."
+      },
+      {
+        number: 5,
+        author: "Friedrich Engels",
+        category: "Ensaio Teórico e Histórico (1880)",
+        quoteText: "Engels procurou distinguir os projetos dos primeiros socialistas de uma interpretação do socialismo baseada na análise histórica das relações de produção e das contradições de classe.",
+        source: "ENGELS, Friedrich. Socialisme utopique et socialisme scientifique. Paris, 1880.",
+        analise: "Contexto: a obra foi organizada a partir de capítulos do Anti-Dühring e publicada originalmente em francês em 1880."
+      },
+      {
+        number: 6,
+        author: "Karl Marx e Friedrich Engels",
+        category: "Manifesto Político e Histórico (1848)",
+        quoteText: "A história das sociedades humanas deve ser investigada considerando os conflitos sociais e as relações entre classes.",
+        source: "MARX, Karl; ENGELS, Friedrich. Manifesto of the Communist Party. London, 1848.",
+        analise: "Contexto: o manifesto apresenta uma interpretação histórica da sociedade capitalista e do desenvolvimento do movimento operário."
+      },
+      {
+        number: 7,
+        author: "William Godwin",
+        category: "Tratado de Filosofia Política (1793)",
+        quoteText: "A autoridade política e as instituições coercitivas deveriam ser submetidas à crítica racional.",
+        source: "GODWIN, William. An Enquiry Concerning Political Justice. London, 1793.",
+        analise: "Contexto: Godwin é considerado um importante precursor do pensamento anarquista moderno."
+      }
+    ],
+    syntheses: [
+      {
+        number: 1,
+        authorOrSchool: "1. Cooperação vs. Competição",
+        synthesisText: "A cooperação pode substituir a competição como princípio predominante de organização econômica?",
+        supportingReference: "Reflexão para estudo — projetos associativos e cooperativistas do século XIX."
+      },
+      {
+        number: 2,
+        authorOrSchool: "2. Propriedade Privada e Igualdade",
+        synthesisText: "A propriedade privada dos meios de produção é compatível com a igualdade social?",
+        supportingReference: "Reflexão para estudo — crítica à apropriação e exploração econômica."
+      },
+      {
+        number: 3,
+        authorOrSchool: "3. Centralização Estatal e Emancipação",
+        synthesisText: "A centralização estatal pode produzir emancipação?",
+        supportingReference: "Reflexão para estudo — debate sobre autoridade política e poder concentrado."
+      },
+      {
+        number: 4,
+        authorOrSchool: "4. Prevenção de Novas Elites Políticas",
+        synthesisText: "Como impedir que uma revolução produza uma nova elite política?",
+        supportingReference: "Reflexão para estudo — alertas libertários sobre a burocratização revolucionária."
+      },
+      {
+        number: 5,
+        authorOrSchool: "5. Liberdade e Condições Materiais",
+        synthesisText: "A liberdade individual depende de condições materiais de existência?",
+        supportingReference: "Reflexão para estudo — articulação entre autonomia individual e recursos sociais."
+      },
+      {
+        number: 6,
+        authorOrSchool: "6. Federalismo e Autonomia",
+        synthesisText: "O federalismo pode conciliar autonomia local e coordenação coletiva?",
+        supportingReference: "Reflexão para estudo — pacto federativo, mutualismo e descentralização."
+      },
+      {
+        number: 7,
+        authorOrSchool: "7. Organização do Trabalho",
+        synthesisText: "O trabalho deve ser organizado pela necessidade econômica ou pela realização humana?",
+        supportingReference: "Reflexão para estudo — emancipação do trabalho e inclinações passionais."
+      },
+      {
+        number: 8,
+        authorOrSchool: "8. Ordem sem Estado",
+        synthesisText: "Qual é a diferença entre uma sociedade sem Estado e uma sociedade sem organização?",
+        supportingReference: "Reflexão para estudo — auto-organização libertária versus anomia."
+      }
+    ],
+    methodologicalNote: "NOTA DE RIGOR ACADÊMICO: Para utilização em trabalhos acadêmicos, as citações diretas devem ser conferidas na edição efetivamente consultada. As sínteses conceituais desta aba não devem ser colocadas entre aspas nem atribuídas literalmente aos autores. A distinção entre citação direta, paráfrase e interpretação é indispensável para a integridade acadêmica.",
+    consolidatedReferences: [
+      "BAKUNIN, Mikhail. Gosudarstvennost' i anarkhiia. 1873.",
+      "ENGELS, Friedrich. Socialisme utopique et socialisme scientifique. Paris, 1880.",
+      "FOURIER, Charles. Théorie des quatre mouvements et des destinées générales. Leipzig, 1808.",
+      "GODWIN, William. An Enquiry Concerning Political Justice. London, 1793.",
+      "MARX, Karl; ENGELS, Friedrich. Manifesto of the Communist Party. London, 1848.",
+      "PROUDHON, Pierre-Joseph. Qu'est-ce que la propriedade? Ou recherches sur le principe du droit et du gouvernement. Paris: J.-F. Brocard, 1840.",
+      "SAINT-SIMON, Henri de. Nouveau Christianisme. Paris, 1825."
+    ],
+    controversiasELimitacoesDasFontes: "ORIENTAÇÃO: As citações acima foram selecionadas para representar conceitos centrais das correntes estudadas. As traduções são identificadas como traduções livres quando não se utiliza uma edição portuguesa específica. Não se atribuem páginas sem a identificação da edição consultada."
+  },
   112: {
-    title: "Citações Literais Verificadas, Sínteses e Fontes Documentais — Registro nº 12 (França no Século das Luzes)",
+    title: "Citações Literais Verificadas, Sínteses e Fontes Documentais — Registro nº 11 (França no Século das Luzes)",
     citations: [
       {
         number: 1,

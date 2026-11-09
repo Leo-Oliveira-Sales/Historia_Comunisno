@@ -1536,42 +1536,1189 @@ A Revolução Industrial não apenas modificou a maneira de produzir mercadorias
   },
 
   // =========================================================================
-  // CAPÍTULO 4 (TÓPICO 104): SOCIALISMO UTÓPICO E ANARQUISMO
+  // CAPÍTULO 4 (TÓPICO 104): CORRENTES EMANCIPATÓRIAS E ANTIAUTORITÁRIAS
   // =========================================================================
   104: {
     topicId: 104,
-    title: 'Socialismo Utópico e Anarquismo: Saint-Simon, Fourier, Proudhon e Bakunin',
-    subtitle: 'O despertar das utopias cooperativas, o mutualismo societário e a contestação absoluta da autoridade estatal',
+    title: 'Nº 04 — CORRENTES EMANCIPATÓRIAS E ANTIAUTORITÁRIAS',
+    subtitle: 'Socialismo Utópico e Anarquismo: Saint-Simon, Fourier, Proudhon e Bakunin (1800–1880)',
     authorCatedra: 'Cátedra de Teoria Social Crítica e Movimentos Emancipatórios',
-    introduction: 'Nas primeiras décadas do século XIX, quando o capitalismo fabril impunha a disciplina implacável da mais-valia e da pauperização urbana, despontaram as primeiras respostas intelectuais e societárias à tragédia operária. Antes que Karl Marx e Friedrich Engels reivindicassem o monopólio do "socialismo científico", uma rica constelação de pensadores formulou experimentos cooperativos arrojados e desferiu o primeiro grande ataque sistemático contra a santidade da propriedade privada e a legitimidade de qualquer dominação estatal.',
+    introduction: `RESUMO
+
+O século XIX foi marcado por profundas transformações econômicas, sociais e políticas associadas à Revolução Industrial, à consolidação do capitalismo, à expansão da sociedade burguesa e à reorganização das relações de trabalho. Nesse contexto, desenvolveram-se diferentes correntes de pensamento que procuraram responder às contradições da nova ordem social. Entre elas, destacaram-se o socialismo associado a Henri de Saint-Simon e Charles Fourier e o pensamento anarquista representado, em momentos distintos, por Pierre-Joseph Proudhon e Mikhail Bakunin.
+
+Embora frequentemente reunidos sob a categoria geral de socialismo pré-marxista, esses autores apresentaram projetos distintos de reorganização social. Saint-Simon defendeu uma sociedade organizada racionalmente em torno da produção e da capacidade industrial; Fourier elaborou um modelo comunitário baseado na associação livre, na diversidade das paixões humanas e na reorganização do trabalho; Proudhon desenvolveu uma crítica à propriedade e ao Estado, propondo relações econômicas mutualistas e estruturas federativas; Bakunin formulou uma crítica revolucionária à autoridade estatal, à centralização política e à possibilidade de uma nova dominação burocrática em nome do proletariado.
+
+O capítulo investiga a formação dessas correntes, seus fundamentos filosóficos, suas propostas institucionais e suas relações com o desenvolvimento do movimento operário. Analisa também suas diferenças em relação ao marxismo, especialmente no que diz respeito à organização política, à propriedade, à revolução e ao papel do Estado.
+
+Palavras-chave: socialismo utópico; anarquismo; Saint-Simon; Charles Fourier; Pierre-Joseph Proudhon; Mikhail Bakunin; mutualismo; federalismo; movimento operário.`,
     sections: [
       {
         number: '1',
-        title: 'O Socialismo dos Pioneiros: A Reorganização Moral e Cooperativa do Mundo',
-        content: 'Os primeiros socialistas do século XIX abordaram a crise social como um problema primordialmente ético e organizacional. O Conde de Saint-Simon propôs uma governança científica e industrial da sociedade administrada por cientistas e produtores no lugar de ociosos aristocratas e sacerdotes. Charles Fourier imaginou os Falanstérios — comunidades autossuficientes e hedonistas projetadas para permitir a livre manifestação das paixões humanas sem a coerção do matrimônio burguês ou do trabalho monótono. Na Grã-Bretanha, o industrial têxtil Robert Owen transformou sua fábrica em New Lanark num modelo de bem-estar com escolas infantis gratuitas, creches e redução da jornada de trabalho, inspirando o moderno movimento cooperativo internacional.'
+        title: 'CAPÍTULO 1 — A CRISE DA SOCIEDADE EUROPEIA E A EMERGÊNCIA DA QUESTÃO SOCIAL',
+        subsections: [
+          {
+            number: '1.1',
+            title: 'A transformação da ordem social europeia',
+            content: `Entre o final do século XVIII e o decorrer do século XIX, a Europa atravessou uma transformação estrutural de suas instituições econômicas, políticas e sociais.
+
+A Revolução Francesa de 1789 abalou as bases jurídicas e políticas do Antigo Regime, contribuindo para a difusão de princípios como cidadania, igualdade perante a lei, soberania nacional e direitos individuais. Paralelamente, a Revolução Industrial modificou profundamente a organização da produção, inicialmente na Grã-Bretanha e posteriormente em diferentes regiões europeias.
+
+A industrialização promoveu a expansão das fábricas, a mecanização da produção, o crescimento das cidades e a consolidação de novas relações de trabalho. A produção artesanal e as formas tradicionais de organização econômica foram progressivamente transformadas pela expansão do trabalho assalariado e pela concentração de capital.
+
+Essa transformação não ocorreu de maneira uniforme. A industrialização foi gradual, regionalmente desigual e acompanhada por diferentes formas de organização produtiva. Em algumas regiões, as antigas estruturas agrárias permaneceram importantes durante décadas, enquanto determinados centros urbanos se tornaram símbolos da nova sociedade industrial.
+
+O crescimento econômico, portanto, não significou automaticamente melhoria das condições de vida para todos os grupos sociais.
+
+A expansão das fábricas foi acompanhada por jornadas extensas, baixos salários, insegurança ocupacional, trabalho infantil e condições precárias de habitação. A urbanização acelerada também produziu problemas sanitários, concentração populacional e novas formas de desigualdade.
+
+A chamada questão social surgiu justamente da percepção de que a sociedade industrial produzia riqueza em escala crescente, mas distribuía de maneira profundamente desigual os benefícios dessa transformação.`
+          },
+          {
+            number: '1.2',
+            title: 'A formação do proletariado industrial',
+            content: `A industrialização contribuiu para a formação de uma classe de trabalhadores que dependia predominantemente da venda de sua força de trabalho para sobreviver.
+
+Essa população não surgiu de maneira homogênea. O proletariado industrial foi constituído por antigos artesãos, trabalhadores agrícolas, migrantes, trabalhadores domésticos e pessoas deslocadas pelas transformações econômicas.
+
+As condições de trabalho variavam entre setores e regiões. Entretanto, determinados problemas tornaram-se recorrentes:
+
+- jornadas de trabalho prolongadas;
+- salários insuficientes;
+- ausência de proteção social;
+- acidentes de trabalho;
+- exploração do trabalho infantil;
+- instabilidade do emprego;
+- dependência econômica dos trabalhadores em relação aos proprietários dos meios de produção.
+
+A nova realidade estimulou o desenvolvimento de associações operárias, sociedades de auxílio mútuo, cooperativas, movimentos de protesto e organizações políticas.
+
+O movimento dos trabalhadores, entretanto, não possuía inicialmente uma doutrina unificada. Suas primeiras manifestações reuniam reivindicações econômicas, tradições religiosas, republicanismo, radicalismo democrático, socialismo associativo e diferentes formas de contestação da ordem econômica.
+
+É nesse ambiente que devem ser compreendidos os primeiros socialistas.`
+          },
+          {
+            number: '1.3',
+            title: 'O significado histórico do socialismo pré-marxista',
+            content: `O termo socialismo adquirium circulação política durante as primeiras décadas do século XIX. Sua utilização estava associada à crítica do individualismo econômico, à defesa da cooperação e à busca de formas alternativas de organização da produção.
+
+Segundo Gareth Stedman Jones (2019), o socialismo europeu surgiu em meio às transformações intelectuais e políticas decorrentes da Revolução Francesa e das guerras napoleônicas. Saint-Simon, Fourier e Robert Owen foram posteriormente reconhecidos como figuras fundamentais dessa primeira tradição.
+
+É importante compreender que o chamado socialismo utópico não constituiu uma escola perfeitamente homogênea.
+
+Saint-Simon, Fourier e Owen apresentaram projetos diferentes. Suas ideias divergiam quanto à organização do trabalho, à propriedade, à administração econômica, à religião, à ciência e à participação dos trabalhadores.
+
+O elemento comum era a convicção de que a sociedade existente poderia ser reorganizada racionalmente, de modo a reduzir a miséria e estabelecer relações sociais mais cooperativas.
+
+A expressão socialismo utópico foi posteriormente popularizada por Friedrich Engels, que a utilizou para distinguir os projetos dos primeiros socialistas da concepção materialista da história desenvolvida por Marx e Engels.
+
+Essa classificação deve ser compreendida em seu contexto polêmico. Os primeiros socialistas não se definiam necessariamente como utópicos, e suas propostas não podem ser reduzidas a fantasias sem relação com os problemas concretos de sua época.
+
+Antoine Picon (2008) observa que o socialismo inicial também procurava constituir uma ciência da sociedade. Seus representantes acreditavam que o conhecimento das relações sociais permitiria elaborar instituições mais racionais e justas.`
+          }
+        ]
       },
       {
         number: '2',
-        title: 'Proudhon e a Invenção do Anarquismo Filosófico: "A Propriedade é um Roubo!"',
-        content: 'Em 1840, com a publicação de O que é a Propriedade?, Pierre-Joseph Proudhon foi o primeiro pensador a declarar-se orgulhosamente "anarquista", atribuindo ao termo um sentido rigorosamente positivo e filosófico: uma sociedade sem senhores nem governantes. Ao proclamar que "a propriedade é um roubo", Proudhon distinguia a posse individual do fruto do próprio trabalho (legítima e necessária à independência) do direito burguês de apropriação do trabalho alheio através de rendas e juros parasitários. Propôs o Mutualismo: uma rede federada de trocas igualitárias baseadas em bancos populares de crédito gratuito.'
+        title: 'CAPÍTULO 2 — HENRI DE SAINT-SIMON: INDÚSTRIA, CIÊNCIA E ORGANIZAÇÃO RACIONAL DA SOCIEDADE',
+        subsections: [
+          {
+            number: '2.1',
+            title: 'Contexto histórico e formação intelectual',
+            content: `Henri de Saint-Simon nasceu em 1760 e morreu em 1825. Viveu a crise do Antigo Regime, a Revolução Francesa, o período napoleônico e a reorganização política da Europa após 1815.
+
+Seu pensamento foi profundamente influenciado pelas transformações científicas e econômicas de seu tempo.
+
+Saint-Simon considerava que a sociedade europeia atravessava uma transição histórica. As antigas instituições aristocráticas e religiosas já não correspondiam plenamente às necessidades de uma sociedade cada vez mais industrializada.
+
+Para ele, a organização social deveria deixar de privilegiar grupos cuja posição dependia essencialmente de privilégios hereditários e passar a valorizar os indivíduos que contribuíam para a produção, a ciência e o desenvolvimento material.`
+          },
+          {
+            number: '2.2',
+            title: 'A sociedade industrial',
+            content: `A ideia central de Saint-Simon era que a sociedade moderna deveria ser organizada em torno da atividade produtiva.
+
+A indústria, em seu vocabulário, possuía significado amplo. Não se limitava às fábricas, abrangendo atividades agrícolas, comerciais, científicas, técnicas e produtivas.
+
+O autor considerava que industriais, trabalhadores, agricultores, comerciantes e cientistas desempenhavam funções essenciais para a manutenção da sociedade.
+
+Em contraste, criticava a permanência de estruturas aristocráticas e parasitárias que, em sua interpretação, consumiam recursos sem contribuir proporcionalmente para a produção coletiva.
+
+Essa oposição não deve ser interpretada como uma defesa simples da igualdade econômica. Saint-Simon imaginava uma sociedade organizada racionalmente, com funções diferenciadas e administração especializada.
+
+Sua concepção era fortemente marcada pela confiança na ciência, na técnica e no planejamento.`
+          },
+          {
+            number: '2.3',
+            title: 'A administração das coisas',
+            content: `Uma das ideias associadas à tradição saint-simoniana foi a substituição progressiva da política baseada na disputa entre grupos manipulados por uma administração racional da produção e dos interesses coletivos.
+
+A sociedade deveria ser conduzida por indivíduos com conhecimento técnico e capacidade de organizar a atividade econômica.
+
+Essa concepção antecipou debates posteriores sobre planejamento econômico, tecnocracia e administração científica.
+
+Entretanto, existe uma tensão importante no pensamento saint-simoniano: sua crítica aos privilégios aristocráticos coexistia com a defesa de uma organização social hierarquizada segundo funções e capacidades.
+
+A emancipação social, nesse modelo, não dependia necessariamente da eliminação de todas as hierarquias, mas da substituição das hierarquias consideradas improdutivas por uma organização voltada à utilidade coletiva.`
+          },
+          {
+            number: '2.4',
+            title: 'A dimensão moral e religiosa',
+            content: `Em sua obra tardia, especialmente em Nouveau Christianisme (1825), Saint-Simon atribuiu grande importância à dimensão moral da transformação social.
+
+A religião deveria contribuir para a melhoria das condições de vida das classes mais pobres.
+
+A ideia de fraternidade cristã era reinterpretada como um princípio de responsabilidade social.
+
+O desenvolvimento industrial, portanto, não deveria representar somente crescimento da produção. Deveria estar associado à melhoria material e moral da população.
+
+Essa dimensão demonstra que o pensamento de Saint-Simon não pode ser reduzido a uma defesa tecnocrática da indústria.`
+          },
+          {
+            number: '2.5',
+            title: 'O saint-simonismo',
+            content: `Após sua morte, suas ideias foram desenvolvidas por seguidores que constituíram o movimento saint-simoniano.
+
+Esse movimento adquiriu características próprias e, em determinados momentos, assumiu dimensões religiosas e organizacionais que não podem ser automaticamente atribuídas ao pensamento original de Saint-Simon.
+
+Os saint-simonianos defenderam projetos de modernização econômica, desenvolvimento de infraestrutura, expansão de redes de transporte e reorganização social.
+
+Sua influência alcançou debates sobre industrialização, planejamento, administração e reforma social.`
+          },
+          {
+            number: '2.6',
+            title: 'Avaliação histórica',
+            content: `A contribuição de Saint-Simon está na percepção de que a transformação da sociedade industrial exigia novas instituições econômicas e políticas.
+
+Sua crítica à aristocracia improdutiva, sua valorização do conhecimento científico e sua preocupação com as condições das classes trabalhadoras influenciaram diferentes tradições reformadoras.
+
+Sua limitação mais evidente está na confiança elevada na administração especializada e na possibilidade de solucionar conflitos sociais por meio de uma organização racional conduzida por elites técnicas.
+
+A questão da participação democrática e do controle popular sobre os administradores permanece problemática em seu projeto.`
+          }
+        ]
       },
       {
         number: '3',
-        title: 'Mikhail Bakunin e o Anarcocoletivismo Revolucionário',
-        content: 'De origem nobre russa, Mikhail Bakunin radicalizou o anarquismo ao conferir-lhe ímpeto corajoso de insurreição de massas. Para Bakunin, o Estado é a mais flagrante, cínica e completa negação da humanidade; ele não pode ser capturado, reformado ou utilizado como ferramenta de transição, pois o poder inevitavelmente corrompe mesmo o mais virtuoso dos revolucionários. Em Estatismo e Anarquia (1873), defendeu a destruição armada imediata do Estado e do capital pela ação direta espontânea de operários e camponeses empobrecidos, substituindo-os por comunas livres federadas.'
+        title: 'CAPÍTULO 3 — CHARLES FOURIER: PAIXÕES HUMANAS, COOPERAÇÃO E O PROJETO DOS FALANSTÉRIOS',
+        subsections: [
+          {
+            number: '3.1',
+            title: 'Vida e contexto intelectual',
+            content: `Charles Fourier nasceu em 1772 e morreu em 1837.
+
+Foi um dos pensadores mais originais do socialismo francês do início do século XIX. Desenvolveu uma crítica radical à sociedade comercial, à competição econômica e às instituições familiares e morais de seu tempo.
+
+Diferentemente de Saint-Simon, Fourier não acreditava que a organização industrial e o planejamento técnico fossem suficientes para construir uma sociedade harmoniosa.
+
+Seu projeto partia de uma interpretação particular da natureza humana.
+
+Para Fourier, os indivíduos possuíam diferentes paixões e inclinações. Uma sociedade adequada deveria organizar suas atividades de modo que essas disposições pudessem se expressar de maneira produtiva.`
+          },
+          {
+            number: '3.2',
+            title: 'Crítica à sociedade civilizada',
+            content: `Fourier utilizava a expressão civilização para identificar o estágio histórico da sociedade comercial de sua época.
+
+Sua crítica abrangia:
+
+- competição econômica;
+- pobreza;
+- desigualdade;
+- repressão das paixões;
+- hipocrisia moral;
+- casamento e relações familiares tradicionais;
+- organização desagradável e repetitiva do trabalho.
+
+Para Fourier, a sociedade existente produzia contradições entre as necessidades humanas e as instituições sociais.
+
+O trabalho, por exemplo, era frequentemente realizado sob coerção econômica e em condições pouco satisfatórias.
+
+Sua proposta consistia em reorganizar a sociedade para que o trabalho pudesse se tornar uma atividade mais atraente.`
+          },
+          {
+            number: '3.3',
+            title: 'A atração passional',
+            content: `Um conceito central de Fourier é a chamada atração passional.
+
+O autor considerava que as paixões humanas não deveriam ser simplesmente reprimidas. Deveriam ser compreendidas e organizadas de modo a favorecer a cooperação.
+
+A diversidade de interesses, preferências e inclinações poderia constituir uma força produtiva.
+
+Essa concepção era radicalmente diferente das interpretações que consideravam a competição individual como o principal mecanismo de organização econômica.
+
+Fourier imaginava que uma sociedade organizada adequadamente poderia transformar a diversidade humana em cooperação.`
+          },
+          {
+            number: '3.4',
+            title: 'O falanstério',
+            content: `A principal proposta institucional de Fourier foi o falanstério.
+
+O termo designava uma comunidade organizada na qual atividades agrícolas, industriais, domésticas e culturais seriam integradas.
+
+O falanstério deveria permitir que os indivíduos participassem de diferentes atividades, evitando a monotonia do trabalho e estimulando a associação voluntária.
+
+Sua organização previa:
+
+- atividades produtivas compartilhadas;
+- distribuição coletiva de determinadas funções;
+- diversidade ocupacional;
+- integração entre agricultura e indústria;
+- organização comunitária;
+- valorização das paixões individuais;
+- formas específicas de remuneração e participação nos resultados.
+
+Fourier não defendia simplesmente a abolição de toda propriedade individual. Seu projeto admitia diferentes formas de participação econômica, incluindo remuneração relacionada ao trabalho, ao capital e ao talento.
+
+Essa característica diferencia seu modelo de algumas interpretações posteriores do comunismo.`
+          },
+          {
+            number: '3.5',
+            title: 'Mulheres e emancipação',
+            content: `Fourier também desenvolveu críticas importantes à posição social das mulheres.
+
+Considerava que o grau de emancipação feminina constituía um indicador do desenvolvimento de uma sociedade.
+
+Sua crítica às estruturas matrimoniais tradicionais e às restrições impostas às mulheres foi particularmente significativa para a história do pensamento social.
+
+Entretanto, sua concepção das relações afetivas e sexuais também continha elementos próprios de seu sistema filosófico, que devem ser examinados historicamente, sem idealização.`
+          },
+          {
+            number: '3.6',
+            title: 'Experiências comunitárias',
+            content: `As ideias de Fourier inspiraram experiências comunitárias na Europa e nas Américas.
+
+Durante o século XIX, diferentes grupos tentaram estabelecer comunidades inspiradas no falanstério.
+
+Essas experiências enfrentaram dificuldades econômicas, organizacionais e sociais.
+
+A tentativa de transformar um modelo teórico em uma comunidade concreta exigia resolver problemas de financiamento, divisão do trabalho, liderança, disciplina e conflitos interpessoais.
+
+O fracasso de determinadas experiências não demonstra automaticamente a impossibilidade de toda organização cooperativa, mas evidencia a distância entre projeto teórico e implementação institucional.`
+          },
+          {
+            number: '3.7',
+            title: 'Avaliação histórica',
+            content: `Fourier contribuiu para a crítica das relações de trabalho e das instituições sociais tradicionais.
+
+Sua valorização da diversidade humana, sua crítica à opressão feminina e sua defesa da reorganização comunitária influenciaram debates posteriores sobre cooperação, educação, trabalho e emancipação.
+
+Sua limitação está na complexidade e no caráter altamente especulativo de algumas partes de seu sistema.
+
+Jonathan Beecher (2022) destaca que Fourier foi particularmente original ao elaborar uma concepção detalhada da sociedade desejável, atribuindo importância central às paixões humanas e à organização concreta da vida cotidiana.`
+          }
+        ]
       },
       {
         number: '4',
-        title: 'A Batalha Titânica na Primeira Internacional (1864–1872): Marx versus Bakunin',
-        content: 'A fundação da Associação Internacional dos Trabalhadores (AIT) em Londres, em 1864, reuniu lideranças cartistas, mutualistas proudhonianos, democratas radicais e comunistas marxianos. Rapidamente, o embate entre Karl Marx e Mikhail Bakunin polarizou a organização. Marx sustentava a necessidade inegociável da criação de partidos políticos operários autônomos para conquistar o poder político e instaurar a ditadura do proletariado. Bakunin retrucava que a ditadura do proletariado se transmutaria inevitavelmente na ditadura de uma nova casta burocrática de funcionários e cientistas vermelhos sobre o povo — uma advertência profética confirmada tragicamente pelas experiências autoritárias do século XX. O conflito culminou na expulsão de Bakunin no Congresso de Haia em 1872.'
+        title: 'CAPÍTULO 4 — O QUE É ANARQUISMO? FUNDAMENTOS FILOSÓFICOS E POLÍTICOS',
+        subsections: [
+          {
+            number: '4.1',
+            title: 'Definição conceitual',
+            content: `Anarquismo é uma tradição de pensamento político que critica a autoridade coercitiva e, especialmente, a organização estatal centralizada.
+
+O termo deriva do grego anarkhia, associado à ausência de governo ou de autoridade soberana.
+
+Entretanto, seria incorreto definir o anarquismo simplesmente como defesa da desordem.
+
+A maioria das correntes anarquistas desenvolveu propostas positivas de organização social, baseadas em associação voluntária, autogestão, federalismo, cooperação e autonomia.
+
+O problema central do anarquismo não é a existência de qualquer regra coletiva, mas a legitimidade das relações de dominação e das instituições que concentram poder sobre os indivíduos.
+
+Marshall Shatz observa que o anarquismo procura conciliar autonomia individual e justiça social sem recorrer à centralização estatal como instrumento fundamental de transformação.`
+          },
+          {
+            number: '4.2',
+            title: 'Antecedentes intelectuais',
+            content: `O anarquismo moderno não surgiu repentinamente com Proudhon.
+
+Suas origens intelectuais estão relacionadas a diferentes tradições:
+
+- Iluminismo;
+- radicalismo democrático;
+- críticas à monarquia absoluta;
+- pensamento republicano;
+- individualismo filosófico;
+- associações populares;
+- críticas religiosas e seculares à autoridade.
+
+William Godwin, em An Enquiry Concerning Political Justice (1793), desenvolveu uma crítica profunda às instituições políticas coercitivas e à dependência social.
+
+Embora sua posição não seja idêntica ao anarquismo posterior, Godwin é frequentemente considerado um importante precursor da tradição libertária.`
+          },
+          {
+            number: '4.3',
+            title: 'Princípios fundamentais',
+            content: `Apesar das diferenças entre autores e correntes, alguns elementos aparecem frequentemente no pensamento anarquista.
+
+Crítica ao Estado: o Estado é entendido como uma instituição que concentra autoridade coercitiva e tende a reproduzir relações de dominação.
+
+Autonomia: indivíduos e comunidades devem possuir capacidade de organizar seus próprios interesses.
+
+Associação voluntária: a cooperação deve resultar de acordos e organizações livres, não de imposição centralizada.
+
+Federalismo: comunidades e associações podem estabelecer relações de coordenação sem constituir um poder soberano absoluto.
+
+Ajuda mútua: a solidariedade e a cooperação são consideradas componentes importantes da organização social.
+
+Crítica às hierarquias: o anarquismo questiona estruturas de dominação econômica, política e social.
+
+Esses princípios não aparecem de maneira idêntica em todos os autores.`
+          },
+          {
+            number: '4.4',
+            title: 'Anarquismo e socialismo',
+            content: `O anarquismo desenvolveu-se em estreita relação com o movimento socialista.
+
+Ambos criticavam determinadas características da sociedade capitalista e defendiam formas de transformação das relações econômicas.
+
+Entretanto, divergiam profundamente quanto ao Estado.
+
+Enquanto algumas correntes socialistas defendiam a utilização do poder político para reorganizar a sociedade, os anarquistas argumentavam que a concentração de autoridade poderia reproduzir novas formas de dominação.
+
+Essa divergência tornou-se particularmente importante no movimento operário internacional.`
+          }
+        ]
       },
       {
         number: '5',
-        title: 'O Legado Libertário e a Recepção Acadêmica',
-        content: 'Historicamente estigmatizados pelos manuais soviéticos como "pequeno-burgueses sonhadores", os socialistas utópicos e os teóricos anarquistas foram resgatados pela historiografia moderna (Leszek Kołakowski, George Woodcock). Eles forneceram os fundamentos do municipalismo libertário, da crítica à centralização tecnocrática, das primeiras formulações ecofeministas e da autogestão operária que floresceu na Revolução Espanhola de 1936 e nos protestos de Maio de 1968.'
+        title: 'CAPÍTULO 5 — PIERRE-JOSEPH PROUDHON: PROPRIEDADE, MUTUALISMO E FEDERALISMO',
+        subsections: [
+          {
+            number: '5.1',
+            title: 'Formação e trajetória',
+            content: `Pierre-Joseph Proudhon nasceu em 1809, em Besançon, na França, e morreu em 1865.
+
+Sua trajetória intelectual foi marcada pela origem social modesta, pela experiência do trabalho e pelo envolvimento com o debate político francês.
+
+Em 1840, publicou sua obra mais conhecida:
+
+Qu'est-ce que la propriété? — O que é a propriedade?
+
+A publicação tornou Proudhon uma figura central do pensamento socialista francês.
+
+É frequentemente considerado um dos primeiros autores a se identificar com o termo anarquista em sentido político e positivo.`
+          },
+          {
+            number: '5.2',
+            title: 'A crítica à propriedade',
+            content: `A frase mais conhecida de Proudhon é:
+
+"A propriedade é um roubo."
+
+A formulação aparece em O que é a propriedade?, mas sua interpretação exige cuidado.
+
+Proudhon não estava simplesmente afirmando que todo uso individual de bens deveria ser proibido.
+
+Sua crítica dirigia-se principalmente à propriedade entendida como poder de apropriação e exploração que permitia ao proprietário extrair rendimentos do trabalho de outras pessoas.
+
+O autor procurava distinguir diferentes formas de posse e utilização dos bens.
+
+Sua crítica questionava a legitimidade de uma estrutura econômica na qual determinados indivíduos controlavam recursos produtivos e podiam obter rendimentos sem participação equivalente na atividade produtiva.`
+          },
+          {
+            number: '5.3',
+            title: 'Propriedade, posse e exploração',
+            content: `A distinção entre propriedade e posse é essencial para compreender Proudhon.
+
+A posse estava associada ao uso efetivo de um bem ou instrumento de trabalho.
+
+A propriedade, em sua crítica, representava um direito mais amplo de domínio, que poderia permitir a apropriação dos resultados do trabalho de outras pessoas.
+
+Essa distinção não foi formulada de maneira inteiramente estável ao longo de sua trajetória intelectual. O próprio Proudhon modificou e aprofundou suas reflexões sobre a propriedade.
+
+Por isso, não é adequado interpretar toda sua obra exclusivamente por meio da frase "a propriedade é um roubo".
+
+Em seus escritos posteriores, especialmente em Théorie de la propriété, publicado postumamente em 1866, sua posição tornou-se mais complexa, reconhecendo na propriedade também uma possível proteção contra a concentração excessiva do poder estatal.`
+          },
+          {
+            number: '5.4',
+            title: 'Mutualismo',
+            content: `O mutualismo foi uma das principais propostas econômicas associadas a Proudhon.
+
+Seu objetivo era construir relações econômicas baseadas na reciprocidade, na cooperação e na troca entre produtores independentes.
+
+Proudhon defendia formas de associação capazes de reduzir a dependência dos trabalhadores em relação aos grandes proprietários e aos intermediários financeiros.
+
+Entre os elementos associados ao mutualismo estavam:
+
+- associações de produtores;
+- crédito mútuo;
+- cooperativas;
+- contratos voluntários;
+- reciprocidade econômica;
+- descentralização produtiva.
+
+O mutualismo não corresponde simplesmente à economia estatal planejada.
+
+Proudhon defendia a transformação das relações econômicas por meio de instituições associativas e descentralizadas.`
+          },
+          {
+            number: '5.5',
+            title: 'Federalismo',
+            content: `Proudhon também desenvolveu uma teoria política baseada no federalismo.
+
+Em sua interpretação, a organização política deveria evitar a concentração excessiva de autoridade.
+
+As unidades locais e as associações deveriam conservar autonomia, estabelecendo pactos de coordenação.
+
+O federalismo permitiria articular interesses comuns sem eliminar a capacidade de decisão das comunidades.
+
+Essa proposta constituiu uma alternativa tanto ao Estado centralizado quanto às formas de organização social inteiramente desprovidas de coordenação.`
+          },
+          {
+            number: '5.6',
+            title: 'Proudhon e a democracia',
+            content: `Proudhon possuía uma relação crítica com a democracia representativa e com a centralização política.
+
+Não considerava suficiente substituir governantes monárquicos por representantes eleitos se as estruturas fundamentais de poder permanecessem concentradas.
+
+Sua crítica estava associada à defesa de formas mais diretas e federativas de organização.
+
+Entretanto, seu pensamento também apresentava contradições históricas importantes, especialmente em relação às mulheres e a determinadas questões sociais.
+
+Uma análise acadêmica deve reconhecer tanto suas contribuições quanto suas limitações.`
+          },
+          {
+            number: '5.7',
+            title: 'Avaliação histórica',
+            content: `Proudhon foi fundamental para o desenvolvimento do mutualismo, do federalismo libertário e de diferentes correntes do anarquismo.
+
+Sua crítica à propriedade capitalista e à concentração estatal influenciou movimentos cooperativistas, sindicalistas e libertários.
+
+Sua principal contribuição foi demonstrar que a crítica ao capitalismo poderia ser articulada a uma crítica da centralização política.`
+          }
+        ]
+      },
+      {
+        number: '6',
+        title: 'CAPÍTULO 6 — MIKHAIL BAKUNIN: REVOLUÇÃO SOCIAL, FEDERALISMO E CRÍTICA AO ESTADO',
+        subsections: [
+          {
+            number: '6.1',
+            title: 'Formação e trajetória',
+            content: `Mikhail Aleksandrovitch Bakunin nasceu em 1814, na Rússia, e morreu em 1876.
+
+Sua trajetória foi marcada pela participação nos movimentos revolucionários europeus, pela prisão, pelo exílio e pelo envolvimento com o movimento socialista internacional.
+
+Bakunin foi um dos principais formuladores do anarquismo revolucionário do século XIX.
+
+Diferentemente de Proudhon, que desenvolveu um sistema fortemente associado ao mutualismo e ao federalismo econômico, Bakunin enfatizou a revolução social e a destruição das estruturas políticas e econômicas consideradas opressoras.`
+          },
+          {
+            number: '6.2',
+            title: 'Crítica à autoridade estatal',
+            content: `Para Bakunin, o Estado representava uma estrutura de dominação organizada.
+
+Sua crítica não se limitava à monarquia ou ao Estado aristocrático.
+
+Ele também questionava a possibilidade de que um Estado dirigido por representantes dos trabalhadores pudesse preservar a liberdade.
+
+A questão central era que o exercício concentrado do poder produziria interesses próprios e tenderia a formar uma nova camada dirigente.
+
+A autoridade política, portanto, poderia sobreviver à transformação das relações de propriedade e produzir novas desigualdades.`
+          },
+          {
+            number: '6.3',
+            title: 'O problema da ditadura revolucionária',
+            content: `A divergência entre Bakunin e Marx tornou-se particularmente importante na Associação Internacional dos Trabalhadores.
+
+Marx defendia a organização política da classe trabalhadora e a conquista do poder político como parte do processo de transformação social.
+
+Bakunin temia que a utilização do Estado como instrumento revolucionário produzisse uma nova estrutura de dominação.
+
+Em Estatismo e Anarquia (1873), Bakunin desenvolveu uma crítica à concepção de Estado revolucionário associada a Marx.
+
+O argumento central era que uma administração centralizada em nome do proletariado poderia resultar no domínio de uma minoria de dirigentes, especialistas e burocratas.
+
+Essa crítica tornou-se uma das principais controvérsias da história do socialismo.
+
+É importante evitar uma simplificação: Marx não defendia simplesmente a manutenção do Estado burguês, e Bakunin não rejeitava qualquer forma de organização coletiva.
+
+A divergência dizia respeito à natureza do poder político, ao processo revolucionário e à possibilidade de utilizar instituições estatais para alcançar uma sociedade emancipada.`
+          },
+          {
+            number: '6.4',
+            title: 'Federalismo e organização de baixo para cima',
+            content: `Bakunin defendia uma sociedade organizada por meio de associações livres e federações.
+
+As comunidades deveriam conservar autonomia e estabelecer acordos de coordenação.
+
+A organização social deveria surgir de baixo para cima, a partir da associação entre trabalhadores e comunidades.
+
+O federalismo era, portanto, uma alternativa à centralização política.
+
+Essa concepção não significava ausência de organização, mas uma estrutura política diferente, baseada na autonomia das unidades associadas.`
+          },
+          {
+            number: '6.5',
+            title: 'Coletivismo',
+            content: `Bakunin defendia o coletivismo econômico.
+
+Os meios de produção deveriam deixar de funcionar como instrumentos de exploração privada, sendo organizados coletivamente pelos trabalhadores.
+
+Entretanto, seu coletivismo não deve ser confundido automaticamente com o comunismo posterior.
+
+Em linhas gerais, Bakunin admitia formas de remuneração associadas ao trabalho realizado, embora defendesse a propriedade coletiva dos instrumentos de produção.
+
+Essa posição diferenciava seu pensamento de determinadas concepções comunistas que defendiam a distribuição segundo as necessidades.`
+          },
+          {
+            number: '6.6',
+            title: 'Ateísmo, religião e autoridade',
+            content: `Bakunin também desenvolveu uma crítica à autoridade religiosa.
+
+Em Deus e o Estado, obra publicada postumamente em 1882, argumentou que a autoridade religiosa poderia legitimar relações de submissão.
+
+Sua crítica articulava religião, Estado e hierarquia.
+
+Para Bakunin, a emancipação humana exigia a superação das estruturas que submetiam a consciência e a ação dos indivíduos a autoridades externas.
+
+Sua posição estava vinculada ao materialismo e ao ateísmo militante.`
+          },
+          {
+            number: '6.7',
+            title: 'Revolução social',
+            content: `Bakunin acreditava que a transformação social não deveria depender exclusivamente da atuação de partidos ou de elites intelectuais.
+
+A emancipação deveria ser realizada pelos próprios trabalhadores.
+
+Sua concepção revolucionária atribuía importância às organizações populares, às associações e às iniciativas autônomas.
+
+Entretanto, sua teoria também apresentava tensões em relação à organização revolucionária, à coordenação e à atuação de grupos militantes.
+
+A ideia de uma organização revolucionária informal e clandestina, presente em alguns de seus escritos, gerou debates sobre a relação entre princípios antiautoritários e estruturas internas de direção.`
+          },
+          {
+            number: '6.8',
+            title: 'Avaliação histórica',
+            content: `Bakunin tornou-se uma das figuras fundamentais do anarquismo revolucionário.
+
+Sua crítica ao Estado, à centralização e à formação de novas elites políticas influenciou movimentos anarquistas, sindicalistas e libertários.
+
+Sua contribuição mais duradoura está na formulação de um problema que atravessaria a história do socialismo: como impedir que uma revolução destinada a emancipar os trabalhadores produza uma nova estrutura de dominação?`
+          }
+        ]
+      },
+      {
+        number: '7',
+        title: 'CAPÍTULO 7 — MARXISMO E ANARQUISMO: CONVERGÊNCIAS E RUPTURAS',
+        subsections: [
+          {
+            number: '7.1',
+            title: 'Um campo comum de contestação',
+            content: `Marxistas e anarquistas desenvolveram críticas à sociedade capitalista e defenderam a transformação das relações econômicas.
+
+Ambos identificaram problemas relacionados à exploração do trabalho, à concentração de riqueza e à desigualdade social.
+
+Entretanto, suas diferenças eram profundas.
+
+O principal ponto de divergência envolvia a questão do poder político.`
+          },
+          {
+            number: '7.2',
+            title: 'O Estado e a transformação social',
+            content: `Marx e Engels consideravam que a classe trabalhadora precisava desenvolver organização política para enfrentar a classe dominante.
+
+A conquista do poder político seria parte de um processo histórico de transformação das relações sociais.
+
+Bakunin, por sua vez, argumentava que a concentração do poder estatal poderia produzir uma nova classe dominante.
+
+A divergência não era meramente estratégica. Envolvia concepções distintas sobre a natureza do poder, da autoridade e da emancipação.`
+          },
+          {
+            number: '7.3',
+            title: 'Organização política',
+            content: `O marxismo atribuiu importância à organização política da classe trabalhadora, à formação de partidos e à intervenção na luta política.
+
+As correntes anarquistas enfatizaram associações autônomas, federações, sindicatos e formas descentralizadas de organização.
+
+Entretanto, não se deve transformar essa distinção em uma oposição absoluta.
+
+Houve correntes marxistas descentralizadoras e correntes anarquistas com organizações bastante estruturadas.`
+          },
+          {
+            number: '7.4',
+            title: 'A Associação Internacional dos Trabalhadores',
+            content: `A Associação Internacional dos Trabalhadores, fundada em 1864, constituiu um espaço fundamental para a organização internacional do movimento operário.
+
+A organização reuniu trabalhadores, socialistas, sindicalistas, republicanos e diferentes correntes políticas.
+
+As divergências entre Marx e Bakunin intensificaram-se durante os anos seguintes.
+
+Em 1872, no Congresso de Haia, Bakunin e seus aliados foram expulsos da Internacional.
+
+A disputa contribuiu para a divisão do movimento socialista internacional.
+
+O conflito expressava divergências sobre a organização da Internacional, a participação política, a autoridade do Conselho Geral e a estratégia revolucionária.
+
+A ruptura não deve ser explicada exclusivamente por diferenças pessoais. Tratava-se de uma disputa política e teórica sobre os caminhos da emancipação social.`
+          }
+        ]
+      },
+      {
+        number: '8',
+        title: 'CAPÍTULO 8 — A COMUNA DE PARIS E O DEBATE SOBRE A REVOLUÇÃO',
+        subsections: [
+          {
+            number: '8.1',
+            title: 'O contexto de 1871',
+            content: `A Comuna de Paris foi estabelecida em março de 1871, após a derrota francesa na Guerra Franco-Prussiana e a crise política que atingiu a França.
+
+O movimento revolucionário parisiense constituiu uma experiência histórica de autogoverno popular.
+
+A Comuna desenvolveu medidas políticas e sociais que foram interpretadas de maneiras distintas por socialistas, republicanos, anarquistas e marxistas.`
+          },
+          {
+            number: '8.2',
+            title: 'A interpretação marxista',
+            content: `Marx analisou a Comuna como uma experiência fundamental da luta dos trabalhadores pelo poder político.
+
+Em A Guerra Civil na França (1871), interpretou suas instituições como uma forma política que poderia permitir a emancipação da classe trabalhadora.
+
+A Comuna demonstraria, em sua interpretação, que a classe trabalhadora não poderia simplesmente assumir a máquina estatal existente sem transformá-la.`
+          },
+          {
+            number: '8.3',
+            title: 'A interpretação anarquista',
+            content: `Bakunin também valorizou a Comuna, especialmente por seu caráter descentralizado e pela iniciativa popular.
+
+Para a tradição anarquista, a experiência parisiense demonstraria a possibilidade de organização social baseada na autonomia das comunas e na federação.
+
+As interpretações marxista e anarquista não eram idênticas, embora ambas reconhecessem a importância histórica do acontecimento.`
+          },
+          {
+            number: '8.4',
+            title: 'Limites e derrotas',
+            content: `A Comuna foi derrotada em maio de 1871 pelas forças do governo francês.
+
+Sua repressão demonstrou os limites militares e políticos de uma experiência revolucionária isolada diante de um Estado nacional organizado.
+
+A derrota também produziu consequências profundas para o movimento operário europeu.
+
+A experiência passou a ocupar lugar central nos debates sobre revolução, democracia, organização popular e poder político.`
+          }
+        ]
+      },
+      {
+        number: '9',
+        title: 'CAPÍTULO 9 — O SOCIALISMO UTÓPICO E A CRÍTICA DE MARX E ENGELS',
+        subsections: [
+          {
+            number: '9.1',
+            title: 'A formulação da crítica',
+            content: `Marx e Engels reconheceram a importância histórica dos primeiros socialistas, mas consideravam que seus projetos possuíam limitações teóricas.
+
+Na interpretação marxista, Saint-Simon, Fourier e Owen identificaram problemas reais da sociedade capitalista, mas procuraram construir modelos alternativos sem desenvolver uma explicação histórica suficientemente estruturada das relações de classe e das contradições do capitalismo.
+
+Engels sistematizou essa crítica em Do Socialismo Utópico ao Socialismo Científico, publicado originalmente em francês em 1880.`
+          },
+          {
+            number: '9.2',
+            title: 'O significado de utopia',
+            content: `O termo utopia não deve ser entendido apenas como fantasia.
+
+No debate socialista do século XIX, passou a designar projetos de transformação social elaborados a partir de modelos ideais de organização.
+
+A crítica marxista sustentava que a transformação social não poderia depender apenas da apresentação de um modelo ideal.
+
+Seria necessário compreender as condições históricas, econômicas e sociais que tornariam possível a transformação.`
+          },
+          {
+            number: '9.3',
+            title: 'As contribuições dos primeiros socialistas',
+            content: `Apesar das críticas marxistas, os primeiros socialistas desenvolveram contribuições importantes:
+
+- crítica à pobreza e à desigualdade;
+- defesa da cooperação;
+- experimentação comunitária;
+- preocupação com a organização do trabalho;
+- crítica à competição econômica;
+- defesa de reformas sociais;
+- valorização da educação;
+- questionamento das relações tradicionais entre os sexos.
+
+O socialismo posterior não surgiu em um vazio intelectual. Desenvolveu-se em diálogo e confronto com essas experiências anteriores.`
+          },
+          {
+            number: '9.4',
+            title: 'Limites da interpretação marxista',
+            content: `A classificação de socialismo utópico também deve ser examinada criticamente.
+
+Quando applied de maneira rígida, pode produzir uma interpretação teleológica, segundo a qual toda experiência anterior ao marxismo teria sido apenas uma etapa incompleta de uma evolução que culminaria no socialismo científico.
+
+Essa leitura tende a reduzir a diversidade intelectual do socialismo inicial.
+
+A historiografia contemporânea permite recuperar a originalidade dos projetos de Saint-Simon, Fourier e Owen, sem ignorar suas limitações.`
+          }
+        ]
+      },
+      {
+        number: '10',
+        title: 'CAPÍTULO 10 — LEGADO E INFLUÊNCIA DAS CORRENTES EMANCIPATÓRIAS',
+        subsections: [
+          {
+            number: '10.1',
+            title: 'Influência sobre o movimento operário',
+            content: `As correntes socialistas e anarquistas contribuíram para a formação de organizações de trabalhadores, associações cooperativas e movimentos de contestação social.
+
+Suas ideias circularam por diferentes países e foram reinterpretadas de acordo com condições nacionais específicas.
+
+O movimento operário não foi resultado exclusivo de uma única doutrina.
+
+Sua formação envolveu experiências locais, tradições religiosas, associações profissionais, sindicalismo, republicanismo e diferentes correntes socialistas.`
+          },
+          {
+            number: '10.2',
+            title: 'Cooperativismo e mutualismo',
+            content: `As experiências cooperativas e mutualistas demonstraram que a crítica ao capitalismo podia produzir instituições alternativas de organização econômica.
+
+Embora não tenham eliminado a economia capitalista, contribuíram para a formação de práticas associativas que continuaram a existir nos séculos seguintes.`
+          },
+          {
+            number: '10.3',
+            title: 'Federalismo e descentralização',
+            content: `As propostas de Proudhon e Bakunin influenciaram diferentes debates sobre descentralização política, autonomia local e organização federativa.
+
+O federalismo libertário constituiu uma alternativa às formas centralizadas de organização estatal.`
+          },
+          {
+            number: '10.4',
+            title: 'Crítica à burocracia e ao poder',
+            content: `A crítica anarquista à formação de novas elites políticas permanece um dos elementos mais relevantes de sua tradição.
+
+A questão de saber se uma organização revolucionária pode preservar seus princípios emancipatórios depois de conquistar o poder constitui um problema histórico e político de grande alcance.
+
+Essa discussão ultrapassou o século XIX e influenciou debates posteriores sobre burocracia, autoritarismo, democracia e socialismo.`
+          },
+          {
+            number: '10.5',
+            title: 'Limites históricos',
+            content: `As correntes estudadas também enfrentaram dificuldades concretas.
+
+Entre elas:
+
+- limitações de financiamento das experiências comunitárias;
+- conflitos internos;
+- dificuldades de coordenação;
+- divergências sobre liderança e organização;
+- repressão estatal;
+- fragilidade de determinadas experiências locais;
+- dificuldades de transformar projetos teóricos em instituições duradouras.
+
+A análise dessas limitações não invalida automaticamente as propostas, mas permite compreender suas condições históricas de desenvolvimento.`
+          }
+        ]
       }
     ],
-    conclusion: 'A linhagem do socialismo utópico e do anarquismo preservou na história moderna o princípio vital de que a emancipação humana não se resume à mera substituição dos proprietários privados por uma burocracia governamental onipotente. A verdadeira justiça social só se realiza na preservação intransigente da liberdade concreta dos indivíduos e de suas comunidades autônomas.',
+    conclusion: `CONCLUSÃO GERAL
+
+O socialismo utópico e o anarquismo constituíram duas importantes tradições de contestação da sociedade europeia do século XIX.
+
+Ambos surgiram em um contexto de transformação econômica, expansão industrial, crescimento das desigualdades e reorganização das relações de trabalho.
+
+Entretanto, suas propostas não foram homogêneas.
+
+Saint-Simon procurou organizar a sociedade industrial a partir da ciência, da produção e da administração racional.
+
+Fourier imaginou uma sociedade associativa na qual as paixões humanas e a diversidade dos indivíduos seriam integradas à organização do trabalho.
+
+Proudhon desenvolveu uma crítica à propriedade e ao Estado, defendendo o mutualismo e o federalismo.
+
+Bakunin formulou uma crítica revolucionária à autoridade estatal e à centralização política, argumentando que a emancipação dos trabalhadores não poderia depender da formação de uma nova classe dirigente.
+
+As divergências entre esses autores revelam que o socialismo do século XIX não constituiu uma doutrina única, mas um campo de debates sobre a liberdade, a igualdade, a propriedade, a organização econômica e o poder político.
+
+A importância histórica dessas correntes reside não apenas em seus projetos concretos, mas também nos problemas que formularam.
+
+Como organizar uma sociedade economicamente justa? Como conciliar liberdade individual e cooperação? Como impedir a concentração do poder? Como transformar as relações econômicas sem produzir novas formas de dominação?
+
+Essas questões continuam presentes na história do pensamento político.
+
+O estudo das correntes emancipatórias e antiautoritárias permite compreender que a formação do socialismo moderno foi marcada por debates, experiências, divergências e projetos alternativos que antecederam e acompanharam o desenvolvimento do marxismo.`,
+    bibliographicReferences: [
+      'BAKUNIN, Mikhail. Étatisme et anarchie. 1873.',
+      'BAKUNIN, Mikhail. God and the State. Obra publicada postumamente em 1882.',
+      'FOURIER, Charles. Théorie des quatre mouvements et des destinées générales. Leipzig, 1808.',
+      'FOURIER, Charles. Le Nouveau Monde industriel et sociétaire. Paris, 1829.',
+      'GODWIN, William. An Enquiry Concerning Political Justice. London, 1793.',
+      'MARX, Karl. The Civil War in France. 1871.',
+      'MARX, Karl; ENGELS, Friedrich. Manifesto of the Communist Party. London, 1848.',
+      'PROUDHON, Pierre-Joseph. Qu\'est-ce que la propriété? Ou recherches sur le principe du droit et du gouvernement. Paris: J.-F. Brocard, 1840.',
+      'PROUDHON, Pierre-Joseph. Système des contradictions économiques, ou Philosophie de la misère. Paris, 1846.',
+      'PROUDHON, Pierre-Joseph. Du principe fédératif et de la necessidade de reconstituer le parti de la révolution. Paris, 1863.',
+      'SAINT-SIMON, Henri de. L\'Industrie. Paris, 1816–1818.',
+      'SAINT-SIMON, Henri de. Du système industriel. Paris, 1821.',
+      'SAINT-SIMON, Henri de. Nouveau Christianisme. Paris, 1825.',
+      'ENGELS, Friedrich. Socialism: Utopian and Scientific. Publicação original em francês, 1880.',
+      'AVINERI, Shlomo. The Social and Political Thought of Karl Marx. Cambridge: Cambridge University Press, 1968.',
+      'BEECHER, Jonathan. Charles Fourier: The Visionary and His World. Berkeley: University of California Press, 1986.',
+      'BEECHER, Jonathan. Charles Fourier and Fourierism. In: VAN DER LINDEN, Marcel (ed.). The Cambridge History of Socialism. Cambridge: Cambridge University Press, 2022.',
+      'FANNING, Bryan. Three Roads to the Welfare State: Liberalism, Social Democracy and Christian Democracy. Bristol: Policy Press, 2021.',
+      'JENNINGS, Jeremy. Saint-Simon and Saint-Simonism. In: VAN DER LINDEN, Marcel (ed.). The Cambridge History of Socialism. Cambridge: Cambridge University Press, 2022.',
+      'JONES, Gareth Stedman. European Socialism from the 1790s to the 1890s. In: BRECKMAN, Warren; GORDON, Peter E. (eds.). The Cambridge History of Modern European Thought. Cambridge: Cambridge University Press, 2019, p. 196–231.',
+      'KINNA, Ruth. Anarchism: A Beginner\'s Guide. Oxford: Oneworld, 2005.',
+      'LEIER, James Mark. Bakunin: The Creative Passion. New York: St. Martin\'s Press, 2006.',
+      'MARSHALL, Peter. Demanding the Impossible: A History of Anarchism. London: HarperCollins, 1992.',
+      'PICON, Antoine. Utopian Socialism and Social Science. In: PORTER, Theodore M.; ROSS, Dorothy (eds.). The Cambridge History of Science. Cambridge: Cambridge University Press, 2008.',
+      'SHATZ, Marshall. Anarchism. In: The Oxford Handbook of the History of Political Philosophy. Oxford: Oxford University Press.',
+      'WOODCOCK, George. Anarchism: A History of Libertarian Ideas and Movements. Cleveland: World Publishing, 1962.',
+      'HOBSBAWM, Eric. Os Trabalhadores: Estudos sobre a História do Operariado. Rio de Janeiro: Paz e Terra, 1981.',
+      'KOŁAKOWSKI, Leszek. Main Currents of Marxism. Vol. 1: The Founders. Oxford: Oxford University Press, 1978.',
+      'STEDMAN JONES, Gareth. Karl Marx: Greatness and Illusion. Cambridge: Harvard University Press, 2016.',
+      'VAN DER LINDEN, Marcel (ed.). The Cambridge History of Socialism. Cambridge: Cambridge University Press, 2022.'
+    ]
+  },
+
+  // =========================================================================
+  // CAPÍTULO 5 (TÓPICO 105): MATERIALISMO DIALÉTICO E CRÍTICA DA ECONOMIA POLÍTICA
+  // =========================================================================
+  105: {
+    topicId: 105,
+    title: 'Nº 05 — MATERIALISMO DIALÉTICO E CRÍTICA DA ECONOMIA POLÍTICA',
+    subtitle: 'Marx e Engels: a formação do materialismo histórico e do socialismo científico (1843–1883)',
+    authorCatedra: 'Cátedra de Teoria Marxista, Epistemologia Histórica e Filosofia Política',
+    introduction: `A tentativa de explicar a sociedade a partir de suas condições materiais
+
+Karl Marx e Friedrich Engels desenvolveram, durante o século XIX, uma das interpretações mais influentes da história, da sociedade e da economia.
+
+Sua produção intelectual procurou responder a uma questão fundamental: por que as sociedades se transformam, como surgem os conflitos entre grupos sociais e quais são as condições materiais que sustentam as instituições políticas e culturais?
+
+O ponto de partida de Marx e Engels foi a crítica às interpretações idealistas da história, especialmente à tradição filosófica alemã associada a Hegel e aos jovens hegelianos.
+
+Em vez de explicar a história prioritariamente pelo desenvolvimento das ideias, da religião ou da consciência, Marx e Engels procuraram investigar como os seres humanos produzem sua existência, organizam o trabalho, estabelecem relações de propriedade e desenvolvem instituições.
+
+A partir dessa perspectiva, a economia deixa de ser entendida como apenas uma atividade entre outras e passa a ocupar posição central na explicação das estruturas sociais.
+
+A formulação materialista tornou-se uma das bases do socialismo científico e influenciou movimentos revolucionários, partidos políticos, sindicatos, universidades e diferentes correntes intelectuais ao longo dos séculos XIX e XX.
+
+Entretanto, o pensamento de Marx não permaneceu restrito à economia. Sua análise da mercadoria, do dinheiro, da ideologia e da sociedade capitalista também produziu uma teoria sobre as formas pelas quais os seres humanos compreendem e interpretam sua própria realidade.
+
+É justamente nessa passagem — da crítica da economia política para a crítica da cultura e da consciência — que se encontra um dos desenvolvimentos mais importantes da tradição marxista.`,
+    sections: [
+      {
+        number: '1',
+        title: 'O contexto intelectual do século XIX',
+        content: `Marx e Engels viveram em um período marcado por profundas transformações.
+
+A Europa atravessava:
+
+- industrialização;
+- urbanização;
+- crescimento da burguesia;
+- formação do proletariado industrial;
+- conflitos entre monarquias e movimentos liberais;
+- expansão das ideias socialistas;
+- revoluções políticas;
+- desenvolvimento das ciências naturais;
+- transformações na filosofia e na economia política.
+
+A Revolução Industrial havia modificado as relações de produção.
+
+A sociedade europeia já não podia ser explicada exclusivamente pelas antigas estruturas aristocráticas e agrárias.
+
+A burguesia industrial e comercial havia adquirido grande poder econômico e político, enquanto o crescimento das fábricas ampliava a quantidade de trabalhadores assalariados.
+
+Nesse contexto, surgiram diferentes tentativas de interpretar a nova sociedade.
+
+Adam Smith e David Ricardo haviam desenvolvido importantes teorias sobre produção, valor, salários e distribuição da riqueza.
+
+Os socialistas utópicos, como Robert Owen, Charles Fourier e Henri de Saint-Simon, criticavam as desigualdades sociais e propunham diferentes modelos de reorganização da sociedade.
+
+A filosofia alemã, especialmente Hegel, oferecia uma interpretação da realidade baseada na historicidade, nas contradições e no desenvolvimento dialético.
+
+Marx e Engels procuraram integrar e transformar elementos dessas tradições.`
+      },
+      {
+        number: '2',
+        title: 'A influência de Hegel e a dialética',
+        content: `Georg Wilhelm Friedrich Hegel foi um dos filósofos mais influentes do pensamento alemão.
+
+Sua filosofia entendia a realidade como um processo histórico de desenvolvimento, marcado por contradições e transformações.
+
+A dialética hegeliana não deve ser reduzida à fórmula escolar de tese, antítese e síntese. Essa simplificação não representa adequadamente a complexidade de seu método.
+
+Para Hegel, a realidade não era estática. As instituições, as formas de consciência e as estruturas sociais deveriam ser compreendidas em seu desenvolvimento histórico.
+
+Marx aproveitou essa dimensão histórica e contraditória da filosofia hegeliana, mas criticou seu idealismo.
+
+Para Marx, a história não poderia ser explicada prioritariamente pelo desenvolvimento do Espírito ou das ideias.
+
+Era necessário investigar as condições concretas de existência dos seres humanos.
+
+A dialética foi, assim, reinterpretada a partir de uma concepção materialista.`
+      },
+      {
+        number: '3',
+        title: 'Feuerbach e a crítica ao idealismo',
+        content: `Ludwig Feuerbach exerceu influência importante sobre o jovem Marx.
+
+Feuerbach criticava a religião e argumentava que os seres humanos projetavam características humanas em uma entidade divina.
+
+Em sua interpretação, a religião poderia ser compreendida a partir da própria condição humana.
+
+Marx considerou importante essa crítica, mas avaliou que Feuerbach permanecia excessivamente contemplativo.
+
+Não bastava explicar a religião como projeção humana. Era necessário investigar as condições sociais que produziam determinadas formas de consciência religiosa.
+
+Marx deslocou o problema da crítica filosófica para a investigação da sociedade e da história.`
+      },
+      {
+        number: '4',
+        title: 'Os Manuscritos Econômico-Filosóficos de 1844',
+        content: `Nos Manuscritos Econômico-Filosóficos, Marx desenvolveu uma crítica às relações de trabalho e à propriedade privada.
+
+Um dos conceitos centrais é o de alienação.
+
+Alienação, nesse contexto, descreve uma situação na qual o trabalhador se encontra separado do produto de seu trabalho, do controle sobre o processo produtivo e de determinadas possibilidades de desenvolvimento de sua própria atividade humana.
+
+Marx identificou diferentes dimensões da alienação:
+
+1. separação entre trabalhador e produto;
+2. perda de controle sobre o processo de trabalho;
+3. transformação da atividade produtiva em atividade externa e imposta;
+4. distanciamento das possibilidades de realização humana;
+5. relações sociais nas quais os indivíduos se confrontam como forças estranhas.
+
+É importante observar que os Manuscritos de 1844 representam uma etapa inicial da produção intelectual de Marx.
+
+O conceito de alienação posteriormente se relacionaria com sua análise mais desenvolvida das mercadorias, do valor e do capital.`
+      },
+      {
+        number: '5',
+        title: 'A Ideologia Alemã e a formação do materialismo histórico',
+        content: `Entre 1845 e 1846, Marx e Engels elaboraram os manuscritos posteriormente conhecidos como A Ideologia Alemã.
+
+A obra representa um momento fundamental na construção do materialismo histórico.
+
+A questão central era superar explicações que atribuíam à consciência, às ideias ou à religião uma autonomia absoluta diante das condições concretas da sociedade.
+
+Marx e Engels propuseram começar a investigação histórica pelos seres humanos reais, suas atividades, suas necessidades e as condições materiais nas quais vivem.
+
+A produção da existência passa a ocupar posição fundamental.
+
+Os indivíduos precisam produzir alimentos, roupas, habitações e outros meios de subsistência.
+
+Para isso, estabelecem relações de produção, formas de propriedade e estruturas de cooperação e conflito.
+
+Essas relações influenciam as instituições políticas e as formas de consciência.
+
+A famosa formulação sobre as ideias dominantes
+
+Marx e Engels afirmaram:
+
+"As ideias da classe dominante são, em cada época, as ideias dominantes."
+
+A passagem está no trecho de A Ideologia Alemã dedicado à relação entre a classe dominante e as ideias dominantes.
+
+O argumento é que a classe que controla os meios de produção material também dispõe de condições privilegiadas para influenciar a produção e a distribuição das ideias.
+
+A formulação apresenta uma interpretação materialista da ideologia.
+
+A cultura, as instituições e as ideias não são compreendidas como elementos completamente independentes das relações sociais.
+
+Entretanto, essa passagem não deve ser interpretada como se todos os indivíduos pensassem exatamente da mesma maneira ou como se uma classe conseguisse controlar integralmente todas as ideias existentes.
+
+O argumento de Marx e Engels diz respeito à relação estrutural entre poder material e poder intelectual.`
+      },
+      {
+        number: '6',
+        title: 'Infraestrutura e superestrutura',
+        content: `Uma das formulações mais conhecidas do materialismo histórico aparece no prefácio de 1859 à Contribuição à Crítica da Economia Política.
+
+Marx descreve a estrutura econômica da sociedade como fundamento sobre o qual se desenvolvem determinadas formas jurídicas, políticas e ideológicas.
+
+Essa formulação ficou conhecida por meio da distinção entre infraestrutura e superestrutura.
+
+Infraestrutura
+
+A infraestrutura corresponde à organização material da produção.
+
+Inclui:
+
+- forças produtivas;
+- instrumentos de trabalho;
+- tecnologia;
+- conhecimento produtivo;
+- relações de produção;
+- propriedade dos meios de produção;
+- organização econômica.
+
+Superestrutura
+
+A superestrutura corresponde às instituições e formas sociais relacionadas à organização da sociedade.
+
+Inclui:
+
+- Estado;
+- direito;
+- instituições políticas;
+- religião;
+- filosofia;
+- ideologias;
+- formas de consciência;
+- instituições culturais.
+
+Na interpretação materialista, a estrutura econômica condiciona o desenvolvimento das instituições e das formas de consciência.
+
+O problema do determinismo
+
+Uma interpretação simplificada poderia afirmar que a economia determina mecanicamente todos os aspectos da vida social.
+
+Entretanto, o próprio desenvolvimento posterior da tradição marxista demonstrou que essa formulação exigia maior elaboração.
+
+Fatores políticos, culturais, religiosos e institucionais podem possuir relativa autonomia e influenciar a própria dinâmica econômica.
+
+Friedrich Engels, em cartas escritas nas últimas décadas do século XIX, procurou esclarecer que o fator econômico é determinante em última instância, mas que os elementos políticos, jurídicos e ideológicos também exercem influência sobre o desenvolvimento histórico.
+
+Essa discussão se tornaria central para os marxistas do século XX.`
+      },
+      {
+        number: '7',
+        title: 'O Manifesto do Partido Comunista de 1848',
+        content: `Em 1848, Marx e Engels publicaram o Manifesto do Partido Comunista.
+
+O documento foi produzido em um contexto de agitação política e revoluções na Europa.
+
+Sua tese central é que a história das sociedades existentes até então pode ser compreendida a partir dos conflitos entre classes.
+
+O texto analisa a burguesia como uma classe revolucionária em relação à antiga sociedade feudal.
+
+A burguesia teria destruído relações tradicionais de produção e criado um mercado mundial.
+
+Ao mesmo tempo, teria produzido o proletariado industrial, cuja existência estaria associada à expansão do capitalismo.
+
+O Manifesto apresenta uma interpretação histórica e política do desenvolvimento capitalista.
+
+Também defende a organização política dos trabalhadores e a superação da sociedade baseada na propriedade privada dos meios de produção.
+
+O documento deve ser compreendido simultaneamente como interpretação histórica e manifesto político.`
+      },
+      {
+        number: '8',
+        title: 'A crítica da economia política',
+        content: `A partir da década de 1850, Marx aprofundou seus estudos sobre economia política.
+
+Sua investigação concentrou-se em autores como Smith e Ricardo.
+
+Marx procurou compreender as categorias fundamentais do capitalismo:
+
+- mercadoria;
+- valor;
+- dinheiro;
+- capital;
+- salário;
+- lucro;
+- mais-valia;
+- acumulação;
+- concorrência;
+- crise.
+
+Seu objetivo não era simplesmente apresentar uma crítica moral à desigualdade.
+
+Ele procurava identificar os mecanismos internos de funcionamento da sociedade capitalista.
+
+Em sua interpretação, o capitalismo era um sistema histórico de relações sociais, e não uma organização econômica eterna ou natural.`
+      },
+      {
+        number: '9',
+        title: 'O Capital e o fetichismo da mercadoria',
+        content: `O primeiro volume de O Capital foi publicado em 1867.
+
+A obra começa com a análise da mercadoria.
+
+Para Marx, a mercadoria possui valor de uso e valor.
+
+O valor de uso está relacionado à capacidade de satisfazer necessidades humanas.
+
+O valor, em sua teoria, relaciona-se ao trabalho socialmente necessário para produzir a mercadoria.
+
+Um dos conceitos mais importantes do primeiro capítulo é o fetichismo da mercadoria.
+
+O fetichismo ocorre quando relações sociais entre produtores aparecem como se fossem relações naturais entre coisas.
+
+O preço, o dinheiro e as mercadorias passam a parecer possuir características próprias e independentes das relações humanas que os produziram.
+
+O conceito não significa simplesmente que consumidores gostam excessivamente de produtos.
+
+É uma crítica à forma como as relações sociais se apresentam na sociedade capitalista.
+
+A mercadoria parece possuir uma existência autônoma, enquanto as relações de trabalho e produção que a sustentam ficam obscurecidas.`
+      },
+      {
+        number: '10',
+        title: 'A mais-valia e a exploração do trabalho',
+        content: `Marx procurou explicar como o capital obtém lucro a partir da utilização da força de trabalho.
+
+O trabalhador vende sua força de trabalho ao capitalista em troca de salário.
+
+Durante a jornada, entretanto, o trabalhador pode produzir um valor superior ao equivalente ao valor de sua força de trabalho.
+
+A diferença constitui a mais-valia.
+
+Exemplo didático:
+
+Imagine que o valor produzido por um trabalhador durante uma jornada corresponda a R$ 300, enquanto o valor equivalente à reprodução de sua força de trabalho corresponda a R$ 120.
+
+Na construção teórica marxista, a diferença de R$ 180 representa a mais-valia.
+
+Esse exemplo é apenas ilustrativo. Não deve ser confundido com um cálculo direto do lucro contábil de uma empresa real.
+
+A teoria da mais-valia procura explicar a origem do excedente apropriado pelo capital no processo produtivo.`
+      },
+      {
+        number: '11',
+        title: 'Materialismo dialético e materialismo histórico',
+        content: `Os conceitos são frequentemente utilizados como se fossem sinônimos, mas é importante distingui-los.
+
+Materialismo histórico: método de interpretação da história que investiga as condições materiais de produção e reprodução da vida social.
+
+Materialismo dialético: expressão associada à interpretação materialista dos processos da realidade e de suas contradições, especialmente em desenvolvimentos posteriores da tradição marxista.
+
+A expressão materialismo dialético tornou-se particularmente importante na sistematização do marxismo por Engels e por autores posteriores.
+
+É importante evitar projetar sobre todos os escritos de Marx uma doutrina filosófica perfeitamente sistematizada que teria permanecido idêntica desde 1844 até 1883.
+
+A obra de Marx passou por transformações, amadurecimento conceitual e diferentes etapas de elaboração.`
+      },
+      {
+        number: '12',
+        title: 'A morte de Marx e o legado intelectual',
+        content: `Karl Marx morreu em Londres, em 14 de março de 1883.
+
+Friedrich Engels assumiu papel fundamental na organização e publicação de manuscritos deixados pelo amigo.
+
+Entre outras tarefas, Engels participou da preparação dos volumes II e III de O Capital, publicados em 1885 e 1894.
+
+A partir de então, o marxismo desenvolveu-se como tradição intelectual e movimento político internacional.
+
+Sua influência alcançou:
+
+- partidos socialistas;
+- movimentos sindicais;
+- revoluções;
+- organizações comunistas;
+- universidades;
+- historiografia;
+- sociologia;
+- filosofia;
+- estudos culturais.
+
+Entretanto, não existiu uma única interpretação do marxismo.
+
+As diferenças entre correntes revolucionárias, reformistas, ortodoxas, revisionistas e críticas produziram debates que atravessaram os séculos XIX e XX.`
+      }
+    ],
+    conclusion: `Marx e Engels desenvolveram uma interpretação da sociedade baseada na centralidade das condições materiais de existência.
+
+A economia, a propriedade e as relações de produção passaram a constituir elementos fundamentais para explicar as instituições políticas e as formas de consciência.
+
+Entretanto, o próprio marxismo enfrentaria um problema teórico: como explicar sociedades nas quais as instituições culturais, religiosas, políticas e comunicacionais pareciam possuir capacidade de conservar a ordem social mesmo diante de crises econômicas profundas?
+
+Essa questão seria desenvolvida de maneira particularmente importante por Antonio Gramsci e pela Escola de Frankfurt.
+
+A passagem do materialismo histórico clássico para as teorias da hegemonia e da crítica cultural constitui uma das grandes transformações intelectuais do marxismo no século XX.`,
     bibliographicReferences: [
       'AVINERI, Shlomo. The Social and Political Thought of Karl Marx. Cambridge: Cambridge University Press, 1968.',
       'BAKUNIN, Mikhail. Estatismo e Anarquia. São Paulo: Imaginário, 2003.',
@@ -1772,7 +2919,7 @@ A Revolução Industrial não apenas modificou a maneira de produzir mercadorias
   },
 
   // =========================================================================
-  // CAPÍTULO 12 (TÓPICO 112): FRANÇA NO SÉCULO DAS LUZES
+  // CAPÍTULO 11 (TÓPICO 112): FRANÇA NO SÉCULO DAS LUZES
   // =========================================================================
   112: {
     topicId: 112,

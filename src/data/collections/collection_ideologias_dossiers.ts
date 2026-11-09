@@ -879,25 +879,297 @@ A luta de classes forçou o Estado liberal a violar seus próprios dogmas de nã
 - SMITH, Adam. *A Riqueza das Nações*. São Paulo: Martins Fontes, 2003 [1776].
 - THOMPSON, E. P. *A Formação da Classe Operária Inglesa*. Rio de Janeiro: Paz e Terra, 1987. 3 v.`,
 
-  104: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
-# DOSSIÊ ACADÊMICO Nº 04: SOCIALISMO UTÓPICO E ANARQUISMO
+  104: `DOSSIÊ ACADÊMICO DE PESQUISA
 
-**Eixo Temático:** Falanstérios, Mutualismo, Ação Direta e Antiautoritarismo (1800–1880)
-**Especialistas de Referência:** Leszek Kołakowski, Gareth Stedman Jones, Eric Hobsbawm, Shlomo Avineri, David McLellan
+Correntes Emancipatórias e Antiautoritárias: Socialismo Utópico e Anarquismo (1800–1880)
+
+1. IDENTIFICAÇÃO DO OBJETO DE PESQUISA
+
+Tema: formação histórica do socialismo utópico e do anarquismo no século XIX.
+
+Recorte cronológico: 1800–1880.
+
+Recorte geográfico: principalmente França, Rússia e espaços de circulação internacional do movimento operário europeu.
+
+Autores centrais:
+
+- Henri de Saint-Simon;
+- Charles Fourier;
+- Pierre-Joseph Proudhon;
+- Mikhail Bakunin.
+
+Autores complementares:
+
+- William Godwin;
+- Robert Owen;
+- Karl Marx;
+- Friedrich Engels;
+- James Guillaume.
+
+Área de conhecimento: História das Ideias Políticas, História Social, História do Trabalho e Teoria Política.
 
 ---
 
-## 1. IDENTIFICAÇÃO E PROBLEMA HISTÓRICO
-Quais foram as primeiras propostas comunitárias contra a desumanização fabril e por que o anarquismo recusou categoricamente a utilização do Estado como instrumento de libertação?
+2. PROBLEMA DE PESQUISA
 
-## 2. OS PIONEIROS DO SOCIALISMO
-- **Saint-Simon:** O governo dos cientistas e produtores industriais em substituição aos parasitas cortesãos.
-- **Charles Fourier:** Os Falanstérios e a harmonia das paixões humanas sem a coerção do trabalho monótono.
-- **Robert Owen:** O cooperativismo de New Lanark e a demonstração empírica de que a redução da jornada e a educação pública aumentam a produtividade fabril.
+Como as correntes socialistas iniciais e o pensamento anarquista formularam alternativas à sociedade industrial capitalista durante o século XIX, e de que maneira suas propostas divergiram quanto à propriedade, à organização do trabalho, à liberdade individual e ao papel do Estado?
 
-## 3. A DOUTRINA ANARQUISTA CLÁSSICA
-- **Pierre-Joseph Proudhon (1840):** O que é a Propriedade? — A propriedade sem trabalho como espoliação parasitária; o mutualismo e o crédito popular gratuito.
-- **Mikhail Bakunin (1873):** Estatismo e Anarquia — A denúncia profética de que o "socialismo de Estado" marxiano se converteria na ditadura de uma burocracia privilegiada armada sobre o povo.`,
+A investigação procura compreender como diferentes pensadores interpretaram as transformações econômicas e sociais de seu tempo e quais soluções propuseram para os problemas da desigualdade e da concentração de poder.
+
+---
+
+3. HIPÓTESE CENTRAL
+
+O socialismo utópico e o anarquismo constituíram tradições distintas, mas relacionadas, de contestação à sociedade industrial.
+
+O primeiro concentrou-se especialmente na elaboração de modelos cooperativos de reorganização social, enquanto o segundo desenvolveu uma crítica mais sistemática à autoridade coercitiva e à centralização estatal.
+
+Suas divergências demonstram que o socialismo do século XIX foi um campo plural, marcado por disputas sobre os meios e os objetivos da emancipação social.
+
+---
+
+4. OBJETIVOS
+
+4.1. Objetivo geral
+
+Investigar a formação histórica e intelectual do socialismo utópico e do anarquismo entre 1800 e 1880, identificando suas principais propostas, diferenças e contribuições para o pensamento político moderno.
+
+4.2. Objetivos específicos
+
+1. Contextualizar a emergência da questão social na sociedade industrial.
+2. Analisar as ideias de Saint-Simon.
+3. Investigar a proposta comunitária de Fourier.
+4. Examinar a crítica de Proudhon à propriedade.
+5. Compreender o mutualismo e o federalismo proudhonianos.
+6. Investigar a crítica de Bakunin ao Estado.
+7. Analisar a divergência entre marxistas e anarquistas.
+8. Compreender a importância da Associação Internacional dos Trabalhadores.
+9. Examinar a influência da Comuna de Paris.
+10. Avaliar o legado histórico das correntes emancipatórias.
+
+---
+
+5. JUSTIFICATIVA HISTORIOGRÁFICA
+
+O estudo dessas correntes é fundamental para compreender a formação do socialismo moderno.
+
+Durante muito tempo, parte da tradição marxista apresentou os primeiros socialistas como representantes de um estágio teórico superado pelo socialismo científico.
+
+Essa classificação, systematizada por Engels, influenciou profundamente a interpretação histórica do socialismo.
+
+Entretanto, a historiografia contemporânea tem recuperado a complexidade dos projetos de Saint-Simon, Fourier e Owen, destacando suas contribuições para o desenvolvimento das ciências sociais, da economia política e das experiências cooperativas.
+
+No caso do anarquismo, a historiografia também procura superar interpretações que o identificam exclusivamente com violência, desordem ou ausência de organização.
+
+O anarquismo desenvolveu propostas próprias de organização econômica e política, incluindo mutualismo, coletivismo, federalismo e associação voluntária.
+
+O trabalho deve, portanto, compreender essas correntes em seu contexto histórico, sem transformá-las em versões incompletas de doutrinas posteriores.
+
+---
+
+6. REFERENCIAL TEÓRICO E AUTORES ESPECIALISTAS
+
+6.1. Gareth Stedman Jones
+
+Referência importante para a história do socialismo europeu.
+
+Sua investigação situa o aparecimento do socialismo nas transformações intelectuais e políticas ocorridas entre a Revolução Francesa e o século XIX.
+
+Obra recomendada:
+
+JONES, Gareth Stedman. European Socialism from the 1790s to the 1890s. In: The Cambridge History of Modern European Thought. Cambridge University Press, 2019.
+
+6.2. Jonathan Beecher
+
+Um dos principais especialistas contemporâneos em Charles Fourier.
+
+Sua biografia intelectual permite compreender o pensamento de Fourier em relação ao contexto social, cultural e político francês.
+
+Obra recomendada:
+
+BEECHER, Jonathan. Charles Fourier: The Visionary and His World. Berkeley: University of California Press, 1986.
+
+6.3. Jeremy Jennings
+
+Especialista em história do pensamento político e socialismo francês.
+
+Seu estudo sobre Saint-Simon e o saint-simonismo permite compreender a formação da tradição associada ao pensamento industrialista.
+
+Referência:
+
+JENNINGS, Jeremy. Saint-Simon and Saint-Simonism. In: VAN DER LINDEN, Marcel (ed.). The Cambridge History of Socialism. Cambridge University Press, 2022.
+
+6.4. Antoine Picon
+
+Pesquisador da história da ciência e da arquitetura, com estudo importante sobre as relações entre socialismo utópico e ciência social.
+
+Referência:
+
+PICON, Antoine. Utopian Socialism and Social Science. In: The Cambridge History of Science. Cambridge University Press, 2008.
+
+6.5. James Mark Leier
+
+Autor de uma biografia acadêmica de Bakunin baseada em pesquisa histórica e documental.
+
+Obra recomendada:
+
+LEIER, James Mark. Bakunin: The Creative Passion. New York: St. Martin's Press, 2006.
+
+6.6. Peter Marshall
+
+Autor de uma ampla história do pensamento anarquista.
+
+Sua obra apresenta diferentes tradições, autores e movimentos associados ao anarquismo.
+
+Obra recomendada:
+
+MARSHALL, Peter. Demanding the Impossible: A History of Anarchism. London: HarperCollins, 1992.
+
+6.7. George Woodcock
+
+Autor de uma das sínteses clássicas da história do anarquismo.
+
+Obra recomendada:
+
+WOODCOCK, George. Anarchism: A History of Libertarian Ideas and Movements. Cleveland: World Publishing, 1962.
+
+6.8. Marshall Shatz
+
+Especialista em história do pensamento político russo e anarquismo.
+
+Seu capítulo sobre anarquismo apresenta uma visão conceitual e histórica das principais correntes.
+
+Referência:
+
+SHATZ, Marshall. Anarchism. In: The Oxford Handbook of the History of Political Philosophy. Oxford University Press.
+
+---
+
+7. METODOLOGIA
+
+A pesquisa utiliza abordagem qualitativa e histórico-comparativa.
+
+A investigação será desenvolvida em quatro etapas.
+
+Primeira etapa — contextualização histórica
+
+Análise das transformações econômicas e sociais associadas à Revolução Industrial e à formação do proletariado.
+
+Segunda etapa — análise das fontes primárias
+
+Leitura das obras de Saint-Simon, Fourier, Proudhon e Bakunin.
+
+Terceira etapa — comparação conceitual
+
+Comparação das concepções de propriedade, Estado, liberdade, trabalho, associação e emancipação.
+
+Quarta etapa — interpretação historiográfica
+
+Confronto entre as interpretações dos próprios autores e os estudos acadêmicos posteriores.
+
+---
+
+8. MATRIZ COMPARATIVA DE PESQUISA
+
+Categoria| Saint-Simon| Fourier| Proudhon| Bakunin
+Sociedade| Industrial e produtiva| Associativa e harmônica| Mutualista e federativa| Coletivista e federalista
+Economia| Administração racional da produção| Associação comunitária| Mutualismo| Coletivismo
+Estado| Administração especializada| Reorganização institucional| Crítica à centralização| Crítica radical ao Estado
+Trabalho| Produção e utilidade social| Atividade atraente| Cooperação entre produtores| Organização coletiva
+Propriedade| Reorganização conforme a função social| Participação associativa| Crítica à propriedade como domínio explorador| Propriedade coletiva dos meios de produção
+Emancipação| Organização racional| Harmonia passional| Reciprocidade| Revolução social e autonomia
+
+Nota: a matriz apresenta tendências gerais e não substitui a análise das obras individuais.
+
+---
+
+9. QUESTÕES PARA INVESTIGAÇÃO AVANÇADA
+
+1. Em que medida a industrialização foi responsável pelo surgimento do socialismo?
+2. Saint-Simon defendia uma sociedade igualitária ou uma nova hierarquia produtiva?
+3. O projeto de Fourier pode ser considerado economicamente viável?
+4. Qual é a diferença entre a crítica de Proudhon à propriedade e a crítica marxista?
+5. O mutualismo constitui uma alternativa ao capitalismo ou uma forma de reorganização das trocas?
+6. Por que Bakunin considerava perigosa a centralização estatal?
+7. A crítica anarquista à burocracia foi historicamente confirmada em determinadas experiências políticas?
+8. Quais eram as diferenças entre o coletivismo de Bakunin e o comunismo marxista?
+9. A Comuna de Paris representou uma experiência anarquista, marxista ou uma combinação de diferentes tradições?
+10. A classificação de Engels sobre o socialismo utópico é suficiente para compreender a diversidade dos primeiros socialistas?
+11. Por que marxistas e anarquistas romperam durante a Primeira Internacional?
+12. Como o federalismo poderia conciliar autonomia e coordenação econômica?
+13. Quais limitações práticas foram encontradas nas experiências comunitárias inspiradas por Fourier?
+14. Qual foi a contribuição do anarquismo para o desenvolvimento do sindicalismo?
+15. Em que medida as propostas de descentralização continuam relevantes para a teoria política?
+
+---
+
+10. DOCUMENTOS ESSENCIAIS PARA A PESQUISA
+
+Documento| Autor| Ano| Importância
+Théorie des quatre mouvements| Fourier| 1808| Fundamentação do pensamento fourierista
+L'Industrie| Saint-Simon| 1816–1818| Organização industrial da sociedade
+Nouveau Christianisme| Saint-Simon| 1825| Dimensão moral da reforma social
+Qu'est-ce que la propriété?| Proudhon| 1840| Crítica à propriedade
+Manifesto do Partido Comunista| Marx e Engels| 1848| Contexto das divergências socialistas
+A Guerra Civil na França| Marx| 1871| Interpretação da Comuna
+Estatismo e Anarquia| Bakunin| 1873| Crítica à centralização estatal
+Do Socialismo Utópico ao Socialismo Científico| Engels| 1880| Crítica marxista ao socialismo inicial
+
+---
+
+11. BIBLIOGRAFIA DE PESQUISA
+
+Fontes primárias
+
+BAKUNIN, Mikhail. Gosudarstvennost' i anarkhiia. 1873.
+
+ENGELS, Friedrich. Socialism: Utopian and Scientific. 1880.
+
+FOURIER, Charles. Théorie des quatre mouvements et des destinées générales. 1808.
+
+GODWIN, William. An Enquiry Concerning Political Justice. 1793.
+
+MARX, Karl. The Civil War in France. 1871.
+
+PROUDHON, Pierre-Joseph. Qu'est-ce que la propriété? 1840.
+
+SAINT-SIMON, Henri de. Nouveau Christianisme. 1825.
+
+Estudos acadêmicos
+
+BEECHER, Jonathan. Charles Fourier: The Visionary and His World. Berkeley: University of California Press, 1986.
+
+JENNINGS, Jeremy. Saint-Simon and Saint-Simonism. In: The Cambridge History of Socialism. Cambridge University Press, 2022.
+
+JONES, Gareth Stedman. European Socialism from the 1790s to the 1890s. In: The Cambridge History of Modern European Thought. Cambridge University Press, 2019.
+
+KINNA, Ruth. Anarchism: A Beginner's Guide. Oxford: Oneworld, 2005.
+
+LEIER, James Mark. Bakunin: The Creative Passion. New York: St. Martin's Press, 2006.
+
+MARSHALL, Peter. Demanding the Impossible: A History of Anarchism. London: HarperCollins, 1992.
+
+PICON, Antoine. Utopian Socialism and Social Science. In: The Cambridge History of Science. Cambridge University Press, 2008.
+
+SHATZ, Marshall. Anarchism. In: The Oxford Handbook of the History of Political Philosophy. Oxford University Press.
+
+WOODCOCK, George. Anarchism: A History of Libertarian Ideas and Movements. Cleveland: World Publishing, 1962.
+
+---
+
+12. CONCLUSÃO DO DOSSIÊ
+
+O estudo das correntes emancipatórias e antiautoritárias demonstra que o século XIX foi marcado por uma intensa disputa sobre os fundamentos da organização social.
+
+Saint-Simon, Fourier, Proudhon e Bakunin formularam respostas distintas aos problemas da sociedade industrial.
+
+Suas propostas envolveram a reorganização da produção, a crítica à propriedade, a defesa da associação, o federalismo e o questionamento da autoridade estatal.
+
+A investigação deve evitar interpretações teleológicas que apresentem essas correntes apenas como etapas incompletas de doutrinas posteriores.
+
+O objetivo é compreender cada autor em seu contexto histórico, identificar suas contribuições e reconhecer suas limitações.
+
+A questão que unifica o dossiê é a relação entre emancipação, liberdade e organização coletiva: como transformar a sociedade sem reproduzir as estruturas de dominação que se pretende superar?`,
 
   105: `DOSSIÊ ACADÊMICO DE PESQUISA
 Materialismo histórico, socialismo científico e crítica da economia política
@@ -1071,7 +1343,7 @@ De que maneira o reformismo parlamentar domesticou o capitalismo selvagem e cons
 
   112: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
 
-# DOSSIÊ ACADÊMICO Nº 12
+# DOSSIÊ ACADÊMICO Nº 11
 
 ## FRANÇA NO SÉCULO DAS LUZES
 

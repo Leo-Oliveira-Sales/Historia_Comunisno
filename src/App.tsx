@@ -139,7 +139,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#121214] text-[#EBE6DF] flex flex-col selection:bg-red-900 selection:text-white transition-colors duration-200">
+    <div className="min-h-screen bg-[#121214] text-[#EBE6DF] flex flex-col selection:bg-red-900 selection:text-white transition-colors duration-200 w-full max-w-full overflow-x-hidden">
       {/* Top Bar Contract Navigation */}
       <Header
         currentTab={currentTab}
@@ -294,7 +294,7 @@ export default function App() {
       )}
 
       {/* Main Body Content Container */}
-      <main className="max-w-7xl mx-auto px-3 sm:px-8 py-5 sm:py-8 flex-1 w-full space-y-6 sm:space-y-8">
+      <main className="max-w-7xl mx-auto px-3 sm:px-8 py-5 sm:py-8 flex-1 w-full max-w-full space-y-6 sm:space-y-8 overflow-x-hidden">
         {/* VIEW 1: ROULETTE VIEW */}
         {currentTab === 'roulette' && (
           <div className="space-y-6">
@@ -362,7 +362,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-stone-800/80 bg-[#101012] py-8 px-4 sm:px-8 mt-12 text-xs text-stone-400">
+      <footer className="border-t border-stone-800/80 bg-[#101012] py-8 px-4 sm:px-8 mt-12 text-xs text-stone-400 w-full max-w-full overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <span className="font-display font-bold text-stone-200">
@@ -373,7 +373,7 @@ export default function App() {
             <span aria-hidden="true">·</span>
             <span>
               {activeCollectionId === 'colecao-2'
-                ? 'Coleção II · 10 Capítulos Didáticos & 40 Especialistas de Referência'
+                ? 'Coleção II · 11 Capítulos Didáticos & 40 Especialistas de Referência'
                 : 'Coleção I · Acervo Histórico e Roleta de Pesquisa Acadêmica'}
             </span>
           </div>
