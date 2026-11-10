@@ -1345,115 +1345,845 @@ De que maneira o reformismo parlamentar domesticou o capitalismo selvagem e cons
 
 # DOSSIÊ ACADÊMICO Nº 11
 
-## FRANÇA NO SÉCULO DAS LUZES
+## FRANÇA: DO ILUMINISMO À FORMAÇÃO DO ESTADO SOCIAL
 
-### Iluminismo, absolutismo, crise do Antigo Regime e as origens da Revolução Francesa (1715–1789)
+### Filosofia política, absolutismo, revoluções, conflitos sociais, guerras mundiais e reconstrução republicana (1715–1975)
 
-**Eixo temático:** Razão, direitos naturais, crítica ao absolutismo, opinião pública e crise fiscal e institucional.
-**Recorte principal:** 1715–1789.
-**Especialistas de referência:** François Furet, Robert Darnton, Roger Chartier, Keith Michael Baker, Georges Lefebvre, William Doyle, Jonathan Israel.
+**Eixo temático:** Transformações do pensamento político, legitimidade do Estado, direitos, cidadania, revoluções, relações de classe, conflitos internacionais e construção das instituições sociais.
+
+**Recorte principal:** 1715–1975.
+
+**Abordagem:** História política, história intelectual, história social, história econômica e história institucional.
+
+**Especialistas de referência:** François Furet, William Doyle, Robert Darnton, Roger Chartier, Keith Michael Baker, Georges Lefebvre, Timothy Tackett, Peter McPhee, Robert Tombs, Jacques Rougerie, Julian Jackson, Robert Paxton, Olivier Wieviorka, Philip Nord e Tony Judt.
 
 ---
 
 ## 1. IDENTIFICAÇÃO E PROBLEMA HISTÓRICO
 
-**Questão central:**
+### Questão central
 
-Como as transformações intelectuais, sociais, econômicas e institucionais da França no século XVIII (1715–1789) minaram os fundamentos de legitimidade da monarquia absoluta e do Antigo Regime, criando as condições de possibilidade para a eclosão da Revolução Francesa?
+Como a França passou de uma monarquia baseada em privilégios estamentais e autoridade dinástica para uma sociedade republicana que, especialmente depois da Segunda Guerra Mundial, desenvolveu instituições de proteção social, regulação econômica e ampliação da cidadania?
 
-**Problema histórico ampliado:**
+### Problema histórico ampliado
 
-A eclosão da Revolução Francesa não pode ser explicada por uma causa única, nem como mero resultado mecânico das ideias iluministas ou como explosão espontânea da miséria popular. Trata-se de um processo multifatorial no qual o Iluminismo reformulou o vocabulário político e a cultura da crítica, a sociedade estamental sofreu com o acirramento de privilégios e tensões sociais, a economia enfrentou gargalos fiscais e crises rurais, e a monarquia absoluta perdeu sua autoridade diante da resistência dos Parlamentos e do colapso das finanças estatais.
+A transformação da França entre 1715 e 1975 não pode ser explicada por uma única revolução, ideologia ou acontecimento.
 
----
+O processo envolveu a crise da monarquia absolutista, a circulação de ideias iluministas, as disputas sobre a soberania, a Revolução Francesa, a centralização napoleônica, as revoluções liberais e sociais do século XIX, a experiência da Comuna de Paris, as guerras mundiais, a ocupação nazista, a Resistência e a reconstrução do Estado francês.
 
-## 2. CONCEITOS FUNDAMENTAIS E VOCABULÁRIO POLÍTICO
+A formação do Estado social também não foi consequência automática da Revolução de 1789. Resultou de uma longa trajetória de conflitos políticos, reformas econômicas, mobilização operária, experiências anteriores de proteção social, resistência à ocupação e decisões institucionais do pós-guerra.
 
-- **Antigo Regime (*Ancien Régime*):** Estrutura política, social e jurídica da França pré-1789, caracterizada pelo absolutismo monárquico, pela sociedade estamental (ordens) e por privilégios corporativos e regionais.
-- **Sociedade de Ordens:** Divisão hierárquica e jurídica da população em três estamentos: Clero (Primeiro Estado), Nobreza (Segundo Estado) e Terceiro Estado (burguesia, camponeses e trabalhadores urbanos).
-- **Iluminismo (*Lumières*):** Movimento intelectual do século XVIII que valorizou a razão crítica, a ciência, a tolerância e a reformulação das instituições políticas e sociais.
-- **Esfera Pública / Opinião Pública:** Espaço de discussão autônomo em relação ao Estado e à Igreja (salões, cafés, academias, imprensa), no qual ideias e políticas governamentais passavam a ser julgadas publicamente.
-- **Despotismo Esclarecido / Absolutismo Ilustrado:** Tentativas de reforma administrativa e econômica promovidas por monarcas ou ministros influenciados por ideias racionalistas, sem renunciar à autoridade soberana.
-- **Fisiocracia:** Doutrina econômica que considerava a terra e a agricultura como as verdadeiras fontes de riqueza, defendendo a liberdade de comércio de grãos (*laissez-faire*) e a tributação única sobre a propriedade rústica.
-- **Parlamentos (França do Antigo Regime):** Tribunais superiores de justiça com a prerrogativa de registrar os éditos reais e apresentar remanejamentos (*remontrances*), transformando-se em bastiões de resistência aristocrática contra a autoridade do rei.
-- **Cahiers de doléances (Cadernos de Queixas):** Registros oficiais das reivindicações, petições e propostas redigidas pelas comunidades e corporações de toda a França por ocasião da convocação dos Estados Gerais em 1788-1789.
+O problema fundamental consiste em compreender as continuidades e rupturas que conectaram esses diferentes processos sem pressupor uma evolução linear.
 
 ---
 
-## 3. ESTRUTURA SOCIAL E CONTRADIÇÕES ESTAMENTAIS
+## 2. CONCEITOS FUNDAMENTAIS E VOCABULÁRIO HISTÓRICO
 
-1. **Primeiro Estado (Clero):** Representava cerca de 0,5% da população, detinha cerca de 10% das terras agrícolas, cobrava o dízimo e gozava de isenção de impostos diretos, pagando apenas uma contribuição voluntária (*don gratuit*).
-2. **Segundo Estado (Nobreza):** Representava cerca de 1,5% da população, controlava entre 20% e 25% das terras e monopolizava os altos cargos no exército, na magistratura e na corte. Apresentava divisão entre a nobreza de espada (*noblesse d’épée*) e a nobreza de toga (*noblesse de robe*).
-3. **Terceiro Estado:** Compreendia aproximadamente 98% da população francesa. Incluía a alta burguesia letrada e financeira, profissionais liberais, artesãos, trabalhadores urbanos e uma vasta massa camponesa (80% da população) que suportava a maior parte da carga tributária (*taille*, *gabelle*) e obrigações senhoriais.
+### 2.1. Antigo Regime — Ancien Régime
+
+Estrutura política, social e jurídica anterior à Revolução Francesa, caracterizada pela monarquia dinástica, pela sociedade de ordens e pela existência de privilégios corporativos e regionais.
+
+### 2.2. Absolutismo monárquico
+
+Modelo de organização política em que a soberania se concentrava na autoridade do monarca. Na prática, o exercício do poder era condicionado por instituições, tradições, privilégios, negociações e limitações fiscais.
+
+### 2.3. Sociedade de ordens
+
+Organização social baseada em categorias jurídicas e privilégios diferenciados: clero, nobreza e Terceiro Estado.
+
+### 2.4. Iluminismo
+
+Movimento intelectual do século XVIII que valorizou a razão crítica, a investigação científica, a tolerância e a discussão das instituições políticas e sociais.
+
+### 2.5. Esfera pública
+
+Espaços de discussão e circulação de ideias, como salões, cafés, academias, imprensa e circuitos editoriais, nos quais autoridades e políticas passaram a ser submetidas à crítica.
+
+### 2.6. Soberania popular
+
+Princípio político segundo o qual a legitimidade do poder pertence ao povo ou à comunidade política.
+
+### 2.7. Constitucionalismo
+
+Doutrina e prática de organização do poder por meio de uma Constituição, com definição de competências, direitos e limites institucionais.
+
+### 2.8. Liberalismo
+
+Conjunto de correntes políticas que valorizam liberdades individuais, direitos civis, propriedade e limitação do poder. Suas diferentes vertentes não apresentam uma concepção única de democracia ou igualdade social.
+
+### 2.9. Republicanismo
+
+Tradição política que defende a organização da comunidade por instituições não dinásticas e pela participação dos cidadãos na vida pública.
+
+### 2.10. Socialismo
+
+Conjunto heterogêneo de correntes que criticam desigualdades econômicas e relações de exploração e propõem diferentes formas de organização da propriedade, do trabalho e da produção.
+
+### 2.11. Anarquismo
+
+Corrente política que critica a autoridade estatal coercitiva e defende formas de organização baseadas na autonomia, na associação voluntária e na autogestão.
+
+### 2.12. Comuna de Paris
+
+Experiência revolucionária de governo municipal estabelecida em Paris entre 18 de março e 28 de maio de 1871.
+
+### 2.13. Vichy
+
+Regime político francês estabelecido em 1940 sob a liderança de Philippe Pétain, que colaborou com a Alemanha nazista e participou da perseguição aos judeus.
+
+### 2.14. Resistência Francesa
+
+Conjunto heterogêneo de organizações, movimentos e indivíduos que atuaram contra a ocupação alemã e o regime de Vichy.
+
+### 2.15. Conselho Nacional da Resistência — CNR
+
+Organismo criado em 1943 para coordenar diferentes organizações da Resistência francesa. Seu programa, aprovado em 15 de março de 1944, apresentou propostas de reconstrução política, econômica e social.
+
+### 2.16. Estado social
+
+Modelo institucional em que o poder público assume responsabilidades pela proteção contra riscos sociais e pela garantia de determinados direitos econômicos e sociais.
+
+### 2.17. Seguridade Social
+
+Sistema de proteção social que reúne mecanismos de cobertura contra riscos como doença, velhice, acidentes de trabalho e responsabilidades familiares.
+
+### 2.18. Nacionalização
+
+Transferência de empresas ou setores econômicos para a propriedade ou controle estatal.
+
+### 2.19. Dirigismo econômico
+
+Modelo de economia mista no qual o Estado exerce papel ativo no planejamento, investimento e orientação de setores estratégicos.
+
+### 2.20. Trinta Gloriosas
+
+Expressão associada a Jean Fourastié para designar aproximadamente o período de forte crescimento econômico francês entre 1945 e 1975.
 
 ---
 
-## 4. O ILUMINISMO FRANCÊS E A TRANSFORMAÇÃO CULTURAL
+## 3. ESTRUTURA SOCIAL E CONTRADIÇÕES DO ANTIGO REGIME
 
-- **Montesquieu (*O Espírito das Leis*, 1748):** Formulação da teoria dos freios e contrapesos e da divisão tripartite dos poderes (Legislativo, Executivo e Judiciário) como salvaguarda contra o despotismo.
-- **Voltaire (*Tratado sobre a Tolerância*, 1763):** Defesa intransigente da liberdade de pensamento, do anticlericalismo, do combate ao fanatismo religioso e da defesa dos direitos civis.
-- **Rousseau (*Do Contrato Social*, 1762):** Teoria da soberania inalienável e indivisível pertencente ao povo e orientada pela *vontade geral*, assentando a igualdade civil como imperativo político.
-- **Diderot e d’Alembert (*Encyclopédie*, 1751–1772):** A monumental empresa editorial em 28 volumes que catalogou o conhecimento científico, técnico e humanístico sob o espírito da crítica racional, desafiando a censura monárquica e eclesiástica.
+A sociedade francesa do século XVIII era organizada juridicamente em três ordens.
 
----
+### 3.1. Primeiro Estado — Clero
 
-## 5. CRISES ECONÔMICAS, AGRÁRIAS E REFORMAS IMPOSSÍVEIS
+Compreendia as instituições eclesiásticas e seus diferentes integrantes.
 
-- **Tentativas de Reforma Fiscal (1774–1787):** Os ministros Turgot, Necker, Calonne e Brienne tentaram reformar o sistema tributário para tributar as terras da nobreza e do clero a fim de conter o déficit público.
-- **A Guerra das Farinhas (1775):** A liberalização do comércio de grãos promovida por Turgot provocou a alta do preço do pão e ondas de saques em vilas e cidades rurais.
-- **O Impacto Financeiro da Guerra Americana (1778–1783):** O auxílio militar e financeiro às Treze Colônias duplicou a dívida da Coroa Francesa, levando a monarquia à beira da falência em 1786.
-- **As Crises Climáticas e Rurais (1788–1789):** Tempestades de granizo e invernos rigorosos destruíram as colheitas, resultando em desemprego, escassez de mantimentos e explosão dos preços dos alimentos na véspera da Revolução.
+Possuía privilégios jurídicos e fiscais, além de desempenhar funções religiosas, educacionais, assistenciais e econômicas.
 
----
+A posição do alto clero diferia consideravelmente daquela ocupada pelo baixo clero.
 
-## 6. A RESISTÊNCIA ARISTOCRÁTICA E A REVOLTA DOS PARLAMENTOS (1787–1788)
+### 3.2. Segundo Estado — Nobreza
 
-- **A Assembleia dos Notáveis (1787):** Reunião dos nobres convocada por Calonne que recusou categoricamente a criação do imposto territorial universal, exigindo a prestação de contas das finanças estatais.
-- **A Paralisia Institucional:** Os Parlamentos recusam-se a registrar os éditos de reforma tributária e declaram que apenas os Estados Gerais possuíam competência legal para aprovar novos impostos.
-- **O Revezamento Revolucionário:** A nobreza, ao tentar defender seus privilégios contra o absolutismo, abriu a porta para o desmantelamento de todo o edifício monárquico.
+Compreendia grupos aristocráticos com privilégios e direitos diferenciados.
 
----
+Existiam divisões entre nobreza de espada e nobreza de toga, além de diferenças de riqueza, origem e influência política.
 
-## 7. A GUERRA DE PANFLETOS E A REDAÇÃO DOS CAHIERS DE DOLÉANCES (1788–1789)
+A nobreza não constituía um grupo inteiramente homogêneo.
 
-- **A Suspensão da Censura (Agosto de 1788):** A convocação dos Estados Gerais autorizou a livre circulação de panfletos em todo o país.
-- **O Panfleto de Sieyès (*O Que é o Terceiro Estado?*, Janeiro de 1789):** Proclamou a soberania absoluta do Terceiro Estado como a totalidade da Nação.
-- **Os Cadernos de Queixas (*Cahiers de doléances*):** Milhares de documentos redigidos nas paróquias e corporações expressando demandas por igualdade fiscal, constituição escrita, abolição de privilégios e reforma do judiciário.
+### 3.3. Terceiro Estado
 
----
+Reunia a maior parte da população francesa.
 
-## 8. PRINCIPAIS CONTROVÉRSIAS HISTORIOGRÁFICAS
+Incluía:
 
-1. **O Iluminismo causou a Revolução?** Historiadores como Roger Chartier e Robert Darnton demonstram que as ideias não causaram mecanicamente os fatos; em vez disso, criaram uma nova *cultura política* e *habitus de leitura* que tornou a autoridade monárquica dessacralizada e contestável.
-2. **A Revolução foi estritamente burguesa?** A interpretação clássica de Lefebvre e Soboul foca na ascensão de uma burguesia capitalista contra a ordem feudal. A interpretação revisionista de Furet, Cobban e Taylor destaca que os líderes de 1789 eram predominantemente juristas, burocratas e homens de letras, e não industriais.
-3. **O papel da aristocracia:** A historiografia ressalta que o primeiro golpe contra a monarquia absoluta foi desferido pela própria nobreza nos Parlamentos (1787–1788).
+- Grandes comerciantes.
+- Banqueiros.
+- Profissionais liberais.
+- Juristas.
+- Artesãos.
+- Trabalhadores urbanos.
+- Camponeses.
+- Pequenos proprietários.
+- Arrendatários e trabalhadores rurais.
 
----
+O Terceiro Estado não representava uma classe social única. Seus integrantes possuíam interesses econômicos e políticos distintos.
 
-## 9. CHRONOLOGIA ESSENCIAL (1715–1789)
+### 3.4. Contradição fundamental
 
-- **1715:** Morte de Luís XIV; início da Regência de Filipe de Orleans.
-- **1748:** Publicação de *O Espírito das Leis* de Montesquieu.
-- **1751:** Lançamento do Tomo I da *Encyclopédie* de Diderot e d’Alembert.
-- **1762:** Publicação de *Do Contrato Social* de Rousseau; execução de Jean Calas em Toulouse.
-- **1774:** Morte de Luís XV; coroação de Luís XVI e nomeação de Turgot para as Finanças.
-- **1775:** Surto da Guerra das Farinhas em razão da alta do preço do pão.
-- **1778:** França assina tratado de aliança militar com os Estados Unidos contra a Grã-Bretanha.
-- **1787:** Reunião da Assembleia dos Notáveis; recusa aristocrática dos impostos universais.
-- **1788 (Agosto):** Declaração de falência do Tesouro Francês e convocação dos Estados Gerais para maio de 1789.
-- **1789 (Janeiro):** Publicação do panfleto de Sieyès e início da redação dos *Cahiers de doléances*.
+A desigualdade jurídica e fiscal coexistia com uma sociedade economicamente diversificada.
+
+O crescimento de grupos comerciais, profissionais e proprietários não foi acompanhado por uma transformação equivalente das instituições políticas.
+
+A crise do Antigo Regime resultou, em parte, dessa contradição entre a organização estamental e as transformações econômicas e sociais.
 
 ---
 
-## 10. RECOMENDAÇÕES BIBLIOGRÁFICAS
+## 4. O ILUMINISMO E A TRANSFORMAÇÃO CULTURAL (1715–1789)
 
-- BAKER, Keith Michael. *Inventing the French Revolution*. Cambridge: Cambridge University Press, 1990.
-- CHARTIER, Roger. *As Origens Culturais da Revolução Francesa*. São Paulo: UNESP, 2009.
-- DARNTON, Robert. *Boemia Literária e Revolução: O Submundo das Letras no Antigo Regime*. São Paulo: Companhia das Letras, 1987.
-- DOYLE, William. *Origins of the French Revolution*. Oxford: Oxford University Press, 1999.
-- FURET, François. *Pensando a Revolução Francesa*. Rio de Janeiro: Paz e Terra, 1989.
-- ISRAEL, Jonathan. *Democratic Enlightenment: Philosophy, Revolution, and Human Rights 1750–1790*. Oxford: Oxford University Press, 2011.
-- LEFEBVRE, Georges. *1789: O Surgimento da Revolução Francesa*. Rio de Janeiro: Paz e Terra, 1989.`,
+### 4.1. Montesquieu
+
+Obra principal: *De l'esprit des lois* (1748).
+
+Contribuição:
+
+- Reflexão sobre as formas de governo.
+- Relação entre leis e instituições.
+- Discussão sobre a liberdade política.
+- Análise da distribuição dos poderes.
+
+### 4.2. Voltaire
+
+Obras de referência:
+
+- *Lettres philosophiques* (1734).
+- *Traité sur la tolérance* (1763).
+- *Dictionnaire philosophique* (1764).
+
+Contribuições:
+
+- Crítica ao fanatismo.
+- Defesa da tolerância religiosa.
+- Combate aos abusos judiciais.
+- Intervenção pública em controvérsias políticas e religiosas.
+
+### 4.3. Rousseau
+
+Obras de referência:
+
+- *Discours sur l'origine et les fondements de l'inégalité parmi les hommes* (1755).
+- *Du contrat social* (1762).
+
+Contribuições:
+
+- Teoria da soberania popular.
+- Conceito de vontade geral.
+- Crítica às desigualdades.
+- Reflexão sobre a legitimidade da autoridade política.
+
+### 4.4. Diderot e d'Alembert
+
+Obra: *Encyclopédie* (1751–1772).
+
+Contribuições:
+
+- Sistematização do conhecimento.
+- Divulgação científica e técnica.
+- Crítica de autoridades tradicionais.
+- Ampliação da circulação intelectual.
+
+### 4.5. Problema historiográfico
+
+O Iluminismo não foi um movimento uniforme nem constituiu uma causa mecânica da Revolução.
+
+Seu impacto deve ser investigado a partir da circulação dos textos, das instituições culturais, dos leitores, da imprensa e das apropriações políticas.
+
+**Especialistas:** Robert Darnton, Roger Chartier, Jonathan Israel e Keith Michael Baker.
+
+---
+
+## 5. CRISE FISCAL, REFORMAS E RUPTURA REVOLUCIONÁRIA (1774–1789)
+
+### 5.1. Reformas ministeriais
+
+Os ministros Turgot, Necker, Calonne e Brienne participaram de diferentes tentativas de reorganização financeira.
+
+A resistência de grupos privilegiados dificultou a implantação de reformas tributárias.
+
+### 5.2. Guerra das Farinhas
+
+Em 1775, as tensões relacionadas ao comércio de grãos e ao preço do pão provocaram conflitos populares.
+
+O episódio demonstrou a importância política do abastecimento alimentar.
+
+### 5.3. Guerra de Independência dos Estados Unidos
+
+A participação francesa no conflito contra a Grã-Bretanha ampliou os encargos financeiros da monarquia.
+
+A guerra agravou dificuldades fiscais já existentes.
+
+### 5.4. Assembleia dos Notáveis
+
+Em 1787, a resistência às reformas fiscais demonstrou a profundidade do conflito entre a Coroa e setores privilegiados.
+
+### 5.5. Convocação dos Estados Gerais
+
+A crise institucional conduziu à convocação dos Estados Gerais para 1789.
+
+A elaboração dos *Cahiers de doléances* permitiu registrar reivindicações e conflitos existentes nas comunidades francesas.
+
+### 5.6. Ruptura política
+
+A transformação dos Estados Gerais em Assembleia Nacional representou uma mudança fundamental na concepção de soberania.
+
+A autoridade política passou a ser reivindicada em nome da nação.
+
+---
+
+## 6. REVOLUÇÃO FRANCESA (1789–1799)
+
+### 6.1. Principais acontecimentos
+
+- Convocação dos Estados Gerais.
+- Formação da Assembleia Nacional.
+- Juramento do Jogo da Péla.
+- Tomada da Bastilha.
+- Grande Medo.
+- Abolição dos privilégios feudais.
+- Declaração dos Direitos do Homem e do Cidadão.
+- Constituição de 1791.
+- Queda da monarquia.
+- Proclamação da República.
+- Execução de Luís XVI.
+- Convenção Nacional.
+- Governo revolucionário e Terror.
+- Reação Termidoriana.
+- Diretório.
+- Golpe de 18 de Brumário.
+
+### 6.2. Questões sociais e políticas
+
+A Revolução reuniu diferentes grupos:
+
+- Burguesia.
+- Camponeses.
+- Trabalhadores urbanos.
+- Artesãos.
+- Setores populares.
+- Mulheres.
+- Intelectuais.
+- Grupos republicanos e monarquistas.
+
+A participação desses grupos foi variável e não deve ser reduzida a uma oposição simples entre burguesia e aristocracia.
+
+### 6.3. Contradições revolucionárias
+
+A Revolução proclamou direitos universais, mas sua aplicação foi limitada.
+
+A exclusão das mulheres da cidadania política plena e os conflitos relacionados à escravidão colonial demonstraram os limites históricos do universalismo revolucionário.
+
+### 6.4. Terror
+
+O Terror deve ser estudado no contexto da guerra, das disputas políticas e da radicalização revolucionária.
+
+Sua interpretação envolve debates sobre emergência, repressão, ideologia e funcionamento das instituições.
+
+**Especialistas:** William Doyle, Timothy Tackett, David Andress, Peter McPhee, Lynn Hunt e François Furet.
+
+---
+
+## 7. NAPOLEÃO E A REORGANIZAÇÃO DO ESTADO (1799–1815)
+
+### 7.1. Golpe de 18 de Brumário
+
+O golpe de 9 de novembro de 1799 encerrou o Diretório e estabeleceu o Consulado.
+
+### 7.2. Centralização administrativa
+
+O governo napoleônico reorganizou instituições administrativas, fiscais, educacionais e jurídicas.
+
+### 7.3. Código Civil de 1804
+
+O Código Civil consolidou importantes transformações jurídicas:
+
+- Igualdade civil masculina.
+- Propriedade privada.
+- Liberdade contratual.
+- Organização das relações familiares.
+- Unificação jurídica.
+
+Entretanto, também fortaleceu a autoridade patriarcal e restringiu a autonomia jurídica das mulheres.
+
+### 7.4. Expansão militar
+
+As guerras napoleônicas transformaram o mapa político europeu e contribuíram para a difusão de instituições jurídicas francesas.
+
+Entretanto, as ocupações produziram resistência e nacionalismos.
+
+### 7.5. Interpretação histórica
+
+Napoleão deve ser analisado como agente de consolidação de determinadas conquistas revolucionárias e, simultaneamente, como responsável pela construção de um regime autoritário e imperial.
+
+---
+
+## 8. RESTAURAÇÃO E REVOLUÇÕES DO SÉCULO XIX (1815–1848)
+
+### 8.1. Restauração Bourbon
+
+A monarquia foi restaurada depois da derrota de Napoleão.
+
+A Carta de 1814 tentou conciliar a autoridade dinástica com transformações institucionais posteriores à Revolução.
+
+### 8.2. Revolução de Julho de 1830
+
+A derrubada de Carlos X levou à Monarquia de Julho, sob Luís Filipe.
+
+### 8.3. Revolução de 1848
+
+A queda de Luís Filipe estabeleceu a Segunda República.
+
+Entre suas transformações:
+
+- Sufrágio masculino universal.
+- Abolição da escravidão nas colônias.
+- Experiências de organização do trabalho.
+- Intensificação da questão social.
+
+### 8.4. Jornadas de Junho
+
+A repressão aos trabalhadores de Paris demonstrou os conflitos entre os diferentes projetos de República.
+
+### 8.5. Golpe de 1851
+
+Luís Napoleão Bonaparte encerrou a Segunda República por meio de um golpe de Estado.
+
+Em 1852, foi estabelecido o Segundo Império.
+
+---
+
+## 9. A COMUNA DE PARIS (1871)
+
+### 9.1. Contexto histórico
+
+A Comuna emergiu da derrota francesa na Guerra Franco-Prussiana, da queda do Segundo Império e da crise entre Paris e o governo estabelecido em Versalhes.
+
+### 9.2. Organização política
+
+A experiência reuniu correntes diversas:
+
+- Jacobinos.
+- Blanquistas.
+- Socialistas.
+- Proudhonianos.
+- Internacionalistas.
+- Republicanos radicais.
+- Trabalhadores organizados.
+
+### 9.3. Medidas e experiências
+
+Entre as medidas discutidas ou adotadas estavam:
+
+- Eleição de representantes.
+- Possibilidade de revogação de mandatos.
+- Mudanças na organização administrativa.
+- Separação entre Igreja e Estado.
+- Medidas sobre relações de trabalho.
+- Iniciativas de organização popular.
+
+### 9.4. Repressão
+
+A retomada de Paris pelas forças governamentais ocorreu durante a Semana Sangrenta, em maio de 1871.
+
+A dimensão da repressão e o número de mortos são temas de investigação historiográfica.
+
+### 9.5. Debate sobre a natureza da Comuna
+
+A Comuna foi interpretada de diferentes formas:
+
+- Governo revolucionário municipal.
+- Experiência de democracia direta.
+- Experiência de autogoverno.
+- Antecedente de movimentos socialistas.
+- Experiência de emancipação política dos trabalhadores.
+
+Não deve ser apresentada como um projeto marxista uniforme.
+
+**Especialistas:** Jacques Rougerie, Robert Tombs, Kristin Ross, John Merriman e Carolyn J. Eichner.
+
+---
+
+## 10. TERCEIRA REPÚBLICA E PRIMEIRA GUERRA MUNDIAL (1871–1918)
+
+### 10.1. Terceira República
+
+A consolidação republicana ocorreu em meio a disputas políticas, transformações econômicas e conflitos sobre o papel do Estado e da Igreja.
+
+### 10.2. Primeira Guerra Mundial
+
+Entre 1914 e 1918, a França enfrentou um conflito de grande intensidade.
+
+Consequências:
+
+- Perdas humanas.
+- Destruição material.
+- Transformações na estrutura produtiva.
+- Participação feminina no trabalho.
+- Mobilização colonial.
+- Mudanças na memória nacional.
+- Reconstrução econômica.
+
+### 10.3. Questões de pesquisa
+
+É necessário investigar a relação entre guerra, sociedade, Estado, trabalho e transformação da cultura política francesa.
+
+---
+
+## 11. SEGUNDA GUERRA MUNDIAL: VICHY, COLABORAÇÃO E RESISTÊNCIA (1940–1945)
+
+### 11.1. Derrota de 1940
+
+A derrota francesa diante da Alemanha provocou o colapso da Terceira República.
+
+### 11.2. Regime de Vichy
+
+O governo de Pétain estabeleceu um regime autoritário e colaborou com a Alemanha nazista.
+
+O Estado francês participou da perseguição e deportação dos judeus.
+
+### 11.3. Resistência Francesa
+
+A resistência reuniu diferentes organizações e correntes políticas.
+
+Charles de Gaulle organizou a França Livre, enquanto Jean Moulin teve papel importante na articulação da Resistência interna.
+
+### 11.4. Libertação
+
+A libertação de Paris ocorreu em agosto de 1944.
+
+A reorganização institucional e política prosseguiu até o encerramento da guerra.
+
+### 11.5. Problema historiográfico
+
+A sociedade francesa não pode ser dividida simplesmente entre resistentes e colaboradores. É necessário examinar as diferentes formas de adesão, acomodação, resistência, perseguição e sobrevivência.
+
+**Especialistas:** Julian Jackson, Robert Paxton, Olivier Wieviorka, Henry Rousso e Robert Gildea.
+
+---
+
+## 12. CONSELHO NACIONAL DA RESISTÊNCIA E RECONSTRUÇÃO (1943–1946)
+
+### 12.1. Criação do CNR
+
+O Conselho Nacional da Resistência reuniu diferentes organizações políticas e movimentos de resistência.
+
+Sua primeira reunião ocorreu em 27 de maio de 1943.
+
+### 12.2. Programa de 1944
+
+O programa foi aprovado em 15 de março de 1944.
+
+Entre suas propostas estavam:
+
+- Restabelecimento das liberdades republicanas.
+- Nacionalizações.
+- Planejamento econômico.
+- Proteção dos trabalhadores.
+- Organização da Seguridade Social.
+- Reestruturação institucional.
+
+### 12.3. Direito de voto feminino
+
+A ordenança de 21 de abril de 1944 reconheceu o direito de voto e elegibilidade das mulheres.
+
+Elas participaram pela primeira vez de eleições municipais em 1945.
+
+### 12.4. Seguridade Social
+
+A ordenança de 4 de outubro de 1945 organizou a estrutura moderna da Seguridade Social.
+
+Sua implementação foi gradual, e o sistema não ofereceu imediatamente cobertura universal uniforme.
+
+### 12.5. Nacionalizações
+
+As nacionalizações do pós-guerra ampliaram a presença estatal em setores estratégicos.
+
+Entre os exemplos estão energia, bancos e empresas industriais.
+
+### 12.6. Planejamento econômico
+
+O Plano Monnet, iniciado em 1946, orientou investimentos e a reconstrução de setores considerados prioritários.
+
+### 12.7. Constituição de 1946
+
+O preâmbulo constitucional reconheceu direitos sociais e econômicos.
+
+---
+
+## 13. ESTADO SOCIAL E TRINTA GLORIOSAS (1945–1975)
+
+### 13.1. Transformação econômica
+
+A França passou por um ciclo de crescimento, industrialização, modernização e urbanização.
+
+### 13.2. Proteção social
+
+A ampliação das instituições de proteção social modificou a relação entre Estado, trabalho e cidadania.
+
+### 13.3. SMIG e SMIC
+
+O SMIG foi instituído em 1950.
+
+Em 1970, foi substituído pelo SMIC, com mecanismos diferentes de atualização.
+
+### 13.4. Descolonização
+
+A Guerra da Indochina e a Guerra da Argélia demonstraram as dificuldades de reorganização do império colonial francês.
+
+A independência da Argélia, em 1962, marcou profundamente a história política da Quinta República.
+
+### 13.5. Maio de 1968
+
+As mobilizações estudantis e operárias questionaram as estruturas de autoridade, as relações de trabalho e as instituições educacionais.
+
+Os Acordos de Grenelle constituíram uma importante resposta às reivindicações trabalhistas.
+
+### 13.6. Crise de 1973
+
+A crise internacional do petróleo alterou as condições econômicas que haviam sustentado o crescimento do pós-guerra.
+
+O ano de 1975 é utilizado como marco final aproximado das Trinta Gloriosas.
+
+---
+
+## 14. PRINCIPAIS CONTROVÉRSIAS HISTORIOGRÁFICAS
+
+### 14.1. O Iluminismo causou a Revolução?
+
+A historiografia cultural demonstra que a circulação das ideias não produz automaticamente revoluções.
+
+É necessário investigar os usos políticos dos textos, a formação da opinião pública e a crise institucional.
+
+**Autores:** Roger Chartier, Robert Darnton, Keith Michael Baker e Jonathan Israel.
+
+### 14.2. A Revolução foi essencialmente burguesa?
+
+A interpretação socioeconômica clássica enfatiza a ascensão burguesa e a destruição dos privilégios feudais.
+
+Interpretações revisionistas questionam a homogeneidade da burguesia e destacam a complexidade dos grupos políticos e sociais.
+
+**Autores:** Georges Lefebvre, Albert Soboul, François Furet e William Doyle.
+
+### 14.3. O Terror foi inevitável?
+
+O debate envolve a relação entre guerra, radicalização política, cultura revolucionária e medidas de exceção.
+
+**Autores:** Timothy Tackett, Peter McPhee e David Andress.
+
+### 14.4. Napoleão preservou a Revolução?
+
+A interpretação deve considerar simultaneamente a consolidação jurídica e administrativa e a concentração autoritária do poder.
+
+**Autores:** Isser Woloch, Martyn Lyons e Sudhir Hazareesingh.
+
+### 14.5. A Comuna foi um governo operário?
+
+A Comuna apresentou uma composição política diversificada e diferentes projetos de transformação social.
+
+**Autores:** Jacques Rougerie, Robert Tombs e Kristin Ross.
+
+### 14.6. Vichy foi apenas uma imposição alemã?
+
+A historiografia demonstra que o regime francês possuía iniciativa política própria e responsabilidade institucional na colaboração e perseguição.
+
+**Autores:** Robert Paxton e Julian Jackson.
+
+### 14.7. O Estado social nasceu em 1945?
+
+O pós-guerra foi decisivo, mas existiam antecedentes anteriores.
+
+É necessário examinar as políticas do período entre guerras, o Front Populaire de 1936, as experiências de guerra e o programa do CNR.
+
+**Autores:** Adam Steinhouse, Philip Nord e Richard Kuisel.
+
+### 14.8. As Trinta Gloriosas foram um período de prosperidade universal?
+
+O crescimento foi significativo, mas coexistiu com desigualdades, discriminações, conflitos trabalhistas e problemas coloniais.
+
+**Autores:** Jean Fourastié, Tony Judt e Michelle Zancarini-Fournel.
+
+---
+
+## 15. CRONOLOGIA CONSOLIDADA (1715–1975)
+
+| Ano/período | Acontecimento |
+|---|---|
+| 1715 | Morte de Luís XIV |
+| 1748 | Publicação de O Espírito das Leis |
+| 1751–1772 | Publicação da Encyclopédie |
+| 1762 | Publicação de Do Contrato Social |
+| 1763 | Tratado sobre a Tolerância |
+| 1774 | Início do reinado de Luís XVI |
+| 1775 | Guerra das Farinhas |
+| 1778–1783 | Participação francesa na Guerra de Independência dos Estados Unidos |
+| 1787–1788 | Crise institucional e resistência às reformas |
+| 1789 | Revolução Francesa |
+| 1791 | Constituição e Declaração dos Direitos da Mulher e da Cidadã |
+| 1792 | Proclamação da República |
+| 1793–1794 | Terror |
+| 1795 | Diretório |
+| 1799 | Golpe de 18 de Brumário |
+| 1804 | Código Civil e Império |
+| 1815 | Waterloo e queda definitiva de Napoleão |
+| 1830 | Revolução de Julho |
+| 1848 | Segunda República |
+| 1851 | Golpe de Luís Napoleão |
+| 1852 | Segundo Império |
+| 1870 | Guerra Franco-Prussiana e queda do Segundo Império |
+| 1871 | Comuna de Paris |
+| 1871–1940 | Terceira República |
+| 1914–1918 | Primeira Guerra Mundial |
+| 1940 | Derrota francesa e estabelecimento de Vichy |
+| 1943 | Primeira reunião do CNR |
+| 1944 | Programa do CNR e libertação de Paris |
+| 1944 | Reconhecimento do voto feminino |
+| 1945 | Organização da Seguridade Social |
+| 1946 | Quarta República e Plano Monnet |
+| 1950 | Criação do SMIG |
+| 1958 | Quinta República |
+| 1962 | Independência da Argélia |
+| 1968 | Maio de 1968 |
+| 1970 | Criação do SMIC |
+| 1973 | Crise do petróleo |
+| 1975 | Encerramento simbólico das Trinta Gloriosas |
+
+---
+
+## 16. FONTES PRIMÁRIAS FUNDAMENTAIS
+
+### Iluminismo e Antigo Regime
+- MONTESQUIEU. De l'esprit des lois (1748).
+- VOLTAIRE. Traité sur la tolérance (1763).
+- ROUSSEAU. Du contrat social (1762).
+- DIDEROT; D'ALEMBERT. Encyclopédie (1751–1772).
+- SIEYÈS. Qu'est-ce que le Tiers-État? (1789).
+- Cahiers de doléances (1789).
+
+### Revolução
+- Déclaration des droits de l'homme et du citoyen (1789).
+- Constitution française de 1791.
+- Déclaration des droits de la femme et de la citoyenne (1791).
+- Constitution de 1793.
+- Constitution de 1795.
+
+### Napoleão
+- Constitution de l'an VIII (1799).
+- Code civil des Français (1804).
+
+### Século XIX
+- Charte constitutionnelle de 1814.
+- Documentos da Segunda República (1848).
+- Décret d'abolition de l'esclavage (1848).
+- Journal officiel de la Commune (1871).
+- MARX. The Civil War in France (1871).
+
+### Guerras mundiais
+- Traité de Versailles (1919).
+- Actes constitutionnels de 1940.
+- Loi portant statut des Juifs (1940).
+- Ordonnance relative au droit de vote des femmes (1944).
+- Programme du Conseil national de la Résistance (1944).
+
+### Estado social
+- Ordonnance du 4 octobre 1945.
+- Préambule de la Constitution de 1946.
+- Legislação do SMIG (1950).
+- Constitution de 1958.
+- Accords de Grenelle (1968).
+- Legislação do SMIC (1970).
+
+---
+
+## 17. REFERÊNCIAS BIBLIOGRÁFICAS ESPECIALIZADAS
+
+### Revolução Francesa e Antigo Regime
+
+ANDRESS, David (org.). The Oxford Handbook of the French Revolution. Oxford: Oxford University Press, 2015.
+
+BAKER, Keith Michael. Inventing the French Revolution. Cambridge: Cambridge University Press, 1990.
+
+BOSSENGA, Gail. Origins of the French Revolution. History Compass, v. 5, n. 4, 2007.
+
+CHARTIER, Roger. As Origens Culturais da Revolução Francesa. São Paulo: UNESP, 2009.
+
+DARNTON, Robert. Boemia Literária e Revolução. São Paulo: Companhia das Letras, 1987.
+
+DOYLE, William. Origins of the French Revolution. Oxford: Oxford University Press, 1999.
+
+DOYLE, William. The Oxford History of the French Revolution. Oxford: Oxford University Press, 2002.
+
+FURET, François. Pensando a Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.
+
+HUNT, Lynn. Politics, Culture, and Class in the French Revolution. Berkeley: University of California Press, 1984.
+
+MCPHEE, Peter. Liberty or Death: The French Revolution. New Haven: Yale University Press, 2016.
+
+TACKETT, Timothy. The Coming of the Terror in the French Revolution. Cambridge: Harvard University Press, 2015.
+
+### Napoleão e o século XIX
+
+HALPÉRIN, Jean-Louis. L'impossible Code civil. Paris: Presses Universitaires de France, 1992.
+
+HAZAREESINGH, Sudhir. The Legend of Napoleon. London: Granta, 2004.
+
+LYONS, Martyn. Napoleon Bonaparte and the Legacy of the French Revolution. London: Macmillan, 1994.
+
+WOLOCH, Isser. The New Regime: Transformations of the French Civic Order, 1789–1820s. New York: W. W. Norton, 1994.
+
+PRICE, Roger. The French Second Republic: A Social History. Ithaca: Cornell University Press, 1972.
+
+### Comuna de Paris
+
+EICHNER, Carolyn J. Surmounting the Barricades: Women in the Paris Commune. Bloomington: Indiana University Press, 2004.
+
+MERRIMAN, John. Massacre: The Life and Death of the Paris Commune. New York: Basic Books, 2014.
+
+ROSS, Kristin. Communal Luxury: The Political Imaginary of the Paris Commune. London: Verso, 2015.
+
+ROUGERIE, Jacques. La Commune de 1871. Paris: Presses Universitaires de France.
+
+TOMBS, Robert. The Paris Commune 1871. London: Longman, 1999.
+
+TOMBS, Robert. How Bloody Was La Semaine Sanglante of 1871? A Revision. The Historical Journal, 2012.
+
+### Guerras mundiais, Vichy e Resistência
+
+GILDEA, Robert. Marianne in Chains: In Search of the German Occupation. London: Macmillan, 2002.
+
+JACKSON, Julian. France: The Dark Years, 1940–1944. Oxford: Oxford University Press, 2001.
+
+PAXTON, Robert O. Vichy France: Old Guard and New Order, 1940–1944. New York: Columbia University Press, 1972.
+
+ROUSSO, Henry. The Vichy Syndrome: History and Memory in France Since 1944. Cambridge: Harvard University Press, 1991.
+
+WIEVIORKA, Olivier. The French Resistance. Cambridge: Harvard University Press, 2016.
+
+### Estado social e reconstrução
+
+CHAPMAN, Herrick. State Capitalism and Working-Class Radicalism in the French Aircraft Industry. Berkeley: University of California Press, 1991.
+
+FOURASTIÉ, Jean. Les Trente Glorieuses. Paris: Fayard, 1979.
+
+JUDT, Tony. Postwar: A History of Europe Since 1945. New York: Penguin Press, 2005.
+
+KUISEL, Richard F. Capitalism and the State in Modern France. Cambridge: Cambridge University Press, 1981.
+
+NORD, Philip. France's New Deal: From the Thirties to the Postwar Era. Princeton: Princeton University Press, 2010.
+
+STEINHOUSE, Adam. Finance and Welfare: The Impact of Two World Wars on Domestic Policy in France. New York: Palgrave, 2001.
+
+ZANCARINI-FOURNEL, Michelle. Les luttes et les rêves: Une histoire populaire de la France de 1685 à nos jours. Paris: La Découverte, 2016.
+
+---
+
+## 18. CRITÉRIOS DE CONFIABILIDADE E VERIFICAÇÃO
+
+A pesquisa deverá observar os seguintes princípios:
+
+1. Distinguir fontes primárias de estudos historiográficos.
+2. Identificar a edição consultada de cada obra.
+3. Conferir transcrições literais no original ou em tradução acadêmica.
+4. Não inventar cotas arquivísticas.
+5. Não atribuir interpretações a autores que não as formularam.
+6. Registrar divergências historiográficas.
+7. Considerar os contextos de produção das fontes.
+8. Evitar explicações monocausais.
+9. Separar acontecimentos documentados de interpretações.
+10. Identificar lacunas documentais.
+
+---
+
+## 19. CONCLUSÃO DO DOSSIÊ
+
+A transformação da França entre 1715 e 1975 constitui um processo histórico de longa duração, caracterizado pela redefinição das relações entre poder político, direitos, propriedade, trabalho e proteção social.
+
+O Iluminismo contribuiu para transformar a linguagem da política. A Revolução Francesa alterou profundamente a estrutura jurídica e institucional. Napoleão consolidou parte dessas transformações e estabeleceu um regime centralizado. As revoluções do século XIX ampliaram as disputas sobre cidadania e organização social. A Comuna de Paris tornou-se uma referência fundamental para o pensamento socialista e para a história do movimento operário.
+
+As guerras mundiais expuseram as fragilidades da ordem republicana e transformaram a relação entre Estado e sociedade.
+
+No pós-guerra, a reconstrução, as nacionalizações, a Seguridade Social e o planejamento econômico ampliaram a responsabilidade estatal pela proteção social.
+
+O encerramento das Trinta Gloriosas, em 1975, não significou o fim do Estado social francês, mas o início de uma nova conjuntura econômica e política.
+
+**Conclusão central:** a França contemporânea foi construída por uma sucessão de rupturas, reformas, conflitos e experiências institucionais que não podem ser reduzidas a uma única ideologia ou a uma evolução política linear.`,
 
 };
-

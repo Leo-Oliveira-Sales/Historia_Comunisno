@@ -15,6 +15,9 @@ import {
 } from '../data/citationsDatabase';
 import { ADVANCED_INVESTIGATIONS_DATABASE } from '../data/advancedInvestigationDatabase';
 import { MARKET_LAWS_CHAPTERS } from '../data/marketLawsDatabase';
+import { Topic112SynthesisView } from './Topic112SynthesisView';
+import { Topic112ChroniclesView } from './Topic112ChroniclesView';
+import { Topic112EssayView } from './Topic112EssayView';
 import { playStampSound, playTypewriterClack } from '../utils/audio';
 import { 
   X, 
@@ -50,6 +53,8 @@ import {
   Sun
 } from 'lucide-react';
 import { AppTheme } from '../utils/theme';
+import { ChapterChronologyScheme } from './ChapterChronologyScheme';
+import { ChapterPrimarySourcesScheme } from './ChapterPrimarySourcesScheme';
 
 interface DossierModalProps {
   topic: DossierTopic;
@@ -1161,14 +1166,24 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                     </h3>
                   </div>
 
-                  {sec.content && (
-                    <div className="space-y-4">
-                      {sec.content.split('\n\n').map((paragraph, pIdx) => (
-                        <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words ${getFontSizeClass('body')}`}>
-                          {paragraph}
-                        </p>
-                      ))}
+                  {sec.number === '34' || sec.title.toUpperCase().includes('CRONOLOGIA') ? (
+                    <div className="pt-1">
+                      <ChapterChronologyScheme />
                     </div>
+                  ) : sec.number === '35' || sec.title.toUpperCase().includes('FONTES PRIMÁRIAS') ? (
+                    <div className="pt-1">
+                      <ChapterPrimarySourcesScheme />
+                    </div>
+                  ) : (
+                    sec.content && (
+                      <div className="space-y-4">
+                        {sec.content.split('\n\n').map((paragraph, pIdx) => (
+                          <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words ${getFontSizeClass('body')}`}>
+                            {paragraph}
+                          </p>
+                        ))}
+                      </div>
+                    )
                   )}
 
                   {sec.subsections && sec.subsections.map((sub) => (
@@ -1231,8 +1246,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
 
           {/* TAB: ESSAY (ENSAIO ACADÊMICO COMPLETO EM 8 SEÇÕES) */}
-          {activeTab === 'essay' && essay && (
-            <article className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+          {activeTab === 'essay' && (
+            topic.id === 112 ? (
+              <Topic112EssayView getFontSizeClass={getFontSizeClass} />
+            ) : essay ? (
+              <article className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
               {/* Header Banner */}
               <div className="bg-[#161619] border border-amber-600/50 p-5 sm:p-7 rounded-2xl shadow-xl space-y-4">
                 <div className="flex items-center justify-between flex-wrap gap-3 border-b border-stone-800 pb-4">
@@ -1454,11 +1472,15 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 </section>
               )}
             </article>
+            ) : null
           )}
 
           {/* TAB: STORIES (CRÔNICAS HISTÓRICAS E CRONOLOGIA COMPLETA) */}
           {activeTab === 'stories' && (
-            <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+            topic.id === 112 ? (
+              <Topic112ChroniclesView getFontSizeClass={getFontSizeClass} />
+            ) : (
+              <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
               {/* Top Banner */}
               <div className="bg-[#161619] border border-amber-600/50 p-5 sm:p-6 rounded-2xl shadow-xl space-y-2">
                 <span className="text-[10px] font-mono uppercase tracking-widest px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 font-bold inline-block">
@@ -1566,11 +1588,15 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 </section>
               )}
             </div>
+            )
           )}
 
           {/* TAB: DOCUMENTS (ACERVO DOCUMENTAL E FONTES PRIMÁRIAS COMPLETAS) */}
           {activeTab === 'documents' && (
-            <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+            topic.id === 112 ? (
+              <Topic112ChroniclesView getFontSizeClass={getFontSizeClass} />
+            ) : (
+              <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
               {/* Top Banner */}
               <div className="bg-[#161619] border border-amber-600/50 p-5 sm:p-6 rounded-2xl shadow-xl space-y-2">
                 <span className="text-[10px] font-mono uppercase tracking-widest px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 font-bold inline-block">
@@ -1699,6 +1725,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 ))}
               </div>
             </div>
+            )
           )}
 
           {/* TAB: CONTEXT (SÍNTESE HISTÓRICA E QUADRO CONCEITUAL) */}
@@ -2142,6 +2169,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                     </div>
                   </div>
                 </div>
+              ) : topic.id === 112 ? (
+                <Topic112SynthesisView getFontSizeClass={getFontSizeClass} />
               ) : (
                 <>
                   {/* 1. Contexto Histórico Estrutural */}
@@ -2363,6 +2392,15 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                           <blockquote className={`font-serif italic text-stone-200 border-l-2 border-amber-500 pl-3.5 my-2.5 leading-relaxed ${getFontSizeClass('quote')}`}>
                             "{c.quoteText}"
                           </blockquote>
+
+                          {c.originalQuote && (
+                            <div className="bg-[#18181c] p-2.5 rounded border border-stone-800 text-xs font-serif italic text-amber-200/90 my-2">
+                              <span className="text-[10px] font-mono not-italic uppercase tracking-wider text-amber-400 font-bold block mb-1">
+                                Trecho Original (Idioma Fonte):
+                              </span>
+                              "{c.originalQuote}"
+                            </div>
+                          )}
 
                           <div className="pt-1.5 border-t border-stone-800/60 flex flex-col gap-1 text-xs font-mono text-stone-400">
                             <div>

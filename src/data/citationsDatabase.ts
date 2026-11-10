@@ -3,6 +3,8 @@ export interface TopicCitationEntry {
   author: string;
   category: string;
   quoteText: string;
+  originalQuote?: string;
+  translation?: string;
   source: string;
   page?: string;
   archiveReference?: string;
@@ -822,88 +824,237 @@ export const TOPIC_CITATIONS_DATABASE: Record<number, TopicCitationsData> = {
     controversiasELimitacoesDasFontes: "ORIENTAÇÃO: As citações acima foram selecionadas para representar conceitos centrais das correntes estudadas. As traduções são identificadas como traduções livres quando não se utiliza uma edição portuguesa específica. Não se atribuem páginas sem a identificação da edição consultada."
   },
   112: {
-    title: "Citações Literais Verificadas, Sínteses e Fontes Documentais — Registro nº 11 (França no Século das Luzes)",
-    citations: [
-      {
-        number: 1,
-        author: "Charles de Secondat, Barão de Montesquieu",
-        category: "Tratado de Filosofia e Direito Político (1748)",
-        quoteText: "É uma experiência eterna que todo homem que tem poder é levado a abusar dele; ele vai até onde encontra limites. Quem o diria! A própria virtude precisa de limites. Para que não se possa abusar do poder, é preciso que, pela disposição das coisas, o poder freie o poder.",
-        source: "MONTESQUIEU. De l’esprit des loix. Genebra: Barrillot & Fils, 1748. Livro XI, Capítulo IV."
-      },
-      {
-        number: 2,
-        author: "Voltaire (François-Marie Arouet)",
-        category: "Ensaio Filosófico e Defesa da Tolerância (1763)",
-        quoteText: "Não é mais aos homens que me dirijo; é a ti, Deus de todos os seres, de todos os mundos e de todos os tempos... Que as pequenas diferenças entre as roupas que cobrem nossos fracos corpos, entre todas as nossas línguas insuficientes, entre todos os nossos costumes ridículos... que todas essas pequenas nuances que distinguem os átomos chamados homens não sejam sinais de ódio e perseguição.",
-        source: "VOLTAIRE. Traité sur la tolérance à l’occasion de la mort de Jean Calas. Genebra: Cramer, 1763. Capítulo XXIII."
-      },
-      {
-        number: 3,
-        author: "Jean-Jacques Rousseau",
-        category: "Tratado de Filosofia Política (1762)",
-        quoteText: "O homem nasce livre, e em toda parte ele está a ferros. Aquele que se crê senhor dos outros não deixa de ser mais escravo do que eles... Afirmo, pois, que não sendo a soberania senão o exercício da vontade geral, jamais pode alienar-se, e que o soberano, que não é senão um ser coletivo, não pode ser representado a não ser por si mesmo.",
-        source: "ROUSSEAU, Jean-Jacques. Du contrat social; ou, Principes du droit politique. Amsterdã: Marc-Michel Rey, 1762. Livro I, Cap. I / Livro II, Cap. I."
-      },
-      {
-        number: 4,
-        author: "Denis Diderot",
-        category: "Verbete da Encyclopédie (1751)",
-        quoteText: "Nenhum homem recebeu da natureza o direito de comandar os outros. A liberdade é um presente do céu, e cada indivíduo da mesma espécie tem o direito de gozar dela logo que goze da razão... O príncipe recebe de seus próprios súditos a autoridade que tem sobre eles; e essa autoridade é limitada pelas leis da natureza e do Estado.",
-        source: "DIDEROT, Denis. Verbete \"Autorité Politique\". In: Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers. Paris: Briasson, 1751. t. I, p. 898–900."
-      },
-      {
-        number: 5,
-        author: "Emmanuel-Joseph Sieyès",
-        category: "Panfleto Político Fundacional (1789)",
-        quoteText: "O que é o Terceiro Estado? Tudo. O que tem sido ele até agora na ordem política? Nada. O que ele pede? Tornar-se algo... Quem ousaria dizer que o Terceiro Estado não tem em si tudo o que é necessário para formar uma nação completa?",
-        source: "SIEYÈS, Emmanuel-Joseph. Qu'est-ce que le Tiers-État? Paris, 1789. Capítulos I e II."
-      }
-    ],
-    syntheses: [
-      {
-        number: 1,
-        authorOrSchool: "1. Historiografia Cultural e História da Leitura (Roger Chartier & Robert Darnton)",
-        synthesisText: "O Iluminismo não 'causou' mecanicamente a Revolução Francesa; antes, produziu uma dessacralização da autoridade monárquica e um habitus crítico de leitura nos salões, cafés e panfletos clandestinos que tornou o Antigo Regime ideologicamente deslegitimado antes do colapso de 1789.",
-        supportingReference: "CHARTIER, Roger. As Origens Culturais da Revolução Francesa (2009); DARNTON, Robert. Boemia Literária e Revolução (1987)."
-      },
-      {
-        number: 2,
-        authorOrSchool: "2. Historiografia Revisionista da Cultura Política (François Furet & Keith Michael Baker)",
-        synthesisText: "A Revolução Francesa foi primordialmente uma mutação da linguagem e da cultura política, na qual o conceito rousseauista de 'vontade geral' e a invenção da soberania nacional forneceram a matriz conceitual para contestar a monarquia absoluta.",
-        supportingReference: "FURET, François. Pensando a Revolução Francesa (1989); BAKER, Keith Michael. Inventing the French Revolution (1990)."
-      },
-      {
-        number: 3,
-        authorOrSchool: "3. Interpretação Socioeconômica Clássica (Georges Lefebvre & Albert Soboul)",
-        synthesisText: "A crise do Antigo Regime resultou das contradições de uma sociedade estamental com privilégios feudais ultrapassados diante do crescimento econômico e demográfico do Terceiro Estado e da ascensão de uma burguesia letrada.",
-        supportingReference: "LEFEBVRE, Georges. 1789: O Surgimento da Revolução Francesa (1989); SOBOUL, Albert. A Revolução Francesa (1989)."
-      }
-    ],
-    referenceCategories: [
-      {
-        category: "Fontes Primárias",
-        items: [
-          "DIDEROT, Denis; D'ALEMBERT, Jean le Rond. Encyclopédie. Paris, 1751–1772.",
-          "MONTESQUIEU. De l’esprit des loix. Genebra: Barrillot & Fils, 1748.",
-          "ROUSSEAU, Jean-Jacques. Du contrat social. Amsterdã: Marc-Michel Rey, 1762.",
-          "SIEYÈS, Emmanuel-Joseph. Qu'est-ce que le Tiers-État? Paris, 1789.",
-          "VOLTAIRE. Traité sur la tolérance. Genebra: Cramer, 1763."
-        ]
-      },
-      {
-        category: "Historiografia e Estudos Especializados",
-        items: [
-          "BAKER, Keith Michael. Inventing the French Revolution. Cambridge: Cambridge University Press, 1990.",
-          "CHARTIER, Roger. As Origens Culturais da Revolução Francesa. São Paulo: UNESP, 2009.",
-          "DARNTON, Robert. Boemia Literária e Revolução. São Paulo: Companhia das Letras, 1987.",
-          "DOYLE, William. Origins of the French Revolution. Oxford: Oxford University Press, 1999.",
-          "FURET, François. Pensando a Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989.",
-          "ISRAEL, Jonathan. Democratic Enlightenment. Oxford: Oxford University Press, 2011.",
-          "LEFEBVRE, Georges. 1789: O Surgimento da Revolução Francesa. Rio de Janeiro: Paz e Terra, 1989."
-        ]
-      }
-    ],
-    controversiasELimitacoesDasFontes: "PROTOCOLO DE AUDITORIA DOCUMENTAL DO DOSSIÊ № 12: 1. Todas as citações de Montesquieu, Voltaire, Rousseau, Diderot e Sieyès foram conferidas nas suas edições originais em francês do século XVIII. 2. A historiografia de referência distingue rigorosamente o debate das Origens Culturais (Chartier/Darnton) da abordagem socioeconômica clássica (Lefebvre/Soboul) e do revisionismo político (Furet/Baker). 3. As fontes primárias não foram editadas nem adaptadas no dossiê principal."
-  }
-};
+  "title": "REGISTRO DE CITAÇÕES Nº 11 — FRANÇA: ILUMINISMO, REVOLUÇÕES E ESTADO SOCIAL (1715–1975)",
+  "citations": [
+    {
+      "number": 1,
+      "author": "MONTESQUIEU — Limitação do Poder",
+      "category": "I. Citações de Filósofos e Pensadores do Século XVIII",
+      "quoteText": "É uma experiência eterna que todo homem que tem poder é levado a abusar dele; ele vai até encontrar limites.",
+      "originalQuote": "C'est une expérience éternelle que tout homme qui a du pouvoir est porté à en abuser; il va jusqu'à ce qu'il trouve des limites.",
+      "source": "MONTESQUIEU. De l'esprit des lois. 1748. (Livro XI, capítulo IV)",
+      "analise": "Interpretação: A liberdade política depende da existência de limites institucionais ao exercício do poder."
+    },
+    {
+      "number": 2,
+      "author": "ROUSSEAU — Liberdade e Condição Política",
+      "category": "I. Citações de Filósofos e Pensadores do Século XVIII",
+      "quoteText": "O homem nasce livre e por toda parte encontra-se a ferros.",
+      "originalQuote": "L'homme est né libre, et partout il est dans les fers.",
+      "source": "ROUSSEAU. Du contrat social. 1762. (Livro I, capítulo I)",
+      "analise": "Interpretação: Rousseau introduz uma crítica à condição política e social que submete os indivíduos a relações de dependência."
+    },
+    {
+      "number": 3,
+      "author": "VOLTAIRE — Tolerância Religiosa",
+      "category": "I. Citações de Filósofos e Pensadores do Século XVIII",
+      "quoteText": "A tolerância constitui um princípio fundamental para limitar a violência produzida pela intolerância religiosa.",
+      "source": "VOLTAIRE. Traité sur la tolérance. 1763. (Capítulo XXIII)",
+      "analise": "Tema: Crítica ao fanatismo, à perseguição religiosa e aos erros judiciais. Interpretação: A tolerância constitui um princípio fundamental para limitar a violência produzida pela intolerância religiosa."
+    },
+    {
+      "number": 4,
+      "author": "DIDEROT — Autoridade Política",
+      "category": "I. Citações de Filósofos e Pensadores do Século XVIII",
+      "quoteText": "A legitimidade do poder não deve ser confundida com um direito ilimitado de dominação.",
+      "source": "DIDEROT, Denis. Autorité politique. In: Encyclopédie. 1751.",
+      "analise": "Tema: Origem e limites da autoridade política. Interpretação: A legitimidade do poder não deve ser confundida com um direito ilimitado de dominação."
+    },
+    {
+      "number": 5,
+      "author": "SIEYÈS — O Terceiro Estado",
+      "category": "II. Revolução Francesa e Direitos Políticos",
+      "quoteText": "O que é o Terceiro Estado? Tudo. O que tem sido até agora na ordem política? Nada. O que pede? Tornar-se alguma coisa.",
+      "originalQuote": "Qu'est-ce que le Tiers-État? Tout. Qu'a-t-il été jusqu'à présent dans l'ordre politique? Rien. Que demande-t-il? À y devenir quelque chose.",
+      "source": "SIEYÈS. Qu'est-ce que le Tiers-État? 1789.",
+      "analise": "Interpretação: A representação nacional deveria refletir a importância social e política do Terceiro Estado."
+    },
+    {
+      "number": 6,
+      "author": "DECLARAÇÃO DOS DIREITOS DO HOMEM E DO CIDADÃO",
+      "category": "II. Revolução Francesa e Direitos Políticos",
+      "quoteText": "Os homens nascem e permanecem livres e iguais em direitos.",
+      "originalQuote": "Les hommes naissent et demeurent libres et égaux en droits.",
+      "source": "FRANÇA. Déclaration des droits de l'homme et du citoyen, 1789. (26 de agosto de 1789, Artigo 1º)",
+      "analise": "Interpretação: Formulação fundamental da igualdade jurídica, embora a aplicação histórica do princípio tenha sido limitada por exclusões de gênero, condição colonial e restrições políticas."
+    },
+    {
+      "number": 7,
+      "author": "OLYMPE DE GOUGES — Cidadania Feminina",
+      "category": "II. Revolução Francesa e Direitos Políticos",
+      "quoteText": "A autora denuncia a contradição entre os princípios universais da Revolução e a exclusão das mulheres da cidadania política plena.",
+      "source": "GOUGES, Olympe de. Déclaration des droits de la femme et de la citoyenne, 1791.",
+      "analise": "Tema: Extensão dos direitos políticos às mulheres. Interpretação: A autora denuncia a contradição entre os princípios universais da Revolução e a exclusão das mulheres da cidadania política plena."
+    },
+    {
+      "number": 8,
+      "author": "CÓDIGO CIVIL DE 1804 (Código Napoleônico)",
+      "category": "III. Napoleão e a Codificação Jurídica",
+      "quoteText": "A codificação consolidou elementos da transformação jurídica revolucionária, ao mesmo tempo que preservou hierarquias familiares e sociais.",
+      "source": "FRANÇA. Code civil des Français, 1804.",
+      "analise": "Tema: Propriedade, contratos, família e igualdade civil masculina. Interpretação: A codificação consolidou elementos da transformação jurídica revolucionária, ao mesmo tempo que preservou hierarquias familiares e sociais."
+    },
+    {
+      "number": 9,
+      "author": "TOCQUEVILLE — Revolução e Continuidade",
+      "category": "IV. Revoluções e Questão Social no Século XIX",
+      "quoteText": "A Revolução destruiu instituições tradicionais, mas também aprofundou tendências de centralização administrativa anteriores a 1789.",
+      "source": "TOCQUEVILLE, Alexis de. L'Ancien Régime et la Révolution. 1856.",
+      "analise": "Tema: Relação entre a estrutura administrativa do Antigo Regime e as transformações revolucionárias. Interpretação: A Revolução destruiu instituições tradicionais, mas também aprofundou tendências de centralização administrativa anteriores a 1789."
+    },
+    {
+      "number": 10,
+      "author": "KARL MARX — Comuna de Paris",
+      "category": "IV. Revoluções e Questão Social no Século XIX",
+      "quoteText": "Marx interpreta a Comuna como uma experiência de transformação da máquina estatal e de emancipação política da classe trabalhadora.",
+      "source": "MARX, Karl. The Civil War in France. 1871.",
+      "analise": "Tema: A experiência da Comuna como forma de organização política dos trabalhadores. Interpretação: Marx interpreta a Comuna como uma experiência de transformação da máquina estatal e de emancipação política da classe trabalhadora."
+    },
+    {
+      "number": 11,
+      "author": "DOCUMENTOS DA COMUNA DE PARIS",
+      "category": "IV. Revoluções e Questão Social no Século XIX",
+      "quoteText": "Os documentos oficiais permitem investigar a diversidade política da Comuna e suas práticas institucionais.",
+      "source": "COMMUNE DE PARIS. Journal officiel de la Commune. 1871.",
+      "analise": "Tema: Autogoverno, organização municipal, trabalho e medidas sociais. Interpretação: Os documentos oficiais permitem investigar a diversidade política da Comuna e suas práticas institucionais."
+    },
+    {
+      "number": 12,
+      "author": "MARC BLOCH — A Derrota de 1940",
+      "category": "V. Guerras Mundiais e Resistência",
+      "quoteText": "Bloch oferece uma análise contemporânea da crise francesa, examinando responsabilidades institucionais e limitações da sociedade de seu tempo.",
+      "source": "BLOCH, Marc. L'Étrange Défaite. 1946 (escrita em 1940).",
+      "analise": "Tema: Crítica à derrota francesa e às estruturas políticas, militares e sociais que contribuíram para ela. Interpretação: Bloch oferece uma análise contemporânea da crise francesa, examinando responsabilidades institucionais e limitações da sociedade de seu tempo."
+    },
+    {
+      "number": 13,
+      "author": "CHARLES DE GAULLE — França Livre",
+      "category": "V. Guerras Mundiais e Resistência",
+      "quoteText": "De Gaulle apresenta sua concepção da continuidade da legitimidade francesa diante da derrota e da ocupação.",
+      "source": "DE GAULLE, Charles. Mémoires de guerre. 1954–1959.",
+      "analise": "Tema: Resistência, legitimidade nacional e reconstrução da França. Interpretação: De Gaulle apresenta sua concepção da continuidade da legitimidade francesa diante da derrota e da ocupação."
+    },
+    {
+      "number": 14,
+      "author": "PROGRAMA DO CONSELHO NACIONAL DA RESISTÊNCIA",
+      "category": "V. Guerras Mundiais e Resistência",
+      "quoteText": "O documento reúne propostas de diferentes correntes da Resistência e tornou-se referência para a reconstrução francesa do pós-guerra.",
+      "source": "CONSEIL NATIONAL DE LA RÉSISTANCE. Programme. 15 de março de 1944.",
+      "analise": "Tema: Reconstrução política, nacionalizações e proteção social. Interpretação: O documento reúne propostas de diferentes correntes da Resistência e tornou-se referência para a reconstrução francesa do pós-guerra."
+    },
+    {
+      "number": 15,
+      "author": "PREÂMBULO DA CONSTITUIÇÃO DE 1946",
+      "category": "VI. Estado Social e França Contemporânea",
+      "quoteText": "Amplia o constitucionalismo francês para além das liberdades civis e políticas, reconhecendo direitos de natureza social e econômica.",
+      "source": "FRANÇA. Préambule de la Constitution de 1946. (Constituição de 27 de outubro de 1946)",
+      "analise": "Tema: Direitos sociais, trabalho, proteção à saúde e condições materiais de existência. Interpretação: Amplia o constitucionalismo francês para além das liberdades civis e políticas, reconhecendo direitos de natureza social e econômica."
+    },
+    {
+      "number": 16,
+      "author": "JEAN FOURASTIÉ — As Trinta Gloriosas",
+      "category": "VI. Estado Social e França Contemporânea",
+      "quoteText": "A expressão designa um período excepcional de expansão econômica e modernização social, sem significar ausência de conflitos ou desigualdades.",
+      "source": "FOURASTIÉ, Jean. Les Trente Glorieuses. 1979.",
+      "analise": "Tema: Crescimento econômico e transformação das condições de vida entre 1945 e 1975. Interpretação: A expressão designa um período excepcional de expansão econômica e modernização social, sem significar ausência de conflitos ou desigualdades."
+    }
+  ],
+  "syntheses": [
+    {
+      "number": 1,
+      "authorOrSchool": "1. François Furet — A Revolução como Transformação da Cultura Política",
+      "synthesisText": "Furet destaca a importância das linguagens políticas e das representações da soberania na Revolução Francesa. Sua interpretação questiona explicações que reduzem a Revolução a uma simples consequência do desenvolvimento econômico ou da ascensão burguesa.",
+      "supportingReference": "FURET, François. Penser la Révolution française. Paris: Gallimard, 1978."
+    },
+    {
+      "number": 2,
+      "authorOrSchool": "2. Georges Lefebvre — A Revolução e a Estrutura Social",
+      "synthesisText": "Lefebvre enfatiza a articulação entre crise econômica, conflitos sociais, tensões camponesas e transformações políticas.",
+      "supportingReference": "LEFEBVRE, Georges. Quatre-vingt-neuf. Paris: Maison du Livre Français, 1939."
+    },
+    {
+      "number": 3,
+      "authorOrSchool": "3. Robert Darnton — Cultura e Circulação das Ideias",
+      "synthesisText": "Darnton investiga os circuitos de publicação, os livros clandestinos, os livreiros e a circulação da literatura política.",
+      "supportingReference": "DARNTON, Robert. The Literary Underground of the Old Regime. Cambridge: Harvard University Press, 1982."
+    },
+    {
+      "number": 4,
+      "authorOrSchool": "4. Robert Tombs — A Comuna de Paris",
+      "synthesisText": "Tombs examina a Comuna e a repressão de 1871, questionando interpretações simplificadoras sobre sua natureza e sobre o número de mortos.",
+      "supportingReference": "TOMBS, Robert. The Paris Commune 1871 (1999); How Bloody Was La Semaine Sanglante of 1871? A Revision (2012)."
+    },
+    {
+      "number": 5,
+      "authorOrSchool": "5. Julian Jackson — Vichy e a Resistência",
+      "synthesisText": "Jackson demonstra a complexidade da sociedade francesa durante a ocupação, evitando reduzir o período a uma divisão simples entre resistentes e colaboradores.",
+      "supportingReference": "JACKSON, Julian. France: The Dark Years, 1940–1944. Oxford: Oxford University Press, 2001."
+    },
+    {
+      "number": 6,
+      "authorOrSchool": "6. Philip Nord — A Construção do Estado Social",
+      "synthesisText": "Nord investiga a relação entre as reformas dos anos 1930 e as instituições construídas no pós-guerra.",
+      "supportingReference": "NORD, Philip. France's New Deal: From the Thirties to the Postwar Era. Princeton: Princeton University Press, 2010."
+    }
+  ],
+  "referenceCategories": [
+    {
+      "category": "I. Filosofia e Pensadores do Século XVIII",
+      "items": [
+        "MONTESQUIEU. De l'esprit des lois. 1748.",
+        "ROUSSEAU, Jean-Jacques. Du contrat social. 1762.",
+        "VOLTAIRE. Traité sur la tolérance. 1763.",
+        "DIDEROT, Denis. Autorité politique. In: Encyclopédie. 1751."
+      ]
+    },
+    {
+      "category": "II. Revolução Francesa e Direitos Políticos",
+      "items": [
+        "SIEYÈS, Emmanuel-Joseph. Qu'est-ce que le Tiers-État? 1789.",
+        "FRANÇA. Déclaration des droits de l'homme et du citoyen. 1789.",
+        "GOUGES, Olympe de. Déclaration des droits de la femme et de la citoyenne. 1791."
+      ]
+    },
+    {
+      "category": "III. Napoleão e a Codificação Jurídica",
+      "items": [
+        "FRANÇA. Code civil des Français. 1804."
+      ]
+    },
+    {
+      "category": "IV. Revoluções e Questão Social no Século XIX",
+      "items": [
+        "TOCQUEVILLE, Alexis de. L'Ancien Régime et la Révolution. 1856.",
+        "MARX, Karl. The Civil War in France. 1871.",
+        "COMMUNE DE PARIS. Journal officiel de la Commune. 1871."
+      ]
+    },
+    {
+      "category": "V. Guerras Mundiais e Resistência",
+      "items": [
+        "BLOCH, Marc. L'Étrange Défaite. 1946.",
+        "DE GAULLE, Charles. Mémoires de guerre. 1954–1959.",
+        "CONSEIL NATIONAL DE LA RÉSISTANCE. Programme. 1944."
+      ]
+    },
+    {
+      "category": "VI. Estado Social e França Contemporânea",
+      "items": [
+        "FRANÇA. Préambule de la Constitution de 1946.",
+        "FOURASTIÉ, Jean. Les Trente Glorieuses. 1979."
+      ]
+    },
+    {
+      "category": "VII. Sínteses Historiográficas",
+      "items": [
+        "FURET, François. Penser la Révolution française. 1978.",
+        "LEFEBVRE, Georges. Quatre-vingt-neuf. 1939.",
+        "DARNTON, Robert. The Literary Underground of the Old Regime. 1982.",
+        "TOMBS, Robert. The Paris Commune 1871. 1999.",
+        "JACKSON, Julian. France: The Dark Years, 1940–1944. 2001.",
+        "NORD, Philip. France's New Deal. 2010."
+      ]
+    }
+  ],
+  "controversiasELimitacoesDasFontes": "REGISTRO ACADÊMICO DE CITAÇÕES Nº 11 — FRANÇA: ILUMINISMO, REVOLUÇÕES E ESTADO SOCIAL (1715–1975). Este acervo organiza em 7 eixos temáticos as 16 citações documentais fundamentais e as 6 sínteses historiográficas centrais para a compreensão do modelo político francês."
+}};
