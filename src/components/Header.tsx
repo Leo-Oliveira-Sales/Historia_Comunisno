@@ -172,41 +172,12 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
           </div>
 
-        {/* Zone 2: Desktop nav links (Clean text links without boxes) */}
-        <nav className="hidden xl:flex items-center gap-3 2xl:gap-5 text-xs lg:text-sm font-medium text-stone-300">
-          {navItems.map((item) => {
-            const isActive = currentTab === item.id;
-            return (
-              <button
-                key={item.id}
-                onClick={() => onSelectTab(item.id)}
-                className={`nav-btn-clean ${isActive ? 'nav-btn-active text-amber-400 font-semibold' : 'text-stone-300 hover:text-stone-100'} transition-colors whitespace-nowrap shrink-0 py-2 min-h-[44px] flex items-center border-0 bg-transparent shadow-none`}
-              >
-                {item.label}
-              </button>
-            );
-          })}
-
-          {/* Lateral Menu Trigger for Desktop */}
-          <button
-            onClick={() => {
-              playTypewriterClack();
-              setMobileMenuOpen(true);
-            }}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-mono font-bold text-amber-400 hover:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/40 rounded-lg transition-all min-h-[36px] ml-1 shadow-sm"
-            title="Abrir Menu Lateral (Roleta, Linha do Tempo e Opções)"
-          >
-            <Menu className="w-3.5 h-3.5" />
-            <span>Menu Lateral</span>
-          </button>
-        </nav>
-
-        {/* Zone 3: Actions + Theme Switcher + Global Font Size Control + Menu Drawer Button */}
-        <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+        {/* Zone 2: Right Actions (Font Size, Theme, Audio, Caderno, Menu) */}
+        <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
           
-          {/* Global Font Size Control (Desktop XL only) */}
+          {/* Global Font Size Control (A, A+, A++, A+++) */}
           <div 
-            className="hidden xl:flex items-center bg-stone-900/90 border border-stone-700/80 p-0.5 rounded-lg shadow-inner"
+            className="hidden sm:flex items-center bg-stone-900/90 border border-stone-700/80 p-0.5 rounded-lg shadow-inner"
             role="group"
             aria-label="Tamanho da Fonte Global"
           >
@@ -232,11 +203,11 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </div>
 
-          {/* Compact Global Font Size Cycle Button (Visible on medium screens, in drawer on mobile) */}
+          {/* Compact Global Font Size Cycle Button for Mobile screens (< 640px) */}
           <button
             onClick={handleCycleFontSize}
             title={`Aumentar Tamanho da Fonte (Atual: ${fontSize.toUpperCase()})`}
-            className="hidden sm:flex xl:hidden p-1.5 min-h-[38px] min-w-[38px] text-stone-300 hover:text-amber-400 hover:bg-stone-800/60 rounded-lg border border-stone-700/80 transition-colors items-center justify-center gap-1"
+            className="sm:hidden p-1.5 min-h-[38px] min-w-[38px] text-stone-300 hover:text-amber-400 hover:bg-stone-800/60 rounded-lg border border-stone-700/80 transition-colors flex items-center justify-center gap-1 shrink-0"
             aria-label="Aumentar Fonte do App"
           >
             <Type className="w-3.5 h-3.5 text-amber-400" />

@@ -40,6 +40,7 @@ export interface AcademicChapter {
   sections: AcademicChapterSection[];
   conclusion: string;
   bibliographicReferences: string[];
+  rawMarkdown?: string;
 }
 
 export const ACADEMIC_CHAPTERS: Record<number, AcademicChapter> = {
