@@ -322,50 +322,6 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
         </div>
       </header>
-
-      {/* Mobile Interactive Sub-Navigation Bar (< xl) */}
-      <nav 
-        className="xl:hidden bg-[#151518]/95 backdrop-blur border-b border-stone-800/90 px-2 sm:px-4 py-1.5 flex items-center gap-1.5 overflow-x-auto no-scrollbar w-full max-w-full touch-pan-x"
-        aria-label="Navegação Rápida Mobile"
-      >
-        {navItems.map((item) => {
-          const Icon = item.icon;
-          const isActive = currentTab === item.id;
-          return (
-            <button
-              key={item.id}
-              onClick={() => {
-                playTypewriterClack();
-                onSelectTab(item.id);
-              }}
-              className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap shrink-0 transition-all min-h-[34px] border ${
-                isActive
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/60 font-bold shadow-sm'
-                  : 'bg-stone-900/70 text-stone-300 hover:text-stone-100 hover:bg-stone-800/60 border-stone-800'
-              }`}
-            >
-              <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-amber-400' : 'text-stone-400'}`} />
-              <span>{item.label}</span>
-              {isActive && (
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse ml-0.5" />
-              )}
-            </button>
-          );
-        })}
-
-        {/* Quick Menu Lateral Button in Mobile Strip */}
-        <button
-          onClick={() => {
-            playTypewriterClack();
-            setMobileMenuOpen(true);
-          }}
-          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono font-bold whitespace-nowrap shrink-0 transition-all min-h-[34px] bg-stone-900/90 hover:bg-stone-800 text-amber-400 border border-stone-700/80"
-          title="Abrir Menu Lateral"
-        >
-          <Menu className="w-3.5 h-3.5 text-amber-400" />
-          <span>Menu Lateral</span>
-        </button>
-      </nav>
       </div>
 
       {/* Lateral Off-Canvas Sidebar Drawer */}
