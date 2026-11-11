@@ -628,6 +628,315 @@ Na capital deserta, a antiga escola secundária Tuol Svay Prey foi convertida na
 Após assinarem confissões forjadas delirantes, os prisioneiros eram transportados à noite em caminhões até o pomar de Choeung Ek (os infames "Killing Fields"), onde eram forçados a se ajoelhar à beira de fossas comuns e executados não com balas (para economizar munição), mas com pancadas de barras de ferro e pás na base do crânio. Entre 1975 e 1979, o delírio utópico do Khmer Vermelho exterminou entre 1,7 e 2,2 milhões de cambojanos — quase um quarto de toda a população da nação.`,
       eyewitnessOrDocQuote: 'Destruir você não é nenhuma perda; preservar você não traz nenhum proveito.',
       quoteAuthor: 'Lema oficial da Angkar (Organização Central do Khmer Vermelho) repetido aos prisioneiros'
+    },
+    {
+      title: "Crônica 1 — A Revolução que Pretendia Transformar a Natureza Humana",
+      location: "China (1958–1962: o Grande Salto Adiante)",
+      narrative: `Em 1958, a China entrou em uma das experiências mais ambiciosas de transformação econômica e social do século XX. Sob a liderança de Mao Zedong, o governo anunciou que o país poderia superar rapidamente seu atraso econômico e alcançar as principais potências industriais.
+
+A promessa era grandiosa: industrializar o campo, multiplicar a produção agrícola, mobilizar milhões de trabalhadores e construir uma sociedade socialista capaz de demonstrar a superioridade de seu modelo político.
+
+As comunas populares passaram a reorganizar a vida de milhões de camponeses. A produção agrícola foi submetida a metas estabelecidas pelo Estado, enquanto pequenas unidades industriais improvisadas, conhecidas por seus fornos de quintal, simbolizavam a tentativa de acelerar a industrialização.
+
+Entretanto, entre a propaganda e a realidade abriu-se um abismo.
+
+Os dirigentes locais tinham incentivos para anunciar resultados extraordinários. Informações sobre a produção eram frequentemente exageradas, e os números apresentados às autoridades centrais não correspondiam necessariamente à quantidade real de alimentos disponíveis.
+
+O sistema político dificultava a transmissão de notícias negativas. Reconhecer o fracasso podia significar demonstrar deslealdade à revolução.
+
+Enquanto isso, o Estado continuava requisitando alimentos com base em informações distorcidas. Em diversas regiões, os camponeses perderam o controle sobre parte substancial de sua produção, e a escassez tornou-se uma tragédia nacional.
+
+A fome de 1959–1961 provocou milhões de mortes. As estimativas variam consideravelmente entre os pesquisadores, conforme os métodos demográficos e documentais utilizados.
+
+O Grande Salto Adiante demonstrou como uma política econômica submetida à ambição ideológica, à pressão administrativa e à ausência de mecanismos efetivos de correção podia produzir consequências catastróficas.
+
+A tragédia não foi simplesmente resultado de uma natureza hostil ou de uma colheita ruim. Foi agravada por decisões políticas, mecanismos coercitivos de aquisição de alimentos e pela incapacidade institucional de reconhecer e corrigir os erros.`,
+      eyewitnessOrDocQuote: "Quando a fidelidade a um projeto político se torna mais importante do que a realidade, a própria capacidade de governar pode ser destruída. A experiência chinesa demonstra os perigos da concentração decisória e da transformação de metas ideológicas em obrigações administrativas incontestáveis.",
+      quoteAuthor: "Reflexão histórica — Frank Dikötter (2010), Yang Jisheng, Roderick MacFarquhar"
+    },
+    {
+      title: "Crônica 2 — Quando a Revolução Passou a Julgar seus Próprios Filhos",
+      location: "China (1966–1976: a Revolução Cultural)",
+      narrative: `Em 1966, a China iniciou uma campanha que pretendia combater os chamados elementos burgueses e preservar a pureza revolucionária do socialismo.
+
+Mao Zedong convocou a população, especialmente os jovens, a participar de uma transformação política e cultural. Os Guardas Vermelhos passaram a ocupar posição central nesse movimento.
+
+Escolas e universidades foram profundamente afetadas. Professores, intelectuais, dirigentes partidários e funcionários públicos passaram a ser acusados de defender ideias contrárias à revolução.
+
+A crítica política transformou-se em perseguição pública. Reuniões de denúncia, humilhações coletivas e agressões tornaram-se instrumentos de intimidação.
+
+Livros, monumentos, objetos religiosos e referências culturais tradicionais foram atacados em nome da destruição dos chamados Quatro Velhos: velhos costumes, velha cultura, velhos hábitos e velhas ideias.
+
+A campanha ultrapassou rapidamente os limites de uma reforma cultural. As disputas políticas passaram a produzir conflitos entre diferentes grupos revolucionários, inclusive entre aqueles que afirmavam defender Mao.
+
+O próprio Partido Comunista foi atingido pela radicalização. Dirigentes que haviam participado da construção do Estado socialista passaram a ser acusados de traição e revisionismo.
+
+A violência política revelou uma contradição profunda: uma revolução que afirmava combater hierarquias antigas produziu novas formas de autoridade e perseguição.
+
+A Revolução Cultural terminou politicamente com a morte de Mao, em 1976, e com a derrota do chamado Grupo dos Quatro.
+
+Seu legado permaneceu profundamente controverso na sociedade chinesa.`,
+      eyewitnessOrDocQuote: "A Revolução Cultural demonstra como a mobilização política permanente pode destruir instituições que deveriam garantir estabilidade, educação e administração pública. Quando a discordância passa a ser interpretada como traição, a sociedade perde espaços legítimos para o debate.",
+      quoteAuthor: "Reflexão histórica — Roderick MacFarquhar, Michael Schoenhals (2006), Frank Dikötter (2016), Andrew G. Walder (2015)"
+    },
+    {
+      title: "Crônica 3 — O País que Quis Recomeçar do Zero",
+      location: "Camboja (1975–1979: Pol Pot e o Khmer Vermelho)",
+      narrative: `Em abril de 1975, as forças do Khmer Vermelho entraram em Phnom Penh. O regime de Lon Nol havia sido derrotado, e os revolucionários proclamavam o início de uma nova sociedade.
+
+A capital foi esvaziada. Hospitais, residências e ruas foram abandonados por ordem das novas autoridades. Milhares de famílias receberam a determinação de deixar a cidade, muitas vezes sob a justificativa de que precisavam escapar dos bombardeios ou colaborar com a reorganização nacional.
+
+A população urbana foi enviada para o campo.
+
+O novo governo, denominado Democratic Kampuchea, pretendia construir uma sociedade agrária radicalmente transformada. O dinheiro, os mercados, as instituições tradicionais e diversas formas de organização social foram eliminados ou profundamente modificados.
+
+A vida cotidiana passou a ser controlada por estruturas revolucionárias. Famílias foram separadas, crianças foram incorporadas a organizações coletivas e o trabalho agrícola tornou-se obrigatório.
+
+A educação, a religião e a cultura foram submetidas a uma ideologia que identificava antigas estruturas sociais como obstáculos à revolução.
+
+O regime também perseguiu antigos funcionários públicos, militares, intelectuais, religiosos, minorias étnicas e pessoas suspeitas de deslealdade.
+
+A prisão S-21, em Phnom Penh, tornou-se um dos símbolos mais conhecidos do sistema de terror. Pessoas eram interrogadas, submetidas à tortura e frequentemente executadas após a produção de confissões forçadas.
+
+Entre 1975 e 1979, aproximadamente 1,5 a 2 milhões de pessoas morreram em consequência de execuções, fome, doenças, trabalho forçado e outras formas de violência.
+
+A experiência cambojana representou uma tentativa extrema de reorganização social pela destruição das estruturas anteriores.
+
+Em dezembro de 1978, o Vietnã invadiu o Camboja. Em janeiro de 1979, Phnom Penh foi tomada, encerrando o governo de Pol Pot.
+
+A queda do regime não encerrou imediatamente a violência nem resolveu os conflitos políticos do país.`,
+      eyewitnessOrDocQuote: "A experiência cambojana demonstra os riscos de projetos revolucionários que procuram reconstruir integralmente a sociedade por meio da eliminação de instituições, identidades e relações humanas consideradas incompatíveis com uma concepção ideológica de perfeição social.",
+      quoteAuthor: "Reflexão histórica — Ben Kiernan (2008), David Chandler (1999), Elizabeth Becker"
+    },
+    {
+      title: "Crônica 4 — A Revolução que se Voltou Contra seus Adversários Internos",
+      location: "Etiópia (1974–1978: o Derg e o Terror Vermelho)",
+      narrative: `Em 1974, uma revolução derrubou o imperador Haile Selassie, encerrando séculos de monarquia etíope.
+
+O movimento que contribuiu para a queda do imperador era heterogêneo. Militares, estudantes, trabalhadores e diferentes organizações políticas participaram da crise que desestabilizou o antigo regime.
+
+O poder acabou concentrado no Derg, um conselho militar que passou a governar o país.
+
+Sob a liderança de Mengistu Haile Mariam, o governo adotou o marxismo-leninismo e estabeleceu relações estreitas com a União Soviética.
+
+A revolução prometia acabar com as desigualdades sociais, transformar a estrutura agrária e construir um Estado socialista.
+
+Entretanto, a disputa entre organizações revolucionárias tornou-se cada vez mais violenta.
+
+O Partido Revolucionário do Povo Etíope (EPRP) e outros grupos passaram a confrontar o governo militar. O Derg respondeu com uma campanha de repressão conhecida como Terror Vermelho.
+
+Prisões, execuções e desaparecimentos atingiram estudantes, militantes, opositores e pessoas consideradas inimigas do regime.
+
+As ruas de algumas cidades foram marcadas pela exposição pública de cadáveres, numa tentativa de intimidar a população e demonstrar a capacidade coercitiva do Estado.
+
+A violência não ficou restrita às estruturas centrais do governo. Organizações locais, milícias e agentes políticos também participaram do processo repressivo.
+
+A Etiópia enfrentava simultaneamente conflitos internos, guerras regionais, dificuldades econômicas e disputas internacionais relacionadas à Guerra Fria.
+
+A revolução que prometia libertar a população das estruturas tradicionais acabou construindo um sistema político no qual a oposição podia representar uma ameaça à própria sobrevivência.`,
+      eyewitnessOrDocQuote: "O caso etíope demonstra que movimentos revolucionários podem transformar antigos adversários em inimigos permanentes. A concentração do poder militar e a ausência de garantias políticas favoreceram a transformação da disputa ideológica em violência institucional.",
+      quoteAuthor: "Reflexão histórica — Bahru Zewde, Jacob Wiebel, Atrocities in Revolutionary Ethiopia"
+    },
+    {
+      title: "Crônica 5 — O País Onde o Estado Observava Tudo",
+      location: "Coreia do Norte (A dinastia Kim e a construção de um sistema fechado)",
+      narrative: `Após a divisão da península coreana e a Guerra da Coreia, a República Popular Democrática da Coreia consolidou um sistema político altamente centralizado.
+
+Kim Il-sung construiu sua autoridade sobre a vitória revolucionária, a resistência contra o domínio japonês e a defesa da independência nacional.
+
+Com o passar dos anos, o Estado desenvolveu uma estrutura política baseada na supremacia do Partido dos Trabalhadores da Coreia, na liderança pessoal e no culto à personalidade.
+
+A ideologia Juche passou a ocupar posição central no discurso oficial. A independência nacional, a autossuficiência e a lealdade ao dirigente foram apresentadas como princípios fundamentais da organização política.
+
+A sucessão de Kim Il-sung por seu filho Kim Jong-il, em 1994, e posteriormente por Kim Jong-un, consolidou uma dinastia política incomum entre os regimes oficialmente socialistas.
+
+A população passou a viver sob um sistema de vigilância, controle informacional e restrições severas à circulação de pessoas e ideias.
+
+O Estado manteve campos de prisioneiros políticos e outras estruturas de detenção. Relatórios internacionais documentaram tortura, execuções, trabalho forçado e perseguição sistemática.
+
+Na década de 1990, o país enfrentou uma grave crise alimentar, conhecida oficialmente como Marcha Árdua.
+
+A fome provocou uma catástrofe humanitária. A deterioração da economia, os problemas agrícolas, as mudanças no apoio externo e as decisões políticas contribuíram para a crise.
+
+Milhares de pessoas tentaram escapar do país, enfrentando riscos de prisão, deportação e punição.
+
+A Coreia do Norte tornou-se um dos exemplos mais extremos de fechamento político e controle estatal da sociedade contemporânea.`,
+      eyewitnessOrDocQuote: "A experiência norte-coreana demonstra como a combinação entre isolamento, concentração do poder, controle da informação e sucessão dinástica pode produzir um sistema político de extraordinária resistência à transformação institucional.",
+      quoteAuthor: "Reflexão histórica — Comissão da ONU (A/HRC/25/63), Stephan Haggard, Marcus Noland, Andrei Lankov"
+    },
+    {
+      title: "Crônica 6 — Os que Partiram pelo Mar",
+      location: "Vietnã (1975 em diante: campos de reeducação e Boat People)",
+      narrative: `Em abril de 1975, Saigon caiu diante das forças comunistas do Vietnã do Norte.
+
+A reunificação do país encerrou uma longa guerra, mas inaugurou uma nova etapa de reorganização política e social.
+
+O governo passou a integrar as estruturas do antigo Vietnã do Sul ao novo Estado socialista.
+
+Antigos militares, funcionários públicos e integrantes da administração sul-vietnamita foram enviados para campos de reeducação.
+
+A duração do internamento variou. Algumas pessoas permaneceram detidas por períodos relativamente curtos; outras passaram anos em campos, submetidas a trabalho obrigatório e programas de reeducação política.
+
+As consequências atingiram também as famílias. A ausência de informações sobre os detidos, a perda de rendimentos e as restrições impostas aos antigos integrantes do regime derrotado produziram dificuldades sociais duradouras.
+
+Paralelamente, milhares de vietnamitas começaram a deixar o país.
+
+Alguns fugiam por razões políticas. Outros procuravam escapar da insegurança econômica, das restrições sociais ou das consequências da reorganização do país.
+
+Muitas famílias embarcaram em pequenas embarcações, atravessando o Mar da China Meridional em condições extremamente perigosas.
+
+Esses refugiados ficaram conhecidos internacionalmente como Boat People.
+
+A travessia podia significar naufrágios, fome, desidratação e ataques de piratas. Aqueles que sobreviviam frequentemente chegavam a campos de refugiados em países do Sudeste Asiático.
+
+A diáspora vietnamita espalhou-se por diferentes continentes, construindo comunidades que preservaram memórias distintas da guerra e da reunificação.
+
+A história do Vietnã após 1975 revela uma dimensão frequentemente esquecida das revoluções: a transformação política não termina quando o conflito militar acaba.`,
+      eyewitnessOrDocQuote: "A vitória militar de uma revolução não elimina automaticamente as tensões sociais e políticas. A experiência vietnamita demonstra como a reorganização de um Estado pode produzir novas formas de exclusão, deslocamento e conflito.",
+      quoteAuthor: "Reflexão histórica — Nathalie Nguyen, Yến Lê Espiritu (2014), Tuan Hoang"
+    },
+    {
+      title: "Crônica 7 — A Revolução Depois da Independência",
+      location: "Angola (1975–1977: o MPLA e o 27 de Maio)",
+      narrative: `Em novembro de 1975, Angola conquistou sua independência de Portugal.
+
+O processo, entretanto, foi marcado por disputas entre movimentos nacionalistas que haviam combatido o colonialismo português.
+
+O MPLA assumiu o controle do governo, enquanto a FNLA e a UNITA disputavam o poder em um cenário de guerra civil e intervenção internacional.
+
+A independência não significou o início imediato de uma ordem política estável.
+
+O novo governo procurou consolidar o Estado, organizar suas forças armadas e estabelecer um projeto político de orientação marxista-leninista.
+
+As disputas internas dentro do próprio MPLA tornaram-se cada vez mais intensas.
+
+Em 27 de maio de 1977, ocorreu uma mobilização política que permanece objeto de controvérsia histórica. As interpretações divergem sobre a natureza do movimento, sua liderança e o grau de organização de uma tentativa de golpe.
+
+O governo respondeu com uma campanha repressiva de grandes proporções.
+
+Prisões, torturas, execuções e desaparecimentos atingiram integrantes do movimento, militares, dirigentes e pessoas suspeitas de simpatia pelos dissidentes.
+
+A repressão ultrapassou os participantes diretos dos acontecimentos e produziu um ambiente de medo que marcou a sociedade angolana durante anos.
+
+Famílias procuraram informações sobre parentes desaparecidos, enquanto a memória do episódio permaneceu cercada de silêncio e disputas políticas.
+
+A reconstrução histórica do 27 de Maio exige confrontar versões oficiais, testemunhos de sobreviventes e pesquisas independentes.`,
+      eyewitnessOrDocQuote: "O episódio demonstra que a conquista da independência não garante, por si só, pluralismo político ou liberdade de oposição. A construção de um Estado nacional pode ser acompanhada por disputas internas nas quais o poder revolucionário procura eliminar adversários em nome da estabilidade e da unidade nacional.",
+      quoteAuthor: "Reflexão histórica — Lara Pawson (2014), Giselda Brito Silva"
+    },
+    {
+      title: "Crônica 8 — A Sociedade que Deveria ser Reeducada",
+      location: "Moçambique (1975–1980: FRELIMO e os campos de reeducação)",
+      narrative: `Em 1975, Moçambique tornou-se independente de Portugal.
+
+A FRELIMO, que havia liderado a luta de libertação nacional, assumiu o governo e iniciou um projeto de transformação socialista.
+
+O novo Estado procurou reorganizar a economia, a educação, a saúde e as estruturas administrativas herdadas do colonialismo.
+
+A liderança revolucionária acreditava que a independência política deveria ser acompanhada por uma profunda transformação cultural e social.
+
+Nesse contexto, foram criados campos de reeducação destinados a pessoas consideradas incompatíveis com os valores da nova sociedade.
+
+Indivíduos classificados como criminosos, exploradores, opositores ou representantes de comportamentos considerados socialmente indesejáveis podiam ser enviados para esses espaços.
+
+O discurso oficial apresentava a reeducação como instrumento de transformação moral e política.
+
+Na experiência concreta, entretanto, muitos detidos enfrentaram coerção, restrição da liberdade e condições precárias.
+
+Em 1983, o governo promoveu a Operação Produção, que envolveu o deslocamento compulsório de pessoas das cidades para regiões rurais.
+
+A medida procurava reorganizar a população urbana e responder aos problemas econômicos e sociais, mas produziu novos sofrimentos e desestruturação familiar.
+
+Moçambique enfrentava também uma guerra civil que aprofundava a crise econômica e comprometia a capacidade do Estado.
+
+A história da FRELIMO mostra as dificuldades de transformar uma sociedade marcada pelo colonialismo e pela desigualdade sem reproduzir mecanismos autoritários de controle.`,
+      eyewitnessOrDocQuote: "A construção de uma sociedade mais igualitária não elimina a necessidade de proteger a liberdade individual. A experiência moçambicana demonstra a tensão entre transformação social, planejamento estatal e coerção política.",
+      quoteAuthor: "Reflexão histórica — Benedito Machava (2019, 2024), Carlos Quembo"
+    },
+    {
+      title: "Crônica 9 — A Revolução que Mudou a Vida de Milhões, mas Não Abriu Mão do Poder",
+      location: "Cuba (1959 em diante: conquistas sociais e partido único)",
+      narrative: `Em janeiro de 1959, as forças revolucionárias lideradas por Fidel Castro derrubaram a ditadura de Fulgencio Batista.
+
+A vitória revolucionária despertou enormes expectativas. Cuba iniciou um processo de transformação econômica, social e política que alteraria profundamente a estrutura do país.
+
+A reforma agrária modificou a propriedade rural. A campanha de alfabetização mobilizou professores e estudantes. A educação e a saúde foram ampliadas como instrumentos centrais do projeto revolucionário.
+
+A aproximação com a União Soviética tornou-se cada vez mais importante, especialmente depois do agravamento das relações com os Estados Unidos.
+
+A invasão da Baía dos Porcos, em 1961, e a crise dos mísseis de 1962 consolidaram a posição de Cuba no centro das tensões da Guerra Fria.
+
+Entretanto, enquanto o governo promovia reformas sociais, também concentrava o poder político.
+
+A oposição organizada enfrentou restrições crescentes. A imprensa independente foi limitada, organizações políticas foram controladas e dissidentes sofreram perseguição.
+
+A institucionalização do Partido Comunista como força dirigente consolidou um sistema de partido único.
+
+Ao longo das décadas, a população cubana experimentou simultaneamente avanços sociais importantes e limitações profundas à liberdade política.
+
+A emigração tornou-se uma característica marcante da história revolucionária, com diferentes ondas de saída motivadas por razões políticas, econômicas e familiares.
+
+O caso cubano exige uma análise que não transforme conquistas sociais em justificativa para a repressão, nem ignore os efeitos das sanções e da pressão externa sobre o desenvolvimento do país.`,
+      eyewitnessOrDocQuote: "A experiência cubana mostra que políticas sociais abrangentes e concentração autoritária do poder podem coexistir. A avaliação histórica de uma revolução precisa considerar tanto seus resultados sociais quanto as liberdades políticas garantidas ou negadas à população.",
+      quoteAuthor: "Reflexão histórica — Luis Martínez-Fernández, Marifeli Pérez-Stable, Samuel Farber"
+    },
+    {
+      title: "Crônica 10 — A Revolução que Enfrentou sua Própria Guerra",
+      location: "Nicarágua (1979–1990: os sandinistas e a guerra dos Contras)",
+      narrative: `Em julho de 1979, a Revolução Sandinista derrubou a ditadura da família Somoza, que havia dominado a Nicarágua durante décadas.
+
+A vitória da Frente Sandinista de Libertação Nacional representou uma ruptura histórica.
+
+O novo governo iniciou reformas sociais, programas de alfabetização, reorganização econômica e políticas destinadas a reduzir as desigualdades herdadas da ditadura.
+
+A revolução despertou esperança entre amplos setores da população e recebeu apoio internacional de diferentes países e movimentos políticos.
+
+Entretanto, o projeto sandinista rapidamente se tornou parte de uma disputa geopolítica.
+
+Os Estados Unidos passaram a apoiar forças contrarrevolucionárias conhecidas como Contras, que combatiam militarmente o governo.
+
+A guerra provocou mortes, destruição econômica e deslocamentos populacionais.
+
+O governo sandinista também enfrentou críticas por restrições à imprensa, tensões com setores da oposição e conflitos envolvendo comunidades indígenas, especialmente os Miskito.
+
+O deslocamento de comunidades indígenas e as operações militares na região caribenha demonstraram as dificuldades do governo em conciliar seu projeto revolucionário com as reivindicações de autonomia local.
+
+A guerra, a crise econômica e o desgaste político contribuíram para a derrota eleitoral dos sandinistas em 1990.
+
+A Nicarágua entrou em uma nova fase política, marcada por negociações e tentativas de reconstrução institucional.`,
+      eyewitnessOrDocQuote: "A Revolução Sandinista demonstra como uma revolução nacional pode ser condicionada por conflitos internacionais e, simultaneamente, enfrentar contradições internas relacionadas ao pluralismo, à autonomia comunitária e aos direitos políticos.",
+      quoteAuthor: "Reflexão histórica — Thomas W. Walker, Yvon Grenier"
+    },
+    {
+      title: "Crônica 11 — A Ideologia, o Estado e o Indivíduo",
+      location: "Panorama Comparativo Global (Padrões de violência política no século XX)",
+      narrative: `As experiências analisadas neste capítulo ocorreram em países diferentes, separados por continentes, culturas, trajetórias coloniais e estruturas econômicas.
+
+China, Camboja, Etiópia, Coreia do Norte, Vietnã, Angola, Moçambique, Cuba e Nicarágua não constituíram sistemas políticos idênticos.
+
+Alguns foram Estados socialistas consolidados. Outros surgiram de movimentos de libertação nacional, revoluções militares ou guerras civis.
+
+Entretanto, suas trajetórias permitem identificar mecanismos políticos que apareceram repetidamente.
+
+O primeiro foi a concentração do poder. A centralização das decisões em uma liderança ou organização política reduziu a capacidade de fiscalização independente.
+
+O segundo foi a identificação entre partido, Estado e revolução. Em determinados contextos, a crítica ao governo passou a ser apresentada como oposição à própria nação ou à transformação social.
+
+O terceiro foi a construção de categorias de inimigos internos. Supostos contrarrevolucionários, revisionistas, sabotadores e traidores passaram a ser utilizados como justificativa para medidas repressivas.
+
+O quarto foi a utilização de estruturas administrativas para organizar a coerção. Prisões, campos de trabalho, sistemas de vigilância, organizações de segurança e campanhas de mobilização tornaram-se instrumentos de controle social.
+
+O quinto foi a dificuldade de corrigir decisões políticas equivocadas. Quando a autoridade central se torna praticamente incontestável, informações negativas podem ser ocultadas e erros administrativos podem transformar-se em tragédias nacionais.
+
+Esses mecanismos não apareceram com a mesma intensidade nem produziram os mesmos resultados em todos os países estudados.
+
+A fome chinesa, o genocídio cambojano, o Terror Vermelho etíope, os campos norte-coreanos, os campos de reeducação vietnamitas, a repressão angolana, os campos moçambicanos e as restrições políticas em Cuba e na Nicarágua precisam ser compreendidos em seus respectivos contextos históricos.
+
+Não se trata de afirmar que todas as experiências foram equivalentes, mas de investigar como projetos revolucionários podem transformar-se em estruturas de dominação quando o poder deixa de reconhecer limites institucionais e direitos individuais.
+
+A história do século XX mostra que nenhuma promessa de igualdade, emancipação ou progresso social deve ser considerada suficiente para justificar a supressão da dignidade humana.`,
+      eyewitnessOrDocQuote: "A principal lição deste capítulo não é que todas as revoluções possuem o mesmo destino. É que nenhuma ideologia, independentemente de suas promessas, deve estar acima da investigação histórica, da responsabilidade política e dos direitos fundamentais dos indivíduos.",
+      quoteAuthor: "Reflexão final — Hermenêutica historiográfica comparativa"
     }
   ],
 
@@ -1066,6 +1375,174 @@ A Bastilha caiu em 14 de julho. No campo, rumores e temores provocaram uma onda 
 A Assembleia tomou medidas contra privilégios feudais e, em agosto, aprovou a Declaração dos Direitos do Homem e do Cidadão.
 
 A sociedade francesa entrava em uma experiência política sem precedentes em sua história recente.`
+    }
+  ],
+
+  106: [
+    {
+      title: 'CRÔNICA I — PARIS, 1871: A CIDADE QUE TENTOU GOVERNAR A SI MESMA',
+      location: 'Paris, França',
+      narrative: `Paris, março de 1871.
+
+A França havia sido derrotada na Guerra Franco-Prussiana. O Império de Napoleão III havia desmoronado, e o governo instalado em Versalhes procurava restabelecer a autoridade sobre uma capital marcada pela mobilização popular.
+
+A Guarda Nacional de Paris possuía armas e canhões que se tornaram motivo de conflito com o governo.
+
+Em 18 de março, tropas enviadas para recolher os canhões encontraram resistência. A operação fracassou, e a autoridade governamental perdeu o controle da cidade.
+
+Nos dias seguintes, a população parisiense organizou eleições para constituir uma nova administração.
+
+A Comuna de Paris foi proclamada em 28 de março.
+
+A cidade passou a experimentar formas de governo que procuravam aproximar a administração pública dos representantes eleitos e das organizações populares.
+
+Mas a experiência não duraria.
+
+O governo de Versalhes organizou uma ofensiva militar. Em maio, as tropas entraram em Paris.
+
+Durante a Semana Sangrenta, entre 21 e 28 de maio, a repressão destruiu a Comuna.
+
+A experiência terminou, mas sua memória permaneceu. Marx a interpretaria como uma experiência histórica fundamental para a discussão sobre o Estado e a revolução.`,
+      eyewitnessOrDocQuote: 'como uma experiência revolucionária local se transformou em referência internacional para o movimento socialista?',
+      quoteAuthor: 'Questão histórica'
+    },
+    {
+      title: 'CRÔNICA II — LONDRES, 1864–1876: A PRIMEIRA INTERNACIONAL E A DISPUTA PELO MOVIMENTO OPERÁRIO',
+      location: 'Londres, Reino Unido',
+      narrative: `Em Londres, em 1864, representantes de organizações operárias de diferentes países reuniram-se para criar uma associação internacional.
+
+A proposta era simples em sua formulação, mas complexa em sua execução: organizar a solidariedade dos trabalhadores para além das fronteiras nacionais.
+
+A Associação Internacional dos Trabalhadores reuniu socialistas, sindicalistas, marxistas, anarquistas e outras correntes.
+
+Marx tornou-se uma figura importante na elaboração de documentos e na orientação da organização.
+
+Mas a unidade era frágil.
+
+Bakunin defendia uma transformação social baseada na autonomia das organizações e na rejeição do Estado. Marx considerava necessária a organização política da classe trabalhadora e a conquista do poder político.
+
+A divergência cresceu.
+
+No Congresso de Haia, em 1872, o conflito tornou-se decisivo. A organização perdeu sua unidade e entrou em um processo de fragmentação.
+
+Em 1876, a Primeira Internacional encerrou suas atividades.
+
+A experiência demonstrou que o internacionalismo operário não eliminava os conflitos sobre estratégia, autoridade e organização.`,
+      eyewitnessOrDocQuote: 'seria possível construir uma organização internacional revolucionária sem estabelecer uma direção política centralizada?',
+      quoteAuthor: 'Questão histórica'
+    },
+    {
+      title: 'CRÔNICA III — 1914: A GUERRA QUE DIVIDIU O SOCIALISMO EUROPEU',
+      location: 'Europa',
+      narrative: `O ano de 1914 representou uma ruptura para o movimento socialista internacional.
+
+Durante décadas, partidos socialistas haviam defendido a solidariedade internacional dos trabalhadores e denunciado os conflitos imperialistas.
+
+Entretanto, quando a Primeira Guerra Mundial começou, importantes partidos socialistas apoiaram os governos de seus próprios países.
+
+A decisão provocou uma crise política e ideológica.
+
+Para setores revolucionários, a guerra demonstrava que o internacionalismo socialista havia sido subordinado aos interesses nacionais.
+
+Lenin considerou a posição dos partidos que apoiaram a guerra uma falência da Segunda Internacional.
+
+Outros socialistas defenderam posições diferentes, e o movimento se fragmentou.
+
+A crise de 1914 tornou-se um dos antecedentes políticos da fundação da Internacional Comunista em 1919.`,
+      eyewitnessOrDocQuote: 'por que organizações comprometidas com a solidariedade internacional dos trabalhadores apoiaram guerras conduzidas por seus próprios Estados?',
+      quoteAuthor: 'Questão histórica'
+    },
+    {
+      title: 'CRÔNICA IV — PETROGRADO, OUTUBRO DE 1917: A QUEDA DO GOVERNO PROVISÓRIO',
+      location: 'Petrogrado, Rússia',
+      narrative: `A Rússia de 1917 atravessava uma crise profunda.
+
+A monarquia havia caído em fevereiro, mas o Governo Provisório não conseguira resolver os problemas que alimentavam a revolução.
+
+A guerra continuava. A economia estava desorganizada. Trabalhadores e soldados pressionavam por mudanças.
+
+Os sovietes haviam adquirido grande importância política.
+
+Os bolcheviques, inicialmente uma das forças presentes nesse cenário, ampliaram sua influência durante o ano.
+
+Em outubro, o Comitê Militar Revolucionário do Soviete de Petrogrado coordenou a ocupação de pontos estratégicos da capital.
+
+A operação derrubou o Governo Provisório.
+
+Os bolcheviques assumiram a direção do novo governo.
+
+A tomada do poder foi organizada por uma direção revolucionária, mas ocorreu em uma conjuntura de mobilização popular e desagregação institucional.
+
+A Revolução de Outubro tornou-se um dos acontecimentos mais debatidos da história contemporânea.`,
+      eyewitnessOrDocQuote: 'Outubro de 1917 foi principalmente uma insurreição partidária, uma revolução popular ou a combinação de diferentes processos políticos?',
+      quoteAuthor: 'Questão histórica'
+    },
+    {
+      title: 'CRÔNICA V — 1918–1921: A REVOLUÇÃO SOB O CERCO DA GUERRA CIVIL',
+      location: 'Rússia Soviética',
+      narrative: `Após a tomada do poder, o governo bolchevique enfrentou uma guerra civil.
+
+O conflito envolveu forças antibolcheviques, exércitos estrangeiros, movimentos nacionalistas e grupos camponeses.
+
+O novo governo centralizou a economia e ampliou os mecanismos de segurança política.
+
+A Cheka passou a desempenhar papel importante na repressão aos considerados inimigos da revolução.
+
+O Terror Vermelho, as execuções e as prisões tornaram-se elementos da experiência política do período.
+
+Em janeiro de 1918, a Assembleia Constituinte havia sido dissolvida. Em 1921, a revolta de Kronstadt foi reprimida militarmente.
+
+A guerra civil terminou sem que a Rússia retornasse ao pluralismo político anterior.
+
+A Nova Política Econômica foi introduzida em 1921, mas o monopólio político do Partido Comunista permaneceu.
+
+A revolução havia sobrevivido militarmente, mas o regime construído durante o conflito apresentava instituições profundamente centralizadas.`,
+      eyewitnessOrDocQuote: 'quais elementos da centralização política foram respostas à guerra civil e quais expressaram escolhas estruturais do governo bolchevique?',
+      quoteAuthor: 'Questão histórica'
+    },
+    {
+      title: 'CRÔNICA VI — MOSCOU, 1919: O NASCIMENTO DA INTERNACIONAL COMUNISTA',
+      location: 'Moscou, URSS',
+      narrative: `Em março de 1919, representantes de organizações comunistas reuniram-se em Moscou para fundar uma nova organização internacional.
+
+A Internacional Comunista nasceu em um contexto de expectativa revolucionária.
+
+A Revolução Russa havia demonstrado que um movimento comunista poderia conquistar o poder. Para seus dirigentes, a experiência deveria ser difundida internacionalmente.
+
+A nova organização procurou estabelecer uma coordenação política entre partidos comunistas.
+
+Em 1920, o Segundo Congresso aprovou 21 condições para a admissão de organizações na Internacional.
+
+As condições exigiam disciplina, ruptura com setores reformistas e reorganização partidária.
+
+A Komintern tornou-se uma das instituições mais importantes da história do comunismo internacional.
+
+Ao mesmo tempo, sua trajetória revelou uma tensão crescente entre o projeto de revolução mundial e os interesses do Estado soviético.`,
+      eyewitnessOrDocQuote: 'a Internacional Comunista foi uma organização internacional autônoma ou um instrumento progressivamente subordinado à política soviética?',
+      quoteAuthor: 'Questão histórica'
+    },
+    {
+      title: 'CRÔNICA VII — 1935–1943: A FRENTE POPULAR E O FIM DA INTERNACIONAL COMUNISTA',
+      location: 'Moscou / Europa',
+      narrative: `Na década de 1930, a ascensão do fascismo e do nazismo alterou profundamente a estratégia comunista internacional.
+
+Em 1935, o Sétimo Congresso da Internacional Comunista passou a defender a formação de Frentes Populares.
+
+A nova orientação permitia alianças entre comunistas, socialistas e setores democráticos contrários ao fascismo.
+
+A Guerra Civil Espanhola tornou-se um dos principais cenários dessa política.
+
+A União Soviética apoiou a República Espanhola, enquanto diferentes organizações comunistas participaram do conflito.
+
+Entretanto, as disputas internas da esquerda, a repressão política e os conflitos entre organizações revolucionárias também marcaram o período.
+
+Em 1943, durante a Segunda Guerra Mundial, a Internacional Comunista foi formalmente dissolvida.
+
+A organização havia deixado de existir, mas os partidos comunistas continuaram atuando internacionalmente.
+
+A história da Komintern demonstrava a complexidade do internacionalismo revolucionário: uma organização criada para promover a revolução mundial havia sido profundamente condicionada pelas prioridades políticas e diplomáticas do Estado soviético.`,
+      eyewitnessOrDocQuote: 'a dissolução da Internacional Comunista representou o abandono do internacionalismo revolucionário ou uma transformação de suas formas de atuação?',
+      quoteAuthor: 'Questão histórica'
     }
   ]
 };

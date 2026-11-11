@@ -1855,5 +1855,95 @@ Uma teoria social abrangente precisa explicar como economia, instituições, cul
       'KOŁAKOWSKI, Leszek. Main Currents of Marxism: Its Rise, Growth and Dissolution. 3 v. Oxford: Clarendon Press, 1978.',
       'MARX, Karl. O Capital: Crítica da Economia Política (Livro I). São Paulo: Boitempo, 2013 [1867].'
     ]
+  },
+
+  106: {
+    topicId: 106,
+    title: 'A REVOLUÇÃO, A VANGUARDA E O PODER',
+    subtitle: 'Da emancipação dos trabalhadores à centralização do Estado revolucionário',
+    authorCatedra: 'Cátedra de História do Comunismo Global e Regimes Revolucionários · Ensaio Acadêmico',
+    estimatedReadingMinutes: 8,
+    wordCount: 780,
+    narrativeOverview: `A história do comunismo entre o século XIX e a primeira metade do século XX é marcada por uma questão fundamental: como transformar uma sociedade capitalista sem reproduzir, no interior do processo revolucionário, novas estruturas de dominação política?
+
+Essa questão atravessou diferentes gerações de socialistas, desde a experiência da Comuna de Paris até a formação da Internacional Comunista.
+
+Em 1871, a Comuna de Paris apresentou uma experiência de governo revolucionário que valorizava a representação popular, a responsabilidade dos representantes e a transformação das instituições tradicionais. Sua existência breve, entretanto, demonstrou as dificuldades de sobrevivência de um governo revolucionário diante de forças militares e políticas superiores.
+
+Marx interpretou a Comuna como uma experiência de transformação do aparelho estatal. Bakunin, embora partisse de fundamentos diferentes, também via na experiência parisiense uma demonstração da capacidade de organização popular fora das estruturas tradicionais de autoridade.
+
+A partir dessas experiências, o movimento socialista desenvolveu diferentes concepções sobre a relação entre organização, Estado e revolução.`,
+    historicalDevelopment: `A Primeira Internacional reuniu correntes que compartilhavam a crítica ao capitalismo, mas divergiam profundamente sobre os meios de transformação social. A disputa entre Marx e Bakunin revelou que a unidade do movimento operário não significava unidade doutrinária.
+
+A Segunda Internacional ampliou a presença do socialismo na política parlamentar e na organização sindical. Entretanto, o crescimento dos partidos socialistas também produziu uma controvérsia sobre a relação entre reformas graduais e ruptura revolucionária.
+
+A Primeira Guerra Mundial expôs os limites do internacionalismo socialista. O apoio de importantes partidos aos respectivos governos nacionais demonstrou que a solidariedade internacional dos trabalhadores poderia ser subordinada às prioridades dos Estados nacionais.
+
+Foi nesse ambiente que Lenin desenvolveu sua crítica à Segunda Internacional e defendeu uma organização revolucionária capaz de enfrentar a autocracia russa.
+
+A concepção de partido de vanguarda representou uma resposta às condições políticas do Império Russo. A organização centralizada, a disciplina e a formação de revolucionários profissionais eram consideradas instrumentos necessários para enfrentar a repressão czarista.`,
+    institutionalAndStateMechanisms: `Contudo, a transformação dessa concepção em estrutura de poder estatal produziu problemas que não podem ser ignorados.
+
+A Revolução de Outubro de 1917 ocorreu em uma sociedade profundamente desorganizada pela guerra, pela crise econômica e pela desintegração da autoridade imperial. Os bolcheviques conquistaram o poder em meio a uma mobilização social significativa, mas a consolidação do novo governo foi acompanhada por conflitos com outras forças políticas e pela restrição progressiva do pluralismo.
+
+A dissolução da Assembleia Constituinte, a repressão aos adversários e a centralização do aparelho estatal demonstraram que a experiência soviética se afastava de determinadas expectativas democráticas presentes no socialismo anterior.
+
+A guerra civil intensificou esse processo. A militarização da economia, a expansão da polícia política e a concentração das decisões contribuíram para a formação de instituições que sobreviveriam ao conflito.
+
+A questão central não é simplesmente determinar se a violência foi consequência da guerra ou resultado de uma escolha ideológica. A investigação histórica exige analisar a interação entre condições excepcionais, decisões políticas, estruturas institucionais e projetos de poder.`,
+    historiographicalDebate: `Rosa Luxemburg identificou precocemente os riscos de uma revolução que restringisse excessivamente a liberdade política. Sua crítica não significava rejeição da Revolução de Outubro, mas uma advertência sobre os perigos de substituir a participação popular pela autoridade de uma direção partidária.
+
+Kautsky também questionou a identificação entre ditadura do proletariado e ditadura de uma organização política.
+
+Essas críticas demonstram que a controvérsia sobre democracia e revolução não foi uma discussão externa ao marxismo. Ela atravessou o próprio movimento socialista.
+
+A Internacional Comunista ampliou a influência do modelo bolchevique. Ao estabelecer critérios de adesão e orientar a reorganização de partidos nacionais, a organização contribuiu para consolidar uma estrutura internacional de direção política.`,
+    concludingAssessment: `Entretanto, o internacionalismo revolucionário passou a conviver com os interesses estratégicos do Estado soviético. Essa tensão tornou-se especialmente evidente nas mudanças de orientação política da Komintern durante as décadas de 1920 e 1930.
+
+A trajetória entre 1871 e 1945 revela, assim, uma transformação profunda: o movimento socialista internacional, originalmente plural em suas formas organizacionais, passou a conviver com um modelo comunista no qual o partido revolucionário assumiu posição central na organização do Estado e da sociedade.
+
+Essa transformação não foi inevitável nem ocorreu sem oposição. Foi resultado de conflitos históricos, escolhas políticas e circunstâncias específicas.
+
+O estudo desse processo é indispensável para compreender as contradições entre emancipação social, democracia, autoridade revolucionária e concentração do poder.`,
+    scholarlyQuotes: [
+      {
+        author: 'Rosa Luxemburg',
+        work: 'A Revolução Russa',
+        year: '1918',
+        pageOrDoc: 'p. 109',
+        quote: 'A liberdade é sempre a liberdade daquele que pensa de modo diferente.',
+        historicalAnalysis: 'Luxemburg alerta para o perigo de substituir a participação viva das massas pelo monopólio decisório do comitê central partidário.'
+      },
+      {
+        author: 'Karl Kautsky',
+        work: 'A Ditadura do Proletariado',
+        year: '1918',
+        pageOrDoc: 'p. 42',
+        quote: 'A eliminação da democracia e a substituição das instituições representativas pelo poder irrestrito do partido ameaçam a própria essência do socialismo.',
+        historicalAnalysis: 'Kautsky questiona a exclusão dos demais partidos socialistas e a identificação do Estado soviético com a autocracia burocrática.'
+      }
+    ],
+    archivalCorpus: [
+      {
+        archiveName: 'Arquivo Estatal Russo de História Sociopolítica (RGASPI)',
+        fondCode: 'Fundo 495 (Comitê Executivo do Comintern)',
+        description: 'Registros das sessões do Comintern, diretrizes de admissão (21 condições) e relatórios sobre partidos comunistas estrangeiros.'
+      },
+      {
+        archiveName: 'International Institute of Social History (IISH / Amsterdã)',
+        fondCode: 'Primeira e Segunda Internacional (AIT & SPD Archive)',
+        description: 'Atas dos congressos de Haia (1872), Genebra, e documentos originais de Karl Marx e Mikhail Bakunin.'
+      }
+    ],
+    bibliographicReferences: [
+      'MARX, Karl. A Guerra Civil na França. 1871.',
+      'MARX, Karl. Crítica ao Programa de Gotha. 1875.',
+      'LENIN, Vladimir. Que Fazer? 1902.',
+      'LENIN, Vladimir. O Estado e a Revolução. 1917.',
+      'LUXEMBURG, Rosa. A Revolução Russa. 1918.',
+      'KAUTSKY, Karl. A Ditadura do Proletariado. 1918.',
+      'INTERNACIONAL COMUNISTA. 21 Condições de Admissão. 1920.',
+      'INTERNACIONAL COMUNISTA. Programa da Internacional Comunista. 1928.'
+    ]
   }
 };

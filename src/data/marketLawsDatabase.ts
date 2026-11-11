@@ -690,11 +690,7 @@ As duas primeiras afirmações podem ser investigadas empiricamente.
 
 A terceira exige provas específicas e não pode ser presumida a partir da existência das teorias de Gramsci ou Frankfurt.
 
-A expressão "marxismo cultural" é frequentemente utilizada em debates políticos contemporâneos, mas não representa uma categoria acadêmica consensual que descreva uma organização centralizada de transformação cultural.
-
-A pesquisa de Gilberto Calil sobre Olavo de Carvalho, publicada em 2021 na revista Argumentum, examina sua trajetória e a importância da denúncia de uma suposta influência gramscista na construção de sua narrativa política.
-
-O tema merece ser estudado como fenômeno da história intelectual e política brasileira.`
+A expressão "marxismo cultural" é frequentemente utilizada em debates políticos contemporâneos, mas não representa uma categoria acadêmica consensual que descreva uma organização centralizada de transformação cultural.`
       },
       {
         number: '8',

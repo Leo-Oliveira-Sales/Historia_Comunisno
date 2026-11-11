@@ -1,5 +1,7 @@
 import { AcademicChapter } from '../academicChaptersDatabase';
 import { CHAPTER_16 } from '../chapters/chapter_16';
+import { CHAPTER_IDEOLOGIAS_06 } from '../chapters/chapter_ideologias_06';
+import { CHAPTER_IDEOLOGIAS_10 } from '../chapters/chapter_ideologias_10';
 
 export const IDEOLOGIAS_CHAPTERS: Record<number, AcademicChapter> = {
   // =========================================================================
@@ -2732,49 +2734,7 @@ A passagem do materialismo histórico clássico para as teorias da hegemonia e d
   // =========================================================================
   // CAPÍTULO 6 (TÓPICO 106): COMUNISMO E MOVIMENTOS REVOLUCIONÁRIOS
   // =========================================================================
-  106: {
-    topicId: 106,
-    title: 'Comunismo e Movimentos Revolucionários: Da Comuna de Paris à Internacional Comunista',
-    subtitle: 'A militarização da vanguarda bolchevique, a insurreição de 1917 e as fraturas da esquerda mundial',
-    authorCatedra: 'Cátedra de História do Comunismo Global e Regimes Revolucionários',
-    introduction: 'A transformação do marxismo de teoria revolucionária crítica em regime estatal de partido único com ambições mundiais constitui o fenômeno político central do século XX. Da heróica e trágica experiência dos 72 dias da Comuna de Paris em 1871 até o colapso moral da Segunda Internacional em 1914 e o triunfo fulminante da insurreição bolchevique de Lenin em 1917, o comunismo estabeleceu um novo modelo de dominação total e reconfigurou todas as relações geopolíticas do planeta sob o comando de ferro do Komintern.',
-    sections: [
-      {
-        number: '1',
-        title: 'A Comuna de Paris (1871): O Espectro Insurrecional Operário',
-        content: 'No rescaldo da derrota francesa na Guerra Franco-Prussiana e da capitulação humilhante de Versalhes, a Guarda Nacional e a população operária de Paris tomaram a capital em março de 1871. Durante 72 dias inesquecíveis, a Comuna proclamou a separação entre Igreja e Estado, o fim do exército profissional em favor do povo em armas, o confisco de fábricas abandonadas e o teto salarial máximo para funcionários públicos equivalente ao de um operário comum. A reação implacável do governo de Adolphe Thiers — com o massacre de 20 mil comuneiros na Semana Sangrenta — convenceu a geração seguinte de revolucionários de que a burguesia não cederia o poder sem guerra civil total.'
-      },
-      {
-        number: '2',
-        title: 'A Segunda Internacional e a Grande Traição de 1914',
-        content: 'Fundada em 1889, a Segunda Internacional Socialista parecia marchar triunfante em direção à liderança pacífica ou insurrecional do continente, ancorada no poderoso Partido Social-Democrata Alemão (SPD). Todavia, ao eclodir a Primeira Guerra Mundial em agosto de 1914, os deputados socialistas na Alemanha, França e Áustria votaram a favor dos créditos militares, capitulando ao chauvinismo nacionalista e enviando milhões de trabalhadores para se trucidarem nas trincheiras. Essa decisão selou o fim da Segunda Internacional e forçou a ala radical e internacionalista (Lenin, Trotsky, Rosa Luxemburgo) a romper em definitivo com o reformismo.'
-      },
-      {
-        number: '3',
-        title: 'Lenin e a Invenção do Partido de Novo Tipo',
-        content: 'Diante do atraso industrial da Rússia czarista e do seu brutal aparato policial (Okhrana), Vladimir Lenin publicou em 1902 o panfleto Que Fazer?, estabelecendo o conceito de "partido de novo tipo". Para Lenin, a classe trabalhadora entregue a si mesma desenvolve unicamente a consciência sindicalista estreita (reivindicações imediatas de salário e jornada). A consciência revolucionária só pode ser levada a ela a partir de fora por uma organização clandestina e conspiratória de revolucionários profissionais estritamente disciplinados sob os cânones do centralismo democrático.'
-      },
-      {
-        number: '4',
-        title: 'Outubro de 1917: O Golpe Estratégico e a Ditadura do Proletariado',
-        content: 'Após a queda do czar Nicolau II em fevereiro de 1917 e o impasse do Governo Provisório de Kerensky diante da fome e da guerra, os bolcheviques mobilizaram os Sovietes com as palavras de ordem "Todo Poder aos Sovietes!" e "Paz, Pão e Terra!". Na noite de 24 para 25 de outubro de 1917, as forças do Comitê Militar Revolucionário lideradas por Trotsky ocuparam os pontos nevrálgicos de Petrogrado e derrubaram o governo. Rapidamente, contudo, a dissolução manu militari da Assembleia Constituinte eleita em janeiro de 1918 e a instauração da Cheka marcaram o início do monopólio político e da repressão implacável a todos os partidos de oposição, inclusive mencheviques e anarquistas.'
-      },
-      {
-        number: '5',
-        title: 'O Komintern e as 21 Condições de Moscou',
-        content: 'Em março de 1919, Lenin e os bolcheviques fundaram em Moscou a Terceira Internacional (Internacional Comunista ou Komintern) para coordenar a revolução mundial iminente. No seu II Congresso em 1920, impuseram as draconianas "21 Condições de Admissão": qualquer partido socialista que quisesse afiliar-se deveria expurgar reformistas, adotar estrutura clandestina militarizada e jurar obediência incondicional às decisões emanadas do Comitê Executivo em Moscou. Esse diktat dividiu a esquerda ocidental em campos inimigos mortais até a Segunda Guerra.'
-      }
-    ],
-    conclusion: 'O comunismo do século XX canalizou os mais nobres impulsos de solidariedade dos explorados da Terra, mas a sua estrutura organizativa de matriz leninista subordinou a democracia à disciplina de ferro da vanguarda e gerou aparatos de terror institucionalizado que custaram dezenas de milhões de vidas. Esse paradoxo trágico permanece como o objeto central de estudo da história contemporânea.',
-    bibliographicReferences: [
-      'ARENDT, Hannah. Origens do Totalitarismo. São Paulo: Companhia das Letras, 1989.',
-      'FITZPATRICK, Sheila. The Russian Revolution. Oxford: Oxford University Press, 1982.',
-      'FURET, François. O Passado de uma Ilusão: Ensaio sobre a Ideia de Comunismo no Século XX. São Paulo: Siciliano, 1995.',
-      'KOŁAKOWSKI, Leszek. Main Currents of Marxism. Vol. 2: The Golden Age. Oxford: Oxford University Press, 1978.',
-      'SERVICE, Robert. Lenin: A Biography. Cambridge: Harvard University Press, 2000.',
-      'SERVICE, Robert. Comrades! A History of World Communism. Cambridge: Harvard University Press, 2007.'
-    ]
-  },
+  106: CHAPTER_IDEOLOGIAS_06,
 
   // =========================================================================
   // CAPÍTULO 7 (TÓPICO 107): FASCISMO ITALIANO
@@ -2917,6 +2877,12 @@ A passagem do materialismo histórico clássico para as teorias da hegemonia e d
       'SEN, Amartya. Desenvolvimento como Liberdade. São Paulo: Companhia das Letras, 2000.'
     ]
   },
+
+  // =========================================================================
+  // CAPÍTULO 10 (TÓPICO 111): O COMUNISMO INTERNACIONAL: REGIMES, REVOLUÇÕES E CATÁSTROFES HUMANITÁRIAS
+  // =========================================================================
+  111: CHAPTER_IDEOLOGIAS_10,
+  110: CHAPTER_IDEOLOGIAS_10,
 
   // =========================================================================
   // CAPÍTULO 11 (TÓPICO 112): FILOSOFIA POLÍTICA, REVOLUÇÃO E ESTADO SOCIAL
