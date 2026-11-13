@@ -2,6 +2,7 @@ import { AcademicChapter } from '../academicChaptersDatabase';
 import { CHAPTER_16 } from '../chapters/chapter_16';
 import { CHAPTER_IDEOLOGIAS_06 } from '../chapters/chapter_ideologias_06';
 import { CHAPTER_IDEOLOGIAS_07 } from '../chapters/chapter_ideologias_07';
+import { CHAPTER_IDEOLOGIAS_08 } from '../chapters/chapter_ideologias_08';
 import { CHAPTER_IDEOLOGIAS_10 } from '../chapters/chapter_ideologias_10';
 
 export const IDEOLOGIAS_CHAPTERS: Record<number, AcademicChapter> = {
@@ -2745,51 +2746,7 @@ A passagem do materialismo histórico clássico para as teorias da hegemonia e d
   // =========================================================================
   // CAPÍTULO 8 (TÓPICO 108): NAZISMO ALEMÃO
   // =========================================================================
-  108: {
-    topicId: 108,
-    title: 'Nazismo Alemão: Racialismo Biológico, Antissemitismo e a Ditadura Totalitária de Hitler',
-    subtitle: 'A decomposição de Weimar, o mito do Espaço Vital (Lebensraum) e a Solução Final executada como dever redentor',
-    authorCatedra: 'Cátedra de História da Alemanha Contemporânea e Estudos do Holocausto',
-    introduction: 'O Nacional-Socialismo (Nazismo) constituiu a forma mais radical, destrutiva e genocida de totalitarismo da história humana. Diferenciando-se do fascismo italiano por subordinar o próprio Estado a um dogma estritamente biológico de raça e sangue, o Terceiro Reich de Adolf Hitler articulou a tecnologia burocrática e industrial moderna a uma cosmologia mística e apocalíptica de conquista do Espaço Vital (Lebensraum) e aniquilação física deliberada de todo o povo judeu da Europa.',
-    sections: [
-      {
-        number: '1',
-        title: 'As Raízes Ideológicas: Darwinismo Social, Pangermanismo e Pensamento Völkisch',
-        content: 'A ideologia nazista forjada no livro Mein Kampf (1925) não emergiu do nada. Ela foi o produto de uma confluência nefasta entre o nacionalismo romântico völkisch do século XIX, as fantasias arianistas de Arthur de Gobineau e Houston Stewart Chamberlain e o darwinismo social grosseiro que reduzia a história humana a uma luta biológica impiedosa entre raças superiores (os arianos criadores de cultura) e raças inferiores ou "parasitárias". Como demonstrou George Mosse, essa síntese transformou a estética alemã e o culto ao guerreiro em imperativo existencial.'
-      },
-      {
-        number: '2',
-        title: 'O Colapso da República de Weimar e a Conquista do Poder (1929–1933)',
-        content: 'A República democrática de Weimar nasceu ferida pelo estigma da derrota em 1918 e pelas reparações punitivas de Versalhes. No entanto, foi o impacto devastador do Crash de Wall Street de 1929 — que arremessou 6 milhões de alemães ao desemprego — que destruiu o centro político moderado. O Partido Nazista (NSDAP) passou de insignificantes 2,6% dos votos em 1928 para o maior partido do Reichstag em 1932. Em 30 de janeiro de 1933, num conluio de elites conservadoras tradicionais crentes de que poderiam "enquadrar o cabo austríaco", o presidente Hindenburg nomeou Hitler chanceler.'
-      },
-      {
-        number: '3',
-        title: 'A Gleichschaltung e o Desmantelamento do Estado Constitucional',
-        content: 'Em poucas semanas após a posse, o incêndio do Reichstag em fevereiro de 1933 serviu de pretexto para o Decreto de Emergência que suspendeu permanentemente todas as garantias e direitos civis fundamentais da constituição de Weimar. Em março, a Lei de Plenos Poderes (Ermächtigungsgesetz) transferiu todo o poder legislativo para o gabinete de Hitler. O processo de "coordenação forçada" (Gleichschaltung) dissolveu todos os partidos, fechou os sindicatos operários, eliminou a autonomia dos estados federados e estabeleceu a Gestapo e os primeiros campos de concentração para comunistas e sociais-democratas em Dachau.'
-      },
-      {
-        number: '4',
-        title: 'A Burocracia Carismática e a Teoria de "Trabalhar em Direção ao Führer"',
-        content: 'A historiografia pós-guerra superou o debate entre intencionalistas e funcionalistas através do conceito seminal do historiador britânico Ian Kershaw: "Trabalhar em direção ao Führer" (Dem Führer entgegenarbeiten). O Terceiro Reich não era uma máquina burocrática monolítica perfeitamente ordenada; era uma poliarquia caótica de agências estatais e estruturas do partido (SS, Juventude Hitlerista, Ministérios) que competiam ferozmente entre si para interpretar os desejos gerais de Hitler e implementar medidas cada vez mais radicais sem necessidade de comandos diários formais.'
-      },
-      {
-        number: '5',
-        title: 'O Antissemitismo Redentor e a Solução Final (Shoah)',
-        content: 'Como formulado por Saul Friedländer, o antissemitismo nazista era um "antissemitismo redentor": o judeu era imaginado como uma bactéria mortal infiltrada no corpo ariano através do marxismo, do liberalismo e da finança cosmopolita. A perseguição escalou das Leis raciais de Nuremberg (1935) à Noite dos Cristais (1938) e, após a invasão da URSS em 1941, transformou-se em extermínio industrial sistemático. Na Conferência de Wannsee em janeiro de 1942, a burocracia do Reich coordenou a logística da morte em massa: campos de extermínio como Auschwitz-Birkenau, Treblinka e Sobibor, onde 6 milhões de seres humanos foram assassinados em câmaras de gás.'
-      }
-    ],
-    conclusion: 'O nazismo representa o ponto mais sombrio da experiência civilizatória humana porque demonstrou que a ciência, a racionalidade administrativa e o progresso tecnológico podem ser mobilizados para a destruição planejada em massa da humanidade quando dissociados da ética universal dos direitos e da primazia da igualdade moral entre todos os seres humanos.',
-    bibliographicReferences: [
-      'EVANS, Richard J. The Coming of the Third Reich. Londres: Allen Lane, 2003.',
-      'EVANS, Richard J. The Third Reich in Power. Londres: Allen Lane, 2005.',
-      'EVANS, Richard J. The Third Reich at War. Londres: Allen Lane, 2008.',
-      'FRIEDLÄNDER, Saul. Nazi Germany and the Jews: The Years of Persecution, 1933–1939. Nova York: HarperCollins, 1997.',
-      'FRIEDLÄNDER, Saul. The Years of Extermination: Nazi Germany and the Jews, 1939–1945. Nova York: HarperCollins, 2007.',
-      'KERSHAW, Ian. Hitler: 1889–1936: Hubris. Londres: Allen Lane, 1998.',
-      'KERSHAW, Ian. Hitler: 1936–1945: Nemesis. Londres: Allen Lane, 2000.',
-      'MOSSE, George L. The Crisis of German Ideology: Intellectual Origins of the Third Reich. Nova York: Grosset & Dunlap, 1964.'
-    ]
-  },
+  108: CHAPTER_IDEOLOGIAS_08,
 
   // =========================================================================
   // CAPÍTULO 9 (TÓPICO 109): SOCIAL-DEMOCRACIA E DEMOCRACIA LIBERAL

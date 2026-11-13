@@ -161,6 +161,46 @@ export const DossierResearchView: React.FC<DossierResearchViewProps> = ({
               return <hr key={pIdx} className="border-stone-800 my-4" />;
             }
 
+            if (trimmed.startsWith('|') && trimmed.includes('\n|')) {
+              const tableLines = trimmed.split('\n').filter(l => l.trim().startsWith('|'));
+              if (tableLines.length >= 2) {
+                const headerCols = tableLines[0].split('|').map(c => c.trim()).filter(Boolean);
+                const bodyRows = tableLines.slice(2).map(row => row.split('|').map(c => c.trim()).filter(Boolean));
+                return (
+                  <div key={pIdx} className="overflow-x-auto my-4 border border-stone-800 rounded-lg shadow-sm">
+                    <table className="w-full text-left text-xs sm:text-sm font-serif">
+                      <thead className="bg-stone-900 border-b border-stone-800 text-stone-200">
+                        <tr>
+                          {headerCols.map((col, cIdx) => (
+                            <th key={cIdx} className="p-3 font-bold uppercase tracking-wider text-amber-400">
+                              {col}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-stone-800/80 bg-[#121214]">
+                        {bodyRows.map((row, rIdx) => (
+                          <tr key={rIdx} className="hover:bg-stone-900/40 transition-colors">
+                            {row.map((cell, cellIdx) => (
+                              <td
+                                key={cellIdx}
+                                className="p-3 text-stone-300 font-serif leading-relaxed"
+                                dangerouslySetInnerHTML={{
+                                  __html: cell
+                                    .replace(/\*\*(.*?)\*\*/g, '<strong class="text-stone-100 font-bold">$1</strong>')
+                                    .replace(/\*(.*?)\*/g, '<em class="text-amber-200/90">$1</em>')
+                                }}
+                              />
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                );
+              }
+            }
+
             const lines = trimmed.split('\n');
             return (
               <div key={pIdx} className="space-y-2">

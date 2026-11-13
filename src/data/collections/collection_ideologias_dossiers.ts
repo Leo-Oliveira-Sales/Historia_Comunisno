@@ -1583,23 +1583,210 @@ O corporativismo e a religião política foram instrumentos distintos de um mesm
 
 A experiência italiana demonstra a importância de distinguir a ambição totalitária de sua realização histórica. O fascismo procurou transformar integralmente a sociedade, mas não conseguiu eliminar todas as instituições e estruturas tradicionais que condicionavam seu exercício do poder.`,
 
-  108: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
-# DOSSIÊ ACADÊMICO Nº 08: NAZISMO ALEMÃO
+  108: `# DOSSIÊ ACADÊMICO DE PESQUISA
 
-**Eixo Temático:** Racialismo Biológico, Antissemitismo Redentor, Lebensraum e Holocausto (1920–1945)
-**Especialistas de Referência:** Ian Kershaw, Richard J. Evans, Saul Friedländer, George L. Mosse, Michael Mann
+## 1. Problema histórico aprofundado
+
+O problema fundamental consiste em explicar como uma ideologia racial radical conseguiu ultrapassar o campo da propaganda e tornar-se um princípio de organização estatal.
+
+O nazismo estabeleceu uma relação particular entre raça, cidadania, território e poder. A cidadania deixou de ser concebida como condição política e passou a depender de critérios de ascendência racial.
+
+Essa transformação produziu consequências concretas: exclusão jurídica, confisco de bens, segregação, esterilização compulsória, deportação, trabalho forçado e assassinato.
+
+A investigação deve esclarecer como diferentes instituições participaram desse processo e como a política racial se radicalizou ao longo do regime.
+
+## 2. Hipóteses secundárias
+
+**Hipótese A — A crise institucional foi uma condição facilitadora, não uma causa suficiente.**
+
+A crise de Weimar abriu oportunidades para movimentos antidemocráticos, mas não tornou inevitável a vitória nazista.
+
+**Hipótese B — O antissemitismo foi elemento estrutural do nacional-socialismo.**
+
+Não foi simples instrumento de propaganda eleitoral. Organizou a visão nazista da história e da comunidade nacional.
+
+**Hipótese C — A guerra foi decisiva para a radicalização genocida.**
+
+A ocupação de vastos territórios e a invasão da União Soviética ampliaram a escala da violência e criaram condições para o assassinato continental.
+
+**Hipótese D — O Holocausto exigiu colaboração institucional ampla.**
+
+A SS desempenhou papel central, mas o genocídio dependeu de órgãos administrativos, policiais, ferroviários, militares e de ocupação.
+
+**Hipótese E — O regime combinou coerção e apoio social.**
+
+A repressão não excluiu o consentimento, a adesão e a participação de parcelas significativas da sociedade.
+
+## 3. Estado da questão historiográfica
+
+### 3.1. Ian Kershaw: Hitler e a autoridade do Führer
+
+Kershaw investiga a construção da autoridade de Hitler e o modo pelo qual o sistema nazista estimulava subordinados a trabalhar em direção àquilo que interpretavam como a vontade do líder.
+
+Sua contribuição é essencial para compreender a radicalização institucional sem pressupor que cada medida fosse executada por meio de uma ordem escrita e detalhada.
+
+### 3.2. Richard J. Evans: a destruição da democracia e a sociedade nazista
+
+Evans reconstrói a ascensão do movimento, a destruição das instituições democráticas e a transformação da sociedade alemã.
+
+Sua trilogia sobre o Terceiro Reich oferece uma das sínteses históricas mais abrangentes do período.
+
+### 3.3. Saul Friedländer: antissemitismo redentor
+
+Friedländer demonstra a centralidade do antissemitismo na visão de mundo nazista e investiga a perseguição e o assassinato dos judeus a partir da relação entre ideologia, decisões políticas e experiência das vítimas.
+
+### 3.4. Raul Hilberg: burocracia e destruição dos judeus europeus
+
+Hilberg é fundamental para compreender os procedimentos administrativos que permitiram a destruição dos judeus europeus.
+
+Sua investigação acompanha a transformação da discriminação em expropriação, concentração, deportação e assassinato.
+
+### 3.5. Christopher Browning: os perpetradores
+
+Browning investiga como indivíduos comuns participaram de massacres e como fatores institucionais, ideológicos e sociais influenciaram suas ações.
+
+Sua obra permite examinar a responsabilidade individual sem recorrer à ideia de que todos os executores eram monstros excepcionais.
+
+### 3.6. Martin Broszat: estrutura do Estado nazista
+
+Broszat investiga a organização interna do regime e demonstra a importância da fragmentação administrativa e da competição entre órgãos.
+
+### 3.7. Adam Tooze: economia e guerra
+
+Tooze analisa a economia nazista, o rearmamento, a mobilização de recursos e as contradições materiais do projeto expansionista.
+
+### 3.8. Mark Mazower: império e ocupação
+
+Mazower demonstra que o domínio nazista na Europa deve ser compreendido como um projeto imperial, marcado por hierarquias raciais, exploração econômica e reorganização territorial.
+
+## 4. Debates historiográficos fundamentais
+
+### Debate I — O nazismo era inevitável?
+
+A existência de tradições nacionalistas e antissemitas não torna inevitável a ascensão de Hitler.
+
+É necessário distinguir condições estruturais, oportunidades políticas e decisões individuais.
+
+### Debate II — Hitler possuía um plano genocida completo desde o início?
+
+A ideologia antissemita estava presente desde a formação do movimento, mas a política de extermínio continental foi construída durante a radicalização do regime, especialmente no contexto da guerra.
+
+A investigação deve distinguir intenção ideológica, decisões políticas e desenvolvimento operacional.
+
+### Debate III — O Holocausto foi resultado de uma ordem central ou de radicalização institucional?
+
+O debate entre intencionalismo e funcionalismo demonstrou que as decisões de liderança e a dinâmica institucional precisam ser investigadas conjuntamente.
+
+### Debate IV — A sociedade alemã apoiava o nazismo?
+
+A resposta exige distinguir adesão ideológica, apoio eleitoral, consentimento, acomodação, oportunismo, medo e resistência.
+
+### Debate V — O Holocausto foi industrial?
+
+A expressão genocídio industrial destaca a utilização de transporte, burocracia, infraestrutura e administração moderna.
+
+Entretanto, o assassinato em massa também foi realizado por fuzilamentos, fome, deportações, trabalho forçado e outras formas de violência.
+
+## 5. Matriz documental
+
+A investigação deve utilizar documentos de diferentes naturezas:
+
+| Categoria | Documentos | Questão investigada |
+|---|---|---|
+| Programática | Programa do NSDAP de 1920 | Formação ideológica |
+| Autobiográfica e política | *Mein Kampf* | Visão de mundo de Hitler |
+| Constitucional | Constituição de Weimar | Estrutura democrática |
+| Legal | Decreto do Incêndio do Reichstag | Suspensão das liberdades |
+| Legal | Lei de Plenos Poderes | Destruição constitucional |
+| Administrativa | Lei de Restauração do Serviço Público | Expurgo racial e político |
+| Racial | Leis de Nuremberg | Exclusão jurídica |
+| Eugenista | Lei de esterilização de 1933 | Higiene racial |
+| Policial | Relatórios dos Einsatzgruppen | Assassinatos em massa |
+| Administrativa | Protocolo de Wannsee | Coordenação genocida |
+| Econômica | Registros de trabalho forçado | Exploração material |
+| Militar | Ordens da guerra no Leste | Guerra de extermínio |
+| Judicial | Documentação de Nuremberg | Responsabilidade criminal |
+| Testemunhal | Diários e testemunhos de sobreviventes | Experiência das vítimas |
+
+## 6. Questões para investigação avançada
+
+1. Em que medida o nacionalismo alemão do século XIX contribuiu para a formação do pensamento völkisch?
+2. Como o darwinismo social foi utilizado para justificar hierarquias raciais?
+3. Qual foi a importância da Primeira Guerra Mundial para a radicalização política alemã?
+4. Por que a República de Weimar não conseguiu consolidar apoio suficiente entre setores tradicionais do Estado?
+5. Como a lenda da punhalada pelas costas contribuiu para o antissemitismo político?
+6. Hitler chegou ao poder por meio de uma vitória eleitoral ou de uma combinação de mobilização popular e negociação entre elites?
+7. Por que dirigentes conservadores acreditaram que poderiam controlar Hitler?
+8. Como o regime destruiu as instituições democráticas utilizando mecanismos formalmente legais?
+9. O conceito de totalitarismo explica adequadamente a estrutura administrativa do Terceiro Reich?
+10. Como a autoridade pessoal de Hitler estimulou a radicalização dos subordinados?
+11. De que maneira as Leis de Nuremberg transformaram preconceitos raciais em critérios jurídicos?
+12. Qual foi a relação entre eugenia, medicina e política estatal?
+13. Como a perseguição aos judeus alemães se relacionou com a política racial nos territórios ocupados?
+14. Por que a invasão da União Soviética foi decisiva para a radicalização genocida?
+15. Como os Einsatzgruppen organizaram os massacres?
+16. Qual foi a função administrativa da Conferência de Wannsee?
+17. Em que sentido Auschwitz representou uma modalidade específica de genocídio industrial?
+18. Qual foi a participação das empresas na exploração do trabalho forçado?
+19. Como a sociedade alemã reagiu à perseguição dos judeus?
+20. Quais foram as diferenças entre apoio ideológico, consentimento e conformismo?
+21. Como os governos e colaboradores europeus participaram do Holocausto?
+22. Quais são os limites da interpretação intencionalista?
+23. Quais são os limites da interpretação funcionalista?
+24. Como a historiografia contemporânea articula ideologia, instituições e guerra?
+25. Como o estudo do nazismo contribui para a compreensão histórica do genocídio moderno?
+
+## 7. Estrutura proposta para a investigação
+
+**Eixo I — Formação ideológica:** nacionalismo étnico, pensamento völkisch, racialismo e antissemitismo.
+
+**Eixo II — Crise política:** Primeira Guerra, Weimar, radicalização e ascensão de Hitler.
+
+**Eixo III — Ditadura:** destruição constitucional, partido único, polícia política e nazificação.
+
+**Eixo IV — Estado racial:** leis raciais, eugenia, exclusão e perseguição.
+
+**Eixo V — Império e guerra:** Lebensraum, Polônia, União Soviética e ocupação.
+
+**Eixo VI — Genocídio:** Einsatzgruppen, guetos, deportações, Wannsee e centros de extermínio.
+
+**Eixo VII — Responsabilidade:** perpetradores, colaboração, sociedade e julgamentos.
+
+## 8. Considerações finais do dossiê
+
+O estudo do nazismo exige uma abordagem que não se limite à descrição cronológica dos acontecimentos.
+
+É necessário reconstruir os processos históricos que permitiram a transformação de uma ideologia em política estatal e de uma política estatal em genocídio.
+
+O nazismo demonstra que a destruição da democracia pode ocorrer por meio de uma combinação de violência, manipulação institucional, apoio social e decisões de elites.
+
+Também demonstra que o racismo, quando convertido em princípio de Estado, pode transformar categorias pseudocientíficas em critérios de cidadania, direitos, propriedade e sobrevivência.
+
+O Holocausto deve ser investigado como uma construção histórica humana, com responsáveis, instituições, documentos, decisões e mecanismos identificáveis.
+
+A finalidade deste capítulo é compreender esses processos com rigor documental, sem reduzir a história a explicações monocausais e sem perder de vista a experiência das vítimas.
 
 ---
 
-## 1. IDENTIFICAÇÃO E PROBLEMA HISTÓRICO
-Quais mecanismos sociopolíticos permitiram a destruição da República de Weimar e a implantação da mais genocida ditadura racial da modernidade liderada por Adolf Hitler?
+# REFERÊNCIAS DO ENSAIO E DO DOSSIÊ
 
-## 2. ANATOMIA DO TERCEIRO REICH
-- O darwinismo social e a ideologia do Espaço Vital (Lebensraum) exposta em Mein Kampf.
-- O impacto da Grande Depressão de 1929 e a nomeação legal de Hitler em janeiro de 1933.
-- A Gleichschaltung (coordenação total da sociedade) e o terror da SS e da Gestapo.
-- A teoria de Kershaw de "Trabalhar em Direção ao Führer": radicalização cumulativa da burocracia do Reich.
-- A Conferência de Wannsee (1942) e a execução industrial da Shoah (6 milhões de judeus exterminados).`,
+- ARENDT, Hannah. *The Origins of Totalitarianism*. New York: Harcourt, 1951.
+- BROSZAT, Martin. *The Hitler State*. London: Longman, 1981.
+- BROWNING, Christopher R. *Ordinary Men*. New York: HarperCollins, 1992.
+- BROWNING, Christopher R. *The Origins of the Final Solution*. Lincoln: University of Nebraska Press, 2004.
+- CHILDERS, Thomas. *The Nazi Voter*. Chapel Hill: University of North Carolina Press, 1983.
+- EVANS, Richard J. *The Coming of the Third Reich*. New York: Penguin, 2003.
+- FRIEDLÄNDER, Saul. *Nazi Germany and the Jews*. New York: HarperCollins, 1997–2007.
+- GELLATELY, Robert. *Backing Hitler*. Oxford: Oxford University Press, 2001.
+- HILBERG, Raul. *The Destruction of the European Jews*. New Haven: Yale University Press, 2003.
+- KERSHAW, Ian. *Hitler, 1889–1936: Hubris*. London: Allen Lane, 1998.
+- KERSHAW, Ian. *Hitler, 1936–1945: Nemesis*. London: Allen Lane, 2000.
+- KOONZ, Claudia. *The Nazi Conscience*. Cambridge: Harvard University Press, 2003.
+- MAZOWER, Mark. *Hitler's Empire*. London: Allen Lane, 2008.
+- MOSSE, George L. *The Crisis of German Ideology*. New York: Grosset & Dunlap, 1964.
+- PEUKERT, Detlev. *Inside Nazi Germany*. New Haven: Yale University Press, 1987.
+- TOOZE, Adam. *The Wages of Destruction*. London: Allen Lane, 2006.
+- WEINDLING, Paul. *Health, Race and German Politics between National Unification and Nazism, 1870–1945*. Cambridge: Cambridge University Press, 1989.`,
 
   109: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
 # DOSSIÊ ACADÊMICO Nº 09: SOCIAL-DEMOCRACIA E DEMOCRACIA LIBERAL

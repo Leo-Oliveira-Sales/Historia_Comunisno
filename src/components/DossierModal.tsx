@@ -18,10 +18,15 @@ import { MARKET_LAWS_CHAPTERS } from '../data/marketLawsDatabase';
 import { Topic105SynthesisView } from './Topic105SynthesisView';
 import { Topic106EssayView } from './Topic106EssayView';
 import { Topic107EssayView } from './Topic107EssayView';
+import { Topic108EssayView } from './Topic108EssayView';
 import { Topic106ChroniclesView } from './Topic106ChroniclesView';
 import { Topic107ChroniclesView } from './Topic107ChroniclesView';
+import { Topic108ChroniclesView } from './Topic108ChroniclesView';
 import { Topic106CitationsView } from './Topic106CitationsView';
 import { Topic107CitationsView } from './Topic107CitationsView';
+import { Topic108CitationsView } from './Topic108CitationsView';
+import { Topic108AdvancedInvestigationView } from './Topic108AdvancedInvestigationView';
+import { RAW_ADVANCED_INVESTIGATION_08 } from '../data/advanced/advanced_ideologias_08';
 import { Topic111CitationsView } from './Topic111CitationsView';
 import { Topic111ChroniclesView } from './Topic111ChroniclesView';
 import { Topic112SynthesisView } from './Topic112SynthesisView';
@@ -99,6 +104,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const canonicalDossier = getCanonicalEditorialDossier(topic.id);
   const researchDossierText = RESEARCH_DOSSIERS[topic.id] || IDEOLOGIAS_RESEARCH_DOSSIERS[topic.id];
   const advancedInvestigation = topic.id === 112 ? undefined : ADVANCED_INVESTIGATIONS_DATABASE[topic.id];
+  const hasAdvancedInvestigation = Boolean(advancedInvestigation) || topic.id === 108;
   const marketLaws = (topic.id === 103 || topic.id === 105) ? MARKET_LAWS_CHAPTERS[topic.id] : undefined;
 
   // Numeração sequencial organizada das abas (com Ensaio Acadêmico unificado e Citações & Documentos unificados)
@@ -107,7 +113,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const essayTabNum = tabIdx++; // Ensaio Acadêmico (contém Ensaio + Síntese + Dossiê de Pesquisa)
   const storiesTabNum = tabIdx++;
   const citationsTabNum = tabIdx++;
-  const advTabNum = advancedInvestigation ? tabIdx++ : null;
+  const advTabNum = hasAdvancedInvestigation ? tabIdx++ : null;
   const marketTabNum = marketLaws ? tabIdx++ : null;
 
   const copyToClipboard = (text: string, label: string) => {
@@ -142,6 +148,10 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   };
 
   const copyAdvancedInvestigation = () => {
+    if (topic.id === 108) {
+      copyToClipboard(RAW_ADVANCED_INVESTIGATION_08, 'advanced_investigation');
+      return;
+    }
     if (!advancedInvestigation) return;
     copyToClipboard(advancedInvestigation.rawText, 'advanced_investigation');
   };
@@ -476,6 +486,24 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'DOS', label: 'Dossiê de Pesquisa', target: 'essay-research-dossier-master' },
         ];
       }
+      if (topic.id === 108) {
+        return [
+          { num: 'ENS', label: 'Ensaio Acadêmico Nº 08', target: 'essay-master' },
+          { num: '1', label: '1. Problema Histórico', target: 'essay-sec-1' },
+          { num: '2', label: '2. Tese Interpretativa', target: 'essay-sec-2' },
+          { num: '3', label: '3. Crise de Weimar', target: 'essay-sec-3' },
+          { num: '4', label: '4. Destruição da Democracia', target: 'essay-sec-4' },
+          { num: '5', label: '5. Racialismo Biológico', target: 'essay-sec-5' },
+          { num: '6', label: '6. Antissemitismo Redentor', target: 'essay-sec-6' },
+          { num: '7', label: '7. Lebensraum e Império', target: 'essay-sec-7' },
+          { num: '8', label: '8. Solução Final', target: 'essay-sec-8' },
+          { num: '9', label: '9. Perpetradores', target: 'essay-sec-9' },
+          { num: '10', label: '10. Consenso e Coerção', target: 'essay-sec-10' },
+          { num: '11', label: '11. Conclusão do Ensaio', target: 'essay-sec-11' },
+          { num: 'SÍN', label: 'Síntese do Projeto', target: 'essay-synthese-master' },
+          { num: 'DOS', label: 'Dossiê de Pesquisa', target: 'essay-research-dossier-master' },
+        ];
+      }
       return [
         { num: 'ENS', label: '1. Ensaio Acadêmico', target: 'essay-master' },
         { num: 'I', label: 'I. Síntese e Antecedentes', target: 'essay-sec-1' },
@@ -517,6 +545,18 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'CR-XII', label: 'XII. Salò e Fim (1943–45)', target: 'cronica-12' },
         ];
       }
+      if (topic.id === 108) {
+        return [
+          { num: 'CR-I', label: 'I. Munique (1920)', target: 'cronica-1' },
+          { num: 'CR-II', label: 'II. Golpe de 1923', target: 'cronica-2' },
+          { num: 'CR-III', label: 'III. Nomeação (1933)', target: 'cronica-3' },
+          { num: 'CR-IV', label: 'IV. Nuremberg (1935)', target: 'cronica-4' },
+          { num: 'CR-V', label: 'V. Babi Yar (1941)', target: 'cronica-5' },
+          { num: 'CR-VI', label: 'VI. Wannsee (1942)', target: 'cronica-6' },
+          { num: 'CR-VII', label: 'VII. Auschwitz-Birkenau', target: 'cronica-7' },
+          { num: 'CR-VIII', label: 'VIII. Berlim (1945)', target: 'cronica-8' },
+        ];
+      }
       if (topic.id === 111 || (topic.categoryNumber === '10' && topic.title.toLowerCase().includes('comunismo'))) {
         return [
           { num: 'CRONO', label: 'Cronologia (1949–1975)', target: 'stories-crono' },
@@ -555,6 +595,19 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'XI', label: 'XI. Bibliografia', target: 'cit-parte-11' },
         ];
       }
+      if (topic.id === 108) {
+        return [
+          { num: 'I', label: 'I. Docs Fundadores', target: 'cit-parte-1' },
+          { num: 'II', label: 'II. Destruição Democracia', target: 'cit-parte-2' },
+          { num: 'III', label: 'III. Estado Racial', target: 'cit-parte-3' },
+          { num: 'IV', label: 'IV. Guerra e Genocídio', target: 'cit-parte-4' },
+          { num: 'V', label: 'V. Outros Grupos', target: 'cit-parte-5' },
+          { num: 'VI', label: 'VI. Derrota e Nuremberg', target: 'cit-parte-6' },
+          { num: 'VII', label: 'VII. Citações e Análises', target: 'cit-parte-7' },
+          { num: 'VIII', label: 'VIII. Questões Análise', target: 'cit-parte-8' },
+          { num: 'BIB', label: 'Bibliografia Documental', target: 'cit-parte-9' },
+        ];
+      }
       return [
         { num: 'I', label: 'I. Citações Literais', target: 'cit-block-1' },
         { num: 'II', label: 'II. Sínteses & Análises', target: 'cit-block-2' },
@@ -562,6 +615,38 @@ export const DossierModal: React.FC<DossierModalProps> = ({
         { num: 'DOC', label: '## Documentos', target: 'cit-documents' },
       ];
     } else if (activeTab === 'advancedInvestigation') {
+      if (topic.id === 108) {
+        return [
+          { num: 'Q1', label: '1. Nacionalismo & Völkisch', target: 'adv-sec-1' },
+          { num: 'Q2', label: '2. Darwinismo Social', target: 'adv-sec-2' },
+          { num: 'Q3', label: '3. 1ª Guerra & Radicalização', target: 'adv-sec-3' },
+          { num: 'Q4', label: '4. Weimar & Estado', target: 'adv-sec-4' },
+          { num: 'Q5', label: '5. Dolchstoßlegende', target: 'adv-sec-5' },
+          { num: 'Q6', label: '6. Ascensão ao Poder', target: 'adv-sec-6' },
+          { num: 'Q7', label: '7. Conservadores & Hitler', target: 'adv-sec-7' },
+          { num: 'Q8', label: '8. Legalidade & Ditadura', target: 'adv-sec-8' },
+          { num: 'Q9', label: '9. Conceito de Totalitarismo', target: 'adv-sec-9' },
+          { num: 'Q10', label: '10. Autoridade do Führer', target: 'adv-sec-10' },
+          { num: 'Q11', label: '11. Leis de Nuremberg', target: 'adv-sec-11' },
+          { num: 'Q12', label: '12. Eugenia & Medicina', target: 'adv-sec-12' },
+          { num: 'Q13', label: '13. Territórios Ocupados', target: 'adv-sec-13' },
+          { num: 'Q14', label: '14. Invasão da URSS', target: 'adv-sec-14' },
+          { num: 'Q15', label: '15. Einsatzgruppen', target: 'adv-sec-15' },
+          { num: 'Q16', label: '16. Conferência de Wannsee', target: 'adv-sec-16' },
+          { num: 'Q17', label: '17. Auschwitz Industrial', target: 'adv-sec-17' },
+          { num: 'Q18', label: '18. Empresas & Trabalho', target: 'adv-sec-18' },
+          { num: 'Q19', label: '19. Sociedade Alemã', target: 'adv-sec-19' },
+          { num: 'Q20', label: '20. Apoio & Conformismo', target: 'adv-sec-20' },
+          { num: 'Q21', label: '21. Colaboração Europeia', target: 'adv-sec-21' },
+          { num: 'Q22', label: '22. Intencionalismo', target: 'adv-sec-22' },
+          { num: 'Q23', label: '23. Funcionalismo', target: 'adv-sec-23' },
+          { num: 'Q24', label: '24. Síntese Historiográfica', target: 'adv-sec-24' },
+          { num: 'Q25', label: '25. Genocídio Moderno', target: 'adv-sec-25' },
+          { num: 'SÍN', label: 'Síntese Final', target: 'adv-sec-synthesis' },
+          { num: 'BIB', label: 'Bibliografia Geral', target: 'adv-sec-bibliography' },
+          { num: 'MET', label: 'Observação Metodológica', target: 'adv-sec-methodology' },
+        ];
+      }
       return [
         { num: 'Q1', label: '1. Iluminismo & Causa Direta', target: 'adv-sec-1' },
         { num: 'Q2', label: '2. Interesses da Burguesia', target: 'adv-sec-2' },
@@ -796,7 +881,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             <span>{citationsTabNum}. Citações & Documentos</span>
           </button>
 
-          {advancedInvestigation && (
+          {hasAdvancedInvestigation && (
             <button
               onClick={() => {
                 playTypewriterClack();
@@ -809,7 +894,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               }`}
             >
               <Sparkles className="w-3.5 h-3.5 shrink-0" />
-              <span>{advTabNum}. Investigação Avançada</span>
+              <span>{advTabNum}. {topic.id === 108 ? 'INVESTIGAÇÃO AVANÇADA' : 'Investigação Avançada'}</span>
             </button>
           )}
 
@@ -902,7 +987,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           </button>
 
           {/* Investigação Avançada (Aba especial para temas com investigação) */}
-          {advancedInvestigation && (
+          {hasAdvancedInvestigation && (
             <button
               onClick={() => {
                 playTypewriterClack();
@@ -915,7 +1000,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               }`}
             >
               <Sparkles className="w-3.5 h-3.5 shrink-0" />
-              <span>{advTabNum}. Investigação Avançada</span>
+              <span>{advTabNum}. {topic.id === 108 ? 'INVESTIGAÇÃO AVANÇADA' : 'Investigação Avançada'}</span>
             </button>
           )}
 
@@ -1308,6 +1393,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                   <Topic106EssayView getFontSizeClass={getFontSizeClass} />
                 ) : topic.id === 107 ? (
                   <Topic107EssayView getFontSizeClass={getFontSizeClass} />
+                ) : topic.id === 108 ? (
+                  <Topic108EssayView getFontSizeClass={getFontSizeClass} />
                 ) : essay ? (
                   <div className="space-y-8 w-full">
               {/* Header Banner */}
@@ -1586,6 +1673,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               <Topic106ChroniclesView getFontSizeClass={getFontSizeClass} />
             ) : topic.id === 107 ? (
               <Topic107ChroniclesView getFontSizeClass={getFontSizeClass} />
+            ) : topic.id === 108 ? (
+              <Topic108ChroniclesView getFontSizeClass={getFontSizeClass} />
             ) : (topic.id === 111 || (topic.categoryNumber === '10' && topic.title.toLowerCase().includes('comunismo'))) ? (
               <Topic111ChroniclesView getFontSizeClass={getFontSizeClass} />
             ) : topic.id === 112 ? (
@@ -1715,6 +1804,13 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               return (
                 <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
                   <Topic107CitationsView getFontSizeClass={getFontSizeClass} />
+                </div>
+              );
+            }
+            if (topic.id === 108) {
+              return (
+                <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+                  <Topic108CitationsView getFontSizeClass={getFontSizeClass} />
                 </div>
               );
             }
@@ -2252,6 +2348,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 copiedCitation={copiedCitation}
                 getFontSizeClass={getFontSizeClass}
               />
+            ) : topic.id === 108 ? (
+              <Topic108AdvancedInvestigationView getFontSizeClass={getFontSizeClass} />
             ) : advancedInvestigation ? (
               <article className="space-y-6 max-w-4xl mx-auto w-full box-border overflow-hidden">
               <div className="bg-[#161619] border border-amber-500/70 p-6 sm:p-8 rounded-2xl shadow-2xl space-y-6">
