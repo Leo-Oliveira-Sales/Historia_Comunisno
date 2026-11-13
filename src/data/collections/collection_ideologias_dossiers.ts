@@ -1286,22 +1286,302 @@ De que forma a teoria leninista do partido conspiratório de revolucionários pr
 - A tomada do poder em Outubro de 1917 e a subsequente dissolução da Assembleia Constituinte na Rússia.
 - A fundação do Komintern em 1919 e as 21 Condições de subordinação estrita a Moscou.`,
 
-  107: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
-# DOSSIÊ ACADÊMICO Nº 07: FASCISMO ITALIANO
+  107: `# DOSSIÊ ACADÊMICO DE PESQUISA
 
-**Eixo Temático:** Esquadrismo, Estado Corporativo, Marcha sobre Roma e Religião Política (1919–1945)
-**Especialistas de Referência:** Emilio Gentile, Stanley G. Payne, Roger Griffin, Robert O. Paxton, Zeev Sternhell
+## I. IDENTIFICAÇÃO DA PESQUISA
+
+**Título:** A Formação do Estado Fascista Italiano: crise do liberalismo, violência paramilitar, ultranacionalismo e sacralização da política (1919–1945).
+
+**Área:** História Contemporânea; História Política; História das Ideologias; História dos Regimes Autoritários.
+
+**Objeto:** Formação, consolidação e colapso do regime fascista italiano.
+
+**Recorte temporal:** 1919–1945.
+
+**Unidade de análise:** Movimento fascista, Estado italiano, instituições políticas, organizações sociais, cultura política e política externa.
 
 ---
 
-## 1. IDENTIFICAÇÃO E PROBLEMA HISTÓRICO
-Como a crise do pós-guerra na Itália gerou a primeira ditadura totalitária contemporânea baseada no ultranacionalismo palingenético e na sacralização do Estado?
+## II. PROBLEMA CENTRAL
 
-## 2. PONTOS CARDIAIS DO REGIME DE MUSSOLINI
-- O terror paramilitar dos esquadristas (camisas-negras) contra socialistas e sindicatos operários.
-- A Marcha sobre Roma (1922) e a capitulação covarde do rei Vitor Emanuel III.
-- O assassinato de Giacomo Matteotti (1924) e as Leis Fascistíssimas de fechamento institucional.
-- A Doutrina do Fascismo e a Carta del Lavoro (1927): a destruição do livre sindicalismo pelo corporativismo autoritário.`,
+Como a crise do pós-guerra na Itália favoreceu a ascensão de um movimento ultranacionalista que, por meio da violência paramilitar, da colaboração de elites tradicionais, da mobilização de massas e da transformação institucional, construiu uma ditadura de partido único e desenvolveu um projeto de reorganização totalitária da sociedade?
+
+---
+
+## III. HIPÓTESE PRINCIPAL
+
+A formação do regime fascista italiano resultou da interação entre a crise de legitimidade do Estado liberal, a radicalização social do pós-guerra, o medo das elites diante do movimento socialista, a violência organizada dos esquadristas e a decisão das instituições tradicionais de incorporar Mussolini ao governo.
+
+A consolidação da ditadura não ocorreu automaticamente com a Marcha sobre Roma. Foi construída progressivamente por meio da concentração do poder executivo, da eliminação do pluralismo político, da institucionalização da repressão e da reorganização das relações entre Estado, economia e sociedade.
+
+---
+
+## IV. HIPÓTESES SECUNDÁRIAS
+
+**Hipótese 1 — A crise do pós-guerra foi uma condição de possibilidade, não uma causa suficiente.**
+
+A derrota econômica e social, a desmobilização militar e a insatisfação nacionalista criaram um ambiente favorável ao fascismo, mas não determinaram inevitavelmente sua vitória.
+
+**Hipótese 2 — O esquadrismo foi constitutivo da ascensão fascista.**
+
+A violência paramilitar destruiu organizações adversárias e modificou as condições concretas de competição política.
+
+**Hipótese 3 — A colaboração das elites tradicionais foi decisiva.**
+
+Proprietários, empresários, dirigentes liberais, setores conservadores e a monarquia contribuíram para a chegada de Mussolini ao governo.
+
+**Hipótese 4 — A Marcha sobre Roma foi uma combinação de insurreição e negociação institucional.**
+
+A ameaça de violência fascista foi decisiva, mas a nomeação de Mussolini pelo rei constituiu o mecanismo institucional de acesso ao governo.
+
+**Hipótese 5 — A ditadura foi construída progressivamente.**
+
+A eliminação do pluralismo ocorreu principalmente entre 1925 e 1926, mediante legislação e repressão.
+
+**Hipótese 6 — O corporativismo foi um instrumento de subordinação social.**
+
+A promessa de harmonia entre classes não eliminou os conflitos econômicos; retirou dos trabalhadores a autonomia sindical e a possibilidade de greve.
+
+**Hipótese 7 — O fascismo possuía uma dimensão totalitária.**
+
+O regime procurou transformar a sociedade, a educação, a cultura e a identidade nacional, mas encontrou limites institucionais e sociais.
+
+**Hipótese 8 — A religião política foi fundamental para a legitimação do regime.**
+
+Os símbolos, rituais e o culto ao Duce procuraram transformar o nacionalismo em experiência de devoção coletiva.
+
+**Hipótese 9 — O imperialismo e o racismo foram componentes estruturais do fascismo.**
+
+A política colonial e as leis raciais expressaram a concepção hierárquica e excludente da comunidade nacional.
+
+**Hipótese 10 — A guerra acelerou a desintegração do regime.**
+
+As derrotas militares, a crise econômica e a perda de legitimidade contribuíram para a queda de Mussolini em 1943 e o colapso final em 1945.
+
+---
+
+## V. QUESTÕES DE INVESTIGAÇÃO AVANÇADA
+
+1. A ascensão do fascismo foi consequência inevitável da crise do Estado liberal italiano ou dependeu de decisões políticas específicas?
+
+2. Em que medida a Primeira Guerra Mundial transformou a cultura política italiana?
+
+3. A expressão vitória mutilada correspondeu a uma frustração nacional generalizada ou foi principalmente uma construção política de setores nacionalistas?
+
+4. Qual foi a importância dos ex-combatentes na formação do movimento fascista?
+
+5. O Biennio Rosso representou uma ameaça revolucionária concreta ou foi utilizado politicamente para justificar a repressão antissocialista?
+
+6. Até que ponto os proprietários rurais e industriais financiaram e estimularam o esquadrismo?
+
+7. A violência fascista deve ser interpretada como instrumento de defesa da ordem social ou como elemento constitutivo de um projeto revolucionário nacionalista?
+
+8. Qual foi o papel das autoridades policiais, militares e administrativas na expansão do esquadrismo?
+
+9. A Marcha sobre Roma foi uma verdadeira insurreição ou uma operação de intimidação política cuja vitória dependeu da monarquia?
+
+10. Quais alternativas estavam disponíveis a Vitor Emanuel III em outubro de 1922?
+
+11. Por que as elites liberais acreditaram que poderiam controlar Mussolini?
+
+12. O assassinato de Matteotti representou uma ruptura definitiva entre o fascismo e o sistema parlamentar?
+
+13. As Leis Fascistíssimas foram suficientes para produzir um Estado totalitário ou representaram apenas a consolidação jurídica de uma ditadura autoritária?
+
+14. O corporativismo fascista constituiu uma alternativa econômica real ao liberalismo e ao socialismo?
+
+15. A Carta del Lavoro produziu proteção efetiva aos trabalhadores ou institucionalizou sua subordinação política?
+
+16. O Estado fascista conseguiu controlar efetivamente a Igreja Católica?
+
+17. Em que medida a religião política fascista foi capaz de produzir consenso social?
+
+18. O culto a Mussolini foi uma manifestação espontânea de identificação popular ou resultado de um sistema organizado de propaganda?
+
+19. O conceito de totalitarismo é adequado para caracterizar a Itália fascista, considerando a permanência da monarquia, da Igreja e das elites tradicionais?
+
+20. O racismo italiano de 1938 foi consequência direta da aproximação com Hitler ou possuía raízes anteriores na experiência colonial?
+
+21. Qual foi a relação entre imperialismo, racismo e ultranacionalismo fascista?
+
+22. A entrada na Segunda Guerra Mundial foi uma decisão estratégica coerente com o projeto imperial ou uma aposta política de Mussolini?
+
+23. Por que o regime entrou em colapso em 1943, apesar de duas décadas de propaganda e mobilização?
+
+24. Quais elementos do fascismo sobreviveram na República Social Italiana entre 1943 e 1945?
+
+---
+
+## VI. MATRIZ DE DEBATES HISTORIOGRÁFICOS
+
+### 1. Renzo De Felice — Movimento, regime e consenso
+
+**Contribuição:** diferencia o fascismo como movimento revolucionário e como regime estabelecido.
+
+**Questão central:** como o fascismo conseguiu obter apoio e acomodar diferentes grupos sociais?
+
+**Debate:** a interpretação de De Felice provocou controvérsias sobre a extensão do consenso e a distinção entre fascismo-movimento e fascismo-regime.
+
+### 2. Emilio Gentile — Totalitarismo e religião política
+
+**Contribuição:** analisa o fascismo como projeto de transformação da sociedade e sacralização da política.
+
+**Questão central:** como o regime procurou transformar o Estado e produzir uma nova identidade coletiva?
+
+**Debate:** a ambição totalitária precisa ser distinguida da capacidade efetiva de controlar todas as instituições.
+
+### 3. Roger Griffin — Ultranacionalismo palingenético
+
+**Contribuição:** identifica a regeneração nacional como núcleo ideológico do fascismo.
+
+**Questão central:** o que diferencia o fascismo de outras formas de nacionalismo autoritário?
+
+**Debate:** o núcleo ideológico é fundamental, mas precisa ser relacionado às instituições, às alianças e às práticas de violência.
+
+### 4. Robert O. Paxton — Fascismo como processo histórico
+
+**Contribuição:** analisa a formação, a conquista do poder, o exercício do governo e a radicalização dos movimentos fascistas.
+
+**Questão central:** como movimentos radicais conseguem chegar ao poder mediante colaboração com elites tradicionais?
+
+**Debate:** a análise das práticas políticas precisa ser articulada a uma definição ideológica que permita distinguir fascismo de outros autoritarismos.
+
+### 5. Stanley G. Payne — Morfologia comparativa
+
+**Contribuição:** estabelece critérios comparativos para identificar movimentos fascistas.
+
+**Questão central:** quais características ideológicas, organizacionais e políticas permitem definir o fascismo?
+
+**Debate:** uma tipologia pode identificar características recorrentes, mas não substitui a explicação histórica de sua formação.
+
+### 6. R. J. B. Bosworth — Sociedade, instituições e limites do regime
+
+**Contribuição:** enfatiza a complexidade da sociedade italiana e a distância entre propaganda e realidade.
+
+**Questão central:** até que ponto o fascismo conseguiu transformar a sociedade?
+
+**Debate:** reconhecer os limites do controle estatal não significa negar a natureza autoritária e repressiva do regime.
+
+---
+
+## VII. CONSENSOS ACADÊMICOS E QUESTÕES EM ABERTO
+
+### Consensos relativamente consolidados
+
+1. O fascismo italiano surgiu no contexto de crise do pós-Primeira Guerra Mundial.
+
+2. A violência esquadrista desempenhou papel fundamental na destruição das organizações socialistas e sindicais.
+
+3. A colaboração de setores das elites tradicionais foi decisiva para a conquista do governo.
+
+4. A decisão de Vitor Emanuel III de nomear Mussolini foi determinante para a Marcha sobre Roma.
+
+5. A ditadura foi consolidada progressivamente, especialmente entre 1925 e 1926.
+
+6. O corporativismo eliminou a autonomia sindical e subordinou as relações de trabalho ao Estado.
+
+7. O regime procurou desenvolver um projeto de transformação totalitária da sociedade.
+
+8. O fascismo utilizou símbolos, rituais e culto ao líder para produzir uma identidade política coletiva.
+
+9. O imperialismo e o racismo constituíram dimensões fundamentais da política fascista.
+
+10. A derrota militar na Segunda Guerra Mundial foi decisiva para o colapso do regime.
+
+### Questões ainda debatidas
+
+1. A extensão do consenso social durante o regime.
+
+2. O grau de realização do projeto totalitário.
+
+3. A autonomia relativa das elites tradicionais diante de Mussolini.
+
+4. A relação entre fascismo-movimento e fascismo-regime.
+
+5. A natureza revolucionária ou conservadora do fascismo.
+
+6. A relação entre racismo colonial e legislação antissemita.
+
+7. A importância relativa da ideologia, das instituições e das circunstâncias políticas na consolidação da ditadura.
+
+---
+
+## VIII. METODOLOGIA E CRÍTICA DAS FONTES
+
+A pesquisa deve combinar quatro grupos documentais.
+
+**1. Fontes doutrinárias:** textos de Mussolini, Giovanni Gentile, manifestos fascistas e documentos do Partido Nacional Fascista.
+
+**2. Fontes legislativas:** leis de 1925–1926, Carta del Lavoro, Pactos de Latrão e legislação racial de 1938.
+
+**3. Fontes políticas e jornalísticas:** discursos parlamentares, jornais, propaganda oficial e documentos da oposição.
+
+**4. Fontes historiográficas:** estudos de De Felice, Gentile, Payne, Griffin, Paxton, Bosworth, Lyttelton e outros pesquisadores.
+
+A crítica documental deverá considerar:
+
+- autoria;
+- data de produção;
+- instituição responsável;
+- finalidade política;
+- público destinatário;
+- contexto histórico;
+- vocabulário ideológico;
+- relação entre discurso e prática.
+
+Os documentos oficiais fascistas não devem ser tratados como descrições objetivas da sociedade. Eles expressavam os objetivos e a representação que o regime desejava impor.
+
+---
+
+## IX. OBJETIVOS DA PESQUISA
+
+### Objetivo geral
+
+Investigar a formação e a consolidação do fascismo italiano, relacionando crise institucional, violência paramilitar, ultranacionalismo, corporativismo e sacralização da política.
+
+### Objetivos específicos
+
+1. Reconstruir o contexto político e social italiano anterior a 1919.
+
+2. Analisar as consequências da Primeira Guerra Mundial.
+
+3. Investigar a formação dos Fasci Italiani di Combattimento.
+
+4. Examinar a violência esquadrista.
+
+5. Compreender a relação entre fascismo e elites tradicionais.
+
+6. Analisar a Marcha sobre Roma.
+
+7. Investigar a crise Matteotti.
+
+8. Examinar as Leis Fascistíssimas.
+
+9. Estudar a doutrina corporativista.
+
+10. Investigar a religião política e o culto ao Duce.
+
+11. Analisar os Pactos de Latrão.
+
+12. Investigar o imperialismo e o racismo fascistas.
+
+13. Avaliar os limites do projeto totalitário.
+
+14. Reconstruir o colapso do regime entre 1943 e 1945.
+
+---
+
+## X. RESULTADO INTERPRETATIVO ESPERADO
+
+A pesquisa deverá demonstrar que o fascismo italiano não foi apenas um governo autoritário surgido da crise econômica, nem somente uma reação das classes proprietárias contra o socialismo.
+
+Foi um movimento político que articulou nacionalismo radical, violência, mobilização de massas, hierarquia social e promessa de regeneração nacional.
+
+Sua conquista do poder dependeu da colaboração das instituições tradicionais, mas sua consolidação envolveu a destruição progressiva do pluralismo.
+
+O corporativismo e a religião política foram instrumentos distintos de um mesmo projeto: subordinar os conflitos sociais e a identidade individual à concepção fascista de comunidade nacional.
+
+A experiência italiana demonstra a importância de distinguir a ambição totalitária de sua realização histórica. O fascismo procurou transformar integralmente a sociedade, mas não conseguiu eliminar todas as instituições e estruturas tradicionais que condicionavam seu exercício do poder.`,
 
   108: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
 # DOSSIÊ ACADÊMICO Nº 08: NAZISMO ALEMÃO

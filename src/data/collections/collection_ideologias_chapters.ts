@@ -1,6 +1,7 @@
 import { AcademicChapter } from '../academicChaptersDatabase';
 import { CHAPTER_16 } from '../chapters/chapter_16';
 import { CHAPTER_IDEOLOGIAS_06 } from '../chapters/chapter_ideologias_06';
+import { CHAPTER_IDEOLOGIAS_07 } from '../chapters/chapter_ideologias_07';
 import { CHAPTER_IDEOLOGIAS_10 } from '../chapters/chapter_ideologias_10';
 
 export const IDEOLOGIAS_CHAPTERS: Record<number, AcademicChapter> = {
@@ -2739,49 +2740,7 @@ A passagem do materialismo histórico clássico para as teorias da hegemonia e d
   // =========================================================================
   // CAPÍTULO 7 (TÓPICO 107): FASCISMO ITALIANO
   // =========================================================================
-  107: {
-    topicId: 107,
-    title: 'Fascismo Italiano: Ultranacionalismo, Totalitarismo e Corporativismo (1919–1945)',
-    subtitle: 'A catástrofe da Primeira Guerra, o terror paramilitar esquadrista e a sacralização do Estado fascista sob Mussolini',
-    authorCatedra: 'Cátedra de Estudos Comparados do Fascismo e Regimes Autoritários',
-    introduction: 'O Fascismo italiano representou uma inovação política destrutiva e inédita na Europa entre as duas guerras. Ao combinar a agitação populista de massas com a violência paramilitar metódica contra as liberdades civis e o sindicalismo, Benito Mussolini explorou as feridas da "vitória mutilada" na Primeira Guerra e o pânico burguês do bolchevismo para erguer o primeiro regime totalitário do Ocidente moderno. Sob o lema de Giovanni Gentile — "Tudo no Estado, nada contra o Estado, nada fora do Estado" —, o fascismo subordinou a sociedade a uma religião política secular.',
-    sections: [
-      {
-        number: '1',
-        title: 'As Raízes da Crise: A Vitória Mutilada e o Biennio Rosso (1919–1920)',
-        content: 'Embora vencedora em 1918, a Itália saiu da Primeira Guerra Mundial arruinada economicamente, com 600 mil mortos e um profundo sentimento de humilhação diplomática em Versalhes ao ver negadas as suas ambições na Dalmácia e Fiume. Entre 1919 e 1920, o país foi abalado pelo Biennio Rosso: greves operárias com ocupações de fábricas no norte e invasões de latifúndios por camponeses no sul. Aterrorizados por uma iminente revolução soviética, industriais e grandes proprietários rurais recorreram aos Fasci Italiani di Combattimento fundados em Milão pelo ex-socialista Benito Mussolini.'
-      },
-      {
-        number: '2',
-        title: 'O Esquadrismo e a Marcha sobre Roma (1922)',
-        content: 'Os esquadristas fascistas (camisas-negras) inauguraram a tática do terror paramilitar motorizado: expedições punitivas que invadiam sedes de jornais de esquerda, sindicatos operários e câmaras municipais socialistas, linchando militantes sob a conivência escandalosa da polícia e do exército régio. Em outubro de 1922, Mussolini orquestrou a blefe da Marcha sobre Roma. Em vez de declarar estado de sítio como exigia o primeiro-ministro Facta, o rei Vitor Emanuel III capitulou de forma pusilânime e nomeou Mussolini chefe de governo.'
-      },
-      {
-        number: '3',
-        title: 'O Assassinato de Matteotti e a Construção das Leis Fascistíssimas',
-        content: 'A ruptura definitiva com a legalidade parlamentar ocorreu em 1924 após o assassinato do deputado socialista Giacomo Matteotti, que havia denunciado as fraudes e a violência armada nas eleições. Após a Crise do Aventino (em que deputados de oposição abandonaram o parlamento), Mussolini pronunciou em 3 de janeiro de 1925 um discurso histórico assumindo perante a Câmara a inteira responsabilidade política, moral e histórica pelo fascismo. Nos meses seguintes, promulgou as Leis Fascistíssimas: dissolução de todos os partidos de oposição, supressão da liberdade de imprensa, reintrodução da pena de morte e criação do Tribunal Especial para a Defesa do Estado.'
-      },
-      {
-        number: '4',
-        title: 'A Doutrina Corporativista e a Carta del Lavoro',
-        content: 'Para substituir a luta de classes marxista e a anarquia competitiva liberal, o fascismo formulou o Corporativismo, codificado na Carta del Lavoro de 1927. Empregadores e operários foram compulsoriamente enquadrados em 22 corporações estatais sob controle direto do Ministério das Corporações. A greve e o locaute foram declarados crimes contra a pátria. Em teoria, prometia-se a harmonia produtiva nacional; na prática empírica, o regime submeteu a força de trabalho à compressão salarial e consolidou o poder dos grandes oligopólios monopolistas (Fiat, Pirelli, Montecatini).'
-      },
-      {
-        number: '5',
-        title: 'A Religião Política e a Historiografia do Mínimo Fascista',
-        content: 'Como demonstraram os historiadores Emilio Gentile, Stanley Payne e Roger Griffin, o fascismo não foi uma farsa grotesca nem mero instrumento do grande capital. Foi um movimento autêntico de ultranacionalismo palingenético (mito do renascimento nacional após a decadência profunda) que institucionalizou a primeira religião política contemporânea: culto quase messiânico ao Duce, hinos cívicos, juramentos corporativos nas escolas e rituais cenográficos no Palazzo Venezia concebidos para transformar as massas em exército permanentemente mobilizado.'
-      }
-    ],
-    conclusion: 'O fascismo italiano forneceu a matriz genética para todos os movimentos totalitários e autoritários de extrema-direita das décadas de 1930 e 1940. Sua trajetória adverte que a democracia representativa desmorona com espantosa velocidade quando as elites conservadoras institucionalizam o paramilitarismo como ferramenta aceitável de combate aos adversários políticos.',
-    bibliographicReferences: [
-      'GENTILE, Emilio. The Sacralization of Politics in Fascist Italy. Cambridge: Harvard University Press, 1996.',
-      'GRIFFIN, Roger. The Nature of Fascism. Londres: Routledge, 1991.',
-      'MANN, Michael. Fascists. Cambridge: Cambridge University Press, 2004.',
-      'PAXTON, Robert O. The Anatomy of Fascism. Nova York: Alfred A. Knopf, 2004.',
-      'PAYNE, Stanley G. A History of Fascism, 1914–1945. Madison: University of Wisconsin Press, 1995.',
-      'STERNHELL, Zeev. The Birth of Fascist Ideology. Princeton: Princeton University Press, 1989.'
-    ]
-  },
+  107: CHAPTER_IDEOLOGIAS_07,
 
   // =========================================================================
   // CAPÍTULO 8 (TÓPICO 108): NAZISMO ALEMÃO

@@ -17,8 +17,11 @@ import { ADVANCED_INVESTIGATIONS_DATABASE } from '../data/advancedInvestigationD
 import { MARKET_LAWS_CHAPTERS } from '../data/marketLawsDatabase';
 import { Topic105SynthesisView } from './Topic105SynthesisView';
 import { Topic106EssayView } from './Topic106EssayView';
+import { Topic107EssayView } from './Topic107EssayView';
 import { Topic106ChroniclesView } from './Topic106ChroniclesView';
+import { Topic107ChroniclesView } from './Topic107ChroniclesView';
 import { Topic106CitationsView } from './Topic106CitationsView';
+import { Topic107CitationsView } from './Topic107CitationsView';
 import { Topic111CitationsView } from './Topic111CitationsView';
 import { Topic111ChroniclesView } from './Topic111ChroniclesView';
 import { Topic112SynthesisView } from './Topic112SynthesisView';
@@ -456,6 +459,23 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       list.push({ num: 99, label: 'Referências', target: 'chapter-refs' });
       return list;
     } else if (activeTab === 'essay') {
+      if (topic.id === 107) {
+        return [
+          { num: 'ENS', label: 'Ensaio Acadêmico', target: 'essay-master' },
+          { num: '1', label: '1. Introdução', target: 'essay-sec-1' },
+          { num: '2', label: '2. Crise Pós-Guerra', target: 'essay-sec-2' },
+          { num: '3', label: '3. O Esquadrismo', target: 'essay-sec-3' },
+          { num: '4', label: '4. Conquista do Governo', target: 'essay-sec-4' },
+          { num: '5', label: '5. Matteotti e Ditadura', target: 'essay-sec-5' },
+          { num: '6', label: '6. Corporativismo', target: 'essay-sec-6' },
+          { num: '7', label: '7. Sacralização', target: 'essay-sec-7' },
+          { num: '8', label: '8. Totalitarismo', target: 'essay-sec-8' },
+          { num: '9', label: '9. Imperialismo e Guerra', target: 'essay-sec-9' },
+          { num: '10', label: '10. Considerações Finais', target: 'essay-sec-10' },
+          { num: 'SÍN', label: 'Síntese Estrutural', target: 'essay-synthese-master' },
+          { num: 'DOS', label: 'Dossiê de Pesquisa', target: 'essay-research-dossier-master' },
+        ];
+      }
       return [
         { num: 'ENS', label: '1. Ensaio Acadêmico', target: 'essay-master' },
         { num: 'I', label: 'I. Síntese e Antecedentes', target: 'essay-sec-1' },
@@ -481,6 +501,22 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'CR-VII', label: 'VII. Frente Popular (1935–1943)', target: 'cronica-7' },
         ];
       }
+      if (topic.id === 107) {
+        return [
+          { num: 'CR-I', label: 'I. Volta da Guerra (1918–19)', target: 'cronica-1' },
+          { num: 'CR-II', label: 'II. Fábricas Ocupadas', target: 'cronica-2' },
+          { num: 'CR-III', label: 'III. Camisas-Negras (1921)', target: 'cronica-3' },
+          { num: 'CR-IV', label: 'IV. Marcha sobre Roma', target: 'cronica-4' },
+          { num: 'CR-V', label: 'V. Matteotti (1924)', target: 'cronica-5' },
+          { num: 'CR-VI', label: 'VI. Estado Fascista', target: 'cronica-6' },
+          { num: 'CR-VII', label: 'VII. Corporações (1927)', target: 'cronica-7' },
+          { num: 'CR-VIII', label: 'VIII. Vaticano (1929)', target: 'cronica-8' },
+          { num: 'CR-IX', label: 'IX. Etiópia (1935–36)', target: 'cronica-9' },
+          { num: 'CR-X', label: 'X. Exclusão Judeus (1938)', target: 'cronica-10' },
+          { num: 'CR-XI', label: 'XI. Guerra (1940–43)', target: 'cronica-11' },
+          { num: 'CR-XII', label: 'XII. Salò e Fim (1943–45)', target: 'cronica-12' },
+        ];
+      }
       if (topic.id === 111 || (topic.categoryNumber === '10' && topic.title.toLowerCase().includes('comunismo'))) {
         return [
           { num: 'CRONO', label: 'Cronologia (1949–1975)', target: 'stories-crono' },
@@ -504,6 +540,21 @@ export const DossierModal: React.FC<DossierModalProps> = ({
         { num: 2, label: `Crônicas Oculares (${detailedEpisodes.length})`, target: 'stories-episodes' },
       ];
     } else if (activeTab === 'citations') {
+      if (topic.id === 107) {
+        return [
+          { num: 'I', label: 'I. Docs Fundadores', target: 'cit-parte-1' },
+          { num: 'II', label: 'II. Marcha sobre Roma', target: 'cit-parte-2' },
+          { num: 'III', label: 'III. Caso Matteotti', target: 'cit-parte-3' },
+          { num: 'IV', label: 'IV. Leis Fascistíssimas', target: 'cit-parte-4' },
+          { num: 'V', label: 'V. Doutrina do Fascismo', target: 'cit-parte-5' },
+          { num: 'VI', label: 'VI. Corporativismo', target: 'cit-parte-6' },
+          { num: 'VII', label: 'VII. Igreja e Estado', target: 'cit-parte-7' },
+          { num: 'VIII', label: 'VIII. Imperialismo/Racismo', target: 'cit-parte-8' },
+          { num: 'IX', label: 'IX. Colapso do Regime', target: 'cit-parte-9' },
+          { num: 'X', label: 'X. Citações & Sínteses', target: 'cit-parte-10' },
+          { num: 'XI', label: 'XI. Bibliografia', target: 'cit-parte-11' },
+        ];
+      }
       return [
         { num: 'I', label: 'I. Citações Literais', target: 'cit-block-1' },
         { num: 'II', label: 'II. Sínteses & Análises', target: 'cit-block-2' },
@@ -1255,6 +1306,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                   <Topic112EssayView getFontSizeClass={getFontSizeClass} />
                 ) : topic.id === 106 ? (
                   <Topic106EssayView getFontSizeClass={getFontSizeClass} />
+                ) : topic.id === 107 ? (
+                  <Topic107EssayView getFontSizeClass={getFontSizeClass} />
                 ) : essay ? (
                   <div className="space-y-8 w-full">
               {/* Header Banner */}
@@ -1531,6 +1584,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           {activeTab === 'stories' && (
             topic.id === 106 ? (
               <Topic106ChroniclesView getFontSizeClass={getFontSizeClass} />
+            ) : topic.id === 107 ? (
+              <Topic107ChroniclesView getFontSizeClass={getFontSizeClass} />
             ) : (topic.id === 111 || (topic.categoryNumber === '10' && topic.title.toLowerCase().includes('comunismo'))) ? (
               <Topic111ChroniclesView getFontSizeClass={getFontSizeClass} />
             ) : topic.id === 112 ? (
@@ -1653,6 +1708,13 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               return (
                 <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
                   <Topic106CitationsView getFontSizeClass={getFontSizeClass} />
+                </div>
+              );
+            }
+            if (topic.id === 107) {
+              return (
+                <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+                  <Topic107CitationsView getFontSizeClass={getFontSizeClass} />
                 </div>
               );
             }
