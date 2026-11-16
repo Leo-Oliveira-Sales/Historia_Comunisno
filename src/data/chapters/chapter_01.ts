@@ -1,1049 +1,398 @@
-import { AcademicChapter } from '../academicChaptersDatabase';
+import { AcademicChapter } from "../academicChaptersDatabase";
 
 export const CHAPTER_01: AcademicChapter = {
-  topicId: 1,
-  title: 'A Revolução Russa de 1917 e a Consolidação do Poder Bolchevique',
-  subtitle: 'Da crise do czarismo à dissolução da Assembleia Constituinte (1894–1918)',
-  authorCatedra: 'Cátedra de História Russa e Soviética · Capítulo Acadêmico',
-  introduction: `Em outubro de 1917, uma organização revolucionária marxista derrubou o Governo Provisório russo e assumiu o controle do Estado. O acontecimento, que entraria para a história como Revolução de Outubro, representou um dos momentos mais importantes e controversos do século XX. Pela primeira vez, um partido que reivindicava a tradição marxista conquistava o poder de Estado com o propósito declarado de iniciar a construção de uma sociedade socialista.
-
-A transformação, entretanto, não aconteceu repentinamente. A tomada do poder pelos bolcheviques foi o resultado de uma longa crise política, econômica e social que atingiu o Império Russo durante as últimas décadas do século XIX e o início do século XX. A permanência de estruturas autocráticas, a concentração fundiária, as desigualdades sociais, os conflitos trabalhistas, as dificuldades de modernização e a participação desastrosa do país na Primeira Guerra Mundial contribuíram para enfraquecer a monarquia dos Romanov.
-
-A Revolução Russa também não foi um movimento politicamente homogêneo. Liberais, socialistas revolucionários, mencheviques, bolcheviques, anarquistas, nacionalistas e diferentes organizações camponesas e operárias defendiam projetos distintos para o futuro do país. Embora compartilhassem, em determinados momentos, a oposição ao czarismo, divergiam profundamente sobre a propriedade da terra, a continuidade da guerra, a organização econômica, a representação política e a natureza do Estado que deveria substituir a monarquia.
-
-Em fevereiro de 1917, a insatisfação popular, as greves e a rebelião de setores do Exército provocaram a abdicação de Nicolau II. A monarquia chegou ao fim, mas a revolução não encontrou imediatamente uma direção política consensual. O Governo Provisório, inicialmente liderado pelo príncipe Georgy Lvov e posteriormente por Alexander Kerensky, passou a dividir a influência política com os sovietes, conselhos de representantes de trabalhadores e soldados.
-
-A incapacidade de solucionar rapidamente a questão agrária, a continuidade da participação russa na guerra e a deterioração das condições econômicas enfraqueceram o Governo Provisório. Nesse cenário, Vladimir Lenin e seus aliados passaram a defender uma nova etapa revolucionária, na qual o poder deveria ser transferido aos sovietes. A organização bolchevique ampliou sua influência em determinados centros urbanos e unidades militares, enquanto seus adversários enfrentavam dificuldades para estabelecer uma autoridade política estável.
-
-A insurreição de outubro derrubou o Governo Provisório, mas não encerrou as disputas sobre a legitimidade do novo poder. As eleições para a Assembleia Constituinte, realizadas no final de 1917, demonstraram que os bolcheviques não possuíam uma maioria eleitoral nacional. Os socialistas revolucionários obtiveram o maior contingente de votos, criando uma situação de confronto entre a legitimidade parlamentar e a concepção bolchevique de democracia soviética.
-
-Em janeiro de 1918, a Assembleia Constituinte foi dissolvida após uma única sessão. A decisão representou uma ruptura institucional decisiva: uma instituição eleita para definir a organização política do país foi impedida de exercer suas funções constitucionais.
-
-A historiografia interpreta esses acontecimentos por diferentes perspectivas. Richard Pipes enfatiza a iniciativa organizada dos bolcheviques e a concentração do poder político; Alexander Rabinowitch investiga a diversidade interna do partido e suas relações com os movimentos sociais de Petrogrado; Sheila Fitzpatrick analisa a revolução como parte de uma transformação social e política mais ampla; Rex A. Wade examina as diferentes forças que disputaram o futuro do país, incluindo camponeses, nacionalidades e organizações políticas.
-
-Este capítulo acompanha o processo entre 1894 e 1918, procurando compreender não apenas como os bolcheviques chegaram ao poder, mas também quais alternativas políticas existiam, como os acontecimentos se desenvolveram e quais foram as consequências das decisões tomadas durante os primeiros meses do novo regime.`,
-  sections: [
+  "topicId": 1,
+  "title": "A REVOLUÇÃO RUSSA DE 1917 E A CONSOLIDAÇÃO DO PODER BOLCHEVIQUE",
+  "subtitle": "Da crise do czarismo à dissolução da Assembleia Constituinte (1894–1918)",
+  "authorCatedra": "Cátedra de História Russa e Soviética · Capítulo Acadêmico",
+  "introduction": "INTRODUÇÃO\n\nEm outubro de 1917, uma organização revolucionária marxista derrubou o Governo Provisório russo e assumiu o controle das principais instituições políticas de Petrogrado. O acontecimento, conhecido como Revolução de Outubro, representou um dos episódios mais importantes e controversos da história contemporânea. Pela primeira vez, um partido que reivindicava a tradição marxista conquistava o poder de Estado com o propósito declarado de iniciar a construção de uma sociedade socialista.\n\nA transformação, entretanto, não aconteceu repentinamente. A tomada do poder pelos bolcheviques foi resultado de uma longa crise política, econômica e social que atingiu o Império Russo durante as últimas décadas do século XIX e o início do século XX. A permanência de estruturas autocráticas, a concentração fundiária, as desigualdades sociais, os conflitos trabalhistas, as dificuldades de modernização e a participação desastrosa do país na Primeira Guerra Mundial contribuíram para enfraquecer a monarquia dos Romanov.\n\nO Império Russo apresentava uma combinação contraditória de características. Era uma potência territorial e militar, possuía uma estrutura administrativa centralizada e experimentava industrialização acelerada em determinadas regiões. Ao mesmo tempo, preservava uma sociedade predominantemente rural, profundas desigualdades fundiárias e instituições políticas que restringiam a participação da população. Essa combinação produzia tensões entre modernização econômica e conservação política.\n\nA Revolução Russa também não foi um movimento politicamente homogêneo. Liberais, socialistas revolucionários, mencheviques, bolcheviques, anarquistas, nacionalistas e diferentes organizações camponesas e operárias defendiam projetos distintos para o futuro do país. Embora compartilhassem, em determinados momentos, a oposição ao czarismo, divergiam profundamente sobre a propriedade da terra, a continuidade da guerra, a organização econômica, a representação política e a natureza do Estado que deveria substituir a monarquia.\n\nEm fevereiro de 1917, a insatisfação popular, as greves e a rebelião de setores do Exército provocaram a abdicação de Nicolau II. A monarquia chegou ao fim, mas a revolução não estabeleceu imediatamente uma autoridade política consensual. O Governo Provisório passou a dividir a influência política com os sovietes, conselhos de representantes de trabalhadores e soldados que haviam adquirido importância durante a mobilização revolucionária.\n\nA incapacidade de solucionar rapidamente a questão agrária, a continuidade da participação russa na guerra e a deterioração das condições econômicas enfraqueceram o Governo Provisório. Nesse cenário, Vladimir Lenin e seus aliados passaram a defender uma nova etapa revolucionária, na qual o poder deveria ser transferido aos sovietes. A organização bolchevique ampliou sua influência em determinados centros urbanos e unidades militares, enquanto seus adversários enfrentavam dificuldades para estabelecer uma autoridade política estável.\n\nA insurreição de outubro derrubou o Governo Provisório, mas não encerrou as disputas sobre a legitimidade do novo poder. As eleições para a Assembleia Constituinte, realizadas no final de 1917, demonstraram que os bolcheviques não possuíam uma maioria eleitoral nacional. Os socialistas revolucionários obtiveram o maior contingente de votos, criando uma situação de confronto entre a legitimidade parlamentar e a concepção bolchevique de democracia soviética.\n\nEm janeiro de 1918, a Assembleia Constituinte foi dissolvida após uma única sessão. A decisão representou uma ruptura institucional decisiva: uma instituição eleita para definir a organização política do país foi impedida de exercer suas funções constitucionais.\n\nA historiografia interpreta esses acontecimentos por diferentes perspectivas. Richard Pipes enfatiza a iniciativa organizada dos bolcheviques, a importância da estratégia partidária e a progressiva concentração do poder. Alexander Rabinowitch, por sua vez, demonstra que o bolchevismo não constituía um bloco inteiramente uniforme e examina sua relação com os movimentos sociais de Petrogrado. Sheila Fitzpatrick interpreta a revolução como parte de uma transformação social mais ampla, enquanto Rex A. Wade destaca a diversidade de forças políticas e sociais que disputaram o futuro do país. Orlando Figes, por sua vez, oferece uma interpretação abrangente das contradições sociais e políticas que atravessaram o processo revolucionário.\n\nEssas interpretações não são necessariamente incompatíveis. A Revolução Russa pode ser analisada simultaneamente como uma transformação social de grandes proporções, uma crise de autoridade do Estado imperial, uma disputa entre projetos políticos concorrentes e uma operação organizada de conquista do poder.\n\nEste capítulo acompanha o processo entre 1894 e 1918, procurando compreender não apenas como os bolcheviques chegaram ao poder, mas também quais alternativas políticas existiam, como os acontecimentos se desenvolveram e quais foram as consequências das decisões tomadas durante os primeiros meses do novo regime.",
+  "sections": [
     {
-      number: '1',
-      title: 'O Império dos Romanov: Poder, Sociedade e Desigualdade',
-      content: '',
-      subsections: [
+      "number": "1",
+      "title": "O IMPÉRIO DOS ROMANOV: PODER, SOCIEDADE E DESIGUALDADE",
+      "subsections": [
         {
-          number: '1.1',
-          title: 'Nicolau II e a permanência da autocracia',
-          content: `Em 1º de novembro de 1894, segundo o calendário gregoriano, Nicolau II assumiu o trono do Império Russo após a morte de seu pai, Alexandre III. O novo imperador herdou um Estado territorialmente extenso, multinacional e socialmente desigual, governado por uma estrutura política profundamente centralizada.
-
-A dinastia Romanov governava a Rússia desde 1613. Ao longo de aproximadamente três séculos, a monarquia consolidara uma estrutura imperial na qual o czar concentrava autoridade política, militar e administrativa. Embora existissem instituições burocráticas, conselhos e órgãos consultivos, não havia um parlamento nacional com capacidade efetiva de controlar o governo.
-
-Nicolau II acreditava na necessidade de preservar a autoridade autocrática. Em seus primeiros pronunciamentos políticos, demonstrou resistência às expectativas de setores da sociedade que defendiam reformas constitucionais. Sua posição contribuiu para manter o conflito entre a monarquia e os grupos que exigiam maior participação política.
-
-A autocracia não significava ausência de transformações econômicas. Durante o final do século XIX, o Império Russo experimentava industrialização acelerada em determinadas regiões. Ferrovias, siderúrgicas, minas, fábricas e atividades financeiras ampliavam sua presença na economia. O desenvolvimento, entretanto, era desigual e coexistia com uma estrutura agrária predominantemente camponesa.
-
-O Estado imperial também apresentava grande diversidade étnica e nacional. Russos, ucranianos, poloneses, finlandeses, bálticos, povos caucasianos, comunidades judaicas e populações da Ásia Central estavam submetidos, de diferentes maneiras, à administração imperial. As políticas de russificação e as restrições à autonomia de determinados povos contribuíam para tensões nacionais.
-
-O Império era, portanto, uma potência europeia em processo de modernização econômica, mas preservava instituições políticas que dificultavam a participação de amplos setores da população.`
+          "number": "1.1",
+          "title": "Nicolau II e a permanência da autocracia",
+          "content": "Em 1º de novembro de 1894, segundo o calendário gregoriano, Nicolau II assumiu o trono do Império Russo após a morte de seu pai, Alexandre III. O novo imperador herdou um Estado territorialmente extenso, multinacional e socialmente desigual, governado por uma estrutura política profundamente centralizada.\n\nA dinastia Romanov governava a Rússia desde 1613. Ao longo de aproximadamente três séculos, a monarquia consolidara uma estrutura imperial na qual o czar concentrava autoridade política, militar e administrativa. Embora existissem instituições burocráticas, conselhos e órgãos consultivos, não havia um parlamento nacional com capacidade efetiva de controlar o governo.\n\nA autocracia russa não correspondia simplesmente à existência de um monarca. Tratava-se de uma estrutura de poder na qual a autoridade imperial ocupava posição superior às instituições representativas e não dependia de um parlamento eleito para exercer suas funções. A burocracia, a polícia política, a Igreja Ortodoxa e as Forças Armadas desempenhavam funções importantes na manutenção da ordem imperial.\n\nNicolau II acreditava na necessidade de preservar a autoridade autocrática. Em seus primeiros pronunciamentos políticos, demonstrou resistência às expectativas de setores da sociedade que defendiam reformas constitucionais. Sua posição contribuiu para manter o conflito entre a monarquia e os grupos que exigiam maior participação política.\n\nA autocracia, entretanto, não significava ausência de transformações econômicas. Durante o final do século XIX, o Império Russo experimentava industrialização acelerada em determinadas regiões. Ferrovias, siderúrgicas, minas, fábricas e atividades financeiras ampliavam sua presença na economia. O desenvolvimento, contudo, era desigual e coexistia com uma estrutura agrária predominantemente camponesa.\n\nO Estado imperial também apresentava grande diversidade étnica e nacional. Russos, ucranianos, poloneses, finlandeses, povos bálticos, comunidades caucasianas, judeus e populações da Ásia Central estavam submetidos, de diferentes maneiras, à administração imperial.\n\nAs políticas de russificação, que procuravam fortalecer a língua e a cultura russas nas instituições do Império, contribuíram para tensões com diferentes nacionalidades. Em algumas regiões, essas políticas restringiam autonomias locais e alimentavam movimentos nacionalistas.\n\nO Império era, portanto, uma potência em processo de modernização econômica, mas preservava instituições políticas que dificultavam a participação de amplos setores da população. Essa contradição entre transformação econômica e conservação política constituía uma das principais características do regime de Nicolau II."
         },
         {
-          number: '1.2',
-          title: 'A questão camponesa e a emancipação dos servos',
-          content: `A estrutura agrária constituía um dos principais problemas sociais da Rússia.
-
-Em 1861, durante o reinado de Alexandre II, foi decretada a emancipação dos servos. A medida representou uma transformação jurídica importante, pois libertou milhões de camponeses de vínculos tradicionais de dependência em relação aos proprietários de terras.
-
-Entretanto, emancipação jurídica não significou distribuição igualitária da propriedade fundiária.
-
-Muitos camponeses receberam parcelas de terra insuficientes para garantir sua subsistência. Em diversas regiões, as condições de aquisição das parcelas envolveram pagamentos de resgate, obrigações financeiras e limitações impostas pelas comunidades rurais.
-
-O mir, ou comunidade camponesa, desempenhava papel importante na organização da vida rural. Em muitas localidades, a terra era distribuída entre famílias segundo regras comunitárias, o que limitava a formação de uma propriedade individual plenamente independente.
-
-A concentração de grandes propriedades continuava sendo uma característica importante da sociedade russa. Aristocratas, proprietários tradicionais e instituições religiosas controlavam extensas áreas, enquanto milhões de famílias camponesas dependiam de pequenas parcelas e de atividades complementares.
-
-A questão da terra não era apenas econômica. Ela possuía dimensão política, pois a insatisfação camponesa estava diretamente relacionada à legitimidade da monarquia e à expectativa de transformação social.
-
-Esse problema seria decisivo em 1917. A demanda pela redistribuição das propriedades rurais não nasceu com Lenin nem com os bolcheviques. Era uma reivindicação antiga, presente em diferentes movimentos revolucionários e organizações camponesas.`
+          "number": "1.2",
+          "title": "A questão camponesa e a emancipação dos servos",
+          "content": "A estrutura agrária constituía um dos principais problemas sociais da Rússia.\n\nEm 1861, durante o reinado de Alexandre II, foi decretada a emancipação dos servos. A medida representou uma transformação jurídica importante, pois libertou milhões de camponeses de vínculos tradicionais de dependência em relação aos proprietários de terras.\n\nA servidão havia sido um dos fundamentos da organização social russa. Os servos estavam submetidos a obrigações pessoais e econômicas perante os proprietários, que exerciam considerável autoridade sobre suas condições de vida e trabalho.\n\nA emancipação jurídica, entretanto, não significou distribuição igualitária da propriedade fundiária.\n\nMuitos camponeses receberam parcelas insuficientes para garantir sua subsistência. Em diversas regiões, a aquisição das terras envolveu pagamentos de resgate, obrigações financeiras e limitações impostas pelas comunidades rurais.\n\nO *mir*, ou comunidade camponesa, desempenhava papel importante na organização da vida rural. Em muitas localidades, a comunidade administrava a distribuição periódica de parcelas e estabelecia regras relacionadas ao uso das terras. Essa organização variava conforme a região, mas influenciava profundamente a relação entre famílias, propriedade e produção agrícola.\n\nA concentração de grandes propriedades continuava sendo uma característica importante da sociedade russa. Aristocratas, proprietários tradicionais e instituições religiosas controlavam extensas áreas, enquanto milhões de famílias camponesas dependiam de pequenas parcelas e de atividades complementares.\n\nA questão da terra não era apenas econômica. Possuía dimensão política, pois a insatisfação camponesa estava diretamente relacionada à legitimidade da monarquia e à expectativa de transformação social.\n\nA reforma de 1861 havia eliminado juridicamente a servidão, mas não solucionara as contradições da estrutura agrária. A pobreza rural, o crescimento populacional, a insuficiência de terras em determinadas regiões e as obrigações financeiras continuaram alimentando tensões.\n\nEsse problema seria decisivo em 1917. A demanda pela redistribuição das propriedades rurais não nasceu com Lenin nem com os bolcheviques. Era uma reivindicação antiga, presente em diferentes movimentos revolucionários e organizações camponesas."
         },
         {
-          number: '1.3',
-          title: 'Industrialização, trabalhadores e novas forças políticas',
-          content: `Durante o governo de Alexandre III e, posteriormente, de Nicolau II, a Rússia ampliou seus investimentos industriais.
-
-Um dos principais responsáveis pela política de modernização econômica foi Sergei Witte, ministro das Finanças entre 1892 e 1903. Witte defendia a expansão ferroviária, a atração de capitais estrangeiros, a proteção da indústria nacional e a utilização do Estado como instrumento de desenvolvimento econômico.
-
-A construção da Ferrovia Transiberiana, iniciada em 1891 e desenvolvida durante as décadas seguintes, simbolizou a ambição modernizadora do Império. A expansão das ferrovias favoreceu a integração territorial, o transporte de matérias-primas e a circulação de mercadorias e tropas.
-
-O crescimento industrial, contudo, produziu novas tensões. Trabalhadores concentrados em grandes fábricas estavam submetidos a jornadas extensas, baixos salários, condições precárias de segurança e reduzidas possibilidades de organização independente.
-
-São Petersburgo, Moscou, Baku e outras cidades industriais tornaram-se centros de mobilização operária.
-
-A expansão do proletariado urbano também favoreceu a difusão de ideias socialistas. Entre os movimentos políticos que ganharam importância estavam os social-democratas marxistas, os socialistas revolucionários e organizações liberais que defendiam reformas constitucionais.
-
-Esses grupos não representavam uma única corrente política. Suas diferenças seriam determinantes durante a revolução.`
+          "number": "1.3",
+          "title": "Industrialização, trabalhadores e novas forças políticas",
+          "content": "Durante o governo de Alexandre III e, posteriormente, de Nicolau II, a Rússia ampliou seus investimentos industriais.\n\nUm dos principais responsáveis pela política de modernização econômica foi Sergei Witte, ministro das Finanças entre 1892 e 1903. Witte defendia a expansão ferroviária, a atração de capitais estrangeiros, a proteção da indústria nacional e a utilização do Estado como instrumento de desenvolvimento econômico.\n\nA construção da Ferrovia Transiberiana, iniciada em 1891 e desenvolvida durante as décadas seguintes, simbolizou a ambição modernizadora do Império. A expansão ferroviária favoreceu a integração territorial, o transporte de matérias-primas e a circulação de mercadorias e tropas.\n\nA industrialização russa apresentou características particulares. Em vez de se desenvolver exclusivamente a partir de uma longa expansão de pequenas manufaturas, como havia ocorrido em determinadas regiões da Europa Ocidental, o crescimento industrial russo envolveu grandes empresas, investimentos estatais e capitais estrangeiros.\n\nA presença de investimentos franceses, belgas, britânicos e alemães foi significativa em setores como mineração, metalurgia, petróleo e ferrovias. Essa participação não eliminava o papel do Estado russo, que continuava sendo um agente central da modernização.\n\nO crescimento industrial, contudo, produziu novas tensões. Trabalhadores concentrados em grandes fábricas estavam submetidos a jornadas extensas, baixos salários, condições precárias de segurança e reduzidas possibilidades de organização independente.\n\nSão Petersburgo, Moscou, Baku e outras cidades industriais tornaram-se centros de mobilização operária. A concentração de trabalhadores em grandes estabelecimentos facilitava a circulação de ideias políticas e a organização de greves.\n\nA expansão do proletariado urbano favoreceu a difusão de ideias socialistas. Entre os movimentos políticos que ganharam importância estavam os social-democratas marxistas, os socialistas revolucionários e organizações liberais que defendiam reformas constitucionais.\n\nEsses grupos não representavam uma única corrente política. Suas diferenças seriam determinantes durante a revolução.\n\nA industrialização, portanto, não produziu automaticamente uma revolução socialista. Ela modificou as relações de trabalho, fortaleceu novos grupos sociais e criou condições para a formação de organizações políticas que passaram a contestar a estrutura imperial."
         }
       ]
     },
     {
-      number: '2',
-      title: 'A Formação dos Movimentos Revolucionários',
-      content: '',
-      subsections: [
+      "number": "2",
+      "title": "A FORMAÇÃO DOS MOVIMENTOS REVOLUCIONÁRIOS",
+      "subsections": [
         {
-          number: '2.1',
-          title: 'O marxismo e a social-democracia russa',
-          content: `O marxismo começou a exercer influência crescente entre intelectuais e militantes russos no final do século XIX.
-
-Uma das organizações importantes nesse processo foi o Grupo Emancipação do Trabalho, fundado em 1883 por Georgi Plekhanov, Vera Zasulich, Pavel Axelrod e outros revolucionários russos no exílio.
-
-Plekhanov desempenhou papel importante na divulgação das ideias de Karl Marx na Rússia. Sua interpretação enfatizava o desenvolvimento capitalista e a formação de uma classe trabalhadora capaz de desempenhar papel revolucionário.
-
-Em 1898, foi fundado o Partido Operário Social-Democrata Russo (POSDR). A organização pretendia articular diferentes círculos marxistas e movimentos operários do Império.
-
-A unidade partidária, entretanto, era limitada. Existiam divergências sobre a organização revolucionária, a relação com os trabalhadores, a participação política e a natureza das etapas da revolução.`
+          "number": "2.1",
+          "title": "O marxismo e a social-democracia russa",
+          "content": "O marxismo começou a exercer influência crescente entre intelectuais e militantes russos no final do século XIX.\n\nUma das organizações importantes nesse processo foi o Grupo Emancipação do Trabalho, fundado em 1883 por Georgi Plekhanov, Vera Zasulich, Pavel Axelrod e outros revolucionários russos no exílio.\n\nPlekhanov desempenhou papel importante na divulgação das ideias de Karl Marx na Rússia. Sua interpretação enfatizava o desenvolvimento capitalista e a formação de uma classe trabalhadora capaz de desempenhar papel revolucionário.\n\nO desenvolvimento do marxismo russo ocorreu em um contexto no qual a sociedade ainda possuía uma estrutura predominantemente agrária. Isso produziu debates sobre a possibilidade de a Rússia realizar uma transformação socialista sem atravessar todas as etapas de desenvolvimento capitalista observadas na Europa Ocidental.\n\nOs marxistas russos divergiam dos populistas, conhecidos como *narodniks*, que atribuíam grande importância às comunidades camponesas e acreditavam que as formas tradicionais de organização rural poderiam constituir uma base para a transformação social.\n\nOs social-democratas, em geral, consideravam que o desenvolvimento capitalista já estava modificando profundamente a sociedade russa e que o proletariado urbano adquiriria importância crescente.\n\nEm 1898, foi fundado o Partido Operário Social-Democrata Russo (POSDR). A organização pretendia articular diferentes círculos marxistas e movimentos operários do Império.\n\nA unidade partidária, entretanto, era limitada. Existiam divergências sobre a organização revolucionária, a relação com os trabalhadores, a participação política e a natureza das etapas da revolução.\n\nO partido ainda era uma organização relativamente frágil, submetida à repressão policial e obrigada a atuar em condições de clandestinidade."
         },
         {
-          number: '2.2',
-          title: 'Lenin e a concepção de partido revolucionário',
-          content: `Vladimir Ilyich Ulianov, conhecido como Lenin, nasceu em 1870, em Simbirsk, no Império Russo.
-
-Sua trajetória política foi marcada pela oposição ao czarismo e pela aproximação com o marxismo. Em 1897, foi condenado ao exílio interno na Sibéria, onde permaneceu até 1900.
-
-Posteriormente, passou a atuar no exterior, participando da organização de publicações e articulações políticas entre revolucionários russos.
-
-Em 1902, publicou Que Fazer?, obra na qual defendeu a necessidade de uma organização revolucionária disciplinada, composta por militantes dedicados à atividade política e capazes de atuar em condições de repressão.
-
-Lenin considerava que a luta espontânea por melhores salários e condições de trabalho não produziria automaticamente uma transformação socialista. Para ele, era necessário desenvolver uma organização política capaz de articular as reivindicações econômicas a uma estratégia de transformação do Estado.
-
-Essa concepção tornou-se uma das características centrais do bolchevismo.`
+          "number": "2.2",
+          "title": "Lenin e a concepção de partido revolucionário",
+          "content": "Vladimir Ilyich Ulianov, conhecido como Lenin, nasceu em 1870, em Simbirsk, no Império Russo.\n\nSua trajetória política foi marcada pela oposição ao czarismo e pela aproximação com o marxismo. Em 1897, foi condenado ao exílio interno na Sibéria, onde permaneceu até 1900.\n\nPosteriormente, passou a atuar no exterior, participando da organização de publicações e articulações políticas entre revolucionários russos.\n\nEm 1902, publicou *Que Fazer?*, obra na qual defendeu a necessidade de uma organização revolucionária capaz de desenvolver atividade política sistemática em condições de repressão.\n\nLenin considerava que a luta espontânea por melhores salários e condições de trabalho, embora importante, não produziria automaticamente uma transformação socialista. Para ele, era necessário desenvolver uma organização política capaz de relacionar as reivindicações econômicas a uma estratégia de transformação do Estado.\n\nEssa concepção estava relacionada às condições de atuação dos movimentos revolucionários russos. A repressão policial, a censura e a ausência de liberdades políticas dificultavam a formação de organizações públicas estáveis.\n\nO partido revolucionário deveria reunir militantes preparados, estabelecer articulação entre diferentes regiões e desenvolver uma orientação política capaz de superar a fragmentação dos movimentos locais.\n\nEntretanto, a interpretação de Lenin não deve ser reduzida à ideia de que ele defendia simplesmente uma organização burocrática e sem participação social. A própria história do bolchevismo demonstraria a existência de divergências internas, disputas estratégicas e diferentes graus de relação com os movimentos operários.\n\nO problema central estava na relação entre organização política, consciência revolucionária e participação popular.\n\nA concepção leninista de partido tornou-se uma das características centrais do bolchevismo e posteriormente influenciou a organização de diversos partidos comunistas."
         },
         {
-          number: '2.3',
-          title: 'Bolcheviques e mencheviques: a divisão de 1903',
-          content: `Em 1903, durante o Segundo Congresso do POSDR, ocorreram divergências que resultaram na formação de duas correntes principais: bolcheviques e mencheviques.
-
-Os nomes derivavam dos termos russos associados a maioria e minoria, embora a composição das correntes variasse ao longo do tempo e não correspondesse permanentemente a uma superioridade numérica.
-
-Os bolcheviques, liderados por Lenin, defendiam uma organização partidária mais centralizada, com militantes submetidos a uma disciplina revolucionária.
-
-Os mencheviques, associados inicialmente a Julius Martov, defendiam uma estrutura partidária mais ampla e uma estratégia que atribuía maior importância à participação das organizações operárias e à construção de uma revolução democrático-burguesa antes de uma eventual transformação socialista.
-
-As diferenças não eram apenas organizacionais. Envolviam concepções distintas sobre a natureza da revolução russa, a relação entre trabalhadores e burguesia e o papel do partido.
-
-Em termos gerais, os mencheviques consideravam que a Rússia precisava atravessar uma etapa de desenvolvimento democrático e capitalista, na qual a burguesia liberal teria participação relevante.
-
-Lenin, embora reconhecesse o caráter atrasado do desenvolvimento russo, defendia uma estratégia revolucionária na qual trabalhadores e camponeses poderiam exercer um papel político muito mais independente.
-
-Essas divergências seriam reavaliadas durante a crise de 1917.`
+          "number": "2.3",
+          "title": "Bolcheviques e mencheviques: a divisão de 1903",
+          "content": "Em 1903, durante o Segundo Congresso do POSDR, ocorreram divergências que resultaram na formação de duas correntes principais: bolcheviques e mencheviques.\n\nOs nomes derivavam dos termos russos associados a maioria e minoria. Entretanto, essas denominações surgiram de uma disputa específica durante o congresso e não corresponderam permanentemente a uma superioridade numérica das correntes.\n\nOs bolcheviques, liderados por Lenin, defendiam uma organização partidária mais centralizada, com militantes dedicados à atividade revolucionária e submetidos a uma disciplina política.\n\nOs mencheviques, associados inicialmente a Julius Martov, defendiam uma estrutura partidária mais ampla, que permitisse a participação de um conjunto maior de trabalhadores e simpatizantes.\n\nAs diferenças não eram apenas organizacionais. Envolviam concepções distintas sobre a natureza da revolução russa, a relação entre trabalhadores e burguesia e o papel do partido.\n\nEm termos gerais, os mencheviques consideravam que a Rússia precisava atravessar uma etapa de desenvolvimento democrático e capitalista, na qual a burguesia liberal teria participação relevante.\n\nLenin, embora reconhecesse o caráter atrasado do desenvolvimento russo, defendia uma estratégia na qual trabalhadores e camponeses poderiam exercer um papel político muito mais independente.\n\nÉ importante observar que essas posições não permaneceram completamente imutáveis. As duas correntes passaram por transformações e divergências internas ao longo dos anos seguintes.\n\nA separação política entre bolcheviques e mencheviques consolidou-se progressivamente, especialmente durante os anos posteriores à Revolução de 1905.\n\nEssas divergências seriam reavaliadas durante a crise de 1917, quando os acontecimentos exigiram decisões imediatas sobre a continuidade do Governo Provisório, a guerra e a possibilidade de uma nova revolução."
         },
         {
-          number: '2.4',
-          title: 'Os socialistas revolucionários e a questão agrária',
-          content: `Outra corrente importante era o Partido Socialista Revolucionário, conhecido como SR.
-
-Sua tradição política estava relacionada ao populismo russo, movimento que atribuía grande importância ao campesinato e às comunidades rurais.
-
-Os socialistas revolucionários defendiam a transformação da propriedade fundiária e a transferência da terra para aqueles que a trabalhavam. Sua base social era especialmente significativa entre camponeses, embora também possuíssem apoiadores em outros setores.
-
-Diferentemente dos marxistas, que atribuíam papel central à formação do proletariado industrial, os SR consideravam o campesinato uma força fundamental para a transformação da sociedade russa.
-
-A questão agrária seria um dos principais fatores de sua popularidade em 1917.
-
-A existência dessas diferentes correntes demonstra que a oposição ao czarismo não possuía um projeto único. A Revolução Russa seria também uma disputa entre diferentes concepções de socialismo e democracia.`
+          "number": "2.4",
+          "title": "Os socialistas revolucionários e a questão agrária",
+          "content": "Outra corrente importante era o Partido Socialista Revolucionário, conhecido como SR, organizado entre 1901 e 1902.\n\nSua tradição política estava relacionada ao populismo russo, movimento que atribuía grande importância ao campesinato e às comunidades rurais.\n\nOs socialistas revolucionários defendiam a transformação da propriedade fundiária e a transferência da terra para aqueles que a trabalhavam. A ideia de socialização da terra era central em seu programa.\n\nDiferentemente dos marxistas, que atribuíam papel central à formação do proletariado industrial, os SR consideravam o campesinato uma força fundamental para a transformação da sociedade russa.\n\nSua influência estava relacionada à dimensão rural do Império. Como milhões de pessoas viviam da agricultura, a questão fundiária possuía importância política muito superior àquela observada em países predominantemente industrializados.\n\nO partido não era homogêneo. Existiam diferentes tendências, incluindo correntes mais moderadas e setores que defendiam métodos revolucionários violentos. A organização também possuía uma tradição de ação terrorista contra representantes do Estado imperial.\n\nA questão agrária seria um dos principais fatores de sua popularidade em 1917.\n\nA existência dessas diferentes correntes demonstra que a oposição ao czarismo não possuía um projeto único. A Revolução Russa seria também uma disputa entre diferentes concepções de socialismo, democracia e transformação da propriedade."
         }
       ]
     },
     {
-      number: '3',
-      title: 'A Revolução de 1905: O Primeiro Grande Abalo do Czarismo',
-      content: '',
-      subsections: [
+      "number": "3",
+      "title": "A REVOLUÇÃO DE 1905: O PRIMEIRO GRANDE ABALO DO CZARISMO",
+      "subsections": [
         {
-          number: '3.1',
-          title: 'A guerra contra o Japão',
-          content: `Em fevereiro de 1904, começou a Guerra Russo-Japonesa, resultado de disputas territoriais e estratégicas envolvendo especialmente a Manchúria e a Coreia.
-
-A Rússia pretendia ampliar sua influência no Extremo Oriente, enquanto o Japão procurava consolidar sua posição regional.
-
-O conflito revelou graves problemas da administração militar russa. A distância dos teatros de operação, as dificuldades logísticas, os erros de comando e a superioridade japonesa em determinadas operações contribuíram para derrotas importantes.
-
-Em 1905, a derrota russa na Batalha de Tsushima tornou-se um símbolo do enfraquecimento militar do Império. A guerra terminou com o Tratado de Portsmouth, mediado pelos Estados Unidos.
-
-O resultado comprometeu a imagem de Nicolau II e agravou a insatisfação social.`
+          "number": "3.1",
+          "title": "A guerra contra o Japão",
+          "content": "Em fevereiro de 1904, começou a Guerra Russo-Japonesa, resultado de disputas territoriais e estratégicas envolvendo especialmente a Manchúria e a Coreia.\n\nA Rússia pretendia ampliar sua influência no Extremo Oriente, enquanto o Japão procurava consolidar sua posição regional.\n\nO conflito revelou graves problemas da administração militar russa. A distância dos teatros de operação, as dificuldades logísticas, os erros de comando e a capacidade militar japonesa contribuíram para derrotas importantes.\n\nEm 1905, a derrota russa na Batalha de Tsushima tornou-se um símbolo do enfraquecimento militar do Império. A guerra terminou com o Tratado de Portsmouth, mediado pelos Estados Unidos.\n\nO resultado comprometeu a imagem de Nicolau II e agravou a insatisfação social.\n\nA derrota militar também revelou os limites da modernização imperial. O Estado havia investido em ferrovias e infraestrutura, mas continuava enfrentando problemas de administração, abastecimento e coordenação militar.\n\nA guerra não foi a causa única da Revolução de 1905, mas funcionou como um poderoso acelerador das tensões existentes."
         },
         {
-          number: '3.2',
-          title: 'O Domingo Sangrento',
-          content: `Em 9 de janeiro de 1905, segundo o calendário juliano, uma manifestação de trabalhadores dirigiu-se ao Palácio de Inverno, em São Petersburgo.
-
-A mobilização foi associada ao sacerdote Georgy Gapon, que organizava trabalhadores por meio de uma associação operária autorizada pelas autoridades imperiais.
-
-Os manifestantes pretendiam entregar uma petição ao czar. Entre as reivindicações estavam melhores condições de trabalho, redução da jornada, direitos políticos e medidas para aliviar as dificuldades econômicas.
-
-A manifestação foi reprimida pelas forças imperiais. O número exato de mortos e feridos é objeto de estimativas diferentes, mas o episódio produziu enorme impacto político.
-
-O acontecimento ficou conhecido como Domingo Sangrento.
-
-A imagem do czar como protetor paternal dos trabalhadores foi profundamente abalada. Muitos participantes acreditavam que Nicolau II poderia atender às suas reivindicações caso conhecesse diretamente suas condições de vida.
-
-A repressão demonstrou que a monarquia estava disposta a utilizar a força para preservar a ordem estabelecida.`
+          "number": "3.2",
+          "title": "O Domingo Sangrento",
+          "content": "Em 9 de janeiro de 1905, segundo o calendário juliano, correspondente a 22 de janeiro no calendário gregoriano, uma manifestação de trabalhadores dirigiu-se ao Palácio de Inverno, em São Petersburgo.\n\nA mobilização foi associada ao sacerdote Georgy Gapon, que organizava trabalhadores por meio de uma associação operária autorizada pelas autoridades imperiais.\n\nOs manifestantes pretendiam entregar uma petição ao czar. Entre as reivindicações estavam melhores condições de trabalho, redução da jornada, direitos políticos e medidas para aliviar as dificuldades econômicas.\n\nA manifestação foi reprimida pelas forças imperiais. O número exato de mortos e feridos é objeto de estimativas diferentes, mas o episódio produziu enorme impacto político.\n\nO acontecimento ficou conhecido como Domingo Sangrento.\n\nA imagem do czar como protetor paternal dos trabalhadores foi profundamente abalada. Muitos participantes acreditavam que Nicolau II poderia atender às suas reivindicações caso conhecesse diretamente suas condições de vida.\n\nA repressão demonstrou que a monarquia estava disposta a utilizar a força para preservar a ordem estabelecida.\n\nO Domingo Sangrento não representou apenas um confronto entre manifestantes e tropas. Simbolizou a ruptura de uma relação política e cultural baseada na expectativa de que o czar pudesse agir como protetor da população."
         },
         {
-          number: '3.3',
-          title: 'Greves, sovietes e revoltas',
-          content: `Ao longo de 1905, a Rússia foi atingida por greves, manifestações, revoltas camponesas e movimentos militares.
-
-Os sovietes surgiram como conselhos de representantes de trabalhadores, organizados para coordenar greves e articular reivindicações.
-
-Um dos mais importantes foi o Soviete de São Petersburgo, que contou com a participação de dirigentes socialistas e trabalhadores.
-
-Entre os nomes associados à sua direção estava Leon Trotsky, que posteriormente desempenharia papel central na Revolução de Outubro e na organização do Exército Vermelho.
-
-A revolta do encouraçado Potemkin, em junho de 1905, tornou-se outro episódio emblemático. Marinheiros rebelaram-se contra as condições de alimentação, a disciplina militar e o tratamento recebido dos oficiais.
-
-Embora não tenha produzido uma transformação imediata do regime, a revolta demonstrou que a insatisfação havia alcançado setores das Forças Armadas.`
+          "number": "3.3",
+          "title": "Greves, sovietes e revoltas",
+          "content": "Ao longo de 1905, a Rússia foi atingida por greves, manifestações, revoltas camponesas e movimentos militares.\n\nOs sovietes surgiram como conselhos de representantes de trabalhadores, organizados para coordenar greves e articular reivindicações.\n\nUm dos mais importantes foi o Soviete de São Petersburgo, que contou com a participação de dirigentes socialistas e trabalhadores.\n\nEntre os nomes associados à sua direção estava Leon Trotsky, que posteriormente desempenharia papel central na Revolução de Outubro e na organização do Exército Vermelho.\n\nO soviete de 1905 constituiu uma experiência de organização política que seria retomada, em escala muito maior, durante 1917.\n\nEntretanto, os sovietes de 1905 não eram simplesmente instituições bolcheviques. Reuniam diferentes correntes políticas e trabalhadores com posições diversas.\n\nA revolta do encouraçado Potemkin, em junho de 1905, tornou-se outro episódio emblemático. Marinheiros rebelaram-se contra as condições de alimentação, a disciplina militar e o tratamento recebido dos oficiais.\n\nEmbora não tenha produzido uma transformação imediata do regime, a revolta demonstrou que a insatisfação havia alcançado setores das Forças Armadas.\n\nO movimento revolucionário de 1905 revelou a existência de diferentes formas de contestação: greves, manifestações, organizações políticas, revoltas militares e mobilizações rurais."
         },
         {
-          number: '3.4',
-          title: 'O Manifesto de Outubro e a criação da Duma',
-          content: `Pressionado pela dimensão dos protestos, Nicolau II publicou o Manifesto de Outubro de 1905.
-
-O documento prometia liberdades civis, ampliação da participação política e a criação de uma Duma legislativa.
-
-As concessões representaram uma mudança institucional importante, mas não produziram uma monarquia parlamentar plenamente consolidada.
-
-As leis fundamentais de 1906 preservaram poderes expressivos nas mãos do czar. O governo continuava dependendo da autoridade imperial, e o monarca mantinha prerrogativas importantes sobre a administração, o Exército e a política externa.
-
-A Duma possuía limitações políticas e poderia ser dissolvida pelo imperador.`
+          "number": "3.4",
+          "title": "O Manifesto de Outubro e a criação da Duma",
+          "content": "Pressionado pela dimensão dos protestos, Nicolau II publicou o Manifesto de Outubro, em 17 de outubro pelo calendário juliano, correspondente a 30 de outubro de 1905 pelo calendário gregoriano.\n\nO documento prometia liberdades civis, ampliação da participação política e a criação de uma Duma legislativa.\n\nAs concessões representaram uma mudança institucional importante, mas não produziram uma monarquia parlamentar plenamente consolidada.\n\nAs Leis Fundamentais de 1906 preservaram poderes expressivos nas mãos do czar. O governo continuava dependendo da autoridade imperial, e o monarca mantinha prerrogativas importantes sobre a administração, o Exército e a política externa.\n\nA Duma possuía limitações políticas e poderia ser dissolvida pelo imperador.\n\nA experiência constitucional russa permaneceu marcada por conflitos entre o governo imperial e os representantes eleitos.\n\nA criação da Duma não eliminou a autocracia. Produziu uma estrutura institucional híbrida, na qual existiam mecanismos representativos, mas a autoridade imperial continuava ocupando posição dominante."
         },
         {
-          number: '3.5',
-          title: 'Stolypin e a tentativa de estabilização',
-          content: `Piotr Stolypin tornou-se uma das figuras centrais da política imperial após a Revolução de 1905.
-
-Como primeiro-ministro, procurou combinar repressão aos movimentos revolucionários com reformas econômicas e agrárias.
-
-A reforma agrária de Stolypin, iniciada em 1906, pretendia estimular a propriedade individual, enfraquecer determinadas formas de organização comunitária e desenvolver uma agricultura mais produtiva.
-
-A proposta também buscava formar uma camada de proprietários rurais com interesses associados à estabilidade do regime.
-
-Entretanto, a reforma encontrou resistências e não resolveu a questão agrária em escala nacional.
-
-Stolypin foi assassinado em 1911, em Kiev. Sua morte eliminou uma das principais figuras associadas à tentativa de modernização conservadora do Império.
-
-A Revolução de 1905 foi derrotada como movimento capaz de derrubar a monarquia, mas deixou uma herança política duradoura: demonstrou a vulnerabilidade do czarismo e criou experiências organizativas que seriam retomadas em 1917.`
+          "number": "3.5",
+          "title": "Stolypin e a tentativa de estabilização",
+          "content": "Piotr Stolypin tornou-se uma das figuras centrais da política imperial após a Revolução de 1905.\n\nComo primeiro-ministro, procurou combinar repressão aos movimentos revolucionários com reformas econômicas e agrárias.\n\nA reforma agrária de Stolypin, iniciada em 1906, pretendia estimular a propriedade individual, enfraquecer determinadas formas de organização comunitária e desenvolver uma agricultura mais produtiva.\n\nA proposta também buscava formar uma camada de proprietários rurais com interesses associados à estabilidade do regime.\n\nA reforma permitiu que camponeses solicitassem a separação de suas parcelas da organização comunitária e a consolidação de propriedades individuais. Em algumas regiões, também estimulou a formação de unidades agrícolas mais concentradas, conhecidas como *khutors* e *otrubs*.\n\nOs resultados, entretanto, foram desiguais. Alguns camponeses conseguiram ampliar sua autonomia econômica, enquanto outros permaneceram dependentes de condições fundiárias desfavoráveis.\n\nA reforma encontrou resistências e não resolveu a questão agrária em escala nacional.\n\nStolypin foi assassinado em 1911, em Kiev. Sua morte eliminou uma das principais figuras associadas à tentativa de modernização conservadora do Império.\n\nA Revolução de 1905 foi derrotada como movimento capaz de derrubar a monarquia, mas deixou uma herança política duradoura: demonstrou a vulnerabilidade do czarismo e criou experiências organizativas que seriam retomadas em 1917."
         }
       ]
     },
     {
-      number: '4',
-      title: 'A Primeira Guerra Mundial e o Colapso do Império',
-      content: '',
-      subsections: [
+      "number": "4",
+      "title": "A PRIMEIRA GUERRA MUNDIAL E O COLAPSO DO IMPÉRIO",
+      "subsections": [
         {
-          number: '4.1',
-          title: 'A entrada da Rússia na guerra',
-          content: `Em agosto de 1914, o Império Russo entrou na Primeira Guerra Mundial ao lado da França e do Reino Unido, integrando a Tríplice Entente.
-
-A decisão estava relacionada aos compromissos diplomáticos russos e à disputa de influência nos Bálcãs, especialmente após o assassinato do arquiduque Francisco Ferdinando, em Sarajevo.
-
-A Rússia considerava a Sérvia um importante aliado regional e se opunha à expansão da influência austro-húngara nos Bálcãs.
-
-A guerra foi apresentada pelo governo imperial como uma causa nacional. Entretanto, o entusiasmo inicial não resistiu às dificuldades militares e econômicas.`
+          "number": "4.1",
+          "title": "A entrada da Rússia na guerra",
+          "content": "Em agosto de 1914, o Império Russo entrou na Primeira Guerra Mundial ao lado da França e do Reino Unido, integrando a Tríplice Entente.\n\nA decisão estava relacionada aos compromissos diplomáticos russos e à disputa de influência nos Bálcãs, especialmente após o assassinato do arquiduque Francisco Ferdinando, em Sarajevo.\n\nA Rússia considerava a Sérvia um importante aliado regional e se opunha à expansão da influência austro-húngara nos Bálcãs.\n\nA guerra foi apresentada pelo governo imperial como uma causa nacional. Entretanto, o entusiasmo inicial não resistiu às dificuldades militares e econômicas.\n\nO conflito exigia mobilização de milhões de homens, grande capacidade industrial e sistemas eficientes de transporte e abastecimento. A Rússia enfrentava dificuldades para atender a essas necessidades."
         },
         {
-          number: '4.2',
-          title: 'As derrotas militares e a crise de comando',
-          content: `As forças russas enfrentaram problemas de abastecimento, armamentos, transporte e coordenação.
-
-A Batalha de Tannenberg, em agosto de 1914, terminou com uma importante derrota russa diante das forças alemãs.
-
-Nos anos seguintes, as perdas humanas, a desorganização logística e as dificuldades de reposição de equipamentos comprometeram a capacidade militar do Império.
-
-Em 1915, Nicolau II decidiu assumir pessoalmente o comando supremo das Forças Armadas.
-
-A decisão teve consequências políticas. Ao associar diretamente sua imagem à condução da guerra, o imperador passou a assumir responsabilidade ainda maior pelos resultados militares.
-
-Enquanto Nicolau permanecia afastado da capital, a imperatriz Alexandra exercia influência sobre a administração governamental. Sua origem alemã e sua proximidade com Grigori Rasputin alimentavam suspeitas e hostilidade em setores da sociedade.`
+          "number": "4.2",
+          "title": "As derrotas militares e a crise de comando",
+          "content": "As forças russas enfrentaram problemas de abastecimento, armamentos, transporte e coordenação.\n\nA Batalha de Tannenberg, em agosto de 1914, terminou com uma importante derrota russa diante das forças alemãs.\n\nNos anos seguintes, as perdas humanas, a desorganização logística e as dificuldades de reposição de equipamentos comprometeram a capacidade militar do Império.\n\nA crise militar não foi apenas consequência de derrotas no campo de batalha. A mobilização prolongada afetou a economia, retirou trabalhadores do campo, aumentou a pressão sobre a indústria e agravou os problemas de transporte.\n\nEm 1915, Nicolau II decidiu assumir pessoalmente o comando supremo das Forças Armadas.\n\nA decisão teve consequências políticas. Ao associar diretamente sua imagem à condução da guerra, o imperador passou a assumir responsabilidade ainda maior pelos resultados militares.\n\nEnquanto Nicolau permanecia afastado da capital, a imperatriz Alexandra exercia influência sobre a administração governamental. Sua origem alemã e sua proximidade com Grigori Rasputin alimentavam suspeitas e hostilidade em setores da sociedade."
         },
         {
-          number: '4.3',
-          title: 'Rasputin e a crise de credibilidade da monarquia',
-          content: `Grigori Rasputin foi uma figura religiosa que conquistou influência junto à família imperial, especialmente por sua relação com Alexandra.
-
-O interesse da imperatriz por Rasputin estava relacionado, em parte, à condição de saúde de seu filho Alexei, herdeiro do trono, que sofria de hemofilia.
-
-Alexandra acreditava que Rasputin conseguia aliviar o sofrimento do menino.
-
-A proximidade entre o religioso e a família imperial produziu escândalos e rumores na sociedade russa. Sua influência sobre decisões políticas passou a ser associada à corrupção e à incompetência administrativa.
-
-Em dezembro de 1916, Rasputin foi assassinado por integrantes da aristocracia russa, entre eles o príncipe Felix Yusupov.
-
-Sua morte não recuperou a autoridade do governo. A crise política já havia ultrapassado a influência de um único indivíduo.
-
-O episódio tornou-se símbolo da desagregação da elite imperial e da incapacidade do regime de responder à deterioração de sua imagem pública.`
+          "number": "4.3",
+          "title": "Rasputin e a crise de credibilidade da monarquia",
+          "content": "Grigori Rasputin foi uma figura religiosa que conquistou influência junto à família imperial, especialmente por sua relação com Alexandra.\n\nO interesse da imperatriz por Rasputin estava relacionado, em parte, à condição de saúde de seu filho Alexei, herdeiro do trono, que sofria de hemofilia.\n\nAlexandra acreditava que Rasputin conseguia aliviar o sofrimento do menino.\n\nA proximidade entre o religioso e a família imperial produziu escândalos e rumores na sociedade russa. Sua influência sobre decisões políticas passou a ser associada à corrupção e à incompetência administrativa.\n\nEm dezembro de 1916, Rasputin foi assassinado por integrantes da aristocracia russa, entre eles o príncipe Felix Yusupov.\n\nSua morte não recuperou a autoridade do governo. A crise política já havia ultrapassado a influência de um único indivíduo.\n\nO episódio tornou-se símbolo da desagregação da elite imperial e da incapacidade do regime de responder à deterioração de sua imagem pública.\n\nÉ importante, entretanto, não atribuir a Rasputin a responsabilidade central pelo colapso do czarismo. Sua influência foi explorada politicamente, mas os problemas estruturais do Estado, da economia e da guerra eram muito mais profundos."
         },
         {
-          number: '4.4',
-          title: 'A crise econômica e social',
-          content: `A guerra ampliou os problemas de abastecimento, inflação e transporte.
-
-O esforço militar exigia recursos cada vez maiores, enquanto a produção e a distribuição de alimentos enfrentavam dificuldades.
-
-Petrogrado, nome adotado por São Petersburgo em 1914, sofria com a escassez de produtos essenciais.
-
-O crescimento dos preços reduzia o poder de compra dos trabalhadores. As filas para obtenção de pão tornaram-se frequentes, e a insatisfação aumentava.
-
-No campo, a mobilização de milhões de homens para o Exército alterou a organização da produção agrícola.
-
-As dificuldades de transporte também comprometiam a distribuição dos alimentos.
-
-A crise não pode ser atribuída exclusivamente à guerra, mas o conflito acelerou e aprofundou problemas que já existiam.`
+          "number": "4.4",
+          "title": "A crise econômica e social",
+          "content": "A guerra ampliou os problemas de abastecimento, inflação e transporte.\n\nO esforço militar exigia recursos cada vez maiores, enquanto a produção e a distribuição de alimentos enfrentavam dificuldades.\n\nPetrogrado, nome adotado por São Petersburgo em 1914, sofria com a escassez de produtos essenciais.\n\nO crescimento dos preços reduzia o poder de compra dos trabalhadores. As filas para obtenção de pão tornaram-se frequentes, e a insatisfação aumentava.\n\nNo campo, a mobilização de milhões de homens para o Exército alterou a organização da produção agrícola.\n\nAs dificuldades de transporte também comprometiam a distribuição dos alimentos. A existência de produção agrícola em determinadas regiões não garantia que os alimentos chegassem regularmente aos centros urbanos.\n\nA crise não pode ser atribuída exclusivamente à guerra, mas o conflito acelerou e aprofundou problemas que já existiam."
         },
         {
-          number: '4.5',
-          title: 'A oposição política dentro da própria elite',
-          content: `A insatisfação não estava restrita aos trabalhadores e camponeses.
-
-Setores da Duma, da aristocracia, das forças armadas e das elites econômicas passaram a considerar que a condução política do país ameaçava a continuidade do esforço de guerra.
-
-Em 1915, formou-se o Bloco Progressista na Duma, reunindo parlamentares que defendiam a criação de um governo capaz de conquistar maior confiança pública.
-
-A oposição de setores da elite demonstrava que o regime havia perdido parte de seu apoio tradicional.
-
-O czarismo chegava a 1917 pressionado simultaneamente por movimentos populares, dificuldades militares, tensões econômicas e descontentamento político interno.`
+          "number": "4.5",
+          "title": "A oposição política dentro da própria elite",
+          "content": "A insatisfação não estava restrita aos trabalhadores e camponeses.\n\nSetores da Duma, da aristocracia, das Forças Armadas e das elites econômicas passaram a considerar que a condução política do país ameaçava a continuidade do esforço de guerra.\n\nEm 1915, formou-se o Bloco Progressista na Duma, reunindo parlamentares que defendiam a criação de um governo capaz de conquistar maior confiança pública.\n\nA oposição de setores da elite demonstrava que o regime havia perdido parte de seu apoio tradicional.\n\nA monarquia enfrentava, portanto, uma crise de legitimidade que ultrapassava os limites da oposição revolucionária.\n\nO czarismo chegava a 1917 pressionado simultaneamente por movimentos populares, dificuldades militares, tensões econômicas e descontentamento político interno."
         }
       ]
     },
     {
-      number: '5',
-      title: 'Fevereiro de 1917: A Queda dos Romanov',
-      content: '',
-      subsections: [
+      "number": "5",
+      "title": "FEVEREIRO DE 1917: A QUEDA DOS ROMANOV",
+      "subsections": [
         {
-          number: '5.1',
-          title: 'As manifestações em Petrogrado',
-          content: `Em fevereiro de 1917, a situação política atingiu um ponto crítico.
-
-No dia 23 de fevereiro pelo calendário juliano, correspondente a 8 de março pelo calendário gregoriano, manifestações de mulheres trabalhadoras e donas de casa ganharam força em Petrogrado.
-
-A data coincidia com o Dia Internacional da Mulher.
-
-As manifestantes protestavam contra a escassez de pão, as condições de vida e a continuidade da guerra.
-
-A mobilização se espalhou por bairros industriais, especialmente nas áreas operárias da cidade.
-
-Nos dias seguintes, trabalhadores de diferentes fábricas aderiram às manifestações. O movimento ultrapassou as reivindicações econômicas iniciais e passou a incorporar palavras de ordem contra o governo e a monarquia.
-
-A participação das mulheres foi decisiva para desencadear a mobilização, embora o movimento tenha se ampliado rapidamente com a adesão de trabalhadores, estudantes e soldados.`
+          "number": "5.1",
+          "title": "As manifestações em Petrogrado",
+          "content": "Em fevereiro de 1917, a situação política atingiu um ponto crítico.\n\nNo dia 23 de fevereiro pelo calendário juliano, correspondente a 8 de março pelo calendário gregoriano, manifestações de mulheres trabalhadoras e donas de casa ganharam força em Petrogrado.\n\nA data coincidia com o Dia Internacional da Mulher.\n\nAs manifestantes protestavam contra a escassez de pão, as condições de vida e a continuidade da guerra.\n\nA mobilização se espalhou por bairros industriais, especialmente nas áreas operárias da cidade.\n\nNos dias seguintes, trabalhadores de diferentes fábricas aderiram às manifestações. O movimento ultrapassou as reivindicações econômicas iniciais e passou a incorporar palavras de ordem contra o governo e a monarquia.\n\nA participação das mulheres foi decisiva para desencadear a mobilização, embora o movimento tenha se ampliado rapidamente com a adesão de trabalhadores, estudantes e soldados.\n\nA Revolução de Fevereiro não foi organizada por uma única liderança ou partido. Ela resultou de uma combinação de mobilização popular, descontentamento econômico, crise política e desagregação da autoridade militar."
         },
         {
-          number: '5.2',
-          title: 'A rebelião da guarnição',
-          content: `A resposta do governo foi marcada pela tentativa de restaurar a ordem por meio das forças militares.
-
-Em 26 de fevereiro, tropas receberam ordens para reprimir manifestantes, e ocorreram disparos contra a população.
-
-Entretanto, no dia seguinte, a situação mudou radicalmente.
-
-O Regimento Volynsky iniciou uma rebelião militar, recusando-se a continuar reprimindo os protestos. Outras unidades da guarnição aderiram ao movimento.
-
-A insubordinação militar transformou uma onda de manifestações em uma revolução capaz de derrubar o governo.
-
-Soldados libertaram prisioneiros, ocuparam instalações estratégicas e passaram a colaborar com trabalhadores revoltosos.
-
-O governo perdeu o controle de parte significativa da capital.
-
-A adesão dos soldados foi um fator decisivo: uma monarquia que dependia da força militar para preservar sua autoridade deixou de contar com a obediência de suas próprias tropas.`
+          "number": "5.2",
+          "title": "A rebelião da guarnição",
+          "content": "A resposta do governo foi marcada pela tentativa de restaurar a ordem por meio das forças militares.\n\nEm 26 de fevereiro pelo calendário juliano, tropas receberam ordens para reprimir manifestantes, e ocorreram disparos contra a população.\n\nEntretanto, no dia seguinte, a situação mudou radicalmente.\n\nO Regimento Volynsky iniciou uma rebelião militar, recusando-se a continuar reprimindo os protestos. Outras unidades da guarnição aderiram ao movimento.\n\nA insubordinação militar transformou uma onda de manifestações em uma revolução capaz de derrubar o governo.\n\nSoldados libertaram prisioneiros, ocuparam instalações estratégicas e passaram a colaborar com trabalhadores revoltosos.\n\nO governo perdeu o controle de parte significativa da capital.\n\nA adesão dos soldados foi um fator decisivo: uma monarquia que dependia da força militar para preservar sua autoridade deixou de contar com a obediência de suas próprias tropas."
         },
         {
-          number: '5.3',
-          title: 'A Duma e a formação do Governo Provisório',
-          content: `Durante o colapso do governo imperial, dirigentes da Duma organizaram um Comitê Provisório para tentar estabelecer uma nova autoridade política.
-
-Entre os protagonistas estavam Mikhail Rodzianko, presidente da Duma, e dirigentes liberais como Pavel Miliukov e Alexander Guchkov.
-
-Paralelamente, representantes de trabalhadores e soldados organizaram o Soviete de Petrogrado.
-
-A coexistência dessas duas estruturas seria decisiva para o desenvolvimento político de 1917.
-
-O Comitê da Duma participou das negociações que conduziram à formação do Governo Provisório.
-
-O príncipe Georgy Lvov assumiu inicialmente a chefia do novo governo.
-
-A monarquia, entretanto, estava praticamente sem condições de recuperar o controle da capital.`
+          "number": "5.3",
+          "title": "A Duma e a formação do Governo Provisório",
+          "content": "Durante o colapso do governo imperial, dirigentes da Duma organizaram um Comitê Provisório para tentar estabelecer uma nova autoridade política.\n\nEntre os protagonistas estavam Mikhail Rodzianko, presidente da Duma, e dirigentes liberais como Pavel Miliukov e Alexander Guchkov.\n\nParalelamente, representantes de trabalhadores e soldados organizaram o Soviete de Petrogrado.\n\nA coexistência dessas duas estruturas seria decisiva para o desenvolvimento político de 1917.\n\nO Comitê da Duma participou das negociações que conduziram à formação do Governo Provisório.\n\nO príncipe Georgy Lvov assumiu inicialmente a chefia do novo governo.\n\nA monarquia, entretanto, estava praticamente sem condições de recuperar o controle da capital."
         },
         {
-          number: '5.4',
-          title: 'A abdicação de Nicolau II',
-          content: `Em 2 de março de 1917 pelo calendário juliano, correspondente a 15 de março no calendário gregoriano, Nicolau II assinou o ato de abdicação.
-
-Inicialmente, o imperador considerou transferir o trono para seu filho Alexei, mas posteriormente decidiu abdicar em favor de seu irmão, o grão-duque Mikhail Alexandrovich.
-
-Mikhail não aceitou assumir o poder sem o respaldo de uma decisão política que lhe garantisse legitimidade.
-
-Na prática, a dinastia Romanov perdeu o trono.
-
-O episódio encerrou mais de três séculos de governo dinástico e representou o fim da monarquia imperial russa.
-
-A queda de Nicolau II, entretanto, não solucionou os problemas que haviam provocado a revolução.
-
-A Rússia precisava definir a nova forma de governo, reorganizar suas instituições, enfrentar a crise econômica, decidir sobre a guerra e responder à demanda por terra.
-
-A revolução havia derrubado o czar, mas ainda não havia estabelecido uma ordem política estável.`
+          "number": "5.4",
+          "title": "A abdicação de Nicolau II",
+          "content": "Em 2 de março de 1917 pelo calendário juliano, correspondente a 15 de março no calendário gregoriano, Nicolau II assinou o ato de abdicação.\n\nInicialmente, o imperador considerou transferir o trono para seu filho Alexei, mas posteriormente decidiu abdicar em favor de seu irmão, o grão-duque Mikhail Alexandrovich.\n\nMikhail não aceitou assumir o poder sem o respaldo de uma decisão política que lhe garantisse legitimidade.\n\nNa prática, a dinastia Romanov perdeu o trono.\n\nO episódio encerrou mais de três séculos de governo dinástico e representou o fim da monarquia imperial russa.\n\nA queda de Nicolau II, entretanto, não solucionou os problemas que haviam provocado a revolução.\n\nA Rússia precisava definir a nova forma de governo, reorganizar suas instituições, enfrentar a crise econômica, decidir sobre a guerra e responder à demanda por terra.\n\nA revolução havia derrubado o czar, mas ainda não havia estabelecido uma ordem política estável."
         }
       ]
     },
     {
-      number: '6',
-      title: 'O Governo Provisório e a Dualidade de Poder',
-      content: '',
-      subsections: [
+      "number": "6",
+      "title": "O GOVERNO PROVISÓRIO E A DUALIDADE DE PODER",
+      "subsections": [
         {
-          number: '6.1',
-          title: 'Georgy Lvov e a primeira administração pós-czarista',
-          content: `Após a abdicação, o príncipe Georgy Lvov assumiu a chefia do Governo Provisório.
-
-Lvov era associado aos setores liberais e havia participado de organizações de assistência e administração pública durante a guerra.
-
-Seu governo pretendia estabelecer uma administração de transição até a convocação de uma Assembleia Constituinte.
-
-Entre as medidas iniciais estavam a anistia de presos políticos, a ampliação das liberdades civis e a promessa de eleições para definir o futuro político do país.
-
-A mudança representava uma ruptura significativa com a autocracia.
-
-Entretanto, o Governo Provisório não possuía controle absoluto sobre os instrumentos de poder.`
+          "number": "6.1",
+          "title": "Georgy Lvov e a primeira administração pós-czarista",
+          "content": "Após a abdicação, o príncipe Georgy Lvov assumiu a chefia do Governo Provisório.\n\nLvov era associado aos setores liberais e havia participado de organizações de assistência e administração pública durante a guerra.\n\nSeu governo pretendia estabelecer uma administração de transição até a convocação de uma Assembleia Constituinte.\n\nEntre as medidas iniciais estavam a anistia de presos políticos, a ampliação das liberdades civis e a promessa de eleições para definir o futuro político do país.\n\nA mudança representava uma ruptura significativa com a autocracia.\n\nEntretanto, o Governo Provisório não possuía controle absoluto sobre os instrumentos de poder."
         },
         {
-          number: '6.2',
-          title: 'O Soviete de Petrogrado e a Ordem nº 1',
-          content: `O Soviete de Petrogrado tornou-se uma instituição central da revolução.
-
-Era composto por representantes de trabalhadores e soldados, reunindo diferentes correntes socialistas.
-
-Sua influência era especialmente importante entre os militares da capital.
-
-Em 1º de março de 1917 pelo calendário juliano, o Soviete publicou a Ordem nº 1.
-
-O documento determinava a criação de comitês de soldados, estabelecia regras de participação militar e afirmava que as unidades deveriam obedecer às ordens do Governo Provisório apenas quando não contrariassem as determinações do Soviete.
-
-A Ordem nº 1 alterou profundamente as relações de autoridade dentro das Forças Armadas.
-
-Embora sua aplicação variasse conforme as unidades e circunstâncias, o documento contribuiu para enfraquecer a disciplina militar tradicional e consolidar a influência política dos sovietes.
-
-Sua importância não deve ser reduzida à ideia de que o Exército simplesmente deixou de funcionar. O documento expressava uma transformação da autoridade militar em um contexto de revolução e de contestação dos antigos oficiais e dirigentes.`
+          "number": "6.2",
+          "title": "O Soviete de Petrogrado e a Ordem nº 1",
+          "content": "O Soviete de Petrogrado tornou-se uma instituição central da revolução.\n\nEra composto por representantes de trabalhadores e soldados, reunindo diferentes correntes socialistas. Inicialmente, mencheviques e socialistas revolucionários possuíam influência expressiva em sua direção.\n\nSua influência era especialmente importante entre os militares da capital.\n\nEm 1º de março de 1917 pelo calendário juliano, correspondente a 14 de março pelo calendário gregoriano, o Soviete publicou a Ordem nº 1.\n\nO documento foi dirigido originalmente à guarnição do Distrito Militar de Petrogrado. Determinava a criação de comitês de soldados, estabelecia regras de participação militar e afirmava que as unidades deveriam obedecer às ordens do Governo Provisório apenas quando não contrariassem as determinações do Soviete.\n\nA Ordem nº 1 alterou profundamente as relações de autoridade dentro das Forças Armadas.\n\nEmbora sua aplicação variasse conforme as unidades e circunstâncias, o documento contribuiu para enfraquecer a disciplina militar tradicional e consolidar a influência política dos sovietes.\n\nSua importância não deve ser reduzida à ideia de que o Exército simplesmente deixou de funcionar. O documento expressava uma transformação da autoridade militar em um contexto de revolução e contestação dos antigos oficiais e dirigentes."
         },
         {
-          number: '6.3',
-          title: 'O significado da dualidade de poder',
-          content: `A expressão dualidade de poder descreve a coexistência entre o Governo Provisório e o Soviete de Petrogrado.
-
-O Governo Provisório possuía autoridade governamental formal, mas precisava considerar a influência dos sovietes sobre trabalhadores, soldados e organizações populares.
-
-O Soviete, por sua vez, não funcionava como um governo nacional convencional, mas possuía capacidade de mobilização e influência sobre setores fundamentais da sociedade.
-
-A situação produziu uma autoridade política dividida.
-
-O problema era agravado pela ausência de um acordo definitivo sobre a organização do Estado e pela existência de projetos políticos concorrentes.
-
-O Governo Provisório pretendia manter a administração estatal e preparar eleições constituintes. Parte significativa dos socialistas moderados considerava necessário apoiar temporariamente o governo para preservar as conquistas de fevereiro.
-
-Os bolcheviques, especialmente após o retorno de Lenin, passaram a defender uma ruptura mais profunda.`
+          "number": "6.3",
+          "title": "O significado da dualidade de poder",
+          "content": "A expressão dualidade de poder descreve a coexistência entre o Governo Provisório e o Soviete de Petrogrado.\n\nO Governo Provisório possuía autoridade governamental formal, mas precisava considerar a influência dos sovietes sobre trabalhadores, soldados e organizações populares.\n\nO Soviete, por sua vez, não funcionava como um governo nacional convencional, mas possuía capacidade de mobilização e influência sobre setores fundamentais da sociedade.\n\nA situação produziu uma autoridade política dividida.\n\nO problema era agravado pela ausência de um acordo definitivo sobre a organização do Estado e pela existência de projetos políticos concorrentes.\n\nO Governo Provisório pretendia manter a administração estatal e preparar eleições constituintes. Parte significativa dos socialistas moderados considerava necessário apoiar temporariamente o governo para preservar as conquistas de fevereiro.\n\nNesse primeiro momento, os bolcheviques não controlavam os sovietes. Mencheviques e socialistas revolucionários possuíam influência muito maior em importantes instituições revolucionárias.\n\nA ascensão bolchevique ocorreu posteriormente, em meio à deterioração da situação política e à mudança das posições de trabalhadores e soldados."
         },
         {
-          number: '6.4',
-          title: 'A continuidade da guerra e a crise de abril',
-          content: `Uma das decisões mais controversas do Governo Provisório foi a manutenção da participação russa na Primeira Guerra Mundial.
-
-Em abril de 1917, uma comunicação diplomática associada ao ministro das Relações Exteriores Pavel Miliukov reafirmou o compromisso do governo com a continuidade do esforço de guerra e com os objetivos diplomáticos da Rússia.
-
-A divulgação da posição provocou protestos.
-
-As manifestações de abril demonstraram que amplos setores da população não aceitavam a continuidade do conflito nos mesmos termos do governo anterior.
-
-A crise contribuiu para a saída de Miliukov e Guchkov do gabinete.
-
-O Governo Provisório passou por reorganização, incorporando socialistas moderados ao governo.
-
-Entretanto, a questão central permanecia sem solução: a Rússia continuaria na guerra enquanto a sociedade exigia paz?`
+          "number": "6.4",
+          "title": "A continuidade da guerra e a crise de abril",
+          "content": "Uma das decisões mais controversas do Governo Provisório foi a manutenção da participação russa na Primeira Guerra Mundial.\n\nEm abril de 1917, uma comunicação diplomática associada ao ministro das Relações Exteriores Pavel Miliukov reafirmou o compromisso do governo com a continuidade do esforço de guerra e com os objetivos diplomáticos da Rússia.\n\nA divulgação da posição provocou protestos.\n\nAs manifestações de abril demonstraram que amplos setores da população não aceitavam a continuidade do conflito nos mesmos termos do governo anterior.\n\nA crise contribuiu para a saída de Miliukov e Guchkov do gabinete.\n\nO Governo Provisório passou por reorganização, incorporando socialistas moderados ao governo.\n\nEntretanto, a questão central permanecia sem solução: a Rússia continuaria na guerra enquanto a sociedade exigia paz?\n\nA incapacidade de responder a essa questão enfraqueceu progressivamente o governo e abriu espaço para propostas políticas mais radicais."
         }
       ]
     },
     {
-      number: '7',
-      title: 'Lenin e as Teses de Abril',
-      content: '',
-      subsections: [
+      "number": "7",
+      "title": "LENIN E AS TESES DE ABRIL",
+      "subsections": [
         {
-          number: '7.1',
-          title: 'O retorno de Lenin à Rússia',
-          content: `Em abril de 1917, Lenin retornou à Rússia após anos de exílio.
-
-Sua viagem ocorreu por meio de uma rota que atravessou territórios europeus em guerra, com passagem pela Alemanha, em um acordo que envolvia a expectativa alemã de que o retorno de revolucionários pudesse desestabilizar o esforço de guerra russo.
-
-A questão da viagem tornou-se objeto de controvérsia política. Os adversários de Lenin utilizaram o episódio para questionar sua lealdade à Rússia, enquanto os bolcheviques apresentavam o retorno como parte de sua atividade revolucionária.
-
-Lenin chegou à Estação Finlândia, em Petrogrado, em 3 de abril pelo calendário juliano, correspondente a 16 de abril no calendário gregoriano.
-
-Sua chegada alterou significativamente a orientação política dos bolcheviques.`
+          "number": "7.1",
+          "title": "O retorno de Lenin à Rússia",
+          "content": "Em abril de 1917, Lenin retornou à Rússia após anos de exílio.\n\nSua viagem ocorreu por meio de uma rota que atravessou territórios europeus em guerra, com passagem pela Alemanha, em um acordo que envolvia a expectativa alemã de que o retorno de revolucionários pudesse desestabilizar o esforço de guerra russo.\n\nAs autoridades alemãs permitiram a passagem do grupo por seu território em um vagão ferroviário com condições específicas de trânsito. A iniciativa estava relacionada aos interesses estratégicos alemães na guerra.\n\nA questão da viagem tornou-se objeto de controvérsia política. Os adversários de Lenin utilizaram o episódio para questionar sua lealdade à Rússia, enquanto os bolcheviques apresentavam o retorno como parte de sua atividade revolucionária.\n\nÉ importante distinguir o interesse alemão em desestabilizar a Rússia de uma comprovação de que Lenin atuava como agente subordinado ao governo alemão. A passagem autorizada pelo território alemão não constitui, por si só, prova dessa relação.\n\nLenin chegou à Estação Finlândia, em Petrogrado, em 3 de abril pelo calendário juliano, correspondente a 16 de abril pelo calendário gregoriano.\n\nSua chegada alterou significativamente a orientação política dos bolcheviques."
         },
         {
-          number: '7.2',
-          title: 'As Teses de Abril',
-          content: `Lenin apresentou um conjunto de propostas conhecido como Teses de Abril.
-
-Entre suas principais posições estavam:
-
-- Rejeição ao apoio ao Governo Provisório.
-- Oposição à continuidade da guerra imperialista.
-- Transferência de poder aos sovietes.
-- Nacionalização das terras e reorganização da questão agrária.
-- Controle da produção e distribuição por instituições revolucionárias.
-- Reorganização do partido e de sua estratégia política.
-
-A posição de Lenin representava uma ruptura com interpretações mais moderadas que consideravam necessário apoiar o Governo Provisório durante uma etapa democrática da revolução.
-
-Sua proposta encontrou resistência dentro do próprio partido.
-
-Dirigentes bolcheviques, como Lev Kamenev, consideravam que a orientação de Lenin poderia isolar politicamente a organização.
-
-A controvérsia demonstra que o partido não funcionava como uma estrutura inteiramente uniforme.`
+          "number": "7.2",
+          "title": "As Teses de Abril",
+          "content": "Lenin apresentou um conjunto de propostas conhecido como Teses de Abril.\n\nEntre suas principais posições estavam:\n\n- Rejeição ao apoio político ao Governo Provisório.\n- Oposição à continuidade da guerra imperialista.\n- Transferência de poder aos sovietes.\n- Abolição da grande propriedade fundiária e reorganização da questão agrária.\n- Controle da produção e distribuição por instituições revolucionárias.\n- Reorganização da estratégia política do partido.\n- Superação da orientação que considerava necessário apoiar uma etapa prolongada de governo burguês.\n\nA posição de Lenin representava uma ruptura com interpretações mais moderadas que consideravam necessário apoiar o Governo Provisório durante uma etapa democrática da revolução.\n\nSua proposta encontrou resistência dentro do próprio partido.\n\nDirigentes bolcheviques, como Lev Kamenev, consideravam que a orientação de Lenin poderia isolar politicamente a organização.\n\nA controvérsia demonstra que o partido não funcionava como uma estrutura inteiramente uniforme.\n\nAs Teses de Abril também expressavam uma mudança na interpretação de Lenin sobre a dinâmica revolucionária. Em vez de considerar a revolução democrática como uma etapa que deveria necessariamente permanecer sob direção burguesa, passou a defender que os trabalhadores e seus aliados camponeses poderiam avançar diretamente para uma nova forma de poder político.\n\nEssa posição não significava que a Rússia pudesse construir imediatamente uma sociedade socialista plenamente desenvolvida. Significava que a questão do poder deveria ser resolvida por meio da transferência da autoridade aos sovietes."
         },
         {
-          number: '7.3',
-          title: 'Paz, terra e poder soviético',
-          content: `As palavras de ordem bolcheviques ganharam força porque dialogavam com demandas sociais concretas.
-
-A defesa da paz respondia ao desgaste dos soldados e à rejeição popular à continuidade da guerra.
-
-A defesa da terra correspondia às expectativas de milhões de camponeses.
-
-A defesa do poder soviético apresentava uma alternativa às instituições tradicionais e ao Governo Provisório.
-
-Entretanto, é necessário distinguir a adesão a essas reivindicações do apoio integral ao programa político bolchevique.
-
-Um camponês poderia defender a redistribuição da terra sem necessariamente apoiar a centralização política de Lenin. Um soldado poderia desejar a retirada da guerra sem aceitar a dissolução de uma futura assembleia parlamentar.
-
-A popularidade das palavras de ordem não deve ser confundida com a existência de um mandato nacional irrestrito para os bolcheviques.`
+          "number": "7.3",
+          "title": "Paz, terra e poder soviético",
+          "content": "As palavras de ordem bolcheviques ganharam força porque dialogavam com demandas sociais concretas.\n\nA defesa da paz respondia ao desgaste dos soldados e à rejeição popular à continuidade da guerra.\n\nA defesa da terra correspondia às expectativas de milhões de camponeses.\n\nA defesa do poder soviético apresentava uma alternativa às instituições tradicionais e ao Governo Provisório.\n\nEntretanto, é necessário distinguir a adesão a essas reivindicações do apoio integral ao programa político bolchevique.\n\nUm camponês poderia defender a redistribuição da terra sem necessariamente apoiar a centralização política de Lenin. Um soldado poderia desejar a retirada da guerra sem aceitar a dissolução de uma futura assembleia parlamentar.\n\nA popularidade das palavras de ordem não deve ser confundida com a existência de um mandato nacional irrestrito para os bolcheviques.\n\nEssa distinção é essencial para compreender a diferença entre a força social de determinadas reivindicações e o apoio eleitoral a um partido específico."
         }
       ]
     },
     {
-      number: '8',
-      title: 'As Jornadas de Julho e a Crise do Governo',
-      content: '',
-      subsections: [
+      "number": "8",
+      "title": "AS JORNADAS DE JULHO E A CRISE DO GOVERNO",
+      "subsections": [
         {
-          number: '8.1',
-          title: 'As manifestações de julho',
-          content: `Em julho de 1917, trabalhadores e soldados de Petrogrado participaram de manifestações armadas contra o Governo Provisório.
-
-O movimento expressava o descontentamento com a guerra, a deterioração econômica e a falta de mudanças políticas imediatas.
-
-Parte dos manifestantes defendia a transferência do poder aos sovietes.
-
-Os bolcheviques encontravam-se diante de uma situação delicada. Sua base social demonstrava disposição para uma ação mais radical, mas a liderança ainda avaliava as condições necessárias para uma insurreição.
-
-Lenin não considerava que a organização possuísse naquele momento condições suficientes para conquistar e conservar o poder.
-
-As Jornadas de Julho foram reprimidas.
-
-O governo acusou os bolcheviques de participação em atividades contra o Estado, e dirigentes do partido passaram a ser perseguidos.
-
-Lenin deixou Petrogrado e refugiou-se na Finlândia.
-
-Trotsky foi preso durante o período de repressão.
-
-O episódio demonstrou que a ascensão bolchevique não ocorreu de maneira linear. O partido enfrentou recuos, divisões e dificuldades reais.`
+          "number": "8.1",
+          "title": "As manifestações de julho",
+          "content": "Em julho de 1917, trabalhadores e soldados de Petrogrado participaram de manifestações armadas contra o Governo Provisório.\n\nO movimento expressava o descontentamento com a guerra, a deterioração econômica e a falta de mudanças políticas imediatas.\n\nParte dos manifestantes defendia a transferência do poder aos sovietes.\n\nOs bolcheviques encontravam-se diante de uma situação delicada. Sua base social demonstrava disposição para uma ação mais radical, mas a liderança ainda avaliava as condições necessárias para uma insurreição.\n\nAs Jornadas de Julho não foram uma operação inteiramente planejada pela direção bolchevique. A mobilização envolveu iniciativas de trabalhadores e soldados que pressionavam por uma mudança política imediata.\n\nA liderança do partido enfrentava o dilema de participar do movimento sem assumir uma ação para a qual considerava não existir preparação suficiente.\n\nAs manifestações foram reprimidas.\n\nO governo acusou os bolcheviques de participação em atividades contra o Estado, e dirigentes do partido passaram a ser perseguidos.\n\nLenin deixou Petrogrado e refugiou-se na Finlândia.\n\nTrotsky foi preso durante o período de repressão.\n\nO episódio demonstrou que a ascensão bolchevique não ocorreu de maneira linear. O partido enfrentou recuos, divisões e dificuldades reais."
         },
         {
-          number: '8.2',
-          title: 'Kerensky assume a chefia do governo',
-          content: `Em julho, Alexander Kerensky substituiu Lvov como chefe do Governo Provisório.
-
-Kerensky era integrante do Partido Socialista Revolucionário e havia adquirido destaque após a Revolução de Fevereiro.
-
-Sua trajetória política o colocava em uma posição singular: era socialista, mas defendia a manutenção de uma autoridade governamental capaz de preservar o Estado e continuar a guerra.
-
-A dificuldade de Kerensky estava em conciliar demandas sociais cada vez mais radicalizadas com a preservação das instituições e da capacidade administrativa do país.
-
-Seu governo enfrentava oposição à esquerda e à direita.
-
-Os bolcheviques consideravam que a revolução precisava avançar. Setores conservadores e militares defendiam medidas mais duras para restaurar a disciplina e a autoridade.`
+          "number": "8.2",
+          "title": "Kerensky assume a chefia do governo",
+          "content": "Em julho, Alexander Kerensky substituiu Lvov como chefe do Governo Provisório.\n\nKerensky era integrante do Partido Socialista Revolucionário e havia adquirido destaque após a Revolução de Fevereiro.\n\nSua trajetória política o colocava em uma posição singular: era socialista, mas defendia a manutenção de uma autoridade governamental capaz de preservar o Estado e continuar a guerra.\n\nA dificuldade de Kerensky estava em conciliar demandas sociais cada vez mais radicalizadas com a preservação das instituições e da capacidade administrativa do país.\n\nSeu governo enfrentava oposição à esquerda e à direita.\n\nOs bolcheviques consideravam que a revolução precisava avançar. Setores conservadores e militares defendiam medidas mais duras para restaurar a disciplina e a autoridade.\n\nKerensky procurava preservar o Governo Provisório como instrumento de continuidade institucional, mas sua autoridade dependia de forças políticas e militares que estavam cada vez mais fragmentadas."
         }
       ]
     },
     {
-      number: '9',
-      title: 'O Caso Kornilov e a Radicalização Política',
-      content: '',
-      subsections: [
+      "number": "9",
+      "title": "O CASO KORNILOV E A RADICALIZAÇÃO POLÍTICA",
+      "subsections": [
         {
-          number: '9.1',
-          title: 'A crise entre Kerensky e Kornilov',
-          content: `Em agosto de 1917, ocorreu um dos episódios mais importantes da crise política russa: o caso Kornilov.
-
-Lavr Kornilov, comandante-chefe das Forças Armadas, defendia medidas rigorosas para restaurar a disciplina militar e a autoridade do Estado.
-
-A relação entre Kornilov e Kerensky deteriorou-se em meio a divergências sobre a condução do governo e a utilização das forças militares.
-
-A crise culminou no deslocamento de tropas associadas a Kornilov em direção a Petrogrado.
-
-Kerensky interpretou a movimentação como uma ameaça à autoridade do governo e passou a organizar a resistência.
-
-As intenções exatas de Kornilov, o grau de coordenação de suas ações e as responsabilidades individuais de Kerensky continuam sendo objeto de debate historiográfico.
-
-Por isso, o episódio deve ser estudado sem pressupor que todos os envolvidos possuíam um plano perfeitamente definido.`
+          "number": "9.1",
+          "title": "A crise entre Kerensky e Kornilov",
+          "content": "Em agosto de 1917, ocorreu um dos episódios mais importantes da crise política russa: o caso Kornilov.\n\nLavr Kornilov, comandante-chefe das Forças Armadas, defendia medidas rigorosas para restaurar a disciplina militar e a autoridade do Estado.\n\nA relação entre Kornilov e Kerensky deteriorou-se em meio a divergências sobre a condução do governo e a utilização das forças militares.\n\nA crise culminou no deslocamento de tropas associadas a Kornilov em direção a Petrogrado.\n\nKerensky interpretou a movimentação como uma ameaça à autoridade do governo e passou a organizar a resistência.\n\nAs intenções exatas de Kornilov, o grau de coordenação de suas ações e as responsabilidades individuais de Kerensky continuam sendo objeto de debate historiográfico.\n\nNão é adequado reduzir o episódio a uma tentativa perfeitamente planejada de golpe militar com todos os seus participantes previamente alinhados. As negociações anteriores, as comunicações contraditórias e a deterioração das relações entre os protagonistas tornam a reconstrução do acontecimento mais complexa.\n\nO caso Kornilov demonstrou a fragilidade do Governo Provisório e a dificuldade de estabelecer uma autoridade militar e política estável."
         },
         {
-          number: '9.2',
-          title: 'A participação bolchevique na resistência',
-          content: `A mobilização contra o avanço das forças de Kornilov envolveu ferroviários, trabalhadores, soldados e organizações revolucionárias.
-
-Os bolcheviques participaram da resistência e ganharam espaço político.
-
-A crise contribuiu para enfraquecer a imagem de Kerensky e dos setores conservadores.
-
-Ao mesmo tempo, os bolcheviques passaram a ser percebidos por parte dos trabalhadores e soldados como uma força capaz de defender a revolução contra uma possível restauração autoritária.
-
-O episódio teve consequências políticas profundas.
-
-Em setembro, os bolcheviques conquistaram maior influência em sovietes importantes, incluindo o de Petrogrado.
-
-Leon Trotsky assumiu a presidência do Soviete de Petrogrado, posição que seria decisiva durante a preparação da insurreição de outubro.
-
-A crise de Kornilov não produziu automaticamente a vitória bolchevique, mas alterou a correlação de forças.`
+          "number": "9.2",
+          "title": "A participação bolchevique na resistência",
+          "content": "A mobilização contra o avanço das forças de Kornilov envolveu ferroviários, trabalhadores, soldados e organizações revolucionárias.\n\nOs bolcheviques participaram da resistência e ganharam espaço político.\n\nA crise contribuiu para enfraquecer a imagem de Kerensky e dos setores conservadores.\n\nAo mesmo tempo, os bolcheviques passaram a ser percebidos por parte dos trabalhadores e soldados como uma força capaz de defender a revolução contra uma possível restauração autoritária.\n\nO episódio teve consequências políticas profundas.\n\nEm setembro, os bolcheviques conquistaram maior influência em sovietes importantes, incluindo o de Petrogrado.\n\nLeon Trotsky assumiu a presidência do Soviete de Petrogrado, posição que seria decisiva durante a preparação da insurreição de outubro.\n\nA crise de Kornilov não produziu automaticamente a vitória bolchevique, mas alterou a correlação de forças.\n\nTambém demonstrou que os setores liberais e socialistas moderados enfrentavam dificuldades para manter uma coalizão política capaz de governar o país."
         }
       ]
     },
     {
-      number: '10',
-      title: 'Lenin, Trotsky e a Preparação da Insurreição',
-      content: '',
-      subsections: [
+      "number": "10",
+      "title": "LENIN, TROTSKY E A PREPARAÇÃO DA INSURREIÇÃO",
+      "subsections": [
         {
-          number: '10.1',
-          title: 'A decisão de conquistar o poder',
-          content: `Em setembro de 1917, Lenin passou a defender com crescente urgência a realização de uma insurreição.
-
-Em cartas dirigidas aos dirigentes bolcheviques, argumentava que a situação política oferecia uma oportunidade que poderia desaparecer caso o partido demorasse a agir.
-
-Lenin considerava que o crescimento da influência bolchevique nos sovietes e a fragilidade do Governo Provisório criavam condições favoráveis para a tomada do poder.
-
-Entretanto, a proposta enfrentou resistência interna.
-
-Lev Kamenev e Grigori Zinoviev estavam entre os dirigentes que consideravam prematura uma insurreição imediata.
-
-Eles temiam que uma tentativa de conquista do poder pudesse isolar o partido e provocar uma derrota política e militar.
-
-A divergência tornou-se pública quando ambos manifestaram oposição à insurreição em uma publicação de orientação socialista.
-
-Lenin reagiu duramente, considerando a exposição pública da divergência uma ameaça à segurança da operação.`
+          "number": "10.1",
+          "title": "A decisão de conquistar o poder",
+          "content": "Em setembro de 1917, Lenin passou a defender com crescente urgência a realização de uma insurreição.\n\nEm cartas dirigidas aos dirigentes bolcheviques, argumentava que a situação política oferecia uma oportunidade que poderia desaparecer caso o partido demorasse a agir.\n\nLenin considerava que o crescimento da influência bolchevique nos sovietes e a fragilidade do Governo Provisório criavam condições favoráveis para a tomada do poder.\n\nEntretanto, a proposta enfrentou resistência interna.\n\nLev Kamenev e Grigori Zinoviev estavam entre os dirigentes que consideravam prematura uma insurreição imediata.\n\nEles temiam que uma tentativa de conquista do poder pudesse isolar o partido e provocar uma derrota política e militar.\n\nA divergência tornou-se pública quando ambos manifestaram oposição à insurreição em uma publicação de orientação socialista.\n\nLenin reagiu duramente, considerando a exposição pública da divergência uma ameaça à segurança da operação.\n\nO episódio demonstra que a decisão de outubro não foi resultado de uma unanimidade partidária. Existiam diferentes avaliações sobre a oportunidade política, os riscos militares e a possibilidade de conquistar legitimidade entre os trabalhadores e soldados."
         },
         {
-          number: '10.2',
-          title: 'Trotsky e o Comitê Militar Revolucionário',
-          content: `Leon Trotsky desempenhou papel fundamental na organização política e operacional dos acontecimentos de outubro.
-
-Como presidente do Soviete de Petrogrado, ajudou a estruturar o Comitê Militar Revolucionário, órgão que coordenava a defesa da capital e passou a organizar as forças favoráveis à transferência do poder.
-
-O Comitê possuía influência sobre unidades militares, guardas vermelhos e marinheiros.
-
-Sua atuação permitiu estabelecer uma estrutura de comando capaz de coordenar a ocupação de pontos estratégicos da cidade.
-
-A insurreição não foi simplesmente uma manifestação espontânea de trabalhadores. Envolveu planejamento, comunicação, mobilização militar e decisões políticas.
-
-Ao mesmo tempo, sua realização foi favorecida pelo enfraquecimento do Governo Provisório e pela adesão de setores que consideravam necessária uma mudança imediata.`
+          "number": "10.2",
+          "title": "Trotsky e o Comitê Militar Revolucionário",
+          "content": "Leon Trotsky desempenhou papel fundamental na organização política e operacional dos acontecimentos de outubro.\n\nComo presidente do Soviete de Petrogrado, ajudou a estruturar o Comitê Militar Revolucionário, órgão que coordenava a defesa da capital e passou a organizar as forças favoráveis à transferência do poder.\n\nO Comitê possuía influência sobre unidades militares, guardas vermelhos e marinheiros.\n\nSua atuação permitiu estabelecer uma estrutura de comando capaz de coordenar a ocupação de pontos estratégicos da cidade.\n\nA insurreição não foi simplesmente uma manifestação espontânea de trabalhadores. Envolveu planejamento, comunicação, mobilização militar e decisões políticas.\n\nAo mesmo tempo, sua realização foi favorecida pelo enfraquecimento do Governo Provisório e pela adesão de setores que consideravam necessária uma mudança imediata.\n\nA contribuição de Trotsky deve ser compreendida dentro desse contexto. Lenin exerceu pressão política para que o partido assumisse a iniciativa revolucionária, enquanto Trotsky teve participação decisiva na articulação institucional e operacional da insurreição em Petrogrado.\n\nAs duas lideranças desempenharam papéis distintos, mas complementares."
         }
       ]
     },
     {
-      number: '11',
-      title: 'A Insurreição de Outubro de 1917',
-      content: '',
-      subsections: [
+      "number": "11",
+      "title": "A INSURREIÇÃO DE OUTUBRO DE 1917",
+      "subsections": [
         {
-          number: '11.1',
-          title: 'A ocupação dos pontos estratégicos',
-          content: `A tomada do poder começou em outubro pelo calendário juliano, correspondente a novembro no calendário gregoriano.
-
-Na noite de 24 para 25 de outubro, forças ligadas ao Comitê Militar Revolucionário passaram a ocupar posições estratégicas em Petrogrado.
-
-Entre os pontos controlados estavam pontes, estações ferroviárias, instalações de comunicação, centros administrativos e outras estruturas fundamentais para o funcionamento do governo.
-
-A operação foi organizada para neutralizar a capacidade de reação do Governo Provisório.
-
-A resistência foi limitada em vários setores.
-
-O governo de Kerensky encontrava-se politicamente enfraquecido e dispunha de poucos recursos militares confiáveis na capital.`
+          "number": "11.1",
+          "title": "A ocupação dos pontos estratégicos",
+          "content": "A tomada do poder começou em outubro pelo calendário juliano, correspondente a novembro no calendário gregoriano.\n\nNa noite de 24 para 25 de outubro, forças ligadas ao Comitê Militar Revolucionário passaram a ocupar posições estratégicas em Petrogrado.\n\nEntre os pontos controlados estavam pontes, estações ferroviárias, instalações de comunicação, centros administrativos e outras estruturas fundamentais para o funcionamento do governo.\n\nA operação foi organizada para neutralizar a capacidade de reação do Governo Provisório.\n\nA resistência foi limitada em vários setores.\n\nO governo de Kerensky encontrava-se politicamente enfraquecido e dispunha de poucos recursos militares confiáveis na capital.\n\nA tomada dos pontos estratégicos foi fundamental porque permitiu aos revolucionários controlar a circulação, a comunicação e a coordenação das forças governamentais.\n\nO episódio demonstrou a importância da organização militar e da estratégia política na conquista do poder."
         },
         {
-          number: '11.2',
-          title: 'O Palácio de Inverno',
-          content: `O Palácio de Inverno era a sede do Governo Provisório e tornou-se o principal símbolo da queda do antigo governo.
-
-As forças revolucionárias cercaram o edifício, onde estavam ministros e unidades militares que ainda defendiam a administração.
-
-O cruzador Aurora, ancorado no rio Neva, tornou-se um dos símbolos da revolução. Seu disparo de canhão foi associado ao início da fase final da operação contra o Palácio de Inverno.
-
-A tomada do edifício ocorreu com resistência relativamente limitada, embora tenham existido confrontos e feridos.
-
-A representação posterior do episódio como uma batalha gigantesca foi ampliada pela memória política soviética, especialmente pela produção cultural e cinematográfica posterior.
-
-A reconstrução histórica exige distinguir o acontecimento efetivo de sua representação simbólica.
-
-A ocupação do Palácio de Inverno representou a derrota política do Governo Provisório.
-
-Kerensky conseguiu deixar Petrogrado e tentou organizar uma resistência, mas não conseguiu recuperar o controle do governo.`
+          "number": "11.2",
+          "title": "O Palácio de Inverno",
+          "content": "O Palácio de Inverno era a sede do Governo Provisório e tornou-se o principal símbolo da queda do antigo governo.\n\nAs forças revolucionárias cercaram o edifício, onde estavam ministros e unidades militares que ainda defendiam a administração.\n\nO cruzador Aurora, ancorado no rio Neva, tornou-se um dos símbolos da revolução.\n\nSeu disparo de canhão foi associado à fase final da operação contra o Palácio de Inverno. É importante, entretanto, não apresentá-lo como o início absoluto de toda a tomada do edifício, pois a ocupação de outros pontos estratégicos já estava em andamento.\n\nA tomada do Palácio ocorreu com resistência relativamente limitada, embora tenham existido confrontos e feridos.\n\nA representação posterior do episódio como uma batalha gigantesca foi ampliada pela memória política soviética, especialmente pela produção cultural e cinematográfica posterior.\n\nA reconstrução histórica exige distinguir o acontecimento efetivo de sua representação simbólica.\n\nA ocupação do Palácio de Inverno representou a derrota política do Governo Provisório.\n\nKerensky conseguiu deixar Petrogrado e tentou organizar uma resistência, mas não conseguiu recuperar o controle do governo.\n\nA importância histórica de Outubro, portanto, não está na dimensão militar de um único confronto, mas na combinação entre organização política, controle de instituições estratégicas e desagregação da autoridade governamental."
         },
         {
-          number: '11.3',
-          title: 'O Segundo Congresso dos Sovietes',
-          content: `Enquanto os acontecimentos militares se desenvolviam, reunia-se em Petrogrado o Segundo Congresso dos Sovietes de Toda a Rússia.
-
-O congresso reunia representantes de diferentes organizações socialistas e conselhos de trabalhadores e soldados.
-
-A tomada do poder foi apresentada pelos bolcheviques como uma transferência de autoridade aos sovietes.
-
-Entretanto, a reunião foi marcada por intensas divergências.
-
-Delegados mencheviques e socialistas revolucionários moderados criticaram a insurreição e vários abandonaram o congresso.
-
-A saída desses representantes alterou a composição política da reunião.
-
-Os bolcheviques e seus aliados passaram a exercer maior influência sobre as decisões.
-
-O congresso aprovou medidas que estabeleciam uma nova estrutura governamental.`
+          "number": "11.3",
+          "title": "O Segundo Congresso dos Sovietes",
+          "content": "Enquanto os acontecimentos militares se desenvolviam, reunia-se em Petrogrado o Segundo Congresso dos Sovietes de Toda a Rússia.\n\nO congresso reunia representantes de diferentes organizações socialistas e conselhos de trabalhadores e soldados.\n\nA tomada do poder foi apresentada pelos bolcheviques como uma transferência de autoridade aos sovietes.\n\nEntretanto, a reunião foi marcada por intensas divergências.\n\nDelegados mencheviques e socialistas revolucionários de direita, além de representantes de outras correntes contrárias à insurreição, protestaram e vários abandonaram o congresso.\n\nA saída desses representantes alterou a composição política da reunião.\n\nOs bolcheviques e seus aliados passaram a exercer maior influência sobre as decisões.\n\nO congresso aprovou medidas que estabeleciam uma nova estrutura governamental.\n\nA controvérsia sobre a legitimidade do novo governo começou, portanto, desde os primeiros momentos da insurreição. Para os bolcheviques, a autoridade deveria ser transferida aos sovietes; para seus adversários, a tomada do poder havia ocorrido sem um consenso político suficientemente amplo."
         },
         {
-          number: '11.4',
-          title: 'A formação do Conselho dos Comissários do Povo',
-          content: `Após a queda do Governo Provisório, foi criado o Conselho dos Comissários do Povo, conhecido pela sigla Sovnarkom.
-
-Lenin assumiu a presidência do novo órgão.
-
-Entre seus integrantes estavam dirigentes bolcheviques que passaram a ocupar posições centrais na administração do Estado.
-
-A formação do Sovnarkom marcou a passagem da insurreição para a organização de um novo governo.
-
-A partir daquele momento, os bolcheviques precisavam transformar uma vitória política e militar em uma administração capaz de governar um território imenso, economicamente desorganizado e envolvido em uma guerra mundial.`
+          "number": "11.4",
+          "title": "A formação do Conselho dos Comissários do Povo",
+          "content": "Após a queda do Governo Provisório, foi criado o Conselho dos Comissários do Povo, conhecido pela sigla Sovnarkom.\n\nLenin assumiu a presidência do novo órgão.\n\nO primeiro governo foi composto por dirigentes bolcheviques que passaram a ocupar posições centrais na administração do Estado.\n\nA participação dos socialistas revolucionários de esquerda no governo ocorreu posteriormente, quando a organização aderiu à coalizão com os bolcheviques.\n\nA formação do Sovnarkom marcou a passagem da insurreição para a organização de um novo governo.\n\nA partir daquele momento, os bolcheviques precisavam transformar uma vitória política e militar em uma administração capaz de governar um território imenso, economicamente desorganizado e envolvido em uma guerra mundial.\n\nO desafio era enorme: preservar a autoridade política, reconstruir a administração, reorganizar a economia, responder às reivindicações sociais e enfrentar os adversários internos e externos."
         }
       ]
     },
     {
-      number: '12',
-      title: 'Os Primeiros Decretos do Governo Bolchevique',
-      content: '',
-      subsections: [
+      "number": "12",
+      "title": "OS PRIMEIROS DECRETOS DO GOVERNO BOLCHEVIQUE",
+      "subsections": [
         {
-          number: '12.1',
-          title: 'O Decreto sobre a Paz',
-          content: `Uma das primeiras medidas aprovadas pelo novo governo foi o Decreto sobre a Paz.
-
-O documento defendia negociações imediatas para encerrar a guerra e propunha uma paz sem anexações e sem indenizações.
-
-A medida respondia a uma das principais reivindicações dos soldados e trabalhadores.
-
-Entretanto, a proposta colocou o governo diante de uma realidade diplomática e militar difícil.
-
-A Alemanha continuava ocupando posições estratégicas e não demonstrava disposição para aceitar integralmente as condições defendidas pelos bolcheviques.
-
-A retirada da guerra exigiria negociações complexas e provocaria divergências dentro do próprio movimento revolucionário.`
+          "number": "12.1",
+          "title": "O Decreto sobre a Paz",
+          "content": "Uma das primeiras medidas aprovadas pelo novo governo foi o Decreto sobre a Paz, aprovado pelo Segundo Congresso dos Sovietes em 26 de outubro pelo calendário juliano, correspondente a 8 de novembro de 1917.\n\nO documento defendia negociações imediatas para encerrar a guerra e propunha uma paz sem anexações e sem indenizações.\n\nA medida respondia a uma das principais reivindicações dos soldados e trabalhadores.\n\nEntretanto, a proposta colocou o governo diante de uma realidade diplomática e militar difícil.\n\nA Alemanha continuava ocupando posições estratégicas e não demonstrava disposição para aceitar integralmente as condições defendidas pelos bolcheviques.\n\nA retirada da guerra exigiria negociações complexas e provocaria divergências dentro do próprio movimento revolucionário.\n\nO decreto tinha também uma dimensão política. Ao defender o fim da guerra, os bolcheviques procuravam demonstrar que o novo governo rompia com a diplomacia do antigo regime e com os compromissos militares do Governo Provisório."
         },
         {
-          number: '12.2',
-          title: 'O Decreto sobre a Terra',
-          content: `O Decreto sobre a Terra representou outra decisão fundamental.
-
-O documento reconhecia a necessidade de abolir a propriedade privada da terra e estabelecia medidas relacionadas à sua transferência para uso dos trabalhadores rurais.
-
-O texto incorporava reivindicações presentes no movimento camponês e dialogava com propostas que já circulavam entre os socialistas revolucionários.
-
-A medida possuía importância política evidente: permitia ao governo bolchevique conquistar apoio entre setores camponeses que desejavam uma transformação agrária imediata.
-
-Entretanto, a aplicação das medidas seria condicionada pela guerra civil, pelas disputas locais e pela reorganização da propriedade rural.`
+          "number": "12.2",
+          "title": "O Decreto sobre a Terra",
+          "content": "O Decreto sobre a Terra representou outra decisão fundamental.\n\nAprovado na mesma ocasião, o documento aboliu a grande propriedade fundiária sem indenização e reconheceu a transferência da terra para uso dos trabalhadores rurais, segundo princípios que incorporavam reivindicações do movimento camponês.\n\nO texto incorporava propostas que já circulavam entre os socialistas revolucionários e dialogava com as expectativas de milhões de camponeses.\n\nEssa característica é importante: o novo governo não apresentou uma política agrária inteiramente original. Apropriou-se de reivindicações que possuíam ampla aceitação no campo e que estavam presentes em outros programas socialistas.\n\nÉ necessário distinguir a abolição da propriedade privada da terra de sua organização administrativa posterior.\n\nO decreto não estabeleceu imediatamente um sistema agrícola uniforme, controlado integralmente pelo governo central. A aplicação das medidas ocorreu em meio a disputas locais, decisões comunitárias, ocupações de propriedades e reorganizações da vida rural.\n\nA medida possuía importância política evidente: permitia ao governo bolchevique conquistar apoio entre setores camponeses que desejavam uma transformação agrária imediata.\n\nEntretanto, a aplicação das medidas seria condicionada pela guerra civil, pelas disputas locais e pela reorganização da propriedade rural."
         },
         {
-          number: '12.3',
-          title: 'A questão nacional',
-          content: `Em novembro de 1917, o governo publicou a Declaração dos Direitos dos Povos da Rússia.
-
-O documento afirmava princípios como igualdade entre nacionalidades, direito à autodeterminação e possibilidade de separação política.
-
-A medida procurava responder às reivindicações dos povos submetidos ao antigo Império.
-
-Entretanto, a relação entre a promessa de autodeterminação e a construção de um Estado revolucionário centralizado se tornaria uma questão complexa nos anos seguintes.
-
-O novo governo precisaria conciliar a diversidade nacional do antigo Império com sua intenção de preservar a unidade política e territorial do poder soviético.`
+          "number": "12.3",
+          "title": "A questão nacional",
+          "content": "Em novembro de 1917, o governo publicou a Declaração dos Direitos dos Povos da Rússia.\n\nO documento afirmava princípios como igualdade entre nacionalidades, direito à autodeterminação e possibilidade de separação política.\n\nA medida procurava responder às reivindicações dos povos submetidos ao antigo Império.\n\nA autodeterminação nacional significava, em princípio, que diferentes povos deveriam poder decidir sobre sua organização política e seu futuro institucional.\n\nEntretanto, a relação entre essa promessa e a construção de um Estado revolucionário centralizado se tornaria uma questão complexa nos anos seguintes.\n\nO novo governo precisaria conciliar a diversidade nacional do antigo Império com sua intenção de preservar a unidade política e territorial do poder soviético.\n\nAs tensões entre autodeterminação, centralização administrativa e defesa do Estado revolucionário permaneceriam presentes durante a formação da União Soviética."
         }
       ]
     },
     {
-      number: '13',
-      title: 'As Eleições para a Assembleia Constituinte',
-      content: '',
-      subsections: [
+      "number": "13",
+      "title": "AS ELEIÇÕES PARA A ASSEMBLEIA CONSTITUINTE",
+      "subsections": [
         {
-          number: '13.1',
-          title: 'A promessa de representação nacional',
-          content: `A convocação de uma Assembleia Constituinte era uma das principais promessas políticas da Revolução de Fevereiro.
-
-Sua função seria definir a organização constitucional da Rússia, estabelecer a forma de governo e deliberar sobre questões fundamentais do Estado.
-
-A Assembleia era especialmente importante porque deveria possuir legitimidade derivada de eleições nacionais.
-
-Os bolcheviques também participaram do processo eleitoral, embora sua concepção de poder político privilegiasse os sovietes.
-
-As eleições ocorreram em novembro e dezembro de 1917, dependendo da região, em um contexto de profunda instabilidade.
-
-A organização do processo foi prejudicada pela guerra, pelas dificuldades administrativas e pela fragmentação territorial.`
+          "number": "13.1",
+          "title": "A promessa de representação nacional",
+          "content": "A convocação de uma Assembleia Constituinte era uma das principais promessas políticas da Revolução de Fevereiro.\n\nSua função seria definir a organização constitucional da Rússia, estabelecer a forma de governo e deliberar sobre questões fundamentais do Estado.\n\nA Assembleia era especialmente importante porque deveria possuir legitimidade derivada de eleições nacionais.\n\nOs bolcheviques também participaram do processo eleitoral, embora sua concepção de poder político privilegiasse os sovietes.\n\nAs eleições ocorreram principalmente em novembro de 1917, pelo calendário gregoriano, embora o processo tenha se estendido até dezembro em determinadas regiões.\n\nA organização foi prejudicada pela guerra, pelas dificuldades administrativas e pela fragmentação territorial.\n\nAs eleições ocorreram em um contexto político diferente daquele existente em fevereiro. O Governo Provisório havia sido derrubado, e os bolcheviques já controlavam as principais instituições de Petrogrado.\n\nEntretanto, a votação ainda representava uma oportunidade de medir a força eleitoral das diferentes organizações políticas em escala nacional."
         },
         {
-          number: '13.2',
-          title: 'Os socialistas revolucionários e a questão camponesa',
-          content: `Os socialistas revolucionários obtiveram o maior contingente eleitoral nacional.
-
-Sua força estava relacionada à popularidade de suas propostas agrárias e à presença de organizações ligadas ao campesinato.
-
-Os bolcheviques alcançaram resultados expressivos em determinadas cidades industriais, centros militares e regiões estratégicas, mas não conquistaram uma maioria nacional.
-
-As estimativas consolidadas de Radkey indicam aproximadamente 45,5% dos votos para os socialistas revolucionários russos e 24,9% para os bolcheviques, consideradas as classificações e a cobertura territorial utilizadas na reconstrução dos resultados.
-
-Esses números precisam ser interpretados com cautela, pois as eleições ocorreram em um território multinacional e as listas eleitorais dos SR haviam sido organizadas antes da consolidação da divisão entre suas alas direita e esquerda.
-
-Também é necessário considerar o peso das organizações nacionais não russas, especialmente em regiões como a Ucrânia.
-
-Ainda assim, a conclusão histórica é clara: os bolcheviques não obtiveram uma maioria eleitoral nacional.
-
-A eleição representava uma evidência importante sobre as preferências políticas da população naquele momento.`
+          "number": "13.2",
+          "title": "Os socialistas revolucionários e a questão camponesa",
+          "content": "Os socialistas revolucionários obtiveram o maior contingente eleitoral nacional.\n\nSua força estava relacionada à popularidade de suas propostas agrárias e à presença de organizações ligadas ao campesinato.\n\nOs bolcheviques alcançaram resultados expressivos em determinadas cidades industriais, centros militares e regiões estratégicas, mas não conquistaram uma maioria nacional.\n\nAs estimativas consolidadas de Oliver H. Radkey indicam aproximadamente 45,5% dos votos para os socialistas revolucionários russos e 24,9% para os bolcheviques, considerando a classificação das listas e a cobertura territorial utilizadas em sua reconstrução eleitoral (RADKEY, 1950).\n\nEsses números precisam ser interpretados com cautela.\n\nEm primeiro lugar, a cobertura eleitoral não foi uniforme em todo o território do antigo Império. Em segundo lugar, as listas dos socialistas revolucionários haviam sido organizadas antes da consolidação da divisão entre suas alas direita e esquerda.\n\nConsequentemente, os resultados não permitem determinar com precisão quantos eleitores apoiariam cada uma das correntes após a divisão partidária.\n\nTambém é necessário considerar a presença de organizações nacionais não russas, especialmente em regiões como a Ucrânia, onde as disputas políticas possuíam características próprias.\n\nAinda assim, a conclusão histórica é clara: os bolcheviques não obtiveram uma maioria eleitoral nacional.\n\nA eleição representava uma evidência importante sobre as preferências políticas da população naquele momento.\n\nEla também demonstra que a popularidade de determinadas reivindicações revolucionárias não correspondia necessariamente ao apoio eleitoral a uma organização específica."
         },
         {
-          number: '13.3',
-          title: 'Viktor Chernov e a presidência da Assembleia',
-          content: `Viktor Chernov foi uma das principais lideranças do Partido Socialista Revolucionário.
-
-Intelectual e dirigente político, Chernov defendia a transformação agrária e uma organização social baseada na participação dos camponeses.
-
-Na sessão de janeiro de 1918, foi eleito presidente da Assembleia Constituinte.
-
-Sua eleição representou a vitória de uma liderança associada ao partido que havia conquistado o maior número de votos.
-
-A composição da Assembleia, entretanto, não correspondia à estrutura de poder estabelecida após Outubro.
-
-Os bolcheviques controlavam o governo e possuíam influência decisiva sobre os sovietes, enquanto a maioria parlamentar pertencia aos socialistas revolucionários.
-
-A existência simultânea dessas instituições criou um conflito de legitimidade.`
+          "number": "13.3",
+          "title": "Viktor Chernov e a presidência da Assembleia",
+          "content": "Viktor Chernov foi uma das principais lideranças do Partido Socialista Revolucionário.\n\nIntelectual e dirigente político, Chernov defendia a transformação agrária e uma organização social baseada na participação dos camponeses.\n\nNa sessão de janeiro de 1918, foi eleito presidente da Assembleia Constituinte.\n\nSua eleição representou a vitória de uma liderança associada ao partido que havia conquistado o maior número de votos.\n\nA composição da Assembleia, entretanto, não correspondia à estrutura de poder estabelecida após Outubro.\n\nOs bolcheviques controlavam o governo e possuíam influência decisiva sobre os sovietes, enquanto a maioria parlamentar pertencia aos socialistas revolucionários.\n\nA existência simultânea dessas instituições criou um conflito de legitimidade.\n\nA questão não era simplesmente saber qual organização possuía maior força política, mas qual instituição deveria ter autoridade para definir a organização do Estado."
         },
         {
-          number: '13.4',
-          title: 'A divisão dos socialistas revolucionários',
-          content: `O Partido Socialista Revolucionário estava dividido entre diferentes correntes.
-
-A ala esquerda possuía posições mais próximas dos bolcheviques em relação à revolução e à questão agrária, embora não aceitasse necessariamente todas as decisões de Lenin.
-
-Os socialistas revolucionários de esquerda participaram inicialmente do governo soviético, enquanto os setores mais moderados e de direita se opuseram à tomada do poder bolchevique.
-
-Essa divisão torna inadequado tratar os SR como uma organização politicamente uniforme.
-
-Também ajuda a compreender por que o resultado eleitoral não pode ser interpretado como uma medida perfeitamente precisa do apoio a cada corrente que surgiu após a cisão partidária.`
+          "number": "13.4",
+          "title": "A divisão dos socialistas revolucionários",
+          "content": "O Partido Socialista Revolucionário estava dividido entre diferentes correntes.\n\nA ala esquerda possuía posições mais próximas dos bolcheviques em relação à revolução e à questão agrária, embora não aceitasse necessariamente todas as decisões de Lenin.\n\nOs socialistas revolucionários de esquerda participaram inicialmente do governo soviético, enquanto os setores mais moderados e de direita se opuseram à tomada do poder bolchevique.\n\nEssa divisão torna inadequado tratar os SR como uma organização politicamente uniforme.\n\nTambém ajuda a compreender por que o resultado eleitoral não pode ser interpretado como uma medida perfeitamente precisa do apoio a cada corrente que surgiu após a cisão partidária.\n\nA Assembleia Constituinte representava uma configuração política formada antes de Outubro, enquanto o governo soviético refletia a nova correlação de forças estabelecida após a insurreição.\n\nO conflito entre essas duas estruturas tornou-se inevitável."
         }
       ]
     },
     {
-      number: '14',
-      title: 'Janeiro de 1918: A Dissolução da Assembleia Constituinte',
-      content: '',
-      subsections: [
+      "number": "14",
+      "title": "JANEIRO DE 1918: A DISSOLUÇÃO DA ASSEMBLEIA CONSTITUINTE",
+      "subsections": [
         {
-          number: '14.1',
-          title: 'A abertura da sessão',
-          content: `A Assembleia Constituinte reuniu-se no Palácio Tauride, em Petrogrado, em 5 de janeiro de 1918 pelo calendário juliano, correspondente a 18 de janeiro no calendário gregoriano.
-
-A sessão começou em um ambiente de forte tensão política.
-
-Os representantes eleitos precisavam decidir sobre a organização do Estado, a questão agrária e a relação entre a Assembleia e as instituições soviéticas.
-
-Os bolcheviques defendiam que a Assembleia reconhecesse os decretos e as transformações políticas estabelecidas após Outubro.
-
-A maioria dos representantes não aceitou integralmente essa exigência.
-
-A divergência refletia duas concepções diferentes de legitimidade política.`
+          "number": "14.1",
+          "title": "A abertura da sessão",
+          "content": "A Assembleia Constituinte reuniu-se no Palácio Tauride, em Petrogrado, em 5 de janeiro de 1918 pelo calendário juliano, correspondente a 18 de janeiro pelo calendário gregoriano.\n\nA sessão começou em um ambiente de forte tensão política.\n\nOs representantes eleitos precisavam decidir sobre a organização do Estado, a questão agrária e a relação entre a Assembleia e as instituições soviéticas.\n\nOs bolcheviques defendiam que a Assembleia reconhecesse os decretos e as transformações políticas estabelecidas após Outubro.\n\nA maioria dos representantes não aceitou integralmente essa exigência.\n\nA divergência refletia duas concepções diferentes de legitimidade política."
         },
         {
-          number: '14.2',
-          title: 'O confronto entre o poder soviético e a representação parlamentar',
-          content: `Para os bolcheviques, os sovietes representavam diretamente os trabalhadores, soldados e camponeses e, portanto, deveriam possuir prioridade política sobre as instituições parlamentares tradicionais.
-
-A Assembleia, por outro lado, representava os eleitores de acordo com um processo nacional de votação.
-
-O conflito não era apenas uma disputa administrativa.
-
-Envolvia a própria definição de democracia: seria a legitimidade política derivada de eleições universais ou da representação revolucionária de classes sociais por meio dos sovietes?
-
-A questão tornou-se ainda mais delicada porque o resultado eleitoral não havia favorecido os bolcheviques.
-
-A Assembleia possuía uma maioria que não estava disposta a reconhecer integralmente a autoridade do governo estabelecido após a insurreição.`
+          "number": "14.2",
+          "title": "O confronto entre o poder soviético e a representação parlamentar",
+          "content": "Para os bolcheviques, os sovietes representavam diretamente os trabalhadores, soldados e camponeses e, portanto, deveriam possuir prioridade política sobre as instituições parlamentares tradicionais.\n\nA Assembleia, por outro lado, representava os eleitores de acordo com um processo nacional de votação.\n\nO conflito não era apenas uma disputa administrativa.\n\nEnvolvia a própria definição de democracia: seria a legitimidade política derivada de eleições nacionais ou da representação revolucionária de classes sociais por meio dos sovietes?\n\nA concepção bolchevique de democracia estava relacionada à ideia de que as instituições deveriam expressar os interesses das classes trabalhadoras e não apenas a vontade eleitoral considerada abstratamente.\n\nNessa perspectiva, os sovietes constituíam uma forma superior de representação porque reuniam trabalhadores, soldados e camponeses em organizações diretamente relacionadas à luta política.\n\nEntretanto, essa interpretação possuía uma dificuldade evidente: os próprios sovietes eram politicamente diversos e não estavam necessariamente sob controle bolchevique em todas as regiões.\n\nA Assembleia Constituinte, por sua vez, havia sido eleita por meio de um processo nacional e possuía uma maioria contrária à direção política do novo governo.\n\nA questão tornou-se ainda mais delicada porque os bolcheviques não haviam conquistado uma maioria eleitoral nacional.\n\nO confronto entre essas instituições envolvia, portanto, duas fontes distintas de legitimidade: a representação eleitoral e a representação revolucionária."
         },
         {
-          number: '14.3',
-          title: 'O encerramento da sessão',
-          content: `Durante a sessão, os representantes bolcheviques deixaram a Assembleia, seguidos posteriormente pelos socialistas revolucionários de esquerda.
-
-A reunião prosseguiu por algumas horas, mas a instituição não conseguiu estabelecer uma autoridade independente capaz de competir com o governo soviético.
-
-Na manhã seguinte, a Assembleia foi impedida de retomar seus trabalhos.
-
-A dissolução foi formalizada pelo Comitê Executivo Central de Toda a Rússia.
-
-A decisão encerrou a possibilidade de a instituição desempenhar o papel constitucional que lhe havia sido atribuído após a queda da monarquia.`
+          "number": "14.3",
+          "title": "O encerramento da sessão",
+          "content": "Durante a sessão, os representantes bolcheviques deixaram a Assembleia, seguidos posteriormente pelos socialistas revolucionários de esquerda.\n\nA reunião prosseguiu por algumas horas, mas a instituição não conseguiu estabelecer uma autoridade independente capaz de competir com o governo soviético.\n\nNa manhã seguinte, a Assembleia foi impedida de retomar seus trabalhos.\n\nA dissolução foi formalizada pelo Comitê Executivo Central de Toda a Rússia.\n\nA decisão encerrou a possibilidade de a instituição desempenhar o papel constitucional que lhe havia sido atribuído após a queda da monarquia.\n\nA dissolução não foi apenas uma consequência da incompatibilidade entre dois projetos políticos. Foi uma decisão tomada pelo governo revolucionário para impedir que uma instituição parlamentar independente pudesse limitar sua autoridade."
         },
         {
-          number: '14.4',
-          title: 'A justificativa de Lenin',
-          content: `Lenin defendeu a dissolução com base na superioridade política dos sovietes.
-
-Em seu projeto de decreto sobre a Assembleia Constituinte, argumentou que a representação parlamentar não poderia se sobrepor aos órgãos revolucionários considerados instrumentos de emancipação das classes trabalhadoras.
-
-A posição estava relacionada à concepção bolchevique de democracia de classe.
-
-Segundo essa interpretação, os sovietes expressavam uma forma superior de participação política porque representavam diretamente os trabalhadores e camponeses organizados.
-
-Entretanto, essa justificativa precisa ser examinada criticamente.
-
-O fato de os bolcheviques considerarem os sovietes superiores à representação parlamentar não elimina a questão de que a Assembleia havia sido eleita nacionalmente e possuía uma maioria contrária à direção política do novo governo.
-
-A dissolução impediu que a instituição eleita desenvolvesse uma alternativa constitucional ao poder soviético.`
+          "number": "14.4",
+          "title": "A justificativa de Lenin",
+          "content": "Lenin defendeu a dissolução com base na superioridade política dos sovietes.\n\nEm seu projeto de decreto sobre a Assembleia Constituinte, argumentou que a representação parlamentar não poderia se sobrepor aos órgãos revolucionários considerados instrumentos de emancipação das classes trabalhadoras.\n\nA posição estava relacionada à concepção bolchevique de democracia de classe.\n\nSegundo essa interpretação, os sovietes expressavam uma forma superior de participação política porque representavam diretamente os trabalhadores e camponeses organizados.\n\nA Assembleia, por sua vez, era considerada uma instituição vinculada a uma configuração política anterior à revolução de Outubro.\n\nEntretanto, essa justificativa precisa ser examinada criticamente.\n\nO fato de os bolcheviques considerarem os sovietes superiores à representação parlamentar não elimina a questão de que a Assembleia havia sido eleita nacionalmente e possuía uma maioria contrária à direção política do novo governo.\n\nA dissolução impediu que a instituição eleita desenvolvesse uma alternativa constitucional ao poder soviético.\n\nEssa decisão também revelou uma tensão fundamental no pensamento político bolchevique: a defesa da participação revolucionária das massas coexistia com a recusa em aceitar uma instituição representativa que pudesse contrariar a direção do partido."
         },
         {
-          number: '14.5',
-          title: 'O significado histórico da dissolução',
-          content: `A dissolução da Assembleia Constituinte foi um marco na concentração do poder político.
-
-O acontecimento demonstrou que o governo bolchevique não estava disposto a aceitar uma instituição parlamentar independente que pudesse limitar sua autoridade.
-
-Entretanto, não é adequado afirmar que todos os elementos do futuro sistema soviético já estavam completamente definidos naquele momento.
-
-A formação do regime de partido único foi um processo histórico que envolveu a Guerra Civil, a repressão aos adversários, a centralização administrativa e a transformação das instituições políticas.
-
-A dissolução da Assembleia foi um dos acontecimentos decisivos desse processo, pois eliminou uma importante possibilidade de organização parlamentar e pluralista.`
+          "number": "14.5",
+          "title": "O significado histórico da dissolução",
+          "content": "A dissolução da Assembleia Constituinte foi um marco na concentração do poder político.\n\nO acontecimento demonstrou que o governo bolchevique não estava disposto a aceitar uma instituição parlamentar independente que pudesse limitar sua autoridade.\n\nA decisão eliminou uma importante possibilidade de organização parlamentar e pluralista na Rússia revolucionária.\n\nA questão histórica não consiste apenas em determinar se a Assembleia poderia governar de maneira estável em meio à crise. É necessário considerar também que ela havia sido eleita e que sua dissolução impediu a continuidade de um processo de representação nacional.\n\nRichard Pipes interpreta a dissolução como uma demonstração decisiva da disposição bolchevique de concentrar o poder. Rabinowitch, por outro lado, chama atenção para a dinâmica política concreta de Petrogrado, para as divisões internas e para a relação entre o partido e os movimentos sociais. Fitzpatrick insere o episódio em um processo mais amplo de transformação institucional e social (PIPES, 1990; RABINOWITCH, 1976; FITZPATRICK, 2001).\n\nEntretanto, não é adequado afirmar que todos os elementos do futuro sistema soviético já estavam completamente definidos naquele momento.\n\nA formação do regime de partido único foi um processo histórico que envolveu a Guerra Civil, a repressão aos adversários, a centralização administrativa e a transformação das instituições políticas.\n\nA dissolução da Assembleia foi um dos acontecimentos decisivos desse processo, pois eliminou uma importante alternativa parlamentar e contribuiu para a concentração da autoridade no novo Estado."
         }
       ]
     },
     {
-      number: '15',
-      title: 'A Revolução e a Formação de um Novo Estado',
-      content: '',
-      subsections: [
+      "number": "15",
+      "title": "A REVOLUÇÃO E A FORMAÇÃO DE UM NOVO ESTADO",
+      "subsections": [
         {
-          number: '15.1',
-          title: 'O problema da legitimidade política',
-          content: `Entre fevereiro de 1917 e janeiro de 1918, a Rússia passou por uma transformação institucional extraordinária.
-
-A monarquia foi derrubada, o Governo Provisório fracassou, os bolcheviques assumiram o controle do Estado e a Assembleia Constituinte foi dissolvida.
-
-O novo governo reivindicava legitimidade revolucionária e afirmava representar os interesses das classes trabalhadoras.
-
-Seus adversários defendiam outras concepções de representação e organização política.
-
-A questão fundamental era determinar quem possuía autoridade para governar a Rússia.
-
-O resultado eleitoral da Assembleia Constituinte demonstrou que os bolcheviques não possuíam uma maioria nacional inequívoca, mas a organização controlava instituições decisivas em Petrogrado e possuía influência sobre importantes setores militares e operários.
-
-A concentração do poder resultou da combinação entre organização partidária, controle institucional, mobilização social e enfraquecimento dos adversários.`
+          "number": "15.1",
+          "title": "O problema da legitimidade política",
+          "content": "Entre fevereiro de 1917 e janeiro de 1918, a Rússia passou por uma transformação institucional extraordinária.\n\nA monarquia foi derrubada, o Governo Provisório fracassou, os bolcheviques assumiram o controle do Estado e a Assembleia Constituinte foi dissolvida.\n\nO novo governo reivindicava legitimidade revolucionária e afirmava representar os interesses das classes trabalhadoras.\n\nSeus adversários defendiam outras concepções de representação e organização política.\n\nA questão fundamental era determinar quem possuía autoridade para governar a Rússia.\n\nO resultado eleitoral da Assembleia Constituinte demonstrou que os bolcheviques não possuíam uma maioria nacional inequívoca, mas a organização controlava instituições decisivas em Petrogrado e possuía influência sobre importantes setores militares e operários.\n\nA concentração do poder resultou da combinação entre organização partidária, controle institucional, mobilização social e enfraquecimento dos adversários.\n\nÉ importante compreender que o processo não pode ser explicado apenas pela capacidade de Lenin e seus aliados. A crise do Estado imperial, a desorganização militar, a radicalização dos trabalhadores e camponeses e a incapacidade do Governo Provisório também foram condições fundamentais."
         },
         {
-          number: '15.2',
-          title: 'A Paz de Brest-Litovsk',
-          content: `A saída da Primeira Guerra Mundial tornou-se uma das principais dificuldades do novo governo.
-
-As negociações com as Potências Centrais foram realizadas em Brest-Litovsk.
-
-O tratado foi assinado em março de 1918 e impôs à Rússia perdas territoriais e estratégicas extremamente significativas.
-
-A decisão provocou divergências dentro do movimento revolucionário.
-
-Lenin defendia a assinatura do tratado, considerando que a Rússia precisava abandonar a guerra para preservar o governo revolucionário.
-
-Trotsky apresentou uma estratégia intermediária, enquanto setores dos bolcheviques e dos socialistas revolucionários de esquerda rejeitavam as concessões.
-
-A assinatura do tratado demonstrou que a revolução precisava enfrentar problemas concretos de sobrevivência estatal, além das disputas ideológicas.`
+          "number": "15.2",
+          "title": "A Paz de Brest-Litovsk",
+          "content": "A saída da Primeira Guerra Mundial tornou-se uma das principais dificuldades do novo governo.\n\nAs negociações com as Potências Centrais foram realizadas em Brest-Litovsk.\n\nO tratado foi assinado em 3 de março de 1918 e impôs à Rússia perdas territoriais e estratégicas extremamente significativas.\n\nA decisão provocou divergências dentro do movimento revolucionário.\n\nLenin defendia a assinatura do tratado, considerando que a Rússia precisava abandonar a guerra para preservar o governo revolucionário.\n\nTrotsky apresentou uma estratégia intermediária, baseada na tentativa de encerrar a participação russa na guerra sem aceitar imediatamente as condições alemãs. Essa política fracassou diante da retomada da ofensiva alemã.\n\nSetores dos bolcheviques e dos socialistas revolucionários de esquerda rejeitavam as concessões.\n\nA assinatura do tratado demonstrou que a revolução precisava enfrentar problemas concretos de sobrevivência estatal, além das disputas ideológicas.\n\nEmbora Brest-Litovsk ultrapasse o marco principal da dissolução da Assembleia, sua inclusão neste tópico permite compreender uma decisão tomada imediatamente depois do período central do capítulo."
         },
         {
-          number: '15.3',
-          title: 'A formação da oposição armada',
-          content: `A tomada do poder não foi aceita por todos os setores políticos e sociais.
-
-Diferentes organizações, antigos militares, grupos conservadores, socialistas contrários aos bolcheviques e movimentos regionais passaram a se opor ao novo governo.
-
-A oposição não possuía uma composição uniforme.
-
-Havia defensores da restauração monárquica, liberais, socialistas moderados, nacionalistas e grupos que pretendiam preservar formas alternativas de organização revolucionária.
-
-A crescente instabilidade contribuiu para o desenvolvimento da Guerra Civil Russa, que se intensificaria entre 1918 e 1922.`
+          "number": "15.3",
+          "title": "A formação da oposição armada",
+          "content": "A tomada do poder não foi aceita por todos os setores políticos e sociais.\n\nDiferentes organizações, antigos militares, grupos conservadores, socialistas contrários aos bolcheviques e movimentos regionais passaram a se opor ao novo governo.\n\nA oposição não possuía uma composição uniforme.\n\nHavia defensores da restauração monárquica, liberais, socialistas moderados, nacionalistas e grupos que pretendiam preservar formas alternativas de organização revolucionária.\n\nEssas forças não compartilhavam necessariamente um programa comum. Sua oposição ao governo bolchevique não significava que desejassem restaurar a monarquia ou estabelecer o mesmo modelo político.\n\nA crescente instabilidade contribuiu para o desenvolvimento da Guerra Civil Russa, que se intensificaria entre 1918 e 1922.\n\nA Guerra Civil não foi uma simples consequência automática da Revolução de Outubro. Resultou da combinação entre a disputa pelo poder, a fragmentação territorial, os conflitos sociais, as intervenções estrangeiras e a resistência de diferentes forças políticas."
         },
         {
-          number: '15.4',
-          title: 'A centralização e o início da repressão política',
-          content: `A consolidação do novo governo envolveu a criação de instituições destinadas a preservar o poder revolucionário.
-
-Em dezembro de 1917, foi criada a Comissão Extraordinária de Toda a Rússia para o Combate à Contrarrevolução e à Sabotagem, conhecida como Cheka, sob a direção de Felix Dzerzhinsky.
-
-A organização tornou-se um instrumento de segurança política e repressão aos considerados adversários da revolução.
-
-Sua criação ocorreu em um contexto de crise, mas também representou a institucionalização de mecanismos coercitivos do novo Estado.
-
-A utilização da repressão, o controle da imprensa, as restrições à oposição e a crescente concentração do poder seriam características importantes da transformação política soviética.
-
-O processo ainda não estava concluído em janeiro de 1918, mas suas bases institucionais estavam sendo estabelecidas.`
+          "number": "15.4",
+          "title": "A centralização e o início da repressão política",
+          "content": "A consolidação do novo governo envolveu a criação de instituições destinadas a preservar o poder revolucionário.\n\nEm dezembro de 1917, foi criada a Comissão Extraordinária de Toda a Rússia para o Combate à Contrarrevolução e à Sabotagem, conhecida como Cheka, sob a direção de Felix Dzerzhinsky.\n\nA organização surgiu em um contexto de crise administrativa, sabotagem, oposição política e temor de ações contrarrevolucionárias.\n\nSua finalidade oficial era identificar e combater atividades consideradas ameaças à revolução.\n\nA criação da Cheka representou a institucionalização de um mecanismo de segurança política subordinado ao novo governo.\n\nÉ importante distinguir a finalidade oficialmente declarada da instituição e suas práticas posteriores. Nos primeiros meses, a Cheka ainda estava em processo de organização; durante a Guerra Civil, suas atividades se expandiriam e se tornariam um instrumento importante da repressão política.\n\nA utilização da repressão, o controle da imprensa, as restrições à oposição e a crescente concentração do poder seriam características importantes da transformação política soviética.\n\nO processo ainda não estava concluído em janeiro de 1918, mas suas bases institucionais estavam sendo estabelecidas.\n\nA dissolução da Assembleia Constituinte, a criação da Cheka e a centralização das instituições governamentais constituíram acontecimentos distintos, mas relacionados à formação de um novo Estado revolucionário."
         }
       ]
     }
   ],
-  conclusion: `A Revolução Russa de 1917 foi resultado de um processo histórico que combinou transformações econômicas, desigualdades sociais, conflitos políticos, mobilização popular e crise militar.
-
-A estrutura autocrática do Império, a questão agrária, a industrialização desigual e a fragilidade das instituições representativas criaram tensões que se acumularam durante décadas.
-
-A Revolução de 1905 demonstrou a vulnerabilidade do czarismo, mas não conseguiu derrubar a monarquia. As reformas posteriores, especialmente as iniciativas de Stolypin, não solucionaram os conflitos fundamentais da sociedade russa.
-
-A Primeira Guerra Mundial agravou as dificuldades econômicas e militares e contribuiu para destruir a autoridade de Nicolau II. Em fevereiro de 1917, manifestações populares e a rebelião de setores do Exército provocaram a queda dos Romanov.
-
-O Governo Provisório tentou organizar uma nova autoridade política, mas enfrentou dificuldades para solucionar a guerra, a questão agrária e a crise econômica. A coexistência com os sovietes criou uma situação de dualidade de poder, enquanto diferentes organizações socialistas disputavam a direção da revolução.
-
-Lenin e os bolcheviques conseguiram ampliar sua influência ao defender demandas populares e organizar uma estratégia de conquista do Estado. A insurreição de outubro foi uma operação política e militar organizada, realizada em uma conjuntura de profunda desagregação institucional.
-
-A tomada do poder não significou, entretanto, a existência de um consenso nacional em torno do programa bolchevique. As eleições para a Assembleia Constituinte demonstraram que os socialistas revolucionários haviam conquistado o maior contingente eleitoral, enquanto os bolcheviques não possuíam maioria nacional.
-
-A dissolução da Assembleia, em janeiro de 1918, representou uma decisão decisiva para o futuro político da Rússia. Ao impedir que uma instituição eleita desempenhasse sua função constitucional, o governo bolchevique eliminou uma importante alternativa parlamentar à organização soviética.
-
-A partir desse momento, a revolução passou a desenvolver-se em um cenário de guerra, centralização administrativa e crescente repressão política. A consolidação do poder bolchevique não foi um resultado automático de Outubro, mas um processo histórico construído por decisões políticas, conflitos sociais e transformações institucionais.
-
-A Revolução Russa precisa ser compreendida simultaneamente como uma revolução social, uma crise do Estado imperial, uma disputa entre diferentes projetos socialistas e uma operação organizada de conquista do poder.
-
-Reconhecer a participação popular e a existência de demandas sociais profundas não significa afirmar que os bolcheviques representavam integralmente a vontade de toda a população. Da mesma forma, reconhecer a dimensão insurrecional da tomada do poder não significa ignorar as condições históricas que tornaram possível a queda do Governo Provisório.
-
-O período de 1894 a 1918 estabeleceu as bases de uma transformação que ultrapassaria as fronteiras russas e influenciaria profundamente a história mundial. A formação do Estado soviético, as disputas internas do movimento comunista, a Guerra Civil, o governo de Lenin e a posterior ascensão de Stalin precisam ser compreendidos a partir dessas origens.
-
-A Revolução de 1917 não encerrou a história do Império Russo apenas para substituí-lo por um sistema político completamente definido. Ela abriu uma nova etapa histórica, marcada por disputas sobre o significado do socialismo, os limites da democracia, a organização econômica e a concentração do poder estatal.
-
----
-NOTA EDITORIAL: Este capítulo apresenta o período de formação da crise revolucionária e da conquista inicial do poder pelos bolcheviques. A Guerra Civil Russa, a organização do Terror Vermelho, a consolidação do partido único e a formação definitiva das instituições soviéticas são examinadas em registros próprios, evitando antecipar ou resumir excessivamente os temas dos capítulos seguintes.`,
-  bibliographicReferences: [
-    'FITZPATRICK, Sheila. The Russian Revolution. 2. ed. Oxford: Oxford University Press, 2001.',
-    'FIGES, Orlando. A People\'s Tragedy: The Russian Revolution, 1891–1924. Londres: Jonathan Cape, 1996.',
-    'LOHR, Eric. War and revolution, 1914–1917. In: LIEVEN, Dominic (ed.). The Cambridge History of Russia. Cambridge: Cambridge University Press, 2008.',
-    'MELANCON, Michael. From the Head of Zeus: The Petrograd Soviet’s Rise and First Days, 27 February–2 March 1917. The Carl Beck Papers in Russian and East European Studies, 2009.',
-    'PIPES, Richard. The Russian Revolution. Nova York: Alfred A. Knopf, 1990.',
-    'RABINOWITCH, Alexander. The Bolsheviks Come to Power: The Revolution of 1917 in Petrograd. Nova York: W. W. Norton, 1976.',
-    'RABINOWITCH, Alexander. The Bolsheviks in Power: The First Year of Soviet Rule in Petrograd. Bloomington: Indiana University Press, 2007.',
-    'RADKEY, Oliver H. Russia Goes to the Polls: The Election to the All-Russian Constituent Assembly, 1917. Ithaca: Cornell University Press, 1950. Reedição: 2019.',
-    'WADE, Rex A. The Russian Revolution, 1917. 3. ed. Cambridge: Cambridge University Press, 2017.',
-    'YANNEY, George L. The Concept of the Stolypin Land Reform. Slavic Review. Cambridge University Press, 2017.',
-    'LENIN, Vladimir I. What Is to Be Done? 1902.',
-    'LENIN, Vladimir I. The April Theses. Abril de 1917.',
-    'LENIN, Vladimir I. Decree on Peace. 26 de outubro (8 de novembro) de 1917.',
-    'LENIN, Vladimir I. Decree on Land. 26 de outubro (8 de novembro) de 1917.',
-    'LENIN, Vladimir I. Declaration of the Rights of the Peoples of Russia. 2 (15) de novembro de 1917.',
-    'LENIN, Vladimir I. Draft Decree on the Dissolution of the Constituent Assembly. Janeiro de 1918. In: Collected Works, v. 26. Moscou: Progress Publishers, 1972.',
-    'RÚSSIA. Manifesto de Outubro. 17 (30) de outubro de 1905.',
-    'SOVIETE DE PETROGRADO. Ordem nº 1. 1º (14) de março de 1917.',
-    'RÚSSIA. Ato de Abdicação de Nicolau II. 2 (15) de março de 1917.',
-    'RÚSSIA. Tratado de Brest-Litovsk. 3 de março de 1918.'
+  "conclusion": "CONCLUSÃO\n\nA Revolução Russa de 1917 foi resultado de um processo histórico que combinou transformações econômicas, desigualdades sociais, conflitos políticos, mobilização popular e crise militar.\n\nA estrutura autocrática do Império, a questão agrária, a industrialização desigual e a fragilidade das instituições representativas criaram tensões que se acumularam durante décadas.\n\nA Revolução de 1905 demonstrou a vulnerabilidade do czarismo, mas não conseguiu derrubar a monarquia. As reformas posteriores, especialmente as iniciativas de Stolypin, não solucionaram os conflitos fundamentais da sociedade russa.\n\nA Primeira Guerra Mundial agravou as dificuldades econômicas e militares e contribuiu para destruir a autoridade de Nicolau II. Em fevereiro de 1917, manifestações populares e a rebelião de setores do Exército provocaram a queda dos Romanov.\n\nO Governo Provisório tentou organizar uma nova autoridade política, mas enfrentou dificuldades para solucionar a guerra, a questão agrária e a crise econômica. A coexistência com os sovietes criou uma situação de dualidade de poder, enquanto diferentes organizações socialistas disputavam a direção da revolução.\n\nLenin e os bolcheviques conseguiram ampliar sua influência ao defender demandas populares e organizar uma estratégia de conquista do Estado. A insurreição de outubro foi uma operação política e militar organizada, realizada em uma conjuntura de profunda desagregação institucional.\n\nA tomada do poder não significou, entretanto, a existência de um consenso nacional em torno do programa bolchevique. As eleições para a Assembleia Constituinte demonstraram que os socialistas revolucionários haviam conquistado o maior contingente eleitoral, enquanto os bolcheviques não possuíam maioria nacional.\n\nA dissolução da Assembleia, em janeiro de 1918, representou uma decisão decisiva para o futuro político da Rússia. Ao impedir que uma instituição eleita desempenhasse sua função constitucional, o governo bolchevique eliminou uma importante alternativa parlamentar à organização soviética.\n\nEsse episódio expressou uma contradição fundamental da revolução: a reivindicação de uma nova forma de democracia, baseada nos sovietes, coexistiu com a concentração da autoridade política e com a eliminação de uma instituição representativa eleita nacionalmente.\n\nA partir desse momento, a revolução passou a desenvolver-se em um cenário de guerra, centralização administrativa e crescente repressão política. A consolidação do poder bolchevique não foi um resultado automático de Outubro, mas um processo histórico construído por decisões políticas, conflitos sociais e transformações institucionais.\n\nA Revolução Russa precisa ser compreendida simultaneamente como uma revolução social, uma crise do Estado imperial, uma disputa entre diferentes projetos socialistas e uma operação organizada de conquista do poder.\n\nReconhecer a participação popular e a existência de demandas sociais profundas não significa afirmar que os bolcheviques representavam integralmente a vontade de toda a população. Da mesma forma, reconhecer a dimensão insurrecional da tomada do poder não significa ignorar as condições históricas que tornaram possível a queda do Governo Provisório.\n\nO período de 1894 a 1918 estabeleceu as bases de uma transformação que ultrapassaria as fronteiras russas e influenciaria profundamente a história mundial. A formação do Estado soviético, as disputas internas do movimento comunista, a Guerra Civil, o governo de Lenin e a posterior ascensão de Stalin precisam ser compreendidos a partir dessas origens.\n\nA Revolução de 1917 não encerrou a história do Império Russo apenas para substituí-lo por um sistema político completamente definido. Ela abriu uma nova etapa histórica, marcada por disputas sobre o significado do socialismo, os limites da democracia, a organização econômica e a concentração do poder estatal.\n\nNOTA EDITORIAL\n\nEste capítulo apresenta o período de formação da crise revolucionária e da conquista inicial do poder pelos bolcheviques, abrangendo os acontecimentos entre 1894 e 1918.\n\nA Guerra Civil Russa, a organização e expansão do Terror Vermelho, a consolidação do partido único, a Nova Política Econômica, as disputas internas do Partido Bolchevique e a formação definitiva das instituições soviéticas são examinadas em registros próprios, evitando antecipar ou resumir excessivamente os temas dos capítulos seguintes.\n\nA interpretação histórica aqui desenvolvida procura distinguir os acontecimentos documentados, as justificativas políticas dos protagonistas e as interpretações produzidas posteriormente pela historiografia.",
+  "bibliographicReferences": [
+    "REFERÊNCIAS BIBLIOGRÁFICAS",
+    "1. Historiografia e estudos acadêmicos",
+    "FITZPATRICK, Sheila. *The Russian Revolution*. 2. ed. Oxford: Oxford University Press, 2001.",
+    "FIGES, Orlando. *A People's Tragedy: The Russian Revolution, 1891–1924*. Londres: Jonathan Cape, 1996.",
+    "LOHR, Eric. War and revolution, 1914–1917. In: LIEVEN, Dominic (ed.). *The Cambridge History of Russia*. Cambridge: Cambridge University Press, 2008.",
+    "MELANCON, Michael. *From the Head of Zeus: The Petrograd Soviet's Rise and First Days, 27 February–2 March 1917*. Pittsburgh: The Carl Beck Papers in Russian and East European Studies, 2009.",
+    "PIPES, Richard. *The Russian Revolution*. Nova York: Alfred A. Knopf, 1990.",
+    "RABINOWITCH, Alexander. *The Bolsheviks Come to Power: The Revolution of 1917 in Petrograd*. Nova York: W. W. Norton, 1976.",
+    "RABINOWITCH, Alexander. *The Bolsheviks in Power: The First Year of Soviet Rule in Petrograd*. Bloomington: Indiana University Press, 2007.",
+    "RADKEY, Oliver H. *Russia Goes to the Polls: The Election to the All-Russian Constituent Assembly, 1917*. Ithaca: Cornell University Press, 1950.",
+    "SCHAPIRO, Leonard. *The Russian Revolutions of 1917: The Origins of Modern Communism*. Londres: Oxford University Press, 1984.",
+    "SMITH, S. A. *Russia in Revolution: An Empire in Crisis, 1890 to 1928*. Oxford: Oxford University Press, 2017.",
+    "WADE, Rex A. *The Russian Revolution, 1917*. 3. ed. Cambridge: Cambridge University Press, 2017.",
+    "2. Fontes primárias e documentos históricos",
+    "LENIN, Vladimir I. *What Is to Be Done?* 1902.",
+    "LENIN, Vladimir I. *The April Theses*. Abril de 1917.",
+    "LENIN, Vladimir I. *Decree on Peace*. 26 de outubro (8 de novembro) de 1917.",
+    "LENIN, Vladimir I. *Decree on Land*. 26 de outubro (8 de novembro) de 1917.",
+    "LENIN, Vladimir I. *Declaration of the Rights of the Peoples of Russia*. 2 (15) de novembro de 1917.",
+    "LENIN, Vladimir I. *Draft Decree on the Dissolution of the Constituent Assembly*. Janeiro de 1918. In: *Collected Works*, v. 26. Moscou: Progress Publishers, 1972.",
+    "RÚSSIA. *Manifesto de Outubro*. 17 (30) de outubro de 1905.",
+    "RÚSSIA. *Ato de Abdicação de Nicolau II*. 2 (15) de março de 1917.",
+    "SOVIETE DE PETROGRADO. *Ordem nº 1*. 1º (14) de março de 1917.",
+    "RÚSSIA. *Tratado de Brest-Litovsk*. 3 de março de 1918."
   ]
 };

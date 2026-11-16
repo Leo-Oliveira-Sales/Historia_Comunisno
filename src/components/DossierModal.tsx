@@ -1316,7 +1316,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                     Introdução
                   </h3>
                   {chapter.introduction.split('\n\n').map((paragraph, pIdx) => (
-                    <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words ${getFontSizeClass('body')}`}>
+                    <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words whitespace-pre-line ${getFontSizeClass('body')}`}>
                       {paragraph}
                     </p>
                   ))}
@@ -1382,7 +1382,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                             }
                           }
                           return (
-                            <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words ${getFontSizeClass('body')}`}>
+                            <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words whitespace-pre-line ${getFontSizeClass('body')}`}>
                               {paragraph}
                             </p>
                           );
@@ -1398,7 +1398,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                       </h4>
                       <div className="space-y-3">
                         {sub.content.split('\n\n').map((paragraph, pIdx) => (
-                          <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words ${getFontSizeClass('body')}`}>
+                          <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words whitespace-pre-line ${getFontSizeClass('body')}`}>
                             {paragraph}
                           </p>
                         ))}
@@ -1421,7 +1421,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
                 <div className="space-y-4">
                   {chapter.conclusion.split('\n\n').map((paragraph, pIdx) => (
-                    <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words ${getFontSizeClass('body')}`}>
+                    <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words whitespace-pre-line ${getFontSizeClass('body')}`}>
                       {paragraph}
                     </p>
                   ))}
