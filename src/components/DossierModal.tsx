@@ -19,14 +19,19 @@ import { Topic105SynthesisView } from './Topic105SynthesisView';
 import { Topic106EssayView } from './Topic106EssayView';
 import { Topic107EssayView } from './Topic107EssayView';
 import { Topic108EssayView } from './Topic108EssayView';
+import { Topic109EssayView } from './Topic109EssayView';
 import { Topic106ChroniclesView } from './Topic106ChroniclesView';
 import { Topic107ChroniclesView } from './Topic107ChroniclesView';
 import { Topic108ChroniclesView } from './Topic108ChroniclesView';
+import { Topic109ChroniclesView } from './Topic109ChroniclesView';
 import { Topic106CitationsView } from './Topic106CitationsView';
 import { Topic107CitationsView } from './Topic107CitationsView';
 import { Topic108CitationsView } from './Topic108CitationsView';
+import { Topic109CitationsView } from './Topic109CitationsView';
 import { Topic108AdvancedInvestigationView } from './Topic108AdvancedInvestigationView';
 import { RAW_ADVANCED_INVESTIGATION_08 } from '../data/advanced/advanced_ideologias_08';
+import { Topic109AdvancedInvestigationView } from './Topic109AdvancedInvestigationView';
+import { RAW_ADVANCED_INVESTIGATION_09 } from '../data/advanced/advanced_ideologias_09';
 import { Topic111CitationsView } from './Topic111CitationsView';
 import { Topic111ChroniclesView } from './Topic111ChroniclesView';
 import { Topic112SynthesisView } from './Topic112SynthesisView';
@@ -104,7 +109,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const canonicalDossier = getCanonicalEditorialDossier(topic.id);
   const researchDossierText = RESEARCH_DOSSIERS[topic.id] || IDEOLOGIAS_RESEARCH_DOSSIERS[topic.id];
   const advancedInvestigation = topic.id === 112 ? undefined : ADVANCED_INVESTIGATIONS_DATABASE[topic.id];
-  const hasAdvancedInvestigation = Boolean(advancedInvestigation) || topic.id === 108;
+  const hasAdvancedInvestigation = Boolean(advancedInvestigation) || topic.id === 108 || topic.id === 109;
   const marketLaws = (topic.id === 103 || topic.id === 105) ? MARKET_LAWS_CHAPTERS[topic.id] : undefined;
 
   // Numeração sequencial organizada das abas (com Ensaio Acadêmico unificado e Citações & Documentos unificados)
@@ -150,6 +155,10 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const copyAdvancedInvestigation = () => {
     if (topic.id === 108) {
       copyToClipboard(RAW_ADVANCED_INVESTIGATION_08, 'advanced_investigation');
+      return;
+    }
+    if (topic.id === 109) {
+      copyToClipboard(RAW_ADVANCED_INVESTIGATION_09, 'advanced_investigation');
       return;
     }
     if (!advancedInvestigation) return;
@@ -504,6 +513,21 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'DOS', label: 'Dossiê de Pesquisa', target: 'essay-research-dossier-master' },
         ];
       }
+      if (topic.id === 109) {
+        return [
+          { num: 'ENS', label: '1. Ensaio Acadêmico', target: 'essay-master' },
+          { num: '1', label: 'Introdução: Conciliação', target: 'essay-sec-1' },
+          { num: '2', label: '2. Bernstein', target: 'essay-sec-2' },
+          { num: '3', label: '3. Keynes e Estado', target: 'essay-sec-3' },
+          { num: '4', label: '4. Beveridge e NHS', target: 'essay-sec-4' },
+          { num: '5', label: '5. Bad Godesberg', target: 'essay-sec-5' },
+          { num: '6', label: '6. Rawls e Sen', target: 'essay-sec-6' },
+          { num: '7', label: '7. Limites do Reformismo', target: 'essay-sec-7' },
+          { num: '8', label: 'Conclusão', target: 'essay-sec-8' },
+          { num: 'SÍN', label: '2. Síntese Acadêmica', target: 'essay-synthese-master' },
+          { num: 'DOS', label: '3. Dossiê de Pesquisa', target: 'essay-research-dossier-master' },
+        ];
+      }
       return [
         { num: 'ENS', label: '1. Ensaio Acadêmico', target: 'essay-master' },
         { num: 'I', label: 'I. Síntese e Antecedentes', target: 'essay-sec-1' },
@@ -557,6 +581,19 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'CR-VIII', label: 'VIII. Berlim (1945)', target: 'cronica-8' },
         ];
       }
+      if (topic.id === 109) {
+        return [
+          { num: 'CR-I', label: 'I. Operário (1899)', target: 'cronica-1' },
+          { num: 'CR-II', label: 'II. Desemprego (1929)', target: 'cronica-2' },
+          { num: 'CR-III', label: 'III. Cinco Gigantes (1942)', target: 'cronica-3' },
+          { num: 'CR-IV', label: 'IV. Manhã do NHS (1948)', target: 'cronica-4' },
+          { num: 'CR-V', label: 'V. Bad Godesberg (1959)', target: 'cronica-5' },
+          { num: 'CR-VI', label: 'VI. Véu da Ignorância', target: 'cronica-6' },
+          { num: 'CR-VII', label: 'VII. Mesma Renda', target: 'cronica-7' },
+          { num: 'CR-VIII', label: 'VIII. Contrato Séc. XXI', target: 'cronica-8' },
+          { num: 'NOTA', label: 'Nota Histórica', target: 'cronica-nota' },
+        ];
+      }
       if (topic.id === 111 || (topic.categoryNumber === '10' && topic.title.toLowerCase().includes('comunismo'))) {
         return [
           { num: 'CRONO', label: 'Cronologia (1949–1975)', target: 'stories-crono' },
@@ -608,6 +645,17 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'BIB', label: 'Bibliografia Documental', target: 'cit-parte-9' },
         ];
       }
+      if (topic.id === 109) {
+        return [
+          { num: 'I', label: 'I. Citações Fundamentais', target: 'cit-parte-1' },
+          { num: 'II', label: 'II. Documentos Essenciais', target: 'cit-parte-2' },
+          { num: 'III', label: 'III. Autores e Obras', target: 'cit-parte-3' },
+          { num: 'IV', label: 'IV. Docs Complementares', target: 'cit-parte-4' },
+          { num: 'V', label: 'V. Bibliografia Avançada', target: 'cit-parte-5' },
+          { num: 'VI', label: 'VI. Fontes Digitais', target: 'cit-parte-6' },
+          { num: 'CON', label: 'Conclusão Documental', target: 'cit-parte-7' },
+        ];
+      }
       return [
         { num: 'I', label: 'I. Citações Literais', target: 'cit-block-1' },
         { num: 'II', label: 'II. Sínteses & Análises', target: 'cit-block-2' },
@@ -645,6 +693,26 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'SÍN', label: 'Síntese Final', target: 'adv-sec-synthesis' },
           { num: 'BIB', label: 'Bibliografia Geral', target: 'adv-sec-bibliography' },
           { num: 'MET', label: 'Observação Metodológica', target: 'adv-sec-methodology' },
+        ];
+      }
+      if (topic.id === 109) {
+        return [
+          { num: 'INT', label: 'Introdução', target: 'adv-sec-intro' },
+          { num: '01', label: '01. Bernstein: Revisionismo', target: 'adv-sec-1' },
+          { num: '02', label: '02. Keynes: Estado e Crise', target: 'adv-sec-2' },
+          { num: '03', label: '03. Beveridge: Welfare State', target: 'adv-sec-3' },
+          { num: '04', label: '04. Bad Godesberg (1959)', target: 'adv-sec-4' },
+          { num: '05', label: '05. Bobbio: Liberdade/Igualdade', target: 'adv-sec-5' },
+          { num: '06', label: '06. Rawls: Justiça Equitativa', target: 'adv-sec-6' },
+          { num: '07', label: '07. Sen: Capacidades', target: 'adv-sec-7' },
+          { num: '08', label: '08. Crise Pós-1970', target: 'adv-sec-8' },
+          { num: '09', label: '09. Globalização e Direitos', target: 'adv-sec-9' },
+          { num: '10', label: '10. Século XXI e Clima', target: 'adv-sec-10' },
+          { num: 'CON', label: 'Conclusão Geral', target: 'adv-sec-conclusion' },
+          { num: 'BIB', label: 'Bibliografia Geral', target: 'adv-sec-bibliography' },
+          { num: 'DOC', label: 'Documentos Primários', target: 'adv-sec-primary' },
+          { num: 'DIG', label: 'Fontes Digitais', target: 'adv-sec-digital' },
+          { num: 'NOT', label: 'Nota Metodológica', target: 'adv-sec-methodology' },
         ];
       }
       return [
@@ -894,7 +962,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               }`}
             >
               <Sparkles className="w-3.5 h-3.5 shrink-0" />
-              <span>{advTabNum}. {topic.id === 108 ? 'INVESTIGAÇÃO AVANÇADA' : 'Investigação Avançada'}</span>
+              <span>{advTabNum}. {(topic.id === 108 || topic.id === 109) ? 'INVESTIGAÇÃO AVANÇADA' : 'Investigação Avançada'}</span>
             </button>
           )}
 
@@ -1000,7 +1068,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               }`}
             >
               <Sparkles className="w-3.5 h-3.5 shrink-0" />
-              <span>{advTabNum}. {topic.id === 108 ? 'INVESTIGAÇÃO AVANÇADA' : 'Investigação Avançada'}</span>
+              <span>{advTabNum}. {(topic.id === 108 || topic.id === 109) ? 'INVESTIGAÇÃO AVANÇADA' : 'Investigação Avançada'}</span>
             </button>
           )}
 
@@ -1395,6 +1463,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                   <Topic107EssayView getFontSizeClass={getFontSizeClass} />
                 ) : topic.id === 108 ? (
                   <Topic108EssayView getFontSizeClass={getFontSizeClass} />
+                ) : topic.id === 109 ? (
+                  <Topic109EssayView getFontSizeClass={getFontSizeClass} />
                 ) : essay ? (
                   <div className="space-y-8 w-full">
               {/* Header Banner */}
@@ -1675,6 +1745,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               <Topic107ChroniclesView getFontSizeClass={getFontSizeClass} />
             ) : topic.id === 108 ? (
               <Topic108ChroniclesView getFontSizeClass={getFontSizeClass} />
+            ) : topic.id === 109 ? (
+              <Topic109ChroniclesView getFontSizeClass={getFontSizeClass} />
             ) : (topic.id === 111 || (topic.categoryNumber === '10' && topic.title.toLowerCase().includes('comunismo'))) ? (
               <Topic111ChroniclesView getFontSizeClass={getFontSizeClass} />
             ) : topic.id === 112 ? (
@@ -1811,6 +1883,13 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               return (
                 <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
                   <Topic108CitationsView getFontSizeClass={getFontSizeClass} />
+                </div>
+              );
+            }
+            if (topic.id === 109) {
+              return (
+                <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+                  <Topic109CitationsView getFontSizeClass={getFontSizeClass} />
                 </div>
               );
             }
@@ -2350,6 +2429,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               />
             ) : topic.id === 108 ? (
               <Topic108AdvancedInvestigationView getFontSizeClass={getFontSizeClass} />
+            ) : topic.id === 109 ? (
+              <Topic109AdvancedInvestigationView getFontSizeClass={getFontSizeClass} />
             ) : advancedInvestigation ? (
               <article className="space-y-6 max-w-4xl mx-auto w-full box-border overflow-hidden">
               <div className="bg-[#161619] border border-amber-500/70 p-6 sm:p-8 rounded-2xl shadow-2xl space-y-6">

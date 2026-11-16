@@ -1788,23 +1788,126 @@ A finalidade deste capítulo é compreender esses processos com rigor documental
 - TOOZE, Adam. *The Wages of Destruction*. London: Allen Lane, 2006.
 - WEINDLING, Paul. *Health, Race and German Politics between National Unification and Nazism, 1870–1945*. Cambridge: Cambridge University Press, 1989.`,
 
-  109: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
-# DOSSIÊ ACADÊMICO Nº 09: SOCIAL-DEMOCRACIA E DEMOCRACIA LIBERAL
+  109: `# 3. DOSSIÊ ACADÊMICO DE PESQUISA
 
-**Eixo Temático:** Revisionismo, Estado de Bem-Estar Social, Keynesianismo e o Pacto Democrático (1899–Presente)
-**Especialistas de Referência:** Eduard Bernstein, John Maynard Keynes, Norberto Bobbio, Amartya Sen, John Rawls
+## 3.1. Problema central
 
----
+A expansão do Estado de Bem-Estar Social representou uma transformação estrutural do capitalismo ou apenas um mecanismo de estabilização das relações sociais?
 
-## 1. IDENTIFICAÇÃO E PROBLEMA HISTÓRICO
-De que maneira o reformismo parlamentar domesticou o capitalismo selvagem e consagrou a aliança virtuosa entre liberdades civis constitucionais e direitos sociais universais?
+## 3.2. Hipótese de pesquisa
 
-## 2. ETAPAS FUNDAMENTAIS
-- O Revisionismo de Eduard Bernstein (1899): abandono do catastrofismo em favor das conquistas graduais da democracia.
-- A revolução macroeconômica de John Maynard Keynes (1936) e o papel do Estado na garantia do pleno emprego.
-- O Relatório Beveridge (1942) na Grã-Bretanha e a criação do Serviço Nacional de Saúde (NHS).
-- O Programa de Bad Godesberg (1959) do SPD alemão: a conversão formal em partido de todo o povo e a aceitação da economia social de mercado.
-- A teoria da justiça como equidade de John Rawls e a ampliação das liberdades substantivas de Amartya Sen.`,
+O Estado Social de Direito representou uma transformação institucional significativa, pois ampliou a cidadania e submeteu parte das relações econômicas a mecanismos democráticos de regulação.
+
+Entretanto, não eliminou a propriedade privada, a concentração patrimonial nem os conflitos distributivos. Sua capacidade de reduzir desigualdades dependeu de condições econômicas, políticas e institucionais específicas.
+
+## 3.3. Objetivo geral
+
+Analisar a formação histórica da social-democracia contemporânea e sua contribuição para a construção do Estado Social de Direito.
+
+## 3.4. Objetivos específicos
+
+1. Examinar o revisionismo de Bernstein.
+2. Investigar a transformação promovida pela teoria keynesiana.
+3. Analisar o Relatório Beveridge e a criação do NHS.
+4. Compreender a expansão do Welfare State europeu.
+5. Estudar a transformação programática do SPD em Bad Godesberg.
+6. Examinar as relações entre liberalismo, democracia e direitos sociais em Bobbio.
+7. Analisar a teoria da justiça de Rawls.
+8. Investigar a abordagem das capacidades de Amartya Sen.
+9. Avaliar a crise do consenso do pós-guerra.
+10. Examinar os desafios contemporâneos da social-democracia.
+
+## 3.5. Questões fundamentais de investigação
+
+**Questão 1 — Bernstein:** o revisionismo representou uma ruptura com o marxismo ou uma atualização de sua estratégia política?
+
+**Questão 2 — Keynes:** a intervenção macroeconômica do Estado constitui uma condição necessária para a estabilidade do capitalismo?
+
+**Questão 3 — Beveridge:** o Welfare State representa a universalização da cidadania social ou uma política de proteção mínima contra os riscos do mercado?
+
+**Questão 4 — Bad Godesberg:** a aceitação da economia de mercado fortaleceu a social-democracia ou reduziu sua capacidade de transformação?
+
+**Questão 5 — Bobbio:** é possível conciliar liberdade liberal e igualdade democrática sem subordinar uma à outra?
+
+**Questão 6 — Rawls:** quais desigualdades econômicas podem ser consideradas legítimas em uma sociedade democrática?
+
+**Questão 7 — Sen:** a renda é suficiente para medir a liberdade e o bem-estar?
+
+**Questão 8 — Crise do Welfare State:** as transformações econômicas posteriores a 1970 representam o esgotamento do Estado Social ou uma mudança em sua configuração?
+
+**Questão 9 — Globalização:** como preservar direitos sociais em economias submetidas à concorrência internacional?
+
+**Questão 10 — Século XXI:** qual deve ser o papel da social-democracia diante da automação, da desigualdade patrimonial e da crise climática?
+
+## 3.6. Debate historiográfico e teórico
+
+O estudo da social-democracia exige distinguir pelo menos quatro perspectivas.
+
+**Perspectiva reformista:** considera que a democracia e as reformas graduais podem modificar substancialmente as relações sociais.
+
+Referências: Eduard Bernstein; Anthony Giddens; Donald Sassoon.
+
+**Perspectiva crítica marxista:** destaca os limites estruturais das reformas dentro do capitalismo e o risco de institucionalização das desigualdades.
+
+Referências: Rosa Luxemburgo; Claus Offe; Ralph Miliband.
+
+**Perspectiva institucionalista:** examina a construção histórica das instituições de proteção social, as coalizões políticas e os diferentes modelos de Welfare State.
+
+Referências: Gøsta Esping-Andersen; Peter Flora; Peter Hall.
+
+**Perspectiva filosófica da justiça:** investiga os fundamentos normativos da liberdade, da igualdade e da distribuição de oportunidades.
+
+Referências: John Rawls; Amartya Sen; Norberto Bobbio.
+
+## 3.7. Delimitação cronológica
+
+**1899–1914:** revisionismo e expansão da social-democracia europeia.
+
+**1914–1945:** guerras, crise econômica, Grande Depressão e transformação das políticas públicas.
+
+**1945–1973:** reconstrução europeia, crescimento econômico e expansão do Welfare State.
+
+**1973–1990:** crise do consenso keynesiano e ascensão do neoliberalismo.
+
+**1990–presente:** renovação da social-democracia, globalização e novos desafios sociais.
+
+## 3.8. Metodologia
+
+A pesquisa pode utilizar:
+
+- História intelectual.
+- História econômica.
+- História política comparada.
+- Análise de documentos partidários.
+- Análise de legislação social.
+- Filosofia política.
+- Economia política institucional.
+- Estudos comparativos de políticas públicas.
+
+A documentação deve incluir textos originais de Bernstein, Keynes, Beveridge, Rawls e Sen, além de programas partidários e documentos governamentais.
+
+## 3.9. Documentos essenciais
+
+1. *Die Voraussetzungen des Sozialismus und die Aufgaben der Sozialdemokratie* (1899).
+2. *The General Theory of Employment, Interest and Money* (1936).
+3. *Social Insurance and Allied Services* — Relatório Beveridge (1942).
+4. National Health Service Act (1946).
+5. Inauguração do National Health Service (1948).
+6. Programa de Bad Godesberg (1959).
+7. *A Theory of Justice* (1971).
+8. *Development as Freedom* (1999).
+
+## 3.10. Síntese interpretativa final
+
+A construção do Estado Social de Direito pode ser interpretada como resultado de um longo processo de democratização das relações econômicas.
+
+A social-democracia contribuiu para esse processo ao transformar reivindicações trabalhistas em direitos institucionais e ao defender a participação do Estado na organização da proteção social.
+
+Entretanto, a história demonstra que a justiça distributiva não é consequência automática do crescimento econômico.
+
+Ela depende de decisões políticas, instituições democráticas, capacidade fiscal e participação social.
+
+O desafio contemporâneo consiste em preservar as conquistas da cidadania social sem comprometer as liberdades individuais e a sustentabilidade econômica e ambiental.`,
 
   111: DOSSIER_16_TEXT,
 

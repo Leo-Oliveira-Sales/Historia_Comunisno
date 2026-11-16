@@ -2,6 +2,7 @@ import React from 'react';
 import { DossierTopic } from '../types/dossier';
 import { Topic105SynthesisView } from './Topic105SynthesisView';
 import { Topic108SynthesisView } from './Topic108SynthesisView';
+import { Topic109SynthesisView } from './Topic109SynthesisView';
 import { Topic112SynthesisView } from './Topic112SynthesisView';
 import { 
   Building2, 
@@ -309,6 +310,8 @@ export const DossierSynthesisView: React.FC<DossierSynthesisViewProps> = ({
         <Topic105SynthesisView getFontSizeClass={getFontSizeClass} />
       ) : topic.id === 108 ? (
         <Topic108SynthesisView getFontSizeClass={getFontSizeClass} />
+      ) : topic.id === 109 ? (
+        <Topic109SynthesisView getFontSizeClass={getFontSizeClass} />
       ) : topic.id === 112 ? (
         <Topic112SynthesisView getFontSizeClass={getFontSizeClass} />
       ) : (

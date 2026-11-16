@@ -3,6 +3,7 @@ import { CHAPTER_16 } from '../chapters/chapter_16';
 import { CHAPTER_IDEOLOGIAS_06 } from '../chapters/chapter_ideologias_06';
 import { CHAPTER_IDEOLOGIAS_07 } from '../chapters/chapter_ideologias_07';
 import { CHAPTER_IDEOLOGIAS_08 } from '../chapters/chapter_ideologias_08';
+import { CHAPTER_IDEOLOGIAS_09 } from '../chapters/chapter_ideologias_09';
 import { CHAPTER_IDEOLOGIAS_10 } from '../chapters/chapter_ideologias_10';
 
 export const IDEOLOGIAS_CHAPTERS: Record<number, AcademicChapter> = {
@@ -2749,50 +2750,9 @@ A passagem do materialismo histórico clássico para as teorias da hegemonia e d
   108: CHAPTER_IDEOLOGIAS_08,
 
   // =========================================================================
-  // CAPÍTULO 9 (TÓPICO 109): SOCIAL-DEMOCRACIA E DEMOCRACIA LIBERAL
+  // CAPÍTULO 9 (TÓPICO 109): CONSENSO DO PÓS-GUERRA E ESTADO SOCIAL DE DIREITO
   // =========================================================================
-  109: {
-    topicId: 109,
-    title: 'Social-Democracia e Democracia Liberal: Reformismo, Bem-Estar Social e Ordem Constitucional',
-    subtitle: 'O revisionismo de Bernstein, o consenso keynesiano do pós-guerra e a conciliação entre mercado livre e justiça distributiva',
-    authorCatedra: 'Cátedra de Economia Política Social e Instituições Democráticas',
-    introduction: 'A convergência histórica entre a Social-Democracia e a Democracia Liberal representou a mais bem-sucedida experiência de engenharia política e social do século XX ocidental. Ao superar as tentações insurrecionais e totalitárias através da adesão intransigente às regras do jogo democrático representativo e ao Estado de Direito, a social-democracia domesticou o capitalismo selvagem e instituiu o Estado de Bem-Estar Social (Welfare State), garantindo que os frutos do progresso material fossem partilhados com a totalidade dos cidadãos.',
-    sections: [
-      {
-        number: '1',
-        title: 'O Revisionismo de Bernstein e a Ruptura com a Ortodoxia Catastrofista',
-        content: 'No final do século XIX, quando as profecias marxistas do colapso inevitável do capitalismo e da pauperização absoluta do proletariado não se confirmaram empiricamente, Eduard Bernstein publicou As Premissas do Socialismo e as Tarefas da Social-Democracia (1899). Bernstein demonstrou que o capitalismo estava se tornando mais complexo e flexível, que a classe média estava se expandindo e que os trabalhadores podiam conquistar melhorias substantivas através do voto universal, dos sindicatos livres e da legislação parlamentar. Cunhou a máxima: "O objetivo final nada é para mim; o movimento em direção à justiça social é tudo".'
-      },
-      {
-        number: '2',
-        title: 'A Revolução Macroeconômica Keynesiana e o Pleno Emprego',
-        content: 'Com a Grande Depressão dos anos 1930, a teoria neoclássica do laissez-faire provou-se incapaz de restaurar o equilíbrio espontâneo. Em sua Teoria Geral do Emprego, do Juro e da Moeda (1936), John Maynard Keynes forneceu o alicerce econômico do novo pacto: em períodos de recessão, a propensão a poupar e a incerteza derrubam a demanda agregada, gerando equilíbrios com alto desemprego crônico. O Estado democrático possui o dever de intervir ativamente mediante políticas fiscais e investimentos públicos compensatórios para assegurar o pleno emprego sem suprimir a propriedade privada.'
-      },
-      {
-        number: '3',
-        title: 'O Relatório Beveridge e a Fundação do Welfare State Moderno',
-        content: 'Em plena Segunda Guerra Mundial (1942), o economista britânico William Beveridge apresentou ao Parlamento o relatório Seguridade Social e Serviços Conexos. Beveridge convocou a nação a uma guerra sem trégua contra os "Cinco Gigantes": a Miséria, a Doença, a Ignorância, a Ociosidade e a Degradação. No pós-guerra, o governo trabalhista de Clement Attlee implementou suas diretrizes, criando o National Health Service (NHS) — o primeiro sistema de saúde verdadeiramente universal e gratuito do mundo ocidental — e redes integradas de aposentadoria e seguro-desemprego.'
-      },
-      {
-        number: '4',
-        title: 'O Congresso de Bad Godesberg (1959) e a Economia Social de Mercado',
-        content: 'Em novembro de 1959, em Bad Godesberg, o Partido Social-Democrata da Alemanha (SPD) deu o passo programático mais decisivo da sua história: abandonou solenemente a retórica marxista da luta de classes e da socialização dos meios de produção, redefinindo-se como um partido popular aberto a todas as classes sociais. Consagrou a fórmula da Economia Social de Mercado (desenvolvida pelos ordoliberais Walter Eucken e Wilhelm Röpke): "Tanta concorrência quanto possível, tanto planejamento e solidariedade social quanto necessário".'
-      },
-      {
-        number: '5',
-        title: 'A Síntese Filosófica de Rawls e Amartya Sen',
-        content: 'No plano da teoria política contemporânea, John Rawls (Uma Teoria da Justiça, 1971) e Amartya Sen (Desenvolvimento como Liberdade, 1999) forneceram a justificação moral definitiva desse modelo. Rawls demonstrou que a liberdade individual só é equitativa quando conjugada com o "Princípio da Diferença" (as desigualdades econômicas só são justas se beneficiarem os membros menos favorecidos da sociedade). Sen avançou ao conceber a justiça como a expansão substantiva das "capacitações" reais dos indivíduos para viverem a vida que têm razão para valorizar.'
-      }
-    ],
-    conclusion: 'A síntese social-democrata provou que não existe antinomia insolúvel entre liberdade e igualdade. Pelo contrário: as liberdades civis tornam-se cascas vazias sem proteção social básica, da mesma forma que a busca cega pela igualdade converte-se em tirania burocrática sem o escudo inabalável do constitucionalismo liberal e da rotatividade democrática.',
-    bibliographicReferences: [
-      'BERNSTEIN, Eduard. Evolutionary Socialism. Nova York: Schocken Books, 1961.',
-      'BOBBIO, Norberto. Liberalismo e Democracia. São Paulo: Brasiliense, 1988.',
-      'KEYNES, John Maynard. A Teoria Geral do Emprego, do Juro e da Moeda. São Paulo: Nova Cultural, 1988.',
-      'RAWLS, John. Uma Teoria da Justiça. São Paulo: Martins Fontes, 2002.',
-      'SEN, Amartya. Desenvolvimento como Liberdade. São Paulo: Companhia das Letras, 2000.'
-    ]
-  },
+  109: CHAPTER_IDEOLOGIAS_09,
 
   // =========================================================================
   // CAPÍTULO 10 (TÓPICO 111): O COMUNISMO INTERNACIONAL: REGIMES, REVOLUÇÕES E CATÁSTROFES HUMANITÁRIAS
