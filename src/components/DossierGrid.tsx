@@ -145,7 +145,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
             {filteredTopics.length} de {topics.length} {isIdeologias ? 'capítulos didáticos' : 'tópicos catalogados'}
           </span>
           <span className="text-[11px] text-stone-500">
-            {isIdeologias ? 'Fontes Primárias & Bibliografia dos 40 Especialistas' : 'Documentação Primária Yale / GHDI / USHMM'}
+            {isIdeologias ? 'Fontes Primárias & Bibliografia dos 60 Especialistas' : 'Documentação Primária Yale / GHDI / USHMM'}
           </span>
         </div>
       </div>
@@ -227,7 +227,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
                 <div className="mt-3 py-1.5 px-2.5 bg-[#121215] border border-amber-900/40 rounded flex flex-wrap items-center justify-between gap-1.5 text-[11px] font-mono text-stone-400">
                   <span className="flex items-center gap-1.5 text-amber-400 font-medium">
                     <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                    <span>{isIdeologias ? 'Dossiê Cátedra 40 Autores' : 'Padrão 7 Seções Canônicas'}</span>
+                    <span>{isIdeologias ? 'Dossiê Cátedra 60 Autores' : 'Padrão 7 Seções Canônicas'}</span>
                   </span>
                   <span className="text-emerald-400 font-mono text-[10px] bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-800/40 shrink-0">
                     Auditado

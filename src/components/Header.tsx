@@ -63,7 +63,7 @@ export const Header: React.FC<HeaderProps> = ({
     { id: 'timeline' as const, label: 'Linha do Tempo', icon: Calendar },
     { 
       id: 'sources' as const, 
-      label: activeCollectionId === 'colecao-2' ? '40 Especialistas' : 'Acervos & Monografias', 
+      label: activeCollectionId === 'colecao-2' ? '60 Especialistas' : 'Acervos & Monografias', 
       icon: BookOpen 
     },
     { id: 'quiz' as const, label: 'Desafio Histórico', icon: HelpCircle },

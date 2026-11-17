@@ -2023,7 +2023,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                                 </button>
                               </div>
                               {source.abntCitation && (
-                                <div className="text-[11px] font-mono text-stone-300 bg-stone-950 p-2.5 rounded border border-stone-800/70 select-all leading-relaxed">
+                                <div className="text-[11px] font-mono text-stone-200 bg-stone-900/90 p-2.5 rounded border border-stone-700/80 select-all leading-relaxed">
                                   {source.abntCitation}
                                 </div>
                               )}
@@ -2403,7 +2403,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                                 </button>
                               </div>
                               {source.abntCitation && (
-                                <div className="text-[11px] font-mono text-stone-300 bg-stone-950 p-2.5 rounded border border-stone-800/70 select-all leading-relaxed">
+                                <div className="text-[11px] font-mono text-stone-200 bg-stone-900/90 p-2.5 rounded border border-stone-700/80 select-all leading-relaxed">
                                   {source.abntCitation}
                                 </div>
                               )}

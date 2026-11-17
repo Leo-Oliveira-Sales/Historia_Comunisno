@@ -200,14 +200,14 @@ export default function App() {
 
                 <h1 className="text-2xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight text-stone-100 text-balance leading-tight">
                   {activeCollectionId === 'colecao-2'
-                    ? 'História das Ideologias Políticas: 11 Capítulos Didáticos & 40 Especialistas'
-                    : 'Dossiê Soviético: 20 Categorias Temáticas & Documentação Primária'}
+                    ? 'História das Ideologias Políticas: 11 Capítulos Didáticos & 60 Especialistas'
+                    : 'Dossiê Soviético: 19 Categorias Temáticas & Documentação Primária'}
                 </h1>
 
                 <p className="text-xs sm:text-base font-serif text-stone-300 leading-relaxed max-w-xl">
                   {activeCollectionId === 'colecao-2' ? (
                     <>
-                      Investigação exaustiva das matrizes políticas contemporâneas — do <strong>Iluminismo</strong> e <strong>Liberalismo</strong> ao <strong>Marxismo</strong>, <strong>Fascismo</strong>, <strong>Nazismo</strong> e <strong>Social-Democracia</strong> — fundamentada na produção de <strong>40 pesquisadores e historiadores de referência mundial</strong> (Berlin, Hobsbawm, Arendt, Bobbio, Skinner, Rawls, Hayek e Kershaw).
+                      Investigação exaustiva das matrizes políticas contemporâneas — do <strong>Iluminismo</strong> e <strong>Liberalismo</strong> ao <strong>Marxismo</strong>, <strong>Fascismo</strong>, <strong>Nazismo</strong> e <strong>Social-Democracia</strong> — fundamentada na produção de <strong>60 pesquisadores e historiadores de referência mundial</strong> (Berlin, Hobsbawm, Arendt, Bobbio, Skinner, Rawls, Hayek e Kershaw).
                     </>
                   ) : (
                     <>
@@ -227,7 +227,7 @@ export default function App() {
                     {activeCollectionId === 'colecao-2' ? (
                       <>
                         <GraduationCap className="w-4 h-4 text-amber-400 shrink-0" />
-                        <span>40 Especialistas & Pesquisadores Mundiais</span>
+                        <span>60 Especialistas & Pesquisadores Mundiais</span>
                       </>
                     ) : (
                       <>
@@ -276,7 +276,7 @@ export default function App() {
 
                 <div className="bg-[#19191d]/90 border border-stone-800 p-3 sm:p-3.5 rounded-lg">
                   <div className="text-xl sm:text-2xl font-bold text-stone-100 tabular-nums">
-                    {activeCollectionId === 'colecao-2' ? '06' : `0${ARCHIVES_DATABASE.length}`}
+                    {activeCollectionId === 'colecao-2' ? '07' : `0${ARCHIVES_DATABASE.length}`}
                   </div>
                   <div className="text-[10px] sm:text-[11px] text-stone-400">
                     {activeCollectionId === 'colecao-2' ? 'Blocos Temáticos' : 'Arquivos Oficiais'}
@@ -373,7 +373,7 @@ export default function App() {
             <span aria-hidden="true">·</span>
             <span>
               {activeCollectionId === 'colecao-2'
-                ? 'Coleção II · 11 Capítulos Didáticos & 40 Especialistas de Referência'
+                ? 'Coleção II · 11 Capítulos Didáticos & 60 Especialistas de Referência'
                 : 'Coleção I · Acervo Histórico e Roleta de Pesquisa Acadêmica'}
             </span>
           </div>

@@ -4,6 +4,7 @@ import { ARCHIVES_DATABASE, HISTORIANS_DATABASE } from '../data/historiansAndArc
 import { DossierTopic } from '../types/dossier';
 import { CollectionId } from '../types/collection';
 import { IDEOLOGIAS_40_HISTORIANS, IdeologiaHistorian } from '../data/collections/ideologias_historians';
+import { DOSSIER_TOPICS } from '../data/dossierDatabase';
 import { playTypewriterClack } from '../utils/audio';
 import { 
   BookOpen, 
@@ -54,7 +55,10 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
         m.title.toLowerCase().includes(q) ||
         m.authors.some((a) => a.toLowerCase().includes(q)) ||
         m.focus.toLowerCase().includes(q) ||
-        m.thesisSummary.toLowerCase().includes(q)
+        m.thesisSummary.toLowerCase().includes(q) ||
+        m.archivalBase.toLowerCase().includes(q) ||
+        (m.topicsList ? m.topicsList.some((t) => t.toLowerCase().includes(q)) : false) ||
+        (m.number ? `nº ${m.number}`.includes(q) || `#${m.number}`.includes(q) : false)
     );
   }, [searchTerm]);
 
@@ -92,6 +96,9 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
         h.name.toLowerCase().includes(q) ||
         h.expertise.toLowerCase().includes(q) ||
         h.mainContribution.toLowerCase().includes(q) ||
+        h.keyQuote.toLowerCase().includes(q) ||
+        `#${h.number}`.includes(q) ||
+        `bloco ${h.categoryRoman}`.toLowerCase().includes(q) ||
         h.referenceWorks.some((w) => w.toLowerCase().includes(q))
       );
     });
@@ -111,13 +118,13 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
         </div>
         <h2 className="text-xl sm:text-2xl font-display font-bold text-stone-100">
           {activeCollectionId === 'colecao-2'
-            ? 'Os 40 Principais Pesquisadores e Especialistas de Referência Mundial'
+            ? 'Os 60 Principais Pesquisadores e Especialistas de Referência Mundial'
             : 'Acervo de Pesquisa: Monografias, Historiadores e Arquivos'}
         </h2>
         <p className="text-xs sm:text-sm text-stone-300 font-serif mt-2 max-w-3xl leading-relaxed">
           {activeCollectionId === 'colecao-2'
-            ? 'Catálogo integral e rigoroso dos 40 maiores especialistas mundiais no estudo do pensamento político, Iluminismo, liberalismo, marxismo, fascismo, nazismo, social-democracia e teoria do totalitarismo.'
-            : 'Consulte as 23 obras acadêmicas fundamentais, o perfil dos historiadores de referência e os 8 grandes repositórios arquivísticos (Library of Congress, Wilson Center, Yale Avalon, NARA, Bundesarchiv, GHDI, Hoover e Yale Annals of Communism).'}
+            ? 'Catálogo integral e rigoroso dos 60 maiores especialistas mundiais no estudo do pensamento político, Iluminismo, liberalismo, marxismo, fascismo, nazismo, social-democracia, história soviética e teoria do totalitarismo.'
+            : 'Consulte as 31 obras acadêmicas fundamentais, o perfil dos historiadores de referência e os 8 grandes repositórios arquivísticos (Library of Congress, Wilson Center, Yale Avalon, NARA, Bundesarchiv, GHDI, Hoover e Yale Annals of Communism).'}
         </p>
 
         {/* Sub-Tab Navigation Bar with touch scrolling */}
@@ -134,7 +141,7 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
             }`}
           >
             <GraduationCap className="w-3.5 h-3.5" />
-            <span>40 Especialistas de Ideologias ({IDEOLOGIAS_40_HISTORIANS.length})</span>
+            <span>60 Especialistas de Ideologias ({IDEOLOGIAS_40_HISTORIANS.length})</span>
           </button>
 
           <button
@@ -150,7 +157,7 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
           >
             <BookOpen className="w-3.5 h-3.5" />
             <span className="sm:hidden">Monografias ({filteredMonographs.length})</span>
-            <span className="hidden sm:inline">23 Monografias de Referência ({filteredMonographs.length})</span>
+            <span className="hidden sm:inline">31 Monografias de Referência ({filteredMonographs.length})</span>
           </button>
 
           <button
@@ -196,9 +203,9 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder={
             subTab === 'ideologias40'
-              ? 'Pesquisar entre os 40 especialistas (ex: Berlin, Hobsbawm, Arendt, Skinner, Bobbio, Rawls, Hayek, Kershaw, Keynes)...'
+              ? 'Pesquisar entre os 60 especialistas (ex: Berlin, Hobsbawm, Arendt, Kotkin, Khlevniuk, Skinner, Bobbio, Rawls, Hayek, Kershaw)...'
               : subTab === 'monographs'
-              ? 'Pesquisar livro por título, autor (ex: Fitzpatrick, Khlevniuk, Applebaum, Snyder, Dikötter)...'
+              ? 'Pesquisar livro por título, autor ou tópico (ex: Fitzpatrick, Khlevniuk, Fawcett, Heywood, Sassoon, Anderson, Pateman)...'
               : subTab === 'archives'
               ? 'Pesquisar arquivo (ex: Library of Congress, NARA, Wilson Center, Avalon, Bundesarchiv)...'
               : 'Pesquisar historiador ou instituição...'
@@ -213,13 +220,14 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
           {/* Category Filter Pills (I to VI) */}
           <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs touch-pan-x no-scrollbar">
             {[
-              { id: 'todos', label: 'Todos os 40 Especialistas' },
+              { id: 'todos', label: 'Todos os 60 Especialistas' },
               { id: 'I', label: 'I. Pensamento Político (8)' },
               { id: 'II', label: 'II. Iluminismo & Liberalismo (6)' },
               { id: 'III', label: 'III. Socialismo & Marxismo (8)' },
               { id: 'IV', label: 'IV. Fascismo & Nazismo (10)' },
               { id: 'V', label: 'V. Social-Democracia & Bem-Estar (6)' },
               { id: 'VI', label: 'VI. Teoria do Autoritarismo (2)' },
+              { id: 'VII', label: 'VII. História Soviética & Teoria Política (20)' },
             ].map((cat) => {
               const isActive = selectedCategoryRoman === cat.id;
               return (
@@ -286,8 +294,19 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
                   </div>
 
                   <div className="mt-3 p-3 bg-stone-900/70 border-l-2 border-amber-500 rounded-r-lg text-xs text-stone-300 italic font-serif">
-                    <Quote className="w-3.5 h-3.5 text-amber-500 inline-block mr-1.5 -mt-1 opacity-70" />
-                    "{h.keyQuote}"
+                    {h.number >= 41 ? (
+                      <>
+                        <span className="text-stone-500 block not-italic text-[10px] font-mono uppercase tracking-wider font-semibold mb-1">
+                          Síntese Interpretativa:
+                        </span>
+                        <span>{h.keyQuote}</span>
+                      </>
+                    ) : (
+                      <>
+                        <Quote className="w-3.5 h-3.5 text-amber-500 inline-block mr-1.5 -mt-1 opacity-70" />
+                        "{h.keyQuote}"
+                      </>
+                    )}
                   </div>
                 </div>
 
@@ -296,8 +315,8 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
                   <span className="text-[11px] font-mono text-stone-500">Capítulos Relacionados:</span>
                   <div className="flex flex-wrap gap-1">
                     {h.relatedChapters.map((chNum) => {
-                      const topicId = 100 + chNum;
-                      const topic = topics.find((t) => t.id === topicId);
+                      const topicId = h.number >= 41 && h.number <= 50 ? (chNum === 20 ? 19 : chNum) : 100 + chNum;
+                      const topic = DOSSIER_TOPICS.find((t) => t.id === topicId) || topics.find((t) => t.id === topicId);
                       return (
                         <button
                           key={chNum}
@@ -319,7 +338,7 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
         </div>
       )}
 
-      {/* SUB-TAB 1: 23 MONOGRAPHS */}
+      {/* SUB-TAB 1: 31 MONOGRAPHS */}
       {subTab === 'monographs' && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {filteredMonographs.map((mono) => (
@@ -328,9 +347,12 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
               className="bg-[#17171b] border border-stone-800 rounded-xl p-5 flex flex-col justify-between space-y-4 shadow hover:border-stone-700 transition-colors"
             >
               <div>
-                <div className="flex items-center justify-between text-xs text-stone-400 font-mono mb-1.5">
-                  <span className="text-amber-400 font-semibold">{mono.authors.join(', ')}</span>
-                  <span>{mono.year} · {mono.publisher}</span>
+                <div className="flex items-center justify-between text-xs text-stone-400 font-mono mb-1.5 gap-2">
+                  <span className="text-amber-400 font-semibold">
+                    {mono.number ? `Nº ${mono.number} · ` : ''}
+                    {mono.authors.join(', ')}
+                  </span>
+                  <span className="text-right shrink-0">{mono.year} · {mono.publisher}</span>
                 </div>
 
                 <h3 className="text-lg font-display font-bold text-stone-100 leading-snug">
@@ -342,19 +364,40 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
                   <span className="text-stone-300">{mono.focus}</span>
                 </div>
 
-                <p className="mt-3 text-xs sm:text-sm font-serif text-stone-300 leading-relaxed">
+                {mono.presentationLabel && (
+                  <span className="text-stone-500 block text-[10px] font-mono uppercase tracking-wider font-semibold mt-3 mb-1">
+                    {mono.presentationLabel}
+                  </span>
+                )}
+                <p className={`${mono.presentationLabel ? '' : 'mt-3 '}text-xs sm:text-sm font-serif text-stone-300 leading-relaxed`}>
                   {mono.thesisSummary}
                 </p>
 
                 {/* Base Arquivística Primária */}
                 <div className="mt-3.5 p-2.5 bg-[#121215] border border-stone-800/80 rounded text-xs">
                   <span className="font-mono text-amber-500/90 font-bold block mb-0.5">
-                    Base Documental e Arquivos Consultados:
+                    {mono.archivalBaseLabel || 'Base Documental e Arquivos Consultados:'}
                   </span>
                   <p className="font-mono text-stone-400 text-[11px]">
                     {mono.archivalBase}
                   </p>
                 </div>
+
+                {mono.topicsList && mono.topicsList.length > 0 && (
+                  <div className="mt-3 p-2.5 bg-[#121215] border border-stone-800/80 rounded text-xs">
+                    <span className="font-mono text-amber-500/90 font-bold block mb-1">
+                      Tópicos:
+                    </span>
+                    <ul className="space-y-0.5 text-stone-300 font-serif text-[12px]">
+                      {mono.topicsList.map((topicItem, tIdx) => (
+                        <li key={tIdx} className="flex items-start gap-1.5">
+                          <span className="text-amber-500 font-mono text-[11px] shrink-0">-</span>
+                          <span>{topicItem}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
 
               {/* Bottom Actions: Copy Citation & Link to Topic */}
@@ -399,7 +442,7 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
                   <div className="flex items-center gap-1">
                     <span className="text-[11px] font-mono text-stone-500">Tópicos:</span>
                     {mono.relatedTopicIds.map((tid) => {
-                      const topic = topics.find((t) => t.id === tid);
+                      const topic = DOSSIER_TOPICS.find((t) => t.id === tid) || topics.find((t) => t.id === tid);
                       if (!topic) return null;
                       return (
                         <button

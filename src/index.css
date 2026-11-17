@@ -147,6 +147,7 @@ html[data-theme="branco"] body {
 }
 
 /* Secondary info boxes, search ribbons, nested cards in light gray blend */
+[data-theme="branco"] [class*="bg-[#0b0b0d]"],
 [data-theme="branco"] [class*="bg-[#101012]"],
 [data-theme="branco"] [class*="bg-[#1b1b1f]"],
 [data-theme="branco"] [class*="bg-[#202026]"],
@@ -155,6 +156,8 @@ html[data-theme="branco"] body {
   background-color: #f8fafc !important;
 }
 
+[data-theme="branco"] .bg-stone-950,
+[data-theme="branco"] [class*="bg-stone-950"],
 [data-theme="branco"] .bg-stone-800,
 [data-theme="branco"] [class*="bg-stone-800"] {
   background-color: #f1f5f9 !important;
@@ -471,6 +474,7 @@ html[data-theme="bege"] body {
 }
 
 /* Marginalia and Library Catalog Card Containers */
+[data-theme="bege"] [class*="bg-[#0b0b0d]"],
 [data-theme="bege"] [class*="bg-[#101012]"],
 [data-theme="bege"] [class*="bg-[#1b1b1f]"],
 [data-theme="bege"] [class*="bg-[#202026]"],
@@ -479,6 +483,8 @@ html[data-theme="bege"] body {
   background-color: #ede3ce !important;
 }
 
+[data-theme="bege"] .bg-stone-950,
+[data-theme="bege"] [class*="bg-stone-950"],
 [data-theme="bege"] .bg-stone-800,
 [data-theme="bege"] [class*="bg-stone-800"] {
   background-color: #e5d9bf !important;

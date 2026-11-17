@@ -1,13 +1,17 @@
 export interface AcademicMonograph {
   id: string;
+  number?: number;
   title: string;
   authors: string[];
   year: string;
   publisher: string;
   focus: string;
   archivalBase: string; // Quais arquivos primários o autor pesquisou
+  archivalBaseLabel?: string;
+  presentationLabel?: string;
   thesisSummary: string;
   relatedTopicIds: number[];
+  topicsList?: string[];
   abntCitation: string;
   chicagoCitation: string;
 }
@@ -311,5 +315,226 @@ export const MONOGRAPHS_DATABASE: AcademicMonograph[] = [
     relatedTopicIds: [15, 16],
     abntCitation: 'PÉREZ-STABLE, Marifeli. The Cuban Revolution: Origins, Course, and Legacy. New York: Oxford University Press, 1993.',
     chicagoCitation: 'Pérez-Stable, Marifeli. 1993. The Cuban Revolution: Origins, Course, and Legacy. New York: Oxford University Press.'
+  },
+  {
+    id: 'fawcett-liberalism',
+    number: 24,
+    title: 'Liberalism: The Life of an Idea (Second Edition)',
+    authors: ['Edmund Fawcett'],
+    year: '2018',
+    publisher: 'Princeton University Press',
+    focus: 'Formação histórica do liberalismo, liberdade individual, constitucionalismo, democracia representativa e transformações do pensamento liberal entre o século XIX e o século XXI.',
+    presentationLabel: 'Apresentação da Obra:',
+    thesisSummary: 'Edmund Fawcett reconstrói a trajetória histórica do liberalismo moderno, examinando sua formação como tradição política e suas respostas às transformações econômicas, sociais e institucionais da modernidade. A obra acompanha o desenvolvimento das ideias de liberdade individual, governo constitucional, tolerância, pluralismo e democracia, analisando também as contradições internas do pensamento liberal. O autor demonstra que o liberalismo não constitui uma doutrina homogênea: ao longo de sua história, diferentes correntes disputaram o significado da liberdade, a extensão dos direitos individuais, o papel do Estado e os limites do poder político. A análise percorre experiências europeias e norte-americanas, relacionando ideias, instituições e transformações históricas.',
+    archivalBaseLabel: 'Base Documental e Fontes Consultadas:',
+    archivalBase: 'Textos políticos e filosóficos de autores liberais; escritos de John Stuart Mill, Alexis de Tocqueville, Benjamin Constant e Isaiah Berlin; documentos constitucionais; debates parlamentares; discursos políticos; programas partidários e registros históricos das transformações do liberalismo europeu e norte-americano.',
+    relatedTopicIds: [],
+    topicsList: [
+      'Liberalismo clássico e moderno',
+      'Liberdade individual e direitos civis',
+      'Constitucionalismo e limitação do poder',
+      'Liberalismo político e democracia',
+      'Relações entre liberalismo e capitalismo',
+      'Liberalismo social e pluralismo',
+      'Crises e transformações da democracia liberal'
+    ],
+    abntCitation: 'FAWCETT, Edmund. Liberalism: The Life of an Idea. 2. ed. Princeton: Princeton University Press, 2018.',
+    chicagoCitation: 'Fawcett, Edmund. Liberalism: The Life of an Idea. 2nd ed. Princeton: Princeton University Press, 2018.'
+  },
+  {
+    id: 'fawcett-conservatism',
+    number: 25,
+    title: 'Conservatism: The Fight for a Tradition',
+    authors: ['Edmund Fawcett'],
+    year: '2020',
+    publisher: 'Princeton University Press',
+    focus: 'Formação histórica do conservadorismo moderno, defesa da ordem social, tradição, autoridade, hierarquia, nacionalismo e transformações da direita política.',
+    presentationLabel: 'Apresentação da Obra:',
+    thesisSummary: 'Nesta investigação histórica, Edmund Fawcett acompanha a formação e as transformações do conservadorismo moderno desde suas origens no século XIX até as manifestações contemporâneas da direita política. A obra examina diferentes tradições conservadoras, suas relações com a religião, a monarquia, o nacionalismo, o liberalismo e as instituições representativas. O autor investiga como os conservadores responderam às revoluções, à expansão da democracia, ao desenvolvimento do movimento operário, à secularização e às transformações econômicas da sociedade industrial. Em vez de apresentar o conservadorismo como uma ideologia uniforme, Fawcett demonstra a existência de disputas internas sobre autoridade, continuidade histórica, mercado, democracia e mudança social.',
+    archivalBaseLabel: 'Base Documental e Fontes Consultadas:',
+    archivalBase: 'Obras de pensadores conservadores; escritos de Edmund Burke, Benjamin Disraeli e outros representantes da tradição conservadora; manifestos partidários; discursos parlamentares; documentos políticos; publicações de movimentos conservadores e registros históricos das transformações da direita europeia e norte-americana.',
+    relatedTopicIds: [],
+    topicsList: [
+      'Origens do conservadorismo moderno',
+      'Edmund Burke e a crítica à revolução',
+      'Tradição, autoridade e ordem social',
+      'Conservadorismo e liberalismo',
+      'Nacionalismo e identidade política',
+      'Conservadorismo democrático e autoritário',
+      'Direita política e transformações contemporâneas'
+    ],
+    abntCitation: 'FAWCETT, Edmund. Conservatism: The Fight for a Tradition. Princeton: Princeton University Press, 2020.',
+    chicagoCitation: 'Fawcett, Edmund. Conservatism: The Fight for a Tradition. Princeton: Princeton University Press, 2020.'
+  },
+  {
+    id: 'heywood-political-ideologies',
+    number: 26,
+    title: 'Political Ideologies: An Introduction (7th Edition)',
+    authors: ['Andrew Heywood'],
+    year: '2021',
+    publisher: 'Bloomsbury Academic',
+    focus: 'Estudo comparativo das principais ideologias políticas modernas e contemporâneas, seus fundamentos filosóficos, conceitos centrais e manifestações históricas.',
+    presentationLabel: 'Apresentação da Obra:',
+    thesisSummary: 'Andrew Heywood apresenta uma introdução sistemática ao estudo das ideologias políticas, examinando suas origens intelectuais, seus conceitos fundamentais e suas diferentes interpretações da sociedade, do Estado, da economia e do poder. A obra percorre as principais tradições políticas modernas, incluindo liberalismo, conservadorismo, socialismo, anarquismo, nacionalismo e fascismo, avançando também sobre populismo, feminismo, ecologismo, multiculturalismo e fundamentalismo religioso. Seu diferencial está na abordagem comparativa: em vez de estudar cada corrente isoladamente, o autor identifica suas concepções de natureza humana, sociedade, Estado, liberdade, igualdade e organização política. É uma referência especialmente útil para estabelecer conexões entre as diferentes tradições ideológicas e compreender suas disputas históricas e contemporâneas.',
+    archivalBaseLabel: 'Base Documental e Fontes Consultadas:',
+    archivalBase: 'Textos clássicos de filosofia política; manifestos e programas de movimentos políticos; escritos de autores liberais, conservadores, socialistas, anarquistas, nacionalistas e fascistas; documentos partidários; discursos políticos e bibliografia acadêmica especializada em teoria e história das ideologias.',
+    relatedTopicIds: [],
+    topicsList: [
+      'Conceito e natureza das ideologias políticas',
+      'Liberalismo',
+      'Conservadorismo',
+      'Socialismo',
+      'Anarquismo',
+      'Nacionalismo',
+      'Fascismo',
+      'Populismo',
+      'Feminismo',
+      'Ecologismo',
+      'Multiculturalismo',
+      'Fundamentalismo religioso',
+      'Comparação entre tradições ideológicas'
+    ],
+    abntCitation: 'HEYWOOD, Andrew. Political Ideologies: An Introduction. 7. ed. London: Bloomsbury Academic, 2021.',
+    chicagoCitation: 'Heywood, Andrew. Political Ideologies: An Introduction. 7th ed. London: Bloomsbury Academic, 2021.'
+  },
+  {
+    id: 'marshall-demanding-impossible',
+    number: 27,
+    title: 'Demanding the Impossible: A History of Anarchism',
+    authors: ['Peter Marshall'],
+    year: '2010',
+    publisher: 'PM Press',
+    focus: 'História do anarquismo, crítica à autoridade estatal, autogestão, liberdade individual, organização comunitária e movimentos libertários internacionais.',
+    presentationLabel: 'Apresentação da Obra:',
+    thesisSummary: 'Peter Marshall desenvolve uma ampla reconstrução histórica da tradição anarquista, acompanhando suas raízes intelectuais, suas diferentes correntes e suas experiências de organização política e social. A investigação percorre antecedentes filosóficos, pensadores modernos e movimentos revolucionários que questionaram a concentração da autoridade e a legitimidade do Estado. O autor examina figuras como William Godwin, Pierre-Joseph Proudhon, Mikhail Bakunin, Piotr Kropotkin e outros representantes do pensamento libertário. Também analisa experiências históricas de organização operária, sindicalismo revolucionário, comunidades autogeridas e movimentos anarquistas em diferentes países. A obra demonstra que o anarquismo constitui uma tradição plural, marcada por divergências sobre propriedade, economia, organização coletiva, violência política e formas de emancipação social.',
+    archivalBaseLabel: 'Base Documental e Fontes Consultadas:',
+    archivalBase: 'Textos de autores anarquistas; manifestos revolucionários; periódicos operários; documentos de associações e organizações libertárias; publicações de movimentos sindicais; registros históricos da Comuna de Paris; documentos da Associação Internacional dos Trabalhadores e bibliografia especializada sobre movimentos anarquistas internacionais.',
+    relatedTopicIds: [],
+    topicsList: [
+      'Antecedentes históricos do anarquismo',
+      'William Godwin e o pensamento libertário',
+      'Pierre-Joseph Proudhon e o mutualismo',
+      'Mikhail Bakunin e o anarquismo revolucionário',
+      'Piotr Kropotkin e o comunismo anarquista',
+      'Anarcossindicalismo e movimento operário',
+      'Comuna de Paris e experiências revolucionárias',
+      'Autogestão e organização comunitária',
+      'Anarquismo e marxismo',
+      'Anarquismo e Estado moderno'
+    ],
+    abntCitation: 'MARSHALL, Peter. Demanding the Impossible: A History of Anarchism. Oakland: PM Press, 2010.',
+    chicagoCitation: 'Marshall, Peter. Demanding the Impossible: A History of Anarchism. Oakland: PM Press, 2010.'
+  },
+  {
+    id: 'sassoon-hundred-years-socialism',
+    number: 28,
+    title: 'One Hundred Years of Socialism: The West European Left in the Twentieth Century',
+    authors: ['Donald Sassoon'],
+    year: '2013',
+    publisher: 'I.B. Tauris',
+    focus: 'História do socialismo europeu, formação dos partidos operários, social-democracia, comunismo ocidental, revisionismo marxista e construção do Estado de bem-estar social.',
+    presentationLabel: 'Apresentação da Obra:',
+    thesisSummary: 'Donald Sassoon reconstrói a trajetória política do socialismo europeu ao longo do século XX, examinando a formação, o crescimento, as disputas internas e as transformações dos partidos de esquerda em diferentes países da Europa Ocidental. A obra analisa as relações entre socialismo revolucionário, comunismo, social-democracia e capitalismo, acompanhando a participação da esquerda nas instituições parlamentares, nos movimentos operários e nos governos nacionais. O autor investiga a influência da Revolução Russa, as consequências das duas guerras mundiais, a expansão do Estado de bem-estar social, as disputas da Guerra Fria e a crise das organizações socialistas no final do século. Sua abordagem comparativa permite compreender por que diferentes partidos socialistas adotaram estratégias distintas, variando entre a ruptura revolucionária, a reforma institucional e a participação em economias de mercado.',
+    archivalBaseLabel: 'Base Documental e Fontes Consultadas:',
+    archivalBase: 'Programas e documentos de partidos socialistas e social-democratas europeus; registros eleitorais; debates parlamentares; publicações de organizações operárias; documentos de sindicatos; periódicos políticos; registros históricos de governos europeus e bibliografia especializada sobre a história da esquerda no século XX.',
+    relatedTopicIds: [],
+    topicsList: [
+      'Formação dos partidos socialistas europeus',
+      'Segunda Internacional',
+      'Revolução Russa e impacto sobre a esquerda europeia',
+      'Comunismo e social-democracia',
+      'Revisionismo marxista',
+      'Socialismo parlamentar',
+      'Movimento operário e sindicatos',
+      'Estado de bem-estar social',
+      'Socialismo e capitalismo no pós-guerra',
+      'Crise da esquerda europeia no final do século XX'
+    ],
+    abntCitation: 'SASSOON, Donald. One Hundred Years of Socialism: The West European Left in the Twentieth Century. London: I.B. Tauris, 2013.',
+    chicagoCitation: 'Sassoon, Donald. One Hundred Years of Socialism: The West European Left in the Twentieth Century. London: I.B. Tauris, 2013.'
+  },
+  {
+    id: 'freeden-ideology-vsi',
+    number: 29,
+    title: 'Ideology: A Very Short Introduction (2nd Edition)',
+    authors: ['Michael Freeden'],
+    year: '2026',
+    publisher: 'Oxford University Press',
+    focus: 'Conceituação das ideologias políticas, organização dos conceitos políticos, morfologia ideológica e interpretação das principais tradições do pensamento político.',
+    presentationLabel: 'Apresentação da Obra:',
+    thesisSummary: 'Michael Freeden examina o significado histórico e teórico do conceito de ideologia, investigando por que esse termo assumiu diferentes sentidos na filosofia, na ciência política e no debate público. A obra apresenta uma interpretação das ideologias como estruturas de pensamento organizadas em torno de conceitos políticos fundamentais, cujos significados e relações são constantemente disputados. Sua abordagem morfológica demonstra que conceitos como liberdade, igualdade, justiça, autoridade, democracia e Estado não possuem significados políticos fixos: são organizados e interpretados de maneiras distintas pelas diferentes tradições ideológicas. O livro oferece instrumentos conceituais para compreender como as ideologias estruturam a linguagem política, orientam projetos de transformação social e influenciam a organização das instituições.',
+    archivalBaseLabel: 'Base Documental e Fontes Consultadas:',
+    archivalBase: 'Textos clássicos de teoria política; escritos de pensadores liberais, conservadores e socialistas; manifestos e programas partidários; discursos políticos; literatura de ciência política e estudos contemporâneos sobre linguagem, conceitos e estruturas ideológicas.',
+    relatedTopicIds: [],
+    topicsList: [
+      'Definições históricas de ideologia',
+      'Ideologia e pensamento político',
+      'Morfologia das ideologias',
+      'Conceitos políticos centrais',
+      'Liberdade e igualdade',
+      'Autoridade e legitimidade',
+      'Linguagem e disputa ideológica',
+      'Transformações das ideologias modernas',
+      'Ideologias e organização institucional',
+      'Ideologia e ação política'
+    ],
+    abntCitation: 'FREEDEN, Michael. Ideology: A Very Short Introduction. 2. ed. Oxford: Oxford University Press, 2026.',
+    chicagoCitation: 'Freeden, Michael. Ideology: A Very Short Introduction. 2nd ed. Oxford: Oxford University Press, 2026.'
+  },
+  {
+    id: 'anderson-imagined-communities',
+    number: 30,
+    title: 'Imagined Communities: Reflections on the Origin and Spread of Nationalism (Revised Edition)',
+    authors: ['Benedict Anderson'],
+    year: '1991',
+    publisher: 'Verso',
+    focus: 'Formação histórica do nacionalismo, construção das identidades nacionais, comunidades imaginadas, imprensa, linguagem, colonialismo e formação dos Estados nacionais modernos.',
+    presentationLabel: 'Apresentação da Obra:',
+    thesisSummary: 'Benedict Anderson apresenta uma das interpretações mais influentes sobre a formação histórica das nações e do nacionalismo moderno. Sua investigação parte da ideia de que a nação é uma comunidade política imaginada: seus integrantes não precisam conhecer pessoalmente a maioria dos demais membros para desenvolver um sentimento de pertencimento coletivo. O autor examina como transformações na imprensa, na circulação de livros, no desenvolvimento das línguas nacionais e na administração colonial contribuíram para a formação das identidades nacionais. A obra também investiga o papel do nacionalismo nas independências americanas, na expansão dos Estados modernos e nas transformações políticas dos impérios coloniais. Anderson demonstra que o nacionalismo não deve ser interpretado apenas como uma doutrina política, mas também como um fenômeno histórico e cultural relacionado à construção de identidades coletivas.',
+    archivalBaseLabel: 'Base Documental e Fontes Consultadas:',
+    archivalBase: 'Registros administrativos coloniais; censos populacionais; mapas; documentos de formação dos Estados nacionais; jornais e publicações impressas; literatura histórica; documentos sobre movimentos de independência; registros de instituições educacionais e estudos sobre a expansão da imprensa e das línguas nacionais.',
+    relatedTopicIds: [],
+    topicsList: [
+      'Conceito de comunidade imaginada',
+      'Origens históricas do nacionalismo',
+      'Imprensa e formação da consciência nacional',
+      'Línguas nacionais e identidade coletiva',
+      'Nacionalismo e colonialismo',
+      'Independências americanas',
+      'Nacionalismo oficial e imperialismo',
+      'Relações entre nacionalismo e racismo',
+      'Memória coletiva e identidade nacional',
+      'Formação dos Estados nacionais modernos'
+    ],
+    abntCitation: 'ANDERSON, Benedict. Imagined Communities: Reflections on the Origin and Spread of Nationalism. Edição revista e ampliada. London: Verso, 1991.',
+    chicagoCitation: 'Anderson, Benedict. Imagined Communities: Reflections on the Origin and Spread of Nationalism. Revised and extended ed. London: Verso, 1991.'
+  },
+  {
+    id: 'pateman-sexual-contract',
+    number: 31,
+    title: 'The Sexual Contract',
+    authors: ['Carole Pateman'],
+    year: '1988',
+    publisher: 'Stanford University Press',
+    focus: 'Teoria política feminista, crítica ao contratualismo clássico, relações de gênero, autoridade, dominação e fundamentos políticos da desigualdade entre homens e mulheres.',
+    presentationLabel: 'Apresentação da Obra:',
+    thesisSummary: 'Carole Pateman desenvolve uma crítica profunda às teorias clássicas do contrato social, especialmente às interpretações que apresentam a formação da sociedade política como resultado de um acordo entre indivíduos livres e iguais. A autora argumenta que essas teorias frequentemente ocultaram as relações históricas de subordinação entre homens e mulheres, deixando em segundo plano as estruturas patriarcais que influenciaram a organização das instituições modernas. Sua investigação questiona a ideia de que a liberdade contratual seja universalmente compartilhada e examina como relações de poder podem permanecer incorporadas em instituições consideradas formalmente livres. A obra analisa questões relacionadas ao casamento, ao trabalho, à autoridade masculina e à organização política da sociedade, contribuindo para a formação da teoria política feminista contemporânea.',
+    archivalBaseLabel: 'Base Documental e Fontes Consultadas:',
+    archivalBase: 'Textos clássicos do contratualismo político; obras de Thomas Hobbes, John Locke e Jean-Jacques Rousseau; escritos de teoria política moderna; textos jurídicos sobre casamento e relações de trabalho; literatura feminista; estudos históricos sobre a condição social das mulheres e documentos relacionados às instituições patriarcais.',
+    relatedTopicIds: [],
+    topicsList: [
+      'Contratualismo clássico',
+      'Teorias do contrato social',
+      'Patriarcado e organização política',
+      'Liberdade e subordinação',
+      'Relações de gênero e poder',
+      'Casamento e autoridade',
+      'Trabalho e desigualdade',
+      'Feminismo e filosofia política',
+      'Crítica às concepções universais de cidadania',
+      'Estado, sociedade e dominação'
+    ],
+    abntCitation: 'PATEMAN, Carole. The Sexual Contract. Stanford: Stanford University Press, 1988.',
+    chicagoCitation: 'Pateman, Carole. The Sexual Contract. Stanford: Stanford University Press, 1988.'
   }
 ];

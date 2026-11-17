@@ -9,8 +9,9 @@ export interface IdeologiaHistorian {
     | 'Socialismo, marxismo e comunismo'
     | 'Fascismo, nazismo e regimes totalitários'
     | 'Social-democracia, economia política e Estado de bem-estar'
-    | 'Teoria do autoritarismo e regimes políticos';
-  categoryRoman: 'I' | 'II' | 'III' | 'IV' | 'V' | 'VI';
+    | 'Teoria do autoritarismo e regimes políticos'
+    | 'História soviética, teoria política e pensamento moderno';
+  categoryRoman: 'I' | 'II' | 'III' | 'IV' | 'V' | 'VI' | 'VII';
   expertise: string;
   referenceWorks: string[];
   mainContribution: string;
@@ -561,6 +562,357 @@ export const IDEOLOGIAS_40_HISTORIANS: IdeologiaHistorian[] = [
     mainContribution: 'Formulou com Brzezinski o canônico modelo conceitual da "Síndrome Totalitária" com 6 traços interdependentes: 1. Ideologia totalizante; 2. Partido único liderado por um ditador; 3. Sistema de terror policial; 4. Monopólio das comunicações de massa; 5. Monopólio dos armamentos; 6. Economia centralizada e controlada burocraticamente.',
     keyQuote: 'A ditadura totalitária não é o retorno a tiranias antigas, mas um produto inteiramente moderno e tecnológico que visa a reconstrução compulsória da própria natureza humana.',
     relatedChapters: [6, 7, 8, 10]
+  },
+
+  // =========================================================================
+  // VII. HISTÓRIA SOVIÉTICA, TEORIA POLÍTICA E PENSAMENTO MODERNO (41 a 60)
+  // =========================================================================
+  {
+    id: 'kotkin-stephen',
+    number: 41,
+    name: 'Stephen Kotkin',
+    lifespan: '1959–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História soviética, stalinismo, industrialização, formação do Estado soviético e história política da Rússia contemporânea.',
+    referenceWorks: [
+      'Stalin: Paradoxes of Power, 1878–1928 (2014)',
+      'Stalin: Waiting for Hitler, 1929–1941 (2017)',
+      'Magnetic Mountain: Stalinism as a Civilization (1995)',
+      'Armageddon Averted: The Soviet Collapse, 1970–2000 (2001)'
+    ],
+    mainContribution: 'É um dos principais historiadores contemporâneos do stalinismo. Sua pesquisa examina a construção do Estado soviético, a concentração do poder, a industrialização acelerada e a relação entre ideologia, instituições e sociedade. Sua biografia de Stalin combina documentação arquivística, história política e análise das transformações internacionais do século XX.',
+    keyQuote: 'A experiência soviética deve ser compreendida pela interação entre projetos ideológicos, estruturas institucionais, decisões políticas e circunstâncias internacionais, evitando explicações exclusivamente personalistas ou econômicas.',
+    relatedChapters: [1, 3, 5, 6, 7, 10]
+  },
+  {
+    id: 'khlevniuk-oleg-v',
+    number: 42,
+    name: 'Oleg V. Khlevniuk',
+    lifespan: '1959–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História política soviética, stalinismo, funcionamento do Politburo, repressão estatal, burocracia e sistema Gulag.',
+    referenceWorks: [
+      'The History of the Gulag: From Collectivization to the Great Terror (2004)',
+      'Stalin: New Biography of a Dictator (2015)',
+      'In Stalin\'s Shadow: The Career of "Sergo" Ordzhonikidze (1995)',
+      'Master of the House: Stalin and His Inner Circle (2009)'
+    ],
+    mainContribution: 'Especialista fundamental na utilização dos arquivos soviéticos para estudar o funcionamento do poder stalinista. Suas pesquisas investigam as decisões do círculo dirigente, a estrutura administrativa do regime, a repressão política e a relação entre Stalin e os principais órgãos do Estado.',
+    keyQuote: 'O stalinismo não pode ser explicado apenas pela personalidade de Stalin: é necessário investigar os mecanismos institucionais, as relações entre dirigentes e os processos administrativos que permitiram a concentração do poder e a execução das políticas repressivas.',
+    relatedChapters: [3, 4, 11, 13, 20]
+  },
+  {
+    id: 'lewin-moshe',
+    number: 43,
+    name: 'Moshe Lewin',
+    lifespan: '1921–2010',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História social soviética, campesinato, coletivização, burocracia estatal, economia política e transformações do sistema soviético.',
+    referenceWorks: [
+      'Russian Peasants and Soviet Power: A Study of Collectivization (1968)',
+      'The Making of the Soviet System (1985)',
+      'The Gorbachev Phenomenon: A Historical Interpretation (1988)',
+      'The Soviet Century (2005)'
+    ],
+    mainContribution: 'Foi um dos principais historiadores sociais da União Soviética. Sua produção acadêmica destacou a importância do campesinato, das estruturas burocráticas e das contradições internas do sistema soviético. Investigou como as transformações revolucionárias e a coletivização modificaram as relações entre sociedade e Estado.',
+    keyQuote: 'A história soviética precisa ser analisada também a partir das estruturas sociais e das relações entre Estado, trabalhadores e camponeses, e não somente pelas decisões dos dirigentes políticos.',
+    relatedChapters: [1, 5, 12, 20]
+  },
+  {
+    id: 'getty-j-arch',
+    number: 44,
+    name: 'J. Arch Getty',
+    lifespan: '1950–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História do stalinismo, Grande Terror, repressão política, instituições partidárias e história documental da União Soviética.',
+    referenceWorks: [
+      'Origins of the Great Purges: The Soviet Communist Party Reconsidered, 1933–1938 (1985)',
+      'The Road to Terror: Stalin and the Self-Destruction of the Bolsheviks, 1932–1939 (com Oleg V. Naumov, 1999)',
+      'Practicing Stalinism: Bolsheviks, Boyars, and the Persistence of Tradition (2013)',
+      'Yezhov: The Rise of Stalin\'s Iron Fist (com Oleg V. Naumov, 2008)'
+    ],
+    mainContribution: 'Destacou-se pelos estudos sobre a repressão stalinista a partir da documentação arquivística soviética. Suas pesquisas contribuíram para o debate sobre as origens, os mecanismos administrativos e a dinâmica institucional do Grande Terror, examinando também as relações entre o centro político e as estruturas regionais do Partido Comunista.',
+    keyQuote: 'O estudo do Grande Terror exige distinguir as decisões da liderança central, as disputas institucionais, a atuação das autoridades regionais e os mecanismos administrativos de repressão.',
+    relatedChapters: [3, 4, 11, 13, 20]
+  },
+  {
+    id: 'suny-ronald-grigor',
+    number: 45,
+    name: 'Ronald Grigor Suny',
+    lifespan: '1940–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História da Rússia, Revolução Russa, nacionalidades soviéticas, nacionalismo, formação do Estado e história social do Cáucaso.',
+    referenceWorks: [
+      'The Making of the Georgian Nation (1988)',
+      'The Soviet Experiment: Russia, the USSR, and the Successor States (1998)',
+      'The Revenge of the Past: Nationalism, Revolution, and the Collapse of the Soviet Union (1993)',
+      'Red Flag Unfurled: History, Historians, and the Russian Revolution (2017)'
+    ],
+    mainContribution: 'É uma referência na história social e política da Rússia e da União Soviética. Suas pesquisas investigam a Revolução Russa, a formação das identidades nacionais, as relações entre centro e periferia e as contradições do Estado multinacional soviético. Também contribuiu para o debate sobre as origens e os processos que levaram à dissolução da URSS.',
+    keyQuote: 'A União Soviética não pode ser compreendida como uma estrutura exclusivamente russa: sua história envolveu diferentes povos, nacionalidades, identidades e projetos políticos que influenciaram tanto sua formação quanto sua desintegração.',
+    relatedChapters: [1, 6, 7, 10]
+  },
+  {
+    id: 'brown-archie',
+    number: 46,
+    name: 'Archie Brown',
+    lifespan: '1938–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'Ciência política, história do comunismo internacional, liderança soviética, Guerra Fria, reformas de Gorbachev e transições políticas.',
+    referenceWorks: [
+      'The Gorbachev Factor (1996)',
+      'The Rise and Fall of Communism (2009)',
+      'The Myth of the Strong Leader: Political Leadership in the Modern Age (2014)',
+      'The Human Factor: Gorbachev, Reagan, and Thatcher, and the End of the Cold War (2020)'
+    ],
+    mainContribution: 'É um dos principais pesquisadores da evolução do comunismo internacional e da política soviética contemporânea. Suas pesquisas analisam as lideranças do Partido Comunista, as transformações do sistema político soviético, as reformas de Gorbachev e o encerramento da Guerra Fria.',
+    keyQuote: 'A transformação e o colapso do sistema soviético não podem ser explicados somente por fatores econômicos ou estruturais; as decisões das lideranças políticas e as possibilidades de reforma também tiveram papel decisivo.',
+    relatedChapters: [5, 7, 10, 20]
+  },
+  {
+    id: 'zubok-vladislav-m',
+    number: 47,
+    name: 'Vladislav M. Zubok',
+    lifespan: '1958–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História internacional, Guerra Fria, política externa soviética, relações entre Estados Unidos e União Soviética e dissolução do bloco socialista.',
+    referenceWorks: [
+      'A Failed Empire: The Soviet Union in the Cold War from Stalin to Gorbachev (2007)',
+      'Inside the Kremlin\'s Cold War: From Stalin to Khrushchev (1996)',
+      'Collapse: The Fall of the Soviet Union (2021)'
+    ],
+    mainContribution: 'É um importante historiador das relações internacionais da Guerra Fria. Sua produção acadêmica examina a política externa soviética, as percepções estratégicas dos dirigentes do Kremlin, a competição entre superpotências e os fatores políticos e econômicos que contribuíram para a crise final da União Soviética.',
+    keyQuote: 'A Guerra Fria deve ser estudada considerando as decisões e percepções dos dirigentes de ambos os blocos, os interesses geopolíticos e as limitações internas das superpotências.',
+    relatedChapters: [6, 7, 8, 10, 15, 20]
+  },
+  {
+    id: 'davies-r-w',
+    number: 48,
+    name: 'R. W. Davies',
+    lifespan: '1925–2021',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História econômica soviética, industrialização, planejamento central, coletivização, agricultura e fomes soviéticas.',
+    referenceWorks: [
+      'The Industrialisation of Soviet Russia (série de vários volumes, 1980–2004)',
+      'The Socialist Offensive: The Collectivisation of Soviet Agriculture, 1929–1930 (1980)',
+      'The Years of Hunger: Soviet Agriculture, 1931–1933 (com Stephen G. Wheatcroft, 2004)',
+      'The Soviet Economy in Turmoil, 1929–1930 (1989)'
+    ],
+    mainContribution: 'Foi um dos principais especialistas em história econômica soviética. Sua pesquisa documental examinou a industrialização acelerada, a transformação da agricultura, os mecanismos de planejamento e as consequências econômicas e sociais das políticas stalinistas. Seus trabalhos são referências fundamentais para os estudos sobre a coletivização e a fome de 1931–1933.',
+    keyQuote: 'A industrialização e a transformação econômica soviética precisam ser estudadas considerando as metas de planejamento, os recursos disponíveis, as decisões administrativas e os custos sociais das políticas econômicas.',
+    relatedChapters: [5, 12, 20]
+  },
+  {
+    id: 'werth-nicolas',
+    number: 49,
+    name: 'Nicolas Werth',
+    lifespan: '1950–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História soviética, repressão política, Grande Terror, Gulag, violência de Estado e história documental do stalinismo.',
+    referenceWorks: [
+      'Histoire de l\'Union soviétique: De l\'Empire russe à la Communauté des États indépendants (1992)',
+      'La Terreur et le désarroi: Staline et son système (2007)',
+      'Cannibal Island: Death in a Siberian Gulag (2006)'
+    ],
+    mainContribution: 'É um dos principais especialistas franceses na história da repressão soviética. Suas pesquisas utilizam documentação de arquivos soviéticos para investigar a violência política, as deportações, as operações repressivas, o funcionamento do Gulag e as relações entre o Estado e a sociedade.',
+    keyQuote: 'A repressão soviética deve ser examinada a partir de suas diferentes modalidades, incluindo execuções, deportações, encarceramento, trabalho forçado e operações administrativas de perseguição.',
+    relatedChapters: [3, 4, 6, 11, 12, 13]
+  },
+  {
+    id: 'viola-lynne',
+    number: 50,
+    name: 'Lynne Viola',
+    lifespan: '1950–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História social soviética, campesinato, coletivização forçada, resistência camponesa, deportações e repressão stalinista.',
+    referenceWorks: [
+      'Peasant Rebels Under Stalin: Collectivization and the Culture of Peasant Resistance (1996)',
+      'The Unknown Gulag: The Lost World of Stalin\'s Special Settlements (2007)',
+      'Peasant Russia, Civil War: The Volga Countryside in Revolution, 1917–1921 (1987)'
+    ],
+    mainContribution: 'É uma das principais pesquisadoras da experiência camponesa durante o stalinismo. Seus estudos investigam a coletivização forçada, as formas de resistência rural, as deportações de famílias classificadas como kulaks e o funcionamento dos assentamentos especiais. Sua obra amplia a compreensão da repressão para além das instituições centrais do Estado.',
+    keyQuote: 'A coletivização não foi apenas uma transformação administrativa da agricultura: foi um processo de conflito social que envolveu resistência, coerção, deslocamentos populacionais e profundas mudanças na vida rural soviética.',
+    relatedChapters: [5, 6, 11, 12]
+  },
+  {
+    id: 'vincent-andrew',
+    number: 51,
+    name: 'Andrew Vincent',
+    lifespan: '1951–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'Teoria política, história das ideologias, liberalismo, conservadorismo, socialismo, nacionalismo e pensamento político moderno.',
+    referenceWorks: [
+      'Modern Political Ideologies (1992)',
+      'Theories of the State (1987)',
+      'Nationalism and Particularity (2002)',
+      'The Nature of Political Theory (2004)'
+    ],
+    mainContribution: 'É uma referência no estudo sistemático das ideologias políticas. Sua produção examina os fundamentos conceituais, as tradições intelectuais e as diferenças entre as principais correntes políticas modernas. Sua obra Modern Political Ideologies oferece uma estrutura comparativa para compreender as origens, os conceitos e as transformações das ideologias.',
+    keyQuote: 'As ideologias políticas devem ser compreendidas como conjuntos organizados de conceitos, valores e propostas sobre a sociedade, o Estado, a autoridade, a liberdade e a organização do poder.',
+    relatedChapters: [1, 2, 3, 4, 5, 7, 9, 10]
+  },
+  {
+    id: 'eatwell-roger',
+    number: 52,
+    name: 'Roger Eatwell',
+    lifespan: '1949–2024',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'Ciência política comparada, fascismo, extrema-direita, populismo, nacionalismo e movimentos políticos europeus.',
+    referenceWorks: [
+      'Fascism: A History (1995)',
+      'The Nature of the Right: American and European Politics and Political Thought Since 1789 (1989)',
+      'Contemporary Political Ideologies (com Anthony Wright, 1999)'
+    ],
+    mainContribution: 'Foi um importante pesquisador do fascismo e da extrema-direita europeia. Seus estudos investigaram a composição ideológica dos movimentos fascistas, suas estratégias de mobilização, o nacionalismo radical e as transformações da direita política no século XX e início do século XXI.',
+    keyQuote: 'O fascismo deve ser estudado como um fenômeno político complexo, envolvendo ideologia, nacionalismo, mobilização de massas, liderança, organização partidária e contestação da democracia liberal.',
+    relatedChapters: [7, 8, 9, 10]
+  },
+  {
+    id: 'passmore-kevin',
+    number: 53,
+    name: 'Kevin Passmore',
+    lifespan: '1961–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História do fascismo, política europeia, movimentos de direita, nacionalismo e história política comparada.',
+    referenceWorks: [
+      'Fascism: A Very Short Introduction (2002; edição revista em 2014)',
+      'Women, Gender and Fascism in Europe, 1919–1945 (2003)',
+      'The French Third Republic: Stalemate Society (1993)'
+    ],
+    mainContribution: 'É um pesquisador importante da história comparada do fascismo. Sua abordagem examina as diferenças entre movimentos fascistas nacionais, as relações com as elites conservadoras, os conflitos sociais e a participação de diferentes grupos na construção dos regimes autoritários europeus.',
+    keyQuote: 'O fascismo não deve ser tratado como um modelo absolutamente uniforme: suas manifestações históricas precisam ser analisadas considerando os contextos nacionais, as alianças políticas e as estruturas sociais de cada país.',
+    relatedChapters: [7, 8, 9, 10]
+  },
+  {
+    id: 'osullivan-noel',
+    number: 54,
+    name: 'Noël O\'Sullivan',
+    lifespan: '1933–2020',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'Filosofia política, conservadorismo, liberalismo, teoria do Estado e pensamento político moderno.',
+    referenceWorks: [
+      'Conservatism (1976)',
+      'Fascism (1983)',
+      'The Problem of Political Obligation (1984)'
+    ],
+    mainContribution: 'Contribuiu para o estudo filosófico do conservadorismo, do fascismo e das transformações do pensamento político moderno. Sua produção examina os fundamentos intelectuais das tradições políticas e as tensões entre autoridade, liberdade, ordem social e legitimidade do Estado.',
+    keyQuote: 'O conservadorismo não constitui uma doutrina única e imutável: apresenta diferentes tradições intelectuais que atribuem importância variável à continuidade histórica, à autoridade, à ordem social e à transformação política.',
+    relatedChapters: [1, 2, 7, 8, 10]
+  },
+  {
+    id: 'franks-benjamin',
+    number: 55,
+    name: 'Benjamin Franks',
+    lifespan: '1972–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'Filosofia política, anarquismo, teoria social, movimentos libertários, ética política e organização coletiva.',
+    referenceWorks: [
+      'Rebel Alliances: The Means and Ends of Contemporary British Anarchisms (2006)',
+      'Anarchism and Moral Philosophy (2010)'
+    ],
+    mainContribution: 'É um pesquisador contemporâneo da filosofia política anarquista. Seus estudos examinam as relações entre princípios libertários, práticas de organização coletiva, ética, ação direta e movimentos sociais. Sua abordagem contribui para compreender o anarquismo como uma tradição política plural, com diferentes correntes e práticas.',
+    keyQuote: 'O anarquismo não se resume à ausência de organização: suas tradições investigam formas de associação voluntária, autogestão, solidariedade e organização social sem estruturas coercitivas de autoridade centralizada.',
+    relatedChapters: [1, 2, 4, 5, 6, 9, 10]
+  },
+  {
+    id: 'jackson-ben',
+    number: 56,
+    name: 'Ben Jackson',
+    lifespan: '1975–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História intelectual britânica, socialismo democrático, social-democracia, liberalismo social e pensamento político do século XX.',
+    referenceWorks: [
+      'Equality and the British Left: A Study in Progressive Political Thought, 1900–64 (2007)',
+      'The Case for Socialism (2023)'
+    ],
+    mainContribution: 'É um pesquisador da história intelectual da esquerda britânica e da evolução do socialismo democrático. Seus trabalhos investigam as relações entre igualdade, liberdade, democracia parlamentar, reforma social e as diferentes propostas de transformação econômica defendidas pelos movimentos trabalhistas.',
+    keyQuote: 'A tradição social-democrata representa uma via de transformação política que procura combinar democracia representativa, direitos sociais, redistribuição econômica e reformas institucionais, distinguindo-se dos projetos revolucionários de tomada do poder.',
+    relatedChapters: [3, 4, 5, 6, 9, 10]
+  },
+  {
+    id: 'fawcett-edmund',
+    number: 57,
+    name: 'Edmund Fawcett',
+    lifespan: '1946–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História intelectual do liberalismo, democracia liberal, pensamento político moderno e desenvolvimento das instituições democráticas.',
+    referenceWorks: [
+      'Liberalism: The Life of an Idea (2014; edição ampliada, 2018)',
+      'Conservatism: The Fight for a Tradition (2020)'
+    ],
+    mainContribution: 'Desenvolveu uma ampla interpretação histórica do liberalismo moderno, examinando sua evolução desde o século XIX e suas respostas aos conflitos entre liberdade individual, democracia, capitalismo, igualdade e autoridade estatal. Também estudou a formação e a transformação da tradição conservadora.',
+    keyQuote: 'O liberalismo moderno não é uma doutrina estática: sua trajetória envolve disputas internas sobre liberdade, igualdade, democracia, economia de mercado e o papel legítimo do Estado.',
+    relatedChapters: [1, 2, 3, 9, 10]
+  },
+  {
+    id: 'robin-corey',
+    number: 58,
+    name: 'Corey Robin',
+    lifespan: '1967–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'Teoria política, história intelectual do conservadorismo, pensamento da direita e relações entre autoridade, hierarquia e poder.',
+    referenceWorks: [
+      'The Reactionary Mind: Conservatism from Edmund Burke to Sarah Palin (2011)',
+      'The Enigma of Liberalism (1999)',
+      'Fear: The History of a Political Idea (2004)',
+      'The Reactionary Mind: Conservatism from Edmund Burke to Donald Trump (edição ampliada, 2018)'
+    ],
+    mainContribution: 'É um importante pesquisador contemporâneo do pensamento conservador. Sua interpretação investiga as origens intelectuais da reação política, as defesas da hierarquia social e as relações entre conservadorismo, autoridade e resistência às transformações igualitárias.',
+    keyQuote: 'O conservadorismo pode ser analisado historicamente a partir das respostas políticas às transformações sociais que questionam hierarquias, privilégios, autoridades tradicionais e estruturas estabelecidas de poder.',
+    relatedChapters: [1, 2, 7, 8, 9, 10]
+  },
+  {
+    id: 'dunn-john',
+    number: 59,
+    name: 'John Dunn',
+    lifespan: '1940–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'História do pensamento político, teoria democrática, liberalismo, legitimidade política e história intelectual moderna.',
+    referenceWorks: [
+      'The Political Thought of John Locke (1969)',
+      'The Cunning of Unreason: Making Sense of Politics (2000)',
+      'Setting the People Free: The Story of Democracy (2005)',
+      'Breaking Democracy\'s Spell (2014)'
+    ],
+    mainContribution: 'É um dos principais historiadores contemporâneos do pensamento político. Suas pesquisas examinam a formação histórica das ideias de legitimidade, democracia, liberdade e autoridade, destacando a necessidade de compreender os conceitos políticos em seus contextos históricos e institucionais.',
+    keyQuote: 'A democracia não deve ser tratada como uma ideia abstrata e universalmente realizada: sua construção histórica depende de instituições, conflitos sociais, legitimidade política e condições concretas de participação.',
+    relatedChapters: [1, 2, 9, 10]
+  },
+  {
+    id: 'stears-marc',
+    number: 60,
+    name: 'Marc Stears',
+    lifespan: '1975–',
+    category: 'História soviética, teoria política e pensamento moderno',
+    categoryRoman: 'VII',
+    expertise: 'Teoria política, história intelectual, democracia, socialismo, pensamento progressista e movimentos políticos.',
+    referenceWorks: [
+      'Progressives, Pluralists, and the Problems of the State: Ideologies of Reform in the United States and Britain, 1909–1926 (2002)',
+      'Demanding Democracy: American Radicals in Search of a New Politics (2010)',
+      'The Oxford Handbook of Political Ideologies (coeditor, com Michael Freeden, 2013)'
+    ],
+    mainContribution: 'É um pesquisador da história intelectual e da teoria política contemporânea. Seus estudos investigam as relações entre democracia, pluralismo, movimentos progressistas e projetos de reforma institucional. Sua contribuição ajuda a compreender como diferentes tradições políticas formularam propostas para ampliar a participação popular e transformar o Estado.',
+    keyQuote: 'As ideologias políticas também se desenvolvem por meio de disputas sobre a organização das instituições, a participação popular e os limites da autoridade estatal, não apenas por meio de doutrinas econômicas ou programas partidários.',
+    relatedChapters: [1, 2, 3, 4, 5, 9, 10]
   }
 ];
 
