@@ -70,7 +70,10 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
         a.name.toLowerCase().includes(q) ||
         a.institution.toLowerCase().includes(q) ||
         a.focus.toLowerCase().includes(q) ||
-        a.description.toLowerCase().includes(q)
+        a.description.toLowerCase().includes(q) ||
+        a.notableCollections.some((c) => c.toLowerCase().includes(q)) ||
+        (a.headerBanner ? a.headerBanner.toLowerCase().includes(q) : false) ||
+        (a.note ? a.note.toLowerCase().includes(q) : false)
     );
   }, [searchTerm]);
 
@@ -82,7 +85,12 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
         h.name.toLowerCase().includes(q) ||
         h.institution.toLowerCase().includes(q) ||
         h.expertise.toLowerCase().includes(q) ||
-        h.contribution.toLowerCase().includes(q)
+        h.keyWork.toLowerCase().includes(q) ||
+        h.contribution.toLowerCase().includes(q) ||
+        h.quote.toLowerCase().includes(q) ||
+        (h.blockLabel ? h.blockLabel.toLowerCase().includes(q) : false) ||
+        (h.associatedDossiersText ? h.associatedDossiersText.toLowerCase().includes(q) : false) ||
+        (h.number ? `#${h.number}`.includes(q) : false)
     );
   }, [searchTerm]);
 
@@ -124,7 +132,7 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
         <p className="text-xs sm:text-sm text-stone-300 font-serif mt-2 max-w-3xl leading-relaxed">
           {activeCollectionId === 'colecao-2'
             ? 'Catálogo integral e rigoroso dos 60 maiores especialistas mundiais no estudo do pensamento político, Iluminismo, liberalismo, marxismo, fascismo, nazismo, social-democracia, história soviética e teoria do totalitarismo.'
-            : 'Consulte as 31 obras acadêmicas fundamentais, o perfil dos historiadores de referência e os 8 grandes repositórios arquivísticos (Library of Congress, Wilson Center, Yale Avalon, NARA, Bundesarchiv, GHDI, Hoover e Yale Annals of Communism).'}
+            : 'Consulte as 31 obras acadêmicas fundamentais, o perfil dos historiadores de referência e os 20 grandes repositórios arquivísticos (Library of Congress, Wilson Center, Yale Avalon, NARA, Bundesarchiv, GHDI, Hoover, Yale Annals, RGASPI, IISH, Gallica e acervos digitais).'}
         </p>
 
         {/* Sub-Tab Navigation Bar with touch scrolling */}
@@ -173,7 +181,7 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
           >
             <Building2 className="w-3.5 h-3.5" />
             <span className="sm:hidden">Arquivos ({filteredArchives.length})</span>
-            <span className="hidden sm:inline">8 Arquivos Históricos ({filteredArchives.length})</span>
+            <span className="hidden sm:inline">20 Arquivos Históricos ({filteredArchives.length})</span>
           </button>
 
           <button
@@ -188,8 +196,8 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
             }`}
           >
             <Users className="w-3.5 h-3.5" />
-            <span className="sm:hidden">Pesquisadores URSS ({filteredHistorians.length})</span>
-            <span className="hidden sm:inline">18 Pesquisadores Soviéticos ({filteredHistorians.length})</span>
+            <span className="sm:hidden">Pesquisadores ({filteredHistorians.length})</span>
+            <span className="hidden sm:inline">42 Pesquisadores ({filteredHistorians.length})</span>
           </button>
         </div>
       </div>
@@ -207,8 +215,8 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
               : subTab === 'monographs'
               ? 'Pesquisar livro por título, autor ou tópico (ex: Fitzpatrick, Khlevniuk, Fawcett, Heywood, Sassoon, Anderson, Pateman)...'
               : subTab === 'archives'
-              ? 'Pesquisar arquivo (ex: Library of Congress, NARA, Wilson Center, Avalon, Bundesarchiv)...'
-              : 'Pesquisar historiador ou instituição...'
+              ? 'Pesquisar arquivo (ex: Library of Congress, NARA, Wilson Center, RGASPI, IISH, Gallica, Bundesarchiv)...'
+              : 'Pesquisar entre os 42 pesquisadores (ex: Fitzpatrick, Kotkin, Berlin, Arendt, Gentile, Linz)...'
           }
           className="w-full pl-10 pr-4 py-2.5 bg-[#17171a] border border-stone-800 rounded-lg text-sm text-stone-100 placeholder:text-stone-500 focus:outline-none focus:border-amber-500 transition-colors"
         />
@@ -463,7 +471,7 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
         </div>
       )}
 
-      {/* SUB-TAB 2: 8 OFFICIAL HISTORICAL ARCHIVES */}
+      {/* SUB-TAB 2: 20 OFFICIAL HISTORICAL ARCHIVES */}
       {subTab === 'archives' && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {filteredArchives.map((archive) => (
@@ -472,8 +480,14 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
               className="bg-[#17171b] border border-stone-800 rounded-xl p-5 flex flex-col justify-between space-y-4 shadow"
             >
               <div>
+                {archive.headerBanner && (
+                  <div className="text-[11px] font-mono font-bold text-amber-400/90 border-b border-stone-800/80 pb-2 mb-2.5 tracking-wide">
+                    {archive.headerBanner}
+                  </div>
+                )}
+
                 <div className="flex items-center gap-2 text-xs font-mono text-amber-500 mb-1">
-                  <Building2 className="w-3.5 h-3.5" />
+                  <Building2 className="w-3.5 h-3.5 shrink-0" />
                   <span>{archive.institution}</span>
                 </div>
 
@@ -504,6 +518,12 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
                     ))}
                   </ul>
                 </div>
+
+                {archive.note && (
+                  <div className="mt-3 p-2.5 bg-stone-900/60 border-l-2 border-amber-500/70 rounded-r text-[11px] text-stone-300 font-serif leading-relaxed">
+                    {archive.note}
+                  </div>
+                )}
               </div>
 
               {/* Bottom Actions */}
@@ -511,7 +531,7 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
                 <div className="flex flex-wrap items-center gap-1 font-mono text-[11px] text-stone-400">
                   <span className="shrink-0">Dossiês Vinculados:</span>
                   {archive.relatedTopicIds.map((tid) => {
-                    const topic = topics.find((t) => t.id === tid);
+                    const topic = DOSSIER_TOPICS.find((t) => t.id === tid) || topics.find((t) => t.id === tid);
                     if (!topic) return null;
                     return (
                       <button
@@ -526,32 +546,54 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
                   })}
                 </div>
 
-                <a
-                  href={archive.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-3 py-1.5 bg-stone-800 hover:bg-stone-700 text-amber-400 rounded border border-stone-700 font-mono text-xs flex items-center gap-1.5 transition-colors shrink-0 ml-auto"
-                >
-                  <ExternalLink className="w-3.5 h-3.5" />
-                  <span>Acessar Acervo</span>
-                </a>
+                <div className="flex flex-wrap items-center gap-2 ml-auto">
+                  <a
+                    href={archive.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-3 py-1.5 bg-stone-800 hover:bg-stone-700 text-amber-400 rounded border border-stone-700 font-mono text-xs flex items-center gap-1.5 transition-colors shrink-0"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                    <span>{archive.accessLabel || 'Acessar Acervo'}</span>
+                  </a>
+
+                  {archive.extraLinks &&
+                    archive.extraLinks.map((extra, eIdx) => (
+                      <a
+                        key={eIdx}
+                        href={extra.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="px-3 py-1.5 bg-stone-800 hover:bg-stone-700 text-amber-400 rounded border border-stone-700 font-mono text-xs flex items-center gap-1.5 transition-colors shrink-0"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                        <span>{extra.label}</span>
+                      </a>
+                    ))}
+                </div>
               </div>
             </div>
           ))}
         </div>
       )}
 
-      {/* SUB-TAB 3: 18 HISTORIANS */}
+      {/* SUB-TAB 3: 42 HISTORIANS */}
       {subTab === 'historians' && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {filteredHistorians.map((hist) => (
+          {filteredHistorians.map((hist, hIdx) => (
             <div
               key={hist.id}
               className="bg-[#17171b] border border-stone-800 rounded-xl p-5 flex flex-col justify-between space-y-4 shadow"
             >
               <div>
+                {hist.blockLabel && (
+                  <div className="text-[10px] font-mono font-bold text-amber-400/90 border-b border-stone-800/80 pb-2 mb-2.5 tracking-wide">
+                    #{hist.number || hIdx + 1} · {hist.blockLabel}
+                  </div>
+                )}
+
                 <div className="flex items-center gap-2 text-xs font-mono text-amber-500 mb-1">
-                  <Users className="w-3.5 h-3.5" />
+                  <Users className="w-3.5 h-3.5 shrink-0" />
                   <span>{hist.institution}</span>
                 </div>
 
@@ -573,30 +615,50 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
                   {hist.contribution}
                 </p>
 
-                <div className="mt-3 p-2.5 bg-stone-900/60 border-l-2 border-amber-600 rounded-r text-[11px] text-stone-300 italic font-serif">
-                  "{hist.quote}"
+                <div className="mt-3 p-2.5 bg-stone-900/60 border-l-2 border-amber-600 rounded-r text-[11px] text-stone-300 font-serif">
+                  {hist.synthesisLabel ? (
+                    <>
+                      <span className="text-stone-500 block not-italic text-[10px] font-mono uppercase tracking-wider font-semibold mb-1">
+                        {hist.synthesisLabel}
+                      </span>
+                      <span className="italic">{hist.quote}</span>
+                    </>
+                  ) : (
+                    <span className="italic">"{hist.quote}"</span>
+                  )}
                 </div>
               </div>
 
               {/* Bottom Topic Links */}
-              <div className="pt-3 border-t border-stone-800 flex items-center justify-between text-xs">
-                <span className="text-[11px] font-mono text-stone-500">Dossiês associados:</span>
-                <div className="flex flex-wrap gap-1">
-                  {hist.dossierTopicIds.map((tid) => {
-                    const topic = topics.find((t) => t.id === tid);
-                    if (!topic) return null;
-                    return (
-                      <button
-                        key={tid}
-                        onClick={() => onSelectTopic(topic)}
-                        className="px-1.5 py-0.5 rounded bg-stone-800 hover:bg-amber-500 hover:text-stone-950 text-stone-300 font-mono text-[10px] transition-colors"
-                        title={topic.title}
-                      >
-                        #{topic.categoryNumber}
-                      </button>
-                    );
-                  })}
-                </div>
+              <div className="pt-3 border-t border-stone-800 flex flex-col gap-1.5 text-xs">
+                {hist.associatedDossiersText ? (
+                  <div>
+                    <span className="text-[11px] font-mono text-stone-500 block mb-1">Dossiês associados:</span>
+                    <p className="text-[11px] font-mono text-stone-300 leading-relaxed">
+                      {hist.associatedDossiersText}
+                    </p>
+                  </div>
+                ) : (
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] font-mono text-stone-500">Dossiês associados:</span>
+                    <div className="flex flex-wrap gap-1">
+                      {hist.dossierTopicIds.map((tid) => {
+                        const topic = DOSSIER_TOPICS.find((t) => t.id === tid) || topics.find((t) => t.id === tid);
+                        if (!topic) return null;
+                        return (
+                          <button
+                            key={tid}
+                            onClick={() => onSelectTopic(topic)}
+                            className="px-1.5 py-0.5 rounded bg-stone-800 hover:bg-amber-500 hover:text-stone-950 text-stone-300 font-mono text-[10px] transition-colors"
+                            title={topic.title}
+                          >
+                            #{topic.categoryNumber}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           ))}

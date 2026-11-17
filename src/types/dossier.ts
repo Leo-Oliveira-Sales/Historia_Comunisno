@@ -45,6 +45,8 @@ export interface PrimarySource {
 
 export interface HistorianProfile {
   id: string;
+  number?: number;
+  blockLabel?: string;
   name: string;
   institution: string;
   expertise: string;
@@ -52,17 +54,28 @@ export interface HistorianProfile {
   year: string;
   contribution: string;
   dossierTopicIds: number[];
+  associatedDossiersText?: string;
+  synthesisLabel?: string;
   quote: string;
+}
+
+export interface ArchiveAccessLink {
+  label: string;
+  url: string;
 }
 
 export interface HistoricalArchiveRepository {
   id: string;
+  headerBanner?: string;
   name: string;
   institution: string;
   focus: string;
   description: string;
   notableCollections: string[];
   url: string;
+  accessLabel?: string;
+  extraLinks?: ArchiveAccessLink[];
+  note?: string;
   relatedTopicIds: number[];
 }
 

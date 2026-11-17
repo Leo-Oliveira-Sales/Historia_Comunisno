@@ -276,7 +276,7 @@ export default function App() {
 
                 <div className="bg-[#19191d]/90 border border-stone-800 p-3 sm:p-3.5 rounded-lg">
                   <div className="text-xl sm:text-2xl font-bold text-stone-100 tabular-nums">
-                    {activeCollectionId === 'colecao-2' ? '07' : `0${ARCHIVES_DATABASE.length}`}
+                    {activeCollectionId === 'colecao-2' ? '07' : String(ARCHIVES_DATABASE.length).padStart(2, '0')}
                   </div>
                   <div className="text-[10px] sm:text-[11px] text-stone-400">
                     {activeCollectionId === 'colecao-2' ? 'Blocos Temáticos' : 'Arquivos Oficiais'}
