@@ -1,10 +1,11 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { DossierTopic, HistoricalPeriod } from '../types/dossier';
 import { HISTORICAL_PERIODS } from '../data/dossierDatabase';
 import { CANONICAL_EDITORIAL_DATABASE } from '../data/canonicalEditorialDatabase';
 import { ACADEMIC_CHAPTERS } from '../data/academicChaptersDatabase';
 import { IDEOLOGIAS_CHAPTERS } from '../data/collections/collection_ideologias_chapters';
-import { Search, BookOpen, Bookmark, BookmarkCheck, FileCheck, Layers, GraduationCap, Award } from 'lucide-react';
+import { GUERRAS_MUNDIAIS_BLOCKS } from '../data/collections/collection_guerras_mundiais_database';
+import { Search, BookOpen, Bookmark, BookmarkCheck, FileCheck, Layers, GraduationCap, Award, Clock } from 'lucide-react';
 import { playTypewriterClack, playStampSound } from '../utils/audio';
 
 interface DossierGridProps {
@@ -25,7 +26,14 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
   const [selectedPeriod, setSelectedPeriod] = useState<HistoricalPeriod>('todos');
   const [selectedBlock, setSelectedBlock] = useState<string>('todos');
 
-  const isIdeologias = topics.length > 0 && topics[0].id >= 101;
+  const isIdeologias = topics.length > 0 && topics[0].id >= 101 && topics[0].id < 200;
+  const isGuerrasMundiais = topics.length > 0 && topics[0].id >= 201 && topics[0].id < 300;
+
+  useEffect(() => {
+    setSelectedBlock('todos');
+    setSelectedPeriod('todos');
+    setSearchTerm('');
+  }, [isIdeologias, isGuerrasMundiais]);
 
   const filteredTopics = useMemo(() => {
     return topics.filter((t) => {
@@ -36,6 +44,11 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
           if (selectedBlock === '5-6' && !(t.id === 105 || t.id === 106)) return false;
           if (selectedBlock === '7-8' && !(t.id === 107 || t.id === 108)) return false;
           if (selectedBlock === '9-11' && !(t.id === 109 || t.id === 111 || t.id === 112)) return false;
+        }
+      } else if (isGuerrasMundiais) {
+        if (selectedBlock !== 'todos') {
+          const blk = GUERRAS_MUNDIAIS_BLOCKS.find((b) => b.id === selectedBlock);
+          if (blk && !(blk.topicIds as readonly number[]).includes(t.id)) return false;
         }
       } else {
         const matchesPeriod = selectedPeriod === 'todos' || t.period === selectedPeriod;
@@ -55,7 +68,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
 
       return inTitle || inCategory || inSummary || inSubjects || inActors || inSources;
     });
-  }, [topics, isIdeologias, selectedBlock, selectedPeriod, searchTerm]);
+  }, [topics, isIdeologias, isGuerrasMundiais, selectedBlock, selectedPeriod, searchTerm]);
 
   return (
     <div className="space-y-6 w-full max-w-full overflow-hidden">
@@ -72,6 +85,8 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
               placeholder={
                 isIdeologias
                   ? "Pesquisar por autor, conceito ou obra (ex: Adam Smith, Marx, Fourier, Iluminismo, Contrato Social)..."
+                  : isGuerrasMundiais
+                  ? "Pesquisar capítulo ou tema (ex: Verdun, Versalhes, Barbarossa, Wannsee, Midway, Nuremberg)..."
                   : "Pesquisar por tratado, expurgo, autor (ex: Molotov, Katyn, Gulag, Rapallo)..."
               }
               className="w-full pl-10 pr-4 py-2.5 sm:py-2 bg-[#121215] border border-stone-700/80 rounded-lg text-xs sm:text-sm text-stone-100 placeholder:text-stone-500 focus:outline-none focus:border-amber-500 transition-colors min-h-[42px]"
@@ -97,6 +112,32 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
               { id: '5-6', label: '5–6. Marxismo & Comunismo' },
               { id: '7-8', label: '7–8. Fascismo & Nazismo' },
               { id: '9-11', label: '9–11. Democracia & Revoluções' },
+            ].map((blk) => {
+              const isActive = selectedBlock === blk.id;
+              return (
+                <button
+                  key={blk.id}
+                  onClick={() => {
+                    playTypewriterClack();
+                    setSelectedBlock(blk.id);
+                  }}
+                  className={`px-3 py-2 min-h-[38px] rounded-md font-mono text-xs whitespace-nowrap transition-colors shrink-0 flex items-center justify-center ${
+                    isActive
+                      ? 'bg-amber-500 text-stone-950 font-semibold shadow-sm'
+                      : 'bg-stone-800/80 text-stone-400 hover:text-stone-200 hover:bg-stone-700/80'
+                  }`}
+                >
+                  {blk.label}
+                </button>
+              );
+            })
+          ) : isGuerrasMundiais ? (
+            [
+              { id: 'todos', label: 'Todos os 20 Capítulos' },
+              ...GUERRAS_MUNDIAIS_BLOCKS.map((b) => ({
+                id: b.id,
+                label: `${b.shortLabel} (${b.topicIds.length})`,
+              })),
             ].map((blk) => {
               const isActive = selectedBlock === blk.id;
               return (
@@ -142,10 +183,15 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
         {/* Count and helper text */}
         <div className="flex flex-col xs:flex-row items-start xs:items-center justify-between text-xs text-stone-400 pt-1 border-t border-stone-800/60 font-mono gap-1">
           <span>
-            {filteredTopics.length} de {topics.length} {isIdeologias ? 'capítulos didáticos' : 'tópicos catalogados'}
+            {filteredTopics.length} de {topics.length}{' '}
+            {isIdeologias ? 'capítulos didáticos' : isGuerrasMundiais ? 'monografias estruturadas' : 'tópicos catalogados'}
           </span>
-          <span className="text-[11px] text-stone-500">
-            {isIdeologias ? 'Fontes Primárias & Bibliografia dos 60 Especialistas' : 'Documentação Primária Yale / GHDI / USHMM'}
+          <span className={`text-[11px] ${isGuerrasMundiais ? 'text-amber-300 font-bold' : 'text-stone-500'}`}>
+            {isIdeologias
+              ? 'Fontes Primárias & Bibliografia dos 60 Especialistas'
+              : isGuerrasMundiais
+              ? 'Coleção III · Em Produção!'
+              : 'Documentação Primária Yale / GHDI / USHMM'}
           </span>
         </div>
       </div>
@@ -226,28 +272,53 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
                 {/* Academic Standard Badge */}
                 <div className="mt-3 py-1.5 px-2.5 bg-[#121215] border border-amber-900/40 rounded flex flex-wrap items-center justify-between gap-1.5 text-[11px] font-mono text-stone-400">
                   <span className="flex items-center gap-1.5 text-amber-400 font-medium">
-                    <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                    <span>{isIdeologias ? 'Dossiê Cátedra 60 Autores' : 'Padrão 7 Seções Canônicas'}</span>
+                    {isGuerrasMundiais ? (
+                      <Clock className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                    ) : (
+                      <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                    )}
+                    <span>
+                      {isIdeologias
+                        ? 'Dossiê Cátedra 60 Autores'
+                        : isGuerrasMundiais
+                        ? '4 Abas Preparadas'
+                        : 'Padrão 7 Seções Canônicas'}
+                    </span>
                   </span>
-                  <span className="text-emerald-400 font-mono text-[10px] bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-800/40 shrink-0">
-                    Auditado
-                  </span>
+                  {isGuerrasMundiais ? (
+                    <span className="text-amber-300 font-mono text-[10px] bg-amber-950/70 px-1.5 py-0.5 rounded border border-amber-700/60 font-bold shrink-0">
+                      Em Produção!
+                    </span>
+                  ) : (
+                    <span className="text-emerald-400 font-mono text-[10px] bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-800/40 shrink-0">
+                      Auditado
+                    </span>
+                  )}
                 </div>
               </div>
 
               {/* Bottom Card Actions (Fully Responsive on Font Scaling) */}
               <div className="mt-4 pt-3 border-t border-stone-800/80 flex flex-wrap items-center justify-between text-xs gap-2.5">
                 <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-stone-400 font-mono text-[11px]">
-                  <div className="flex items-center gap-1.5 text-emerald-400 shrink-0" title="Documentos primários oficiais de acervos desclassificados">
-                    <FileCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                    <span>{primaryCount} {primaryCount === 1 ? 'Doc. Primário' : 'Docs. Primários'}</span>
-                  </div>
-                  {refCount > 0 && (
-                    <div className="flex items-center gap-1 text-stone-400 shrink-0" title="Obras e referências acadêmicas auditadas">
-                      <span className="text-stone-600">·</span>
-                      <GraduationCap className="w-3.5 h-3.5 text-amber-400/80 shrink-0" />
-                      <span>{refCount} Ref.</span>
+                  {isGuerrasMundiais ? (
+                    <div className="flex items-center gap-1.5 text-amber-300/90 shrink-0">
+                      <Layers className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                      <span>Em Produção!</span>
                     </div>
+                  ) : (
+                    <>
+                      <div className="flex items-center gap-1.5 text-emerald-400 shrink-0" title="Documentos primários oficiais de acervos desclassificados">
+                        <FileCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                        <span>{primaryCount} {primaryCount === 1 ? 'Doc. Primário' : 'Docs. Primários'}</span>
+                      </div>
+                      {refCount > 0 && (
+                        <div className="flex items-center gap-1 text-stone-400 shrink-0" title="Obras e referências acadêmicas auditadas">
+                          <span className="text-stone-600">·</span>
+                          <GraduationCap className="w-3.5 h-3.5 text-amber-400/80 shrink-0" />
+                          <span>{refCount} Ref.</span>
+                        </div>
+                      )}
+                    </>
                   )}
                 </div>
 
@@ -256,7 +327,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
                   className="px-3.5 py-2 min-h-[40px] bg-stone-800 hover:bg-stone-700 active:scale-95 text-stone-200 group-hover:text-amber-300 rounded-md text-xs font-semibold flex items-center gap-1.5 transition-all border border-stone-700/60 shrink-0 ml-auto"
                 >
                   <BookOpen className="w-3.5 h-3.5 text-amber-400" />
-                  <span>{isIdeologias ? 'Abrir Capítulo' : 'Abrir Dossiê'}</span>
+                  <span>{isIdeologias || isGuerrasMundiais ? 'Abrir Capítulo' : 'Abrir Dossiê'}</span>
                 </button>
               </div>
             </div>
@@ -273,6 +344,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
             onClick={() => {
               setSearchTerm('');
               setSelectedPeriod('todos');
+              setSelectedBlock('todos');
             }}
             className="px-4 py-2 bg-stone-800 hover:bg-stone-700 text-stone-200 text-xs rounded-md"
           >

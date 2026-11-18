@@ -219,30 +219,121 @@ const TIMELINE_ERAS: TimelineEra[] = [
   }
 ];
 
+const GUERRAS_MUNDIAIS_TIMELINE_ERAS: TimelineEra[] = [
+  {
+    periodKey: 'bloco-1',
+    topicIds: [201, 202, 203, 204, 205, 206, 207],
+    title: 'BLOCO I — PRIMEIRA GUERRA MUNDIAL (1914–1918)',
+    dateRange: '1871 – 1918',
+    summary: 'Origens da Primeira Guerra Mundial, Crise de Julho, Guerra de Trincheiras na Frente Ocidental, Frente Oriental e colapso russo, Guerra Global, Guerra Total, entrada dos EUA e Armistício.',
+    milestones: [
+      'Nº 01 — As Origens da Primeira Guerra Mundial (1871–1914)',
+      'Nº 02 — O Estopim de 1914 e a Crise de Julho',
+      'Nº 03 — A Guerra de Trincheiras e a Frente Ocidental (1914–1918)',
+      'Nº 04 — A Frente Oriental e o Colapso do Império Russo',
+      'Nº 05 — Guerra Global: África, Oriente Médio e Império Otomano',
+      'Nº 06 — Guerra Total: Economia, Sociedade e Propaganda',
+      'Nº 07 — A Entrada dos Estados Unidos, o Colapso Alemão e o Armistício'
+    ],
+    quote: {
+      text: 'Coleção III · Em Produção!',
+      author: 'Bloco I — Primeira Guerra Mundial (1914–1918)'
+    }
+  },
+  {
+    periodKey: 'bloco-2',
+    topicIds: [208, 209, 210],
+    title: 'BLOCO II — ENTRE AS GUERRAS (1919–1939)',
+    dateRange: '1919 – 1939',
+    summary: 'Tratado de Versalhes e Nova Ordem Europeia, crise das democracias e ascensão dos regimes autoritários, expansão do Eixo e fracasso da segurança coletiva.',
+    milestones: [
+      'Nº 08 — Versalhes e a Nova Ordem Europeia',
+      'Nº 09 — Crise das Democracias e Ascensão dos Regimes Autoritários',
+      'Nº 10 — A Expansão do Eixo e o Fracasso da Segurança Coletiva (1931–1939)'
+    ],
+    quote: {
+      text: 'Coleção III · Em Produção!',
+      author: 'Bloco II — Entre as Guerras (1919–1939)'
+    }
+  },
+  {
+    periodKey: 'bloco-3',
+    topicIds: [211, 212, 213, 214, 215, 216, 217, 218, 219],
+    title: 'BLOCO III — SEGUNDA GUERRA MUNDIAL (1939–1945)',
+    dateRange: '1939 – 1945',
+    summary: 'Invasão da Polônia, Queda da França e Batalha da Grã-Bretanha, Operação Barbarossa, Holocausto, Norte da África e Mediterrâneo, Pacífico, Frente Chinesa, Libertação da Europa e Derrota do Japão.',
+    milestones: [
+      'Nº 11 — A Invasão da Polônia e o Início da Segunda Guerra Mundial',
+      'Nº 12 — A Queda da França e a Batalha da Grã-Bretanha (1940)',
+      'Nº 13 — Operação Barbarossa e a Guerra de Extermínio no Leste (1941–1945)',
+      'Nº 14 — O Holocausto e os Crimes do Nacional-Socialismo',
+      'Nº 15 — A Guerra no Norte da África e no Mediterrâneo',
+      'Nº 16 — A Guerra no Pacífico e a Expansão Japonesa',
+      'Nº 17 — A Frente Chinesa e a Guerra na Ásia Oriental',
+      'Nº 18 — A Libertação da Europa e a Derrota da Alemanha (1944–1945)',
+      'Nº 19 — A Derrota do Japão e o Fim da Guerra Mundial'
+    ],
+    quote: {
+      text: 'Coleção III · Em Produção!',
+      author: 'Bloco III — Segunda Guerra Mundial (1939–1945)'
+    }
+  },
+  {
+    periodKey: 'bloco-4',
+    topicIds: [220],
+    title: 'BLOCO IV — CONSEQUÊNCIAS E NOVA ORDEM MUNDIAL',
+    dateRange: 'Pós-1945',
+    summary: 'Julgamentos de Nuremberg e Tóquio, responsabilização por crimes de guerra, ocupação da Alemanha, reconstrução europeia, criação da ONU e início da bipolaridade internacional.',
+    milestones: [
+      'Nº 20 — O Pós-Guerra: Nuremberg, ONU e a Formação da Guerra Fria'
+    ],
+    quote: {
+      text: 'Coleção III · Em Produção!',
+      author: 'Bloco IV — Consequências e Nova Ordem Mundial'
+    }
+  }
+];
+
 export const TimelineView: React.FC<TimelineViewProps> = ({ topics, onSelectTopic }) => {
-  const isIdeologias = topics.length > 0 && topics[0].id >= 101;
-  const erasToRender = isIdeologias ? IDEOLOGIAS_TIMELINE_ERAS : TIMELINE_ERAS;
+  const isIdeologias = topics.length > 0 && topics[0].id >= 101 && topics[0].id < 200;
+  const isGuerrasMundiais = topics.length > 0 && topics[0].id >= 201 && topics[0].id < 300;
+  const erasToRender = isIdeologias
+    ? IDEOLOGIAS_TIMELINE_ERAS
+    : isGuerrasMundiais
+    ? GUERRAS_MUNDIAIS_TIMELINE_ERAS
+    : TIMELINE_ERAS;
 
   return (
     <div className="space-y-8 w-full max-w-full overflow-hidden">
       {/* Introduction Banner */}
       <div className="bg-[#17171a] border border-stone-800 rounded-xl p-4 sm:p-6 shadow-lg">
-        <div className="flex items-center gap-2 text-xs font-mono text-amber-500 mb-2">
+        <div className="flex flex-wrap items-center gap-2 text-xs font-mono text-amber-500 mb-2">
           <Calendar className="w-4 h-4" />
           <span>
             {isIdeologias
               ? 'CRONOLOGIA DAS IDEOLOGIAS POLÍTICAS · 1689 A CONTEMPORANEIDADE'
+              : isGuerrasMundiais
+              ? 'COLEÇÃO III · HISTÓRIA DAS GUERRAS MUNDIAIS · 4 BLOCOS TEMÁTICOS'
               : 'CRONOLOGIA HISTÓRICA DOCUMENTADA · 1905 A 1991'}
           </span>
+          {isGuerrasMundiais && (
+            <span className="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-500/50 text-amber-300 text-[10px] font-bold uppercase">
+              Em Produção!
+            </span>
+          )}
         </div>
         <h2 className="text-xl sm:text-2xl font-display font-bold text-stone-100">
           {isIdeologias
             ? 'Linha do Tempo das Grandes Matrizes Ideológicas e Regimes Modernos'
+            : isGuerrasMundiais
+            ? 'Estrutura Cronológica dos 4 Blocos e 20 Capítulos'
             : 'Linha do Tempo dos Governos e Crises da União Soviética'}
         </h2>
         <p className="text-xs sm:text-sm text-stone-300 font-serif mt-2 max-w-3xl leading-relaxed">
           {isIdeologias
             ? 'Acompanhe as cinco grandes eras da evolução política contemporânea: do Iluminismo e liberalismo clássico à Primavera dos Povos, marxismo, guerras ideológicas, ascensão do fascismo e consolidação do Estado de Bem-Estar Social.'
+            : isGuerrasMundiais
+            ? 'Em Produção! Estrutura organizada em quatro grandes blocos temáticos cobrindo os 20 capítulos da coleção História das Guerras Mundiais.'
             : 'Navegue pelas seis grandes eras do poder soviético, desde as revoluções do início do século XX até a dissolução em dezembro de 1991. Cada era contém marcos verificados e dossiês acadêmicos associados.'}
         </p>
       </div>
@@ -251,7 +342,7 @@ export const TimelineView: React.FC<TimelineViewProps> = ({ topics, onSelectTopi
       <div className="space-y-6 sm:space-y-8 relative before:absolute before:inset-0 before:left-3.5 sm:before:left-7 before:w-0.5 before:bg-stone-800 before:pointer-events-none">
         {erasToRender.map((era, index) => {
           // Find matching topics for this era
-          const eraTopics = isIdeologias
+          const eraTopics = isIdeologias || isGuerrasMundiais
             ? topics.filter((t) => era.topicIds?.includes(t.id))
             : topics.filter((t) => {
                 if (era.periodKey === 'todos') return false;
@@ -278,7 +369,7 @@ export const TimelineView: React.FC<TimelineViewProps> = ({ topics, onSelectTopi
                   </div>
 
                   <span className="text-xs font-mono text-stone-400 self-start sm:self-auto bg-stone-900 px-2.5 py-1 rounded border border-stone-800">
-                    {eraTopics.length} Dossiês no Acervo
+                    {eraTopics.length} {isGuerrasMundiais ? 'Capítulos' : 'Dossiês no Acervo'}
                   </span>
                 </div>
 

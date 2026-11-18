@@ -37,14 +37,14 @@ export const COLLECTIONS_REGISTRY: CollectionMeta[] = [
     title: 'História das Guerras Mundiais',
     shortTitle: 'Guerras Mundiais',
     themeCategory: 'Conflitos Bélicos, Geopolítica e Destruição Total',
-    subtitle: 'Primeira e Segunda Guerras Mundiais: Origens, Frentes de Batalha, Mobilização e Holocausto (1914–1945)',
-    description: 'Coleção futura planejada para análise detalhada dos dois grandes conflitos globais, diplomacia de crise, campanhas militares e reorganização geopolítica do século XX.',
-    chapterCount: 10,
-    status: 'em_breve',
-    badgeLabel: 'Em Breve (Futuro)',
-    chronologyRange: '1914 – 1945',
-    accentColor: '#4B5563', // Slate/Gray
-    tags: ['Primeira Guerra', 'Segunda Guerra', 'Geopolítica Militar', 'Batalhas', 'Diplomacia Global']
+    subtitle: 'Primeira Guerra Mundial, Entre as Guerras, Segunda Guerra Mundial e Nova Ordem Pós-1945',
+    description: 'Em Produção! Estrutura com 20 monografias organizadas em quatro grandes blocos temáticos — Primeira Guerra Mundial, Entre as Guerras, Segunda Guerra Mundial e Consequências e Nova Ordem Mundial.',
+    chapterCount: 20,
+    status: 'ativo',
+    badgeLabel: 'Em Produção!',
+    chronologyRange: '1871 – Pós-1945',
+    accentColor: '#3B82F6', // Blue
+    tags: ['Primeira Guerra', 'Entreguerras', 'Segunda Guerra', 'Holocausto', 'Nova Ordem Mundial', 'Em Produção!']
   },
   {
     id: 'colecao-4',

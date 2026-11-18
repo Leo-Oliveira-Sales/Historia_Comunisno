@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { DOSSIER_TOPICS } from './data/dossierDatabase';
 import { IDEOLOGIAS_TOPICS } from './data/collections/collection_ideologias_database';
+import { GUERRAS_MUNDIAIS_TOPICS } from './data/collections/collection_guerras_mundiais_database';
 import { IDEOLOGIAS_40_HISTORIANS } from './data/collections/ideologias_historians';
 import { COLLECTIONS_REGISTRY, getCollectionById } from './data/collections/collectionsMeta';
 import { CollectionId } from './types/collection';
@@ -49,8 +50,13 @@ export default function App() {
   const [fontSize, setFontSize] = useState<AppFontSize>(getSavedFontSize);
 
   const activeCol = getCollectionById(activeCollectionId);
-  const currentCollectionTopics = activeCollectionId === 'colecao-2' ? IDEOLOGIAS_TOPICS : DOSSIER_TOPICS;
-  const allKnownTopics = [...DOSSIER_TOPICS, ...IDEOLOGIAS_TOPICS];
+  const currentCollectionTopics =
+    activeCollectionId === 'colecao-2'
+      ? IDEOLOGIAS_TOPICS
+      : activeCollectionId === 'colecao-3'
+      ? GUERRAS_MUNDIAIS_TOPICS
+      : DOSSIER_TOPICS;
+  const allKnownTopics = [...DOSSIER_TOPICS, ...IDEOLOGIAS_TOPICS, ...GUERRAS_MUNDIAIS_TOPICS];
 
   // Saved topics in LocalStorage
   const [savedTopicIds, setSavedTopicIds] = useState<number[]>(() => {
@@ -180,7 +186,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-3.5 sm:px-8 py-6 sm:py-12 relative z-10">
             <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 sm:gap-8">
               <div className="max-w-2xl space-y-2.5 sm:space-y-3">
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
                   <span 
                     className="text-[10px] sm:text-xs font-mono font-bold px-2 py-0.5 rounded border"
                     style={{ 
@@ -191,9 +197,16 @@ export default function App() {
                   >
                     COLEÇÃO {activeCol.romanNumeral}
                   </span>
+                  {activeCollectionId === 'colecao-3' && (
+                    <span className="text-[10px] sm:text-xs font-mono font-bold px-2.5 py-0.5 rounded border border-amber-500/70 bg-amber-500/15 text-amber-300 uppercase tracking-wider">
+                      Em Produção!
+                    </span>
+                  )}
                   <span className="text-[11px] sm:text-xs font-mono text-stone-400">
                     {activeCollectionId === 'colecao-2'
                       ? 'ILUMINISMO, LIBERALISMO, SOCIALISMO E REGIMES · SÉC. XVIII – ATUAL'
+                      : activeCollectionId === 'colecao-3'
+                      ? 'HISTÓRIA DAS GUERRAS MUNDIAIS · 20 MONOGRAFIAS · 4 BLOCOS TEMÁTICOS'
                       : 'URSS & COMUNISMO · 1905–1991'}
                   </span>
                 </div>
@@ -201,6 +214,8 @@ export default function App() {
                 <h1 className="text-2xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight text-stone-100 text-balance leading-tight">
                   {activeCollectionId === 'colecao-2'
                     ? 'História das Ideologias Políticas: 11 Capítulos Didáticos & 60 Especialistas'
+                    : activeCollectionId === 'colecao-3'
+                    ? 'História das Guerras Mundiais: 20 Capítulos em 4 Blocos Temáticos'
                     : 'Dossiê Soviético: 19 Categorias Temáticas & Documentação Primária'}
                 </h1>
 
@@ -208,6 +223,10 @@ export default function App() {
                   {activeCollectionId === 'colecao-2' ? (
                     <>
                       Investigação exaustiva das matrizes políticas contemporâneas — do <strong>Iluminismo</strong> e <strong>Liberalismo</strong> ao <strong>Marxismo</strong>, <strong>Fascismo</strong>, <strong>Nazismo</strong> e <strong>Social-Democracia</strong> — fundamentada na produção de <strong>60 pesquisadores e historiadores de referência mundial</strong> (Berlin, Hobsbawm, Arendt, Bobbio, Skinner, Rawls, Hayek e Kershaw).
+                    </>
+                  ) : activeCollectionId === 'colecao-3' ? (
+                    <>
+                      <strong className="text-amber-300">Em Produção!</strong> Estrutura composta por <strong>20 monografias</strong> distribuídas em quatro blocos temáticos — <strong>Primeira Guerra Mundial (1914–1918)</strong>, <strong>Entre as Guerras (1919–1939)</strong>, <strong>Segunda Guerra Mundial (1939–1945)</strong> e <strong>Consequências e Nova Ordem Mundial</strong> — com 4 abas estruturadas por capítulo.
                     </>
                   ) : (
                     <>
@@ -248,6 +267,8 @@ export default function App() {
                     <span>
                       {activeCollectionId === 'colecao-2'
                         ? 'Cronologia das Ideologias (1689 – Atual)'
+                        : activeCollectionId === 'colecao-3'
+                        ? 'Cronologia dos 4 Blocos (1871 – Pós-1945)'
                         : 'Linha do Tempo (1905–1991)'}
                     </span>
                   </button>
@@ -261,31 +282,53 @@ export default function App() {
                     {currentCollectionTopics.length}
                   </div>
                   <div className="text-[10px] sm:text-[11px] text-stone-400">
-                    {activeCollectionId === 'colecao-2' ? 'Capítulos Didáticos' : 'Tópicos Catalogados'}
+                    {activeCollectionId === 'colecao-2'
+                      ? 'Capítulos Didáticos'
+                      : activeCollectionId === 'colecao-3'
+                      ? 'Capítulos (Nº 01–20)'
+                      : 'Tópicos Catalogados'}
                   </div>
                 </div>
 
                 <div className="bg-[#19191d]/90 border border-stone-800 p-3 sm:p-3.5 rounded-lg">
                   <div className="text-xl sm:text-2xl font-bold text-stone-100 tabular-nums">
-                    {activeCollectionId === 'colecao-2' ? IDEOLOGIAS_40_HISTORIANS.length : MONOGRAPHS_DATABASE.length}
+                    {activeCollectionId === 'colecao-2'
+                      ? IDEOLOGIAS_40_HISTORIANS.length
+                      : activeCollectionId === 'colecao-3'
+                      ? '04'
+                      : MONOGRAPHS_DATABASE.length}
                   </div>
                   <div className="text-[10px] sm:text-[11px] text-stone-400">
-                    {activeCollectionId === 'colecao-2' ? 'Especialistas de Referência' : 'Obras de Referência'}
+                    {activeCollectionId === 'colecao-2'
+                      ? 'Especialistas de Referência'
+                      : activeCollectionId === 'colecao-3'
+                      ? 'Abas por Capítulo'
+                      : 'Obras de Referência'}
                   </div>
                 </div>
 
                 <div className="bg-[#19191d]/90 border border-stone-800 p-3 sm:p-3.5 rounded-lg">
                   <div className="text-xl sm:text-2xl font-bold text-stone-100 tabular-nums">
-                    {activeCollectionId === 'colecao-2' ? '07' : String(ARCHIVES_DATABASE.length).padStart(2, '0')}
+                    {activeCollectionId === 'colecao-2'
+                      ? '07'
+                      : activeCollectionId === 'colecao-3'
+                      ? '04'
+                      : String(ARCHIVES_DATABASE.length).padStart(2, '0')}
                   </div>
                   <div className="text-[10px] sm:text-[11px] text-stone-400">
-                    {activeCollectionId === 'colecao-2' ? 'Blocos Temáticos' : 'Arquivos Oficiais'}
+                    {activeCollectionId === 'colecao-2' || activeCollectionId === 'colecao-3'
+                      ? 'Blocos Temáticos'
+                      : 'Arquivos Oficiais'}
                   </div>
                 </div>
 
                 <div className="bg-[#19191d]/90 border border-stone-800 p-3 sm:p-3.5 rounded-lg">
-                  <div className="text-xl sm:text-2xl font-bold text-emerald-400 tabular-nums">100%</div>
-                  <div className="text-[10px] sm:text-[11px] text-stone-400">Fontes Verificadas</div>
+                  <div className={`text-sm sm:text-base font-bold tabular-nums leading-tight ${activeCollectionId === 'colecao-3' ? 'text-amber-300' : 'text-emerald-400 text-xl sm:text-2xl'}`}>
+                    {activeCollectionId === 'colecao-3' ? 'Em Produção!' : '100%'}
+                  </div>
+                  <div className="text-[10px] sm:text-[11px] text-stone-400">
+                    {activeCollectionId === 'colecao-3' ? 'Status da Coleção' : 'Fontes Verificadas'}
+                  </div>
                 </div>
               </div>
             </div>
@@ -318,7 +361,8 @@ export default function App() {
               >
                 <Layers className="w-3.5 h-3.5 text-amber-400" />
                 <span>
-                  Ver Grade de {currentCollectionTopics.length} {activeCollectionId === 'colecao-2' ? 'Capítulos' : 'Temas'}
+                  Ver Grade de {currentCollectionTopics.length}{' '}
+                  {activeCollectionId === 'colecao-2' || activeCollectionId === 'colecao-3' ? 'Capítulos' : 'Temas'}
                 </span>
               </button>
             </div>
@@ -368,12 +412,16 @@ export default function App() {
             <span className="font-display font-bold text-stone-200">
               {activeCollectionId === 'colecao-2'
                 ? 'HISTÓRIA DAS IDEOLOGIAS POLÍTICAS'
+                : activeCollectionId === 'colecao-3'
+                ? 'HISTÓRIA DAS GUERRAS MUNDIAIS'
                 : 'DOSSIÊ SOVIÉTICO'}
             </span>
             <span aria-hidden="true">·</span>
             <span>
               {activeCollectionId === 'colecao-2'
                 ? 'Coleção II · 11 Capítulos Didáticos & 60 Especialistas de Referência'
+                : activeCollectionId === 'colecao-3'
+                ? 'Coleção III · Em Produção! · 20 Capítulos em 4 Blocos Temáticos'
                 : 'Coleção I · Acervo Histórico e Roleta de Pesquisa Acadêmica'}
             </span>
           </div>
@@ -392,6 +440,18 @@ export default function App() {
                 <span>The National Archives (Kew)</span>
                 <span aria-hidden="true">·</span>
                 <span>IISH Amsterdã</span>
+              </>
+            ) : activeCollectionId === 'colecao-3' ? (
+              <>
+                <span className="text-amber-300 font-bold">Em Produção!</span>
+                <span aria-hidden="true">·</span>
+                <span>Bloco I (1914–1918)</span>
+                <span aria-hidden="true">·</span>
+                <span>Bloco II (1919–1939)</span>
+                <span aria-hidden="true">·</span>
+                <span>Bloco III (1939–1945)</span>
+                <span aria-hidden="true">·</span>
+                <span>Bloco IV (Pós-Guerra)</span>
               </>
             ) : (
               <>
@@ -413,7 +473,7 @@ export default function App() {
       {/* MODAL 2: Personal Research Notebook */}
       {isNotebookOpen && (
         <ResearchNotebookModal
-          topics={DOSSIER_TOPICS}
+          topics={allKnownTopics}
           savedTopicIds={savedTopicIds}
           onToggleSave={handleToggleSave}
           onSelectTopic={(topic) => setSelectedTopic(topic)}

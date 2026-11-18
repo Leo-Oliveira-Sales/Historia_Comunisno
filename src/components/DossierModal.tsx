@@ -3,6 +3,12 @@ import { DossierTopic } from '../types/dossier';
 import { ACADEMIC_ESSAYS } from '../data/academicEssaysDatabase';
 import { ACADEMIC_CHAPTERS } from '../data/academicChaptersDatabase';
 import { IDEOLOGIAS_CHAPTERS } from '../data/collections/collection_ideologias_chapters';
+import {
+  GUERRAS_MUNDIAIS_CHAPTERS,
+  GUERRAS_MUNDIAIS_ESSAYS,
+  GUERRAS_MUNDIAIS_CHRONICLES,
+  GUERRAS_MUNDIAIS_CITATIONS,
+} from '../data/collections/collection_guerras_mundiais_database';
 import { CHRONOLOGIES_BY_TOPIC, DETAILED_EPISODES_BY_TOPIC } from '../data/detailedHistoricalEpisodes';
 import { getCanonicalEditorialDossier } from '../data/canonicalEditorialDatabase';
 import { RESEARCH_DOSSIERS } from '../data/researchDossiersDatabase';
@@ -96,9 +102,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   theme = 'preto',
   onSelectTheme,
 }) => {
-  const essay = ACADEMIC_ESSAYS[topic.id];
-  const chapter = ACADEMIC_CHAPTERS[topic.id] || IDEOLOGIAS_CHAPTERS[topic.id];
-  const [activeTab, setActiveTab] = useState<'chapter' | 'essay' | 'stories' | 'citations' | 'advancedInvestigation' | 'marketLaws'>(chapter ? 'chapter' : 'essay');
+  const isColecao3 = topic.id >= 201 && topic.id < 300;
+  const essay = ACADEMIC_ESSAYS[topic.id] || GUERRAS_MUNDIAIS_ESSAYS[topic.id];
+  const chapter = ACADEMIC_CHAPTERS[topic.id] || IDEOLOGIAS_CHAPTERS[topic.id] || GUERRAS_MUNDIAIS_CHAPTERS[topic.id];
+  const hasChapterTab = Boolean(chapter) || isColecao3;
+  const [activeTab, setActiveTab] = useState<'chapter' | 'essay' | 'stories' | 'citations' | 'advancedInvestigation' | 'marketLaws'>(hasChapterTab ? 'chapter' : 'essay');
   const [activeSection, setActiveSection] = useState<number | string>(1);
   const [copiedCitation, setCopiedCitation] = useState<string | null>(null);
   const [fontSize, setFontSize] = useState<'sm' | 'base' | 'lg'>('base');
@@ -114,7 +122,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
   // Numeração sequencial organizada das abas (com Ensaio Acadêmico unificado e Citações & Documentos unificados)
   let tabIdx = 1;
-  const chapterTabNum = chapter ? tabIdx++ : null;
+  const chapterTabNum = hasChapterTab ? tabIdx++ : null;
   const essayTabNum = tabIdx++; // Ensaio Acadêmico (contém Ensaio + Síntese + Dossiê de Pesquisa)
   const storiesTabNum = tabIdx++;
   const citationsTabNum = tabIdx++;
@@ -463,7 +471,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
   const getSidebarSections = () => {
     if (activeTab === 'chapter') {
-      if (!chapter) return [{ num: 0, label: 'Introdução', target: 'chapter-intro' }];
+      if (!chapter) {
+        return isColecao3
+          ? [{ num: 1, label: '1. Capítulo Acadêmico', target: 'em-producao-chapter' }]
+          : [{ num: 0, label: 'Introdução', target: 'chapter-intro' }];
+      }
       const list: { num: number | string; label: string; target: string }[] = [{ num: 0, label: 'Introdução', target: 'chapter-intro' }];
       chapter.sections.forEach(s => {
         if (s.subsections && s.subsections.length > 0) {
@@ -478,6 +490,9 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       list.push({ num: 99, label: 'Referências', target: 'chapter-refs' });
       return list;
     } else if (activeTab === 'essay') {
+      if (isColecao3 && !essay) {
+        return [{ num: 1, label: '2. Ensaio Acadêmico', target: 'em-producao-essay' }];
+      }
       if (topic.id === 107) {
         return [
           { num: 'ENS', label: 'Ensaio Acadêmico', target: 'essay-master' },
@@ -612,11 +627,17 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'NOTA', label: 'Nota Editorial', target: 'stories-editorial-note' },
         ];
       }
+      if (isColecao3 && chronologies.length === 0 && detailedEpisodes.length === 0 && !GUERRAS_MUNDIAIS_CHRONICLES[topic.id]) {
+        return [{ num: 1, label: '3. Crônicas', target: 'em-producao-stories' }];
+      }
       return [
         { num: 1, label: 'Cronologia Passo a Passo', target: 'stories-crono' },
         { num: 2, label: `Crônicas Oculares (${detailedEpisodes.length})`, target: 'stories-episodes' },
       ];
     } else if (activeTab === 'citations') {
+      if (isColecao3 && !GUERRAS_MUNDIAIS_CITATIONS[topic.id] && topic.primarySources.length === 0 && !TOPIC_CITATIONS_DATABASE[topic.id]) {
+        return [{ num: 1, label: '4. Citações & Documentos', target: 'em-producao-citations' }];
+      }
       if (topic.id === 107) {
         return [
           { num: 'I', label: 'I. Docs Fundadores', target: 'cit-parte-1' },
@@ -764,9 +785,15 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
           <div className="space-y-0.5 min-w-0 flex-1">
             <div className="flex flex-wrap items-center gap-1.5">
-              <span className="dossier-stamp-red text-[8px] sm:text-[10px]">DESCLASSIFICADO</span>
+              {isColecao3 ? (
+                <span className="text-[8px] sm:text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 border border-amber-500/60">
+                  Em Produção!
+                </span>
+              ) : (
+                <span className="dossier-stamp-red text-[8px] sm:text-[10px]">DESCLASSIFICADO</span>
+              )}
               <span className="text-[9px] sm:text-xs font-mono text-stone-400 truncate">
-                REGISTRO Nº {topic.categoryNumber}
+                {isColecao3 ? `COLEÇÃO III · CAPÍTULO Nº ${topic.categoryNumber}` : `REGISTRO Nº ${topic.categoryNumber}`}
               </span>
             </div>
 
@@ -884,7 +911,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       <div className="sm:hidden bg-[#141417] border-b border-stone-800 px-2 py-2 space-y-1.5 shrink-0">
         {/* Row 1: Capítulo, Ensaio, Crônicas, Documentos */}
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-pan-x">
-          {chapter && (
+          {hasChapterTab && (
             <button
               onClick={() => {
                 playTypewriterClack();
@@ -989,7 +1016,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       <div className="hidden sm:flex bg-[#141417] border-b border-stone-800 px-3 sm:px-6 py-2 items-center justify-between gap-3 overflow-x-auto no-scrollbar shrink-0 touch-pan-x">
         <div className="flex items-center gap-1.5 whitespace-nowrap">
           {/* 1. Capítulo Acadêmico */}
-          {chapter && (
+          {hasChapterTab && (
             <button
               onClick={() => {
                 playTypewriterClack();
@@ -1269,6 +1296,34 @@ export const DossierModal: React.FC<DossierModalProps> = ({
         {/* MAIN CONTENT AREA (WITH SIDE SCROLLBAR / BARRA DE ROLAR LATERAL) */}
         <main className="flex-1 overflow-y-auto p-3 sm:p-6 lg:p-10 space-y-8 bg-[#121214] overscroll-contain max-w-full box-border">
           
+          {/* TAB: ACADEMIC CHAPTER (EMPTY EM PRODUÇÃO! FOR COLEÇÃO III WHEN BLANK) */}
+          {activeTab === 'chapter' && !chapter && isColecao3 && (
+            <article id="em-producao-chapter" className="max-w-4xl mx-auto w-full box-border">
+              <div className="bg-[#161619] border border-amber-600/50 p-6 sm:p-10 rounded-2xl shadow-xl space-y-4">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded bg-amber-500/15 text-amber-300 border border-amber-500/40 font-bold">
+                    1. CAPÍTULO ACADÊMICO
+                  </span>
+                  <span className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded bg-stone-900 text-amber-400 border border-amber-700/50 font-bold">
+                    Em Produção!
+                  </span>
+                </div>
+                <div className="text-xs font-mono text-stone-400">
+                  Nº {topic.categoryNumber} · {topic.category}
+                </div>
+                <h2 className="text-xl sm:text-2xl font-serif font-bold text-stone-100">
+                  {topic.title}
+                </h2>
+                <p className="text-sm font-serif text-stone-300 leading-relaxed">
+                  {topic.summary}
+                </p>
+                <div className="pt-4 border-t border-stone-800 text-xs sm:text-sm font-mono text-stone-400">
+                  Aba em branco — conteúdo de <strong className="text-amber-300">Capítulo Acadêmico</strong> em produção.
+                </div>
+              </div>
+            </article>
+          )}
+
           {/* TAB: ACADEMIC CHAPTER (BOOK CHAPTER TEXT) */}
           {activeTab === 'chapter' && chapter && (
             <article className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
@@ -1451,7 +1506,32 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
 
           {/* TAB: ESSAY (JUNÇÃO DE ENSAIO ACADÊMICO + SÍNTESE + DOSSIÊ DE PESQUISA) */}
-          {activeTab === 'essay' && (
+          {activeTab === 'essay' && (isColecao3 && !essay ? (
+            <article id="em-producao-essay" className="max-w-4xl mx-auto w-full box-border">
+              <div className="bg-[#161619] border border-amber-600/50 p-6 sm:p-10 rounded-2xl shadow-xl space-y-4">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded bg-amber-500/15 text-amber-300 border border-amber-500/40 font-bold">
+                    2. ENSAIO ACADÊMICO
+                  </span>
+                  <span className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded bg-stone-900 text-amber-400 border border-amber-700/50 font-bold">
+                    Em Produção!
+                  </span>
+                </div>
+                <div className="text-xs font-mono text-stone-400">
+                  Nº {topic.categoryNumber} · {topic.category}
+                </div>
+                <h2 className="text-xl sm:text-2xl font-serif font-bold text-stone-100">
+                  {topic.title}
+                </h2>
+                <p className="text-sm font-serif text-stone-300 leading-relaxed">
+                  {topic.summary}
+                </p>
+                <div className="pt-4 border-t border-stone-800 text-xs sm:text-sm font-mono text-stone-400">
+                  Aba em branco — conteúdo de <strong className="text-amber-300">Ensaio Acadêmico</strong> em produção.
+                </div>
+              </div>
+            </article>
+          ) : (
             <article className="space-y-12 max-w-4xl mx-auto w-full box-border overflow-hidden">
               {/* SUBSEÇÃO 1: ENSAIO ACADÊMICO */}
               <div id="essay-master" className="scroll-mt-24 space-y-8">
@@ -1735,11 +1815,36 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 </div>
               )}
             </article>
-          )}
+          ))}
 
           {/* TAB: STORIES (CRÔNICAS HISTÓRICAS E CRONOLOGIA COMPLETA) */}
           {activeTab === 'stories' && (
-            topic.id === 106 ? (
+            (isColecao3 && chronologies.length === 0 && detailedEpisodes.length === 0 && !GUERRAS_MUNDIAIS_CHRONICLES[topic.id]) ? (
+              <article id="em-producao-stories" className="max-w-4xl mx-auto w-full box-border">
+                <div className="bg-[#161619] border border-amber-600/50 p-6 sm:p-10 rounded-2xl shadow-xl space-y-4">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded bg-amber-500/15 text-amber-300 border border-amber-500/40 font-bold">
+                      3. CRÔNICAS
+                    </span>
+                    <span className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded bg-stone-900 text-amber-400 border border-amber-700/50 font-bold">
+                      Em Produção!
+                    </span>
+                  </div>
+                  <div className="text-xs font-mono text-stone-400">
+                    Nº {topic.categoryNumber} · {topic.category}
+                  </div>
+                  <h2 className="text-xl sm:text-2xl font-serif font-bold text-stone-100">
+                    {topic.title}
+                  </h2>
+                  <p className="text-sm font-serif text-stone-300 leading-relaxed">
+                    {topic.summary}
+                  </p>
+                  <div className="pt-4 border-t border-stone-800 text-xs sm:text-sm font-mono text-stone-400">
+                    Aba em branco — conteúdo de <strong className="text-amber-300">Crônicas</strong> em produção.
+                  </div>
+                </div>
+              </article>
+            ) : topic.id === 106 ? (
               <Topic106ChroniclesView getFontSizeClass={getFontSizeClass} />
             ) : topic.id === 107 ? (
               <Topic107ChroniclesView getFontSizeClass={getFontSizeClass} />
@@ -1865,6 +1970,34 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
           {/* TAB: CITATIONS (PROTOCOLO DE AUDITORIA DOCUMENTAL E BIBLIOGRÁFICA — 3 BLOCOS) */}
           {activeTab === 'citations' && (() => {
+            if (isColecao3 && !GUERRAS_MUNDIAIS_CITATIONS[topic.id] && topic.primarySources.length === 0 && !TOPIC_CITATIONS_DATABASE[topic.id]) {
+              return (
+                <article id="em-producao-citations" className="max-w-4xl mx-auto w-full box-border">
+                  <div className="bg-[#161619] border border-amber-600/50 p-6 sm:p-10 rounded-2xl shadow-xl space-y-4">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded bg-amber-500/15 text-amber-300 border border-amber-500/40 font-bold">
+                        4. CITAÇÕES & DOCUMENTOS
+                      </span>
+                      <span className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded bg-stone-900 text-amber-400 border border-amber-700/50 font-bold">
+                        Em Produção!
+                      </span>
+                    </div>
+                    <div className="text-xs font-mono text-stone-400">
+                      Nº {topic.categoryNumber} · {topic.category}
+                    </div>
+                    <h2 className="text-xl sm:text-2xl font-serif font-bold text-stone-100">
+                      {topic.title}
+                    </h2>
+                    <p className="text-sm font-serif text-stone-300 leading-relaxed">
+                      {topic.summary}
+                    </p>
+                    <div className="pt-4 border-t border-stone-800 text-xs sm:text-sm font-mono text-stone-400">
+                      Aba em branco — conteúdo de <strong className="text-amber-300">Citações & Documentos</strong> em produção.
+                    </div>
+                  </div>
+                </article>
+              );
+            }
             if (topic.id === 106) {
               return (
                 <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
@@ -2863,7 +2996,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       {/* 5. FULL-PAGE BOTTOM BAR */}
       <div className="bg-[#161619] border-t border-stone-800 px-3 sm:px-6 py-3 flex items-center justify-between text-xs text-stone-400 shrink-0 shadow-lg overflow-hidden">
         <div className="font-mono flex items-center gap-2 truncate min-w-0 flex-1 pr-2">
-          <span className="truncate">Dossiê Soviético · Cátedra Historiográfica</span>
+          <span className="truncate">
+            {isColecao3
+              ? 'História das Guerras Mundiais · Coleção III · Em Produção!'
+              : 'Dossiê Soviético · Cátedra Historiográfica'}
+          </span>
         </div>
 
         <button

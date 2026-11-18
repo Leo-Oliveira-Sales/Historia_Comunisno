@@ -116,11 +116,13 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
     <div className="space-y-6 w-full max-w-full overflow-hidden">
       {/* Header Banner */}
       <div className="bg-[#17171a] border border-stone-800 rounded-xl p-4 sm:p-6 shadow-lg overflow-hidden w-full max-w-full">
-        <div className="flex items-center gap-2 text-xs font-mono text-amber-500 mb-2">
+        <div className="flex flex-wrap items-center gap-2 text-xs font-mono text-amber-500 mb-2">
           <ShieldCheck className="w-4 h-4" />
           <span>
             {activeCollectionId === 'colecao-2'
               ? 'COLEÇÃO II · CORPUS HISTORIOGRÁFICO DAS IDEOLOGIAS POLÍTICAS'
+              : activeCollectionId === 'colecao-3'
+              ? 'COLEÇÃO III · HISTÓRIA DAS GUERRAS MUNDIAIS · EM PRODUÇÃO! (ACERVO COMPARTILHADO)'
               : 'COLEÇÃO I · CORPUS HISTORIOGRÁFICO & REPOSITÓRIOS DOCUMENTAIS OFICIAIS'}
           </span>
         </div>

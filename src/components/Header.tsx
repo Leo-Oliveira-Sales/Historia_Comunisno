@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({
   const navItems = [
     { 
       id: 'dossiers' as const, 
-      label: activeCollectionId === 'colecao-2' ? '11 Capítulos' : '20 Temas', 
+      label: activeCollectionId === 'colecao-2' ? '11 Capítulos' : activeCollectionId === 'colecao-3' ? '20 Capítulos' : '20 Temas', 
       icon: Layers 
     },
     { id: 'roulette' as const, label: 'Roleta de Curiosidades', icon: Compass },
@@ -133,6 +133,11 @@ export const Header: React.FC<HeaderProps> = ({
                   </span>
                   <span className="hidden md:inline font-sans">{col.title}</span>
                   <span className="md:hidden font-sans">{col.shortTitle}</span>
+                  {col.status === 'ativo' && (
+                    <span className="text-[9px] text-amber-300 bg-amber-950/80 border border-amber-600/60 px-1.5 py-0.2 rounded uppercase font-mono font-bold">
+                      {col.badgeLabel}
+                    </span>
+                  )}
                   {isSelected && (
                     <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0 animate-pulse" />
                   )}
@@ -160,10 +165,18 @@ export const Header: React.FC<HeaderProps> = ({
               />
               <span className="uppercase text-xs xs:text-sm sm:text-base md:text-lg font-bold truncate">
                 <span className="inline sm:hidden">
-                  {activeCollectionId === 'colecao-2' ? 'IDEOLOGIAS' : 'DOSSIÊ SOVIÉTICO'}
+                  {activeCollectionId === 'colecao-2'
+                    ? 'IDEOLOGIAS'
+                    : activeCollectionId === 'colecao-3'
+                    ? 'GUERRAS MUNDIAIS'
+                    : 'DOSSIÊ SOVIÉTICO'}
                 </span>
                 <span className="hidden sm:inline">
-                  {activeCollectionId === 'colecao-2' ? 'HISTÓRIA DAS IDEOLOGIAS' : 'DOSSIÊ SOVIÉTICO'}
+                  {activeCollectionId === 'colecao-2'
+                    ? 'HISTÓRIA DAS IDEOLOGIAS'
+                    : activeCollectionId === 'colecao-3'
+                    ? 'HISTÓRIA DAS GUERRAS MUNDIAIS'
+                    : 'DOSSIÊ SOVIÉTICO'}
                 </span>
               </span>
               <span className="text-[9px] sm:text-[10px] font-mono font-normal text-stone-400 px-1 sm:px-1.5 py-0.5 rounded bg-stone-800/80 border border-stone-700/60 shrink-0">
@@ -319,7 +332,11 @@ export const Header: React.FC<HeaderProps> = ({
                   style={{ backgroundColor: activeCol.accentColor }}
                 />
                 <span className="font-display font-bold text-sm text-stone-100 uppercase tracking-tight">
-                  {activeCollectionId === 'colecao-2' ? 'Ideologias Políticas' : 'Dossiê Soviético'}
+                  {activeCollectionId === 'colecao-2'
+                    ? 'Ideologias Políticas'
+                    : activeCollectionId === 'colecao-3'
+                    ? 'Guerras Mundiais'
+                    : 'Dossiê Soviético'}
                 </span>
               </div>
 
@@ -365,8 +382,8 @@ export const Header: React.FC<HeaderProps> = ({
                         <span className="font-mono font-bold text-amber-500">{col.romanNumeral}.</span>
                         <span>{col.title}</span>
                       </div>
-                      <span className="text-[10px] font-mono text-stone-500">
-                        {isUpcoming ? 'Em Breve' : `${col.chapterCount} Cap.`}
+                      <span className={`text-[10px] font-mono ${col.status === 'ativo' ? 'text-amber-300 font-bold' : 'text-stone-500'}`}>
+                        {isUpcoming ? 'Em Breve' : col.status === 'ativo' ? col.badgeLabel : `${col.chapterCount} Cap.`}
                       </span>
                     </button>
                   );
