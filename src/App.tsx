@@ -213,7 +213,7 @@ export default function App() {
 
                 <h1 className="text-2xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight text-stone-100 text-balance leading-tight">
                   {activeCollectionId === 'colecao-2'
-                    ? 'História das Ideologias Políticas: 11 Capítulos Didáticos & 60 Especialistas'
+                    ? 'História das Ideologias Políticas: 12 Capítulos Didáticos & 60 Especialistas'
                     : activeCollectionId === 'colecao-3'
                     ? 'História das Guerras Mundiais: 20 Capítulos em 4 Blocos Temáticos'
                     : 'Dossiê Soviético: 19 Categorias Temáticas & Documentação Primária'}
@@ -419,7 +419,7 @@ export default function App() {
             <span aria-hidden="true">·</span>
             <span>
               {activeCollectionId === 'colecao-2'
-                ? 'Coleção II · 11 Capítulos Didáticos & 60 Especialistas de Referência'
+                ? 'Coleção II · 12 Capítulos Didáticos & 60 Especialistas de Referência'
                 : activeCollectionId === 'colecao-3'
                 ? 'Coleção III · Em Produção! · 20 Capítulos em 4 Blocos Temáticos'
                 : 'Coleção I · Acervo Histórico e Roleta de Pesquisa Acadêmica'}

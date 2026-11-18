@@ -43,7 +43,7 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
           if (selectedBlock === '3-4' && !(t.id === 103 || t.id === 104)) return false;
           if (selectedBlock === '5-6' && !(t.id === 105 || t.id === 106)) return false;
           if (selectedBlock === '7-8' && !(t.id === 107 || t.id === 108)) return false;
-          if (selectedBlock === '9-11' && !(t.id === 109 || t.id === 111 || t.id === 112)) return false;
+          if (selectedBlock === '9-12' && !(t.id === 109 || t.id === 111 || t.id === 112 || t.id === 113)) return false;
         }
       } else if (isGuerrasMundiais) {
         if (selectedBlock !== 'todos') {
@@ -106,12 +106,12 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs touch-pan-x no-scrollbar scroll-smooth w-full max-w-full">
           {isIdeologias ? (
             [
-              { id: 'todos', label: 'Todos os 11 Capítulos' },
+              { id: 'todos', label: 'Todos os 12 Capítulos' },
               { id: '1-2', label: '1–2. Iluminismo & Liberalismo' },
               { id: '3-4', label: '3–4. Capitalismo & Socialismo' },
               { id: '5-6', label: '5–6. Marxismo & Comunismo' },
               { id: '7-8', label: '7–8. Fascismo & Nazismo' },
-              { id: '9-11', label: '9–11. Democracia & Revoluções' },
+              { id: '9-12', label: '9–12. Democracia, Revoluções & Economia' },
             ].map((blk) => {
               const isActive = selectedBlock === blk.id;
               return (
@@ -272,20 +272,22 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
                 {/* Academic Standard Badge */}
                 <div className="mt-3 py-1.5 px-2.5 bg-[#121215] border border-amber-900/40 rounded flex flex-wrap items-center justify-between gap-1.5 text-[11px] font-mono text-stone-400">
                   <span className="flex items-center gap-1.5 text-amber-400 font-medium">
-                    {isGuerrasMundiais ? (
+                    {isGuerrasMundiais || (topic.id === 113 && primaryCount === 0) ? (
                       <Clock className="w-3.5 h-3.5 text-amber-400 shrink-0" />
                     ) : (
                       <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
                     )}
                     <span>
-                      {isIdeologias
+                      {topic.id === 113
+                        ? '8 Abas Preparadas'
+                        : isIdeologias
                         ? 'Dossiê Cátedra 60 Autores'
                         : isGuerrasMundiais
                         ? '4 Abas Preparadas'
                         : 'Padrão 7 Seções Canônicas'}
                     </span>
                   </span>
-                  {isGuerrasMundiais ? (
+                  {isGuerrasMundiais || (topic.id === 113 && primaryCount === 0) ? (
                     <span className="text-amber-300 font-mono text-[10px] bg-amber-950/70 px-1.5 py-0.5 rounded border border-amber-700/60 font-bold shrink-0">
                       Em Produção!
                     </span>
@@ -300,10 +302,10 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
               {/* Bottom Card Actions (Fully Responsive on Font Scaling) */}
               <div className="mt-4 pt-3 border-t border-stone-800/80 flex flex-wrap items-center justify-between text-xs gap-2.5">
                 <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-stone-400 font-mono text-[11px]">
-                  {isGuerrasMundiais ? (
+                  {isGuerrasMundiais || (topic.id === 113 && primaryCount === 0) ? (
                     <div className="flex items-center gap-1.5 text-amber-300/90 shrink-0">
                       <Layers className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                      <span>Em Produção!</span>
+                      <span>{topic.id === 113 ? '8 Abas · Em Produção!' : 'Em Produção!'}</span>
                     </div>
                   ) : (
                     <>

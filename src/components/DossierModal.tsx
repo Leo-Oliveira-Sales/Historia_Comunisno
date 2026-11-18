@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DossierTopic } from '../types/dossier';
 import { ACADEMIC_ESSAYS } from '../data/academicEssaysDatabase';
 import { ACADEMIC_CHAPTERS } from '../data/academicChaptersDatabase';
@@ -52,6 +52,9 @@ import { Topic201CitationsView } from './Topic201CitationsView';
 import { Topic202EssayView } from './Topic202EssayView';
 import { Topic202ChroniclesView } from './Topic202ChroniclesView';
 import { Topic202CitationsView } from './Topic202CitationsView';
+import { Topic113TabsView } from './Topic113TabsView';
+import { ADAM_SMITH_TABS, AdamSmithTabId } from '../data/collections/chapter_12_adam_smith_tabs';
+import { RAW_ADAM_SMITH_ABA1 } from '../data/collections/chapter_12_adam_smith_content';
 import { DossierSynthesisView } from './DossierSynthesisView';
 import { DossierResearchView } from './DossierResearchView';
 import { playStampSound, playTypewriterClack } from '../utils/audio';
@@ -110,11 +113,20 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   onSelectTheme,
 }) => {
   const isColecao3 = topic.id >= 201 && topic.id < 300;
+  const isAdamSmith = topic.id === 113;
   const essay = ACADEMIC_ESSAYS[topic.id] || GUERRAS_MUNDIAIS_ESSAYS[topic.id];
   const chapter = ACADEMIC_CHAPTERS[topic.id] || IDEOLOGIAS_CHAPTERS[topic.id] || GUERRAS_MUNDIAIS_CHAPTERS[topic.id];
   const rawChapterText = isColecao3 ? GUERRAS_MUNDIAIS_RAW_CHAPTERS[topic.id] : undefined;
   const hasChapterTab = Boolean(chapter) || Boolean(rawChapterText) || isColecao3;
-  const [activeTab, setActiveTab] = useState<'chapter' | 'essay' | 'stories' | 'citations' | 'advancedInvestigation' | 'marketLaws'>(hasChapterTab ? 'chapter' : 'essay');
+  const [activeTab, setActiveTab] = useState<'chapter' | 'essay' | 'stories' | 'citations' | 'advancedInvestigation' | 'marketLaws' | AdamSmithTabId>(
+    topic.id === 113 ? 'aba1' : hasChapterTab ? 'chapter' : 'essay'
+  );
+  const isAdamSmithTab = (tab: string): tab is AdamSmithTabId => /^aba(10|[1-9])$/.test(tab);
+
+  useEffect(() => {
+    setActiveTab(topic.id === 113 ? 'aba1' : hasChapterTab ? 'chapter' : 'essay');
+  }, [topic.id, hasChapterTab]);
+
   const [activeSection, setActiveSection] = useState<number | string>(1);
   const [copiedCitation, setCopiedCitation] = useState<string | null>(null);
   const [fontSize, setFontSize] = useState<'sm' | 'base' | 'lg'>('base');
@@ -404,6 +416,18 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       copyToClipboard(rawChapterText, 'complete_master_dossier');
       return;
     }
+    if (isAdamSmith) {
+      let smithText = `==========================================================\n`;
+      smithText += `COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS\n`;
+      smithText += `Nº ${topic.categoryNumber} · ${topic.title}\n`;
+      smithText += `==========================================================\n\n`;
+      smithText += `${RAW_ADAM_SMITH_ABA1}\n\n`;
+      ADAM_SMITH_TABS.slice(1).forEach((tab) => {
+        smithText += `ABA ${tab.number} — ${tab.title}\n${tab.subtitle}\n\n`;
+      });
+      copyToClipboard(smithText, 'complete_master_dossier');
+      return;
+    }
 
     let text = `==========================================================\n`;
     text += `DOSSIÊ SOVIÉTICO - DOSSIÊ COMPLETO DE PESQUISA ACADÊMICA\n`;
@@ -501,6 +525,26 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   };
 
   const getSidebarSections = () => {
+    if (isAdamSmith) {
+      if (activeTab === 'aba1') {
+        return [
+          { num: '1', label: '1. Introdução', target: 'smith-aba1-sec-1' },
+          { num: '2', label: '2. Formação & Iluminismo', target: 'smith-aba1-sec-2' },
+          { num: '3', label: '3. As Duas Grandes Obras', target: 'smith-aba1-sec-3' },
+          { num: '4', label: '4. Principais Ideias', target: 'smith-aba1-sec-4' },
+          { num: '5', label: '5. O Papel do Estado', target: 'smith-aba1-sec-5' },
+          { num: '6', label: '6. Smith × Marx × Engels', target: 'smith-aba1-sec-6' },
+          { num: '7', label: '7. Legado Histórico', target: 'smith-aba1-sec-7' },
+          { num: '8', label: '8. Síntese do Capítulo', target: 'smith-aba1-sec-8' },
+          { num: 'REF', label: 'Referências Bibliográficas', target: 'smith-aba1-refs' },
+        ];
+      }
+      return ADAM_SMITH_TABS.map((t) => ({
+        num: t.number,
+        label: t.shortLabel,
+        target: t.anchorId,
+      }));
+    }
     if (activeTab === 'chapter') {
       if (rawChapterText) {
         return [{ num: 1, label: '1. Capítulo Acadêmico', target: 'raw-chapter-content' }];
@@ -958,7 +1002,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
           <div className="space-y-0.5 min-w-0 flex-1">
             <div className="flex flex-wrap items-center gap-1.5">
-              {isColecao3 ? (
+              {isColecao3 || isAdamSmith ? (
                 <span className="text-[8px] sm:text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 border border-amber-500/60">
                   Em Produção!
                 </span>
@@ -966,7 +1010,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 <span className="dossier-stamp-red text-[8px] sm:text-[10px]">DESCLASSIFICADO</span>
               )}
               <span className="text-[9px] sm:text-xs font-mono text-stone-400 truncate">
-                {isColecao3 ? `COLEÇÃO III · CAPÍTULO Nº ${topic.categoryNumber}` : `REGISTRO Nº ${topic.categoryNumber}`}
+                {isColecao3
+                  ? `COLEÇÃO III · CAPÍTULO Nº ${topic.categoryNumber}`
+                  : isAdamSmith
+                  ? `COLEÇÃO II · CAPÍTULO Nº ${topic.categoryNumber}`
+                  : `REGISTRO Nº ${topic.categoryNumber}`}
               </span>
             </div>
 
@@ -1082,214 +1130,279 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       {/* 2. TAB NAVIGATION CONTROLS */}
       {/* MOBILE MODE: 2 DISTINCT NAVIGATION ROWS */}
       <div className="sm:hidden bg-[#141417] border-b border-stone-800 px-2 py-2 space-y-1.5 shrink-0">
-        {/* Row 1: Capítulo, Ensaio, Crônicas, Documentos */}
-        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-pan-x">
-          {hasChapterTab && (
-            <button
-              onClick={() => {
-                playTypewriterClack();
-                setActiveTab('chapter');
-              }}
-              className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
-                activeTab === 'chapter'
-                  ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
-                  : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
-              }`}
-            >
-              <BookOpenCheck className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-              <span>{chapterTabNum}. Capítulo Acadêmico</span>
-            </button>
-          )}
+        {isAdamSmith ? (
+          <>
+            <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-pan-x">
+              {ADAM_SMITH_TABS.slice(0, 5).map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => {
+                    playTypewriterClack();
+                    setActiveTab(tab.id);
+                  }}
+                  className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+                    activeTab === tab.id
+                      ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
+                      : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+                  }`}
+                >
+                  <span>{tab.shortLabel}</span>
+                </button>
+              ))}
+            </div>
+            <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-pan-x">
+              {ADAM_SMITH_TABS.slice(5, 10).map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => {
+                    playTypewriterClack();
+                    setActiveTab(tab.id);
+                  }}
+                  className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+                    activeTab === tab.id
+                      ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
+                      : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+                  }`}
+                >
+                  <span>{tab.shortLabel}</span>
+                </button>
+              ))}
+            </div>
+          </>
+        ) : (
+          <>
+            {/* Row 1: Capítulo, Ensaio, Crônicas, Documentos */}
+            <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-pan-x">
+              {hasChapterTab && (
+                <button
+                  onClick={() => {
+                    playTypewriterClack();
+                    setActiveTab('chapter');
+                  }}
+                  className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+                    activeTab === 'chapter'
+                      ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
+                      : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+                  }`}
+                >
+                  <BookOpenCheck className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                  <span>{chapterTabNum}. Capítulo Acadêmico</span>
+                </button>
+              )}
 
-          <button
-            onClick={() => {
-              playTypewriterClack();
-              setActiveTab('essay');
-            }}
-            className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
-              activeTab === 'essay'
-                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
-                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
-            }`}
-          >
-            <GraduationCap className="w-3.5 h-3.5 shrink-0" />
-            <span>{essayTabNum}. Ensaio Acadêmico</span>
-          </button>
+              <button
+                onClick={() => {
+                  playTypewriterClack();
+                  setActiveTab('essay');
+                }}
+                className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+                  activeTab === 'essay'
+                    ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
+                    : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+                }`}
+              >
+                <GraduationCap className="w-3.5 h-3.5 shrink-0" />
+                <span>{essayTabNum}. Ensaio Acadêmico</span>
+              </button>
 
-          <button
-            onClick={() => {
-              playTypewriterClack();
-              setActiveTab('stories');
-            }}
-            className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
-              activeTab === 'stories'
-                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
-                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
-            }`}
-          >
-            <ScrollText className="w-3.5 h-3.5 shrink-0" />
-            <span>{storiesTabNum}. Crônicas</span>
-          </button>
-        </div>
+              <button
+                onClick={() => {
+                  playTypewriterClack();
+                  setActiveTab('stories');
+                }}
+                className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+                  activeTab === 'stories'
+                    ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
+                    : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+                }`}
+              >
+                <ScrollText className="w-3.5 h-3.5 shrink-0" />
+                <span>{storiesTabNum}. Crônicas</span>
+              </button>
+            </div>
 
-        {/* Row 2: Citações & Documentos, Investigação Avançada, Leis de Mercado */}
-        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-pan-x">
-          <button
-            onClick={() => {
-              playTypewriterClack();
-              setActiveTab('citations');
-            }}
-            className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
-              activeTab === 'citations'
-                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
-                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
-            }`}
-          >
-            <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
-            <span>{citationsTabNum}. Citações & Documentos</span>
-          </button>
+            {/* Row 2: Citações & Documentos, Investigação Avançada, Leis de Mercado */}
+            <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-pan-x">
+              <button
+                onClick={() => {
+                  playTypewriterClack();
+                  setActiveTab('citations');
+                }}
+                className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-semibold rounded-lg transition-colors flex items-center gap-1 border shrink-0 ${
+                  activeTab === 'citations'
+                    ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
+                    : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+                }`}
+              >
+                <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+                <span>{citationsTabNum}. Citações & Documentos</span>
+              </button>
 
-          {hasAdvancedInvestigation && (
-            <button
-              onClick={() => {
-                playTypewriterClack();
-                setActiveTab('advancedInvestigation');
-              }}
-              className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-bold rounded-lg transition-all flex items-center gap-1 border shrink-0 ${
-                activeTab === 'advancedInvestigation'
-                  ? 'tab-research-dossier-active'
-                  : 'tab-research-dossier-inactive'
-              }`}
-            >
-              <Sparkles className="w-3.5 h-3.5 shrink-0" />
-              <span>{advTabNum}. {(topic.id === 108 || topic.id === 109) ? 'INVESTIGAÇÃO AVANÇADA' : 'Investigação Avançada'}</span>
-            </button>
-          )}
+              {hasAdvancedInvestigation && (
+                <button
+                  onClick={() => {
+                    playTypewriterClack();
+                    setActiveTab('advancedInvestigation');
+                  }}
+                  className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-bold rounded-lg transition-all flex items-center gap-1 border shrink-0 ${
+                    activeTab === 'advancedInvestigation'
+                      ? 'tab-research-dossier-active'
+                      : 'tab-research-dossier-inactive'
+                  }`}
+                >
+                  <Sparkles className="w-3.5 h-3.5 shrink-0" />
+                  <span>{advTabNum}. {(topic.id === 108 || topic.id === 109) ? 'INVESTIGAÇÃO AVANÇADA' : 'Investigação Avançada'}</span>
+                </button>
+              )}
 
-          {marketLaws && (
-            <button
-              onClick={() => {
-                playTypewriterClack();
-                setActiveTab('marketLaws');
-              }}
-              className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-bold rounded-lg transition-all flex items-center gap-1 border shrink-0 ${
-                activeTab === 'marketLaws'
-                  ? 'bg-amber-500 text-stone-950 border-amber-300 font-extrabold shadow-md'
-                  : 'bg-amber-950/40 text-amber-300 hover:bg-amber-900/50 border-amber-700/60'
-              }`}
-            >
-              <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-400" />
-              <span>{marketTabNum}. {topic.id === 105 ? 'A Virada Epistemológica' : 'As Leis de Mercado'}</span>
-            </button>
-          )}
-        </div>
+              {marketLaws && (
+                <button
+                  onClick={() => {
+                    playTypewriterClack();
+                    setActiveTab('marketLaws');
+                  }}
+                  className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-bold rounded-lg transition-all flex items-center gap-1 border shrink-0 ${
+                    activeTab === 'marketLaws'
+                      ? 'bg-amber-500 text-stone-950 border-amber-300 font-extrabold shadow-md'
+                      : 'bg-amber-950/40 text-amber-300 hover:bg-amber-900/50 border-amber-700/60'
+                  }`}
+                >
+                  <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-400" />
+                  <span>{marketTabNum}. {topic.id === 105 ? 'A Virada Epistemológica' : 'As Leis de Mercado'}</span>
+                </button>
+              )}
+            </div>
+          </>
+        )}
       </div>
 
-      {/* TABLET / DESKTOP MODE: SINGLE ROW TAB NAVIGATION */}
+      {/* TABLET / DESKTOP MODE: SINGLE ROW OR WRAPPED 8-TAB NAVIGATION */}
       <div className="hidden sm:flex bg-[#141417] border-b border-stone-800 px-3 sm:px-6 py-2 items-center justify-between gap-3 overflow-x-auto no-scrollbar shrink-0 touch-pan-x">
-        <div className="flex items-center gap-1.5 whitespace-nowrap">
-          {/* 1. Capítulo Acadêmico */}
-          {hasChapterTab && (
+        {isAdamSmith ? (
+          <div className="flex items-center flex-wrap gap-1.5">
+            {ADAM_SMITH_TABS.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => {
+                  playTypewriterClack();
+                  setActiveTab(tab.id);
+                }}
+                title={`${tab.number}. ${tab.title} — ${tab.subtitle}`}
+                className={`px-2.5 py-1.5 min-h-[34px] text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${
+                  activeTab === tab.id
+                    ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
+                    : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+                }`}
+              >
+                <span>{tab.shortLabel}</span>
+              </button>
+            ))}
+          </div>
+        ) : (
+          <div className="flex items-center gap-1.5 whitespace-nowrap">
+            {/* 1. Capítulo Acadêmico */}
+            {hasChapterTab && (
+              <button
+                onClick={() => {
+                  playTypewriterClack();
+                  setActiveTab('chapter');
+                }}
+                className={`px-3 py-2 min-h-[38px] text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${
+                  activeTab === 'chapter'
+                    ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
+                    : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+                }`}
+              >
+                <BookOpenCheck className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                <span>{chapterTabNum}. Capítulo Acadêmico</span>
+              </button>
+            )}
+
+            {/* 2. Ensaio Acadêmico */}
             <button
               onClick={() => {
                 playTypewriterClack();
-                setActiveTab('chapter');
+                setActiveTab('essay');
               }}
               className={`px-3 py-2 min-h-[38px] text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${
-                activeTab === 'chapter'
-                  ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
+                activeTab === 'essay'
+                  ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
                   : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
               }`}
             >
-              <BookOpenCheck className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-              <span>{chapterTabNum}. Capítulo Acadêmico</span>
+              <GraduationCap className="w-3.5 h-3.5 shrink-0" />
+              <span>{essayTabNum}. Ensaio Acadêmico</span>
             </button>
-          )}
 
-          {/* 2. Ensaio Acadêmico */}
-          <button
-            onClick={() => {
-              playTypewriterClack();
-              setActiveTab('essay');
-            }}
-            className={`px-3 py-2 min-h-[38px] text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${
-              activeTab === 'essay'
-                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
-                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
-            }`}
-          >
-            <GraduationCap className="w-3.5 h-3.5 shrink-0" />
-            <span>{essayTabNum}. Ensaio Acadêmico</span>
-          </button>
-
-          {/* 3. Crônicas */}
-          <button
-            onClick={() => {
-              playTypewriterClack();
-              setActiveTab('stories');
-            }}
-            className={`px-3 py-2 min-h-[38px] text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${
-              activeTab === 'stories'
-                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
-                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
-            }`}
-          >
-            <ScrollText className="w-3.5 h-3.5 shrink-0" />
-            <span>{storiesTabNum}. Crônicas</span>
-          </button>
-
-          {/* 4. Citações & Documentos */}
-          <button
-            onClick={() => {
-              playTypewriterClack();
-              setActiveTab('citations');
-            }}
-            className={`px-3 py-2 min-h-[38px] text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${
-              activeTab === 'citations'
-                ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
-                : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
-            }`}
-          >
-            <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
-            <span>{citationsTabNum}. Citações & Documentos</span>
-          </button>
-
-          {/* Investigação Avançada (Aba especial para temas com investigação) */}
-          {hasAdvancedInvestigation && (
+            {/* 3. Crônicas */}
             <button
               onClick={() => {
                 playTypewriterClack();
-                setActiveTab('advancedInvestigation');
+                setActiveTab('stories');
               }}
-              className={`px-3 py-2 min-h-[38px] text-xs font-bold rounded-lg transition-all flex items-center gap-1.5 border shrink-0 ${
-                activeTab === 'advancedInvestigation'
-                  ? 'tab-research-dossier-active'
-                  : 'tab-research-dossier-inactive'
+              className={`px-3 py-2 min-h-[38px] text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${
+                activeTab === 'stories'
+                  ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
+                  : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
               }`}
             >
-              <Sparkles className="w-3.5 h-3.5 shrink-0" />
-              <span>{advTabNum}. {(topic.id === 108 || topic.id === 109) ? 'INVESTIGAÇÃO AVANÇADA' : 'Investigação Avançada'}</span>
+              <ScrollText className="w-3.5 h-3.5 shrink-0" />
+              <span>{storiesTabNum}. Crônicas</span>
             </button>
-          )}
 
-          {/* ABA ADICIONAL EXCLUSIVA (ÚLTIMA ABA EM N 03 E N 05) */}
-          {marketLaws && (
+            {/* 4. Citações & Documentos */}
             <button
               onClick={() => {
                 playTypewriterClack();
-                setActiveTab('marketLaws');
+                setActiveTab('citations');
               }}
-              className={`px-3 py-2 min-h-[38px] text-xs font-bold rounded-lg transition-all flex items-center gap-1.5 border shrink-0 shadow-sm ${
-                activeTab === 'marketLaws'
-                  ? 'bg-amber-500 text-stone-950 border-amber-300 font-extrabold shadow-amber-500/20'
-                  : 'bg-amber-950/40 text-amber-300 hover:bg-amber-900/50 hover:text-amber-100 border-amber-600/60'
+              className={`px-3 py-2 min-h-[38px] text-xs font-semibold rounded-lg transition-colors flex items-center gap-1.5 border shrink-0 ${
+                activeTab === 'citations'
+                  ? 'bg-amber-950/50 text-amber-300 border-amber-600/60 font-bold'
+                  : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
               }`}
             >
-              <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-400" />
-              <span>{marketTabNum}. {topic.id === 105 ? 'A Virada Epistemológica' : 'As Leis de Mercado'}</span>
+              <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+              <span>{citationsTabNum}. Citações & Documentos</span>
             </button>
-          )}
-        </div>
+
+            {/* Investigação Avançada (Aba especial para temas com investigação) */}
+            {hasAdvancedInvestigation && (
+              <button
+                onClick={() => {
+                  playTypewriterClack();
+                  setActiveTab('advancedInvestigation');
+                }}
+                className={`px-3 py-2 min-h-[38px] text-xs font-bold rounded-lg transition-all flex items-center gap-1.5 border shrink-0 ${
+                  activeTab === 'advancedInvestigation'
+                    ? 'tab-research-dossier-active'
+                    : 'tab-research-dossier-inactive'
+                }`}
+              >
+                <Sparkles className="w-3.5 h-3.5 shrink-0" />
+                <span>{advTabNum}. {(topic.id === 108 || topic.id === 109) ? 'INVESTIGAÇÃO AVANÇADA' : 'Investigação Avançada'}</span>
+              </button>
+            )}
+
+            {/* ABA ADICIONAL EXCLUSIVA (ÚLTIMA ABA EM N 03 E N 05) */}
+            {marketLaws && (
+              <button
+                onClick={() => {
+                  playTypewriterClack();
+                  setActiveTab('marketLaws');
+                }}
+                className={`px-3 py-2 min-h-[38px] text-xs font-bold rounded-lg transition-all flex items-center gap-1.5 border shrink-0 shadow-sm ${
+                  activeTab === 'marketLaws'
+                    ? 'bg-amber-500 text-stone-950 border-amber-300 font-extrabold shadow-amber-500/20'
+                    : 'bg-amber-950/40 text-amber-300 hover:bg-amber-900/50 hover:text-amber-100 border-amber-600/60'
+                }`}
+              >
+                <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-400" />
+                <span>{marketTabNum}. {topic.id === 105 ? 'A Virada Epistemológica' : 'As Leis de Mercado'}</span>
+              </button>
+            )}
+          </div>
+        )}
 
         {/* Font Size Selector & Copy Actions on Desktop */}
         <div className="hidden lg:flex items-center gap-2.5 shrink-0">
@@ -1413,8 +1526,12 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                   playTypewriterClack();
                   setActiveSection(sec.num);
                   setIsMobileIndexOpen(false);
-                  const el = document.getElementById(sec.target);
-                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  if (sec.target.startsWith('smith-aba-')) {
+                    setActiveTab(`aba${sec.num}` as AdamSmithTabId);
+                  } else {
+                    const el = document.getElementById(sec.target);
+                    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
                 }}
                 className="text-left px-3 py-2 text-xs font-mono rounded bg-stone-900 hover:bg-stone-800 text-stone-200 border border-stone-800 flex items-center justify-between truncate"
               >
@@ -1437,25 +1554,32 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           </div>
 
           <div className="space-y-1">
-            {getSidebarSections().map((sec) => (
-              <button
-                key={sec.num}
-                onClick={() => {
-                  playTypewriterClack();
-                  setActiveSection(sec.num);
-                  const el = document.getElementById(sec.target);
-                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }}
-                className={`w-full text-left px-3 py-2 text-xs font-mono rounded-lg transition-all flex items-center justify-between ${
-                  activeSection === sec.num
-                    ? 'bg-amber-950/60 text-amber-300 border border-amber-600/50 font-bold shadow-sm'
-                    : 'text-stone-400 hover:text-stone-200 hover:bg-stone-900 border border-transparent'
-                }`}
-              >
-                <span className="truncate pr-1">{sec.label}</span>
-                <span className="text-[10px] text-stone-500 font-mono shrink-0">#{sec.num}</span>
-              </button>
-            ))}
+            {getSidebarSections().map((sec) => {
+              const isItemActive = isAdamSmith ? activeTab === `aba${sec.num}` : activeSection === sec.num;
+              return (
+                <button
+                  key={sec.num}
+                  onClick={() => {
+                    playTypewriterClack();
+                    setActiveSection(sec.num);
+                    if (sec.target.startsWith('smith-aba-')) {
+                      setActiveTab(`aba${sec.num}` as AdamSmithTabId);
+                    } else {
+                      const el = document.getElementById(sec.target);
+                      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
+                  className={`w-full text-left px-3 py-2 text-xs font-mono rounded-lg transition-all flex items-center justify-between ${
+                    isItemActive
+                      ? 'bg-amber-950/60 text-amber-300 border border-amber-600/50 font-bold shadow-sm'
+                      : 'text-stone-400 hover:text-stone-200 hover:bg-stone-900 border border-transparent'
+                  }`}
+                >
+                  <span className="truncate pr-1">{sec.label}</span>
+                  <span className="text-[10px] text-stone-500 font-mono shrink-0">#{sec.num}</span>
+                </button>
+              );
+            })}
           </div>
 
           <div className="mt-auto pt-4 border-t border-stone-800/80 text-[11px] font-mono text-stone-500 space-y-1">
@@ -1469,6 +1593,15 @@ export const DossierModal: React.FC<DossierModalProps> = ({
         {/* MAIN CONTENT AREA (WITH SIDE SCROLLBAR / BARRA DE ROLAR LATERAL) */}
         <main className="flex-1 overflow-y-auto p-3 sm:p-6 lg:p-10 space-y-8 bg-[#121214] overscroll-contain max-w-full box-border">
           
+          {/* CAPÍTULO Nº 12 (ADAM SMITH E O PENSAMENTO ECONÔMICO — 8 ABAS) */}
+          {isAdamSmith && (
+            <Topic113TabsView
+              activeTab={isAdamSmithTab(activeTab) ? activeTab : 'aba1'}
+              onSelectTab={(tab) => setActiveTab(tab)}
+              getFontSizeClass={getFontSizeClass}
+            />
+          )}
+
           {/* TAB: ACADEMIC CHAPTER (EMPTY EM PRODUÇÃO! FOR COLEÇÃO III WHEN BLANK) */}
           {activeTab === 'chapter' && !chapter && !rawChapterText && isColecao3 && (
             <article id="em-producao-chapter" className="max-w-4xl mx-auto w-full box-border">

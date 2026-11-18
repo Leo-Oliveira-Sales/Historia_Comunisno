@@ -23,7 +23,7 @@ interface TimelineEra {
 const IDEOLOGIAS_TIMELINE_ERAS: TimelineEra[] = [
   {
     periodKey: '1689-1789',
-    topicIds: [101],
+    topicIds: [101, 113],
     title: 'Iluminismo, Razão Crítica e Teoria Contratualista',
     dateRange: '1689 – 1789',
     summary: 'A emancipação intelectual pela razão crítica, a contestação do absolutismo de direito divino e a formulação pioneira dos direitos naturais inalienáveis (Locke, Montesquieu, Rousseau).',

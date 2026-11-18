@@ -1109,6 +1109,47 @@ export const IDEOLOGIAS_TOPICS: DossierTopic[] = [
       author: 'Roger Chartier',
       context: 'As Origens Culturais da Revolução Francesa (1990)'
     }
+  },
+
+  // =========================================================================
+  // TÓPICO 113 (CAPÍTULO 12)
+  // =========================================================================
+  {
+    id: 113,
+    categoryNumber: '12',
+    title: 'Adam Smith e o pensamento econômico',
+    category: 'Economia Política Clássica e Iluminismo Escocês',
+    period: 'todos',
+    periodLabel: '1723 – 1790 · Iluminismo Escocês e Economia Política',
+    tagline: 'Da Teoria dos Sentimentos Morais à Riqueza das Nações: trabalho, mercado, papel do Estado e o debate com Marx e Engels.',
+    summary: 'Capítulo estruturado em 8 abas temáticas sobre Adam Smith e o pensamento econômico: vida, formação e Iluminismo Escocês; Teoria dos Sentimentos Morais; A Riqueza das Nações; divisão do trabalho e produtividade; valor, salários, lucros e propriedade; mercado, concorrência e mão invisível; o papel do Estado na economia; e o confronto teórico Adam Smith × Marx × Engels.',
+    mainSubjects: [
+      'Adam Smith: vida, formação e contexto histórico — trajetória intelectual e Iluminismo Escocês',
+      'Teoria dos Sentimentos Morais — simpatia, natureza humana, ética e espectador imparcial',
+      'A Riqueza das Nações — principais ideias e objetivos da obra',
+      'Divisão do trabalho, produtividade e riqueza — especialização, trabalho e desenvolvimento econômico',
+      'Valor, salários, lucros e propriedade — distribuição da riqueza e relações econômicas',
+      'Mercado, concorrência e mão invisível — livre-comércio, mercantilismo e limites do mercado',
+      'O papel do Estado na economia — justiça, educação, infraestrutura, tributação e regulação',
+      'Adam Smith × Marx × Engels — capitalismo, trabalho, propriedade privada, exploração, desigualdade e organização econômica'
+    ],
+    historicalContext: 'No contexto do Iluminismo Escocês do século XVIII e da transição das políticas mercantilistas para a economia industrial britânica, Adam Smith formulou tanto uma filosofia moral baseada na simpatia quanto uma investigação sistemática sobre a natureza e as causas da riqueza das nações.',
+    academicConsensus: 'Estrutura do Capítulo Nº 12 organizada em 8 abas temáticas dedicadas para inserção e leitura integral.',
+    keyActors: [
+      'Adam Smith (1723–1790)',
+      'David Hume (1711–1776)',
+      'Karl Marx (1818–1883)',
+      'Friedrich Engels (1820–1895)'
+    ],
+    historiansInvolved: [
+      'Emma Rothschild',
+      'Amartya Sen',
+      'Samuel Fleischacker',
+      'Istvan Hont',
+      'Donald Winch'
+    ],
+    primarySources: [],
+    historicalImpact: 'Fundou a economia política clássica e permanece marco central nos debates teóricos sobre mercado, divisão do trabalho, papel do Estado e crítica marxista ao capitalismo.'
   }
 ];
 
