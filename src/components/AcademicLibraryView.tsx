@@ -151,7 +151,7 @@ export const AcademicLibraryView: React.FC<AcademicLibraryViewProps> = ({
             }`}
           >
             <GraduationCap className="w-3.5 h-3.5" />
-            <span>60 Especialistas de Ideologias ({IDEOLOGIAS_40_HISTORIANS.length})</span>
+            <span>60 Especialistas ({IDEOLOGIAS_40_HISTORIANS.length})</span>
           </button>
 
           <button

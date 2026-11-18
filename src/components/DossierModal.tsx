@@ -5,6 +5,7 @@ import { ACADEMIC_CHAPTERS } from '../data/academicChaptersDatabase';
 import { IDEOLOGIAS_CHAPTERS } from '../data/collections/collection_ideologias_chapters';
 import {
   GUERRAS_MUNDIAIS_CHAPTERS,
+  GUERRAS_MUNDIAIS_RAW_CHAPTERS,
   GUERRAS_MUNDIAIS_ESSAYS,
   GUERRAS_MUNDIAIS_CHRONICLES,
   GUERRAS_MUNDIAIS_CITATIONS,
@@ -45,6 +46,12 @@ import { Topic112ChroniclesView } from './Topic112ChroniclesView';
 import { Topic112EssayView } from './Topic112EssayView';
 import { Topic112AdvancedInvestigationView } from './Topic112AdvancedInvestigationView';
 import { Topic112DocumentsView } from './Topic112DocumentsView';
+import { Topic201EssayView } from './Topic201EssayView';
+import { Topic201ChroniclesView } from './Topic201ChroniclesView';
+import { Topic201CitationsView } from './Topic201CitationsView';
+import { Topic202EssayView } from './Topic202EssayView';
+import { Topic202ChroniclesView } from './Topic202ChroniclesView';
+import { Topic202CitationsView } from './Topic202CitationsView';
 import { DossierSynthesisView } from './DossierSynthesisView';
 import { DossierResearchView } from './DossierResearchView';
 import { playStampSound, playTypewriterClack } from '../utils/audio';
@@ -105,7 +112,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const isColecao3 = topic.id >= 201 && topic.id < 300;
   const essay = ACADEMIC_ESSAYS[topic.id] || GUERRAS_MUNDIAIS_ESSAYS[topic.id];
   const chapter = ACADEMIC_CHAPTERS[topic.id] || IDEOLOGIAS_CHAPTERS[topic.id] || GUERRAS_MUNDIAIS_CHAPTERS[topic.id];
-  const hasChapterTab = Boolean(chapter) || isColecao3;
+  const rawChapterText = isColecao3 ? GUERRAS_MUNDIAIS_RAW_CHAPTERS[topic.id] : undefined;
+  const hasChapterTab = Boolean(chapter) || Boolean(rawChapterText) || isColecao3;
   const [activeTab, setActiveTab] = useState<'chapter' | 'essay' | 'stories' | 'citations' | 'advancedInvestigation' | 'marketLaws'>(hasChapterTab ? 'chapter' : 'essay');
   const [activeSection, setActiveSection] = useState<number | string>(1);
   const [copiedCitation, setCopiedCitation] = useState<string | null>(null);
@@ -348,7 +356,25 @@ export const DossierModal: React.FC<DossierModalProps> = ({
     }
   };
 
+  const renderFormattedChapterParagraph = (text: string) => {
+    const parts = text.split(/(\*\*.*?\*\*)/g);
+    return parts.map((part, idx) => {
+      if (part.startsWith('**') && part.endsWith('**') && part.length > 4) {
+        return (
+          <strong key={idx} className="font-bold text-amber-200">
+            {part.slice(2, -2)}
+          </strong>
+        );
+      }
+      return part;
+    });
+  };
+
   const copyAcademicChapter = () => {
+    if (rawChapterText) {
+      copyToClipboard(rawChapterText, 'academic_chapter_full');
+      return;
+    }
     if (!chapter) return;
     let text = `==========================================================\n`;
     text += `${chapter.title.toUpperCase()}\n`;
@@ -374,6 +400,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   };
 
   const copyCompleteDossier = () => {
+    if (rawChapterText) {
+      copyToClipboard(rawChapterText, 'complete_master_dossier');
+      return;
+    }
+
     let text = `==========================================================\n`;
     text += `DOSSIÊ SOVIÉTICO - DOSSIÊ COMPLETO DE PESQUISA ACADÊMICA\n`;
     text += `Registro Oficial nº ${topic.categoryNumber} · Período: ${topic.periodLabel}\n`;
@@ -471,6 +502,9 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
   const getSidebarSections = () => {
     if (activeTab === 'chapter') {
+      if (rawChapterText) {
+        return [{ num: 1, label: '1. Capítulo Acadêmico', target: 'raw-chapter-content' }];
+      }
       if (!chapter) {
         return isColecao3
           ? [{ num: 1, label: '1. Capítulo Acadêmico', target: 'em-producao-chapter' }]
@@ -479,6 +513,9 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       const list: { num: number | string; label: string; target: string }[] = [{ num: 0, label: 'Introdução', target: 'chapter-intro' }];
       chapter.sections.forEach(s => {
         if (s.subsections && s.subsections.length > 0) {
+          if (s.content) {
+            list.push({ num: s.number, label: `${s.number}. ${s.title.substring(0, 16)}...`, target: `chapter-sec-${s.number}` });
+          }
           s.subsections.forEach(sub => {
             list.push({ num: sub.number, label: `${sub.number} ${sub.title.substring(0, 16)}...`, target: `chapter-sec-${sub.number.replace('.', '-')}` });
           });
@@ -490,6 +527,97 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       list.push({ num: 99, label: 'Referências', target: 'chapter-refs' });
       return list;
     } else if (activeTab === 'essay') {
+      if (topic.id === 201) {
+        return [
+          { num: 'ENS', label: 'Parte I: Ensaio Acadêmico', target: 'essay-master' },
+          { num: '1', label: '1. Introdução', target: 'essay-sec-1' },
+          { num: '2', label: '2. Unificação Alemã', target: 'essay-sec-2' },
+          { num: '3', label: '3. Weltpolitik', target: 'essay-sec-3' },
+          { num: '4', label: '4. Imperialismo', target: 'essay-sec-4' },
+          { num: '5', label: '5. Alianças', target: 'essay-sec-5' },
+          { num: '6', label: '6. Os Bálcãs', target: 'essay-sec-6' },
+          { num: '7', label: '7. Militarização', target: 'essay-sec-7' },
+          { num: '8', label: '8. Responsabilidade', target: 'essay-sec-8' },
+          { num: '9', label: '9. Inevitável?', target: 'essay-sec-9' },
+          { num: '10', label: '10. Conclusão', target: 'essay-sec-10' },
+          { num: 'SÍN', label: 'Parte II: Síntese Estrutural', target: 'essay-synthese-master' },
+          { num: 'S-1', label: '1. Quadro das Causas', target: 'sintese-sec-1' },
+          { num: 'S-2', label: '2. Principais Potências', target: 'sintese-sec-2' },
+          { num: 'S-3', label: '3. Quadro Conceitual', target: 'sintese-sec-3' },
+          { num: 'S-4', label: '4. Interpretação Central', target: 'sintese-sec-4' },
+          { num: 'DOS', label: 'Parte III: Dossiê de Pesquisa', target: 'essay-research-dossier-master' },
+          { num: 'D-1', label: '1. Identificação', target: 'dossie-sec-1' },
+          { num: 'D-2', label: '2. Questões Investigação', target: 'dossie-sec-2' },
+          { num: 'D-3', label: '3. Atores Históricos', target: 'dossie-sec-3' },
+          { num: 'D-4', label: '4. Linha do Tempo', target: 'dossie-sec-4' },
+          { num: 'D-5', label: '5. Debates Historiogr.', target: 'dossie-sec-5' },
+          { num: 'D-6', label: '6. Docs Essenciais', target: 'dossie-sec-6' },
+          { num: 'D-7', label: '7. Fontes & Acervos', target: 'dossie-sec-7' },
+          { num: 'D-8', label: '8. Bibliografia Fund.', target: 'dossie-sec-8' },
+          { num: 'D-9', label: '9. Conclusão Dossiê', target: 'dossie-sec-9' },
+          { num: 'INV', label: 'Investigação Avançada', target: 'essay-advanced-investigation-master' },
+          { num: 'APR', label: 'Apresentação', target: 'adv-apresentacao' },
+          { num: 'I-1', label: 'Inv. 01: Unificação Alemã', target: 'adv-sec-1' },
+          { num: 'I-2', label: 'Inv. 02: Guilherme II', target: 'adv-sec-2' },
+          { num: 'I-3', label: 'Inv. 03: Imperialismo', target: 'adv-sec-3' },
+          { num: 'I-4', label: 'Inv. 04: Alianças', target: 'adv-sec-4' },
+          { num: 'I-5', label: 'Inv. 05: Os Bálcãs', target: 'adv-sec-5' },
+          { num: 'I-6', label: 'Inv. 06: Planos Militares', target: 'adv-sec-6' },
+          { num: 'I-7', label: 'Inv. 07: Inevitável?', target: 'adv-sec-7' },
+          { num: 'I-8', label: 'Inv. 08: Responsabilidade', target: 'adv-sec-8' },
+          { num: 'SÍN+', label: 'Síntese Final Inv.', target: 'adv-sintese' },
+        ];
+      }
+      if (topic.id === 202) {
+        return [
+          { num: 'ENS', label: 'Parte I: Ensaio Acadêmico', target: 'essay-master' },
+          { num: '1', label: '1. Introdução', target: 'essay-sec-1' },
+          { num: '2', label: '2. Atentado Sarajevo', target: 'essay-sec-2' },
+          { num: '3', label: '3. Áustria-Hungria', target: 'essay-sec-3' },
+          { num: '4', label: '4. Alemanha & Cheque', target: 'essay-sec-4' },
+          { num: '5', label: '5. A Sérvia', target: 'essay-sec-5' },
+          { num: '6', label: '6. A Rússia', target: 'essay-sec-6' },
+          { num: '7', label: '7. A França', target: 'essay-sec-7' },
+          { num: '8', label: '8. O Reino Unido', target: 'essay-sec-8' },
+          { num: '9', label: '9. Mobilização', target: 'essay-sec-9' },
+          { num: '10', label: '10. Colapso Diplomacia', target: 'essay-sec-10' },
+          { num: '11', label: '11. Responsabilidade', target: 'essay-sec-11' },
+          { num: '12', label: '12. Debate Historiogr.', target: 'essay-sec-12' },
+          { num: '13', label: '13. Era Evitável?', target: 'essay-sec-13' },
+          { num: '14', label: '14. Conclusão Ensaio', target: 'essay-sec-14' },
+          { num: 'SÍN', label: 'Parte II: Síntese Estrutural', target: 'essay-synthese-master' },
+          { num: 'S-1', label: '1. Problema Central', target: 'sintese-sec-1' },
+          { num: 'S-2', label: '2. Causas Estruturais', target: 'sintese-sec-2' },
+          { num: 'S-3', label: '3. Fatores Imediatos', target: 'sintese-sec-3' },
+          { num: 'S-4', label: '4. Escalada', target: 'sintese-sec-4' },
+          { num: 'S-5', label: '5. Cronologia', target: 'sintese-sec-5' },
+          { num: 'S-6', label: '6. Quadro dos Atores', target: 'sintese-sec-6' },
+          { num: 'S-7', label: '7. Conceitos', target: 'sintese-sec-7' },
+          { num: 'S-8', label: '8. Conclusões', target: 'sintese-sec-8' },
+          { num: 'DOS', label: 'Parte III: Dossiê de Pesquisa', target: 'essay-research-dossier-master' },
+          { num: 'D-1', label: '1. Delimitação', target: 'dossie-sec-1' },
+          { num: 'D-2', label: '2. Problema Pesquisa', target: 'dossie-sec-2' },
+          { num: 'D-3', label: '3. Hipóteses', target: 'dossie-sec-3' },
+          { num: 'D-4', label: '4. Cronologia Doc.', target: 'dossie-sec-4' },
+          { num: 'D-5', label: '5. Fontes Primárias', target: 'dossie-sec-5' },
+          { num: 'D-6', label: '6. Questões Historiogr.', target: 'dossie-sec-6' },
+          { num: 'D-7', label: '7. Bibliografia', target: 'dossie-sec-7' },
+          { num: 'D-8', label: '8. Metodologia', target: 'dossie-sec-8' },
+          { num: 'INV', label: 'Parte IV: Inv. Avançada', target: 'essay-advanced-investigation-master' },
+          { num: 'I-1', label: 'Inv. 1: Áustria-Hungria', target: 'adv-sec-1' },
+          { num: 'I-2', label: 'Inv. 2: Cheque em Branco', target: 'adv-sec-2' },
+          { num: 'I-3', label: 'Inv. 3: Ultimato', target: 'adv-sec-3' },
+          { num: 'I-4', label: 'Inv. 4: Resposta Sérvia', target: 'adv-sec-4' },
+          { num: 'I-5', label: 'Inv. 5: Responsabilidade', target: 'adv-sec-5' },
+          { num: 'I-6', label: 'Inv. 6: Mobilização Russa', target: 'adv-sec-6' },
+          { num: 'I-7', label: 'Inv. 7: Bélgica & RU', target: 'adv-sec-7' },
+          { num: 'I-8', label: 'Inv. 8: Alternativas', target: 'adv-sec-8' },
+          { num: 'I-9', label: 'Inv. 9: Alianças', target: 'adv-sec-9' },
+          { num: 'I-10', label: 'Inv. 10: Historiografia', target: 'adv-sec-10' },
+          { num: '11', label: '11. Conclusão Geral', target: 'adv-sec-11' },
+          { num: 'REF', label: 'Referências Inv.', target: 'adv-refs' },
+        ];
+      }
       if (isColecao3 && !essay) {
         return [{ num: 1, label: '2. Ensaio Acadêmico', target: 'em-producao-essay' }];
       }
@@ -627,6 +755,30 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'NOTA', label: 'Nota Editorial', target: 'stories-editorial-note' },
         ];
       }
+      if (topic.id === 201) {
+        return [
+          { num: 'CR-01', label: '01. Versalhes, 1871', target: 'cronica-1' },
+          { num: 'CR-02', label: '02. Bismarck e o Equilíbrio', target: 'cronica-2' },
+          { num: 'CR-03', label: '03. Campo de Disputa', target: 'cronica-3' },
+          { num: 'CR-04', label: '04. Crise da Bósnia, 1908', target: 'cronica-4' },
+          { num: 'CR-05', label: '05. Agadir, 1911', target: 'cronica-5' },
+          { num: 'CR-06', label: '06. Sarajevo, 28/06/1914', target: 'cronica-6' },
+          { num: 'NOTA', label: 'Nota Final das Crônicas', target: 'cronica-nota' },
+        ];
+      }
+      if (topic.id === 202) {
+        return [
+          { num: 'CR-01', label: '01. Sarajevo (28/06)', target: 'cronica-1' },
+          { num: 'CR-02', label: '02. Berlim (05–06/07)', target: 'cronica-2' },
+          { num: 'CR-03', label: '03. Viena (07–22/07)', target: 'cronica-3' },
+          { num: 'CR-04', label: '04. Belgrado (23–25/07)', target: 'cronica-4' },
+          { num: 'CR-05', label: '05. São Petersburgo', target: 'cronica-5' },
+          { num: 'CR-06', label: '06. Berlim (01–03/08)', target: 'cronica-6' },
+          { num: 'CR-07', label: '07. Bruxelas (02–04/08)', target: 'cronica-7' },
+          { num: 'CR-08', label: '08. Londres (04/08)', target: 'cronica-8' },
+          { num: 'CON', label: 'Conclusão das Crônicas', target: 'cronica-nota' },
+        ];
+      }
       if (isColecao3 && chronologies.length === 0 && detailedEpisodes.length === 0 && !GUERRAS_MUNDIAIS_CHRONICLES[topic.id]) {
         return [{ num: 1, label: '3. Crônicas', target: 'em-producao-stories' }];
       }
@@ -635,6 +787,27 @@ export const DossierModal: React.FC<DossierModalProps> = ({
         { num: 2, label: `Crônicas Oculares (${detailedEpisodes.length})`, target: 'stories-episodes' },
       ];
     } else if (activeTab === 'citations') {
+      if (topic.id === 201) {
+        return [
+          { num: 'I', label: 'I. Citações e Sínteses', target: 'cit-parte-1' },
+          { num: 'II', label: 'II. Documentos Históricos', target: 'cit-parte-2' },
+          { num: 'III', label: 'III. Auditoria Documental', target: 'cit-parte-3' },
+          { num: 'IV', label: 'IV. Acervos e Repositórios', target: 'cit-parte-4' },
+          { num: 'V', label: 'V. Bibliografia Consolidada', target: 'cit-parte-5' },
+          { num: 'CON', label: 'Conclusão Documental', target: 'cit-conclusao' },
+        ];
+      }
+      if (topic.id === 202) {
+        return [
+          { num: 'PRO', label: 'Protocolo Documental', target: 'cit-protocolo' },
+          { num: 'I', label: 'I. Documentos Primários', target: 'cit-parte-1' },
+          { num: 'II', label: 'II. Citações e Autores', target: 'cit-parte-2' },
+          { num: 'III', label: 'III. Repositórios', target: 'cit-parte-3' },
+          { num: 'IV', label: 'IV. Bibliografia Acadêmica', target: 'cit-parte-4' },
+          { num: 'V', label: 'V. Questões de Análise', target: 'cit-parte-5' },
+          { num: 'CON', label: 'Conclusão Documental', target: 'cit-conclusao' },
+        ];
+      }
       if (isColecao3 && !GUERRAS_MUNDIAIS_CITATIONS[topic.id] && topic.primarySources.length === 0 && !TOPIC_CITATIONS_DATABASE[topic.id]) {
         return [{ num: 1, label: '4. Citações & Documentos', target: 'em-producao-citations' }];
       }
@@ -1297,7 +1470,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
         <main className="flex-1 overflow-y-auto p-3 sm:p-6 lg:p-10 space-y-8 bg-[#121214] overscroll-contain max-w-full box-border">
           
           {/* TAB: ACADEMIC CHAPTER (EMPTY EM PRODUÇÃO! FOR COLEÇÃO III WHEN BLANK) */}
-          {activeTab === 'chapter' && !chapter && isColecao3 && (
+          {activeTab === 'chapter' && !chapter && !rawChapterText && isColecao3 && (
             <article id="em-producao-chapter" className="max-w-4xl mx-auto w-full box-border">
               <div className="bg-[#161619] border border-amber-600/50 p-6 sm:p-10 rounded-2xl shadow-xl space-y-4">
                 <div className="flex flex-wrap items-center gap-2">
@@ -1324,8 +1497,19 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             </article>
           )}
 
+          {/* TAB: ACADEMIC CHAPTER (VERBATIM RAW TEXT FOR COLEÇÃO III) */}
+          {activeTab === 'chapter' && rawChapterText && (
+            <article id="raw-chapter-content" className="max-w-4xl mx-auto w-full box-border">
+              <div className="bg-[#161619] border border-stone-800 p-5 sm:p-8 rounded-2xl shadow-xl">
+                <div className={`text-stone-200 font-serif whitespace-pre-wrap break-words leading-relaxed select-text ${getFontSizeClass('body')}`}>
+                  {rawChapterText}
+                </div>
+              </div>
+            </article>
+          )}
+
           {/* TAB: ACADEMIC CHAPTER (BOOK CHAPTER TEXT) */}
-          {activeTab === 'chapter' && chapter && (
+          {activeTab === 'chapter' && !rawChapterText && chapter && (
             <article className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
               {/* Chapter Header Banner */}
               <div id="chapter-intro" className="bg-[#161619] border border-amber-600/50 p-6 sm:p-8 rounded-2xl shadow-xl relative overflow-hidden space-y-4">
@@ -1372,7 +1556,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                   </h3>
                   {chapter.introduction.split('\n\n').map((paragraph, pIdx) => (
                     <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words whitespace-pre-line ${getFontSizeClass('body')}`}>
-                      {paragraph}
+                      {renderFormattedChapterParagraph(paragraph)}
                     </p>
                   ))}
                 </div>
@@ -1438,7 +1622,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                           }
                           return (
                             <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words whitespace-pre-line ${getFontSizeClass('body')}`}>
-                              {paragraph}
+                              {renderFormattedChapterParagraph(paragraph)}
                             </p>
                           );
                         })}
@@ -1454,7 +1638,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                       <div className="space-y-3">
                         {sub.content.split('\n\n').map((paragraph, pIdx) => (
                           <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words whitespace-pre-line ${getFontSizeClass('body')}`}>
-                            {paragraph}
+                            {renderFormattedChapterParagraph(paragraph)}
                           </p>
                         ))}
                       </div>
@@ -1477,7 +1661,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 <div className="space-y-4">
                   {chapter.conclusion.split('\n\n').map((paragraph, pIdx) => (
                     <p key={pIdx} className={`text-stone-300 font-serif text-justify break-words whitespace-pre-line ${getFontSizeClass('body')}`}>
-                      {paragraph}
+                      {renderFormattedChapterParagraph(paragraph)}
                     </p>
                   ))}
                 </div>
@@ -1506,7 +1690,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
 
           {/* TAB: ESSAY (JUNÇÃO DE ENSAIO ACADÊMICO + SÍNTESE + DOSSIÊ DE PESQUISA) */}
-          {activeTab === 'essay' && (isColecao3 && !essay ? (
+          {activeTab === 'essay' && (isColecao3 && !essay && topic.id !== 201 && topic.id !== 202 ? (
             <article id="em-producao-essay" className="max-w-4xl mx-auto w-full box-border">
               <div className="bg-[#161619] border border-amber-600/50 p-6 sm:p-10 rounded-2xl shadow-xl space-y-4">
                 <div className="flex flex-wrap items-center gap-2">
@@ -1531,6 +1715,10 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 </div>
               </div>
             </article>
+          ) : topic.id === 201 ? (
+            <Topic201EssayView getFontSizeClass={getFontSizeClass} />
+          ) : topic.id === 202 ? (
+            <Topic202EssayView getFontSizeClass={getFontSizeClass} />
           ) : (
             <article className="space-y-12 max-w-4xl mx-auto w-full box-border overflow-hidden">
               {/* SUBSEÇÃO 1: ENSAIO ACADÊMICO */}
@@ -1819,7 +2007,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
           {/* TAB: STORIES (CRÔNICAS HISTÓRICAS E CRONOLOGIA COMPLETA) */}
           {activeTab === 'stories' && (
-            (isColecao3 && chronologies.length === 0 && detailedEpisodes.length === 0 && !GUERRAS_MUNDIAIS_CHRONICLES[topic.id]) ? (
+            topic.id === 201 ? (
+              <Topic201ChroniclesView getFontSizeClass={getFontSizeClass} />
+            ) : topic.id === 202 ? (
+              <Topic202ChroniclesView getFontSizeClass={getFontSizeClass} />
+            ) : (isColecao3 && chronologies.length === 0 && detailedEpisodes.length === 0 && !GUERRAS_MUNDIAIS_CHRONICLES[topic.id]) ? (
               <article id="em-producao-stories" className="max-w-4xl mx-auto w-full box-border">
                 <div className="bg-[#161619] border border-amber-600/50 p-6 sm:p-10 rounded-2xl shadow-xl space-y-4">
                   <div className="flex flex-wrap items-center gap-2">
@@ -1970,6 +2162,20 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
           {/* TAB: CITATIONS (PROTOCOLO DE AUDITORIA DOCUMENTAL E BIBLIOGRÁFICA — 3 BLOCOS) */}
           {activeTab === 'citations' && (() => {
+            if (topic.id === 201) {
+              return (
+                <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+                  <Topic201CitationsView getFontSizeClass={getFontSizeClass} />
+                </div>
+              );
+            }
+            if (topic.id === 202) {
+              return (
+                <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+                  <Topic202CitationsView getFontSizeClass={getFontSizeClass} />
+                </div>
+              );
+            }
             if (isColecao3 && !GUERRAS_MUNDIAIS_CITATIONS[topic.id] && topic.primarySources.length === 0 && !TOPIC_CITATIONS_DATABASE[topic.id]) {
               return (
                 <article id="em-producao-citations" className="max-w-4xl mx-auto w-full box-border">

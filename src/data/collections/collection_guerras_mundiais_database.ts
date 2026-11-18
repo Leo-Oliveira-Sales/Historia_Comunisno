@@ -3,6 +3,8 @@ import {
   AcademicEssay,
 } from '../../types/dossier';
 import type { AcademicChapter } from '../academicChaptersDatabase';
+import { CHAPTER_GUERRAS_MUNDIAIS_01 } from '../chapters/chapter_guerras_mundiais_01';
+import { CHAPTER_GUERRAS_MUNDIAIS_02 } from '../chapters/chapter_guerras_mundiais_02';
 
 export const GUERRAS_MUNDIAIS_BLOCKS = [
   {
@@ -493,8 +495,12 @@ export const GUERRAS_MUNDIAIS_TOPICS: DossierTopic[] = [
   },
 ];
 
-// Registros vazios preparados para inserção incremental dos textos de cada capítulo (1..4 abas)
-export const GUERRAS_MUNDIAIS_CHAPTERS: Record<number, AcademicChapter> = {};
+// Registros preparados para inserção incremental dos textos de cada capítulo (1..4 abas)
+export const GUERRAS_MUNDIAIS_CHAPTERS: Record<number, AcademicChapter> = {
+  201: CHAPTER_GUERRAS_MUNDIAIS_01,
+  202: CHAPTER_GUERRAS_MUNDIAIS_02,
+};
+export const GUERRAS_MUNDIAIS_RAW_CHAPTERS: Record<number, string> = {};
 export const GUERRAS_MUNDIAIS_ESSAYS: Record<number, AcademicEssay> = {};
 export const GUERRAS_MUNDIAIS_CHRONICLES: Record<number, string> = {};
 export const GUERRAS_MUNDIAIS_CITATIONS: Record<number, string> = {};

@@ -1,0 +1,465 @@
+import { AcademicChapter } from '../academicChaptersDatabase';
+
+export const CHAPTER_GUERRAS_MUNDIAIS_01: AcademicChapter = {
+  topicId: 201,
+  title: 'AS ORIGENS DA PRIMEIRA GUERRA MUNDIAL',
+  subtitle:
+    'Unificação alemã, rivalidades imperialistas, nacionalismos, corrida armamentista e crise do equilíbrio europeu (1871–1914)',
+  authorCatedra:
+    'COLEÇÃO III — HISTÓRIA DAS GUERRAS MUNDIAIS · Cátedra de História Militar, Diplomática e das Relações Internacionais · Capítulo Histórico Acadêmico nº 01',
+  introduction: `INTRODUÇÃO — A EUROPA ÀS VÉSPERAS DA GUERRA
+
+Em 28 de junho de 1914, o assassinato do arquiduque Francisco Ferdinando, herdeiro do trono austro-húngaro, em Sarajevo, desencadeou uma crise diplomática que, em poucas semanas, conduziria as principais potências europeias à guerra. O acontecimento foi o estopim de um conflito que se transformaria em uma das maiores catástrofes da história contemporânea.
+
+Entretanto, a morte do arquiduque não explica, isoladamente, a dimensão da guerra que começou naquele verão. Para compreender por que uma crise localizada nos Bálcãs se transformou em uma guerra continental e, posteriormente, mundial, é necessário investigar as transformações políticas, econômicas, militares e diplomáticas ocorridas na Europa durante as décadas anteriores.
+
+Entre 1871 e 1914, o continente passou por profundas mudanças. A unificação alemã alterou o equilíbrio de poder estabelecido após as guerras napoleônicas. O crescimento industrial da Alemanha modificou as relações econômicas entre as potências. A expansão colonial intensificou disputas territoriais na África e na Ásia. O nacionalismo fortaleceu reivindicações territoriais e movimentos de independência, enquanto os governos ampliavam seus investimentos militares.
+
+Ao mesmo tempo, a diplomacia europeia desenvolveu um complexo sistema de alianças e acordos destinados a preservar a segurança dos Estados. Paradoxalmente, esses mecanismos, que deveriam evitar guerras, contribuíram para ampliar as consequências de uma crise internacional.
+
+A Primeira Guerra Mundial não foi simplesmente o resultado de uma rivalidade entre Alemanha e França, nem uma consequência automática do sistema de alianças. Seu surgimento envolveu decisões de diferentes governos, disputas imperiais, inseguranças estratégicas, nacionalismos e erros de avaliação política.
+
+Este capítulo examina a formação desse cenário, desde a transformação do equilíbrio europeu após 1871 até a crescente instabilidade internacional que precedeu 1914.`,
+  sections: [
+    {
+      number: '1',
+      title: 'A UNIFICAÇÃO ALEMÃ E A TRANSFORMAÇÃO DO EQUILÍBRIO EUROPEU (1871)',
+      content: `Durante grande parte do século XIX, a Europa esteve organizada em torno de um sistema de equilíbrio de poder no qual nenhuma potência deveria alcançar uma superioridade incontestável sobre as demais.
+
+Esse princípio havia sido reforçado pelo Congresso de Viena, em 1814–1815, após a derrota de Napoleão Bonaparte. As principais monarquias europeias procuraram estabelecer uma ordem internacional baseada na contenção de expansões territoriais e na preservação das dinastias tradicionais.
+
+Entretanto, a segunda metade do século XIX modificou profundamente essa estrutura.
+
+A unificação italiana, concluída em 1870, e principalmente a unificação alemã, em 1871, alteraram a distribuição do poder político e militar no continente.
+
+A Alemanha foi unificada sob a liderança do Reino da Prússia, tendo como principal articulador político Otto von Bismarck, ministro-presidente prussiano e posteriormente primeiro chanceler do Império Alemão.
+
+O processo de unificação foi consolidado por uma sequência de conflitos:
+
+- Guerra dos Ducados contra a Dinamarca (1864).
+- Guerra Austro-Prussiana (1866).
+- Guerra Franco-Prussiana (1870–1871).
+
+A vitória sobre a França permitiu a proclamação do Império Alemão em 18 de janeiro de 1871, no Palácio de Versalhes.
+
+A nova Alemanha surgiu como uma potência continental de enorme capacidade militar, industrial e demográfica.
+
+A derrota francesa produziu consequências particularmente importantes. Pelo Tratado de Frankfurt, de 10 de maio de 1871, a França perdeu a Alsácia e parte da Lorena para o recém-formado Império Alemão, além de assumir pesadas indenizações de guerra.
+
+A anexação dos territórios tornou-se uma fonte duradoura de ressentimento francês.
+
+A questão da Alsácia-Lorena passou a ocupar posição importante na política nacionalista francesa, alimentando a percepção de que a derrota de 1870–1871 precisava ser historicamente superada.
+
+A Alemanha, por sua vez, passou a ocupar uma posição central no equilíbrio europeu.
+
+Sua localização geográfica, no centro do continente, permitia influência sobre a Europa Ocidental, Central e Oriental. Seu crescimento econômico e sua capacidade militar também modificaram os cálculos estratégicos das demais potências.
+
+A partir de então, a manutenção da estabilidade europeia dependeria, em grande medida, da maneira como os outros Estados reagiriam à ascensão alemã.`,
+    },
+    {
+      number: '2',
+      title: 'BISMARCK E A DIPLOMACIA DO EQUILÍBRIO EUROPEU (1871–1890)',
+      content: `Após a unificação alemã, Otto von Bismarck compreendeu que a nova posição internacional do país exigia uma política externa cuidadosa.
+
+A Alemanha havia derrotado a França, mas não desejava enfrentar simultaneamente uma coalizão formada pelas demais grandes potências.
+
+O principal objetivo diplomático de Bismarck consistia em preservar a posição alemã, impedir o isolamento internacional e evitar que a França encontrasse aliados capazes de organizar uma guerra de revanche.
+
+Para isso, desenvolveu uma rede de tratados, acordos e entendimentos diplomáticos.
+
+Entre os principais mecanismos estavam:
+
+**Liga dos Três Imperadores (1873)**
+
+A aproximação entre Alemanha, Áustria-Hungria e Rússia procurava estabelecer uma cooperação conservadora entre as monarquias e reduzir as possibilidades de conflitos entre as três potências.
+
+Entretanto, os interesses austríacos e russos nos Bálcãs frequentemente entravam em contradição.
+
+**Congresso de Berlim (1878)**
+
+A crise oriental e as consequências da guerra russo-turca de 1877–1878 produziram disputas sobre a reorganização dos territórios balcânicos.
+
+Bismarck atuou como mediador no Congresso de Berlim, procurando impedir que as divergências entre Rússia e Áustria-Hungria destruíssem o sistema de cooperação europeu.
+
+**Aliança Dual (1879)**
+
+Alemanha e Áustria-Hungria estabeleceram uma aliança defensiva, especialmente direcionada à possibilidade de uma agressão russa.
+
+O acordo aproximou permanentemente os dois impérios e tornou a segurança austríaca um elemento central da política alemã.
+
+**Tríplice Aliança (1882)**
+
+A entrada da Itália na aproximação entre Alemanha e Áustria-Hungria consolidou a chamada Tríplice Aliança.
+
+O acordo estabeleceu obrigações de assistência em determinadas circunstâncias de guerra, embora os interesses dos três países não fossem inteiramente coincidentes.
+
+**Tratado de Resseguro (1887)**
+
+Bismarck também procurou manter relações diplomáticas com a Rússia por meio de um acordo de neutralidade, reduzindo o risco de uma aproximação russo-francesa.
+
+O sistema diplomático bismarckiano não eliminou as rivalidades europeias, mas procurou administrá-las.
+
+Sua lógica dependia de uma combinação de alianças flexíveis, negociações reservadas e equilíbrio estratégico.
+
+Em 1890, entretanto, Bismarck deixou o governo após divergências com o novo imperador alemão, Guilherme II.
+
+Sua saída representou uma transformação importante na condução da política externa alemã.`,
+    },
+    {
+      number: '3',
+      title: 'GUILHERME II E A WELTPOLITIK: A AMBIÇÃO DE UMA POTÊNCIA GLOBAL',
+      content: `Guilherme II assumiu o trono alemão em 1888.
+
+Diferentemente da orientação diplomática prudente associada a Bismarck, o novo imperador passou a defender uma política externa mais ambiciosa, frequentemente identificada pelo conceito de Weltpolitik, expressão alemã que significa política mundial.
+
+A Alemanha pretendia ampliar sua influência internacional, fortalecer sua presença colonial e afirmar-se como uma potência global.
+
+Essa orientação estava relacionada ao crescimento econômico e industrial do país.
+
+No final do século XIX, a Alemanha havia se transformado em uma das principais economias industriais do mundo. Sua produção de aço, produtos químicos, máquinas e equipamentos industriais cresceu consideravelmente.
+
+A expansão econômica fortaleceu setores empresariais, industriais e políticos interessados em uma presença internacional mais ampla.
+
+A política externa alemã passou a apresentar três dimensões importantes:
+
+- Expansão da influência diplomática e econômica.
+- Ampliação da presença colonial.
+- Fortalecimento da capacidade naval e militar.
+
+A Weltpolitik não significava necessariamente que a Alemanha tivesse decidido iniciar uma guerra europeia. Entretanto, sua condução provocou desconfiança entre outras potências, principalmente a Grã-Bretanha.
+
+A substituição de uma diplomacia baseada na preservação do equilíbrio por uma política externa mais assertiva contribuiu para aumentar a instabilidade internacional.`,
+    },
+    {
+      number: '4',
+      title: 'IMPERIALISMO E DISPUTAS COLONIAIS',
+      content: `Durante a segunda metade do século XIX, as potências europeias intensificaram a expansão territorial na África e na Ásia.
+
+Esse processo ficou conhecido como Novo Imperialismo.
+
+A expansão colonial estava relacionada a diferentes fatores:
+
+- Busca por matérias-primas.
+- Acesso a mercados consumidores.
+- Investimentos e oportunidades comerciais.
+- Controle de rotas marítimas e posições estratégicas.
+- Prestígio internacional.
+- Competição política entre as potências.
+
+A Conferência de Berlim de 1884–1885, convocada para estabelecer regras de ocupação territorial na África, simbolizou a intensificação da disputa colonial europeia.
+
+Alemanha, França, Grã-Bretanha, Bélgica, Portugal e outras potências participaram da reorganização colonial do continente africano.
+
+A expansão imperialista produziu conflitos diplomáticos, embora nem todas as disputas coloniais tenham conduzido diretamente à guerra europeia.
+
+A rivalidade entre França e Alemanha tornou-se particularmente visível nas crises do Marrocos.
+
+**Primeira Crise do Marrocos (1905–1906)**
+
+A Alemanha contestou a crescente influência francesa no Marrocos.
+
+Guilherme II realizou uma visita a Tânger, em 1905, manifestando apoio à independência marroquina e questionando a posição francesa.
+
+A crise foi discutida na Conferência de Algeciras, em 1906.
+
+O resultado diplomático foi desfavorável à Alemanha, que percebeu a aproximação entre França e Grã-Bretanha como um obstáculo aos seus objetivos internacionais.
+
+**Segunda Crise do Marrocos (1911)**
+
+A Alemanha enviou a canhoneira Panther ao porto de Agadir, alegando proteger interesses alemães durante a crise política marroquina.
+
+A iniciativa provocou forte reação britânica e francesa.
+
+A crise terminou por meio de negociações territoriais e compensações coloniais, mas aprofundou a desconfiança entre as potências.
+
+As crises marroquinas demonstraram que disputas coloniais podiam adquirir dimensão estratégica e afetar diretamente o equilíbrio europeu.`,
+    },
+    {
+      number: '5',
+      title: 'A CORRIDA NAVAL ANGLO-ALEMÃ',
+      content: `Entre o final do século XIX e o início do século XX, a Grã-Bretanha e a Alemanha passaram a competir pelo desenvolvimento de suas forças navais.
+
+A Marinha britânica era um dos principais instrumentos de sustentação do Império Britânico.
+
+Sua superioridade naval permitia proteger rotas comerciais, manter comunicações entre colônias e impedir que potências rivais ameaçassem diretamente as ilhas britânicas.
+
+A Alemanha, por sua vez, considerava a expansão naval uma condição necessária para alcançar maior influência internacional.
+
+A legislação naval alemã, especialmente as leis de 1898 e 1900, estabeleceu programas de ampliação da frota.
+
+O almirante Alfred von Tirpitz tornou-se uma das figuras centrais dessa política.
+
+A construção de encouraçados modernos e o desenvolvimento de novas tecnologias navais aumentaram a competição entre os dois países.
+
+Um acontecimento decisivo foi o lançamento do HMS Dreadnought, em 1906.
+
+O navio britânico introduziu um novo padrão tecnológico de encouraçado, tornando obsoletas diversas embarcações anteriores e estimulando uma nova fase da competição naval.
+
+A corrida armamentista não se limitou à quantidade de navios. Envolveu também tecnologia, capacidade industrial, treinamento, logística e planejamento estratégico.
+
+Para os britânicos, a expansão naval alemã representava uma ameaça potencial à segurança nacional.
+
+Para os alemães, a superioridade naval britânica limitava suas ambições internacionais.
+
+Essa competição contribuiu para deteriorar as relações entre as duas potências.`,
+    },
+    {
+      number: '6',
+      title: 'A FORMAÇÃO DOS BLOCOS DIPLOMÁTICOS EUROPEUS',
+      content: `A transformação das relações diplomáticas europeias foi um dos fatores mais importantes para compreender o cenário de 1914.
+
+Após a saída de Bismarck, a Alemanha não renovou o Tratado de Resseguro com a Rússia, em 1890.
+
+A decisão contribuiu para o enfraquecimento da antiga aproximação diplomática entre Berlim e São Petersburgo.
+
+A França, que permanecia diplomaticamente isolada desde 1871, encontrou uma oportunidade para desenvolver relações com a Rússia.
+
+**Aliança Franco-Russa (1891–1894)**
+
+França e Rússia estabeleceram progressivamente uma aproximação diplomática e militar.
+
+O acordo procurava equilibrar o poder da Alemanha e de seus aliados.
+
+A aproximação representou uma mudança importante no sistema europeu, pois criou a possibilidade de a Alemanha enfrentar adversários em suas fronteiras ocidental e oriental.
+
+**Entente Cordiale (1904)**
+
+A Grã-Bretanha e a França resolveram importantes disputas coloniais por meio de um entendimento diplomático.
+
+O acordo não constituiu originalmente uma aliança militar formal, mas reduziu as tensões entre os dois países.
+
+**Convenção Anglo-Russa (1907)**
+
+A Grã-Bretanha e a Rússia resolveram parte de suas divergências na Ásia Central, especialmente em relação à Pérsia, ao Afeganistão e ao Tibete.
+
+Com isso, consolidou-se a aproximação entre as três potências que posteriormente seriam conhecidas como Tríplice Entente.
+
+É importante observar que a Tríplice Entente não possuía a mesma estrutura jurídica e militar da Tríplice Aliança.
+
+Seus integrantes mantinham interesses próprios e não estavam automaticamente obrigados a participar de qualquer guerra iniciada por um dos parceiros.
+
+Entretanto, a aproximação diplomática entre França, Rússia e Grã-Bretanha alterou significativamente os cálculos estratégicos alemães.`,
+    },
+    {
+      number: '7',
+      title: 'NACIONALISMO E INSTABILIDADE NOS BÁLCÃS',
+      content: `Se a rivalidade entre as grandes potências constituía uma dimensão fundamental da instabilidade europeia, os Bálcãs representavam uma das regiões mais explosivas do continente.
+
+A região era habitada por diferentes povos, religiões e grupos linguísticos, muitos dos quais reivindicavam autonomia ou independência política.
+
+Durante séculos, grande parte dos territórios balcânicos esteve sob domínio do Império Otomano.
+
+O enfraquecimento progressivo desse império abriu espaço para movimentos nacionalistas e disputas territoriais.
+
+A Sérvia tornou-se um dos principais centros do nacionalismo eslavo meridional.
+
+Seu projeto de expansão e unificação dos povos eslavos do sul entrava em conflito com os interesses do Império Austro-Húngaro.
+
+A monarquia dos Habsburgo governava uma população extremamente diversificada, composta por alemães, húngaros, tchecos, eslovacos, croatas, sérvios, romenos e outros grupos.
+
+O crescimento dos movimentos nacionalistas ameaçava a estabilidade interna do império.
+
+A Rússia, por sua vez, mantinha interesses estratégicos nos Bálcãs e cultivava relações políticas e culturais com povos eslavos da região.
+
+Essa aproximação ficou associada ao chamado pan-eslavismo.
+
+A disputa entre Áustria-Hungria, Rússia e Sérvia transformou os Bálcãs em um espaço de competição internacional.
+
+**Anexação da Bósnia-Herzegovina (1908)**
+
+Em 1908, a Áustria-Hungria anunciou a anexação formal da Bósnia-Herzegovina, território que administrava desde o Congresso de Berlim de 1878.
+
+A decisão provocou indignação na Sérvia, que possuía ambições sobre a região, e gerou uma grave crise diplomática com a Rússia.
+
+A crise evidenciou a dificuldade de conciliar os interesses austro-húngaros e russos.
+
+**Primeira Guerra Balcânica (1912–1913)**
+
+Sérvia, Bulgária, Grécia e Montenegro formaram uma aliança contra o Império Otomano.
+
+A coalizão derrotou as forças otomanas em grande parte dos territórios europeus do império.
+
+**Segunda Guerra Balcânica (1913)**
+
+As divergências sobre a divisão dos territórios conquistados provocaram uma nova guerra entre antigos aliados.
+
+A Sérvia saiu fortalecida territorial e politicamente.
+
+A Áustria-Hungria passou a considerar o crescimento sérvio uma ameaça cada vez mais grave à sua própria estabilidade.
+
+Esses acontecimentos prepararam o ambiente político no qual ocorreria a crise de 1914.`,
+    },
+    {
+      number: '8',
+      title: 'MILITARISMO, PLANOS DE GUERRA E A ILUSÃO DA VITÓRIA RÁPIDA',
+      content: `A modernização militar europeia ocorreu paralelamente às transformações industriais e tecnológicas.
+
+Os Estados ampliaram seus exércitos permanentes, desenvolveram sistemas de recrutamento obrigatório e investiram em armamentos modernos.
+
+Entre as principais transformações estavam:
+
+- Expansão da artilharia pesada.
+- Modernização dos fuzis e das metralhadoras.
+- Ampliação das ferrovias militares.
+- Desenvolvimento de explosivos e munições.
+- Aperfeiçoamento das comunicações.
+- Planejamento de mobilizações em larga escala.
+
+A ferrovia tornou-se particularmente importante.
+
+A capacidade de transportar milhões de soldados e grandes quantidades de equipamentos em prazos relativamente curtos modificou o planejamento militar.
+
+Os governos passaram a desenvolver cronogramas detalhados de mobilização.
+
+Entretanto, esses planos criavam dificuldades políticas.
+
+Uma mobilização militar poderia ser interpretada pelos adversários como preparação imediata para uma ofensiva, aumentando a pressão por respostas rápidas.
+
+O planejamento alemão é frequentemente associado ao chamado Plano Schlieffen.
+
+Elaborado inicialmente sob a direção do chefe do Estado-Maior Alfred von Schlieffen, o planejamento procurava enfrentar a possibilidade de uma guerra simultânea contra França e Rússia.
+
+A ideia central consistia em derrotar rapidamente a França por meio de uma ofensiva pelo território belga, antes que a Rússia conseguisse mobilizar completamente suas forças.
+
+O planejamento foi posteriormente modificado por Helmuth von Moltke, o Jovem.
+
+Sua execução em 1914 demonstraria os riscos de planos militares rígidos e de expectativas excessivamente otimistas.
+
+A França também possuía planos ofensivos, particularmente associados ao Plano XVII, que previa operações contra a Alemanha na região da Alsácia-Lorena.
+
+A Rússia desenvolveu seus próprios planos de mobilização e operações contra as Potências Centrais.
+
+É importante evitar a interpretação de que os planos militares, isoladamente, tornaram a guerra inevitável.
+
+Eles condicionaram as decisões dos governos, mas não eliminaram a possibilidade de negociações diplomáticas ou de mudanças nas estratégias políticas.`,
+    },
+    {
+      number: '9',
+      title: 'A EUROPA EM 1914: UM SISTEMA INTERNACIONAL SOB PRESSÃO',
+      content: `Às vésperas da Primeira Guerra Mundial, a Europa apresentava uma combinação de fatores potencialmente desestabilizadores.
+
+A Alemanha havia se tornado uma potência industrial e militar de primeira grandeza.
+
+A França procurava preservar sua posição internacional e mantinha ressentimentos relacionados à perda da Alsácia-Lorena.
+
+A Rússia expandia sua influência nos Bálcãs e procurava recuperar sua capacidade militar após a derrota na Guerra Russo-Japonesa de 1904–1905 e a Revolução de 1905.
+
+A Grã-Bretanha buscava preservar sua superioridade naval e a segurança de seu império.
+
+A Áustria-Hungria enfrentava dificuldades internas e temia a expansão do nacionalismo sérvio.
+
+A Sérvia, fortalecida pelas guerras balcânicas, tornou-se um ator regional cada vez mais influente.
+
+O Império Otomano, enfraquecido, perdia territórios e influência na Europa.
+
+Nenhum desses fatores, considerado isoladamente, explica o início da guerra.
+
+O problema central estava na interação entre eles.
+
+Uma crise nos Bálcãs poderia afetar os interesses austríacos e russos. Uma intervenção russa poderia envolver a Alemanha. A participação alemã poderia levar a França a cumprir seus compromissos estratégicos. A invasão da Bélgica, por sua vez, poderia provocar a entrada britânica no conflito.
+
+A estrutura internacional havia se tornado vulnerável a uma escalada.
+
+Entretanto, até 1914, as potências haviam conseguido superar diversas crises sem desencadear uma guerra geral.
+
+Isso demonstra que a guerra não era um resultado inevitável do sistema internacional.
+
+As decisões tomadas durante a crise de julho seriam determinantes para transformar a instabilidade acumulada em conflito armado.`,
+    },
+    {
+      number: '10',
+      title: 'DEBATE HISTORIOGRÁFICO: QUEM FOI RESPONSÁVEL PELA GUERRA?',
+      content: `A interpretação das origens da Primeira Guerra Mundial permanece uma das controvérsias mais importantes da historiografia contemporânea.
+
+Desde 1914, historiadores, diplomatas e governos discutem a responsabilidade pelo início do conflito.`,
+      subsections: [
+        {
+          number: '10.1',
+          title: 'A interpretação tradicional da responsabilidade alemã',
+          content: `Após a derrota alemã, o Tratado de Versalhes, assinado em 1919, incluiu o artigo 231, que estabelecia a base jurídica para as reparações relacionadas às perdas e danos sofridos pelos Aliados.
+
+O dispositivo ficou conhecido como cláusula de culpa de guerra.
+
+Durante décadas, diferentes interpretações atribuíram à Alemanha uma responsabilidade especialmente elevada pelo início do conflito.
+
+Essa discussão ganhou novo impulso com o historiador alemão Fritz Fischer.
+
+Em sua obra Griff nach der Weltmacht, publicada em 1961, Fischer argumentou que setores importantes da liderança alemã possuíam objetivos expansionistas e aceitaram conscientemente o risco de uma guerra europeia.
+
+Sua interpretação questionou a narrativa de que a Alemanha teria sido arrastada involuntariamente para o conflito.`,
+        },
+        {
+          number: '10.2',
+          title: 'A contribuição de Christopher Clark',
+          content: `Em The Sleepwalkers: How Europe Went to War in 1914, publicado em 2012, Christopher Clark examinou as decisões políticas e diplomáticas das diferentes potências.
+
+O historiador destacou a atuação de governos e lideranças da Sérvia, Áustria-Hungria, Rússia, Alemanha, França e Grã-Bretanha.
+
+Sua interpretação procura compreender como diferentes decisões, percepções de ameaça e erros de cálculo contribuíram para a escalada de 1914.
+
+Clark não elimina a responsabilidade alemã ou austro-húngara, mas rejeita explicações que concentrem toda a causalidade em um único país.`,
+        },
+        {
+          number: '10.3',
+          title: 'Hew Strachan e a dimensão internacional da guerra',
+          content: `Hew Strachan, em The First World War, examina a transformação de uma crise europeia em um conflito de dimensões globais.
+
+Sua abordagem evidencia a importância das estruturas militares, das relações internacionais e das transformações políticas que antecederam o conflito.`,
+        },
+        {
+          number: '10.4',
+          title: 'Margaret MacMillan e as decisões políticas',
+          content: `Em The War That Ended Peace, Margaret MacMillan investiga as relações entre as grandes potências, as rivalidades imperiais e as decisões de seus dirigentes.
+
+Sua análise destaca a importância das escolhas humanas e das condições políticas que permitiram que a crise de 1914 evoluísse para uma guerra geral.`,
+        },
+        {
+          number: '10.5',
+          title: 'Síntese historiográfica',
+          content: `A historiografia contemporânea não considera a Primeira Guerra Mundial um acontecimento inevitável.
+
+Existe amplo reconhecimento da importância das rivalidades internacionais, dos nacionalismos, das alianças, dos planos militares e das decisões políticas.
+
+Entretanto, permanecem divergências sobre o peso relativo de cada fator e sobre o grau de responsabilidade de cada governo.
+
+Uma interpretação historicamente consistente precisa considerar simultaneamente as estruturas internacionais e as decisões concretas dos dirigentes.`,
+        },
+      ],
+    },
+  ],
+  conclusion: `CONCLUSÃO — A PAZ QUE NÃO CONSEGUIU SOBREVIVER
+
+Entre 1871 e 1914, a Europa passou por uma transformação profunda.
+
+A unificação alemã alterou o equilíbrio de poder continental. O imperialismo ampliou as disputas internacionais. A corrida armamentista fortaleceu a capacidade destrutiva dos Estados. O nacionalismo alimentou reivindicações territoriais e conflitos internos, enquanto o sistema de alianças aproximou diplomaticamente potências que possuíam interesses estratégicos diferentes.
+
+Os Bálcãs tornaram-se uma região de tensão permanente, especialmente em razão das disputas entre Sérvia, Áustria-Hungria e Rússia.
+
+Entretanto, a guerra não resultou automaticamente dessas condições.
+
+Durante décadas, as potências conseguiram administrar crises internacionais sem recorrer a um conflito geral. A ruptura ocorreu quando decisões políticas e diplomáticas tomadas em 1914 transformaram uma crise regional em uma guerra de proporções continentais.
+
+O estudo das origens da Primeira Guerra Mundial demonstra que grandes conflitos não surgem apenas da existência de rivalidades. Eles dependem da maneira como governos, instituições e lideranças interpretam ameaças, calculam riscos e escolhem entre negociação e confronto.
+
+Em 1914, o sistema europeu não conseguiu impedir que essas decisões produzissem uma catástrofe internacional.
+
+A compreensão desse processo é fundamental para estudar os acontecimentos que serão examinados nos próximos capítulos: o assassinato de Francisco Ferdinando, a crise de julho, as declarações de guerra e o início da Grande Guerra.`,
+  bibliographicReferences: [
+    'FONTES PRIMÁRIAS E DOCUMENTOS HISTÓRICOS',
+    'EUROPEAN CONCERT. Treaty of Frankfurt. 10 May 1871.',
+    'GERMAN EMPIRE. Naval Laws of 1898 and 1900.',
+    'GREAT BRITAIN; FRANCE. Entente Cordiale. 8 April 1904.',
+    'GREAT BRITAIN; RUSSIA. Anglo-Russian Convention. 31 August 1907.',
+    'GERMANY; AUSTRIA-HUNGARY. Dual Alliance. 7 October 1879.',
+    'GERMANY; AUSTRIA-HUNGARY; ITALY. Triple Alliance. 20 May 1882.',
+    'CONFERENCE OF BERLIN. General Act of the Berlin Conference. 1885.',
+    'HISTORIOGRAFIA E ESTUDOS ESPECIALIZADOS',
+    'CLARK, Christopher. The Sleepwalkers: How Europe Went to War in 1914. London: Allen Lane, 2012.',
+    "FISCHER, Fritz. Germany's Aims in the First World War. New York: W. W. Norton, 1967.",
+    'MACMILLAN, Margaret. The War That Ended Peace: The Road to 1914. New York: Random House, 2013.',
+    'MULLIGAN, William. The Origins of the First World War. Cambridge: Cambridge University Press, 2010.',
+    'STEVENSON, David. Armaments and the Coming of War: Europe, 1904–1914. Oxford: Clarendon Press, 1996.',
+    'STRACHAN, Hew. The First World War. Oxford: Oxford University Press, 2001.',
+    'MOMBAUER, Annika. The Origins of the First World War: Controversies and Consensus. London: Longman, 2002.',
+  ],
+};
