@@ -76,7 +76,7 @@ export const Topic113TabsView: React.FC<Topic113TabsViewProps> = ({
         </div>
 
         <div className="text-xs font-mono text-stone-400">
-          Nº 12 · Adam Smith e o pensamento econômico
+          Nº 11 · Adam Smith e o pensamento econômico
         </div>
 
         <div className="flex items-start gap-3 border-b border-stone-800 pb-4">
@@ -132,7 +132,7 @@ export const Topic113TabsView: React.FC<Topic113TabsViewProps> = ({
       {/* Overview Index of the 10 Tabs */}
       <section className="bg-[#161619] border border-stone-800 p-5 sm:p-6 rounded-xl space-y-4">
         <div className="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold border-b border-stone-800 pb-2">
-          Estrutura Completa do Capítulo Nº 12 (10 Abas)
+          Estrutura Completa do Capítulo Nº 11 (10 Abas)
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
           {ADAM_SMITH_TABS.map((tab) => {

@@ -31,7 +31,7 @@ export const Topic112EssayView: React.FC<Props> = ({ getFontSizeClass }) => {
             COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
           </span>
           <span className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded bg-stone-900 text-stone-300 border border-stone-800 font-bold">
-            ENSAIO ACADÊMICO Nº 11
+            ENSAIO ACADÊMICO Nº 02
           </span>
         </div>
         <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-stone-100 leading-tight">

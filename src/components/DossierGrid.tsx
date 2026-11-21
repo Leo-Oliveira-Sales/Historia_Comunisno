@@ -39,11 +39,11 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
     return topics.filter((t) => {
       if (isIdeologias) {
         if (selectedBlock !== 'todos') {
-          if (selectedBlock === '1-2' && !(t.id === 101 || t.id === 102)) return false;
+          if (selectedBlock === '1-2' && !(t.id === 101 || t.id === 112)) return false;
           if (selectedBlock === '3-4' && !(t.id === 103 || t.id === 104)) return false;
           if (selectedBlock === '5-6' && !(t.id === 105 || t.id === 106)) return false;
           if (selectedBlock === '7-8' && !(t.id === 107 || t.id === 108)) return false;
-          if (selectedBlock === '9-12' && !(t.id === 109 || t.id === 111 || t.id === 112 || t.id === 113)) return false;
+          if (selectedBlock === '9-11' && !(t.id === 109 || t.id === 111 || t.id === 113)) return false;
         }
       } else if (isGuerrasMundiais) {
         if (selectedBlock !== 'todos') {
@@ -106,12 +106,12 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs touch-pan-x no-scrollbar scroll-smooth w-full max-w-full">
           {isIdeologias ? (
             [
-              { id: 'todos', label: 'Todos os 12 Capítulos' },
-              { id: '1-2', label: '1–2. Iluminismo & Liberalismo' },
+              { id: 'todos', label: 'Todos os 11 Capítulos' },
+              { id: '1-2', label: '1–2. Iluminismo & Origens da Revolução' },
               { id: '3-4', label: '3–4. Capitalismo & Socialismo' },
               { id: '5-6', label: '5–6. Marxismo & Comunismo' },
               { id: '7-8', label: '7–8. Fascismo & Nazismo' },
-              { id: '9-12', label: '9–12. Democracia, Revoluções & Economia' },
+              { id: '9-11', label: '9–11. Democracia, Comunismo & Economia' },
             ].map((blk) => {
               const isActive = selectedBlock === blk.id;
               return (

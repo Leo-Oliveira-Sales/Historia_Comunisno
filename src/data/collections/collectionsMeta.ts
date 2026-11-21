@@ -23,10 +23,10 @@ export const COLLECTIONS_REGISTRY: CollectionMeta[] = [
     shortTitle: 'Ideologias Políticas',
     themeCategory: 'Pensamento Político, Filosofia e Regimes',
     subtitle: 'Iluminismo, Liberalismo, Socialismo, Comunismo, Anarquismo, Fascismo, Nazismo e Social-Democracia',
-    description: 'Investigação profunda das matrizes ideológicas modernas com 12 capítulos didáticos e catálogo rigoroso dos 60 maiores especialistas e pesquisadores de referência mundial.',
-    chapterCount: 12,
+    description: 'Investigação profunda das matrizes ideológicas modernas com 11 capítulos didáticos e catálogo rigoroso dos 60 maiores especialistas e pesquisadores de referência mundial.',
+    chapterCount: 11,
     status: 'concluido',
-    badgeLabel: '12 Capítulos Concluídos',
+    badgeLabel: '11 Capítulos Concluídos',
     chronologyRange: 'Século XVIII – Contemporaneidade',
     accentColor: '#D97706', // Amber
     tags: ['Iluminismo', 'Liberalismo', 'Adam Smith', 'Marxismo', 'Anarquismo', 'Fascismo', 'Social-Democracia', '60 Especialistas']

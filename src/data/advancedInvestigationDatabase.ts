@@ -34,7 +34,7 @@ export interface AdvancedInvestigationData {
 export const ADVANCED_INVESTIGATIONS_DATABASE: Record<number, AdvancedInvestigationData> = {
   112: {
     topicId: 112,
-    title: 'INVESTIGAÇÃO AVANÇADA Nº 11',
+    title: 'INVESTIGAÇÃO AVANÇADA Nº 02',
     subtitle: 'FRANÇA: ILUMINISMO, REVOLUÇÕES, GUERRAS E ESTADO SOCIAL (1715–1975)',
     questionsSummary: [
       '1. Problemas de Investigação sobre o Iluminismo',
@@ -64,7 +64,7 @@ export const ADVANCED_INVESTIGATIONS_DATABASE: Record<number, AdvancedInvestigat
     ],
     rawText: `# COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
 
-# INVESTIGAÇÃO AVANÇADA Nº 11
+# INVESTIGAÇÃO AVANÇADA Nº 02
 
 ## FRANÇA: ILUMINISMO, REVOLUÇÕES, GUERRAS E ESTADO SOCIAL (1715–1975)
 

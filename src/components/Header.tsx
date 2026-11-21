@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({
   const navItems = [
     { 
       id: 'dossiers' as const, 
-      label: activeCollectionId === 'colecao-2' ? '12 Capítulos' : activeCollectionId === 'colecao-3' ? '20 Capítulos' : '20 Temas', 
+      label: activeCollectionId === 'colecao-2' ? '11 Capítulos' : activeCollectionId === 'colecao-3' ? '20 Capítulos' : '20 Temas', 
       icon: Layers 
     },
     { id: 'roulette' as const, label: 'Roleta de Curiosidades', icon: Compass },

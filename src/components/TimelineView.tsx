@@ -41,7 +41,7 @@ const IDEOLOGIAS_TIMELINE_ERAS: TimelineEra[] = [
   },
   {
     periodKey: '1789-1848',
-    topicIds: [102, 103, 104],
+    topicIds: [112, 103, 104],
     title: 'A Dupla Revolução: Capitalismo Industrial e Ruptura Liberal',
     dateRange: '1789 – 1848',
     summary: 'A Revolução Francesa derruba os privilégios estamentais feudais e proclama os Direitos do Homem, enquanto a Revolução Industrial mecanizada impõe o mercado autorregulado e gera as primeiras correntes socialistas e o anarquismo.',

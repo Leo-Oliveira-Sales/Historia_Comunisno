@@ -1593,7 +1593,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
         {/* MAIN CONTENT AREA (WITH SIDE SCROLLBAR / BARRA DE ROLAR LATERAL) */}
         <main className="flex-1 overflow-y-auto p-3 sm:p-6 lg:p-10 space-y-8 bg-[#121214] overscroll-contain max-w-full box-border">
           
-          {/* CAPÍTULO Nº 12 (ADAM SMITH E O PENSAMENTO ECONÔMICO — 8 ABAS) */}
+          {/* CAPÍTULO Nº 11 (ADAM SMITH E O PENSAMENTO ECONÔMICO — 10 ABAS) */}
           {isAdamSmith && (
             <Topic113TabsView
               activeTab={isAdamSmithTab(activeTab) ? activeTab : 'aba1'}

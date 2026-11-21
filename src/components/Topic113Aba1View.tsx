@@ -224,7 +224,7 @@ export const Topic113Aba1View: React.FC<Topic113Aba1ViewProps> = ({
         <div className="bg-[#161619] border border-amber-600/50 p-6 sm:p-8 rounded-2xl shadow-xl space-y-6 text-center">
           <div className="space-y-2">
             <span className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30 font-bold">
-              Coleção II · Nº 12 · ABA 1 — Vida e Contexto Histórico
+              Coleção II · Nº 11 · ABA 1 — Vida e Contexto Histórico
             </span>
             <h2 className="text-xl sm:text-2xl font-serif font-bold text-stone-100 uppercase tracking-tight pt-2">
               Adam Smith e o pensamento econômico
@@ -260,7 +260,7 @@ export const Topic113Aba1View: React.FC<Topic113Aba1ViewProps> = ({
                 {parsed.collectionLabel}
               </span>
               <span className="text-[10px] font-mono text-stone-400">
-                Coleção II · Nº 12 · ABA 1 — Vida e Contexto Histórico
+                Coleção II · Nº 11 · ABA 1 — Vida e Contexto Histórico
               </span>
             </div>
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif font-bold text-stone-100 leading-snug uppercase tracking-tight pt-1">

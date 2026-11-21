@@ -265,7 +265,7 @@ export const Topic112AdvancedInvestigationView: React.FC<Props> = ({
               COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
             </span>
             <span className="px-2.5 py-1 bg-stone-900 text-stone-300 font-mono text-xs font-bold border border-stone-800 rounded">
-              INVESTIGAÇÃO AVANÇADA Nº 11
+              INVESTIGAÇÃO AVANÇADA Nº 02
             </span>
           </div>
           <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-stone-100 leading-tight">

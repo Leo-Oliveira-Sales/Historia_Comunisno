@@ -189,7 +189,7 @@ export const Topic112SynthesisView: React.FC<Props> = ({ getFontSizeClass }) => 
           COLEÇÃO II — HISTÓRIA DAS IDEOLOGIAS POLÍTICAS
         </span>
         <h2 className="font-serif text-2xl sm:text-3xl font-bold text-stone-100">
-          SÍNTESE HISTÓRICA Nº 11
+          SÍNTESE HISTÓRICA Nº 02
         </h2>
         <p className="font-serif italic text-amber-400 text-base sm:text-lg">
           FRANÇA: DO ANTIGO REGIME AO ESTADO SOCIAL (1715–1975)
