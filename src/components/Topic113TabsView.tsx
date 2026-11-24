@@ -21,6 +21,10 @@ import { Topic113Aba3View } from './Topic113Aba3View';
 import { Topic113Aba4View } from './Topic113Aba4View';
 import { Topic113Aba5View } from './Topic113Aba5View';
 import { Topic113Aba6View } from './Topic113Aba6View';
+import { Topic113Aba7View } from './Topic113Aba7View';
+import { Topic113Aba8View } from './Topic113Aba8View';
+import { Topic113Aba9View } from './Topic113Aba9View';
+import { Topic113Aba10View } from './Topic113Aba10View';
 
 interface Topic113TabsViewProps {
   activeTab: AdamSmithTabId;
@@ -75,6 +79,18 @@ export const Topic113TabsView: React.FC<Topic113TabsViewProps> = ({
   }
   if (activeTab === 'aba6') {
     return <Topic113Aba6View getFontSizeClass={getFontSizeClass} onSelectTab={onSelectTab} />;
+  }
+  if (activeTab === 'aba7') {
+    return <Topic113Aba7View getFontSizeClass={getFontSizeClass} onSelectTab={onSelectTab} />;
+  }
+  if (activeTab === 'aba8') {
+    return <Topic113Aba8View getFontSizeClass={getFontSizeClass} onSelectTab={onSelectTab} />;
+  }
+  if (activeTab === 'aba9') {
+    return <Topic113Aba9View getFontSizeClass={getFontSizeClass} onSelectTab={onSelectTab} />;
+  }
+  if (activeTab === 'aba10') {
+    return <Topic113Aba10View getFontSizeClass={getFontSizeClass} onSelectTab={onSelectTab} />;
   }
 
   const currentIndex = ADAM_SMITH_TABS.findIndex((t) => t.id === activeTab);

@@ -272,14 +272,14 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
                 {/* Academic Standard Badge */}
                 <div className="mt-3 py-1.5 px-2.5 bg-[#121215] border border-amber-900/40 rounded flex flex-wrap items-center justify-between gap-1.5 text-[11px] font-mono text-stone-400">
                   <span className="flex items-center gap-1.5 text-amber-400 font-medium">
-                    {isGuerrasMundiais || (topic.id === 113 && primaryCount === 0) ? (
+                    {isGuerrasMundiais ? (
                       <Clock className="w-3.5 h-3.5 text-amber-400 shrink-0" />
                     ) : (
                       <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
                     )}
                     <span>
                       {topic.id === 113
-                        ? '8 Abas Preparadas'
+                        ? '10 Abas Temáticas'
                         : isIdeologias
                         ? 'Dossiê Cátedra 60 Autores'
                         : isGuerrasMundiais
@@ -287,9 +287,13 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
                         : 'Padrão 7 Seções Canônicas'}
                     </span>
                   </span>
-                  {isGuerrasMundiais || (topic.id === 113 && primaryCount === 0) ? (
+                  {isGuerrasMundiais ? (
                     <span className="text-amber-300 font-mono text-[10px] bg-amber-950/70 px-1.5 py-0.5 rounded border border-amber-700/60 font-bold shrink-0">
                       Em Produção!
+                    </span>
+                  ) : topic.id === 113 ? (
+                    <span className="dossier-stamp-red text-[9px] shrink-0">
+                      CLASSIFICADO!
                     </span>
                   ) : (
                     <span className="text-emerald-400 font-mono text-[10px] bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-800/40 shrink-0">
@@ -302,10 +306,15 @@ export const DossierGrid: React.FC<DossierGridProps> = ({
               {/* Bottom Card Actions (Fully Responsive on Font Scaling) */}
               <div className="mt-4 pt-3 border-t border-stone-800/80 flex flex-wrap items-center justify-between text-xs gap-2.5">
                 <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-stone-400 font-mono text-[11px]">
-                  {isGuerrasMundiais || (topic.id === 113 && primaryCount === 0) ? (
+                  {isGuerrasMundiais ? (
                     <div className="flex items-center gap-1.5 text-amber-300/90 shrink-0">
                       <Layers className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                      <span>{topic.id === 113 ? '8 Abas · Em Produção!' : 'Em Produção!'}</span>
+                      <span>Em Produção!</span>
+                    </div>
+                  ) : topic.id === 113 ? (
+                    <div className="flex items-center gap-1.5 text-emerald-400 shrink-0">
+                      <Layers className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      <span>10 Abas Completas</span>
                     </div>
                   ) : (
                     <>

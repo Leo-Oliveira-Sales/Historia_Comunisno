@@ -54,7 +54,7 @@ import { Topic202ChroniclesView } from './Topic202ChroniclesView';
 import { Topic202CitationsView } from './Topic202CitationsView';
 import { Topic113TabsView } from './Topic113TabsView';
 import { ADAM_SMITH_TABS, AdamSmithTabId } from '../data/collections/chapter_12_adam_smith_tabs';
-import { RAW_ADAM_SMITH_ABA1, RAW_ADAM_SMITH_ABA2, RAW_ADAM_SMITH_ABA3, RAW_ADAM_SMITH_ABA4, RAW_ADAM_SMITH_ABA5, RAW_ADAM_SMITH_ABA6 } from '../data/collections/chapter_12_adam_smith_content';
+import { RAW_ADAM_SMITH_ABA1, RAW_ADAM_SMITH_ABA2, RAW_ADAM_SMITH_ABA3, RAW_ADAM_SMITH_ABA4, RAW_ADAM_SMITH_ABA5, RAW_ADAM_SMITH_ABA6, RAW_ADAM_SMITH_ABA7, RAW_ADAM_SMITH_ABA8, RAW_ADAM_SMITH_ABA9, RAW_ADAM_SMITH_ABA10 } from '../data/collections/chapter_12_adam_smith_content';
 import { Topic101BritishContextView } from './Topic101BritishContextView';
 import { RAW_CONTEXTO_HISTORICO_BRITANICO_101 } from '../data/collections/chapter_01_british_context_content';
 import { DossierSynthesisView } from './DossierSynthesisView';
@@ -439,9 +439,10 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       smithText += `${RAW_ADAM_SMITH_ABA4}\n\n`;
       smithText += `${RAW_ADAM_SMITH_ABA5}\n\n`;
       smithText += `${RAW_ADAM_SMITH_ABA6}\n\n`;
-      ADAM_SMITH_TABS.slice(6).forEach((tab) => {
-        smithText += `ABA ${tab.number} — ${tab.title}\n${tab.subtitle}\n\n`;
-      });
+      smithText += `${RAW_ADAM_SMITH_ABA7}\n\n`;
+      smithText += `${RAW_ADAM_SMITH_ABA8}\n\n`;
+      smithText += `${RAW_ADAM_SMITH_ABA9}\n\n`;
+      smithText += `${RAW_ADAM_SMITH_ABA10}\n\n`;
       copyToClipboard(smithText, 'complete_master_dossier');
       return;
     }
@@ -698,6 +699,114 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: '22', label: '22. Bibliografia Especializada', target: 'smith-aba6-sec-22' },
           { num: '23', label: '23. Referências Digitais', target: 'smith-aba6-sec-23' },
           { num: '24', label: '24. Conclusão', target: 'smith-aba6-sec-24' },
+        ];
+      }
+      if (activeTab === 'aba7') {
+        return [
+          { num: '1', label: '1. Introdução', target: 'smith-aba7-sec-1' },
+          { num: '2', label: '2. Estado no Séc. XVIII', target: 'smith-aba7-sec-2' },
+          { num: '3', label: '3. Deveres do Soberano', target: 'smith-aba7-sec-3' },
+          { num: '4', label: '4. Obras Públicas', target: 'smith-aba7-sec-4' },
+          { num: '5', label: '5. Educação Pública', target: 'smith-aba7-sec-5' },
+          { num: '6', label: '6. Financiamento Público', target: 'smith-aba7-sec-6' },
+          { num: '7', label: '7. Tributação (4 Máximas)', target: 'smith-aba7-sec-7' },
+          { num: '8', label: '8. Dívida Pública', target: 'smith-aba7-sec-8' },
+          { num: '9', label: '9. Monopólios e Captura', target: 'smith-aba7-sec-9' },
+          { num: '10', label: '10. Liberdade e Limites', target: 'smith-aba7-sec-10' },
+          { num: '11', label: '11. Estado Mínimo?', target: 'smith-aba7-sec-11' },
+          { num: '12', label: '12. Comparação Histórica', target: 'smith-aba7-sec-12' },
+          { num: '13', label: '13. Condição Institucional', target: 'smith-aba7-sec-13' },
+          { num: '14', label: '14. Síntese Historiográfica', target: 'smith-aba7-sec-14' },
+          { num: '15', label: '15. Quadro Geral', target: 'smith-aba7-sec-15' },
+          { num: '16', label: '16. Mapa Conceitual', target: 'smith-aba7-sec-16' },
+          { num: '17', label: '17. Glossário', target: 'smith-aba7-sec-17' },
+          { num: '18', label: '18. Exercícios de Fixação', target: 'smith-aba7-sec-18' },
+          { num: '19', label: '19. Questões de Reflexão', target: 'smith-aba7-sec-19' },
+          { num: '20', label: '20. Fontes Primárias', target: 'smith-aba7-sec-20' },
+          { num: '21', label: '21. Bibliografia Secundária', target: 'smith-aba7-sec-21' },
+          { num: '22', label: '22. Referências Digitais', target: 'smith-aba7-sec-22' },
+          { num: '23', label: '23. Conclusão', target: 'smith-aba7-sec-23' },
+        ];
+      }
+      if (activeTab === 'aba8') {
+        return [
+          { num: 'INT', label: 'Introdução', target: 'smith-aba8-intro' },
+          { num: '1', label: '1. Contextos Históricos', target: 'smith-aba8-sec-1' },
+          { num: '2', label: '2. Concepção de Trabalho', target: 'smith-aba8-sec-2' },
+          { num: '3', label: '3. Divisão do Trabalho', target: 'smith-aba8-sec-3' },
+          { num: '4', label: '4. Valor e Mercadorias', target: 'smith-aba8-sec-4' },
+          { num: '5', label: '5. Capital e Propriedade', target: 'smith-aba8-sec-5' },
+          { num: '6', label: '6. Mercado e Capitalismo', target: 'smith-aba8-sec-6' },
+          { num: '7', label: '7. Classes e Distribuição', target: 'smith-aba8-sec-7' },
+          { num: '8', label: '8. Estado e Sociedade', target: 'smith-aba8-sec-8' },
+          { num: '9', label: '9. História e Transformação', target: 'smith-aba8-sec-9' },
+          { num: '10', label: '10. Crítica Marxiana', target: 'smith-aba8-sec-10' },
+          { num: '11', label: '11. Engels e Industrialização', target: 'smith-aba8-sec-11' },
+          { num: '12', label: '12. Três Interpretações', target: 'smith-aba8-sec-12' },
+          { num: '13', label: '13. Debates Historiográficos', target: 'smith-aba8-sec-13' },
+          { num: '14', label: '14. Síntese e Mapa Conceitual', target: 'smith-aba8-sec-14' },
+          { num: '15', label: '15. Glossário', target: 'smith-aba8-sec-15' },
+          { num: '16', label: '16. Exercícios de Fixação', target: 'smith-aba8-sec-16' },
+          { num: '17', label: '17. Questões de Reflexão', target: 'smith-aba8-sec-17' },
+          { num: '18', label: '18. Fontes Primárias', target: 'smith-aba8-sec-18' },
+          { num: '19', label: '19. Bibliografia Secundária', target: 'smith-aba8-sec-19' },
+          { num: '20', label: '20. Referências Digitais', target: 'smith-aba8-sec-20' },
+          { num: 'CON', label: 'Conclusão', target: 'smith-aba8-con' },
+        ];
+      }
+      if (activeTab === 'aba9') {
+        return [
+          { num: '1', label: '1. O que foi?', target: 'smith-aba9-sec-1' },
+          { num: '2', label: '2. União de 1707', target: 'smith-aba9-sec-2' },
+          { num: '3', label: '3. Francis Hutcheson', target: 'smith-aba9-sec-3' },
+          { num: '4', label: '4. David Hume', target: 'smith-aba9-sec-4' },
+          { num: '5', label: '5. Adam Smith', target: 'smith-aba9-sec-5' },
+          { num: '6', label: '6. Adam Ferguson', target: 'smith-aba9-sec-6' },
+          { num: '7', label: '7. Outros Pensadores', target: 'smith-aba9-sec-7' },
+          { num: '8', label: '8. Ciência da Sociedade', target: 'smith-aba9-sec-8' },
+          { num: '9', label: '9. Religião, Ciência e Razão', target: 'smith-aba9-sec-9' },
+          { num: '10', label: '10. Escravidão e Império', target: 'smith-aba9-sec-10' },
+          { num: '11', label: '11. Iluminismo Europeu', target: 'smith-aba9-sec-11' },
+          { num: '12', label: '12. Principais Contribuições', target: 'smith-aba9-sec-12' },
+          { num: '13', label: '13. Quadro Comparativo', target: 'smith-aba9-sec-13' },
+          { num: '14', label: '14. Comparação Conceitual', target: 'smith-aba9-sec-14' },
+          { num: '15', label: '15. Legado Historiográfico', target: 'smith-aba9-sec-15' },
+          { num: '16', label: '16. Síntese Estrutural', target: 'smith-aba9-sec-16' },
+          { num: '17', label: '17. Glossário', target: 'smith-aba9-sec-17' },
+          { num: '18', label: '18. Exercícios de Fixação', target: 'smith-aba9-sec-18' },
+          { num: '19', label: '19. Questões de Reflexão', target: 'smith-aba9-sec-19' },
+          { num: '20', label: '20. Fontes Primárias', target: 'smith-aba9-sec-20' },
+          { num: '21', label: '21. Bibliografia Acadêmica', target: 'smith-aba9-sec-21' },
+          { num: '22', label: '22. Acervos e Recursos', target: 'smith-aba9-sec-22' },
+          { num: '23', label: '23. Conclusão', target: 'smith-aba9-sec-23' },
+        ];
+      }
+      if (activeTab === 'aba10') {
+        return [
+          { num: '1', label: '1. Introdução', target: 'smith-aba10-sec-1' },
+          { num: '2', label: '2. Contexto Histórico', target: 'smith-aba10-sec-2' },
+          { num: '3', label: '3. Adam Smith', target: 'smith-aba10-sec-3' },
+          { num: '4', label: '4. Thomas Malthus', target: 'smith-aba10-sec-4' },
+          { num: '5', label: '5. David Ricardo', target: 'smith-aba10-sec-5' },
+          { num: '6', label: '6. Jean-Baptiste Say', target: 'smith-aba10-sec-6' },
+          { num: '7', label: '7. John Stuart Mill', target: 'smith-aba10-sec-7' },
+          { num: '8', label: '8. Distribuição da Riqueza', target: 'smith-aba10-sec-8' },
+          { num: '9', label: '9. Capitalismo Industrial', target: 'smith-aba10-sec-9' },
+          { num: '10', label: '10. Relação com Marx', target: 'smith-aba10-sec-10' },
+          { num: '11', label: '11. Economistas Clássicos', target: 'smith-aba10-sec-11' },
+          { num: '12', label: '12. Smith, Ricardo e Marx', target: 'smith-aba10-sec-12' },
+          { num: '13', label: '13. Contribuições', target: 'smith-aba10-sec-13' },
+          { num: '14', label: '14. Limites e Críticas', target: 'smith-aba10-sec-14' },
+          { num: '15', label: '15. Economia Neoclássica', target: 'smith-aba10-sec-15' },
+          { num: '16', label: '16. Linha do Tempo', target: 'smith-aba10-sec-16' },
+          { num: '17', label: '17. Mapa Conceitual', target: 'smith-aba10-sec-17' },
+          { num: '18', label: '18. Glossário Fundamental', target: 'smith-aba10-sec-18' },
+          { num: '19', label: '19. Exercícios de Fixação', target: 'smith-aba10-sec-19' },
+          { num: '20', label: '20. Questões de Reflexão', target: 'smith-aba10-sec-20' },
+          { num: '21', label: '21. Fontes Primárias', target: 'smith-aba10-sec-21' },
+          { num: '22', label: '22. Bibliografia Acadêmica', target: 'smith-aba10-sec-22' },
+          { num: '23', label: '23. Acervos e Recursos', target: 'smith-aba10-sec-23' },
+          { num: '24', label: '24. Conclusão', target: 'smith-aba10-sec-24' },
         ];
       }
       return ADAM_SMITH_TABS.map((t) => ({
@@ -1186,12 +1295,12 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
           <div className="space-y-0.5 min-w-0 flex-1">
             <div className="flex flex-wrap items-center gap-1.5">
-              {isColecao3 || isAdamSmith ? (
+              {isColecao3 ? (
                 <span className="text-[8px] sm:text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 border border-amber-500/60">
                   Em Produção!
                 </span>
               ) : (
-                <span className="dossier-stamp-red text-[8px] sm:text-[10px]">DESCLASSIFICADO</span>
+                <span className="dossier-stamp-red text-[8px] sm:text-[10px]">CLASSIFICADO!</span>
               )}
               <span className="text-[9px] sm:text-xs font-mono text-stone-400 truncate">
                 {isColecao3
@@ -1775,7 +1884,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           <div className="space-y-1">
             {getSidebarSections().map((sec) => {
               const isItemActive =
-                isAdamSmith && activeTab !== 'aba1' && activeTab !== 'aba2' && activeTab !== 'aba3' && activeTab !== 'aba4' && activeTab !== 'aba5' && activeTab !== 'aba6'
+                isAdamSmith && activeTab !== 'aba1' && activeTab !== 'aba2' && activeTab !== 'aba3' && activeTab !== 'aba4' && activeTab !== 'aba5' && activeTab !== 'aba6' && activeTab !== 'aba7' && activeTab !== 'aba8' && activeTab !== 'aba9' && activeTab !== 'aba10'
                   ? activeTab === `aba${sec.num}`
                   : activeSection === sec.num;
               return (
