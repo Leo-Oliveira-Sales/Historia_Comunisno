@@ -16,6 +16,11 @@ import {
 } from 'lucide-react';
 import { ADAM_SMITH_TABS, AdamSmithTabId } from '../data/collections/chapter_12_adam_smith_tabs';
 import { Topic113Aba1View } from './Topic113Aba1View';
+import { Topic113Aba2View } from './Topic113Aba2View';
+import { Topic113Aba3View } from './Topic113Aba3View';
+import { Topic113Aba4View } from './Topic113Aba4View';
+import { Topic113Aba5View } from './Topic113Aba5View';
+import { Topic113Aba6View } from './Topic113Aba6View';
 
 interface Topic113TabsViewProps {
   activeTab: AdamSmithTabId;
@@ -53,6 +58,25 @@ export const Topic113TabsView: React.FC<Topic113TabsViewProps> = ({
   onSelectTab,
   getFontSizeClass,
 }) => {
+  if (activeTab === 'aba1') {
+    return <Topic113Aba1View getFontSizeClass={getFontSizeClass} onSelectTab={onSelectTab} />;
+  }
+  if (activeTab === 'aba2') {
+    return <Topic113Aba2View getFontSizeClass={getFontSizeClass} onSelectTab={onSelectTab} />;
+  }
+  if (activeTab === 'aba3') {
+    return <Topic113Aba3View getFontSizeClass={getFontSizeClass} onSelectTab={onSelectTab} />;
+  }
+  if (activeTab === 'aba4') {
+    return <Topic113Aba4View getFontSizeClass={getFontSizeClass} onSelectTab={onSelectTab} />;
+  }
+  if (activeTab === 'aba5') {
+    return <Topic113Aba5View getFontSizeClass={getFontSizeClass} onSelectTab={onSelectTab} />;
+  }
+  if (activeTab === 'aba6') {
+    return <Topic113Aba6View getFontSizeClass={getFontSizeClass} onSelectTab={onSelectTab} />;
+  }
+
   const currentIndex = ADAM_SMITH_TABS.findIndex((t) => t.id === activeTab);
   const currentTab = ADAM_SMITH_TABS[currentIndex >= 0 ? currentIndex : 0];
   const prevTab = currentIndex > 0 ? ADAM_SMITH_TABS[currentIndex - 1] : null;

@@ -54,7 +54,9 @@ import { Topic202ChroniclesView } from './Topic202ChroniclesView';
 import { Topic202CitationsView } from './Topic202CitationsView';
 import { Topic113TabsView } from './Topic113TabsView';
 import { ADAM_SMITH_TABS, AdamSmithTabId } from '../data/collections/chapter_12_adam_smith_tabs';
-import { RAW_ADAM_SMITH_ABA1 } from '../data/collections/chapter_12_adam_smith_content';
+import { RAW_ADAM_SMITH_ABA1, RAW_ADAM_SMITH_ABA2, RAW_ADAM_SMITH_ABA3, RAW_ADAM_SMITH_ABA4, RAW_ADAM_SMITH_ABA5, RAW_ADAM_SMITH_ABA6 } from '../data/collections/chapter_12_adam_smith_content';
+import { Topic101BritishContextView } from './Topic101BritishContextView';
+import { RAW_CONTEXTO_HISTORICO_BRITANICO_101 } from '../data/collections/chapter_01_british_context_content';
 import { DossierSynthesisView } from './DossierSynthesisView';
 import { DossierResearchView } from './DossierResearchView';
 import { playStampSound, playTypewriterClack } from '../utils/audio';
@@ -89,7 +91,8 @@ import {
   Sparkles,
   BookOpenCheck,
   Moon,
-  Sun
+  Sun,
+  Landmark
 } from 'lucide-react';
 import { AppTheme } from '../utils/theme';
 import { ChapterChronologyScheme } from './ChapterChronologyScheme';
@@ -118,7 +121,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const chapter = ACADEMIC_CHAPTERS[topic.id] || IDEOLOGIAS_CHAPTERS[topic.id] || GUERRAS_MUNDIAIS_CHAPTERS[topic.id];
   const rawChapterText = isColecao3 ? GUERRAS_MUNDIAIS_RAW_CHAPTERS[topic.id] : undefined;
   const hasChapterTab = Boolean(chapter) || Boolean(rawChapterText) || isColecao3;
-  const [activeTab, setActiveTab] = useState<'chapter' | 'essay' | 'stories' | 'citations' | 'advancedInvestigation' | 'marketLaws' | AdamSmithTabId>(
+  const hasBritishContextTab = topic.id === 101;
+  const [activeTab, setActiveTab] = useState<'chapter' | 'essay' | 'stories' | 'citations' | 'advancedInvestigation' | 'marketLaws' | 'britishContext' | AdamSmithTabId>(
     topic.id === 113 ? 'aba1' : hasChapterTab ? 'chapter' : 'essay'
   );
   const isAdamSmithTab = (tab: string): tab is AdamSmithTabId => /^aba(10|[1-9])$/.test(tab);
@@ -148,6 +152,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   const citationsTabNum = tabIdx++;
   const advTabNum = hasAdvancedInvestigation ? tabIdx++ : null;
   const marketTabNum = marketLaws ? tabIdx++ : null;
+  const britishContextTabNum = hasBritishContextTab ? tabIdx++ : null;
 
   const copyToClipboard = (text: string, label: string) => {
     navigator.clipboard.writeText(text);
@@ -369,13 +374,20 @@ export const DossierModal: React.FC<DossierModalProps> = ({
   };
 
   const renderFormattedChapterParagraph = (text: string) => {
-    const parts = text.split(/(\*\*.*?\*\*)/g);
+    const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
     return parts.map((part, idx) => {
       if (part.startsWith('**') && part.endsWith('**') && part.length > 4) {
         return (
           <strong key={idx} className="font-bold text-amber-200">
             {part.slice(2, -2)}
           </strong>
+        );
+      }
+      if (part.startsWith('*') && part.endsWith('*') && part.length > 2) {
+        return (
+          <em key={idx} className="italic text-amber-200/90">
+            {part.slice(1, -1)}
+          </em>
         );
       }
       return part;
@@ -422,7 +434,12 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       smithText += `Nº ${topic.categoryNumber} · ${topic.title}\n`;
       smithText += `==========================================================\n\n`;
       smithText += `${RAW_ADAM_SMITH_ABA1}\n\n`;
-      ADAM_SMITH_TABS.slice(1).forEach((tab) => {
+      smithText += `${RAW_ADAM_SMITH_ABA2}\n\n`;
+      smithText += `${RAW_ADAM_SMITH_ABA3}\n\n`;
+      smithText += `${RAW_ADAM_SMITH_ABA4}\n\n`;
+      smithText += `${RAW_ADAM_SMITH_ABA5}\n\n`;
+      smithText += `${RAW_ADAM_SMITH_ABA6}\n\n`;
+      ADAM_SMITH_TABS.slice(6).forEach((tab) => {
         smithText += `ABA ${tab.number} — ${tab.title}\n${tab.subtitle}\n\n`;
       });
       copyToClipboard(smithText, 'complete_master_dossier');
@@ -450,7 +467,10 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       text += `Conclusão:\n${chapter.conclusion}\n\n`;
     }
 
-
+    if (hasBritishContextTab) {
+      text += `\n--- CONTEXTO HISTÓRICO BRITÂNICO ---\n`;
+      text += `${RAW_CONTEXTO_HISTORICO_BRITANICO_101}\n\n`;
+    }
 
     copyToClipboard(text, 'complete_master_dossier');
   };
@@ -529,14 +549,155 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       if (activeTab === 'aba1') {
         return [
           { num: '1', label: '1. Introdução', target: 'smith-aba1-sec-1' },
-          { num: '2', label: '2. Formação & Iluminismo', target: 'smith-aba1-sec-2' },
-          { num: '3', label: '3. As Duas Grandes Obras', target: 'smith-aba1-sec-3' },
-          { num: '4', label: '4. Principais Ideias', target: 'smith-aba1-sec-4' },
-          { num: '5', label: '5. O Papel do Estado', target: 'smith-aba1-sec-5' },
-          { num: '6', label: '6. Smith × Marx × Engels', target: 'smith-aba1-sec-6' },
-          { num: '7', label: '7. Legado Histórico', target: 'smith-aba1-sec-7' },
-          { num: '8', label: '8. Síntese do Capítulo', target: 'smith-aba1-sec-8' },
-          { num: 'REF', label: 'Referências Bibliográficas', target: 'smith-aba1-refs' },
+          { num: '2', label: '2. A Escócia do Séc. XVIII', target: 'smith-aba1-sec-2' },
+          { num: '3', label: '3. Primeiros Anos (1723–1737)', target: 'smith-aba1-sec-3' },
+          { num: '4', label: '4. Glasgow e Hutcheson', target: 'smith-aba1-sec-4' },
+          { num: '5', label: '5. Oxford (1740–1746)', target: 'smith-aba1-sec-5' },
+          { num: '6', label: '6. Edimburgo e David Hume', target: 'smith-aba1-sec-6' },
+          { num: '7', label: '7. Glasgow: Maturidade', target: 'smith-aba1-sec-7' },
+          { num: '8', label: '8. Viagem Europeia', target: 'smith-aba1-sec-8' },
+          { num: '9', label: '9. A Riqueza das Nações', target: 'smith-aba1-sec-9' },
+          { num: '10', label: '10. Últimos Anos (1778–1790)', target: 'smith-aba1-sec-10' },
+          { num: '11', label: '11. Iluminismo Escocês', target: 'smith-aba1-sec-11' },
+          { num: '12', label: '12. Apenas um Economista?', target: 'smith-aba1-sec-12' },
+          { num: '13', label: '13. Principais Influências', target: 'smith-aba1-sec-13' },
+          { num: '14', label: '14. Historiografia', target: 'smith-aba1-sec-14' },
+          { num: '15', label: '15. Cronologia Geral', target: 'smith-aba1-sec-15' },
+          { num: '16', label: '16. Síntese e Mapa Conceitual', target: 'smith-aba1-sec-16' },
+          { num: '17', label: '17. Exercícios de Fixação', target: 'smith-aba1-sec-17' },
+          { num: '18', label: '18. Referências Bibliográficas', target: 'smith-aba1-sec-18' },
+          { num: '19', label: '19. Conclusão do Capítulo', target: 'smith-aba1-sec-19' },
+        ];
+      }
+      if (activeTab === 'aba2') {
+        return [
+          { num: '1', label: '1. Introdução', target: 'smith-aba2-sec-1' },
+          { num: '2', label: '2. Contexto Filosófico', target: 'smith-aba2-sec-2' },
+          { num: '3', label: '3. Natureza Humana', target: 'smith-aba2-sec-3' },
+          { num: '4', label: '4. Simpatia', target: 'smith-aba2-sec-4' },
+          { num: '5', label: '5. Espectador Imparcial', target: 'smith-aba2-sec-5' },
+          { num: '6', label: '6. Aprovação Moral', target: 'smith-aba2-sec-6' },
+          { num: '7', label: '7. Justiça e Beneficência', target: 'smith-aba2-sec-7' },
+          { num: '8', label: '8. Autocontrole', target: 'smith-aba2-sec-8' },
+          { num: '9', label: '9. Virtudes', target: 'smith-aba2-sec-9' },
+          { num: '10', label: '10. Formação Moral', target: 'smith-aba2-sec-10' },
+          { num: '11', label: '11. Moral e Economia', target: 'smith-aba2-sec-11' },
+          { num: '12', label: '12. Das Adam Smith Problem', target: 'smith-aba2-sec-12' },
+          { num: '13', label: '13. Smith × Marx × Engels', target: 'smith-aba2-sec-13' },
+          { num: '14', label: '14. Limites e Críticas', target: 'smith-aba2-sec-14' },
+          { num: '15', label: '15. Síntese Estrutural', target: 'smith-aba2-sec-15' },
+          { num: '16', label: '16. Glossário', target: 'smith-aba2-sec-16' },
+          { num: '17', label: '17. Exercícios de Fixação', target: 'smith-aba2-sec-17' },
+          { num: '18', label: '18. Referências', target: 'smith-aba2-sec-18' },
+          { num: '19', label: '19. Conclusão', target: 'smith-aba2-sec-19' },
+        ];
+      }
+      if (activeTab === 'aba3') {
+        return [
+          { num: '1', label: '1. Introdução', target: 'smith-aba3-sec-1' },
+          { num: '2', label: '2. Contexto Histórico (1776)', target: 'smith-aba3-sec-2' },
+          { num: '3', label: '3. Crítica ao Mercantilismo', target: 'smith-aba3-sec-3' },
+          { num: '4', label: '4. Fisiocracia', target: 'smith-aba3-sec-4' },
+          { num: '5', label: '5. Estrutura (5 Livros)', target: 'smith-aba3-sec-5' },
+          { num: '6', label: '6. Divisão do Trabalho', target: 'smith-aba3-sec-6' },
+          { num: '7', label: '7. Trabalho e Riqueza', target: 'smith-aba3-sec-7' },
+          { num: '8', label: '8. Troca e Mercados', target: 'smith-aba3-sec-8' },
+          { num: '9', label: '9. Moeda', target: 'smith-aba3-sec-9' },
+          { num: '10', label: '10. Valor de Uso e Troca', target: 'smith-aba3-sec-10' },
+          { num: '11', label: '11. Trabalho e Valor', target: 'smith-aba3-sec-11' },
+          { num: '12', label: '12. Preço Natural e Mercado', target: 'smith-aba3-sec-12' },
+          { num: '13', label: '13. Salários, Lucros e Renda', target: 'smith-aba3-sec-13' },
+          { num: '14', label: '14. Capital e Acumulação', target: 'smith-aba3-sec-14' },
+          { num: '15', label: '15. Desenvolvimento Histórico', target: 'smith-aba3-sec-15' },
+          { num: '16', label: '16. Liberdade Natural', target: 'smith-aba3-sec-16' },
+          { num: '17', label: '17. Mão Invisível', target: 'smith-aba3-sec-17' },
+          { num: '18', label: '18. Papel do Estado', target: 'smith-aba3-sec-18' },
+          { num: '19', label: '19. Tributação e Finanças', target: 'smith-aba3-sec-19' },
+          { num: '20', label: '20. Contribuições', target: 'smith-aba3-sec-20' },
+          { num: '21', label: '21. Limites e Contradições', target: 'smith-aba3-sec-21' },
+          { num: '22', label: '22. Síntese Estrutural', target: 'smith-aba3-sec-22' },
+          { num: '23', label: '23. Mapa Conceitual', target: 'smith-aba3-sec-23' },
+          { num: '24', label: '24. Glossário', target: 'smith-aba3-sec-24' },
+          { num: '25', label: '25. Exercícios de Fixação', target: 'smith-aba3-sec-25' },
+          { num: '26', label: '26. Questões de Reflexão', target: 'smith-aba3-sec-26' },
+          { num: '27', label: '27. Referências', target: 'smith-aba3-sec-27' },
+          { num: '28', label: '28. Conclusão', target: 'smith-aba3-sec-28' },
+        ];
+      }
+      if (activeTab === 'aba4') {
+        return [
+          { num: '1', label: '1. Introdução', target: 'smith-aba4-sec-1' },
+          { num: '2', label: '2. Contexto Histórico', target: 'smith-aba4-sec-2' },
+          { num: '3', label: '3. Fábrica de Alfinetes', target: 'smith-aba4-sec-3' },
+          { num: '4', label: '4. Três Mecanismos', target: 'smith-aba4-sec-4' },
+          { num: '5', label: '5. Extensão do Mercado', target: 'smith-aba4-sec-5' },
+          { num: '6', label: '6. Troca e Interdependência', target: 'smith-aba4-sec-6' },
+          { num: '7', label: '7. Capital e Acumulação', target: 'smith-aba4-sec-7' },
+          { num: '8', label: '8. Técnica vs. Social', target: 'smith-aba4-sec-8' },
+          { num: '9', label: '9. Consequências Sociais', target: 'smith-aba4-sec-9' },
+          { num: '10', label: '10. Smith e Karl Marx', target: 'smith-aba4-sec-10' },
+          { num: '11', label: '11. Limites Críticos', target: 'smith-aba4-sec-11' },
+          { num: '12', label: '12. Síntese Historiográfica', target: 'smith-aba4-sec-12' },
+          { num: '13', label: '13. Quadro Geral', target: 'smith-aba4-sec-13' },
+          { num: '14', label: '14. Mapa Conceitual', target: 'smith-aba4-sec-14' },
+          { num: '15', label: '15. Glossário', target: 'smith-aba4-sec-15' },
+          { num: '16', label: '16. Exercícios de Fixação', target: 'smith-aba4-sec-16' },
+          { num: '17', label: '17. Questões de Reflexão', target: 'smith-aba4-sec-17' },
+          { num: '18', label: '18. Bibliografia Especializada', target: 'smith-aba4-sec-18' },
+          { num: '19', label: '19. Referências Digitais', target: 'smith-aba4-sec-19' },
+          { num: '20', label: '20. Conclusão', target: 'smith-aba4-sec-20' },
+        ];
+      }
+      if (activeTab === 'aba5') {
+        return [
+          { num: '1', label: '1. Introdução', target: 'smith-aba5-sec-1' },
+          { num: '2', label: '2. Valor de Uso e Troca', target: 'smith-aba5-sec-2' },
+          { num: '3', label: '3. Trabalho e Valor', target: 'smith-aba5-sec-3' },
+          { num: '4', label: '4. Organização Econômica', target: 'smith-aba5-sec-4' },
+          { num: '5', label: '5. Preço Natural e Mercado', target: 'smith-aba5-sec-5' },
+          { num: '6', label: '6. Salários', target: 'smith-aba5-sec-6' },
+          { num: '7', label: '7. Lucros', target: 'smith-aba5-sec-7' },
+          { num: '8', label: '8. Renda da Terra', target: 'smith-aba5-sec-8' },
+          { num: '9', label: '9. Três Rendimentos', target: 'smith-aba5-sec-9' },
+          { num: '10', label: '10. Propriedade Privada', target: 'smith-aba5-sec-10' },
+          { num: '11', label: '11. Interesses Econômicos', target: 'smith-aba5-sec-11' },
+          { num: '12', label: '12. Smith e Karl Marx', target: 'smith-aba5-sec-12' },
+          { num: '13', label: '13. Limites e Controvérsias', target: 'smith-aba5-sec-13' },
+          { num: '14', label: '14. Síntese Estrutural', target: 'smith-aba5-sec-14' },
+          { num: '15', label: '15. Glossário', target: 'smith-aba5-sec-15' },
+          { num: '16', label: '16. Exercícios de Fixação', target: 'smith-aba5-sec-16' },
+          { num: '17', label: '17. Questões de Reflexão', target: 'smith-aba5-sec-17' },
+          { num: '18', label: '18. Bibliografia Especializada', target: 'smith-aba5-sec-18' },
+          { num: '19', label: '19. Referências Digitais', target: 'smith-aba5-sec-19' },
+          { num: '20', label: '20. Conclusão', target: 'smith-aba5-sec-20' },
+        ];
+      }
+      if (activeTab === 'aba6') {
+        return [
+          { num: '1', label: '1. Introdução', target: 'smith-aba6-sec-1' },
+          { num: '2', label: '2. Comércio no Séc. XVIII', target: 'smith-aba6-sec-2' },
+          { num: '3', label: '3. Espaço de Troca', target: 'smith-aba6-sec-3' },
+          { num: '4', label: '4. Interesse Próprio', target: 'smith-aba6-sec-4' },
+          { num: '5', label: '5. Concorrência', target: 'smith-aba6-sec-5' },
+          { num: '6', label: '6. A Mão Invisível', target: 'smith-aba6-sec-6' },
+          { num: '7', label: '7. Não é Lei Universal', target: 'smith-aba6-sec-7' },
+          { num: '8', label: '8. Monopólios e Mercantilismo', target: 'smith-aba6-sec-8' },
+          { num: '9', label: '9. Liberdade Natural', target: 'smith-aba6-sec-9' },
+          { num: '10', label: '10. Papel dos Preços', target: 'smith-aba6-sec-10' },
+          { num: '11', label: '11. Ordem Social', target: 'smith-aba6-sec-11' },
+          { num: '12', label: '12. Limites do Mercado', target: 'smith-aba6-sec-12' },
+          { num: '13', label: '13. Liberalismo Econômico', target: 'smith-aba6-sec-13' },
+          { num: '14', label: '14. Smith e Karl Marx', target: 'smith-aba6-sec-14' },
+          { num: '15', label: '15. Interpretações Posteriores', target: 'smith-aba6-sec-15' },
+          { num: '16', label: '16. Síntese Historiográfica', target: 'smith-aba6-sec-16' },
+          { num: '17', label: '17. Quadro Geral', target: 'smith-aba6-sec-17' },
+          { num: '18', label: '18. Mapa Conceitual', target: 'smith-aba6-sec-18' },
+          { num: '19', label: '19. Glossário', target: 'smith-aba6-sec-19' },
+          { num: '20', label: '20. Exercícios de Fixação', target: 'smith-aba6-sec-20' },
+          { num: '21', label: '21. Questões de Reflexão', target: 'smith-aba6-sec-21' },
+          { num: '22', label: '22. Bibliografia Especializada', target: 'smith-aba6-sec-22' },
+          { num: '23', label: '23. Referências Digitais', target: 'smith-aba6-sec-23' },
+          { num: '24', label: '24. Conclusão', target: 'smith-aba6-sec-24' },
         ];
       }
       return ADAM_SMITH_TABS.map((t) => ({
@@ -973,6 +1134,29 @@ export const DossierModal: React.FC<DossierModalProps> = ({
       list.push({ num: 98, label: 'Conclusão', target: 'market-conclusion' });
       list.push({ num: 99, label: 'Referências', target: 'market-refs' });
       return list;
+    } else if (activeTab === 'britishContext') {
+      return [
+        { num: 'INT', label: 'Introdução', target: 'brit-ctx-intro' },
+        { num: '1', label: '1. Reforma Inglesa (1534)', target: 'brit-ctx-sec-1' },
+        { num: '2', label: '2. União das Coroas (1603)', target: 'brit-ctx-sec-2' },
+        { num: '3', label: '3. Petition of Right (1628)', target: 'brit-ctx-sec-3' },
+        { num: '4', label: '4. Guerras Civis (1642–51)', target: 'brit-ctx-sec-4' },
+        { num: '5', label: '5. Execução de Carlos I', target: 'brit-ctx-sec-5' },
+        { num: '6', label: '6. Commonwealth e Cromwell', target: 'brit-ctx-sec-6' },
+        { num: '7', label: '7. Restauração (1660)', target: 'brit-ctx-sec-7' },
+        { num: '8', label: '8. Crise da Exclusão', target: 'brit-ctx-sec-8' },
+        { num: '9', label: '9. Revolução Gloriosa', target: 'brit-ctx-sec-9' },
+        { num: '10', label: '10. John Locke', target: 'brit-ctx-sec-10' },
+        { num: '11', label: '11. União de 1707', target: 'brit-ctx-sec-11' },
+        { num: '12', label: '12. Revolução Científica', target: 'brit-ctx-sec-12' },
+        { num: '13', label: '13. Iluminismo Britânico', target: 'brit-ctx-sec-13' },
+        { num: '14', label: '14. Comércio e Império', target: 'brit-ctx-sec-14' },
+        { num: '15', label: '15. Esfera Pública', target: 'brit-ctx-sec-15' },
+        { num: '16', label: '16. Pensamento Moderno', target: 'brit-ctx-sec-16' },
+        { num: 'CON', label: 'Conclusão', target: 'brit-ctx-conclusion' },
+        { num: 'CRO', label: 'Cronologia', target: 'brit-ctx-chronology' },
+        { num: 'REF', label: 'Referências', target: 'brit-ctx-refs' },
+      ];
     } else {
       return [
         { num: 'I', label: 'I. Citações Literais', target: 'cit-block-1' },
@@ -1271,6 +1455,23 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                   <span>{marketTabNum}. {topic.id === 105 ? 'A Virada Epistemológica' : 'As Leis de Mercado'}</span>
                 </button>
               )}
+
+              {hasBritishContextTab && (
+                <button
+                  onClick={() => {
+                    playTypewriterClack();
+                    setActiveTab('britishContext');
+                  }}
+                  className={`px-2.5 py-1.5 min-h-[36px] text-[11px] font-bold rounded-lg transition-all flex items-center gap-1 border shrink-0 ${
+                    activeTab === 'britishContext'
+                      ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
+                      : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+                  }`}
+                >
+                  <Landmark className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                  <span>{britishContextTabNum}. CONTEXTO HISTÓRICO BRITÂNICO</span>
+                </button>
+              )}
             </div>
           </>
         )}
@@ -1399,6 +1600,24 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               >
                 <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-400" />
                 <span>{marketTabNum}. {topic.id === 105 ? 'A Virada Epistemológica' : 'As Leis de Mercado'}</span>
+              </button>
+            )}
+
+            {/* ABA EXCLUSIVA CAP Nº 01: CONTEXTO HISTÓRICO BRITÂNICO */}
+            {hasBritishContextTab && (
+              <button
+                onClick={() => {
+                  playTypewriterClack();
+                  setActiveTab('britishContext');
+                }}
+                className={`px-3 py-2 min-h-[38px] text-xs font-bold rounded-lg transition-all flex items-center gap-1.5 border shrink-0 shadow-sm ${
+                  activeTab === 'britishContext'
+                    ? 'bg-amber-950/60 text-amber-300 border-amber-500 shadow-sm font-bold'
+                    : 'bg-stone-900/60 text-stone-400 hover:text-stone-200 border-stone-800'
+                }`}
+              >
+                <Landmark className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                <span>{britishContextTabNum}. CONTEXTO HISTÓRICO BRITÂNICO</span>
               </button>
             )}
           </div>
@@ -1555,7 +1774,10 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
           <div className="space-y-1">
             {getSidebarSections().map((sec) => {
-              const isItemActive = isAdamSmith ? activeTab === `aba${sec.num}` : activeSection === sec.num;
+              const isItemActive =
+                isAdamSmith && activeTab !== 'aba1' && activeTab !== 'aba2' && activeTab !== 'aba3' && activeTab !== 'aba4' && activeTab !== 'aba5' && activeTab !== 'aba6'
+                  ? activeTab === `aba${sec.num}`
+                  : activeSection === sec.num;
               return (
                 <button
                   key={sec.num}
@@ -1812,7 +2034,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
                 <div className="space-y-3 pt-2">
                   {chapter.bibliographicReferences.map((ref, idx) => (
                     <div key={idx} className={`bg-stone-900 p-3.5 rounded-lg border border-stone-800 font-mono text-stone-300 select-all leading-relaxed break-all sm:break-words ${getFontSizeClass('body')}`}>
-                      {ref}
+                      {renderFormattedChapterParagraph(ref)}
                     </div>
                   ))}
                 </div>
@@ -3327,6 +3549,11 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
               </div>
             </article>
+          )}
+
+          {/* TAB: CONTEXTO HISTÓRICO BRITÂNICO (CAPÍTULO Nº 01 - COLEÇÃO II) */}
+          {activeTab === 'britishContext' && hasBritishContextTab && (
+            <Topic101BritishContextView getFontSizeClass={getFontSizeClass} />
           )}
 
         </main>
