@@ -52,6 +52,7 @@ import { Topic201CitationsView } from './Topic201CitationsView';
 import { Topic202EssayView } from './Topic202EssayView';
 import { Topic202ChroniclesView } from './Topic202ChroniclesView';
 import { Topic202CitationsView } from './Topic202CitationsView';
+import { Topic203EssayView } from './Topic203EssayView';
 import { Topic113TabsView } from './Topic113TabsView';
 import { ADAM_SMITH_TABS, AdamSmithTabId } from '../data/collections/chapter_12_adam_smith_tabs';
 import { RAW_ADAM_SMITH_ABA1, RAW_ADAM_SMITH_ABA2, RAW_ADAM_SMITH_ABA3, RAW_ADAM_SMITH_ABA4, RAW_ADAM_SMITH_ABA5, RAW_ADAM_SMITH_ABA6, RAW_ADAM_SMITH_ABA7, RAW_ADAM_SMITH_ABA8, RAW_ADAM_SMITH_ABA9, RAW_ADAM_SMITH_ABA10 } from '../data/collections/chapter_12_adam_smith_content';
@@ -930,6 +931,49 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'I-10', label: 'Inv. 10: Historiografia', target: 'adv-sec-10' },
           { num: '11', label: '11. Conclusão Geral', target: 'adv-sec-11' },
           { num: 'REF', label: 'Referências Inv.', target: 'adv-refs' },
+        ];
+      }
+      if (topic.id === 203) {
+        return [
+          { num: 'ENS', label: 'Parte I: Ensaio Acadêmico', target: 'essay-master' },
+          { num: '1', label: '1. Guerra Industrial', target: 'essay-sec-1' },
+          { num: '2', label: '2. Guerra de Movimento', target: 'essay-sec-2' },
+          { num: '3', label: '3. Impasse Defensivo', target: 'essay-sec-3' },
+          { num: '4', label: '4. Verdun e Somme', target: 'essay-sec-4' },
+          { num: '5', label: '5. Comando Militar', target: 'essay-sec-5' },
+          { num: '6', label: '6. Dimensão Humana', target: 'essay-sec-6' },
+          { num: '7', label: '7. Evolução Tática', target: 'essay-sec-7' },
+          { num: '8', label: '8. A Crise de 1917', target: 'essay-sec-8' },
+          { num: '9', label: '9. Ofensiva de 1918', target: 'essay-sec-9' },
+          { num: '10', label: '10. Cem Dias', target: 'essay-sec-10' },
+          { num: '11', label: '11. Derrota Alemã', target: 'essay-sec-11' },
+          { num: '12', label: '12. Frente Ocidental', target: 'essay-sec-12' },
+          { num: 'SÍN', label: 'Parte II: Síntese Estrutural', target: 'essay-synthese-master' },
+          { num: 'S-1', label: '1. Lógica Histórica', target: 'sintese-sec-1' },
+          { num: 'S-2', label: '2. Fases da Frente', target: 'sintese-sec-2' },
+          { num: 'S-3', label: '3. Principais Batalhas', target: 'sintese-sec-3' },
+          { num: 'S-4', label: '4. Transformações Mil.', target: 'sintese-sec-4' },
+          { num: 'S-5', label: '5. Conceitos Fundamentais', target: 'sintese-sec-5' },
+          { num: 'DOS', label: 'Parte III: Dossiê Pesquisa', target: 'essay-research-dossier-master' },
+          { num: 'D-1', label: '1. Objeto Central', target: 'dossie-sec-1' },
+          { num: 'D-2', label: '2. Fontes Primárias', target: 'dossie-sec-2' },
+          { num: 'D-3', label: '3. Acervos Documentais', target: 'dossie-sec-3' },
+          { num: 'D-4', label: '4. Historiografia', target: 'dossie-sec-4' },
+          { num: 'D-5', label: '5. Debates Centrais', target: 'dossie-sec-5' },
+          { num: 'D-6', label: '6. Bibliografia Dossiê', target: 'dossie-sec-6' },
+          { num: 'INV', label: 'Parte IV: Inv. Avançada', target: 'essay-advanced-investigation-master' },
+          { num: 'Q-1', label: 'Q1. Era Inevitável?', target: 'adv-sec-1' },
+          { num: 'Q-2', label: 'Q2. Generais', target: 'adv-sec-2' },
+          { num: 'Q-3', label: 'Q3. Verdun e Atrito', target: 'adv-sec-3' },
+          { num: 'Q-4', label: 'Q4. O Somme', target: 'adv-sec-4' },
+          { num: 'Q-5', label: 'Q5. A Artilharia', target: 'adv-sec-5' },
+          { num: 'Q-6', label: 'Q6. Trauma Psicológico', target: 'adv-sec-6' },
+          { num: 'Q-7', label: 'Q7. Entrada dos EUA', target: 'adv-sec-7' },
+          { num: 'Q-8', label: 'Q8. Avanço de 1918', target: 'adv-sec-8' },
+          { num: 'Q-9', label: 'Q9. Cem Dias', target: 'adv-sec-9' },
+          { num: 'Q-10', label: 'Q10. Guerra Industrial', target: 'adv-sec-10' },
+          { num: 'CON', label: 'Conclusão Geral', target: 'adv-conclusion' },
+          { num: 'REF', label: 'Referências', target: 'adv-refs' },
         ];
       }
       if (isColecao3 && !essay) {
@@ -2154,7 +2198,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
 
           {/* TAB: ESSAY (JUNÇÃO DE ENSAIO ACADÊMICO + SÍNTESE + DOSSIÊ DE PESQUISA) */}
-          {activeTab === 'essay' && (isColecao3 && !essay && topic.id !== 201 && topic.id !== 202 ? (
+          {activeTab === 'essay' && (isColecao3 && !essay && topic.id !== 201 && topic.id !== 202 && topic.id !== 203 ? (
             <article id="em-producao-essay" className="max-w-4xl mx-auto w-full box-border">
               <div className="bg-[#161619] border border-amber-600/50 p-6 sm:p-10 rounded-2xl shadow-xl space-y-4">
                 <div className="flex flex-wrap items-center gap-2">
@@ -2183,6 +2227,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             <Topic201EssayView getFontSizeClass={getFontSizeClass} />
           ) : topic.id === 202 ? (
             <Topic202EssayView getFontSizeClass={getFontSizeClass} />
+          ) : topic.id === 203 ? (
+            <Topic203EssayView getFontSizeClass={getFontSizeClass} />
           ) : (
             <article className="space-y-12 max-w-4xl mx-auto w-full box-border overflow-hidden">
               {/* SUBSEÇÃO 1: ENSAIO ACADÊMICO */}
