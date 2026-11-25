@@ -53,6 +53,11 @@ import { Topic202EssayView } from './Topic202EssayView';
 import { Topic202ChroniclesView } from './Topic202ChroniclesView';
 import { Topic202CitationsView } from './Topic202CitationsView';
 import { Topic203EssayView } from './Topic203EssayView';
+import { Topic203ChroniclesView } from './Topic203ChroniclesView';
+import { Topic203CitationsView } from './Topic203CitationsView';
+import { Topic204EssayView } from './Topic204EssayView';
+import { Topic204ChroniclesView } from './Topic204ChroniclesView';
+import { Topic204CitationsView } from './Topic204CitationsView';
 import { Topic113TabsView } from './Topic113TabsView';
 import { ADAM_SMITH_TABS, AdamSmithTabId } from '../data/collections/chapter_12_adam_smith_tabs';
 import { RAW_ADAM_SMITH_ABA1, RAW_ADAM_SMITH_ABA2, RAW_ADAM_SMITH_ABA3, RAW_ADAM_SMITH_ABA4, RAW_ADAM_SMITH_ABA5, RAW_ADAM_SMITH_ABA6, RAW_ADAM_SMITH_ABA7, RAW_ADAM_SMITH_ABA8, RAW_ADAM_SMITH_ABA9, RAW_ADAM_SMITH_ABA10 } from '../data/collections/chapter_12_adam_smith_content';
@@ -976,6 +981,62 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'REF', label: 'Referências', target: 'adv-refs' },
         ];
       }
+      if (topic.id === 204) {
+        return [
+          { num: 'ENS', label: 'Parte I: Ensaio Acadêmico', target: 'essay-master' },
+          { num: '1', label: '1. Frente Oriental', target: 'essay-sec-1' },
+          { num: '2', label: '2. Duas Frentes', target: 'essay-sec-2' },
+          { num: '3', label: '3. Áustria-Hungria', target: 'essay-sec-3' },
+          { num: '4', label: '4. Rússia de 1914', target: 'essay-sec-4' },
+          { num: '5', label: '5. Tannenberg', target: 'essay-sec-5' },
+          { num: '6', label: '6. Grande Retirada', target: 'essay-sec-6' },
+          { num: '7', label: '7. Ofensiva Brusilov', target: 'essay-sec-7' },
+          { num: '8', label: '8. Crise Legitimidade', target: 'essay-sec-8' },
+          { num: '9', label: '9. Rev. de Fevereiro', target: 'essay-sec-9' },
+          { num: '10', label: '10. Ordem nº 1', target: 'essay-sec-10' },
+          { num: '11', label: '11. Ofensiva Kerensky', target: 'essay-sec-11' },
+          { num: '12', label: '12. Rev. de Outubro', target: 'essay-sec-12' },
+          { num: '13', label: '13. Brest-Litovsk', target: 'essay-sec-13' },
+          { num: '14', label: '14. Retirada Russa', target: 'essay-sec-14' },
+          { num: '15', label: '15. Ordem Europeia', target: 'essay-sec-15' },
+          { num: 'SÍN', label: 'Parte II: Síntese Estrutural', target: 'essay-synthese-master' },
+          { num: 'S-1', label: '1. Linha do Tempo', target: 'sintese-sec-1' },
+          { num: 'S-2', label: '2. Atores Históricos', target: 'sintese-sec-2' },
+          { num: 'S-3', label: '3. Cadeia Causal', target: 'sintese-sec-3' },
+          { num: 'S-4', label: '4. Problemas Estrut.', target: 'sintese-sec-4' },
+          { num: 'S-5', label: '5. Conceitos Fund.', target: 'sintese-sec-5' },
+          { num: 'S-6', label: '6. Consequências', target: 'sintese-sec-6' },
+          { num: 'S-7', label: '7. Interpretações', target: 'sintese-sec-7' },
+          { num: 'DOS', label: 'Parte III: Dossiê Pesquisa', target: 'essay-research-dossier-master' },
+          { num: 'D-1', label: '1. Objetivo do Dossiê', target: 'dossie-sec-1' },
+          { num: 'D-2', label: '2. Fontes Primárias', target: 'dossie-sec-2' },
+          { num: 'D-3', label: '3. Arquivos & Coleções', target: 'dossie-sec-3' },
+          { num: 'D-4', label: '4. Dossiê Cartográfico', target: 'dossie-sec-4' },
+          { num: 'D-5', label: '5. Bib. Comentada', target: 'dossie-sec-5' },
+          { num: 'D-6', label: '6. Núcleos Pesquisa', target: 'dossie-sec-6' },
+          { num: 'INV', label: 'Parte IV: Inv. Avançada', target: 'essay-advanced-investigation-master' },
+          { num: 'Q-1', label: 'Q1. Frente Oriental?', target: 'adv-sec-1' },
+          { num: 'Q-2', label: 'Q2. Resistência Russa', target: 'adv-sec-2' },
+          { num: 'Q-3', label: 'Q3. Tannenberg', target: 'adv-sec-3' },
+          { num: 'Q-4', label: 'Q4. Grande Retirada', target: 'adv-sec-4' },
+          { num: 'Q-5', label: 'Q5. Brusilov 1916', target: 'adv-sec-5' },
+          { num: 'Q-6', label: 'Q6. Rev. Fevereiro', target: 'adv-sec-6' },
+          { num: 'Q-7', label: 'Q7. Ordem nº 1', target: 'adv-sec-7' },
+          { num: 'Q-8', label: 'Q8. Gov. Provisório', target: 'adv-sec-8' },
+          { num: 'Q-9', label: 'Q9. Ofensiva Kerensky', target: 'adv-sec-9' },
+          { num: 'Q-10', label: 'Q10. Lenin e Paz', target: 'adv-sec-10' },
+          { num: 'Q-11', label: 'Q11. Trotsky', target: 'adv-sec-11' },
+          { num: 'Q-12', label: 'Q12. Brest-Litovsk', target: 'adv-sec-12' },
+          { num: 'Q-13', label: 'Q13. Ofensiva 1918', target: 'adv-sec-13' },
+          { num: 'Q-14', label: 'Q14. Inevitável?', target: 'adv-sec-14' },
+          { num: 'Q-15', label: 'Q15. Guerra/Revolução', target: 'adv-sec-15' },
+          { num: 'Q-16', label: 'Q16. Saída Russa', target: 'adv-sec-16' },
+          { num: 'Q-17', label: 'Q17. Guerra Civil', target: 'adv-sec-17' },
+          { num: 'Q-18', label: 'Q18. Compreensão 1ª GM', target: 'adv-sec-18' },
+          { num: 'CON', label: 'Conclusão Geral', target: 'adv-conclusion' },
+          { num: 'REF', label: 'Referências', target: 'adv-refs' },
+        ];
+      }
       if (isColecao3 && !essay) {
         return [{ num: 1, label: '2. Ensaio Acadêmico', target: 'em-producao-essay' }];
       }
@@ -1137,6 +1198,41 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'CON', label: 'Conclusão das Crônicas', target: 'cronica-nota' },
         ];
       }
+      if (topic.id === 203) {
+        return [
+          { num: 'CR-1', label: '1. Agosto de 1914', target: 'cronica-1' },
+          { num: 'CR-2', label: '2. Nascimento Trincheiras', target: 'cronica-2' },
+          { num: 'CR-3', label: '3. Segunda Ypres (1915)', target: 'cronica-3' },
+          { num: 'CR-4', label: '4. Verdun (1916)', target: 'cronica-4' },
+          { num: 'CR-5', label: '5. Somme (01/07/1916)', target: 'cronica-5' },
+          { num: 'CR-6', label: '6. Cotidiano Trincheiras', target: 'cronica-6' },
+          { num: 'CR-7', label: '7. Passchendaele (1917)', target: 'cronica-7' },
+          { num: 'CR-8', label: '8. A Crise de 1917', target: 'cronica-8' },
+          { num: 'CR-9', label: '9. Ofensiva Março 1918', target: 'cronica-9' },
+          { num: 'CR-10', label: '10. Amiens (08/08/1918)', target: 'cronica-10' },
+          { num: 'CR-11', label: '11. Armistício Nov. 1918', target: 'cronica-11' },
+          { num: 'CR-12', label: '12. Memória da Lama', target: 'cronica-12' },
+          { num: 'ENC', label: 'Encerramento Crônicas', target: 'cronica-nota' },
+        ];
+      }
+      if (topic.id === 204) {
+        return [
+          { num: 'APR', label: 'Apresentação', target: 'cronica-apresentacao' },
+          { num: 'I', label: 'I. Agosto de 1914', target: 'cronica-1' },
+          { num: 'II', label: 'II. Tannenberg', target: 'cronica-2' },
+          { num: 'III', label: 'III. A Galícia', target: 'cronica-3' },
+          { num: 'IV', label: 'IV. Gorlice-Tarnów', target: 'cronica-4' },
+          { num: 'V', label: 'V. A Grande Retirada', target: 'cronica-5' },
+          { num: 'VI', label: 'VI. Crise de Munições', target: 'cronica-6' },
+          { num: 'VII', label: 'VII. Brusilov, 1916', target: 'cronica-7' },
+          { num: 'VIII', label: 'VIII. Inverno 1916–1917', target: 'cronica-8' },
+          { num: 'IX', label: 'IX. Fevereiro de 1917', target: 'cronica-9' },
+          { num: 'X', label: 'X. Verão de 1917', target: 'cronica-10' },
+          { num: 'XI', label: 'XI. Outubro de 1917', target: 'cronica-11' },
+          { num: 'XII', label: 'XII. Brest-Litovsk', target: 'cronica-12' },
+          { num: 'SÍN', label: 'Síntese Final', target: 'cronica-nota' },
+        ];
+      }
       if (isColecao3 && chronologies.length === 0 && detailedEpisodes.length === 0 && !GUERRAS_MUNDIAIS_CHRONICLES[topic.id]) {
         return [{ num: 1, label: '3. Crônicas', target: 'em-producao-stories' }];
       }
@@ -1164,6 +1260,39 @@ export const DossierModal: React.FC<DossierModalProps> = ({
           { num: 'IV', label: 'IV. Bibliografia Acadêmica', target: 'cit-parte-4' },
           { num: 'V', label: 'V. Questões de Análise', target: 'cit-parte-5' },
           { num: 'CON', label: 'Conclusão Documental', target: 'cit-conclusao' },
+        ];
+      }
+      if (topic.id === 203) {
+        return [
+          { num: 'PRE', label: 'Apresentação Documental', target: 'cit-apresentacao' },
+          { num: 'I', label: 'Documentos 01–06', target: 'cit-doc-01' },
+          { num: 'II', label: 'Documentos 07–12', target: 'cit-doc-07' },
+          { num: 'COM', label: 'Docs Complementares', target: 'cit-complementares' },
+          { num: 'QST', label: 'Questões de Análise', target: 'cit-questoes' },
+          { num: 'REF', label: 'Referências Documentais', target: 'cit-referencias' },
+          { num: 'CON', label: 'Conclusão da Aba 4', target: 'cit-conclusao' },
+          { num: 'PII', label: 'Parte II · Apresentação', target: 'cit-parte-2' },
+          { num: 'AUT', label: '2. Autores Fundamentais', target: 'cit-p2-autores' },
+          { num: 'DIR', label: '3. Citações Diretas', target: 'cit-p2-diretas' },
+          { num: 'IND', label: '4. Citações Indiretas', target: 'cit-p2-indiretas' },
+          { num: 'BIB', label: '5. Referências Bib.', target: 'cit-p2-bib' },
+          { num: 'ORI', label: '6–7. Uso e Rigor Acad.', target: 'cit-p2-orientacao' },
+        ];
+      }
+      if (topic.id === 204) {
+        return [
+          { num: 'PRE', label: '1–2. Apresentação & Método', target: 'cit-apresentacao' },
+          { num: 'DOC', label: '3–13. Documentos I–XI', target: 'cit-doc-1' },
+          { num: 'MAP', label: '14. Mapas Históricos', target: 'cit-mapas' },
+          { num: 'COM', label: '15–16. Fontes & Arquivos', target: 'cit-complementares' },
+          { num: 'BIB', label: '17–18. Bib. & Cronologia', target: 'cit-bibliografia' },
+          { num: 'QST', label: '19–20. Questões & Pesquisa', target: 'cit-questoes' },
+          { num: 'CON', label: '21. Conclusão Documental', target: 'cit-conclusao' },
+          { num: 'APA', label: 'Aparato Crítico · Parte I', target: 'cit-aparato-p1' },
+          { num: 'PII', label: 'Parte II · Citações Ind.', target: 'cit-aparato-p2' },
+          { num: 'PIII', label: 'Parte III · Historiografia', target: 'cit-aparato-p3' },
+          { num: 'PIV', label: 'Parte IV · Modelos Acad.', target: 'cit-aparato-p4' },
+          { num: 'PV', label: 'Parte V · Referências', target: 'cit-aparato-p5' },
         ];
       }
       if (isColecao3 && !GUERRAS_MUNDIAIS_CITATIONS[topic.id] && topic.primarySources.length === 0 && !TOPIC_CITATIONS_DATABASE[topic.id]) {
@@ -2198,7 +2327,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({
 
 
           {/* TAB: ESSAY (JUNÇÃO DE ENSAIO ACADÊMICO + SÍNTESE + DOSSIÊ DE PESQUISA) */}
-          {activeTab === 'essay' && (isColecao3 && !essay && topic.id !== 201 && topic.id !== 202 && topic.id !== 203 ? (
+          {activeTab === 'essay' && (isColecao3 && !essay && topic.id !== 201 && topic.id !== 202 && topic.id !== 203 && topic.id !== 204 ? (
             <article id="em-producao-essay" className="max-w-4xl mx-auto w-full box-border">
               <div className="bg-[#161619] border border-amber-600/50 p-6 sm:p-10 rounded-2xl shadow-xl space-y-4">
                 <div className="flex flex-wrap items-center gap-2">
@@ -2229,6 +2358,8 @@ export const DossierModal: React.FC<DossierModalProps> = ({
             <Topic202EssayView getFontSizeClass={getFontSizeClass} />
           ) : topic.id === 203 ? (
             <Topic203EssayView getFontSizeClass={getFontSizeClass} />
+          ) : topic.id === 204 ? (
+            <Topic204EssayView getFontSizeClass={getFontSizeClass} />
           ) : (
             <article className="space-y-12 max-w-4xl mx-auto w-full box-border overflow-hidden">
               {/* SUBSEÇÃO 1: ENSAIO ACADÊMICO */}
@@ -2521,6 +2652,10 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               <Topic201ChroniclesView getFontSizeClass={getFontSizeClass} />
             ) : topic.id === 202 ? (
               <Topic202ChroniclesView getFontSizeClass={getFontSizeClass} />
+            ) : topic.id === 203 ? (
+              <Topic203ChroniclesView getFontSizeClass={getFontSizeClass} />
+            ) : topic.id === 204 ? (
+              <Topic204ChroniclesView getFontSizeClass={getFontSizeClass} />
             ) : (isColecao3 && chronologies.length === 0 && detailedEpisodes.length === 0 && !GUERRAS_MUNDIAIS_CHRONICLES[topic.id]) ? (
               <article id="em-producao-stories" className="max-w-4xl mx-auto w-full box-border">
                 <div className="bg-[#161619] border border-amber-600/50 p-6 sm:p-10 rounded-2xl shadow-xl space-y-4">
@@ -2683,6 +2818,20 @@ export const DossierModal: React.FC<DossierModalProps> = ({
               return (
                 <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
                   <Topic202CitationsView getFontSizeClass={getFontSizeClass} />
+                </div>
+              );
+            }
+            if (topic.id === 203) {
+              return (
+                <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+                  <Topic203CitationsView getFontSizeClass={getFontSizeClass} />
+                </div>
+              );
+            }
+            if (topic.id === 204) {
+              return (
+                <div className="space-y-8 max-w-4xl mx-auto w-full box-border overflow-hidden">
+                  <Topic204CitationsView getFontSizeClass={getFontSizeClass} />
                 </div>
               );
             }
